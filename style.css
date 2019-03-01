@@ -1,0 +1,11 @@
+:root {
+      --red: #C24819;
+      --yellow: #EA9A07;
+      --green: #758A17;
+      --light: #FFFEF5;
+      --dark: #40290A;
+}
+
+h1 {
+    color: --dark;
+}
