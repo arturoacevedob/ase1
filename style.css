@@ -73,7 +73,7 @@ body {
 }
 
 /* Hides `Bats'il Maya` and `Menu Principal` */
-h1, nav > h2 {
+nav > h2 {
     display: none;
 }
 
