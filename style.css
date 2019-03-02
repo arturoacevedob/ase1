@@ -1,11 +1,139 @@
+@charset "UTF-8";
+
+/* —————— Variables —————— */
+
 :root {
-      --red: #C24819;
-      --yellow: #EA9A07;
-      --green: #758A17;
-      --light: #FFFEF5;
-      --dark: #40290A;
+    --red: #C24819;
+    --yellow: #EA9A07;
+    --green: #758A17;
+    --light: #FFFEF5;
+    --dark: #40290A;
+
+    --a-link: var(--light);
+    --a-visited: #cccbc6;
+    --a-hover: #EA9A07;
+    --a-active: #FFAE0D;
+
+    --button-link: var(--red);
+    --button-visited: #CC6A14;
+    --button-hover: #EBA00C;
+    --button-active: #FFAE0D;
+
+    --padding: 0.7rem;
+    --border-radius: 1.4rem;
 }
 
-h1 {
-    color: --dark;
+/* —————— Color Classes —————— */
+
+.light {
+    color: var(--light);
+}
+
+.dark {
+    color: var(--dark);
+}
+
+.light-bg {
+    background: var(--light);
+}
+
+.dark-bg {
+    background: var(--dark);
+}
+
+.active {
+    color: var(--yellow);
+}
+
+/* —————— Typography —————— */
+
+@font-face {
+    font-family: 'Qualion Bold';
+    src: url("fonts/Qualion Bold/Qualion-Bold.eot");
+    src: url("fonts/Qualion Bold/Qualion-Bold.woff") format('woff'),
+    url("fonts/Qualion Bold/Qualion-Bold.ttf") format('truetype'),
+    url("fonts/Qualion Bold/Qualion-Bold.svg") format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Qualion';
+    src: url("fonts/Qualion/Qualion-Regular.eot");
+    src: url("fonts/Qualion/Qualion-Regular.woff") format('woff'),
+    url("fonts/Qualion/Qualion-Regular.ttf") format('truetype'),
+    url("fonts/Qualion/Qualion-Regular.svg") format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    color: var(--dark);
+    font-family: Qualion, sans-serif;
+}
+
+/* Hides `Bats'il Maya` and `Menu Principal` */
+h1, nav > h2 {
+    display: none;
+}
+
+h2 {
+    color: var(--light);
+    font-family: 'Qualion Bold', sans-serif;
+    font-size: 100px;
+}
+
+.h2-subtitle {
+    color: var(--light);
+    font-family: 'Qualion Bold', sans-serif;
+    font-size: 40px;
+}
+
+h3 {
+    font-family: 'Qualion Bold', sans-serif;
+    font-size: 90px;
+}
+
+.h3-small {
+    font-size: 25px;
+}
+
+/* —————— Botones —————— */
+
+.button {
+    padding: var(--padding);
+    border-radius: var(--border-radius);
+}
+
+.button.outline {
+    background: transparent;
+    border: 4px solid var(--light);
+}
+
+.button.red {
+    background: var(--red);
+}
+
+/* —————— Reset margin and padding —————— */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* —————— Header —————— */
+
+
+/* —————— Nav —————— */
+
+menu {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
+menu a {
+    color: var(--light);
 }
