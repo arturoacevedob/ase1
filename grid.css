@@ -3,11 +3,24 @@
 }
 
 .gridh{
-    margin: 0px 154px 0px 154px;
+    margin: 0px 100px 0px 100px;
     display: grid;
-    grid-column: 15% 9% 9% 9% 9% 9% 9% 9% 11% 11%;
-    grid-row: ;
+    grid-template-columns: repeat(10,1fr);
+    grid-auto-rows: minmax(100px, auto);
     grid-column-gap: 44px;
 }
-
-
+.product, .map, .clients, .certificate{
+    margin: 0px 100px 0px 100px;
+}
+.gridproduct{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-column-gap: 44px;
+}
+.gridthree{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-column-gap: 44px;
+}

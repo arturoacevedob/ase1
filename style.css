@@ -154,3 +154,9 @@ header a {
 .menu li {
     display: inline-block;
 }
+
+/* —————— certificados —————— */
+
+.certificate article img{
+    width: 130px;
+}
