@@ -160,3 +160,8 @@ header a {
 .certificate article img{
     width: 130px;
 }
+
+/* —————— footer —————— */
+.foot li{
+    display: inline-block;
+}

@@ -2,14 +2,14 @@
     outline: 3px solid black;
 }
 
-.gridh{
+.gridh ul{
     margin: 0px 100px 0px 100px;
     display: grid;
-    grid-template-columns: repeat(10,1fr);
-    grid-auto-rows: minmax(100px, auto);
-    grid-column-gap: 44px;
+    grid-template-columns: repeat(9,1fr);
+    grid-auto-rows: minmax(10px, auto);
+    grid-column-gap: 11px;
 }
-.product, .map, .clients, .certificate{
+.gridh, .product, .map, .clients, .certificate, .news, .more, .join, .foot{
     margin: 0px 100px 0px 100px;
 }
 .gridproduct{
@@ -24,3 +24,25 @@
     grid-auto-rows: minmax(100px, auto);
     grid-column-gap: 44px;
 }
+.gridnews{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-column-gap: 44px;
+}
+.one {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+  }
+.two { 
+    grid-column: 3 / 5;
+    grid-row: 1;
+  }
+.three {
+    grid-column: 3;
+    grid-row: 2;
+  }
+.four {
+    grid-column: 4;
+    grid-row: 2;
+  }
