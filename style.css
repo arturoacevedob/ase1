@@ -139,7 +139,9 @@ ul {
 }
 
 /* —————— Header —————— */
-
+header{
+    padding-bottom: 55px;
+}
 header a {
     color: var(--light);
     text-decoration: none;
