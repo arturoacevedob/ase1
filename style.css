@@ -163,6 +163,12 @@ header a {
     width: 130px;
 }
 
+/* —————— gridthree2 —————— */
+
+.gridthree2{
+    align-content: center;
+    text-align: center;
+}
 /* —————— footer —————— */
 .foot li{
     display: inline-block;
