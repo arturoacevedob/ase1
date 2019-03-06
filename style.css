@@ -86,23 +86,19 @@ nav > h2 {
 .h2-subtitle {
     color: var(--light);
     font-family: 'Qualion Bold', sans-serif;
-    font-size: 25px;
 }
 
 h2 {
     font-family: 'Qualion Bold', sans-serif;
-    font-size: 40px;
 }
 
 .h2-small {
-    font-size: 15px;
     text-transform: uppercase;
 }
 
 
 h4 {
     font-family: 'Qualion Bold', sans-serif;
-    font-size: 90px;
 }
 
 .bold {
