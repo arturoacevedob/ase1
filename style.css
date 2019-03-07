@@ -163,7 +163,10 @@ header a {
     background-color: var(--light);
 }
 
-
+.product a {
+    color: var(--light);
+    text-decoration: none;
+}
 
 /* —————— Dónde estamos y a dónde llegamos —————— */
 .map {background-color: var(--dark); }
@@ -184,6 +187,10 @@ header a {
 .gridthree2{
     align-content: center;
     text-align: center;
+}
+.gridthree2 a {
+    color: var(--light);
+    text-decoration: none;
 }
 /* —————— footer —————— */
 .foot li{
