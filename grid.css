@@ -1,7 +1,7 @@
 * {
     outline: 3px solid black;
 }
-@media screen and (max-width: 639px){
+@media screen and (max-width:768px){
     /*here*/
 .container{
     width: 100%;height: 100%;
@@ -180,6 +180,8 @@
     display: none;
 }
     /*here*/
+}
+@media screen and (max-width: 639px){
 .h2-header {
     font-size: 40px;
 }
@@ -334,7 +336,9 @@ p{
       }
   }
   @media screen and (min-width: 768px){
-   
+      .container{
+          display: none;
+      }
     .h2-subtitle {
         font-size: 17px;
     }
