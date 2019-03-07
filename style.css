@@ -163,7 +163,7 @@ header a {
     background-color: var(--light);
 }
 
-.product
+
 
 /* —————— Dónde estamos y a dónde llegamos —————— */
 .map {background-color: var(--dark); }
@@ -173,6 +173,7 @@ header a {
 /* —————— certificados —————— */
 .certificate article figure{
     width: 100%;
+    margin: 0;
 }
 .certificate article img{
     max-width: 100%;
