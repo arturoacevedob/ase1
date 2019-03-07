@@ -140,7 +140,7 @@ h1{
 }
 header{
     padding-bottom: 55px;
-    background:url(images/header_café_tseltal_solidario_trabajo_digno_bats\il_maya.jpg) 0% 0%/100% no-repeat;
+    background:url(images/recursos_inicio/header_café_tseltal_solidario_trabajo_digno_bats\il_maya.jpg) 0% 0%/100% no-repeat;
 }
 header a {
     color: var(--light);
@@ -152,15 +152,30 @@ header a {
 .menu {
     list-style: none;
 }
-
 .menu li {
     display: inline-block;
 }
 
-/* —————— certificados —————— */
+/* —————— Product —————— */
+.product,.certificate,.more {
+    margin:0;
+    padding:6%;
+    background-color: var(--light);
+}
 
+.product
+
+/* —————— Dónde estamos y a dónde llegamos —————— */
+.map {background-color: var(--dark); }
+.map article figure{margin:0;width: 100%;}
+.map article figure img{max-width: 100%;}
+
+/* —————— certificados —————— */
+.certificate article figure{
+    width: 100%;
+}
 .certificate article img{
-    width: 130px;
+    max-width: 100%;
 }
 
 /* —————— gridthree2 —————— */
