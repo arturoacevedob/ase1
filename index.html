@@ -18,7 +18,14 @@
     <link href="grid.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <link rel="icon" href="images/batsil_maya_logo.png">
-    <title>Bats'il Maya</title>
+    <!--from here-->
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="style.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--to here-->
+<title>Bats'il Maya</title>
 </head>
 <body>
 <!--TODO: colocar divs dobles por sección.-->
@@ -28,10 +35,11 @@
     <header class="dark-bg">
         <div class="gridh">
         <h1>Bats'il Maya: Inicio</h1>
-        <nav>
-            <h2>Menu principal</h2>
-            <ul class="menu">
-                <li><a href="" target="_self">Inicio</a></li>
+        <!--from here-->
+		<div class="container">
+		<div class="menu-wrap">
+		<ul id="mobile">
+             <li><a href="" target="_self">Inicio</a></li>
                 <li><a href="" target="_self">Nosotros</a></li>
                 <li><a href="" target="_self">Nuestro café</a></li>
                 <li><a href="" target="_self">Proceso</a></li>
@@ -40,7 +48,23 @@
                 <li><a href="" target="_self">Ayuda</a></li>
                 <li class="button outline bold"><a href="">Iniciar Sesión</a></li>
                 <li class="button red bold"><a href="">Contáctanos</a></li>
-            </ul>
+		</ul>
+		<button class="close-button" id="close-button">Close Menu</button>
+	</div>
+		<button class="menu-button" id="open-button">Open Menu</button>
+	</div>
+		<ul id="menudesktop">
+		 <li><a href="" target="_self">Inicio</a></li>
+                <li><a href="" target="_self">Nosotros</a></li>
+                <li><a href="" target="_self">Nuestro café</a></li>
+                <li><a href="" target="_self">Proceso</a></li>
+                <li><a href="" target="_self">Productos</a></li>
+                <li><a href="" target="_self">Noticias</a></li>
+                <li><a href="" target="_self">Ayuda</a></li>
+                <li class="button outline bold"><a href="">Iniciar Sesión</a></li>
+                <li class="button red bold"><a href="">Contáctanos</a></li>
+        </ul>
+        <!--to here-->
         </nav>
         <h2 class="h2-header">Café Tseltal.<br>Solidario, trabajador, digno</h2>
         <p class="h2-subtitle">Dándole el máximo valor agregado que nos permite la construcción de un precio justo y
@@ -189,5 +213,11 @@
         </footer>
     </div>
 </div>
+<!--from here-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+<script src="js/classie.js"></script>
+	<script src="js/main.js"></script>
+<script src="js/javascript.js"></script>
+<!--to here-->
 </body>
 </html>
