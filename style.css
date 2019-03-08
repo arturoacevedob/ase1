@@ -170,11 +170,12 @@ h1 {
 header {
     padding-bottom: 85px;
     /*noinspection CssRedundantUnit,CssRedundantUnit*/
-    background: url(images/inicio/header_café_tseltal_solidario_trabajo_digno_batsil_maya.jpg) 64% 0%/289% no-repeat
+    background:  url(images/fade/header_fade_light_batsil_maya.png)0% 100%/182% no-repeat,
+                 url(images/inicio/header_café_tseltal_solidario_trabajo_digno_batsil_maya.jpg) 61% 0%/289% no-repeat
+               
 }
 header a {
     color: var(--light);
- no-repeat;
 }
 
 header a {
@@ -280,7 +281,7 @@ header a {
     color: var(--light);
     padding: 22px;
     font-size: 12px;
-    background: url(images/inicio/footer_background_granos_de_cafe.png) 0 0%/570% no-repeat;
+    background: url(images/footer/footer_granos_de_cafe_batsil_maya.jpg) 0 0%/100% no-repeat;
 }
 .foot li {
     padding: 6px;
