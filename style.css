@@ -267,9 +267,20 @@ header a {
     color: var(--light);
     text-decoration: none;
 }
-.foot{
-    padding: 55px;
+.bigfoot{
+    color: var(--light);
+    padding: 22px;
+    font-size: 12px;
+    background: url(images/inicio/footer_background_granos_de_cafe.png) 0 0%/570% no-repeat;
 }
 .foot li {
+    padding: 6px;
     display: inline-block;
+}
+@media screen and (min-width: 640px){
+    .bigfoot{
+        padding: 44px;
+        font-size: 18px;
+        background: url(images/inicio/footer_background_granos_de_cafe.png) 0 0%/250% no-repeat;
+    }
 }
