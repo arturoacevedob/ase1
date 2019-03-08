@@ -242,7 +242,7 @@ header a {
 }
 
 .certificate article img {
-    max-width: 100%;
+    max-width: 100%; 
 }
 
 /* —————— gridthree2 —————— */
@@ -257,7 +257,15 @@ header a {
     text-decoration: none;
 }
 
+/* —————— form —————— */
+.llamada{
+    color: var(--light);
+    background-color: var(--green);
+}
 /* —————— footer —————— */
+.foot{
+    padding: 55px;
+}
 .foot li {
     display: inline-block;
 }
