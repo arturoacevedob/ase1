@@ -227,7 +227,6 @@ header a {
 
 .map article figure {
     margin: 0;
-<<<<<<< HEAD
     padding: 10% 0% 0% 0%;
     font-size: 22px;
     text-align: center;
@@ -235,14 +234,6 @@ header a {
 }
 .map figure{margin:0;width: 100%;}
 .map figure img{max-width: 100%;}
-=======
-    width: 100%;
-}
-
-.map article figure img {
-    max-width: 100%;
-}
->>>>>>> 36eb04d7ecdc198b034ee16a0107cc121c4c7da8
 
 /* —————— certificados —————— */
 .certificate article figure {
