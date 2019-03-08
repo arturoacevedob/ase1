@@ -162,7 +162,13 @@ header a {
     padding:6%;
     background-color: var(--light);
 }
-
+.product figure{
+    margin: 0%;
+    width: 100%;
+}
+.product figure img{
+    max-width: 100%;
+}
 .product .button {
     margin: 11px;
     color: var(--light);
