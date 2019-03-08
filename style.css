@@ -263,6 +263,10 @@ header a {
     background-color: var(--green);
 }
 /* —————— footer —————— */
+.foot a {
+    color: var(--light);
+    text-decoration: none;
+}
 .foot{
     padding: 55px;
 }
