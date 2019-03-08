@@ -1,4 +1,5 @@
 @charset "UTF-8";
+article, aside, footer, header, hgroup, main, nav, section {display: block;}
 
 /* —————— Variables —————— */
 
@@ -65,10 +66,6 @@
     font-style: normal;
 }
 
-body {
-    color: var(--dark);
-    font-family: Qualion, sans-serif;
-}
 
 /* Hides `Bats'il Maya` and `Menu Principal` */
 h1, nav > h2 {
@@ -141,16 +138,26 @@ h4 {
     background: var(--red);
 }
 
-/* —————— Reset margin and padding —————— */
+/* —————— Reset and constants —————— */
 
 body {
     margin: 0;
     padding: 0;
+    color: var(--dark);
+    font-family: Qualion, sans-serif;
 }
 
 ul {
     margin: 0;
     padding: 0;
+}
+
+figure{
+    width: 100%;
+}
+
+img{
+    max-width: 100%;
 }
 
 /* —————— Header —————— */
@@ -197,13 +204,6 @@ header a {
     text-decoration: none;
 }
 
-.product figure{
-    margin: 0;
-    width: 100%;
-}
-.product figure img{
-    max-width: 100%;
-}
 /* —————— Dónde estamos y a dónde llegamos —————— */
 .bigmap {
     background-color: var(--dark);
@@ -242,8 +242,6 @@ header a {
     text-align: center;
     color:var(--light);
 }
-.map figure{margin:0;width: 100%;}
-.map figure img{max-width: 100%;}
 
 /* —————— certificados —————— */
 .certificate article figure {
