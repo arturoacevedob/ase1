@@ -188,14 +188,13 @@ header a {
     list-style: none;
 }
 
-.menu li {
+.container li {
     display: inline-block;
 }
 
 /* —————— Product —————— */
 .product, .certificate, .more {
     margin: 0;
-    padding: 6%;
     background-color: var(--light);
 }
 
