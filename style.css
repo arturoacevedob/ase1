@@ -189,14 +189,13 @@ header a {
     list-style: none;
 }
 
-.menu li {
+.container li {
     display: inline-block;
 }
 
 /* —————— Product —————— */
 .product, .certificate, .more {
     margin: 0;
-    padding: 6%;
     background-color: var(--light);
 }
 
@@ -269,16 +268,16 @@ header a {
 
 /* —————— form —————— */
 .llamada{
-    color: var(--light);
+    color: white;
     background-color: var(--green);
 }
 /* —————— footer —————— */
 .foot a {
-    color: var(--light);
+    color: white;
     text-decoration: none;
 }
 .bigfoot{
-    color: var(--light);
+    color: white;
     padding: 22px;
     font-size: 12px;
     background: url(images/footer/footer_granos_de_cafe_batsil_maya.jpg) 0 0%/100% no-repeat;
