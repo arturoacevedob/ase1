@@ -277,6 +277,9 @@ header a {
     padding: 6px;
     display: inline-block;
 }
+footer ulli:nth-child(3){
+    background: url(images/batsil_maya_logo.svg) 0 0%/auto no-repeat;
+}
 @media screen and (min-width: 640px){
     .bigfoot{
         padding: 44px;
