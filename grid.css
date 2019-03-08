@@ -6,6 +6,13 @@
     margin: 0px auto;
     padding: 0 8%;
 }
+.nave{
+    padding-top: 5px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-auto-rows: minmax(10px, auto);
+    grid-gap: 1%;
+}
 .gridbigproduct{
     display: grid;
     grid-template-columns: repeat(4,1fr);
