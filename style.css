@@ -37,9 +37,9 @@
     background: var(--light);
 }
 
-/*.dark-bg {
+.dark-bg {
     background: var(--dark);
-}*/
+}
 
 .active {
     color: var(--yellow);
@@ -51,8 +51,7 @@
     font-family: 'Qualion';
     src: url("fonts/Qualion Bold/Qualion-Bold.eot");
     src: url("fonts/Qualion Bold/Qualion-Bold.woff") format('woff'),
-    url("fonts/Qualion Bold/Qualion-Bold.ttf") format('truetype'),
-    url("fonts/Qualion Bold/Qualion-Bold.svg") format('svg');
+    url("fonts/Qualion Bold/Qualion-Bold.ttf") format('truetype');
     font-weight: 700;
     font-style: normal;
 }
@@ -61,8 +60,7 @@
     font-family: 'Qualion';
     src: url("fonts/Qualion/Qualion-Regular.eot");
     src: url("fonts/Qualion/Qualion-Regular.woff") format('woff'),
-    url("fonts/Qualion/Qualion-Regular.ttf") format('truetype'),
-    url("fonts/Qualion/Qualion-Regular.svg") format('svg');
+    url("fonts/Qualion/Qualion-Regular.ttf") format('truetype');
     font-weight: 400;
     font-style: normal;
 }
@@ -73,7 +71,7 @@ body {
 }
 
 /* Hides `Bats'il Maya` and `Menu Principal` */
-nav > h2 {
+h1, nav > h2 {
     display: none;
 }
 
@@ -95,13 +93,35 @@ h2 {
     text-transform: uppercase;
 }
 
-
 h4 {
     font-family: 'Qualion Bold', sans-serif;
 }
 
 .bold {
     font-weight: 700;
+}
+
+@media screen and (min-width: 1024px) {
+    h2 {
+        font-size: 40px;
+    }
+
+    .h2-header {
+        font-size: 65px;
+    }
+
+    .h2-small {
+        font-size: 16px;
+    }
+
+    h3 {
+        padding: 0;
+        font-size: 35px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
 }
 
 /* —————— Botones —————— */
@@ -134,14 +154,17 @@ ul {
 }
 
 /* —————— Header —————— */
-h1{
+h1 {
     margin-top: 0;
-    
+
 }
-header{
-    padding-bottom: 55px;
-    background:url(images/recursos_inicio/header_café_tseltal_solidario_trabajo_digno_bats\il_maya.jpg) 64% 0%/328% no-repeat
+
+header {
+    padding-bottom: 85px;
+    /*noinspection CssRedundantUnit,CssRedundantUnit*/
+    background: url(images/inicio/header_cafe_tseltal_solidario_trabajo_digno_batsil_maya.jpg) 0 0%/100% no-repeat;
 }
+
 header a {
     color: var(--light);
     text-decoration: none;
@@ -152,23 +175,18 @@ header a {
 .menu {
     list-style: none;
 }
+
 .menu li {
     display: inline-block;
 }
 
 /* —————— Product —————— */
-.product,.certificate,.more {
-    margin:0;
-    padding:6%;
+.product, .certificate, .more {
+    margin: 0;
+    padding: 6%;
     background-color: var(--light);
 }
-.product figure{
-    margin: 0%;
-    width: 100%;
-}
-.product figure img{
-    max-width: 100%;
-}
+
 .product .button {
     margin: 11px;
     color: var(--light);
@@ -176,55 +194,69 @@ header a {
 }
 
 /* —————— Dónde estamos y a dónde llegamos —————— */
-.bigmap {background-color: var(--dark); }
-.map{
+.bigmap {
+    background-color: var(--dark);
+}
+
+.map {
     display: grid;
-        grid-template-columns: repeat(1,1fr);
-        grid-auto-rows: minmax(100px, auto);
-        grid-gap: 1px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 1px;
 }
-.map h2{
-    font-size:14px;
-    grid-column: 1;
-        grid-row: 2;
+
+.map h2 {
+    color: var(--yellow);
+    text-align: center;
 }
-.map p{
+
+.map h3 {
+    max-width: 640px;
+    margin: 0 auto;
     grid-column: 1;
     grid-row: 1;
-}
-.map h2, .map strong{
+    color: var(--light);
+    font-size: 35px;
     text-align: center;
-    color:var(--yellow);
 }
-.map p{
+
+.map strong {
+    text-align: center;
+    color: var(--yellow);
+}
+
+.map article figure {
     margin: 0;
-    font-size: 22px;
-    text-align: center;
-    color:var(--light);
+    width: 100%;
 }
-.map article figure{margin:0;width: 100%;}
-.map article figure img{max-width: 100%;}
+
+.map article figure img {
+    max-width: 100%;
+}
 
 /* —————— certificados —————— */
-.certificate article figure{
+.certificate article figure {
     width: 100%;
     margin: 0;
 }
-.certificate article img{
+
+.certificate article img {
     max-width: 100%;
 }
 
 /* —————— gridthree2 —————— */
 
-.gridthree2{
+.gridthree2 {
     align-content: center;
     text-align: center;
 }
+
 .gridthree2 a {
     color: var(--light);
     text-decoration: none;
 }
+
 /* —————— footer —————— */
-.foot li{
+.foot li {
     display: inline-block;
 }
