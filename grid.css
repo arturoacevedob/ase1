@@ -21,9 +21,41 @@
     grid-row: 2;
 }
 .all{
-    align-content: right;
     grid-column: 4;
     grid-row: 1;
+}
+.our{
+    grid-column: 2;
+    grid-row: 3;
+}
+.process{
+    grid-column: 3;
+    grid-row: 3;
+}
+.indproduct{
+    display: grid;
+    grid-template-columns: auto 40%;
+    grid-auto-rows: minmax(10px, auto);
+    grid-gap: 1%;
+}
+.pname{
+    grid-column: 1;
+    grid-row: 2;
+}
+.price{
+    grid-column: 1;
+    grid-row: 1;
+}
+.pimage{
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+.pdescription{
+    grid-column: 1 / 3;
+    grid-row: 3;
+}
+.bigmap{
+    margin-top: 50px;
 }
 
 @media screen and (max-width: 639px){
