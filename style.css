@@ -198,12 +198,13 @@ header a {
 }
 .map p{
     margin: 0;
+    padding: 10% 0% 0% 0%;
     font-size: 22px;
     text-align: center;
     color:var(--light);
 }
-.map article figure{margin:0;width: 100%;}
-.map article figure img{max-width: 100%;}
+.map figure{margin:0;width: 100%;}
+.map figure img{max-width: 100%;}
 
 /* —————— certificados —————— */
 .certificate article figure{
