@@ -259,16 +259,16 @@ header a {
 
 /* —————— form —————— */
 .llamada{
-    color: var(--light);
+    color: white;
     background-color: var(--green);
 }
 /* —————— footer —————— */
 .foot a {
-    color: var(--light);
+    color: white;
     text-decoration: none;
 }
 .bigfoot{
-    color: var(--light);
+    color: white;
     padding: 22px;
     font-size: 12px;
     background: url(images/inicio/footer_background_granos_de_cafe.png) 0 0%/570% no-repeat;
