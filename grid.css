@@ -101,56 +101,6 @@ p{
     box-sizing: border-box;
     width: 150px;
 }
-/*from here*/
-:root {
-    --gutter: 20px;
-  }
-  
-.gridbigproduct {
-    padding: var(--gutter) 0;
-    display: grid;
-    grid-gap: var(--gutter) 0;
-    grid-template-columns: var(--gutter) 1fr var(--gutter);
-    align-content: start;
-  }
-  .gridbigproduct > * {
-    grid-column: 2 / -2;
-  }
-  
-  .gridbigproduct > .gridproduct {
-    grid-column: 1 / -1;
-  }
-  
-  .gridproduct {
-    display: grid;
-    grid-gap: calc(var(--gutter) / 2);
-    grid-template-columns: 10px;
-    grid-template-rows: minmax(150px, 1fr);
-    grid-auto-flow: column;
-    grid-auto-columns: calc(50% - var(--gutter) * 2);
-  
-    overflow-x: scroll;
-    scroll-snap-type: x proximity;
-    padding-bottom: calc(.75 * var(--gutter));
-    margin-bottom: calc(-.25 * var(--gutter));
-  }
-  
-  .gridproduct:before,
-  .gridproduct:after {
-    content: '';
-    width: 10px;
-  }
-  /*to here*/
-  /*
-.gridproduct{
-    overflow-x: auto;
-    overflow-y: hidden;
-    scroll-snap-type: x mandatory;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-auto-rows: minmax(100px, auto);
-    grid-gap: 20px;
-}*/
 .gridthree1{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -203,40 +153,6 @@ p{
         grid-auto-rows: minmax(10px, auto);
         grid-gap: 15px;
     }
-    .gridbigproduct{
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        grid-auto-rows: minmax(10px, auto);
-        grid-gap: 5%;
-    }
-    .producttitle{
-        grid-column: 1;
-        grid-row: 1;
-    }
-    .gridproduct{
-        grid-column: 1 / 5;
-        grid-row: 2;
-    }
-    .all{
-        grid-column: 2 / 5;
-        grid-row: 1;
-        align-content: right;
-        text-align: right;
-    }
-    .our{
-        grid-column: 2;
-        grid-row: 3;
-    }
-    .process{
-        grid-column: 3;
-        grid-row: 3;
-    }
-    .gridproduct{
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        grid-auto-rows: minmax(100px, auto);
-        grid-gap: 15px;
-    }
     .gridthree1{
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -277,7 +193,56 @@ p{
         grid-row: 2;
       }
   }
+
+  @media screen and (max-width: 767px){
+/*from here*/
+.gridbigproduct {
+    --gutter: 20px;
+  }
+  
+.gridbigproduct {
+    padding: var(--gutter) 0;
+    display: grid;
+    grid-gap: var(--gutter) 0;
+    grid-template-columns: var(--gutter) 1fr var(--gutter);
+    align-content: start;
+  }
+  .gridbigproduct > * {
+    grid-column: 2 / -2;
+  }
+  
+  .gridbigproduct > .gridproduct {
+    grid-column: 1 / -1;
+  }
+  
+  .gridproduct {
+    display: grid;
+    grid-gap: calc(var(--gutter) / 2);
+    grid-template-columns: 10px;
+    grid-template-rows: minmax(150px, 1fr);
+    grid-auto-flow: column;
+    grid-auto-columns: calc(50% - var(--gutter) * 2);
+  
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+    padding-bottom: calc(.75 * var(--gutter));
+    margin-bottom: calc(-.25 * var(--gutter));
+  }
+  
+  .gridproduct:before,
+  .gridproduct:after {
+    content: '';
+    width: 10px;
+  }
+  /*to here*/
+}
+
   @media screen and (min-width: 768px){
+    .product{
+        max-width: 1612px;
+        margin: 0px auto;
+        padding: 0 8%;
+    }
     .h2-subtitle {
         font-size: 17px;
     }
@@ -292,6 +257,32 @@ p{
         grid-template-columns: repeat(5,1fr);
         grid-auto-rows: minmax(10px, auto);
         grid-gap: 11px;
+    }
+    .gridbigproduct{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-auto-rows: minmax(10px, auto);
+        grid-gap: 5%;
+    }
+    .producttitle{
+        grid-column: 1 / 4;
+        grid-row: 1;
+    }
+    .gridproduct{
+        grid-column: 1 / 5;
+        grid-row: 2;
+    }
+    .all{
+        grid-column: 4;
+        grid-row: 1;
+    }
+    .our{
+        grid-column: 2;
+        grid-row: 3;
+    }
+    .process{
+        grid-column: 3;
+        grid-row: 3;
     }
     .gridproduct{
         display: grid;
