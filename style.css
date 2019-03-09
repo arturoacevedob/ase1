@@ -194,6 +194,11 @@ header a {
 }
 
 /* —————— Product —————— */
+.product{
+    position: relative;
+    padding-bottom: 35%;
+    border-radius: 0 0 85% 85%/30%;
+}
 .product, .certificate, .more {
     margin: 0;
     background-color: var(--light);
@@ -207,6 +212,7 @@ header a {
 
 /* —————— Dónde estamos y a dónde llegamos —————— */
 .bigmap {
+    margin: 0;
     background-color: var(--dark);
 }
 
@@ -254,6 +260,11 @@ header a {
     max-width: 100%; 
 }
 
+/* —————— Noticias —————— */
+.one{
+    background:url(images/noticias/conoce_nuevo_capeltic_universidad_iberoamericana_cdmx_batsil_maya.jpg) no-repeat top left;
+    background-size: cover;
+}
 /* —————— gridthree2 —————— */
 
 .gridthree2 {
