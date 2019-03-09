@@ -5,7 +5,7 @@ article, aside, footer, header, hgroup, main, nav, section {display: block;}
 
 :root {
     --red: #C24819;
-    --yellow: #EA9A07;
+    --yellow: #EBA00C;
     --green: #758A17;
     --light: #FFFEF5;
     --dark: #40290A;
@@ -29,20 +29,17 @@ article, aside, footer, header, hgroup, main, nav, section {display: block;}
 .light {
     color: var(--light);
 }
-
 .dark {
     color: var(--dark);
 }
-
 .light-bg {
     background: var(--light);
 }
-
 .dark-bg {
     background: var(--dark);
 }
 
-.active {
+.active, .yellow {
     color: var(--yellow);
 }
 
@@ -56,7 +53,6 @@ article, aside, footer, header, hgroup, main, nav, section {display: block;}
     font-weight: 700;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Qualion';
     src: url("fonts/Qualion/Qualion-Regular.eot");
@@ -73,28 +69,25 @@ body {
     padding: 0;
     color: var(--dark);
     font-family: Qualion, sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
 }
-
 ul {
     margin: 0;
     padding: 0;
 }
-
 figure {
     margin: 0;
     width: 100%;
 }
-
 img {
     max-width: 100%;
 }
-
 a {
     width: 100%;
     height: 100%;
     text-decoration: none;
 }
-
 
 /* Hides `Bats'il Maya` and `Menu Principal` */
 h1, nav > h2 {
@@ -109,25 +102,30 @@ h2, h3, h4 {
     font-family: 'Qualion', sans-serif;
     font-weight: 700;
 }
-
 .h2-header, .h2-subtitle {
     color: var(--light);
+    font-weight: 700;
 }
 .h2-small {
     text-transform: uppercase;
 }
-
 p {
     margin: 0;
     font-size: 15px;
     line-height: 1.4em;
 }
-
 .link {
     color: var(--red);
     font-weight: 700;
 }
 
+.right-aligned {
+    text-align: right;
+}
+
+.center-aligned {
+    text-align: center;
+}
 .link:hover {
     text-decoration: underline;
 }
@@ -139,7 +137,6 @@ p {
     .h2-header {
         font-size: 65px;
     }
-
     .h2-subtitle {
         padding: 1em 0;
         font-size: 25px;
@@ -147,13 +144,54 @@ p {
     .h2-small {
         font-size: 16px;
     }
-    h3 {
+
+    h3, .h3-big {
         font-size: 35px;
+        line-height: 1.2em;
+        font-weight: 700;
+    }
+    .h3-small {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    .p-big {
+        font-size: 22px;
+    }
+    .p-small {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    h2 {
+        font-size: 40px;
+    }
+
+    .h2-header {
+        font-size: 50px;
+    }
+
+    .h2-subtitle {
+        padding: 1em 0;
+        font-size: 25px;
+    }
+
+    .h2-small {
+        font-size: 16px;
+    }
+
+    h3, .h3-big {
+        font-size: 35px;
+        line-height: 1.2em;
+        font-weight: 700;
     }
 
     .h3-small {
         font-size: 20px;
     }
+
     h4 {
         font-size: 20px;
     }
@@ -171,25 +209,36 @@ p {
     h2 {
         font-size: 40px;
     }
-
     .h2-header {
-        font-size: 45px;
+        font-size: 40px;
     }
 
+    .h2-subtitle {
+        padding: 1em 0;
+        font-size: 25px;
+    }
     .h2-small {
         font-size: 16px;
     }
 
-    h3 {
+    h3, .h3-big {
         font-size: 35px;
+        line-height: 1.2em;
+        font-weight: 700;
     }
-
     .h3-small {
         font-size: 20px;
     }
-
     h4 {
         font-size: 20px;
+    }
+
+    .p-big {
+        font-size: 22px;
+    }
+
+    .p-small {
+        font-size: 12px;
     }
 }
 
@@ -199,18 +248,17 @@ p {
     width: max-content;
     padding: var(--padding);
     display: inline-block;
+    color: var(--light);
     text-align: center;
     font-weight: 700;
     border-radius: var(--border-radius);
     cursor: pointer;
 }
-
 .button.outline {
     padding: calc(var(--padding) - 0.20rem);
     background: transparent;
     border: 3px solid var(--light);
 }
-
 .button.red {
     background: var(--red);
 }
@@ -221,10 +269,9 @@ h1 {
 }
 
 header {
-    padding-bottom: 250px;
-    /*noinspection CssRedundantUnit,CssRedundantUnit*/
-    background:  url(images/fade/header_fade_light_batsil_maya.png)0% 100%/182% no-repeat,
-                 url(images/inicio/header_café_tseltal_solidario_trabajo_digno_batsil_maya.jpg) 61% 0%/289% no-repeat
+    padding-bottom: 10vmax;
+    background: url(images/fade/header_fade_light_batsil_maya.png) 0% 100%/ contain repeat-x,
+    url(images/inicio/header_café_tseltal_solidario_trabajo_digno_batsil_maya.jpg) 61% 0% / cover no-repeat;
 }
 
 header a {
@@ -237,70 +284,34 @@ header a {
 }
 
 /* —————— Nav —————— */
-
-.menu {
-    list-style: none;
-}
-
 .container li {
     display: inline-block;
 }
 
 /* —————— Product —————— */
 
-.product{
-    padding-bottom: 8%;
-    border-radius: 0 0 129% 129%/15%;
-}
-.product, .certificate, .more {
-    margin: 0;
-    background-color: var(--light);
-}
-
-.product .button {
-    margin: 11px;
-    color: var(--light);
-    text-decoration: none;
+.product {
+    padding-bottom: 12vmax;
+    border-radius: 0 0 130% 130% / 15%;
 }
 
 /* —————— Dónde estamos y a dónde llegamos —————— */
-.bigmap {
-    margin: 0;
-    background-color: var(--dark);
-}
 
-.map {
+.map article {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    grid-gap: 1px;
+}
+.map p {
+    max-width: 700px;
+    margin: 0 auto;
+    grid-row: 1;
 }
 
 .map h2 {
+    margin: 2em 0;
+}
+
+.map span {
     color: var(--yellow);
-    text-align: center;
-}
-
-.map p {
-    grid-column: 1;
-    grid-row: 1;
-    color: var(--light);
-    font-size: 28px;
-    font-weight: 700;
-    text-align: center;
-}
-
-.map strong {
-    text-align: center;
-    color: var(--yellow);
-}
-
-.map article figure {
-    margin: 0;
-    padding: 10% 0% 0% 0%;
-    font-size: 22px;
-    text-align: center;
-    color:var(--light);
 }
 
 /* —————— certificados —————— */
@@ -332,31 +343,32 @@ header a {
 
 /* —————— form —————— */
 .llamada{
-    color: white;
+    color: #ffffff;
     background-color: var(--green);
 }
 /* —————— footer —————— */
 .foot a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
 }
 .bigfoot{
-    color: white;
+    color: #ffffff;
     padding: 22px;
     font-size: 12px;
-    background: url(images/footer/footer_granos_de_cafe_batsil_maya.jpg) 0 0%/100% no-repeat;
+    background: url(images/footer/footer_granos_de_cafe_batsil_maya.jpg) 0 0 / 100% no-repeat;
 }
 .foot li {
     padding: 6px;
     display: inline-block;
 }
-footer ulli:nth-child(3){
-    background: url(images/batsil_maya_logo.svg) 0 0%/auto no-repeat;
+
+footer ul li:nth-child(3) {
+    background: url(images/logos/batsil_maya_logo.svg) 0 0 / auto no-repeat;
 }
 @media screen and (min-width: 640px){
     .bigfoot{
         padding: 44px;
         font-size: 18px;
-        background: url(images/inicio/footer_background_granos_de_cafe.png) 0 0%/250% no-repeat;
+        background: url(images/inicio/footer_background_granos_de_cafe.png) 0 0 / 250% no-repeat;
     }
 }
