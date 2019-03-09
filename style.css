@@ -292,7 +292,7 @@ header a {
 
 .product {
     padding-bottom: 12vmax;
-    border-radius: 0 0 130% 130% / 15%;
+    border-radius: 0 0 130% 130% / 10%;
 }
 
 /* —————— Dónde estamos y a dónde llegamos —————— */
