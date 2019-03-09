@@ -194,10 +194,10 @@ header a {
 }
 
 /* —————— Product —————— */
+
 .product{
-    position: relative;
     padding-bottom: 35%;
-    border-radius: 0 0 85% 85%/30%;
+    border-radius: 0 0 129% 129%/15%;
 }
 .product, .certificate, .more {
     margin: 0;
