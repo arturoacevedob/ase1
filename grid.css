@@ -48,29 +48,6 @@
 }
 
 @media screen and (max-width: 639px){
-.h2-header {
-    font-size: 40px;
-}
-
-.h2-subtitle {
-    padding-bottom: 40px;
-    font-size: 15px;
-}
-
-h2 {
-    font-size: 25px;
-}
-
-.h2-small {
-    font-size: 15px;
-}
-
-h4 {
-    font-size: 75px;
-}
-p{
-    font-size: 12px;
-}
 .gridh ul{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -129,17 +106,6 @@ p{
 }
 }
   @media screen and (min-width: 640px){
-    
-    .h2-subtitle {
-        font-size: 18px;
-    }
-    
-    .h2-small {
-        font-size: 17px;
-    }
-    p{
-        font-size: 15px;
-    }
     .gridh ul{
         display: grid;
         grid-template-columns: repeat(3,1fr);
@@ -236,15 +202,6 @@ p{
         margin: 0px auto;
         padding: 0 8%;
     }
-    .h2-subtitle {
-        font-size: 17px;
-    }
-    .h2-small {
-        font-size: 17px;
-    }
-    p{
-        font-size: 14px;
-    }
     .gridh ul{
         display: grid;
         grid-template-columns: repeat(5,1fr);
@@ -301,27 +258,7 @@ p{
     }
   }
   @media screen and (min-width: 1024px){
-    .h2-header {
-        font-size: 65px;
-    }
-
-    .h2-subtitle {
-        font-size: 25px;
-    }
-    
-    h2 {
-        font-size: 40px;
-    }
-    
-    .h2-small {
-        font-size: 15px;
-    }
-    
-    h4 {
-        font-size: 90px;
-    }
-
-    .gridh ul{
+      .gridh ul {
         display: grid;
         grid-template-columns: repeat(9,1fr);
         grid-auto-rows: minmax(10px, auto);
