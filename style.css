@@ -1,5 +1,7 @@
 @charset "UTF-8";
-article, aside, footer, header, hgroup, main, nav, section {display: block;}
+article, aside, footer, header, hgroup, main, nav, section {
+    display: block;
+}
 
 /* —————— Variables —————— */
 
@@ -29,12 +31,15 @@ article, aside, footer, header, hgroup, main, nav, section {display: block;}
 .light {
     color: var(--light);
 }
+
 .dark {
     color: var(--dark);
 }
+
 .light-bg {
     background: var(--light);
 }
+
 .dark-bg {
     background: var(--dark);
 }
@@ -53,6 +58,7 @@ article, aside, footer, header, hgroup, main, nav, section {display: block;}
     font-weight: 700;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Qualion';
     src: url("fonts/Qualion/Qualion-Regular.eot");
@@ -72,17 +78,21 @@ body {
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
 }
+
 ul {
     margin: 0;
     padding: 0;
 }
+
 figure {
     margin: 0;
     width: 100%;
 }
+
 img {
     max-width: 100%;
 }
+
 a {
     width: 100%;
     height: 100%;
@@ -102,18 +112,22 @@ h2, h3, h4 {
     font-family: 'Qualion', sans-serif;
     font-weight: 700;
 }
+
 .h2-header, .h2-subtitle {
     color: var(--light);
     font-weight: 700;
 }
+
 .h2-small {
     text-transform: uppercase;
 }
+
 p {
     margin: 0;
     font-size: 15px;
     line-height: 1.4em;
 }
+
 .link {
     color: var(--red);
     font-weight: 700;
@@ -126,6 +140,7 @@ p {
 .center-aligned {
     text-align: center;
 }
+
 .link:hover {
     text-decoration: underline;
 }
@@ -134,13 +149,16 @@ p {
     h2 {
         font-size: 40px;
     }
+
     .h2-header {
         font-size: 65px;
     }
+
     .h2-subtitle {
         padding: 1em 0;
         font-size: 25px;
     }
+
     .h2-small {
         font-size: 16px;
     }
@@ -150,15 +168,19 @@ p {
         line-height: 1.2em;
         font-weight: 700;
     }
+
     .h3-small {
         font-size: 20px;
     }
+
     h4 {
         font-size: 20px;
     }
+
     .p-big {
         font-size: 22px;
     }
+
     .p-small {
         font-size: 12px;
     }
@@ -209,6 +231,7 @@ p {
     h2 {
         font-size: 40px;
     }
+
     .h2-header {
         font-size: 40px;
     }
@@ -217,6 +240,7 @@ p {
         padding: 1em 0;
         font-size: 25px;
     }
+
     .h2-small {
         font-size: 16px;
     }
@@ -226,9 +250,11 @@ p {
         line-height: 1.2em;
         font-weight: 700;
     }
+
     .h3-small {
         font-size: 20px;
     }
+
     h4 {
         font-size: 20px;
     }
@@ -254,11 +280,13 @@ p {
     border-radius: var(--border-radius);
     cursor: pointer;
 }
+
 .button.outline {
     padding: calc(var(--padding) - 0.20rem);
     background: transparent;
     border: 3px solid var(--light);
 }
+
 .button.red {
     background: var(--red);
 }
@@ -270,8 +298,8 @@ h1 {
 
 header {
     padding-bottom: 10vmax;
-    background: url(images/fade/header_fade_light_batsil_maya.png) 0% 100%/ contain repeat-x,
-    url(images/inicio/header_café_tseltal_solidario_trabajo_digno_batsil_maya.jpg) 61% 0% / cover no-repeat;
+    background: url(images/fade/header_fade_light_batsil_maya.png) 0 100% / contain repeat-x,
+    url(images/inicio/header_café_tseltal_solidario_trabajo_digno_batsil_maya.jpg) 61% 0 / cover no-repeat;
 }
 
 header a {
@@ -300,6 +328,7 @@ header a {
 .map article {
     display: grid;
 }
+
 .map p {
     max-width: 700px;
     margin: 0 auto;
@@ -321,14 +350,15 @@ header a {
 }
 
 .certificate article img {
-    max-width: 100%; 
+    max-width: 100%;
 }
 
 /* —————— Noticias —————— */
-.one{
-    background:url(images/noticias/conoce_nuevo_capeltic_universidad_iberoamericana_cdmx_batsil_maya.jpg) no-repeat top left;
+.one {
+    background: url(images/noticias/conoce_nuevo_capeltic_universidad_iberoamericana_cdmx_batsil_maya.jpg) no-repeat top left;
     background-size: cover;
 }
+
 /* —————— gridthree2 —————— */
 
 .gridthree2 {
@@ -342,28 +372,31 @@ header a {
 }
 
 /* —————— form —————— */
-.llamada{
+.llamada {
     color: #ffffff;
     background-color: var(--green);
 }
+
 /* —————— footer —————— */
 .foot a {
     color: #ffffff;
     text-decoration: none;
 }
-.bigfoot{
+
+.bigfoot {
     color: #ffffff;
     padding: 22px;
     font-size: 12px;
     background: url(images/footer/footer_granos_de_cafe_batsil_maya.jpg) 0 0 / 100% no-repeat;
 }
+
 .foot li {
     padding: 6px;
     display: inline-block;
 }
 
-@media screen and (min-width: 640px){
-    .bigfoot{
+@media screen and (min-width: 640px) {
+    .bigfoot {
         padding: 44px;
         font-size: 18px;
         background: url(images/inicio/footer_background_granos_de_cafe.png) 0 0 / 250% no-repeat;
