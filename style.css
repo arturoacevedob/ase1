@@ -15,15 +15,52 @@ article, aside, footer, header, hgroup, main, nav, section {
     --a-link: var(--light);
     --a-visited: #cccbc6;
     --a-hover: #EA9A07;
-    --a-active: #FFAE0D;
+    --a-active: #ffb133;
 
     --button-link: var(--red);
     --button-visited: #CC6A14;
     --button-hover: #EBA00C;
     --button-active: #FFAE0D;
 
-    --padding: 0.7rem;
+    --button-padding: 0.7rem;
     --border-radius: 1.4rem;
+    --time: 0.2s;
+    --ease: ease-out;
+}
+
+/* —————— Reset and constants —————— */
+
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--dark);
+    font-family: Qualion, sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure {
+    margin: 0;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.logo img {
+    height: 75px;
+}
+
+/* Hides `Bats'il Maya` and `Menu Principal` */
+h1, nav > h2 {
+    display: none;
 }
 
 /* —————— Color Classes —————— */
@@ -37,18 +74,26 @@ article, aside, footer, header, hgroup, main, nav, section {
 }
 
 .light-bg {
-    background: var(--light);
+    background-color: var(--light);
 }
 
 .dark-bg {
-    background: var(--dark);
+    background-color: var(--dark);
 }
 
-.active, .yellow {
+.green-bg {
+    background-color: var(--green);
+}
+
+.nav .active {
+    border-bottom: 3px solid var(--a-hover);
+}
+
+.yellow {
     color: var(--yellow);
 }
 
-/* —————— Typography —————— */
+/* —————— Font Import—————— */
 
 @font-face {
     font-family: 'Qualion';
@@ -66,42 +111,6 @@ article, aside, footer, header, hgroup, main, nav, section {
     url("fonts/Qualion/Qualion-Regular.ttf") format('truetype');
     font-weight: 400;
     font-style: normal;
-}
-
-/* —————— Reset and constants —————— */
-
-body {
-    margin: 0;
-    padding: 0;
-    color: var(--dark);
-    font-family: Qualion, sans-serif;
-    font-weight: 400;
-    -webkit-font-smoothing: antialiased;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-}
-
-figure {
-    margin: 0;
-    width: 100%;
-}
-
-img {
-    max-width: 100%;
-}
-
-a {
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-}
-
-/* Hides `Bats'il Maya` and `Menu Principal` */
-h1, nav > h2 {
-    display: none;
 }
 
 /* —————— Typography —————— */
@@ -141,16 +150,181 @@ p {
     text-align: center;
 }
 
+<<<<<<< HEAD
 .link:hover {
     text-decoration: underline;
 }
 
+=======
+@media screen and (min-width: 1024px) {
+    h2 {
+        font-size: 40px;
+    }
+
+    .h2-header {
+        font-size: 65px;
+    }
+
+    .h2-subtitle {
+        padding: 1em 0;
+        font-size: 25px;
+    }
+
+    .h2-small {
+        font-size: 16px;
+    }
+
+    h3, .h3-big {
+        font-size: 35px;
+        line-height: 1.2em;
+        font-weight: 700;
+    }
+
+    .h3-small {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    .p-big {
+        font-size: 22px;
+    }
+
+    .p-small {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    h2 {
+        font-size: 40px;
+    }
+
+    .h2-header {
+        font-size: 50px;
+    }
+
+    .h2-subtitle {
+        padding: 1em 0;
+        font-size: 25px;
+    }
+
+    .h2-small {
+        font-size: 16px;
+    }
+
+    h3, .h3-big {
+        font-size: 35px;
+        line-height: 1.2em;
+        font-weight: 700;
+    }
+
+    .h3-small {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    .p-big {
+        font-size: 22px;
+    }
+
+    .p-small {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    h2 {
+        font-size: 40px;
+    }
+
+    .h2-header {
+        font-size: 40px;
+    }
+
+    .h2-subtitle {
+        padding: 1em 0;
+        font-size: 25px;
+    }
+
+    .h2-small {
+        font-size: 16px;
+    }
+
+    h3, .h3-big {
+        font-size: 35px;
+        line-height: 1.2em;
+        font-weight: 700;
+    }
+
+    .h3-small {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    .p-big {
+        font-size: 22px;
+    }
+
+    .p-small {
+        font-size: 12px;
+    }
+}
+>>>>>>> 969c806e69e2a56a1a0dc60c64c98535b362c813
+
+/* —————— General Links —————— */
+
+a:link {
+    color: var(--yellow);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--a-hover);
+    text-decoration: underline;
+    text-decoration-color: var(--a-hover);
+}
+
+a:active {
+    color: var(--a-active);
+}
+
+/*a:visited {
+    color: var(--a-visited);
+}*/
+
+/* —————— Nav Links —————— */
+
+.nav a {
+    color: var(--a-link);
+    border-bottom: 0 solid var(--a-hover);
+    transition: border-bottom-width var(--time) var(--ease);
+}
+
+.nav a:hover {
+    color: var(--a-link);
+    text-decoration: none;
+    border-bottom: 3px solid var(--a-hover);
+    transition: border-bottom-width var(--time) var(--ease);
+}
+
+. nav a:active {
+    color: var(--a-hover);
+}
 
 /* —————— Botones —————— */
 
 .button {
     width: max-content;
-    padding: var(--padding);
+    padding: var(--button-padding);
     display: inline-block;
     color: var(--light);
     text-align: center;
@@ -159,20 +333,68 @@ p {
     cursor: pointer;
 }
 
+.button:hover > a {
+    color: var(--a-link);
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.button:active > a {
+    color: var(--a-link);
+}
+
 .button.outline {
-    padding: calc(var(--padding) - 0.20rem);
-    background: transparent;
-    border: 3px solid var(--light);
+    padding: calc(var(--button-padding) - 0.20rem);
+    background-color: transparent;
+    border: 3px solid var(--a-link);
+    transition: border var(--time) var(--ease);
+}
+
+.button.outline a {
+    color: var(--a-link);
+    transition: color var(--time) var(--ease);
+}
+
+.button.outline:hover {
+    color: var(--button-hover);
+    border-color: var(--button-hover);
+    transition: border var(--time) var(--ease);
+}
+
+.button.outline:hover > a {
+    color: var(--button-hover);
+    border-bottom: none;
+    transition: color var(--time) var(--ease);
+}
+
+.button.outline:active {
+    color: var(--button-active);
+    border-color: var(--button-active);
+}
+
+.button.outline:active > a {
+    color: var(--button-active);
+    border-bottom: none;
 }
 
 .button.red {
-    background: var(--red);
+    color: var(--a-link);
+    background-color: var(--button-link);
+    transition: background-color var(--time) var(--ease);
+}
+
+.button.red:hover {
+    text-decoration: none;
+    background-color: var(--button-hover);
+    border-bottom: none;
+    transition: background-color var(--time) var(--ease);
+}
+
+.button.red:active {
+    background-color: var(--button-active);
 }
 
 /* —————— Header —————— */
-h1 {
-    margin-top: 0;
-}
 
 header {
     padding-bottom: 10vmax;
@@ -187,18 +409,6 @@ header a {
 header a {
     color: var(--light);
     text-decoration: none;
-}
-
-/* —————— Nav —————— */
-.container li {
-    display: inline-block;
-}
-
-/* —————— Product —————— */
-
-.product {
-    padding-bottom: 12vmax;
-    border-radius: 0 0 130% 130% / 10%;
 }
 
 /* —————— Dónde estamos y a dónde llegamos —————— */
@@ -258,26 +468,16 @@ header a {
     text-decoration: none;
 }
 
-/* —————— form —————— */
-.llamada {
-    color: #ffffff;
-    background-color: var(--green);
-}
 
 /* —————— footer —————— */
-.foot a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
 .bigfoot {
     color: #ffffff;
     padding: 22px;
     font-size: 12px;
-    background: url(images/footer/footer_granos_de_cafe_batsil_maya.jpg) 0 0 / 100% no-repeat;
+    background: url(images/footer/footer_mobile_granos_de_cafe_batsil_maya.jpg) 50% 50% / cover no-repeat;
 }
 
-.foot li {
+.footer li {
     padding: 6px;
     display: inline-block;
 }
@@ -361,7 +561,8 @@ header a {
     .bigfoot{
         padding: 44px;
         font-size: 18px;
-        background: url(images/inicio/footer_background_granos_de_cafe.png) 0 0 / 250% no-repeat;
+        background: url(images/footer/footer_granos_de_cafe_batsil_maya.jpg
+        ) 0 0 / cover no-repeat;
     }
 }
 @media screen and (min-width: 1024px) {
