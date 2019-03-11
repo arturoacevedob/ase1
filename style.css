@@ -130,117 +130,7 @@ p {
     text-decoration: underline;
 }
 
-@media screen and (min-width: 1024px) {
-    h2 {
-        font-size: 40px;
-    }
-    .h2-header {
-        font-size: 65px;
-    }
-    .h2-subtitle {
-        padding: 1em 0;
-        font-size: 25px;
-    }
-    .h2-small {
-        font-size: 16px;
-    }
 
-    h3, .h3-big {
-        font-size: 35px;
-        line-height: 1.2em;
-        font-weight: 700;
-    }
-    .h3-small {
-        font-size: 20px;
-    }
-    h4 {
-        font-size: 20px;
-    }
-    .p-big {
-        font-size: 22px;
-    }
-    .p-small {
-        font-size: 12px;
-    }
-}
-
-@media screen and (min-width: 640px) {
-    h2 {
-        font-size: 40px;
-    }
-
-    .h2-header {
-        font-size: 50px;
-    }
-
-    .h2-subtitle {
-        padding: 1em 0;
-        font-size: 25px;
-    }
-
-    .h2-small {
-        font-size: 16px;
-    }
-
-    h3, .h3-big {
-        font-size: 35px;
-        line-height: 1.2em;
-        font-weight: 700;
-    }
-
-    .h3-small {
-        font-size: 20px;
-    }
-
-    h4 {
-        font-size: 20px;
-    }
-
-    .p-big {
-        font-size: 22px;
-    }
-
-    .p-small {
-        font-size: 12px;
-    }
-}
-
-@media screen and (max-width: 639px) {
-    h2 {
-        font-size: 40px;
-    }
-    .h2-header {
-        font-size: 40px;
-    }
-
-    .h2-subtitle {
-        padding: 1em 0;
-        font-size: 25px;
-    }
-    .h2-small {
-        font-size: 16px;
-    }
-
-    h3, .h3-big {
-        font-size: 35px;
-        line-height: 1.2em;
-        font-weight: 700;
-    }
-    .h3-small {
-        font-size: 20px;
-    }
-    h4 {
-        font-size: 20px;
-    }
-
-    .p-big {
-        font-size: 22px;
-    }
-
-    .p-small {
-        font-size: 12px;
-    }
-}
 
 /* —————— Botones —————— */
 
@@ -314,6 +204,11 @@ header a {
     color: var(--yellow);
 }
 
+/* —————— Nuestros clientes —————— */
+.gridthree1 article h3{
+    display: none;
+}
+
 /* —————— certificados —————— */
 .certificate article figure {
     width: 100%;
@@ -325,7 +220,11 @@ header a {
 }
 
 /* —————— Noticias —————— */
+.gridnews article h3{
+    color: var(--light);
+}
 .one{
+    padding: 91% 0 0 2%;
     background:url(images/noticias/conoce_nuevo_capeltic_universidad_iberoamericana_cdmx_batsil_maya.jpg) no-repeat top left;
     background-size: cover;
 }
@@ -362,10 +261,119 @@ header a {
     display: inline-block;
 }
 
-@media screen and (min-width: 640px){
+
+@media screen and (max-width: 639px) {
+    h2 {
+        font-size: 40px;
+    }
+    .h2-header {
+        font-size: 40px;
+    }
+
+    .h2-subtitle {
+        padding: 1em 0;
+        font-size: 25px;
+    }
+    .h2-small {
+        font-size: 16px;
+    }
+
+    h3, .h3-big {
+        font-size: 35px;
+        line-height: 1.2em;
+        font-weight: 700;
+    }
+    .h3-small {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+
+    .p-big {
+        font-size: 22px;
+    }
+
+    .p-small {
+        font-size: 12px;
+    }
+}
+@media screen and (min-width: 640px) {
+    h2 {
+        font-size: 40px;
+    }
+
+    .h2-header {
+        font-size: 50px;
+    }
+
+    .h2-subtitle {
+        padding: 1em 0;
+        font-size: 25px;
+    }
+
+    .h2-small {
+        font-size: 16px;
+    }
+
+    h3, .h3-big {
+        font-size: 35px;
+        line-height: 1.2em;
+        font-weight: 700;
+    }
+
+    .h3-small {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    .p-big {
+        font-size: 22px;
+    }
+
+    .p-small {
+        font-size: 12px;
+    }
     .bigfoot{
         padding: 44px;
         font-size: 18px;
         background: url(images/inicio/footer_background_granos_de_cafe.png) 0 0 / 250% no-repeat;
     }
 }
+@media screen and (min-width: 1024px) {
+    h2 {
+        font-size: 40px;
+    }
+    .h2-header {
+        font-size: 65px;
+    }
+    .h2-subtitle {
+        padding: 1em 0;
+        font-size: 25px;
+    }
+    .h2-small {
+        font-size: 16px;
+    }
+
+    h3, .h3-big {
+        font-size: 35px;
+        line-height: 1.2em;
+        font-weight: 700;
+    }
+    .h3-small {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    .p-big {
+        font-size: 22px;
+    }
+    .p-small {
+        font-size: 12px;
+    }
+}
+
