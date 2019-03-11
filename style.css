@@ -150,135 +150,10 @@ p {
     text-align: center;
 }
 
-<<<<<<< HEAD
 .link:hover {
     text-decoration: underline;
 }
 
-=======
-@media screen and (min-width: 1024px) {
-    h2 {
-        font-size: 40px;
-    }
-
-    .h2-header {
-        font-size: 65px;
-    }
-
-    .h2-subtitle {
-        padding: 1em 0;
-        font-size: 25px;
-    }
-
-    .h2-small {
-        font-size: 16px;
-    }
-
-    h3, .h3-big {
-        font-size: 35px;
-        line-height: 1.2em;
-        font-weight: 700;
-    }
-
-    .h3-small {
-        font-size: 20px;
-    }
-
-    h4 {
-        font-size: 20px;
-    }
-
-    .p-big {
-        font-size: 22px;
-    }
-
-    .p-small {
-        font-size: 12px;
-    }
-}
-
-@media screen and (min-width: 640px) {
-    h2 {
-        font-size: 40px;
-    }
-
-    .h2-header {
-        font-size: 50px;
-    }
-
-    .h2-subtitle {
-        padding: 1em 0;
-        font-size: 25px;
-    }
-
-    .h2-small {
-        font-size: 16px;
-    }
-
-    h3, .h3-big {
-        font-size: 35px;
-        line-height: 1.2em;
-        font-weight: 700;
-    }
-
-    .h3-small {
-        font-size: 20px;
-    }
-
-    h4 {
-        font-size: 20px;
-    }
-
-    .p-big {
-        font-size: 22px;
-    }
-
-    .p-small {
-        font-size: 12px;
-    }
-}
-
-@media screen and (max-width: 639px) {
-    h2 {
-        font-size: 40px;
-    }
-
-    .h2-header {
-        font-size: 40px;
-    }
-
-    .h2-subtitle {
-        padding: 1em 0;
-        font-size: 25px;
-    }
-
-    .h2-small {
-        font-size: 16px;
-    }
-
-    h3, .h3-big {
-        font-size: 35px;
-        line-height: 1.2em;
-        font-weight: 700;
-    }
-
-    .h3-small {
-        font-size: 20px;
-    }
-
-    h4 {
-        font-size: 20px;
-    }
-
-    .p-big {
-        font-size: 22px;
-    }
-
-    .p-small {
-        font-size: 12px;
-    }
-}
->>>>>>> 969c806e69e2a56a1a0dc60c64c98535b362c813
 
 /* —————— General Links —————— */
 
@@ -316,7 +191,7 @@ a:active {
     transition: border-bottom-width var(--time) var(--ease);
 }
 
-. nav a:active {
+.nav a:active {
     color: var(--a-hover);
 }
 
