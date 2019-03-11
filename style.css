@@ -325,11 +325,16 @@ header a {
 .gridnews article h3{
     color: var(--light);
 }
-.two{
+.one{
     padding: 91% 0 0 2%;
     background:url(images/noticias/conoce_nuevo_capeltic_universidad_iberoamericana_cdmx_batsil_maya.jpg) no-repeat top left;
     background-size: cover;
 }
+.two{
+    background: url(images/noticias/noticia2.jpg) no-repeat top left;
+    background-size: cover;
+}
+
 
 /* —————— gridthree2 —————— */
 
