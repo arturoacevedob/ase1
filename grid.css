@@ -107,6 +107,7 @@ nav > ul {
 
     .gridproduct {
         grid-row: 2;
+        grid-gap: calc(var(--gutter) / .2);
     }
 
     .h2-link {
@@ -155,7 +156,9 @@ nav > ul {
 }
 
 @media screen and (min-width: 640px) {
-
+    .gridproduct{
+        grid-gap: calc(var(--gutter) / 1);
+    }
     .gridthree1 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -206,7 +209,7 @@ nav > ul {
 
 @media screen and (max-width: 767px) {
     /*from here*/
-    .gridbigproduct {
+    :root {
         --gutter: 3%;
     }
 
@@ -227,8 +230,9 @@ nav > ul {
     }
 
     .gridproduct {
+        overflow-y: hidden;
+        margin-bottom: calc(-.1 * var(--gutter));
         display: grid;
-        grid-gap: calc(var(--gutter) / 2);
         grid-template-columns: 10px;
         grid-template-rows: auto;
         grid-auto-flow: column;
@@ -245,7 +249,7 @@ nav > ul {
         content: '';
         width: 10px;
     }
-
+      
     /*to here*/
 }
 
