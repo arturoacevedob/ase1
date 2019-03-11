@@ -6,8 +6,28 @@
   <component name="ChangeListManager">
     <list default="true" id="2b0b4be1-8d7c-4364-8440-568a85826da6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/clients/logo_cliente_a&amp;w_batsil_maya.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/clients/logo_cliente_a&amp;w_batsil_maya.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/clients/logo_cliente_bard_batsil_maya.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/clients/logo_cliente_bard_batsil_maya.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/clients/logo_cliente_benetton_batsil_maya.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/clients/logo_cliente_benetton_batsil_maya.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/clients/logo_cliente_capeltic_batsil_maya.png.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/clients/logo_cliente_capeltic_batsil_maya.png.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/clients/logo_cliente_gt_all_terra_batsil_maya.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/clients/logo_cliente_gt_all_terra_batsil_maya.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/clients/logo_cliente_w_hotels_batsil_maya.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/clients/logo_cliente_w_hotels_batsil_maya.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/fade/header_fade_blanco_batsil_maya.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/fade/header_fade_blanco_batsil_maya.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/fade/header_fade_cafe_batsil_maya.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/fade/header_fade_cafe_batsil_maya.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/fade/header_fade_light_batsil_maya.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/fade/header_fade_light_batsil_maya.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/footer/footer_granos_de_cafe_batsil_maya.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/footer/footer_granos_de_cafe_batsil_maya.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/inicio/footer_background_granos_de_cafe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/inicio/header_café_tseltal_solidario_trabajo_digno_batsil_maya.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/inicio/header_café_tseltal_solidario_trabajo_digno_batsil_maya.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/inicio/mapa_mundi_donde_estamos_donde_llegamos_batsil_maya.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/inicio/mapa_mundi_donde_estamos_donde_llegamos_batsil_maya.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/login/background-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/login/background-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/login/background-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/login/background-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/logos/batsil_maya_logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/logos/batsil_maya_logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/noticias/conoce_nuevo_capeltic_universidad_iberoamericana_cdmx_batsil_maya.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/noticias/conoce_nuevo_capeltic_universidad_iberoamericana_cdmx_batsil_maya.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/productos/cafe/granos_de_café_descafeinado_batsil_maya.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/productos/cafe/granos_de_café_gourmet_organico_batsil_maya.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/productos/cafe/granos_de_café_organico_batsil_maya.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/productos/cafe/granos_de_café_premium_orgágnico_batsil_maya.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,19 +39,19 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.25928918">
+    <splitter split-orientation="horizontal" split-proportion="0.47738287">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="147">
-                  <caret line="209" column="13" selection-start-line="209" selection-start-column="13" selection-end-line="209" selection-end-column="13" />
+                <state relative-caret-position="150">
+                  <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/nosotros.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="189">
@@ -52,8 +72,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/grid.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="147">
-                  <caret line="35" selection-start-line="35" selection-end-line="35" />
+                <state relative-caret-position="180">
+                  <caret line="12" selection-start-line="12" selection-end-line="12" />
                 </state>
               </provider>
             </entry>
@@ -73,7 +93,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.gridbigproduct</find>
       <find>subtitle</find>
       <find>header</find>
       <find>.bigmap</find>
@@ -103,6 +122,7 @@
       <find>media</find>
       <find>more</find>
       <find>body</find>
+      <find>cafe</find>
     </findStrings>
     <replaceStrings>
       <replace>inicio</replace>
@@ -123,8 +143,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/grid.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -185,7 +205,7 @@
       <workItem from="1552086935679" duration="18001000" />
       <workItem from="1552120310297" duration="438000" />
       <workItem from="1552232581895" duration="322000" />
-      <workItem from="1552240429953" duration="1216000" />
+      <workItem from="1552240429953" duration="3845000" />
     </task>
     <task id="LOCAL-00001" summary="Reorganización de contenido&#10;Agregué tipografía">
       <created>1552066604756</created>
@@ -250,11 +270,18 @@
       <option name="project" value="LOCAL" />
       <updated>1552240374092</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Fixed redundancies.">
+      <created>1552245596289</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1552245596290</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29234000" />
+    <option name="totallyTimeSpent" value="31863000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -302,7 +329,8 @@
     <MESSAGE value="Sistema de tipografía v0.2&#10;Sistema de botones v0.2&#10;Arreglé unas clases de contenedor en nav HTML&#10;Quité los selectores de tipografía en grid.css&#10;Agregué estilo para links" />
     <MESSAGE value="Fixed grid arguments.&#10;Added and modified HTML classes.&#10;Fixed header images.&#10;Map is better now (:&#10;General optimizations and fixes." />
     <MESSAGE value="Merge commit." />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge commit." />
+    <MESSAGE value="Fixed redundancies." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed redundancies." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -343,24 +371,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/nosotros.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="144" column="33" selection-start-line="144" selection-start-column="33" selection-end-line="144" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/grid.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="209" column="13" selection-start-line="209" selection-start-column="13" selection-end-line="209" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nosotros.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="144" column="33" selection-start-line="144" selection-start-column="33" selection-end-line="144" selection-end-column="33" />
+        <state relative-caret-position="150">
+          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
         </state>
       </provider>
     </entry>
