@@ -6,28 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2b0b4be1-8d7c-4364-8440-568a85826da6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/clients/logo_cliente_a&amp;w_batsil_maya.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/clients/logo_cliente_a&amp;w_batsil_maya.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/clients/logo_cliente_bard_batsil_maya.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/clients/logo_cliente_bard_batsil_maya.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/clients/logo_cliente_benetton_batsil_maya.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/clients/logo_cliente_benetton_batsil_maya.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/clients/logo_cliente_capeltic_batsil_maya.png.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/clients/logo_cliente_capeltic_batsil_maya.png.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/clients/logo_cliente_gt_all_terra_batsil_maya.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/clients/logo_cliente_gt_all_terra_batsil_maya.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/clients/logo_cliente_w_hotels_batsil_maya.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/clients/logo_cliente_w_hotels_batsil_maya.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/fade/header_fade_blanco_batsil_maya.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/fade/header_fade_blanco_batsil_maya.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/fade/header_fade_cafe_batsil_maya.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/fade/header_fade_cafe_batsil_maya.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/fade/header_fade_light_batsil_maya.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/fade/header_fade_light_batsil_maya.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/footer/footer_granos_de_cafe_batsil_maya.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/footer/footer_granos_de_cafe_batsil_maya.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/inicio/footer_background_granos_de_cafe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/inicio/header_café_tseltal_solidario_trabajo_digno_batsil_maya.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/inicio/header_café_tseltal_solidario_trabajo_digno_batsil_maya.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/inicio/mapa_mundi_donde_estamos_donde_llegamos_batsil_maya.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/inicio/mapa_mundi_donde_estamos_donde_llegamos_batsil_maya.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/login/background-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/login/background-1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/login/background-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/login/background-2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/logos/batsil_maya_logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/logos/batsil_maya_logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/noticias/conoce_nuevo_capeltic_universidad_iberoamericana_cdmx_batsil_maya.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/noticias/conoce_nuevo_capeltic_universidad_iberoamericana_cdmx_batsil_maya.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/productos/cafe/granos_de_café_descafeinado_batsil_maya.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/productos/cafe/granos_de_café_gourmet_organico_batsil_maya.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/productos/cafe/granos_de_café_organico_batsil_maya.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/productos/cafe/granos_de_café_premium_orgágnico_batsil_maya.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/grid.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -45,24 +24,10 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="150">
-                  <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+                <state relative-caret-position="83">
+                  <caret line="50" column="14" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
                 </state>
               </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/nosotros.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="189">
-                  <caret line="144" column="33" selection-start-line="144" selection-start-column="33" selection-end-line="144" selection-end-column="33" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/images/logos/batsil_maya_logo.svg">
-              <provider selected="true" editor-type-id="images" />
             </entry>
           </file>
         </leaf>
@@ -72,8 +37,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/grid.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="12" selection-start-line="12" selection-end-line="12" />
+                <state relative-caret-position="255">
+                  <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
                 </state>
               </provider>
             </entry>
@@ -81,8 +46,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="147">
-                  <caret line="224" column="4" selection-start-line="224" selection-start-column="4" selection-end-line="224" selection-end-column="4" />
+                <state relative-caret-position="5265">
+                  <caret line="351" column="87" selection-start-line="351" selection-start-column="87" selection-end-line="351" selection-end-column="87" />
                 </state>
               </provider>
             </entry>
@@ -93,40 +58,41 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>subtitle</find>
-      <find>header</find>
-      <find>.bigmap</find>
-      <find>bigma</find>
-      <find>.map</find>
-      <find>gridh</find>
-      <find>bigmap</find>
-      <find>map</find>
-      <find>minmax</find>
-      <find>minmax(10px, auto)</find>
-      <find>1</find>
-      <find>/</find>
-      <find>link</find>
-      <find>0</find>
-      <find>one</find>
-      <find>grid-row</find>
-      <find>strong</find>
-      <find>h3</find>
-      <find>subt</find>
-      <find>letter</find>
-      <find>client</find>
       <find>ffffff</find>
       <find>radius</find>
-      <find>product</find>
       <find>but</find>
       <find>produ</find>
       <find>media</find>
       <find>more</find>
       <find>body</find>
       <find>cafe</find>
+      <find>footer</find>
+      <find>foot</find>
+      <find>a</find>
+      <find>a:</find>
+      <find>ease-out</find>
+      <find>menudes</find>
+      <find>ul</find>
+      <find>ul {</find>
+      <find>a {</find>
+      <find>#</find>
+      <find>min</find>
+      <find>minmax</find>
+      <find>#men</find>
+      <find>hover</find>
+      <find>grid-header</find>
+      <find>container</find>
+      <find>background</find>
+      <find>gutte</find>
+      <find>product</find>
+      <find>active</find>
+      <find>--padding</find>
+      <find>4em</find>
     </findStrings>
     <replaceStrings>
       <replace>inicio</replace>
       <replace>h3-small</replace>
+      <replace>var(--ease)</replace>
       <replace>auto</replace>
     </replaceStrings>
   </component>
@@ -142,9 +108,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/grid.css" />
-        <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/nosotros.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/grid.css" />
       </list>
     </option>
   </component>
@@ -157,7 +124,20 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ASE I" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ASE I" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -205,7 +185,8 @@
       <workItem from="1552086935679" duration="18001000" />
       <workItem from="1552120310297" duration="438000" />
       <workItem from="1552232581895" duration="322000" />
-      <workItem from="1552240429953" duration="3845000" />
+      <workItem from="1552240429953" duration="18496000" />
+      <workItem from="1552318048490" duration="259000" />
     </task>
     <task id="LOCAL-00001" summary="Reorganización de contenido&#10;Agregué tipografía">
       <created>1552066604756</created>
@@ -277,11 +258,25 @@
       <option name="project" value="LOCAL" />
       <updated>1552245596290</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Optimized images.">
+      <created>1552265503683</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1552265503683</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Fixed nav, containers, some classes and images.&#10;Animated hovers all types of links.&#10;More optimizations.">
+      <created>1552281866590</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1552281866591</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31863000" />
+    <option name="totallyTimeSpent" value="46773000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -296,7 +291,7 @@
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4979592" weight="0.38681492" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4979592" weight="0.3861066" />
       <window_info id="Structure" order="1" sideWeight="0.5020408" side_tool="true" weight="0.38681492" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -311,10 +306,10 @@
       <window_info anchor="bottom" id="Inspection Results" order="9" weight="0.32876712" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32944608" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5019857" side_tool="true" weight="0.32876712" />
-      <window_info anchor="right" x="0" y="0" width="270" height="600" id="Documentation" side_tool="true" weight="0.32956383" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" x="0" y="0" width="270" height="600" id="Documentation" order="3" side_tool="true" weight="0.32956383" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,7 +325,9 @@
     <MESSAGE value="Fixed grid arguments.&#10;Added and modified HTML classes.&#10;Fixed header images.&#10;Map is better now (:&#10;General optimizations and fixes." />
     <MESSAGE value="Merge commit." />
     <MESSAGE value="Fixed redundancies." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed redundancies." />
+    <MESSAGE value="Optimized images." />
+    <MESSAGE value="Fixed nav, containers, some classes and images.&#10;Animated hovers all types of links.&#10;More optimizations." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed nav, containers, some classes and images.&#10;Animated hovers all types of links.&#10;More optimizations." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -364,31 +361,31 @@
     <entry file="file://$PROJECT_DIR$/images/logos/batsil_maya_logo.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="224" column="4" selection-start-line="224" selection-start-column="4" selection-end-line="224" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nosotros.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="144" column="33" selection-start-line="144" selection-start-column="33" selection-end-line="144" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grid.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="173">
+          <caret line="160" column="56" lean-forward="true" selection-start-line="160" selection-start-column="56" selection-end-line="160" selection-end-column="56" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+        <state relative-caret-position="83">
+          <caret line="50" column="14" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grid.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5265">
+          <caret line="351" column="87" selection-start-line="351" selection-start-column="87" selection-end-line="351" selection-end-column="87" />
         </state>
       </provider>
     </entry>
