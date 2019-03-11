@@ -137,7 +137,7 @@ p {
     line-height: 1.4em;
 }
 
-.link {
+h2-link {
     color: var(--red);
     font-weight: 700;
 }
