@@ -245,29 +245,29 @@
                 bibendum id quam. Maecenas risus ex, porta et nisl sed, porttitor porttitor ligula. Sed eu ornare
                 augue.</p>
             <form>
-                Nombre<br>
-                <input name="nombre" type="text" required placeholder="Ingresar nombre"><br>
-                Correo<br>
-                <input name="email" type="email" required placeholder="Ingresar correo"><br>
-                Número teléfononico<br>
-                <div>
-                <select name="list" class="cool">
+                <label>Nombre</label><br>
+                <input id="formname" name="nombre" type="text" required placeholder="Ingresar nombre"><br>
+                <label id="formmail1">Correo</label><br>
+                <input id="formmail2" name="email" type="email" required placeholder="Ingresar correo"><br>
+                <label id="formtel1">Número teléfononico</label><br>
+                <div id="formtel2">
+                <select name="list" class="numlist">
                     <option value="52">52</option>
                     <option value="55">55</option>
                     <option value="33">33</option>
                 </select>
                 <input name="teléfono" type="tel"required placeholder="Ingresar teléfono">
                 </div> 
-                <legend>¿Cuándo te llamamos?</legend>
-                    Día<br>
-                    <input type="text"><br>
+                <legend id="formwhen"><strong>¿Cuándo te llamamos?</strong></legend>
+                   <label id="formday">Día</label><br>
+                    <input id="calendar" type="text"><br>
 
-                        <legend>Hora</legend>
-                        De<br>
-                        <input type="text"><br>
-                        Hasta<br>
-                        <input type="text"><br><br>
-                <p>
+                        <legend id="formtime">Horario</legend>
+                        <label id="formfrom1">De</label><br>
+                        <input id="formfrom2" type="text"><br>
+                        <label id="formuntil1">Hasta</label><br>
+                        <input id="formuntil2" type="text"><br><br>
+                <p class="formbutton">
                     <input type="submit" value="Agendar llamada">
                    </p>
             </form>
