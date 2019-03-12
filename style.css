@@ -58,6 +58,11 @@ img {
     height: 75px;
 }
 
+.shadow {
+    -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, .7));
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, .7));
+}
+
 @media screen and (max-width: 1023px) {
     .logo img {
         height: 50px;
@@ -139,6 +144,10 @@ h2, h3, h4 {
     text-transform: uppercase;
 }
 
+.h2-small.product-title {
+    padding: 0;
+}
+
 p {
     margin: 0;
     font-size: 15px;
@@ -161,7 +170,6 @@ p {
 .link:hover {
     text-decoration: underline;
 }
-
 
 /* —————— General Links —————— */
 
@@ -187,27 +195,30 @@ a:visited {
 
 /* —————— Nav Links —————— */
 
-.nav a {
+#menu-desktop a {
     color: var(--a-link);
     border-bottom: 0 solid var(--a-hover);
     transition: border-bottom-width var(--time) var(--ease);
 }
 
-.nav a:hover {
+#menu-desktop a:hover {
     color: var(--a-link);
     text-decoration: none;
     border-bottom: 3px solid var(--a-hover);
     transition: border-bottom-width var(--time) var(--ease);
 }
 
-.nav a:active {
+#menu-desktop a:active {
     color: var(--a-hover);
 }
 
 /* —————— Botones —————— */
 
+.fit-content {
+    width: max-content !important;
+}
+
 .button {
-    width: max-content;
     padding: var(--button-padding);
     display: inline-block;
     color: var(--light);
@@ -267,6 +278,13 @@ a:visited {
     transition: background-color var(--time) var(--ease);
 }
 
+.button.dark {
+    width: 100%;
+    color: var(--light);
+    background-color: var(--dark);
+    transition: background-color var(--time) var(--ease);
+}
+
 .button.red:hover {
     text-decoration: none;
     background-color: var(--button-hover);
@@ -304,9 +322,11 @@ header a {
 .map article {
     display: grid;
 }
-.xtraarticles p{
+
+.xtraarticles p {
     color: white;
 }
+
 .map p {
     max-width: 700px;
     margin: 0 auto;
@@ -322,7 +342,7 @@ header a {
 }
 
 /* —————— Nuestros clientes —————— */
-.gridthree1 article h3{
+.gridthree1 article h3 {
     display: none;
 }
 
@@ -337,23 +357,28 @@ header a {
 }
 
 /* —————— Noticias —————— */
-.gridnews article h3{
+.gridnews article h3 {
     color: var(--light);
 }
-.one{
-    height:25vh;
-    background: url(images/noticias/conoce_nuevo_capeltic_universidad_iberoamericana_cdmx_batsil_maya.jpg) 0 57% / cover no-repeat;}
-.two{
+
+.one {
     height: 25vh;
-    background: url(images/noticias/noticia2.jpg)  52% 60% / cover no-repeat;
+    background: url(images/noticias/conoce_nuevo_capeltic_universidad_iberoamericana_cdmx_batsil_maya.jpg) 0 57% / cover no-repeat;
 }
-.three{
+
+.two {
     height: 25vh;
-    background: url(images/noticias/noticia3.jpg)  0 60% / cover no-repeat;
+    background: url(images/noticias/noticia2.jpg) 52% 60% / cover no-repeat;
 }
-.four{
+
+.three {
     height: 25vh;
-    background: url(images/noticias/noticia4.jpg)  0 38% / cover no-repeat;
+    background: url(images/noticias/noticia3.jpg) 0 60% / cover no-repeat;
+}
+
+.four {
+    height: 25vh;
+    background: url(images/noticias/noticia4.jpg) 0 38% / cover no-repeat;
 }
 
 
@@ -370,24 +395,27 @@ header a {
 }
 
 /* —————— form —————— */
-form{
+form {
     padding: 22px 0;
 }
-input{
-    padding: 1.5% 3%;
-    box-sizing:border-box;
+
+input {
+    padding: 2.5% 5%;
+    box-sizing: border-box;
     font-size: 1em;
-    border: thin solid var(--dark);
+    border: thin solid var(--light);
     border-radius: 33px;
 }
-.numlist{
-    padding: 1.5% 2%;
-    box-sizing:border-box;
+
+select.num-list {
+    padding: 2.5% 5%;
+    box-sizing: border-box;
     font-size: 1em;
-    border: thin solid var(--dark);
+    border: thin solid var(--light);
     border-radius: 33px 0 0 33px;
 }
-input[name="teléfono"]{
+
+input[name="teléfono"] {
     border-radius: 0 33px 33px 0;
 }
 
@@ -409,6 +437,7 @@ input[name="teléfono"]{
     h2 {
         font-size: 40px;
     }
+
     .h2-header {
         font-size: 40px;
     }
@@ -417,6 +446,7 @@ input[name="teléfono"]{
         padding: 1em 0;
         font-size: 25px;
     }
+
     .h2-small {
         font-size: 16px;
     }
@@ -426,9 +456,11 @@ input[name="teléfono"]{
         line-height: 1.2em;
         font-weight: 700;
     }
+
     .h3-small {
         font-size: 20px;
     }
+
     h4 {
         font-size: 20px;
     }
@@ -441,6 +473,7 @@ input[name="teléfono"]{
         font-size: 12px;
     }
 }
+
 @media screen and (min-width: 640px) {
     h2 {
         font-size: 40px;
@@ -480,24 +513,29 @@ input[name="teléfono"]{
     .p-small {
         font-size: 12px;
     }
-    .bigfoot{
+
+    .bigfoot {
         padding: 44px;
         font-size: 18px;
         background: url(images/footer/footer_granos_de_cafe_batsil_maya.jpg
         ) 0 0 / cover no-repeat;
     }
 }
+
 @media screen and (min-width: 1024px) {
     h2 {
         font-size: 40px;
     }
+
     .h2-header {
         font-size: 65px;
     }
+
     .h2-subtitle {
         padding: 1em 0;
         font-size: 25px;
     }
+
     .h2-small {
         font-size: 16px;
     }
@@ -507,17 +545,20 @@ input[name="teléfono"]{
         line-height: 1.2em;
         font-weight: 700;
     }
+
     .h3-small {
         font-size: 20px;
     }
+
     h4 {
         font-size: 20px;
     }
+
     .p-big {
         font-size: 22px;
     }
+
     .p-small {
         font-size: 12px;
     }
 }
-

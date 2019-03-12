@@ -31,7 +31,7 @@
         <h1>Bats'il Maya: Inicio</h1>
         <div class="nav-wrapper desktop">
             <div class="logo">
-                <img alt="Bats'il Maya Logo" src="images/logos/batsil_maya_logo.svg">
+                <img alt="Bats'il Maya Logo" class="shadow" src="images/logos/batsil_maya_logo.svg">
             </div>
             <nav id="menu-desktop">
                 <h2>Menú</h2>
@@ -67,15 +67,15 @@
                     <li><a href="" target="_self">Productos</a></li>
                     <li><a href="" target="_self">Noticias</a></li>
                     <li><a href="" target="_self">Ayuda</a></li>
-                    <li class="button outline"><a href="" target="_self">Iniciar Sesión</a></li>
-                    <li class="button red"><a href="" target="_self">Contáctanos</a></li>
+                    <li class="button outline fit-content"><a href="" target="_self">Iniciar Sesión</a></li>
+                    <li class="button red fit-content"><a href="" target="_self">Contáctanos</a></li>
                 </ul>
             </nav>
         </div>
         <h2 class="h2-header">Café Tseltal.<br>Solidario, trabajador, digno</h2>
         <p class="h2-subtitle">Dándole el máximo valor agregado que nos permite la construcción de un precio justo y
             digno al trabajo de quienes los siembran.</p>
-        <a class="button red" href="" target="_self">Sobre nosotros</a>
+        <a class="button red fit-content" href="" target="_self">Sobre nosotros</a>
     </div>
 </header>
 <div class="dark-bg">
@@ -247,13 +247,12 @@
                 bibendum id quam. Maecenas risus ex, porta et nisl sed, porttitor porttitor ligula. Sed eu ornare
                 augue.</p>
             <form>
-                <label>Nombre</label><br>
-                <input id="formname" name="nombre" type="text" required placeholder="Ingresar nombre"><br>
-                <label id="formmail1">Correo</label><br>
-                <input id="formmail2" name="email" type="email" required placeholder="Ingresar correo"><br>
-                <label id="formtel1">Número teléfononico</label><br>
-                <div id="formtel2">
-                <select name="list" class="numlist">
+                <label for="form-name2" id="form-name1">Nombre</label>
+                <input id="form-name2" name="nombre" placeholder="Maria Bravo" required type="name"><br>
+                <label id="form-mail1">Correo</label>
+                <input id="form-mail2" name="email" placeholder="Ej. mariabravo@gmail.com" required type="email"><br>
+                <label id="formtel1">Número telefónico</label>
+                <div id="formtel2"><select class="num-list" name="list">
                     <option value="52">52</option>
                     <option value="55">55</option>
                     <option value="33">33</option>
@@ -262,7 +261,7 @@
                 </div> 
                 <legend id="formwhen"><strong>¿Cuándo te llamamos?</strong></legend>
                    <label id="formday">Día</label><br>
-                    <input id="calendar" type="text"><br>
+                <input id="calendar" type="date"><br>
 
                         <legend id="formtime">Horario</legend>
                         <label id="formfrom1">De</label><br>
@@ -270,7 +269,7 @@
                         <label id="formuntil1">Hasta</label><br>
                         <input id="formuntil2" type="text"><br><br>
                 <p class="formbutton">
-                    <input class="button" type="submit" value="Agendar llamada">
+                    <input class="button dark" type="submit" value="Agendar llamada">
                    </p>
             </form>
         </div>
