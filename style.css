@@ -292,7 +292,9 @@ header a {
 .map article {
     display: grid;
 }
-
+.xtraarticles p{
+    color: white;
+}
 .map p {
     max-width: 700px;
     margin: 0 auto;
