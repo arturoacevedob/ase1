@@ -348,8 +348,8 @@ header a {
 
 /* —————— certificados —————— */
 .certificate article figure {
-    width: 100%;
-    margin: 0;
+    width: 75%;
+    margin: auto;
 }
 
 .certificate article img {
