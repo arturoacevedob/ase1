@@ -553,7 +553,7 @@ form{
     }
     .llamada{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 40% auto;
         grid-auto-rows: auto;
         grid-gap: 22px;
     }
