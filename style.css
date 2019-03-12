@@ -368,22 +368,18 @@ header a {
 }
 
 .one {
-    height: 25vh;
     background: url(images/noticias/conoce_nuevo_capeltic_universidad_iberoamericana_cdmx_batsil_maya.jpg) 0 57% / cover no-repeat;
 }
 
 .two {
-    height: 25vh;
     background: url(images/noticias/noticia2.jpg) 52% 60% / cover no-repeat;
 }
 
 .three {
-    height: 25vh;
     background: url(images/noticias/noticia3.jpg) 0 60% / cover no-repeat;
 }
 
 .four {
-    height: 25vh;
     background: url(images/noticias/noticia4.jpg) 0 38% / cover no-repeat;
 }
 

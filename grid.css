@@ -402,8 +402,8 @@ label {
         grid-auto-rows: auto;
         grid-gap: 11px;
     }
-
     .gridnews {
+        height: 80vh;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-auto-rows: auto;
