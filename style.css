@@ -348,8 +348,8 @@ header a {
 
 /* —————— certificados —————— */
 .certificate article figure {
-    width: 100%;
-    margin: 0;
+    width: 75%;
+    margin: auto;
 }
 
 .certificate article img {
@@ -358,6 +358,12 @@ header a {
 
 /* —————— Noticias —————— */
 .gridnews article h3 {
+    padding-left:3%; 
+    color: var(--light);
+}
+
+.gridnews p{
+    padding: 0  0 3% 3%;
     color: var(--light);
 }
 
