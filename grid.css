@@ -254,7 +254,7 @@ form{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: auto;
-    grid-gap: 2%;
+    grid-gap: 3%;
 }
 #formname {
     grid-column: 1 / 3;

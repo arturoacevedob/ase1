@@ -369,6 +369,24 @@ header a {
     text-decoration: none;
 }
 
+/* —————— form —————— */
+form{
+    padding: 22px 0;
+}
+input{
+    padding: 1.5% 3%;
+    box-sizing:border-box;
+    font-size: 1em;
+    border: thin solid var(--dark);
+    border-radius: 33px;
+}
+.numlist{
+    padding: 1.5% 2%;
+    box-sizing:border-box;
+    font-size: 1em;
+    border: thin solid var(--dark);
+    border-radius: 33px;
+}
 
 /* —————— footer —————— */
 .bigfoot {
