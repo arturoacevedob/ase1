@@ -578,9 +578,9 @@ form{
         grid-gap: 22px;
     }
     .clients{
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: var(--container-padding);
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: var(--container-padding);
     }
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -616,6 +616,7 @@ form{
         grid-column: 3;
         grid-row: 1 / 4;
     }
+    
 }
 
 @media screen and (max-width: 1023px) {
