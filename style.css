@@ -63,6 +63,7 @@ h1, nav > h2 {
     display: none;
 }
 
+
 /* —————— Color Classes —————— */
 
 .light {
@@ -326,20 +327,19 @@ header a {
     color: var(--light);
 }
 .one{
-    padding: 48% 0 0 2%;
-    background: url(images/noticias/conoce_nuevo_capeltic_universidad_iberoamericana_cdmx_batsil_maya.jpg) 0 100% / cover no-repeat;}
+    height:25vh;
+    background: url(images/noticias/conoce_nuevo_capeltic_universidad_iberoamericana_cdmx_batsil_maya.jpg) 0 57% / cover no-repeat;}
 .two{
-    padding: 17% 0% 0% 2%;
-    background: url(images/noticias/noticia2.jpg)  0 60% / cover no-repeat;
+    height: 25vh;
+    background: url(images/noticias/noticia2.jpg)  52% 60% / cover no-repeat;
 }
-
 .three{
-    padding: 17% 0% 0% 2%;
+    height: 25vh;
     background: url(images/noticias/noticia3.jpg)  0 60% / cover no-repeat;
 }
 .four{
-    padding: 17% 0% 0% 2%;
-    background: url(images/noticias/noticia4.jpg)  0 60% / cover no-repeat;
+    height: 25vh;
+    background: url(images/noticias/noticia4.jpg)  0 38% / cover no-repeat;
 }
 
 
