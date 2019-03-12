@@ -250,6 +250,13 @@
     flex-flow: column wrap;
     justify-content: flex-end;
 }
+form{
+    display: grid;
+   
+}
+.cool{
+    width: 10%;
+}
 
 @media screen and (max-width: 639px) {
 
@@ -484,6 +491,12 @@
     .gridthree2 article:last-child {
         grid-column: 3;
         grid-row: 1;
+    }
+    .llamada{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        grid-gap: 22px;
     }
 }
 
