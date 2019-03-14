@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+/* Variables */
+:root {
+    --red: #C24819;
+    --yellow: #EBA00C;
+    --green: #758A17;
+    --light: #FFFEF5;
+    --dark: #40290A;
+
+    --a-link: var(--light);
+    --a-visited: #cccbc6;
+    --a-hover: #EA9A07;
+    --a-active: #ffb133;
+
+    --button-link: var(--red);
+    --button-visited: #CC6A14;
+    --button-hover: #EBA00C;
+    --button-active: #FFAE0D;
+
+    --button-padding: 0.7rem;
+    --border-radius: 1.4rem;
+    --time: 0.2s;
+    --ease: ease-out;
+}
+
+/* Colors */
+
+
+/* Constant classes */
+.order-1 {
+    order: 1;
+}
+
+.order-2 {
+    order: 2;
+}
+
+/* Main grid */
+.main-grid {
+    /*min-width: 1024px;*/
+    display: grid;
+    grid-template-columns: fit-content(100%) auto;
+}
+
+/* Toolbar */
+.toolbar {
+    display: grid;
+    grid-template-columns: fit-content(100%) auto auto;
+}
+
+/* Wrappers */
+.wrapper {
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.wrapper.order {
+    display: grid;
+    grid-template-row: repeat(3, auto);
+}
+
+/*      Header */
+.wrapper.order .header {
+    display: grid;
+    grid-template-columns: repeat(3, fit-content(100%));
+    justify-content: space-between;
+}
+
+.wrapper.pedidos .header h3 {
+    order: 1;
+}
+
+/*      grid-4 */
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/*      Etapa de envío */
+.etapa-envío {
+    display: grid;
+    grid-template-columns: repeat(4, fit-content(100%));
+    justify-content: center;
+}
+
+
+/*      Pedido Table */
+table > thead {
+    display: none;
+}
+
+table {
+    width: 100%;
+}
+
+tr > td:nth-child(n+2) {
+    text-align: right;
+}
+
