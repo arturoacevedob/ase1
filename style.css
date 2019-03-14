@@ -579,3 +579,8 @@ input[name="teléfono"] {
     background: url(images/botones/boton_productos_cafe_tseltal_miel_organica_jabones_artesanales_batsil_maya.jpg) 70% 0 / cover no-repeat;
 }
 
+/* —————— AQUÍ EMPIEZAN ESTILOS DE NUESTRO CAFÉ—————— */
+#nuestrocafe header{
+    background: url(images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
+    url(images/nuestro_cafe/header_nuestro_cafe_desde_el_cafetal_hasta_la_taza_batsil_maya.jpg) 59% 5% / cover no-repeat;
+}
