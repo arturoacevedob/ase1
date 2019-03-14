@@ -2,13 +2,12 @@
 <project version="4">
   <component name="AnalysisUIOptions">
     <option name="AUTOSCROLL_TO_SOURCE" value="true" />
-    <option name="SCOPE_TYPE" value="10" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b0b4be1-8d7c-4364-8440-568a85826da6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/main-backend.css" beforeDir="false" afterPath="$PROJECT_DIR$/backend/main-backend.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/pedidos-backend.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pedidos-backend.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/nosotros/mexico.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/nosotros/mexico.svg" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,10 +23,10 @@
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/index.html">
+            <entry file="file://$PROJECT_DIR$/grid.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="218">
-                  <caret line="250" column="22" selection-start-line="250" selection-start-column="17" selection-end-line="250" selection-end-column="22" />
+                <state relative-caret-position="3435">
+                  <caret line="229" selection-start-line="229" selection-end-line="229" />
                 </state>
               </provider>
             </entry>
@@ -35,8 +34,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/backend/pedidos-backend.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1350">
-                  <caret line="90" column="44" selection-start-line="90" selection-start-column="44" selection-end-line="90" selection-end-column="44" />
+                <state relative-caret-position="167">
+                  <caret line="92" column="21" lean-forward="true" selection-start-line="92" selection-start-column="21" selection-end-line="92" selection-end-column="21" />
                   <folding>
                     <element signature="n#style#0;n#h2#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
@@ -45,10 +44,64 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/../../• Studies/3º Semestre/DCI III/Ejercicios/simple-crud-php-master/products-web/index.html">
+            <entry file="file://$PROJECT_DIR$/productos.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="345">
-                  <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+                <state relative-caret-position="399">
+                  <caret line="155" lean-forward="true" selection-start-line="155" selection-end-line="155" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/nosotros.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="338">
+                  <caret line="223" selection-start-line="223" selection-end-line="223" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/noticias.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="338">
+                  <caret line="220" column="6" selection-start-line="220" selection-start-column="6" selection-end-line="220" selection-end-column="6" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/nuestro-cafe.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="324">
+                  <caret line="271" column="1" selection-start-line="271" selection-start-column="1" selection-end-line="271" selection-end-column="1" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/proceso.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="338">
+                  <caret line="255" column="6" selection-start-line="255" selection-start-column="6" selection-end-line="255" selection-end-column="6" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ayuda.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-120">
+                  <caret line="172" column="6" selection-start-line="172" selection-start-column="6" selection-end-line="172" selection-end-column="6" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/normalize.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="147">
+                  <caret line="87" column="4" selection-start-line="87" selection-start-column="4" selection-end-line="87" selection-end-column="4" />
                 </state>
               </provider>
             </entry>
@@ -56,8 +109,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/backend/main-backend.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="108">
-                  <caret line="30" selection-start-line="30" selection-end-line="30" />
+                <state relative-caret-position="117">
+                  <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
                 </state>
               </provider>
             </entry>
@@ -69,8 +122,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/backend/main-backend.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="257">
-                  <caret line="63" column="22" selection-start-line="63" selection-start-column="22" selection-end-line="63" selection-end-column="22" />
+                <state relative-caret-position="182">
+                  <caret line="54" column="24" lean-forward="true" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
                 </state>
               </provider>
             </entry>
@@ -159,9 +212,7 @@
         <option value="$PROJECT_DIR$/testing/mobile-menu.css" />
         <option value="$PROJECT_DIR$/testing/index.html" />
         <option value="$PROJECT_DIR$/images/logos/batsil_maya_logo.svg" />
-        <option value="$PROJECT_DIR$/nuestro-cafe.html" />
         <option value="$PROJECT_DIR$/nosotros.html" />
-        <option value="$PROJECT_DIR$/proceso.html" />
         <option value="$PROJECT_DIR$/grid.css" />
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/normalize.css" />
@@ -174,6 +225,11 @@
         <option value="$PROJECT_DIR$/backend/style-backend.css" />
         <option value="$PROJECT_DIR$/backend/grid-backend.css" />
         <option value="$PROJECT_DIR$/backend/pedidos-backend.html" />
+        <option value="$PROJECT_DIR$/productos.html" />
+        <option value="$PROJECT_DIR$/nuestro-cafe.html" />
+        <option value="$PROJECT_DIR$/proceso.html" />
+        <option value="$PROJECT_DIR$/noticias.html" />
+        <option value="$PROJECT_DIR$/ayuda.html" />
         <option value="$PROJECT_DIR$/backend/main-backend.css" />
       </list>
     </option>
@@ -263,7 +319,7 @@
       <workItem from="1552415729424" duration="267000" />
       <workItem from="1552421941442" duration="9996000" />
       <workItem from="1552507425688" duration="867000" />
-      <workItem from="1552529727165" duration="10110000" />
+      <workItem from="1552529727165" duration="11747000" />
     </task>
     <task id="LOCAL-00001" summary="Reorganización de contenido&#10;Agregué tipografía">
       <created>1552066604756</created>
@@ -412,11 +468,25 @@
       <option name="project" value="LOCAL" />
       <updated>1552589417060</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Pedidos-backend.html updated.&#10;Progress ……………………………………… 22%.&#10;&#10;Closing section tag matches nothing &gt; productos.html — Solved.">
+      <created>1552594734244</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1552594734244</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Closing master div tag matches nothing on multiple html files — Solved.">
+      <created>1552598037971</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1552598037971</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87894000" />
+    <option name="totallyTimeSpent" value="89531000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -429,7 +499,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4979592" weight="0.2573471" />
       <window_info id="Structure" order="1" sideWeight="0.5020408" side_tool="true" weight="0.38681492" />
@@ -443,7 +512,7 @@
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49960285" weight="0.32876712" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49642575" weight="0.9589041" />
-      <window_info anchor="bottom" id="Inspection Results" order="9" sideWeight="0.4980143" weight="0.32876712" />
+      <window_info active="true" anchor="bottom" id="Inspection Results" order="9" sideWeight="0.4980143" visible="true" weight="0.32876712" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32944608" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50357425" side_tool="true" weight="0.9589041" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -531,7 +600,9 @@
     <MESSAGE value="Added mexico.svg under nosotros." />
     <MESSAGE value="Added mexico.svg under nosotros&#10;Added pedidos.html&#10;Added grid-backend.css" />
     <MESSAGE value="Created backend structure.&#10;Pedidos-backend.html initialized.&#10;Progress ………………………………………………… 20%." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created backend structure.&#10;Pedidos-backend.html initialized.&#10;Progress ………………………………………………… 20%." />
+    <MESSAGE value="Pedidos-backend.html updated.&#10;Progress ……………………………………… 22%.&#10;&#10;Closing section tag matches nothing &gt; productos.html — Solved." />
+    <MESSAGE value="Closing master div tag matches nothing on multiple html files — Solved." />
+    <option name="LAST_COMMIT_MESSAGE" value="Closing master div tag matches nothing on multiple html files — Solved." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -573,45 +644,10 @@
     <entry file="file://$PROJECT_DIR$/images/logos/batsil_maya_logo.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/proceso.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="54" column="43" lean-forward="true" selection-start-line="54" selection-start-column="43" selection-end-line="54" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nosotros.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3345">
-          <caret line="223" column="3" lean-forward="true" selection-start-line="223" selection-start-column="3" selection-end-line="223" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testing/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="1" selection-start-column="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nuestro-cafe.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="77" column="8" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/normalize.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5235">
-          <caret line="349" lean-forward="true" selection-start-line="349" selection-end-line="349" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grid.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="653">
-          <caret line="346" column="23" selection-start-line="346" selection-start-column="23" selection-end-line="346" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -656,20 +692,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/pedidos-backend.html">
+    <entry file="file://$PROJECT_DIR$/productos.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
-          <caret line="90" column="44" selection-start-line="90" selection-start-column="44" selection-end-line="90" selection-end-column="44" />
-          <folding>
-            <element signature="n#style#0;n#h2#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="399">
+          <caret line="155" lean-forward="true" selection-start-line="155" selection-end-line="155" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nuestro-cafe.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="271" column="1" selection-start-line="271" selection-start-column="1" selection-end-line="271" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proceso.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="255" column="6" selection-start-line="255" selection-start-column="6" selection-end-line="255" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/noticias.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="220" column="6" selection-start-line="220" selection-start-column="6" selection-end-line="220" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nosotros.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="223" selection-start-line="223" selection-end-line="223" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ayuda.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-120">
+          <caret line="172" column="6" selection-start-line="172" selection-start-column="6" selection-end-line="172" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/normalize.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="87" column="4" selection-start-line="87" selection-start-column="4" selection-end-line="87" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grid.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3435">
+          <caret line="229" selection-start-line="229" selection-end-line="229" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/main-backend.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="63" column="22" selection-start-line="63" selection-start-column="22" selection-end-line="63" selection-end-column="22" />
+        <state relative-caret-position="117">
+          <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/pedidos-backend.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="92" column="21" lean-forward="true" selection-start-line="92" selection-start-column="21" selection-end-line="92" selection-end-column="21" />
+          <folding>
+            <element signature="n#style#0;n#h2#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
