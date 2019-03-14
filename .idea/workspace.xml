@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b0b4be1-8d7c-4364-8440-568a85826da6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/grid-backend.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pedidos.html" beforeDir="false" afterPath="$PROJECT_DIR$/pedidos.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,13 +31,18 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/pedidos.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+                <state relative-caret-position="315">
+                  <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
                 </state>
               </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/grid-backend.css">
+              <provider selected="true" editor-type-id="text-editor" />
             </entry>
           </file>
         </leaf>
@@ -46,8 +52,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/grid.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-5">
-                  <caret line="256" column="4" selection-start-line="256" selection-start-column="4" selection-end-line="256" selection-end-column="4" />
+                <state relative-caret-position="653">
+                  <caret line="345" column="23" selection-start-line="345" selection-start-column="23" selection-end-line="345" selection-end-column="23" />
                 </state>
               </provider>
             </entry>
@@ -135,6 +141,7 @@
         <option value="$PROJECT_DIR$/normalize.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/pedidos.html" />
+        <option value="$PROJECT_DIR$/grid-backend.css" />
       </list>
     </option>
   </component>
@@ -147,25 +154,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="ASE I" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ASE I" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ASE I" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ASE I" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -221,7 +210,8 @@
       <workItem from="1552406677422" duration="373000" />
       <workItem from="1552415729424" duration="267000" />
       <workItem from="1552421941442" duration="9996000" />
-      <workItem from="1552507425688" duration="769000" />
+      <workItem from="1552507425688" duration="867000" />
+      <workItem from="1552529727165" duration="304000" />
     </task>
     <task id="LOCAL-00001" summary="Reorganización de contenido&#10;Agregué tipografía">
       <created>1552066604756</created>
@@ -349,11 +339,18 @@
       <option name="project" value="LOCAL" />
       <updated>1552432047480</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Added mexico.svg under nosotros.">
+      <created>1552529646002</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1552529646002</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77686000" />
+    <option name="totallyTimeSpent" value="78088000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -366,7 +363,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4979592" weight="0.2573471" />
       <window_info id="Structure" order="1" sideWeight="0.5020408" side_tool="true" weight="0.38681492" />
@@ -465,7 +461,8 @@
     <MESSAGE value="Fixed mobile menu color and position." />
     <MESSAGE value="Fixed nav&#10;Worked on form&#10;Added logo shadow" />
     <MESSAGE value="Fixed gridproduct." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed gridproduct." />
+    <MESSAGE value="Added mexico.svg under nosotros." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added mexico.svg under nosotros." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -561,17 +558,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grid.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5">
-          <caret line="256" column="4" selection-start-line="256" selection-start-column="4" selection-end-line="256" selection-end-column="4" />
+        <state relative-caret-position="653">
+          <caret line="345" column="23" selection-start-line="345" selection-start-column="23" selection-end-line="345" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pedidos.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+        <state relative-caret-position="315">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grid-backend.css">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
