@@ -96,6 +96,9 @@ h1, nav > h2 {
 .green-bg {
     background-color: var(--green);
 }
+.yellow-bg {
+    background-color: var(--yellow);
+}
 
 .nav .active {
     border-bottom: 3px solid var(--a-hover);
@@ -105,6 +108,9 @@ h1, nav > h2 {
     color: var(--yellow);
 }
 
+.red{
+        color: var(--red);
+}
 /* —————— Font Import—————— */
 
 @font-face {
@@ -583,4 +589,13 @@ input[name="teléfono"] {
 #nuestrocafe header{
     background: url(images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
     url(images/nuestro_cafe/header_nuestro_cafe_desde_el_cafetal_hasta_la_taza_batsil_maya.jpg) 59% 5% / cover no-repeat;
+}
+
+/* —————— AQUÍ EMPIEZAN ESTILOS DE PRODUCTOS—————— */
+#productos header{
+    background: url(images/fade/header_fade_cafe_batsil_maya.png) 0 100% / contain repeat-x,
+    url(images/product/header_productos_batsil_maya.jpg) 70% 0 / cover no-repeat;
+}
+#productos .product{
+    border-radius: 0;
 }
