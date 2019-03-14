@@ -8,7 +8,8 @@
     <meta content="Sarah Raquel Quintana Cortés,Arturo Alejandro Acevedo Bravo, Mathias Thomsen Cuéllar" name="author">
     <meta content="Conocé nuestro café en todas sus variedas, tuestes, y molidos"
           name="description">
-    <meta content="Tseltal, Bats'il Maya, café, miel, jabón, jabones, Chiapas, Orgánico, molido, tueste, cafetal, taza, variedades" name="keywords">
+    <meta content="Tseltal, Bats'il Maya, café, miel, jabón, jabones, Chiapas, Orgánico, molido, tueste, cafetal, taza, variedades"
+          name="keywords">
     <!-- Scripts de compatibilidad -->
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <!--[if lt IE 9]>
@@ -25,149 +26,155 @@
 </head>
 <body>
 <div id="nuestrocafe">
-<!--TODO: colocar divs dobles por sección.-->
-<!--    Uno para el fondo y otro para la retícula grid.-->
-<div>
-    <header>
-        <div class="grid-header container">
-            <h1>Bats'il Maya: Nuestro café</h1>
-            <div class="nav-wrapper desktop">
-                <div class="logo">
-                    <img alt="Bats'il Maya Logo" class="shadow" src="images/logos/batsil_maya_logo.svg">
+    <!--TODO: colocar divs dobles por sección.-->
+    <!--    Uno para el fondo y otro para la retícula grid.-->
+    <div>
+        <header>
+            <div class="grid-header container">
+                <h1>Bats'il Maya: Nuestro café</h1>
+                <div class="nav-wrapper desktop">
+                    <div class="logo">
+                        <img alt="Bats'il Maya Logo" class="shadow" src="images/logos/batsil_maya_logo.svg">
+                    </div>
+                    <nav id="menu-desktop">
+                        <h2>Menú</h2>
+                        <ul class="menu-desktop-content">
+                            <li><a href="index.html" target="_self">Inicio</a></li>
+                            <li><a href="nosotros.html" target="_self">Nosotros</a></li>
+                            <li><a class="active" href="nuestro-cafe.html" target="_self">Nuestro café</a></li>
+                            <li><a href="proceso.html" target="_self">Proceso</a></li>
+                            <li><a href="productos.html" target="_self">Productos</a></li>
+                            <li><a href="noticias.html" target="_self">Noticias</a></li>
+                            <li><a href="ayuda.html" target="_self">Ayuda</a></li>
+                        </ul>
+                    </nav>
+                    <aside>
+                        <li class="button outline"><a href="" target="_self">Iniciar Sesión</a></li>
+                        <li class="button red"><a href="" target="_self">Contáctanos</a></li>
+                    </aside>
                 </div>
-                <nav id="menu-desktop">
-                    <h2>Menú</h2>
-                    <ul class="menu-desktop-content">
-                        <li><a href="index.html" target="_self">Inicio</a></li>
-                        <li><a href="nosotros.html" target="_self">Nosotros</a></li>
-                        <li><a class="active" href="nuestro-cafe.html" target="_self">Nuestro café</a></li>
-                        <li><a href="proceso.html" target="_self">Proceso</a></li>
-                        <li><a href="productos.html" target="_self">Productos</a></li>
-                        <li><a href="noticias.html" target="_self">Noticias</a></li>
-                        <li><a href="ayuda.html" target="_self">Ayuda</a></li>
-                    </ul>
-                </nav>
-                <aside>
-                    <li class="button outline"><a href="" target="_self">Iniciar Sesión</a></li>
-                    <li class="button red"><a href="" target="_self">Contáctanos</a></li>
-                </aside>
-            </div>
-    
-            <div class="nav-wrapper mobile">
-                <div class="logo">
-                    <img alt="Bats'il Maya Logo" src="images/logos/batsil_maya_logo.svg">
+
+                <div class="nav-wrapper mobile">
+                    <div class="logo">
+                        <img alt="Bats'il Maya Logo" src="images/logos/batsil_maya_logo.svg">
+                    </div>
+                    <nav id="menu-mobile">
+                        <input id="menu-mobile-toggle" type="checkbox">
+                        <label for="menu-mobile-toggle"><span id="menu-icon"></span></label>
+                        <div id="overlay"></div>
+                        <ul class="menu-mobile-content light-bg">
+                            <li><a href="index.html" target="_self">Inicio</a></li>
+                            <li><a href="nosotros.html" target="_self">Nosotros</a></li>
+                            <li><a class="active" href="nuestro-cafe.html" target="_self">Nuestro café</a></li>
+                            <li><a href="proceso.html" target="_self">Proceso</a></li>
+                            <li><a href="productos.html" target="_self">Productos</a></li>
+                            <li><a href="noticias.html" target="_self">Noticias</a></li>
+                            <li><a href="ayuda.html" target="_self">Ayuda</a></li>
+                            <li class="button outline fit-content"><a href="" target="_self">Iniciar Sesión</a></li>
+                            <li class="button red fit-content"><a href="" target="_self">Contáctanos</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <nav id="menu-mobile">
-                    <input id="menu-mobile-toggle" type="checkbox">
-                    <label for="menu-mobile-toggle"><span id="menu-icon"></span></label>
-                    <div id="overlay"></div>
-                    <ul class="menu-mobile-content light-bg">
-                        <li><a href="index.html" target="_self">Inicio</a></li>
-                        <li><a href="nosotros.html" target="_self">Nosotros</a></li>
-                        <li><a class="active" href="nuestro-cafe.html" target="_self">Nuestro café</a></li>
-                        <li><a href="proceso.html" target="_self">Proceso</a></li>
-                        <li><a href="productos.html" target="_self">Productos</a></li>
-                        <li><a href="noticias.html" target="_self">Noticias</a></li>
-                        <li><a href="ayuda.html" target="_self">Ayuda</a></li>
-                        <li class="button outline fit-content"><a href="" target="_self">Iniciar Sesión</a></li>
-                        <li class="button red fit-content"><a href="" target="_self">Contáctanos</a></li>
-                    </ul>
-                </nav>
+                <h2 class="h2-header">Desde el cafetal a la taza</h2>
             </div>
-            <h2 class="h2-header">Desde el cafetal a la taza</h2>
-        </div>
-    </header>
-</div>
-<section>
-    <div class="grid-culture container">
-    <h2>Ubicación</h2>
-    <article>
-        <p>Nuestra región, la Selva Norte de Chiapas, por su ubicación geográfica, tiene las condiciones óptimas para el cultivo de café de alta calidad.</p>
-       <p>Todo nuestro café es cultivado bajo prácticas agroecológicas y contamos con café orgánico certificado.</p>
-       <p>Nuestro café proviene de pequeñas parcelas pertenecientes a las 344 familias tseltales que conforman a la cooperativa Ts’umbal Xitalha’.</p>
-    </article>
-    <article>
-        <p>placeholder for image</p>
-        <figure id="cult-img2"><img alt="" src="images/"></figure>
-    </article>
-</div>
-</section>
-<section>
-    <div class="container">
-        <h2>Tenemos las condiciones óptimas para el cultivo de café de alta calidad</h2>
-        <div>
-        <article>
-            <h3>Altura: 900 - 1400 msnm</h3>
-        </article>
-        <article>
-            <h3>Temperatura</h3>
-        </article>
-        <article>
-            <h3>Suelo con abundante materia orgánica.</h3>
-        </article>
-        <article>
-            <h3>Gran variedad de árboles de sombra.</h3>
-        </article>
-        </div>
+        </header>
     </div>
-</section>
-<section>
+    <section>
         <div class="grid-culture container">
-        <h2 class="taza-h2">​Características en taza</h2>
-        <article>
+            <h2>Ubicación</h2>
+            <article>
+                <p>Nuestra región, la Selva Norte de Chiapas, por su ubicación geográfica, tiene las condiciones óptimas
+                    para el cultivo de café de alta calidad.</p>
+                <p>Todo nuestro café es cultivado bajo prácticas agroecológicas y contamos con café orgánico
+                    certificado.</p>
+                <p>Nuestro café proviene de pequeñas parcelas pertenecientes a las 344 familias tseltales que conforman
+                    a la cooperativa Ts’umbal Xitalha’.</p>
+            </article>
+            <article>
                 <p>placeholder for image</p>
                 <figure id="cult-img2"><img alt="" src="images/"></figure>
             </article>
-        <article class="taza-art">
-            <p>Quienes lo disfrutan encuentran un balance propio de los cafés de altura</p>
-           <p>Caracterizado por un delicado y fino sabor, cuerpo abundante y cremoso, y acidez cítrica.</p>
-           <p>Sus notas son florales, acarameladas y achocolatadas.</p>
-           <p>En Yomol A’tel, cuidamos cada uno de los trabajos y pasos que sigue nuestro café, desde el cafetal a la taza.</p>
-        </article>
-    </div>
-</section>
-<aside class="more container">
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h2>Tenemos las condiciones óptimas para el cultivo de café de alta calidad</h2>
+            <article>
+                <h3>Altura: 900 - 1400 msnm</h3>
+            </article>
+            <article>
+                <h3>Temperatura</h3>
+            </article>
+            <article>
+                <h3>Suelo con abundante materia orgánica.</h3>
+            </article>
+            <article>
+                <h3>Gran variedad de árboles de sombra.</h3>
+            </article>
+        </div>
+    </section>
+    <section>
+        <div class="grid-culture container">
+            <h2 class="taza-h2">​Características en taza</h2>
+            <article>
+                <p>placeholder for image</p>
+                <figure id="cult-img2"><img alt="" src="images/"></figure>
+            </article>
+            <article class="taza-art">
+                <p>Quienes lo disfrutan encuentran un balance propio de los cafés de altura</p>
+                <p>Caracterizado por un delicado y fino sabor, cuerpo abundante y cremoso, y acidez cítrica.</p>
+                <p>Sus notas son florales, acarameladas y achocolatadas.</p>
+                <p>En Yomol A’tel, cuidamos cada uno de los trabajos y pasos que sigue nuestro café, desde el cafetal a
+                    la taza.</p>
+            </article>
+        </div>
+    </section>
+    <aside class="more container">
         <h2 class="h2-small">Variedades</h2>
         <p>Trabajamos con café 100% arábigo con variedades typica, borbón y oro azteca.</p>
         <div class="gridthree2">
             <section>
                 <h3 class="h3-small">Typica</h3>
-                <p>Uno de los cafés más importantes cultural y genéticamente en el mundo, con alta calidad en Centroamérica.</p>
+                <p>Uno de los cafés más importantes cultural y genéticamente en el mundo, con alta calidad en
+                    Centroamérica.</p>
             </section>
             <section>
                 <h3 class="h3-small">Borbón</h3>
-                <p>Uno de los cafés más importantes cultural y genéticamente en el mundo, conocidos por su excelente calidad de la bebida en las mayores altitudes.</p>
+                <p>Uno de los cafés más importantes cultural y genéticamente en el mundo, conocidos por su excelente
+                    calidad de la bebida en las mayores altitudes.</p>
             </section>
             <section>
                 <h3 class="h3-small">Oro Azteca</h3>
                 <p>Adaptada para las zonas cálidas y suelos ácidos. Variedad de alto producción.</p>
             </section>
         </div>
-</aside>
-<div class="light-bg">
-<aside class="more container">
-        <h2 class="h2-small">Tuestes</h2>
-        <div class="gridthree2">
-            <section>
-                <h3 class="h3-small">Claro</h3>
-                <p>Los tuestes claros muestran los defectos o cualidades del grano, realza acidez y sabor en el grano, la bebida es ligera de cuerpo y es ideal para la preparación de mezclas.</p>
-            </section>
-            <section>
-                <h3 class="h3-small">Medio</h3>
-                <p>Se tuesta un poco más que el anterior.</p>
-            </section>
-            <section>
-                <h3 class="h3-small">Oscuro</h3>
-                <p>La superficie de los granos se contempla muy brillosa por el aceite que desprende y la bebida es bastante fuerte y seca la sensación al paladar.</p>
-            </section>
-        </div>
-</aside>
-</div>
-<aside class="container center-text">
+    </aside>
+    <div class="light-bg">
+        <aside class="more container">
+            <h2 class="h2-small">Tuestes</h2>
+            <div class="gridthree2">
+                <section>
+                    <h3 class="h3-small">Claro</h3>
+                    <p>Los tuestes claros muestran los defectos o cualidades del grano, realza acidez y sabor en el
+                        grano, la bebida es ligera de cuerpo y es ideal para la preparación de mezclas.</p>
+                </section>
+                <section>
+                    <h3 class="h3-small">Medio</h3>
+                    <p>Se tuesta un poco más que el anterior.</p>
+                </section>
+                <section>
+                    <h3 class="h3-small">Oscuro</h3>
+                    <p>La superficie de los granos se contempla muy brillosa por el aceite que desprende y la bebida es
+                        bastante fuerte y seca la sensación al paladar.</p>
+                </section>
+            </div>
+        </aside>
+    </div>
+    <aside class="container center-text">
         <h2 class="h2-small">Molidos</h2>
         <p>El molido lo efectuamos al gusto del cliente o de acuerdo al tipo de cafetera que utilice.</p>
         <p>Contamos con dos molinos con una capacidad de 3 kg. por minuto, con 9 niveles de molido.</p>
-    <div class="grid-scroll-x">
+        <div class="grid-scroll-x">
             <section>
                 <h3 class="h3-small">Grueso</h3>
                 <p>Percoladora</p>
@@ -185,47 +192,50 @@
                 <p>Turco y cafés de olla</p>
             </section>
         </div>
-</aside>
-<div class="green-bg">
+    </aside>
+    <div class="green-bg">
         <section class="llamada container light">
             <div class="join">
                 <h2>¡Agenda una llamada!</h2>
-                <p>Integer et arcu id nisl mollis lacinia. Sed accumsan ornare metus a tristique. Donec gravida odio lorem,
+                <p>Integer et arcu id nisl mollis lacinia. Sed accumsan ornare metus a tristique. Donec gravida odio
+                    lorem,
                     ac
-                    aliquet nibh sodales eu. Quisque ac tristique nulla. Nullam neque enim, consequat eu condimentum vel,
+                    aliquet nibh sodales eu. Quisque ac tristique nulla. Nullam neque enim, consequat eu condimentum
+                    vel,
                     bibendum id quam. Maecenas risus ex, porta et nisl sed, porttitor porttitor ligula. Sed eu ornare
                     augue.</p>
                 <form>
                     <label for="form-name2" id="form-name1">Nombre</label>
                     <input id="form-name2" name="nombre" placeholder="Maria Bravo" required type="name"><br>
                     <label id="form-mail1">Correo</label>
-                    <input id="form-mail2" name="email" placeholder="Ej. mariabravo@gmail.com" required type="email"><br>
+                    <input id="form-mail2" name="email" placeholder="Ej. mariabravo@gmail.com" required
+                           type="email"><br>
                     <label id="formtel1">Número telefónico</label>
                     <div id="formtel2"><select class="num-list" name="list">
                         <option value="52">52</option>
                         <option value="55">55</option>
                         <option class="cent" value="33">33</option>
                     </select>
-                    <input name="teléfono" type="tel"required placeholder="Ingresar teléfono">
-                    </div> 
+                        <input name="teléfono" placeholder="Ingresar teléfono" required type="tel">
+                    </div>
                     <legend id="formwhen"><strong>¿Cuándo te llamamos?</strong></legend>
-                       <label id="formday">Día</label><br>
+                    <label id="formday">Día</label><br>
                     <input id="calendar" type="date"><br>
-    
-                            <legend id="formtime">Horario</legend>
-                            <label id="formfrom1">De</label><br>
-                            <input id="formfrom2" type="text"><br>
-                            <label id="formuntil1">Hasta</label><br>
-                            <input id="formuntil2" type="text"><br><br>
+
+                    <legend id="formtime">Horario</legend>
+                    <label id="formfrom1">De</label><br>
+                    <input id="formfrom2" type="text"><br>
+                    <label id="formuntil1">Hasta</label><br>
+                    <input id="formuntil2" type="text"><br><br>
                     <p class="formbutton">
                         <input class="button dark" type="submit" value="Agendar llamada">
-                       </p>
+                    </p>
                 </form>
             </div>
-                <article>
-    
-    
-                </article>
+            <article>
+
+
+            </article>
         </section>
     </div>
     <div class="bigfoot">
@@ -259,5 +269,6 @@
             </footer>
         </div>
     </div>
-    </body>
-    </html>
+</div>
+</body>
+</html>
