@@ -36,6 +36,10 @@
     order: 2;
 }
 
+.order-3 {
+    order: 3;
+}
+
 /* Main grid */
 .main-grid {
     /*min-width: 1024px;*/
@@ -57,7 +61,7 @@
 
 .wrapper.order {
     display: grid;
-    grid-template-row: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
 }
 
 /*      Header */
@@ -67,7 +71,7 @@
     justify-content: space-between;
 }
 
-.wrapper.pedidos .header h3 {
+.wrapper.order .header h3 {
     order: 1;
 }
 
@@ -92,9 +96,18 @@ table > thead {
 
 table {
     width: 100%;
+    border-spacing: 0;
+}
+
+table td {
+    width: fit-content;
 }
 
 tr > td:nth-child(n+2) {
     text-align: right;
+}
+
+.pseudo-table span:last-of-type {
+    float: right;
 }
 
