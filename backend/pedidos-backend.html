@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html dir="ltr" lang="en">
+
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta content="Arturo Acevedo Bravo" name="author">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Scripts de compatibilidad -->
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+
+    <!-- Escala de viewport -->
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Link a CSS -->
+    <link href="../normalize.css" rel="stylesheet">
+    <link href="main-backend.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        function moveToPendientes() {
+            $("#source").appendTo("#pendiente");
+        }
+
+        function moveToEnRuta() {
+            $("#source").appendTo("#enruta");
+        }
+
+        function moveToEntregado() {
+            $("#source").appendTo("#entregado");
+        }
+    </script>
+
+    <title>Products</title>
+</head>
+<body class="main-grid">
+<div class="order-2">
+    <div class="toolbar">
+        <h1>Pedidos</h1>
+        <input placeholder="Buscar" type="search">
+        <button>Agregar pedido</button>
+    </div>
+    <div id="pendiente">
+        <h2>Pendiente</h2>
+        <div class="wrapper order" id="source">
+            <div class="header">
+                <h3>#236</h3>
+                <p>Hoy - 26/02/19</p>
+                <p>Capeltic <a href="">»</a></p>
+            </div>
+            <div class="grid-4">
+                <div>
+                    <h4>Pedido</h4>
+                    <table class="item order-table">
+                        <thead>
+                        <tr>
+                            <th>Artículo</th>
+                            <th>Cantidad</th>
+                            <th>Precio</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Orgánico</td>
+                            <td>10 x</td>
+                            <td>180</td>
+                        </tr>
+                        <tr>
+                            <td>Gourmet</td>
+                            <td>8 x</td>
+                            <td>220</td>
+                        </tr>
+                        <tr>
+                            <td>Especialidad</td>
+                            <td>6 x</td>
+                            <td>250</td>
+                        </tr>
+                        <tr>
+                            <td>Especialidad</td>
+                            <td>6 x</td>
+                            <td>250</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="pseudo-table">Descuento <span>15%</span><span>-$759</span></div>
+                    <div class="pseudo-table">Total<span>$4301</span></div>
+                </div>
+                <div>
+                    <h4>Dirección de envío</h4>
+                    <p>Joaquín Gallo 258<br>
+                        Santa Fe, Zedec Sta Fé<br>
+                        01219 Santa Fe<br>
+                        CDMX</p>
+                </div>
+                <div>
+                    <h4>Método de pago</h4>
+                    <h3>Tarjeta de crédito</h3>
+                    <p>Santander</p>
+                    <h3>Descuento</h3>
+                    <p>15%</p>
+                </div>
+                <div>
+                    <h4>Datos</h4>
+                    <table class="item data-table">
+                        <thead>
+                        <tr>
+                            <th>Etapa de envío</th>
+                            <th>Fecha</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Pendiente</td>
+                            <td>Hoy - 26/02/19</td>
+                        </tr>
+                        <tr>
+                            <td>En ruta</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Entregado</td>
+                            <td>-</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="etapa-envío">
+                <h4>Etapa del envío</h4>
+                <button onclick="moveToPendientes()">Pendiente</button>
+                <button onclick="moveToEnRuta()">En ruta</button>
+                <button onclick="moveToEntregado()">Entregado</button>
+            </div>
+        </div>
+    </div>
+    <div id="enruta">
+        <h2>En ruta</h2>
+    </div>
+    <div id="entregado">
+        <h2>Entregado</h2>
+    </div>
+</div>
+<nav class="order-1">
+    <h2 style="display: none">Menú</h2>
+    <div><img alt="Logo de Bats'il Maya" src="../images/logos/batsil_maya_logo.svg"></div>
+    <ul>
+        <li><a href="clientes-backend.html" target="_self">Clientes</a></li>
+        <li><a href="pedidos-backend.html" target="_self">Pedidos</a></li>
+        <li><a href="productos-backend.html" target="_self">Productos</a></li>
+    </ul>
+</nav>
+</body>
+</html>
