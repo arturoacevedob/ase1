@@ -173,7 +173,7 @@
 }
 
 .xtraarticles {
-    padding: 0 20% 55px 20%;
+    padding: 20% 55px ;
     display: grid;
     grid-auto-rows: auto;
     grid-gap: 42px;
@@ -335,6 +335,7 @@ label {
 }
 
 .formbutton {
+    padding: 5% 0 0 0;
     grid-column: 1 / 3;
     grid-row: 13;
 }
