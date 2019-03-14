@@ -173,7 +173,7 @@
 }
 
 .xtraarticles {
-    padding: 0 20% 55px 20%;
+    padding: 20% 55px ;
     display: grid;
     grid-auto-rows: auto;
     grid-gap: 42px;
