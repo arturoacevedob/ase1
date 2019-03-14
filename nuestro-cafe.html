@@ -38,9 +38,9 @@
                 <nav id="menu-desktop">
                     <h2>Menú</h2>
                     <ul class="menu-desktop-content">
-                        <li><a class="active" href="" target="_self">Inicio</a></li>
+                        <li><a href="" target="_self">Inicio</a></li>
                         <li><a href="nosotros.html" target="_self">Nosotros</a></li>
-                        <li><a href="nuestro-cafe.html" target="_self">Nuestro café</a></li>
+                        <li><a class="active" href="nuestro-cafe.html" target="_self">Nuestro café</a></li>
                         <li><a href="proceso.html" target="_self">Proceso</a></li>
                         <li><a href="" target="_self">Productos</a></li>
                         <li><a href="" target="_self">Noticias</a></li>
@@ -184,7 +184,6 @@
             </section>
         </div>
 </aside>
-
 <div class="green-bg">
         <section class="llamada container light">
             <div class="join">
@@ -195,31 +194,36 @@
                     bibendum id quam. Maecenas risus ex, porta et nisl sed, porttitor porttitor ligula. Sed eu ornare
                     augue.</p>
                 <form>
-                    Nombre<br>
-                    <input name="nombre" type="text"><br>
-                    Correo<br>
-                    <input name="email" type="email">
-                    Número teléfononico<br>
-                    <input name="teléfono" type="tel">
-                    <fieldset>
-                        <legend>¿Cuándo te llamamos?</legend>
-                        Día<br>
-                        <input type="text"><br>
-
-                        <fieldset>
-                            <legend>Hora</legend>
-                            De<br>
-                            <input type="text"><br>
-                            Hasta<br>
-                            <input type="text"><br><br>
-                        </fieldset>
-                    </fieldset>
+                    <label for="form-name2" id="form-name1">Nombre</label>
+                    <input id="form-name2" name="nombre" placeholder="Maria Bravo" required type="name"><br>
+                    <label id="form-mail1">Correo</label>
+                    <input id="form-mail2" name="email" placeholder="Ej. mariabravo@gmail.com" required type="email"><br>
+                    <label id="formtel1">Número telefónico</label>
+                    <div id="formtel2"><select class="num-list" name="list">
+                        <option value="52">52</option>
+                        <option value="55">55</option>
+                        <option class="cent" value="33">33</option>
+                    </select>
+                    <input name="teléfono" type="tel"required placeholder="Ingresar teléfono">
+                    </div> 
+                    <legend id="formwhen"><strong>¿Cuándo te llamamos?</strong></legend>
+                       <label id="formday">Día</label><br>
+                    <input id="calendar" type="date"><br>
+    
+                            <legend id="formtime">Horario</legend>
+                            <label id="formfrom1">De</label><br>
+                            <input id="formfrom2" type="text"><br>
+                            <label id="formuntil1">Hasta</label><br>
+                            <input id="formuntil2" type="text"><br><br>
+                    <p class="formbutton">
+                        <input class="button dark" type="submit" value="Agendar llamada">
+                       </p>
                 </form>
-                <article>
-
-
-                </article>
             </div>
+                <article>
+    
+    
+                </article>
         </section>
     </div>
     <div class="bigfoot">
@@ -253,6 +257,5 @@
             </footer>
         </div>
     </div>
-</div>
-</body>
-</html>
+    </body>
+    </html>

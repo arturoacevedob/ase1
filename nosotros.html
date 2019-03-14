@@ -95,20 +95,20 @@
     <!--Not sure .container will be useful here-->
     <div class="grid-culture container">
         <h2>Cultura Tseltal</h2>
-        <figure id="cult-img1"><img alt="" src="images/"></figure>
-        <article id="cul-art1">
+        <figure class="cult-img1"><img alt="" src="images/"></figure>
+        <article class="cul-art1">
             <h3>El pueblo tseltal</h3>
             <p>pertenece a la familia maya. Actualmente son el grupo indígena más numeroso en Chiapas, 34% de los habitantes del estado piensan la vida en tseltal.</p>
             <p>Los tseltales se definen a sí mismos como los “Bats’il Winiquetic”, los hombres verdaderos, o bien “Pas C’altic Winiquetic”, los hombres que hacen milpa ya que la vida comunitaria y familiar está organizada alrededor de la siembra del maíz.</p>
         </article>
-        <figure id="cult-img2"><img alt="" src="images/"></figure>
-        <article id="cul-art1">
+        <figure class="cult-img2"><img alt="" src="images/"></figure>
+        <article class="cul-art2">
             <h3>Add title here</h3>
             <p>La manera de ser de los tseltales ha sido determinada por el lugar histórico que configuró sus formas de resistencia y sobrevivencia.</p>
             <p>Al igual que muchos de los pueblos indígenas de México, y del mundo, las comunidades tseltales han sido históricamente sometidas a estructuras de dominación y empobrecimiento por lo que, a lo largo de los años, han tenido que organizarse para resistir y recuperar la propiedad y destino de su territorio.</p>
         </article>
-        <figure id="cult-img3"><img alt="" src="images/"></figure>
-        <article id="cul-art1">
+        <figure class="cult-img3"><img alt="" src="images/"></figure>
+        <article class="cul-art3">
             <h3>La actividad más importante</h3>
             <p>para estas comunidades es la pequeña agricultura familiar diversificada: producen maíz, frijol, calabaza, chile e incluyen cultivos comerciales como el café.</p>
             <h4>Autoconsumo</h4>
@@ -158,22 +158,21 @@
                 bibendum id quam. Maecenas risus ex, porta et nisl sed, porttitor porttitor ligula. Sed eu ornare
                 augue.</p>
             <form>
-                <label>Nombre</label><br>
-                <input id="formname" name="nombre" type="text" required placeholder="Ingresar nombre"><br>
-                <label id="formmail1">Correo</label><br>
-                <input id="formmail2" name="email" type="email" required placeholder="Ingresar correo"><br>
-                <label id="formtel1">Número teléfononico</label><br>
-                <div id="formtel2">
-                <select name="list" class="numlist">
+                <label for="form-name2" id="form-name1">Nombre</label>
+                <input id="form-name2" name="nombre" placeholder="Maria Bravo" required type="name"><br>
+                <label id="form-mail1">Correo</label>
+                <input id="form-mail2" name="email" placeholder="Ej. mariabravo@gmail.com" required type="email"><br>
+                <label id="formtel1">Número telefónico</label>
+                <div id="formtel2"><select class="num-list" name="list">
                     <option value="52">52</option>
                     <option value="55">55</option>
-                    <option value="33">33</option>
+                    <option class="cent" value="33">33</option>
                 </select>
                 <input name="teléfono" type="tel"required placeholder="Ingresar teléfono">
                 </div> 
                 <legend id="formwhen"><strong>¿Cuándo te llamamos?</strong></legend>
                    <label id="formday">Día</label><br>
-                    <input id="calendar" type="text"><br>
+                <input id="calendar" type="date"><br>
 
                         <legend id="formtime">Horario</legend>
                         <label id="formfrom1">De</label><br>
@@ -181,7 +180,7 @@
                         <label id="formuntil1">Hasta</label><br>
                         <input id="formuntil2" type="text"><br><br>
                 <p class="formbutton">
-                    <input class="button" type="submit" value="Agendar llamada">
+                    <input class="button dark" type="submit" value="Agendar llamada">
                    </p>
             </form>
         </div>
