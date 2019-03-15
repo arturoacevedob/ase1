@@ -656,6 +656,9 @@ input[name="teléfono"] {
     url(images/nuestro_cafe/header_nuestro_cafe_desde_el_cafetal_hasta_la_taza_batsil_maya.jpg) 59% 5% / cover no-repeat;
 }
 
+#nuestrocafe .image-ubicación{
+    background: url(images/nuestro_cafe/ubicacion_chiapas_batsil_maya.jpg) 70% 0 / cover no-repeat;
+}
 #nuestrocafe  .altura{
     padding-top: 15%;
     background: url(images/nuestro_cafe/altura_900_1400_msnm_batsil_maya.svg) 0 100% / contain no-repeat;
