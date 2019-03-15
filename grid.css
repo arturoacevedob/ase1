@@ -4,6 +4,7 @@
 :root {
     --container-padding: 4em 2vmax;
     --padding-top-bottom: 4em;
+    --padding-left-right: 2vmax;
 }
 
 #nosotros .grid-header {
@@ -792,6 +793,10 @@ form{
         padding: var(--padding-top-bottom) 0;
     }
 
+    .no-padding-top-bottom {
+        padding: 0 var(--padding-left-right);
+    }
+
     .grid-2-left {
         display: grid;
         grid-column: 1 / 3;
@@ -807,16 +812,12 @@ form{
     }
 
     .grid-2-left > .wrapper-text {
-        padding: 0 15% 0 0;
+        padding: 0 15% 0 c;
         grid-column: 1 / 2;
     }
 
-    .grid-2-left > .wrapper-text.padding-top-bottom {
-        padding: var(--padding-top-bottom) 15% var(--padding-top-bottom) 0;
-    }
-
     .grid-2-right > .wrapper-text {
-        padding: 0 0 0 15%;
+        padding: 0 10% 0 15%;
         grid-column: 2 / 3;
     }
 
