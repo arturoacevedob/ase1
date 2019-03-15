@@ -200,7 +200,7 @@
 }
 
 .product {
-    padding-bottom: 8vmax;
+    padding-bottom: 4vmax;
     border-radius: 0 0 130% 130% / 10%;
 }
 
@@ -213,7 +213,8 @@ label {
 }
 
 .container.gridbigproduct {
-    padding-top: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .extra-articles {
