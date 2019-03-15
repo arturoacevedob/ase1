@@ -619,6 +619,18 @@ input[name="teléfono"] {
     background: url(images/nosotros/header_nosotros_somos_la_planta_transformadora_de_café_batsil_maya.jpg) 70% 0 / cover no-repeat;
 }
 
+#nosotros #image-el-pueblo-tseltal{
+    background: url(images/nosotros/el_pueblo_tseltal_batsil_maya.jpg) 70% 0 / cover no-repeat;
+}
+
+#nosotros #image-corazon-tseltal{
+    background: url(images/nosotros/corazon_tseltal_batsil_maya.jpg) 70% 0 / cover no-repeat;
+}
+
+#nosotros #image-la-actividad-mas-importante{
+    background: url(images/nosotros/la_actividad_mas_importante_del_pueblo_tsental_batsil_maya.jpg) 70% 0 / cover no-repeat;
+}
+
 #nosotros .mision-vision {
     border-bottom: 2px solid var(--yellow);
     padding-bottom: 9%;
