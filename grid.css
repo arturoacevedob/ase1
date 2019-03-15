@@ -328,6 +328,12 @@ form{
 .center-button {
     text-align: center;
 }
+.grid-conditions{
+    grid-gap: 11px;
+}
+.grid-conditions article{
+    padding-top: 33px;
+}
 
 @media screen and (max-width: 639px) {
 
@@ -944,7 +950,6 @@ form{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: auto;
-        grid-gap: 5px;
     }
 }
 
