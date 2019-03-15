@@ -910,6 +910,12 @@ form{
         grid-column: 3;
         grid-row: 5 / 7;
     }
+    .grid-conditions{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        grid-gap: 5px;
+    }
 }
 
 @media screen and (max-width: 1023px) {
