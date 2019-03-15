@@ -63,6 +63,12 @@ img {
     filter: drop-shadow(0 0 20px rgba(0, 0, 0, .7));
 }
 
+.botones-h3{
+    padding-bottom: 2%;
+}
+.botones-p{
+    padding-bottom: 3%;
+}
 
 
 /* Hides `Bats'il Maya` and `Menu Principal` */
@@ -287,6 +293,21 @@ a:visited {
     transition: background-color var(--time) var(--ease);
 }
 
+.bnuestrocafe{
+    padding: 10% 0%;
+    box-sizing: border-box;
+    background: url(images/botones/boton_nuestro_cafe_desde_el_cafetal_a_la_taza_batsil_maya.jpg) 70% 0 / cover no-repeat;
+}
+.bnosotros{
+    padding: 10% 0%;
+    box-sizing: border-box;
+    background: url(images/botones/boton_nosotros_somos_la_planta_transformadora_de_cafe_batsil_maya.jpg) 70% 0 / cover no-repeat;
+}
+.bproductos{
+    padding: 10% 0%;
+    box-sizing: border-box;
+    background: url(images/botones/boton_productos_cafe_tseltal_miel_organica_jabones_artesanales_batsil_maya.jpg) 70% 0 / cover no-repeat;
+}
 .button.red:hover {
     text-decoration: none;
     background-color: var(--button-hover);
@@ -297,6 +318,7 @@ a:visited {
 .button.red:active {
     background-color: var(--button-active);
 }
+
 
 a:visited {
     color: var(--light);
@@ -594,13 +616,7 @@ input[name="teléfono"] {
 #nosotros header{
     background: url(images/nosotros/header_nosotros_somos_la_planta_transformadora_de_café_batsil_maya.jpg) 70% 0 / cover no-repeat;
 }
-#nosotros .bnosotros{
-    background: url(images/botones/boton_notostros_somos_la_planta_transformadora_de_cafe_batsil_maya.jpg) 70% 0 / cover no-repeat;
-}
-
-#nosotros .bproductos{
-    background: url(images/botones/boton_productos_cafe_tseltal_miel_organica_jabones_artesanales_batsil_maya.jpg) 70% 0 / cover no-repeat;
-}
+ 
 
 
 /* —————— AQUÍ EMPIEZAN ESTILOS DE NUESTRO CAFÉ—————— */
