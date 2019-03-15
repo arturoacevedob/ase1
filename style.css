@@ -618,9 +618,6 @@ input[name="teléfono"] {
 #nosotros header {
     background: url(images/nosotros/header_nosotros_somos_la_planta_transformadora_de_café_batsil_maya.jpg) 70% 0 / cover no-repeat;
 }
-<<<<<<< HEAD
- 
-=======
 
 #nosotros .mision-vision {
     border-bottom: 2px solid var(--yellow);
@@ -634,7 +631,6 @@ input[name="teléfono"] {
 #nosotros .bproductos {
     background: url(images/botones/boton_productos_cafe_tseltal_miel_organica_jabones_artesanales_batsil_maya.jpg) 70% 0 / cover no-repeat;
 }
->>>>>>> a29679141319177939dd190d98a87b992c25db7f
 
 
 /* —————— AQUÍ EMPIEZAN ESTILOS DE NUESTRO CAFÉ—————— */
