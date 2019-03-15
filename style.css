@@ -63,11 +63,7 @@ img {
     filter: drop-shadow(0 0 20px rgba(0, 0, 0, .7));
 }
 
-@media screen and (max-width: 1023px) {
-    .logo img {
-        height: 50px;
-    }
-}
+
 
 /* Hides `Bats'il Maya` and `Menu Principal` */
 h1, nav > h2 {
@@ -484,6 +480,10 @@ input[name="teléfono"] {
     .wrapper-text{
         padding: 4% 8% 4% 3%;
     }
+    #nosotros .mision-vision {
+        border-bottom: 2px solid var(--yellow);
+        padding-bottom: 9%;
+    }
 }
 
 @media screen and (min-width: 640px) {
@@ -532,6 +532,15 @@ input[name="teléfono"] {
         background: url(images/footer/footer_granos_de_cafe_batsil_maya.jpg
         ) 0 0 / cover no-repeat;
     }
+    /* —————— AQUÍ EMPIEZAN ESTILOS DE NOSOTROS—————— */
+
+    #nosotros .mision {
+        border-right: 2px solid var(--yellow);
+        padding-right: 14%;
+    }
+    #nosotros .vision{
+        padding-left: 14%; 
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -575,14 +584,15 @@ input[name="teléfono"] {
     }
     
 }
+@media screen and (max-width: 1023px) {
+    .logo img {
+        height: 50px;
+    }
+}
 
 /* —————— AQUÍ EMPIEZAN ESTILOS DE NOSOTROS—————— */
 #nosotros header{
     background: url(images/nosotros/header_nosotros_somos_la_planta_transformadora_de_café_batsil_maya.jpg) 70% 0 / cover no-repeat;
-}
-#nosotros .mision-vision{
-    border-bottom: 2px solid var(--yellow);
-    padding-bottom: 9%;
 }
 #nosotros .bnosotros{
     background: url(images/botones/boton_notostros_somos_la_planta_transformadora_de_cafe_batsil_maya.jpg) 70% 0 / cover no-repeat;
