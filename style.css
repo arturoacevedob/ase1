@@ -63,6 +63,12 @@ img {
     filter: drop-shadow(0 0 20px rgba(0, 0, 0, .7));
 }
 
+.botones-h3{
+    padding-bottom: 2%;
+}
+.botones-p{
+    padding-bottom: 3%;
+}
 
 
 /* Hides `Bats'il Maya` and `Menu Principal` */
@@ -92,6 +98,7 @@ h1, nav > h2 {
 .green-bg {
     background-color: var(--green);
 }
+
 .yellow-bg {
     background-color: var(--yellow);
 }
@@ -104,9 +111,10 @@ h1, nav > h2 {
     color: var(--yellow);
 }
 
-.red{
-        color: var(--red);
+.red {
+    color: var(--red);
 }
+
 /* —————— Font Import—————— */
 
 @font-face {
@@ -287,6 +295,21 @@ a:visited {
     transition: background-color var(--time) var(--ease);
 }
 
+.bnuestrocafe{
+    padding: 10% 0%;
+    box-sizing: border-box;
+    background: url(images/botones/boton_nuestro_cafe_desde_el_cafetal_a_la_taza_batsil_maya.jpg) 70% 0 / cover no-repeat;
+}
+.bnosotros{
+    padding: 10% 0%;
+    box-sizing: border-box;
+    background: url(images/botones/boton_nosotros_somos_la_planta_transformadora_de_cafe_batsil_maya.jpg) 70% 0 / cover no-repeat;
+}
+.bproductos{
+    padding: 10% 0%;
+    box-sizing: border-box;
+    background: url(images/botones/boton_productos_cafe_tseltal_miel_organica_jabones_artesanales_batsil_maya.jpg) 70% 0 / cover no-repeat;
+}
 .button.red:hover {
     text-decoration: none;
     background-color: var(--button-hover);
@@ -297,6 +320,7 @@ a:visited {
 .button.red:active {
     background-color: var(--button-active);
 }
+
 
 a:visited {
     color: var(--light);
@@ -325,7 +349,7 @@ header a {
     display: grid;
 }
 
-.xtraarticles p {
+.extra-articles p {
     color: #ffffff;
 }
 
@@ -360,12 +384,12 @@ header a {
 
 /* —————— Noticias —————— */
 .gridnews article h3 {
-    padding-left:3%; 
+    padding-left: 3%;
     color: var(--light);
 }
 
-.gridnews p{
-    padding: 0  0 3% 3%;
+.gridnews p {
+    padding: 0 0 3% 3%;
     color: var(--light);
 }
 
@@ -477,7 +501,7 @@ input[name="teléfono"] {
     }
 
     /* —————— AQUÍ EMPIEZAN ESTILOS DE NOSOTROS—————— */
-    .wrapper-text{
+    .wrapper-text {
         padding: 4% 8% 4% 3%;
     }
     #nosotros .mision-vision {
@@ -539,7 +563,7 @@ input[name="teléfono"] {
         padding-right: 14%;
     }
     #nosotros .vision{
-        padding-left: 14%; 
+        padding-left: 14%;
     }
 }
 
@@ -582,7 +606,7 @@ input[name="teléfono"] {
     .p-small {
         font-size: 12px;
     }
-    
+
 }
 @media screen and (max-width: 1023px) {
     .logo img {
@@ -591,32 +615,40 @@ input[name="teléfono"] {
 }
 
 /* —————— AQUÍ EMPIEZAN ESTILOS DE NOSOTROS—————— */
-#nosotros header{
+#nosotros header {
     background: url(images/nosotros/header_nosotros_somos_la_planta_transformadora_de_café_batsil_maya.jpg) 70% 0 / cover no-repeat;
 }
+
+#nosotros .mision-vision {
+    border-bottom: 2px solid var(--yellow);
+    padding-bottom: 9%;
+}
+
 #nosotros .bnosotros{
     background: url(images/botones/boton_notostros_somos_la_planta_transformadora_de_cafe_batsil_maya.jpg) 70% 0 / cover no-repeat;
 }
 
-#nosotros .bproductos{
+#nosotros .bproductos {
     background: url(images/botones/boton_productos_cafe_tseltal_miel_organica_jabones_artesanales_batsil_maya.jpg) 70% 0 / cover no-repeat;
 }
 
 
 /* —————— AQUÍ EMPIEZAN ESTILOS DE NUESTRO CAFÉ—————— */
-#nuestrocafe header{
+#nuestrocafe header {
     background: url(images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
     url(images/nuestro_cafe/header_nuestro_cafe_desde_el_cafetal_hasta_la_taza_batsil_maya.jpg) 59% 5% / cover no-repeat;
 }
 
 /* —————— AQUÍ EMPIEZAN ESTILOS DE PRODUCTOS—————— */
-#productos header{
+#productos header {
     background: url(images/fade/header_fade_cafe_batsil_maya.png) 0 100% / contain repeat-x,
     url(images/product/header_productos_batsil_maya.jpg) 70% 0 / cover no-repeat;
 }
-#productos .product{
+
+#productos .product {
     border-radius: 0;
 }
-#jabon a{
+
+#jabon a {
     color: var(--dark);
 }
