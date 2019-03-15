@@ -306,7 +306,12 @@ input {
 .num-list {
     width: auto;
 }
-
+form{
+    grid-column-gap: 8px;
+}
+#formwhen{
+    padding-top: 33px;
+}
 #nuestrocafe .more {
     text-align: center;
 }
