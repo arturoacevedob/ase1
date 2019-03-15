@@ -154,7 +154,7 @@ h2, h3, h4 {
     text-transform: uppercase;
 }
 
-.h2-small.product-title {
+.h2-small .product-title {
     padding: 0;
 }
 
@@ -478,7 +478,9 @@ input[name="teléfono"] {
     .h2-small {
         font-size: 16px;
     }
-
+    #productos .product-title {
+        font-size: 25px;
+    }
     h3, .h3-big {
         font-size: 35px;
         line-height: 1.2em;
@@ -527,7 +529,9 @@ input[name="teléfono"] {
     .h2-small {
         font-size: 16px;
     }
-
+    #productos .product-title {
+        font-size: 25px;
+    }
     h3, .h3-big {
         font-size: 35px;
         line-height: 1.2em;
@@ -580,11 +584,12 @@ input[name="teléfono"] {
         padding: 1em 0;
         font-size: 25px;
     }
-
+    #productos .product-title {
+        font-size: 25px;
+    }
     .h2-small {
         font-size: 16px;
     }
-
     h3, .h3-big {
         font-size: 35px;
         line-height: 1.2em;
