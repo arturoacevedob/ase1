@@ -607,3 +607,6 @@ input[name="teléfono"] {
 #productos .product{
     border-radius: 0;
 }
+#jabon a{
+    color: var(--dark);
+}
