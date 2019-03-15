@@ -479,6 +479,11 @@ input[name="teléfono"] {
     .p-small {
         font-size: 12px;
     }
+
+    /* —————— AQUÍ EMPIEZAN ESTILOS DE NOSOTROS—————— */
+    .wrapper-text{
+        padding: 4% 8% 4% 3%;
+    }
 }
 
 @media screen and (min-width: 640px) {
@@ -568,6 +573,7 @@ input[name="teléfono"] {
     .p-small {
         font-size: 12px;
     }
+    
 }
 
 /* —————— AQUÍ EMPIEZAN ESTILOS DE NOSOTROS—————— */
