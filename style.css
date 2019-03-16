@@ -63,12 +63,15 @@ img {
     filter: drop-shadow(0 0 20px rgba(0, 0, 0, .7));
 }
 
+
 .botones-h3{
     padding-bottom: 2%;
 }
 .botones-p{
     padding-bottom: 3%;
 }
+
+
 
 
 /* Hides `Bats'il Maya` and `Menu Principal` */
@@ -367,6 +370,13 @@ header a {
     color: var(--yellow);
 }
 
+.icono-envio{
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: var(--yellow) url(images/inicio/icono_de_caja_de_envio_batsil_maya.svg) 0 57% / contain no-repeat ;
+}
+
 /* —————— Nuestros clientes —————— */
 .clients article h3 {
     display: none;
@@ -402,7 +412,7 @@ header a {
 }
 
 .three {
-    background: url(images/noticias/noticia3.jpg) 0 60% / cover no-repeat;
+    background: url(images/noticias/noticia3.jpg) 0 39% / cover no-repeat;
 }
 
 .four {
@@ -500,7 +510,23 @@ input[name="teléfono"] {
     .p-small {
         font-size: 12px;
     }
+     /* —————— certificados —————— */
 
+     .one {
+        background: url(images/noticias/conoce_nuevo_capeltic_universidad_iberoamericana_cdmx_batsil_maya.jpg) 0 57% / cover no-repeat;
+    }
+    
+    .two {
+        background: url(images/noticias/noticia2.jpg) 52% 60% / cover no-repeat;
+    }
+    
+    .three {
+        background: url(images/noticias/noticia3.jpg) 0 39% / cover no-repeat;
+    }
+    
+    .four {
+        background: url(images/noticias/noticia4.jpg) 0 38% / cover no-repeat;
+    }
     /* —————— AQUÍ EMPIEZAN ESTILOS DE NOSOTROS—————— */
     .wrapper-text {
         padding: 4% 8% 4% 3%;
@@ -689,4 +715,9 @@ input[name="teléfono"] {
 
 #jabon a {
     color: var(--dark);
+}
+/* —————— AQUÍ EMPIEZAN ESTILOS DE AYUDA—————— */
+#ayuda header {
+    background: url(images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
+    url(images/ayuda/header_ayuda_batsil_maya.jpg) 70% 71% / cover no-repeat;
 }
