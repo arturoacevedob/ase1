@@ -18,6 +18,9 @@
     <link href="grid.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <link href="normalize.css" rel="stylesheet">
+    <link href="mapa.css" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <!-- Link a favicon -->
     <link href="images/logos/batsil_maya_logo.svg" rel="icon">
 
@@ -131,9 +134,28 @@
         <p class="h3-big light center-aligned">Nuestro café, <span>100% orgánico</span>, es cultivado por familias
             indígenas
             <span>Tseltales</span> en la selva norte de <span>Chiapas</span></p>
-        <figure><img alt="Mapa mundi de Bats'il Maya para concocer Dónde están y a Dónde llegan"
-                     src="images/inicio/mapa_mundi_donde_estamos_donde_llegamos_batsil_maya.svg">
+        
         </figure>
+        <div class="distribution-map mapa">
+                <figure><img class="mapa-mundi" alt="Mapa mundi de Bats'il Maya para concocer Dónde están y a Dónde llegan"
+                    src="images/inicio/mapa_mundi_donde_estamos_donde_llegamos_batsil_maya.svg">
+                <button class="map-point boton1 fa fa-map-marker" aria-hidden="true">
+                    <div class="contentm">
+                        <div class="centered-y">
+                            <h2>Bats'il Maya</h2>
+                            <p>Aquí tostamos, empaquetamos y comercializamos el producto terminado</p>
+                        </div>
+                    </div>
+                </button>
+                <button class="map-point fa fa-map-marker boton2">
+                    <div class="contentm">
+                        <div class="centered-y">
+                            <h2>Japón</h2>
+                            <p>Primeros compradores desde 1999</p>
+                        </div>
+                    </div>
+                </button>
+            </div>
     </article>
     <p>Chilón, Chiapas</p>
     <p>Japón</p>
@@ -314,5 +336,6 @@
         </footer>
     </div>
 </div>
+<script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js'></script>
 </body>
 </html>
