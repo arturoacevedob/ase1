@@ -455,6 +455,7 @@ select.num-list {
 }
 
 input[name="teléfono"] {
+    width: 100%;
     border-radius: 0 33px 33px 0;
 }
 

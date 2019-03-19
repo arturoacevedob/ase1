@@ -312,9 +312,9 @@ label {
 input {
     width: auto;
 }
-
-.num-list {
-    width: auto;
+#formtel2{
+    display: flex;
+    width: 100%;
 }
 form{
     grid-column-gap: 8px;
