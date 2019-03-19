@@ -3,9 +3,16 @@
   position: relative;
   box-sizing: border-box;
 }
+
+.mapa h2{
+  margin: 0;
+}
 .boton1{
   top: 264px;
   left: 209px;
+}
+.boton1 h2{
+  margin: 0;
 }
 .boton2{
   top: 223px;
@@ -78,7 +85,6 @@
   opacity: 1;
   width: 300px;
   height: 220px;
-  color: #e5e5e5;
   z-index: 1;
   transition: opacity 0.25s ease-in-out, width 0.25s ease-in-out, height 0.25s ease-in-out;
 }
@@ -97,5 +103,6 @@
 }
 
 .fa-map-marker{
-  color: #EBA00C;
+  color: var(--yellow
+  );
 }
