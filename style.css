@@ -455,6 +455,7 @@ select.num-list {
 }
 
 input[name="teléfono"] {
+    width: 100%;
     border-radius: 0 33px 33px 0;
 }
 
@@ -718,7 +719,9 @@ input[name="teléfono"] {
 #productos .product {
     border-radius: 0;
 }
-
+.circle img{
+    border-radius: 100px;
+}
 #jabon a {
     color: var(--dark);
 }
