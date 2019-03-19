@@ -714,7 +714,9 @@ input[name="teléfono"] {
 #productos .product {
     border-radius: 0;
 }
-
+.circle img{
+    border-radius: 100px;
+}
 #jabon a {
     color: var(--dark);
 }
