@@ -704,6 +704,11 @@ input[name="teléfono"] {
 .grid-conditions h3{
     font-size: 16px;
 }
+/* —————— AQUÍ EMPIEZAN ESTILOS DE PROCESO—————— */
+#proceso header {
+    background: url(images/fade/header_fade_light_batsil_maya.png) 0 100% / contain repeat-x,
+    url(images/proceso/header_proceso_desde_el_cafetal_a_la_taza_batsil_maya.jpg) 70% 0 / cover no-repeat;
+}
 /* —————— AQUÍ EMPIEZAN ESTILOS DE PRODUCTOS—————— */
 #productos header {
     background: url(images/fade/header_fade_cafe_batsil_maya.png) 0 100% / contain repeat-x,
