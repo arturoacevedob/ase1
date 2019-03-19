@@ -8,15 +8,15 @@
   margin: 0;
 }
 .boton1{
-  top: 264px;
-  left: 209px;
+  top: 52.5%;
+  left: 21.5%;
 }
 .boton1 h2{
   margin: 0;
 }
 .boton2{
-  top: 223px;
-  left: 856px;
+  top: 41.5%;
+  left: 84%;
 }
 .centered {
   position: absolute;
@@ -106,3 +106,5 @@
   color: var(--yellow
   );
 }
+
+
