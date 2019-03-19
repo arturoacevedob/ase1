@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b0b4be1-8d7c-4364-8440-568a85826da6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/grid.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/proceso.html" beforeDir="false" afterPath="$PROJECT_DIR$/proceso.html" afterDir="false" />
     </list>
@@ -18,13 +19,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.46306592">
+    <splitter split-orientation="horizontal" split-proportion="0.46624306">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="629">
+                <state relative-caret-position="630">
                   <caret line="102" selection-start-line="102" selection-end-line="102" />
                 </state>
               </provider>
@@ -38,16 +39,16 @@
             <entry file="file://$PROJECT_DIR$/style.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="2822">
-                  <caret line="535" column="27" lean-forward="true" selection-start-line="535" selection-start-column="27" selection-end-line="535" selection-end-column="27" />
+                  <caret line="536" column="27" lean-forward="true" selection-start-line="536" selection-start-column="27" selection-end-line="536" selection-end-column="27" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/grid.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2490">
-                  <caret line="166" column="35" selection-start-line="166" selection-start-column="35" selection-end-line="166" selection-end-column="35" />
+                <state relative-caret-position="460">
+                  <caret line="164" column="18" selection-start-line="164" selection-start-column="18" selection-end-line="164" selection-end-column="18" />
                 </state>
               </provider>
             </entry>
@@ -83,11 +84,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/proceso.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="198">
-                  <caret line="166" column="47" selection-start-line="166" selection-start-column="47" selection-end-line="166" selection-end-column="47" />
+                <state relative-caret-position="1470">
+                  <caret line="98" column="12" lean-forward="true" selection-start-line="98" selection-start-column="12" selection-end-line="98" selection-end-column="12" />
                 </state>
               </provider>
             </entry>
@@ -184,8 +185,8 @@
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/nosotros.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/grid.css" />
         <option value="$PROJECT_DIR$/proceso.html" />
+        <option value="$PROJECT_DIR$/grid.css" />
       </list>
     </option>
   </component>
@@ -278,7 +279,7 @@
       <workItem from="1552672158781" duration="10002000" />
       <workItem from="1552779030086" duration="484000" />
       <workItem from="1552932149692" duration="844000" />
-      <workItem from="1553025633803" duration="1384000" />
+      <workItem from="1553025633803" duration="2176000" />
     </task>
     <task id="LOCAL-00001" summary="Reorganización de contenido&#10;Agregué tipografía">
       <created>1552066604756</created>
@@ -490,11 +491,18 @@
       <option name="project" value="LOCAL" />
       <updated>1553025684371</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Light beneficios in proceso.html&#10;Fixed mobile nav bar.">
+      <created>1553031315987</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1553031315987</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103834000" />
+    <option name="totallyTimeSpent" value="104626000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -591,7 +599,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Added Bats'il Maya logo." />
     <MESSAGE value="Sistema de tipografía v0.2&#10;Sistema de botones v0.2&#10;Arreglé unas clases de contenedor en nav HTML&#10;Quité los selectores de tipografía en grid.css&#10;Agregué estilo para links" />
     <MESSAGE value="Fixed grid arguments.&#10;Added and modified HTML classes.&#10;Fixed header images.&#10;Map is better now (:&#10;General optimizations and fixes." />
     <MESSAGE value="Merge commit." />
@@ -616,7 +623,8 @@
     <MESSAGE value="Fixed desktop grid in Cultura Tsetal in nosotros.html" />
     <MESSAGE value="More fixes to desktop grid in Cultura Tseltal in nosotros.html" />
     <MESSAGE value="workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml" />
+    <MESSAGE value="Light beneficios in proceso.html&#10;Fixed mobile nav bar." />
+    <option name="LAST_COMMIT_MESSAGE" value="Light beneficios in proceso.html&#10;Fixed mobile nav bar." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -725,13 +733,13 @@
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2822">
-          <caret line="535" column="27" lean-forward="true" selection-start-line="535" selection-start-column="27" selection-end-line="535" selection-end-column="27" />
+          <caret line="536" column="27" lean-forward="true" selection-start-line="536" selection-start-column="27" selection-end-line="536" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
+        <state relative-caret-position="630">
           <caret line="102" selection-start-line="102" selection-end-line="102" />
         </state>
       </provider>
@@ -761,17 +769,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grid.css">
+    <entry file="file://$PROJECT_DIR$/proceso.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2490">
-          <caret line="166" column="35" selection-start-line="166" selection-start-column="35" selection-end-line="166" selection-end-column="35" />
+        <state relative-caret-position="1470">
+          <caret line="98" column="12" lean-forward="true" selection-start-line="98" selection-start-column="12" selection-end-line="98" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/proceso.html">
+    <entry file="file://$PROJECT_DIR$/grid.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="166" column="47" selection-start-line="166" selection-start-column="47" selection-end-line="166" selection-end-column="47" />
+        <state relative-caret-position="460">
+          <caret line="164" column="18" selection-start-line="164" selection-start-column="18" selection-end-line="164" selection-end-column="18" />
         </state>
       </provider>
     </entry>
