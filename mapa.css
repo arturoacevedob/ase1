@@ -68,7 +68,7 @@
   height: 100%;
   left: 50%;
   -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+  transform: translateX(0%);
   overflow: overlay;
 }
 .distribution-map .map-point:active, .distribution-map .map-point:focus {
