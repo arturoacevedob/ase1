@@ -136,6 +136,9 @@
     background: var(--dark);
 }
 
+#menu-mobile input[type=checkbox]:checked + label #menu-icon {
+    background: transparent;
+}
 
 /*** MENU ***/
 /* Overlay */
@@ -151,15 +154,20 @@
     z-index: -1;
 }
 
+#menu-mobile input:checked ~ label[for=menu-mobile-toggle] {
+    position: fixed;
+}
+
 /* List */
 .menu-mobile-content {
-    height: 90%;
+    height: 80%;
+    width: 100%;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     list-style: none;
     margin: 0;
-    max-height: 0;
     opacity: 0;
     overflow: hidden;
     padding: 0;
@@ -168,6 +176,7 @@
 
 #menu-mobile input:checked ~ .menu-mobile-content {
     max-height: inherit;
+    position: fixed;
     opacity: 1;
 }
 
