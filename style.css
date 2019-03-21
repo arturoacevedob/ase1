@@ -376,14 +376,21 @@ header a {
     color: #ffffff;
 }
 
-.map p {
+.map .world-map p{
     max-width: 700px;
     margin: 0 auto;
     grid-row: 1;
 }
 
-.map h2 {
+.map .world-map h2 {
     margin: 2em 0;
+}
+
+.map .extra-articles{
+    padding-bottom: 3em;
+}
+.map .extra-articles p{
+    padding: 0 88px;
 }
 
 .map span {
