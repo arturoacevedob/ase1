@@ -367,6 +367,12 @@ form {
 .grid-conditions article {
     padding-top: 33px;
 }
+#productoorganico li{
+    display: inline-block;
+}
+.grid-4 h3{
+    font-size: 20px;
+}
 
 @media screen and (max-width: 639px) {
 
@@ -625,6 +631,12 @@ form {
 
     .desktop-family {
         display: none;
+    }
+    .grid-4{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        grid-gap: 5px;
     }
 }
 
@@ -991,6 +1003,12 @@ form {
 
     .mobile-family {
         display: none;
+    }
+    .grid-4{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: auto;
+        grid-gap: 5px;
     }
 }
 
