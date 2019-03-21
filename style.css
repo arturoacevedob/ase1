@@ -391,10 +391,10 @@ header a {
 }
 
 .icono-envio {
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    background: var(--yellow) url(images/inicio/icono_de_caja_de_envio_batsil_maya.svg) 0 57% / contain no-repeat;
+    margin: auto;
+    padding: 7%;
+    box-sizing: border-box;
+    background:url(images/inicio/icono_inicio_envios_batsil_maya.svg) 0 57% / contain no-repeat;
 }
 
 /* —————— Nuestros clientes —————— */
