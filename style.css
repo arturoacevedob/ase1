@@ -467,7 +467,8 @@ input {
     border-radius: 33px;
 }
 
-select.num-list {
+.num-list {
+    padding-left: 20px;
     width: 75px;
     border-radius: 33px 0 0 33px;
     border: none;
@@ -481,7 +482,6 @@ select.num-list {
     background-size: 5px 11px;
     */
 }
-
 input[name="teléfono"] {
     width: 100%;
     border-radius: 0 33px 33px 0;
@@ -568,7 +568,13 @@ input[name="teléfono"] {
         border-bottom: 2px solid var(--yellow);
         padding-bottom: 9%;
     }
-
+    #nosotros .mision {
+        border-bottom: 2px solid var(--yellow);
+        padding-bottom: 5%;
+    }
+    #nosotros .vision {
+        padding-top: 5%;
+    }
 }
 
 @media screen and (min-width: 640px) {
@@ -704,9 +710,6 @@ input[name="teléfono"] {
     padding-bottom: 9%;
 }
 
-#nosotros .bnosotros {
-    
-}
 #nosotros .desktop-family figure{
     margin: auto;
     max-width: 50%;
