@@ -391,7 +391,8 @@ form {
     }
 
     .extra-articles {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
+        grid-auto-flow: row;
     }
 
     .h2-link {
