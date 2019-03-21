@@ -386,8 +386,11 @@ form {
     display: grid;
     grid-template-columns: auto;
 }
-.image-top-first{
+.image-top-first-round{
     grid-row: 1;
+}
+.image-top-first-round img{
+    border-radius: 111px;
 }
 
 @media screen and (max-width: 639px) {
@@ -433,7 +436,6 @@ form {
     .grid-scroll-x article {
         padding-left: 5px;
         box-sizing: border-box;
-        width: 150px;
     }
 
     .gridthree1 {
@@ -559,6 +561,7 @@ form {
         scroll-snap-type: x proximity;
         padding-bottom: calc(.75 * var(--gutter));
         margin-bottom: calc(-.25 * var(--gutter));
+        align-items: center;
     }
 
     .grid-scroll-x:before,
