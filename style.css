@@ -54,7 +54,7 @@ img {
     max-width: 100%;
 }
 
-.logo img {
+.logo > img, .logo-footer > img {
     height: 75px;
 }
 
@@ -518,7 +518,7 @@ input[name="teléfono"] {
     }
 
     .p-small {
-        font-size: 12px;
+        font-size: 13px;
     }
      /* —————— certificados —————— */
 
@@ -586,7 +586,7 @@ input[name="teléfono"] {
     }
 
     .p-small {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .bigfoot {
@@ -643,12 +643,12 @@ input[name="teléfono"] {
     }
 
     .p-small {
-        font-size: 12px;
+        font-size: 13px;
     }
 
 }
 @media screen and (max-width: 1023px) {
-    .logo img {
+    .logo > img {
         height: 50px;
     }
 }
