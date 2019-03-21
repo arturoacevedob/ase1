@@ -394,12 +394,12 @@ header a {
 
 /* —————— certificados —————— */
 .certificate article figure {
-    width: 70%;
+    width: 50%;
     margin: auto;
 }
 
 .certificate article img {
-    max-width: 100%;
+    width: 100%;
 }
 
 /* —————— Noticias —————— */
