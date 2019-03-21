@@ -389,7 +389,7 @@ form {
 .image-top-first-round{
     grid-row: 1;
 }
-.image-top-first-round img{
+ #homepage .image-top-first-round img{
     border-radius: 111px;
 }
 
