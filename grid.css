@@ -76,6 +76,11 @@
     order: 2;
 }
 
+label, legend {
+    padding: 1em 1em 0.5em;
+}
+
+
 /*************** Mobile Navigation **************/
 #menu-mobile {
     left: 0;
@@ -496,6 +501,10 @@ form {
         --gutter: 3%;
     }
 
+    .container.footer {
+        padding-bottom: calc(var(--padding-top-bottom) / 3);
+    }
+
     .grid-six {
         padding: 0 11%;
         display: grid;
@@ -716,10 +725,6 @@ form {
         display: grid;
         grid-template-columns: auto auto;
         grid-auto-rows: auto;
-    }
-
-    label {
-        padding-top: 1em;
     }
 
     #form-name1 {
