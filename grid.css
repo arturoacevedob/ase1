@@ -279,10 +279,10 @@ label {
     justify-items: center;
 }
 
-.nav-wrapper.desktop aside {
+.nav-wrapper.desktop > ul {
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: column;
     align-items: center;
     justify-items: center;
 }
