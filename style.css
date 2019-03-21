@@ -11,6 +11,7 @@ article, aside, footer, header, hgroup, main, nav, section {
     --green: #758A17;
     --light: #FFFEF5;
     --dark: #40290A;
+    --white: #ffffff;
 
     --a-link: var(--light);
     --a-visited: #cccbc6;
@@ -62,8 +63,6 @@ img {
     -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, .7));
     filter: drop-shadow(0 0 20px rgba(0, 0, 0, .7));
 }
-
-
 .botones-h3{
     padding-bottom: 2%;
 }
@@ -90,6 +89,17 @@ h1, nav > h2 {
     color: var(--dark);
 }
 
+.yellow {
+    color: var(--yellow);
+}
+
+.red {
+    color: var(--red);
+}
+.white{
+    color: var(--white);
+}
+
 .light-bg {
     background-color: var(--light);
 }
@@ -110,13 +120,7 @@ h1, nav > h2 {
     border-bottom: 3px solid var(--a-hover);
 }
 
-.yellow {
-    color: var(--yellow);
-}
 
-.red {
-    color: var(--red);
-}
 
 /* —————— Font Import—————— */
 
