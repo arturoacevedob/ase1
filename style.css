@@ -382,7 +382,7 @@ header a {
     grid-row: 1;
 }
 
-.map .world-map h2 {
+.map .world-map .h2-small {
     margin: 2em 0;
 }
 
