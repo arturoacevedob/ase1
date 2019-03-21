@@ -314,6 +314,12 @@ a:visited {
     box-sizing: border-box;
     background: url(images/botones/boton_productos_cafe_tseltal_miel_organica_jabones_artesanales_batsil_maya.jpg) 70% 0 / cover no-repeat;
 }
+.bproceso{
+    padding: 10% 0%;
+    box-sizing: border-box;
+    background: url(images/botones/boton_proceso_batsil_maya.jpg) 70% 0 / cover no-repeat;
+}
+
 .button.red:hover {
     text-decoration: none;
     background-color: var(--button-hover);
