@@ -11,6 +11,7 @@ article, aside, footer, header, hgroup, main, nav, section {
     --green: #758A17;
     --light: #FFFEF5;
     --dark: #40290A;
+    --white: #ffffff;
 
     --a-link: var(--light);
     --a-visited: #cccbc6;
@@ -67,7 +68,6 @@ img {
     filter: drop-shadow(0 0 20px rgba(0, 0, 0, .7));
 }
 
-
 .botones-h3 {
     padding-bottom: 2%;
 }
@@ -93,6 +93,17 @@ h1, nav > h2 {
     color: var(--dark);
 }
 
+.yellow {
+    color: var(--yellow);
+}
+
+.red {
+    color: var(--red);
+}
+.white{
+    color: var(--white);
+}
+
 .light-bg {
     background-color: var(--light);
 }
@@ -113,13 +124,7 @@ h1, nav > h2 {
     border-bottom: 3px solid var(--a-hover);
 }
 
-.yellow {
-    color: var(--yellow);
-}
 
-.red {
-    color: var(--red);
-}
 
 /* —————— Font Import—————— */
 
@@ -403,10 +408,6 @@ header a {
     margin: auto;
 }
 
-.certificate article img {
-    width: 100%;
-}
-
 /* —————— Noticias —————— */
 .gridnews article h3 {
     padding-left: 3%;
@@ -560,6 +561,7 @@ input[name="teléfono"] {
         border-bottom: 2px solid var(--yellow);
         padding-bottom: 9%;
     }
+
 }
 
 @media screen and (min-width: 640px) {
@@ -696,6 +698,21 @@ input[name="teléfono"] {
 }
 
 #nosotros .bnosotros {
+#nosotros .desktop-family figure{
+    margin: auto;
+    max-width: 50%;
+}
+#nosotros .desktop-family img{
+    width: 30%;
+}
+#nosotros .desktop-family .batsil-maya figure{
+    margin: auto;
+    max-width: 100%;
+}
+#nosotros .desktop-family .batsil-maya img{
+    width: 30%;
+}
+#nosotros .bnosotros{
     background: url(images/botones/boton_notostros_somos_la_planta_transformadora_de_cafe_batsil_maya.jpg) 70% 0 / cover no-repeat;
 }
 
