@@ -398,10 +398,6 @@ header a {
     margin: auto;
 }
 
-.certificate article img {
-    width: 100%;
-}
-
 /* —————— Noticias —————— */
 .gridnews article h3 {
     padding-left: 3%;
@@ -544,6 +540,13 @@ input[name="teléfono"] {
     #nosotros .mision-vision {
         border-bottom: 2px solid var(--yellow);
         padding-bottom: 9%;
+    }
+    #nosotros .yomol figure{
+        margin: auto;
+        max-width: 50%;
+    }
+    #nosotros .yomol img{
+        width: 30%;
     }
 }
 
