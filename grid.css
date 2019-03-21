@@ -296,10 +296,11 @@ label {
     justify-items: center;
 }
 
-.indproduct {
+.ind-product {
     display: grid;
     grid-template-columns: auto;
     grid-auto-rows: auto;
+    align-content: start;
 }
 
 .pname {
@@ -572,7 +573,6 @@ form {
         scroll-snap-type: x proximity;
         padding-bottom: calc(.75 * var(--gutter));
         margin-bottom: calc(-.25 * var(--gutter));
-        align-items: center;
     }
 
     .grid-scroll-x:before,

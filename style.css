@@ -382,7 +382,11 @@ header a {
     grid-row: 1;
 }
 
+<<<<<<< HEAD
 .map .world-map .h2-small {
+=======
+.map .world-map h2:first-child {
+>>>>>>> 0efd1646087e9dd961a9c95697de4dd08aa3ea9b
     margin: 2em 0;
 }
 
