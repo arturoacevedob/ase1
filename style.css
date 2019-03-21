@@ -340,8 +340,6 @@ a:visited {
 
 header {
     padding-bottom: 7vmax;
-    background: url(images/fade/header_fade_light_batsil_maya.png) 0 100% / contain repeat-x,
-    url(images/inicio/header_café_tseltal_solidario_trabajo_digno_batsil_maya.jpg) 70% 0 / cover no-repeat;
 }
 
 header a {
@@ -351,6 +349,11 @@ header a {
 header a {
     color: var(--light);
     text-decoration: none;
+}
+
+#homepage header {
+    background: url(images/fade/header_fade_light_batsil_maya.png) 0 100% / contain repeat-x,
+    url(images/inicio/header_café_tseltal_solidario_trabajo_digno_batsil_maya.jpg) 70% 0 / cover no-repeat;
 }
 
 /* —————— Dónde estamos y a dónde llegamos —————— */
@@ -468,7 +471,6 @@ input[name="teléfono"] {
 /* —————— footer —————— */
 .bigfoot {
     color: #ffffff;
-    padding: 22px;
     font-size: 16px;
     background: url(images/footer/footer_mobile_granos_de_cafe_batsil_maya.jpg) 50% 50% / cover no-repeat;
 }
@@ -588,7 +590,6 @@ input[name="teléfono"] {
     }
 
     .bigfoot {
-        padding: 44px;
         font-size: 18px;
         background: url(images/footer/footer_granos_de_cafe_batsil_maya.jpg
         ) 0 0 / cover no-repeat;
@@ -653,7 +654,7 @@ input[name="teléfono"] {
 }
 
 /* —————— AQUÍ EMPIEZAN ESTILOS DE NOSOTROS—————— */
-#nosotros header {
+#header-image-nosotros {
     background: url(images/nosotros/header_nosotros_somos_la_planta_transformadora_de_café_batsil_maya.jpg) 70% 0 / cover no-repeat;
 }
 

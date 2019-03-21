@@ -7,9 +7,27 @@
     --padding-left-right: 2vmax;
 }
 
-#nosotros .grid-header {
+#nosotros header {
     display: grid;
     grid-template-rows: 1fr 1fr;
+}
+
+#mapa-nosotros {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    z-index: 0;
+}
+
+#nosotros .grid-header {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    z-index: 1;
+}
+
+#header-image-nosotros {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    z-index: -1;
 }
 
 .padding-top {
@@ -312,16 +330,20 @@ label {
 input {
     width: auto;
 }
-#formtel2{
+
+#formtel2 {
     display: flex;
     width: 100%;
 }
-form{
+
+form {
     grid-column-gap: 8px;
 }
-#formwhen{
+
+#formwhen {
     padding-top: 33px;
 }
+
 #nuestrocafe .more {
     text-align: center;
 }
@@ -337,10 +359,12 @@ form{
 .center-button {
     text-align: center;
 }
-.grid-conditions{
+
+.grid-conditions {
     grid-gap: 11px;
 }
-.grid-conditions article{
+
+.grid-conditions article {
     padding-top: 33px;
 }
 
@@ -598,7 +622,8 @@ form{
         grid-template-columns: auto;
         grid-auto-rows: auto;
     }
-    .desktop-family{
+
+    .desktop-family {
         display: none;
     }
 }
@@ -898,16 +923,16 @@ form{
 
     .alt-nav {
         display: grid;
-        grid-template-columns: repeat(9, 1fr);
-        grid-auto-rows: auto;
+        grid-auto-flow: column;
+        justify-content: center;
         grid-gap: 8px;
     }
 
     .foot-info {
         padding-top: 3%;
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-auto-rows: auto;
+        grid-auto-flow: column;
+        align-items: center;
         grid-gap: 11px;
     }
 
@@ -963,7 +988,8 @@ form{
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: auto;
     }
-    .mobile-family{
+
+    .mobile-family {
         display: none;
     }
 }
@@ -994,7 +1020,7 @@ form{
     }
 
     .gridnews {
-        height:516px;
+        height: 516px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-auto-rows: auto;
@@ -1020,7 +1046,8 @@ form{
         grid-column: 4;
         grid-row: 2;
     }
-    .mobile-family{
+
+    .mobile-family {
         display: none;
     }
 }
