@@ -387,11 +387,9 @@ header a {
 }
 
 .map .extra-articles{
-    padding-bottom: 3em;
+    padding: 0 88px 3em 88px;
 }
-.map .extra-articles p{
-    padding: 0 88px;
-}
+
 
 .map span {
     color: var(--yellow);
@@ -498,6 +496,13 @@ input[name="teléfono"] {
     padding: 6px;
     display: inline-block;
 }
+
+/* —————— NOSOTROS —————— */
+#nosotros .extra-articles{
+    padding-left: 44px;
+    padding-right: 44px;
+}
+
 
 @media screen and (max-width: 639px) {
     h2 {
