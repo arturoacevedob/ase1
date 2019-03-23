@@ -565,16 +565,6 @@ input[name="teléfono"] {
     .wrapper-text {
         padding: 4% 8% 4% 3%;
     }
-    #nosotros #image-el-pueblo-tseltal{
-        padding: 41%
-    }
-
-    #nosotros #image-corazon-tseltal{
-        padding: 40%
-    }
-    #nosotros #image-la-actividad-mas-importante{
-        padding: 41%;
-    }
     #nosotros .mision-vision {
         border-bottom: 2px solid var(--yellow);
         padding-bottom: 9%;
