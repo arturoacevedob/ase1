@@ -499,10 +499,7 @@ input[name="teléfono"] {
 }
 
 /* —————— NOSOTROS —————— */
-#nosotros .extra-articles{
-    padding-left: 44px;
-    padding-right: 44px;
-}
+
 
 
 @media screen and (max-width: 639px) {
