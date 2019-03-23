@@ -60,7 +60,7 @@ img {
     max-width: 100%;
 }
 
-.logo > img, .logo-footer > img {
+.logo > img, .logo-footer img {
     height: 75px;
 }
 
@@ -212,7 +212,7 @@ a:active {
 }
 
 a:visited {
-    color: var(--light);
+    color: var(--red);
 }
 
 .dark a:visited {
@@ -221,20 +221,20 @@ a:visited {
 
 /* —————— Nav Links —————— */
 
-#menu-desktop a {
+#menu-desktop a, .alt-nav a {
     color: var(--a-link);
     border-bottom: 0 solid var(--a-hover);
     transition: border-bottom-width var(--time) var(--ease);
 }
 
-#menu-desktop a:hover {
+#menu-desktop a:hover, .alt-nav a:hover {
     color: var(--a-link);
     text-decoration: none;
     border-bottom: 3px solid var(--a-hover);
     transition: border-bottom-width var(--time) var(--ease);
 }
 
-#menu-desktop a:active {
+#menu-desktop a:active, .alt-nav a:active {
     color: var(--a-hover);
 }
 
