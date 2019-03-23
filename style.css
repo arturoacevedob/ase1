@@ -51,6 +51,7 @@ ul {
 }
 
 figure {
+    margin: auto;
     margin: 0;
     width: 100%;
 }
@@ -722,19 +723,30 @@ input[name="teléfono"] {
     padding-bottom: 9%;
 }
 
-#nosotros .desktop-family figure{
+#nosotros .yomol{
     margin: auto;
     max-width: 50%;
 }
-#nosotros .desktop-family .yomol img{
+#nosotros .yomol img{
     width: 30%;
 }
-#nosotros .desktop-family .batsil-maya figure{
-    margin: auto;
+#nosotros .batsil-maya{
     max-width: 100%;
 }
-#nosotros .desktop-family .batsil-maya img{
+#nosotros .batsil-maya img{
     width: 30%;
+}
+#nosotros .capeltic{
+    max-width: 100%;
+}
+#nosotros .capeltic img{
+    width: 80%;
+}
+#nosotros .xapotic{
+    max-width: 100%;
+}
+#nosotros .xampotic img{
+    width: 80%;
 }
 #nosotros .bnosotros{
     background: url(images/botones/boton_notostros_somos_la_planta_transformadora_de_cafe_batsil_maya.jpg) 70% 0 / cover no-repeat;
