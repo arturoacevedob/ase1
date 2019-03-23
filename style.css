@@ -210,9 +210,11 @@ a:active {
     text-decoration-color: var(--a-active);
 }
 
+/*
 a:visited {
     color: var(--light);
 }
+*/
 
 /* —————— Nav Links —————— */
 
@@ -237,6 +239,7 @@ a:visited {
 
 .fit-content {
     width: max-content !important;
+    margin: 0 auto;
 }
 
 .button {
@@ -382,16 +385,14 @@ header a {
     grid-row: 1;
 }
 
-.map .world-map h2 {
+.map .world-map .h2-small {
     margin: 2em 0;
 }
 
 .map .extra-articles{
-    padding-bottom: 3em;
+    padding: 0 88px 3em 88px;
 }
-.map .extra-articles p{
-    padding: 0 88px;
-}
+
 
 .map span {
     color: var(--yellow);
@@ -456,8 +457,6 @@ header a {
 }
 
 /* —————— form —————— */
-form {
-}
 
 input {
     padding: 10px 15px;
@@ -498,6 +497,13 @@ input[name="teléfono"] {
     padding: 6px;
     display: inline-block;
 }
+
+/* —————— NOSOTROS —————— */
+#nosotros .extra-articles{
+    padding-left: 44px;
+    padding-right: 44px;
+}
+
 
 @media screen and (max-width: 639px) {
     h2 {
