@@ -211,11 +211,13 @@ a:active {
     text-decoration-color: var(--a-active);
 }
 
-/*
 a:visited {
     color: var(--light);
 }
-*/
+
+.dark a:visited {
+    color: var(--dark);
+}
 
 /* —————— Nav Links —————— */
 
@@ -345,11 +347,6 @@ a:visited {
     background-color: var(--button-active);
 }
 
-
-a:visited {
-    color: var(--light);
-}
-
 /* —————— Header —————— */
 
 header {
@@ -412,10 +409,11 @@ header a {
 }
 
 /* —————— certificados —————— */
-.certificate article figure {
-    width: 50%;
+.certificate article img {
+    max-width: 150px;
     margin: auto;
 }
+
 
 /* —————— Noticias —————— */
 .gridnews article h3 {
