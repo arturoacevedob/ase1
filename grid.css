@@ -398,6 +398,15 @@ form {
  #homepage .image-top-first-round img{
     border-radius: 111px;
 }
+.desktop-family p{
+    padding: 0 4%;
+}
+.desktop-family .grid-conditions{
+    margin-top: 22px;
+}
+.desktop-family .gridthree2{
+    margin-top: 44px;
+}
 
 @media screen and (max-width: 639px) {
 

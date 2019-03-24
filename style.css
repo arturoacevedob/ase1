@@ -733,6 +733,9 @@ input[name="teléfono"] {
 #nosotros .yomol img{
     width: 30%;
 }
+#nosotros .tsumbal img{
+    width: 30%;
+}
 #nosotros .batsil-maya{
     max-width: 100%;
 }
@@ -744,6 +747,9 @@ input[name="teléfono"] {
 }
 #nosotros .capeltic img{
     width: 80%;
+}
+#nosotros .chabnichim img{
+    width: 55%;
 }
 #nosotros .xapotic{
     max-width: 100%;
