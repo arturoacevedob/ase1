@@ -328,7 +328,7 @@ label {
 
 .pdescription {
     padding: 0;
-    margin: 0;
+    margin: 0 0 22px 0;
     grid-column: 1;
     grid-row: 4;
 }
@@ -498,14 +498,9 @@ form {
 
     .gridthree2 {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: auto;
         grid-gap: 15px;
-    }
-
-    .gridthree2 article:last-child {
-        grid-column: 1 / 3;
-        grid-row: 2;
     }
 
     .gridnews {
