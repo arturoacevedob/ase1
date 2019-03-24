@@ -580,7 +580,6 @@ input[name="teléfono"] {
         padding-top: 5%;
     }
 }
-
 @media screen and (min-width: 640px) {
     h2 {
         font-size: 40px;
@@ -640,7 +639,16 @@ input[name="teléfono"] {
         padding-left: 14%;
     }
 }
-
+@media screen and (max-width:767){
+    #nosotros .yomol img{
+        width: 30%;
+    }
+}
+@media screen and (min-width: 768px) {
+    .yomol h3 {
+        font-size: 16px;
+    }
+}
 @media screen and (min-width: 1024px) {
     h2 {
         font-size: 40px;
@@ -718,9 +726,7 @@ input[name="teléfono"] {
     margin: auto;
     max-width: 50%;
 }
-#nosotros .yomol img{
-    width: 30%;
-}
+
 #nosotros .tsumbal img{
     width: 30%;
 }
@@ -751,10 +757,6 @@ input[name="teléfono"] {
 
 #nosotros .bproductos {
     background: url(images/botones/boton_productos_cafe_tseltal_miel_organica_jabones_artesanales_batsil_maya.jpg) 70% 0 / cover no-repeat;
-}
-
-.yomol h3 {
-    font-size: 16px;
 }
 
 #nosotros .gridthree2 h3 {

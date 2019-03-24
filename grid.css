@@ -409,6 +409,9 @@ form {
 .desktop-family .gridthree2{
     margin-top: 44px;
 }
+#family .grid-scroll-x{
+    align-items: center;
+}
 
 @media screen and (max-width: 639px) {
 
@@ -682,6 +685,10 @@ form {
 
     .desktop-family {
         display: none;
+    }
+    #family h2{
+        margin-bottom: 20px;
+        font-size: 30px;
     }
     .grid-4{
         display: grid;
