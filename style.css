@@ -822,6 +822,14 @@ input[name="teléfono"] {
     color: var(--dark);
 }
 
+
+/* —————— AQUÍ EMPIEZAN ESTILOS DE PRODUCTOS ORGANICOS—————— */
+#productoorganico header{
+    background:url(images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
+    url(images/productos/header_productos_batsil_maya.jpg) 70% 71% / cover no-repeat;
+
+}
+
 /* —————— AQUÍ EMPIEZAN ESTILOS DE NOTICIAS—————— */
 #noticias header {
     background: url(images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
