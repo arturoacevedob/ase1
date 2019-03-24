@@ -60,7 +60,7 @@ img {
     max-width: 100%;
 }
 
-.logo > img, .logo-footer > img {
+.logo > img, .logo-footer img {
     height: 75px;
 }
 
@@ -211,28 +211,30 @@ a:active {
     text-decoration-color: var(--a-active);
 }
 
-/*
 a:visited {
-    color: var(--light);
+    color: var(--red);
 }
-*/
+
+.dark a:visited {
+    color: var(--dark);
+}
 
 /* —————— Nav Links —————— */
 
-#menu-desktop a {
+#menu-desktop a, .alt-nav a {
     color: var(--a-link);
     border-bottom: 0 solid var(--a-hover);
     transition: border-bottom-width var(--time) var(--ease);
 }
 
-#menu-desktop a:hover {
+#menu-desktop a:hover, .alt-nav a:hover {
     color: var(--a-link);
     text-decoration: none;
     border-bottom: 3px solid var(--a-hover);
     transition: border-bottom-width var(--time) var(--ease);
 }
 
-#menu-desktop a:active {
+#menu-desktop a:active, .alt-nav a:active {
     color: var(--a-hover);
 }
 
@@ -345,11 +347,6 @@ a:visited {
     background-color: var(--button-active);
 }
 
-
-a:visited {
-    color: var(--light);
-}
-
 /* —————— Header —————— */
 
 header {
@@ -412,10 +409,11 @@ header a {
 }
 
 /* —————— certificados —————— */
-.certificate article figure {
-    width: 50%;
+.certificate article img {
+    max-width: 150px;
     margin: auto;
 }
+
 
 /* —————— Noticias —————— */
 .gridnews article h3 {
@@ -569,16 +567,6 @@ input[name="teléfono"] {
     /* —————— AQUÍ EMPIEZAN ESTILOS DE NOSOTROS—————— */
     .wrapper-text {
         padding: 4% 8% 4% 3%;
-    }
-    #nosotros #image-el-pueblo-tseltal{
-        padding: 41%
-    }
-
-    #nosotros #image-corazon-tseltal{
-        padding: 40%
-    }
-    #nosotros #image-la-actividad-mas-importante{
-        padding: 41%;
     }
     #nosotros .mision-vision {
         border-bottom: 2px solid var(--yellow);
