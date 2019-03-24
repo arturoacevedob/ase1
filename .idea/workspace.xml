@@ -5,17 +5,126 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b0b4be1-8d7c-4364-8440-568a85826da6" name="Default Changelist" comment="">
+    <list default="true" id="2b0b4be1-8d7c-4364-8440-568a85826da6" name="Default Changelist" comment="ADDED A TIME DATE PICKER in testing.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ayuda.html" beforeDir="false" afterPath="$PROJECT_DIR$/ayuda.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nosotros.html" beforeDir="false" afterPath="$PROJECT_DIR$/nosotros.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/noticias.html" beforeDir="false" afterPath="$PROJECT_DIR$/noticias.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuestro-cafe.html" beforeDir="false" afterPath="$PROJECT_DIR$/nuestro-cafe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/organico.html" beforeDir="false" afterPath="$PROJECT_DIR$/organico.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proceso.html" beforeDir="false" afterPath="$PROJECT_DIR$/proceso.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/productos.html" beforeDir="false" afterPath="$PROJECT_DIR$/productos.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/.jshintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/Gruntfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/build/build.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/build/build_standalone.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.ar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.az.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.bn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.ee.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.hu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.hy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.id.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.is.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.ja.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.ka.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.ko.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.lt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.lv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.ms.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.no.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.pt-BR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.pt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.ro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.rs-latin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.rs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.sk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.sl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.sv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.sw.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.th.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.ua.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.zh-CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.zh-TW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/less/datetimepicker.less" beforeDir="false" afterPath="$PROJECT_DIR$/testing/datetimepicker.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/minify.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/sample in bootstrap v2/bootstrap/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/sample in bootstrap v2/bootstrap/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/sample in bootstrap v2/bootstrap/img/glyphicons-halflings-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/sample in bootstrap v2/bootstrap/img/glyphicons-halflings.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/sample in bootstrap v2/bootstrap/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/sample in bootstrap v2/bootstrap/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/sample in bootstrap v2/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/sample in bootstrap v2/jquery/jquery-1.8.3.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/sample in bootstrap v3/bootstrap/css/bootstrap-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/sample in bootstrap v3/bootstrap/css/bootstrap-theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/sample in bootstrap v3/bootstrap/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/sample in bootstrap v3/bootstrap/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/sample in bootstrap v3/bootstrap/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/sample in bootstrap v3/bootstrap/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/sample in bootstrap v3/bootstrap/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/sample in bootstrap v3/bootstrap/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/sample in bootstrap v3/bootstrap/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/sample in bootstrap v3/bootstrap/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/sample in bootstrap v3/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/sample in bootstrap v3/jquery/jquery-1.8.3.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/screenshot/standard_day.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/screenshot/standard_day_meridian.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/screenshot/standard_decade.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/screenshot/standard_full.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/screenshot/standard_hour.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/screenshot/standard_hour_meridian.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/screenshot/standard_month.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/screenshot/standard_year.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/tests/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/tests/_coverage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/tests/assets/coverage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/tests/assets/jquery-1.7.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/tests/assets/mock.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/tests/assets/qunit-logging.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/tests/assets/qunit.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/tests/assets/qunit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/tests/assets/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/tests/run-qunit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/tests/suites/component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/tests/suites/events.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/tests/suites/formats.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/tests/suites/inline.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/tests/suites/keyboard_navigation/2011.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/tests/suites/keyboard_navigation/2012.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/tests/suites/keyboard_navigation/all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/tests/suites/mouse_navigation/2011.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/tests/suites/mouse_navigation/2012.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/tests/suites/mouse_navigation/all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/tests/suites/options.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/tests/tests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker-master/tests/tests.min.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/tiny-date-picker" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testing/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testing/mobile-menu.css" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,35 +139,41 @@
     <favorites_list name="ASE I" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.47974584">
+    <splitter split-orientation="horizontal" split-proportion="0.61080223">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/index.html">
+            <entry file="file://$PROJECT_DIR$/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="15">
-                  <caret line="123" column="38" selection-start-line="123" selection-start-column="38" selection-end-line="123" selection-end-column="38" />
+                <state relative-caret-position="159">
+                  <caret line="41" column="11" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/nosotros.html">
+            <entry file="file://$PROJECT_DIR$/noticias.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1493">
-                  <caret line="33" column="37" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="37" />
-                  <folding>
-                    <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                  </folding>
+                <state relative-caret-position="273">
+                  <caret line="33" column="69" selection-start-line="33" selection-start-column="69" selection-end-line="33" selection-end-column="69" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/productos.html">
+            <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-4051">
-                  <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
+                <state relative-caret-position="4757">
+                  <caret line="356" column="10" selection-start-line="356" selection-start-column="10" selection-end-line="356" selection-end-column="10" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/nuestro-cafe.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="290">
+                  <caret line="40" column="62" selection-start-line="40" selection-start-column="62" selection-end-line="40" selection-end-column="62" />
                 </state>
               </provider>
             </entry>
@@ -70,8 +185,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="308">
-                  <caret line="229" column="39" selection-start-line="229" selection-start-column="39" selection-end-line="229" selection-end-column="39" />
+                <state relative-caret-position="107">
+                  <caret line="462" column="12" selection-start-line="462" selection-start-column="12" selection-end-line="462" selection-end-column="12" />
                 </state>
               </provider>
             </entry>
@@ -80,7 +195,7 @@
             <entry file="file://$PROJECT_DIR$/grid.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="218">
-                  <caret line="672" column="10" selection-start-line="672" selection-start-column="10" selection-end-line="672" selection-end-column="10" />
+                  <caret line="366" column="5" selection-start-line="366" selection-start-column="5" selection-end-line="366" selection-end-column="5" />
                 </state>
               </provider>
             </entry>
@@ -100,7 +215,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>media</find>
       <find>form</find>
       <find>extra-ar</find>
       <find>extra</find>
@@ -130,6 +244,7 @@
       <find>a:</find>
       <find>link</find>
       <find>&lt;li&gt;&lt;a href=&quot;&quot; target=&quot;_self&quot;&gt;Inicio&lt;/a&gt;&lt;/li&gt;</find>
+      <find>control-label</find>
     </findStrings>
     <replaceStrings>
       <replace>inicio</replace>
@@ -166,7 +281,6 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/testing/mobile-menu.css" />
-        <option value="$PROJECT_DIR$/testing/index.html" />
         <option value="$PROJECT_DIR$/images/logos/batsil_maya_logo.svg" />
         <option value="$PROJECT_DIR$/normalize.css" />
         <option value="$PROJECT_DIR$/grid-backend.css" />
@@ -181,13 +295,16 @@
         <option value="$PROJECT_DIR$/organico.html" />
         <option value="$PROJECT_DIR$/proceso.html" />
         <option value="$PROJECT_DIR$/grid.css" />
-        <option value="$PROJECT_DIR$/nuestro-cafe.html" />
         <option value="$PROJECT_DIR$/ayuda.html" />
-        <option value="$PROJECT_DIR$/noticias.html" />
         <option value="$PROJECT_DIR$/nosotros.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/productos.html" />
         <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/testing/bootstrap.min.js" />
+        <option value="$PROJECT_DIR$/nuestro-cafe.html" />
+        <option value="$PROJECT_DIR$/testing/bootstrap-datetimepicker.min.css" />
+        <option value="$PROJECT_DIR$/testing/index.html" />
+        <option value="$PROJECT_DIR$/noticias.html" />
       </list>
     </option>
   </component>
@@ -208,6 +325,16 @@
             <path>
               <item name="ASE I" type="b2602c69:ProjectViewProjectNode" />
               <item name="ASE I" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ASE I" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ASE I" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ASE I" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ASE I" type="462c0819:PsiDirectoryNode" />
+              <item name="testing" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -564,7 +691,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122682000" />
+    <option name="totallyTimeSpent" value="123801000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -590,7 +717,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49960285" weight="0.32876712" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49642575" weight="0.28082192" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.49642575" visible="true" weight="0.5506849" />
       <window_info anchor="bottom" id="Inspection Results" order="9" sideWeight="0.4980143" weight="0.32876712" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32944608" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50357425" side_tool="true" weight="0.9589041" />
@@ -599,6 +726,27 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" x="0" y="0" width="270" height="600" id="Documentation" order="3" side_tool="true" weight="0.32956383" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.50612247" visible="true" weight="0.2573471" />
+      <window_info id="Structure" order="1" sideWeight="0.5020408" side_tool="true" weight="0.38681492" />
+      <window_info id="Favorites" order="2" sideWeight="0.49387756" side_tool="true" weight="0.2573471" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49960285" weight="0.32876712" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49642575" weight="0.28082192" />
+      <window_info anchor="bottom" id="Inspection Results" order="9" sideWeight="0.4980143" weight="0.32876712" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32876712" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50357425" side_tool="true" weight="0.9589041" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" x="0" y="0" width="270" height="600" id="Documentation" order="3" side_tool="true" weight="0.32956383" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -617,6 +765,7 @@
         <option value="1" />
       </list>
     </option>
+    <option name="SHOW_DIFF_PREVIEW" value="false" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -728,13 +877,6 @@
     <entry file="file://$PROJECT_DIR$/images/logos/batsil_maya_logo.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/testing/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/clientes-backend.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -797,7 +939,7 @@
     <entry file="file://$PROJECT_DIR$/grid.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
-          <caret line="672" column="10" selection-start-line="672" selection-start-column="10" selection-end-line="672" selection-end-column="10" />
+          <caret line="366" column="5" selection-start-line="366" selection-start-column="5" selection-end-line="366" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -808,24 +950,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nuestro-cafe.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="33" column="68" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/proceso.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="349">
           <caret line="46" column="29" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/noticias.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="68" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="68" />
         </state>
       </provider>
     </entry>
@@ -839,13 +967,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="123" column="38" selection-start-line="123" selection-start-column="38" selection-end-line="123" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/productos.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4051">
@@ -853,10 +974,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/testing/bootstrap-datetimepicker.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testing/datetimepicker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33720">
+          <caret line="2248" column="17" selection-start-line="2248" selection-start-column="17" selection-end-line="2248" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="229" column="39" selection-start-line="229" selection-start-column="39" selection-end-line="229" selection-end-column="39" />
+        <state relative-caret-position="159">
+          <caret line="41" column="11" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/noticias.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="33" column="69" selection-start-line="33" selection-start-column="69" selection-end-line="33" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nuestro-cafe.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="40" column="62" selection-start-line="40" selection-start-column="62" selection-end-line="40" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testing/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="1" lean-forward="true" selection-end-line="6360" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testing/datetimepicker.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testing/bootstrap-datetimepicker.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testing/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4757">
+          <caret line="356" column="10" selection-start-line="356" selection-start-column="10" selection-end-line="356" selection-end-column="10" />
         </state>
       </provider>
     </entry>
