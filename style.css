@@ -500,14 +500,10 @@ input[name="teléfono"] {
 }
 
 /* —————— NOSOTROS —————— */
-<<<<<<< HEAD
 #nosotros .m-and-v .extra-articles{
     padding-left: 44px;
     padding-right: 44px;
 }
-=======
-
->>>>>>> abd13cd422ce1b5ee2a2913e8bd44e14e04027af
 
 
 @media screen and (max-width: 639px) {
