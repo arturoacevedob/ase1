@@ -51,6 +51,7 @@ ul {
 }
 
 figure {
+    margin: auto;
     margin: 0;
     width: 100%;
 }
@@ -457,8 +458,6 @@ header a {
 }
 
 /* —————— form —————— */
-form {
-}
 
 input {
     padding: 10px 15px;
@@ -501,10 +500,14 @@ input[name="teléfono"] {
 }
 
 /* —————— NOSOTROS —————— */
+<<<<<<< HEAD
 #nosotros .m-and-v .extra-articles{
     padding-left: 44px;
     padding-right: 44px;
 }
+=======
+
+>>>>>>> abd13cd422ce1b5ee2a2913e8bd44e14e04027af
 
 
 @media screen and (max-width: 639px) {
@@ -571,7 +574,16 @@ input[name="teléfono"] {
     .wrapper-text {
         padding: 4% 8% 4% 3%;
     }
+    #nosotros #image-el-pueblo-tseltal{
+        padding: 41%
+    }
 
+    #nosotros #image-corazon-tseltal{
+        padding: 40%
+    }
+    #nosotros #image-la-actividad-mas-importante{
+        padding: 41%;
+    }
     #nosotros .mision-vision {
         border-bottom: 2px solid var(--yellow);
         padding-bottom: 9%;
@@ -718,19 +730,30 @@ input[name="teléfono"] {
     padding-bottom: 9%;
 }
 
-#nosotros .desktop-family figure{
+#nosotros .yomol{
     margin: auto;
     max-width: 50%;
 }
-#nosotros .desktop-family .yomol img{
+#nosotros .yomol img{
     width: 30%;
 }
-#nosotros .desktop-family .batsil-maya figure{
-    margin: auto;
+#nosotros .batsil-maya{
     max-width: 100%;
 }
-#nosotros .desktop-family .batsil-maya img{
+#nosotros .batsil-maya img{
     width: 30%;
+}
+#nosotros .capeltic{
+    max-width: 100%;
+}
+#nosotros .capeltic img{
+    width: 80%;
+}
+#nosotros .xapotic{
+    max-width: 100%;
+}
+#nosotros .xampotic img{
+    width: 80%;
 }
 #nosotros .bnosotros{
     background: url(images/botones/boton_notostros_somos_la_planta_transformadora_de_cafe_batsil_maya.jpg) 70% 0 / cover no-repeat;
@@ -754,9 +777,10 @@ input[name="teléfono"] {
     url(images/nuestro_cafe/header_nuestro_cafe_desde_el_cafetal_hasta_la_taza_batsil_maya.jpg) 59% 5% / cover no-repeat;
 }
 
-#nuestrocafe .image-ubicación {
-    background: url(images/nuestro_cafe/ubicacion_chiapas_batsil_maya.jpg) 70% 0 / cover no-repeat;
+#nuestrocafe #image-ubicacion{
+    background: url(images/nuestro_cafe/ubicacion_chiapas_batsil_maya.jpg) 0% 0 / cover no-repeat;;
 }
+
 
 #nuestrocafe .altura {
     padding-top: 15%;
@@ -804,6 +828,20 @@ input[name="teléfono"] {
 
 #jabon a {
     color: var(--dark);
+}
+
+
+/* —————— AQUÍ EMPIEZAN ESTILOS DE PRODUCTOS ORGANICOS—————— */
+#productoorganico header{
+    background:url(images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
+    url(images/productos/header_productos_batsil_maya.jpg) 70% 71% / cover no-repeat;
+
+}
+
+/* —————— AQUÍ EMPIEZAN ESTILOS DE NOTICIAS—————— */
+#noticias header {
+    background: url(images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
+    url(images/noticias/header_noticias_batsil_maya.jpg) 70% 71% / cover no-repeat;
 }
 
 /* —————— AQUÍ EMPIEZAN ESTILOS DE AYUDA—————— */
