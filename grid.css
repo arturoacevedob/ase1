@@ -597,7 +597,9 @@ input {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
-
+    #ayuda .grid-2-text-photo{
+        grid-template-rows: auto;
+    }
     .grid-2-text-photo-left {
         order: 1;
     }
@@ -839,6 +841,10 @@ input {
         padding: var(--padding-top-bottom) 0;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+    #ayuda .grid-2-text-photo{
+        grid-gap: 33px;
+        grid-template-columns: 60% 30%;
     }
 
     .grid-2-text-photo.no-padding {
