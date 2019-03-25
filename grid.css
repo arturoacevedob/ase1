@@ -12,6 +12,12 @@
     grid-template-rows: 1fr 1fr;
 }
 
+#mapa-nosotros {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    z-index: 0;
+}
+
 #nosotros .grid-header {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
@@ -235,8 +241,6 @@ legend {
 
 .product {
     padding-bottom: 4vmax;
-}
-#homepage .product{
     border-radius: 0 0 130% 130% / 10%;
 }
 
@@ -391,7 +395,7 @@ input {
     border-radius: 111px;
 }
 .desktop-family p{
-    padding: 0 15%;
+    padding: 0 4%;
 }
 .desktop-family .grid-conditions{
     margin-top: 22px;
@@ -401,9 +405,6 @@ input {
 }
 #family .grid-scroll-x{
     align-items: center;
-}
-#family h2{
-    margin-bottom: 20px;
 }
 
 @media screen and (max-width: 639px) {
@@ -597,9 +598,7 @@ input {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
-    #ayuda .grid-2-text-photo{
-        grid-template-rows: auto;
-    }
+
     .grid-2-text-photo-left {
         order: 1;
     }
@@ -676,6 +675,7 @@ input {
         display: none;
     }
     #family h2{
+        margin-bottom: 20px;
         font-size: 30px;
     }
     .grid-4{
@@ -683,51 +683,6 @@ input {
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: auto;
         grid-gap: 5px;
-    }
-    .grid-news-page{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 10px;
-    }
-    .grid-news-page article{
-        height: 200px;
-    }
-    .ultima-noticia-1{
-        height: 200px;
-        background: url(images/noticias/noticia1.jpg) 70% 71% / cover no-repeat;
-    }
-    #news1 {
-        background: url(images/noticias/noticia5.jpg) 70% 71% / cover no-repeat;
-    }
-
-    #news2 {
-        background: url(images/noticias/noticia6.jpg)70% 71% / cover no-repeat;
-    }
-
-    #news3 {
-        background: url(images/noticias/noticia7.jpg)70% 71% / cover no-repeat;
-    }
-
-    #news4 {
-        background: url(images/noticias/noticia8.jpg)70% 71% / cover no-repeat;
-    }
-
-    #news5 {
-        background: url(images/noticias/noticia9.jpg) 70% 71% / cover no-repeat;
-    }
-
-    #news6 {
-        background: url(images/noticias/noticia10.jpg) 0% 0% / cover no-repeat;
-    }
-
-    #news7 {
-        background: url(images/noticias/noticia11.jpg) 0% 0% / cover no-repeat;
-
-    }
-
-    #news8 {
-        background: url(images/noticias/noticia12.jpg) 0% 0% / cover no-repeat;
-
     }
 }
 
@@ -841,10 +796,6 @@ input {
         padding: var(--padding-top-bottom) 0;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-    }
-    #ayuda .grid-2-text-photo{
-        grid-gap: 33px;
-        grid-template-columns: 60% 30%;
     }
 
     .grid-2-text-photo.no-padding {

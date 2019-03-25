@@ -725,6 +725,9 @@ input[name="teléfono"] {
     border-bottom: 2px solid var(--yellow);
     padding-bottom: 9%;
 }
+#nosotros .deskktop-family h3{
+    text-indent: -999px;
+}
 
 #nosotros .yomol{
     margin: auto;
