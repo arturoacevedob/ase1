@@ -648,6 +648,9 @@ input[name="teléfono"] {
     .yomol h3 {
         font-size: 16px;
     }
+    #nosotros .yomol img{
+        width: 30%;
+    }
 }
 @media screen and (min-width: 1024px) {
     h2 {
