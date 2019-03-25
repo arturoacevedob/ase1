@@ -241,6 +241,8 @@ legend {
 
 .product {
     padding-bottom: 4vmax;
+}
+#homepage .product{
     border-radius: 0 0 130% 130% / 10%;
 }
 
@@ -405,6 +407,9 @@ input {
 }
 #family .grid-scroll-x{
     align-items: center;
+}
+#family h2{
+    margin-bottom: 20px;
 }
 
 @media screen and (max-width: 639px) {
@@ -675,7 +680,6 @@ input {
         display: none;
     }
     #family h2{
-        margin-bottom: 20px;
         font-size: 30px;
     }
     .grid-4{
