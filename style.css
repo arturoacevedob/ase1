@@ -12,7 +12,6 @@ article, aside, footer, header, hgroup, main, nav, section {
     --light: #FFFEF5;
     --dark: #40290A;
     --white: #ffffff;
-    --light-80: #CCCBC4;
 
     --a-link: var(--light);
     --a-visited: #cccbc6;
@@ -222,19 +221,20 @@ a:visited {
 
 /* —————— Nav Links —————— */
 
-#menu-desktop a, .alt-nav a, .menu-mobile-content a {
+#menu-desktop a, .alt-nav a {
     color: var(--a-link);
     border-bottom: 0 solid var(--a-hover);
     transition: border-bottom-width var(--time) var(--ease);
 }
 
-#menu-desktop a:hover, .alt-nav a:hover, .menu-mobile-content a:hover {
+#menu-desktop a:hover, .alt-nav a:hover {
+    color: var(--a-link);
     text-decoration: none;
     border-bottom: 3px solid var(--a-hover);
     transition: border-bottom-width var(--time) var(--ease);
 }
 
-#menu-desktop a:active, .alt-nav a:active, .menu-mobile-content a:active {
+#menu-desktop a:active, .alt-nav a:active {
     color: var(--a-hover);
 }
 
@@ -457,45 +457,20 @@ header a {
 
 /* —————— form —————— */
 
-fieldset {
-    padding: 0;
-    margin: 0;
-    border: none;
-}
-
 input {
-    width: 100%;
-    padding: 7px 12px;
-    display: block;
-    font-family: Qualion;
+    padding: 10px 15px;
+    box-sizing: border-box;
     font-size: 1em;
     border: thin solid var(--light);
     border-radius: 33px;
-    box-sizing: border-box;
-}
-
-.eac-input-wrap {
-    color: var(--light-80);
-}
-
-input.button {
-    border: none;
-}
-
-.tel-wrapper {
-    display: flex;
-}
-
-.tel-wrapper > span {
-    padding: 2.4em 0.5em 0;
 }
 
 .num-list {
     padding-left: 20px;
-    width: auto;
+    width: 75px;
     border-radius: 33px 0 0 33px;
     border: none;
-    border-right: 2px solid var(--light-80);
+    border-right: 2px solid black;
     -webkit-appearance: none;
     -moz-appearance: none;
     /*
@@ -505,8 +480,8 @@ input.button {
     background-size: 5px 11px;
     */
 }
-
-input[name="tel"] {
+input[name="teléfono"] {
+    width: 100%;
     border-radius: 0 33px 33px 0;
 }
 
@@ -749,32 +724,46 @@ input[name="tel"] {
 
 #nosotros .yomol{
     margin: auto;
-    max-width: 50%;
+    max-width: 100%;
+}
+#nosotros .yomol img{
+    width: 22%;
 }
 
+#nosotros .tsumbal {
+    margin: auto;
+    max-width: 100%;
+}
 #nosotros .tsumbal img{
-    width: 30%;
+    width: 60%;
 }
 #nosotros .batsil-maya{
+    margin: auto;
     max-width: 100%;
 }
 #nosotros .batsil-maya img{
-    width: 30%;
+    width: 60%;
 }
 #nosotros .capeltic{
+    margin: auto;
     max-width: 100%;
 }
 #nosotros .capeltic img{
-    width: 80%;
+    width: 60%;
+}
+#nosotros .chabnichim{
+    margin: auto;
+    max-width: 100%;
 }
 #nosotros .chabnichim img{
-    width: 55%;
+    width: 60%;
 }
 #nosotros .xapotic{
+    margin: auto;
     max-width: 100%;
 }
 #nosotros .xampotic img{
-    width: 80%;
+    width: 60%;
 }
 #nosotros .bnosotros{
     background: url(images/botones/boton_notostros_somos_la_planta_transformadora_de_cafe_batsil_maya.jpg) 70% 0 / cover no-repeat;
@@ -860,14 +849,7 @@ input[name="tel"] {
     background: url(images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
     url(images/noticias/header_noticias_batsil_maya.jpg) 70% 71% / cover no-repeat;
 }
-.news-text h3 {
-    padding-left: 3%;
-    color: var(--light);
-}
-.news-text p {
-    padding: 0 0 3% 3%;
-    color: var(--light);
-}
+
 /* —————— AQUÍ EMPIEZAN ESTILOS DE AYUDA—————— */
 #ayuda header {
     background: url(images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
