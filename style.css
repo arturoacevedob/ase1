@@ -605,7 +605,6 @@ input[name="tel"] {
         padding-top: 5%;
     }
 }
-
 @media screen and (min-width: 640px) {
     h2 {
         font-size: 40px;
@@ -665,7 +664,16 @@ input[name="tel"] {
         padding-left: 14%;
     }
 }
-
+@media screen and (max-width:767){
+    #nosotros .yomol img{
+        width: 30%;
+    }
+}
+@media screen and (min-width: 768px) {
+    .yomol h3 {
+        font-size: 16px;
+    }
+}
 @media screen and (min-width: 1024px) {
     h2 {
         font-size: 40px;
@@ -743,7 +751,8 @@ input[name="tel"] {
     margin: auto;
     max-width: 50%;
 }
-#nosotros .yomol img{
+
+#nosotros .tsumbal img{
     width: 30%;
 }
 #nosotros .batsil-maya{
@@ -758,6 +767,9 @@ input[name="tel"] {
 #nosotros .capeltic img{
     width: 80%;
 }
+#nosotros .chabnichim img{
+    width: 55%;
+}
 #nosotros .xapotic{
     max-width: 100%;
 }
@@ -770,10 +782,6 @@ input[name="tel"] {
 
 #nosotros .bproductos {
     background: url(images/botones/boton_productos_cafe_tseltal_miel_organica_jabones_artesanales_batsil_maya.jpg) 70% 0 / cover no-repeat;
-}
-
-.yomol h3 {
-    font-size: 16px;
 }
 
 #nosotros .gridthree2 h3 {
@@ -852,7 +860,14 @@ input[name="tel"] {
     background: url(images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
     url(images/noticias/header_noticias_batsil_maya.jpg) 70% 71% / cover no-repeat;
 }
-
+.news-text h3 {
+    padding-left: 3%;
+    color: var(--light);
+}
+.news-text p {
+    padding: 0 0 3% 3%;
+    color: var(--light);
+}
 /* —————— AQUÍ EMPIEZAN ESTILOS DE AYUDA—————— */
 #ayuda header {
     background: url(images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
