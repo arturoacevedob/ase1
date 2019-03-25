@@ -701,8 +701,9 @@ input[name="teléfono"] {
 }
 
 /* —————— AQUÍ EMPIEZAN ESTILOS DE NOSOTROS—————— */
-#header-image-nosotros {
-    background: url(images/nosotros/header_nosotros_somos_la_planta_transformadora_de_café_batsil_maya.jpg) 70% 0 / cover no-repeat;
+#nosotros header {
+    background:url(images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
+               url(images/nosotros/header_nosotros_somos_la_planta_transformadora_de_café_batsil_maya.jpg) 70% 0 / cover no-repeat;
 }
 
 #nosotros #image-el-pueblo-tseltal {
