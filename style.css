@@ -216,11 +216,11 @@ a:visited {
     color: var(--red);
 }
 
-.light a:visited {
+a.light:visited {
     color: var(--light);
 }
 
-.dark a:visited {
+a.dark:visited {
     color: var(--dark);
 }
 
