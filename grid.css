@@ -49,7 +49,6 @@
 .container.grid-header {
     padding-top: 0;
     padding-bottom: 2em;
-    box-sizing: border-box;
 }
 
 .container.no-padding {
@@ -102,6 +101,7 @@ legend {
 
 /*** INPUT ***/
 #menu-mobile input {
+    width: auto;
     opacity: 0;
     position: absolute;
     z-index: -1;
@@ -387,6 +387,7 @@ input {
 .grid-image-first{
     display: grid;
     grid-template-columns: auto;
+    grid-gap: var(--gutter);
 }
 .image-top-first-round{
     grid-row: 1;
@@ -394,8 +395,14 @@ input {
  #homepage .image-top-first-round img{
     border-radius: 111px;
 }
+#family h2{
+    margin-bottom: 20px;
+}
+.desktop-family .yomol p{
+    padding: 0 30%;
+}
 .desktop-family p{
-    padding: 0 4%;
+    padding: 0 12%;
 }
 .desktop-family .grid-conditions{
     margin-top: 22px;
@@ -571,6 +578,7 @@ input {
         grid-template-rows: auto;
         grid-auto-flow: column;
         grid-auto-columns: calc(50% - var(--gutter) * 2);
+        align-items: start;
 
         overflow-x: scroll;
         scroll-snap-type: x proximity;
@@ -599,10 +607,6 @@ input {
         grid-template-rows: 1fr 1fr;
     }
 
-    .grid-2-text-photo-left {
-        order: 1;
-    }
-
     .grid-history {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -613,7 +617,7 @@ input {
     .clients h2 {
         max-width: 1100px;
         margin: 0 auto;
-        padding: var(--container-padding);
+        padding-top: var(--padding-top-bottom);
     }
 
     .llamada {
@@ -675,7 +679,6 @@ input {
         display: none;
     }
     #family h2{
-        margin-bottom: 20px;
         font-size: 30px;
     }
     .grid-4{
@@ -731,6 +734,7 @@ input {
         grid-template-columns: repeat(4, 1fr);
         grid-auto-rows: auto;
         grid-gap: 22px;
+        align-items: start;
     }
 
     .extra-articles {
@@ -755,6 +759,7 @@ input {
         grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: auto;
         grid-gap: 22px;
+        align-items: start;
     }
 
     .gridthree2 article:last-child {
@@ -810,36 +815,37 @@ input {
         padding: 0 var(--padding-left-right);
     }
 
-    .grid-2-text-photo-left {
+    .grid-2-left-text {
+        display: grid;
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+        grid-template-columns: repeat(2, 1fr);
+        order: 1;
+    }
+
+    .grid-2-right-text {
         display: grid;
         grid-column: 1 / 3;
         grid-row: 1 / 2;
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .grid-2-text-photo-right {
-        display: grid;
-        grid-column: 1 / 3;
-        grid-row: 1 / 2;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .grid-2-text-photo-left > .wrapper-text {
+    .grid-2-left-text > .wrapper-text {
         padding: 0 15% 0 c;
         grid-column: 1 / 2;
     }
 
-    .grid-2-text-photo-right > .wrapper-text {
+    .grid-2-right-text > .wrapper-text {
         padding: 0 10% 0 15%;
         grid-column: 2 / 3;
     }
 
-    #image-el-pueblo-tseltal, #image-la-actividad-mas-importante {
+    .grid-2-left-image {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
     }
 
-    #image-corazon-tseltal {
+    .grid-2-right-image {
         grid-column: 2 / 3;
         grid-row: 1 / 2;
     }
@@ -1007,6 +1013,7 @@ input {
         grid-template-columns: repeat(4, 1fr);
         grid-auto-rows: auto;
         grid-gap: 44px;
+        align-items: start;
     }
 
     .gridthree1, .gridthree2 {

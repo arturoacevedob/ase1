@@ -122,8 +122,8 @@ h1, nav > h2 {
     background-color: var(--yellow);
 }
 
-.nav .active {
-    border-bottom: 3px solid var(--a-hover);
+.active {
+    border-bottom: 3px solid var(--a-hover) !important;
 }
 
 
@@ -216,6 +216,10 @@ a:visited {
     color: var(--red);
 }
 
+.light a:visited {
+    color: var(--light);
+}
+
 .dark a:visited {
     color: var(--dark);
 }
@@ -272,8 +276,20 @@ a:visited {
     transition: border var(--time) var(--ease);
 }
 
+.mobile .button.outline {
+    padding: calc(var(--button-padding) - 0.20rem);
+    background-color: transparent;
+    border: 3px solid var(--red);
+    transition: border var(--time) var(--ease);
+}
+
 .button.outline a {
     color: var(--a-link);
+    transition: color var(--time) var(--ease);
+}
+
+.mobile .button.outline a {
+    color: var(--red);
     transition: color var(--time) var(--ease);
 }
 
@@ -463,7 +479,7 @@ fieldset {
     border: none;
 }
 
-input {
+input, textarea {
     width: 100%;
     padding: 7px 12px;
     display: block;
@@ -484,6 +500,10 @@ input.button {
 
 .tel-wrapper {
     display: flex;
+}
+
+.tel-wrapper > .form-group {
+    width: 100%;
 }
 
 .tel-wrapper > span {
@@ -524,56 +544,7 @@ input[name="tel"] {
 
 /* —————— NOSOTROS —————— */
 #nosotros .m-and-v .extra-articles{
-    padding-left: 44px;
-    padding-right: 44px;
-}
-
-/* —————— AQUÍ EMPIEZAN ESTILOS DE PROCESO—————— */
-#proceso header {
-    background: url(images/fade/header_fade_light_batsil_maya.png) 0 100% / contain repeat-x,
-    url(images/proceso/header_proceso_desde_el_cafetal_a_la_taza_batsil_maya.jpg) 70% 0 / cover no-repeat;
-}
-
-#proceso .tipo-tueste{
-    position: relative;
-}
-
-#proceso .tipo-tueste p:nth-child(8){
-    position: absolute;
-    top: 77%;
-    left: -4%;
-    -ms-transform: rotate(-90deg); 
-    -webkit-transform: rotate(-90deg); 
-    transform: rotate(-90deg);
-}
-
-#proceso .tueste-claro{
-    position: absolute;
-    top: 34%;
-    left: 11%;
-}
-
-#proceso .tueste-medio{
-    position: absolute;
-    top: 69%;
-    left: 26%;
-}
-
-#proceso .tueste-vienes{
-    position: absolute;
-    top: 30%;
-    left: 43%;
-}
-#proceso .tueste-oscuro{
-    position: absolute;
-    top: 65%;
-    left: 61%;
-}
-#proceso .tueste-italiano{
-    position: absolute;
-    top: 31%;
-    left: 79%;
-
+    padding: 10% 44px;
 }
 
 @media screen and (max-width: 639px) {
@@ -642,14 +613,14 @@ input[name="tel"] {
     }
     #nosotros .mision-vision {
         border-bottom: 2px solid var(--yellow);
-        padding-bottom: 9%;
+        padding-bottom: var(--padding-top-bottom);
     }
     #nosotros .mision {
         border-bottom: 2px solid var(--yellow);
-        padding-bottom: 5%;
+        padding-bottom: var(--padding-top-bottom);
     }
     #nosotros .vision {
-        padding-top: 5%;
+        padding-top: var(--padding-top-bottom);
     }
 
      /* —————— AQUÍ EMPIEZAN ESTILOS DE PROCESO—————— */
@@ -776,7 +747,7 @@ input[name="tel"] {
     
 }
 @media screen and (max-width:767){
-    #nosotros .yomol img{
+    #nosotros .yomol{
         width: 30%;
     }
 }
@@ -785,7 +756,7 @@ input[name="tel"] {
         font-size: 16px;
     }
     #nosotros .yomol img{
-        width: 30%;
+        width: 20%;
     }
 }
 @media screen and (min-width: 1024px) {
@@ -870,9 +841,6 @@ input[name="tel"] {
 #nosotros .yomol{
     margin: auto;
     max-width: 100%;
-}
-#nosotros .yomol img{
-    width: 22%;
 }
 
 #nosotros .tsumbal {

@@ -6,13 +6,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b0b4be1-8d7c-4364-8440-568a85826da6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/style 2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/molidos/americano.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/molidos/americano.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/molidos/expreso.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/molidos/expreso.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/molidos/fino-turco.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/molidos/fino-turco.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/molidos/percoladora.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/molidos/percoladora.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker.es.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/datetimepicker.es.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/grid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nosotros.html" beforeDir="false" afterPath="$PROJECT_DIR$/nosotros.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/noticias.html" beforeDir="false" afterPath="$PROJECT_DIR$/noticias.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuestro-cafe.html" beforeDir="false" afterPath="$PROJECT_DIR$/nuestro-cafe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proceso.html" beforeDir="false" afterPath="$PROJECT_DIR$/proceso.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/productos.html" beforeDir="false" afterPath="$PROJECT_DIR$/productos.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,32 +26,17 @@
     <favorites_list name="ASE I" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6211279">
+    <splitter split-orientation="horizontal" split-proportion="0.50754565">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="7945">
-                  <caret line="530" column="26" selection-start-line="530" selection-start-column="26" selection-end-line="530" selection-end-column="26" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/proceso.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="690">
-                  <caret line="46" column="29" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/nuestro-cafe.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="301">
-                  <caret line="80" column="56" selection-start-line="80" selection-start-column="46" selection-end-line="80" selection-end-column="75" />
+                <state relative-caret-position="183">
+                  <caret line="599" selection-start-line="599" selection-end-line="634" selection-end-column="9" />
+                  <folding>
+                    <element signature="n#form#0;n#div#0;n#section#0;n#div#3;n#body#0;n#html#0;n#!!top" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -60,11 +44,92 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/nosotros.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="259">
-                  <caret line="45" column="40" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
+                <state relative-caret-position="222">
+                  <caret line="101" column="12" selection-start-line="101" selection-start-column="12" selection-end-line="116" selection-end-column="22" />
                   <folding>
                     <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#form#0;n#div#0;n#section#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/nuestro-cafe.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="273">
+                  <caret line="132" column="68" selection-start-line="132" selection-start-column="68" selection-end-line="132" selection-end-column="68" />
+                  <folding>
+                    <element signature="n#style#0;n#div#1;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#form#0;n#div#0;n#section#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/proceso.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="315">
+                  <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
+                  <folding>
+                    <element signature="n#form#0;n#div#0;n#section#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="e#10821#10826#0" expanded="true" />
+                    <element signature="e#27000#27005#0" expanded="true" />
+                    <element signature="e#29901#29906#0" expanded="true" />
+                    <element signature="e#30427#30432#0" expanded="true" />
+                    <element signature="e#32042#32047#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/productos.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="300">
+                  <caret line="20" column="53" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
+                  <folding>
+                    <element signature="e#16821#16826#0" expanded="true" />
+                    <element signature="e#32372#32377#0" expanded="true" />
+                    <element signature="e#35161#35166#0" expanded="true" />
+                    <element signature="e#35667#35672#0" expanded="true" />
+                    <element signature="e#37185#37190#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/organico.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="285">
+                  <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/noticias.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="315">
+                  <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
+                  <folding>
+                    <element signature="e#8064#8069#0" expanded="true" />
+                    <element signature="e#23615#23620#0" expanded="true" />
+                    <element signature="e#26404#26409#0" expanded="true" />
+                    <element signature="e#26910#26915#0" expanded="true" />
+                    <element signature="e#28428#28433#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ayuda.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="2535">
+                  <caret line="169" column="20" lean-forward="true" selection-start-line="169" selection-start-column="20" selection-end-line="169" selection-end-column="20" />
                 </state>
               </provider>
             </entry>
@@ -77,25 +142,16 @@
             <entry file="file://$PROJECT_DIR$/style.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="218">
-                  <caret line="166" column="18" selection-start-line="166" selection-start-column="14" selection-end-line="166" selection-end-column="18" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/grid.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="218">
-                  <caret line="344" column="5" selection-start-line="344" selection-start-column="1" selection-end-line="344" selection-end-column="5" />
+                  <caret line="481" column="15" selection-start-line="481" selection-start-column="15" selection-end-line="481" selection-end-column="15" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/style 2.css">
+            <entry file="file://$PROJECT_DIR$/grid.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="653">
-                  <caret line="874" column="1" selection-start-line="874" selection-start-column="1" selection-end-line="874" selection-end-column="1" />
+                <state relative-caret-position="368">
+                  <caret line="824" column="22" selection-start-line="824" selection-start-column="22" selection-end-line="824" selection-end-column="22" />
                 </state>
               </provider>
             </entry>
@@ -107,44 +163,44 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>time</find>
-      <find>5</find>
-      <find>pm</find>
-      <find>onRenderHour</find>
-      <find>hoursDisabled</find>
-      <find>hours</find>
-      <find>hour_am</find>
-      <find>list</find>
-      <find>tel-wr</find>
-      <find>bottom</find>
-      <find>inpu</find>
-      <find>data-countryCode</find>
-      <find>mexi</find>
-      <find>menu-mobile-content</find>
-      <find>.menu-mobile-content {</find>
-      <find>mobile-menu</find>
-      <find>desktop</find>
-      <find>tel</find>
-      <find>input</find>
-      <find>in</find>
-      <find>formbu</find>
-      <find>email</find>
-      <find>label</find>
-      <find>num-</find>
-      <find>num</find>
-      <find>tel-w</find>
-      <find>grid-header</find>
-      <find>legend</find>
       <find>fieldset</find>
+      <find>grid-header</find>
+      <find>visited</find>
+      <find>contact</find>
+      <find>contác</find>
+      <find>active</find>
+      <find>nosotros.html</find>
+      <find>productos.ht</find>
+      <find>&lt;li class=&quot;button red&quot;&gt;&lt;a href=&quot;&quot; target=&quot;_self&quot;&gt;Contáctanos&lt;/a&gt;&lt;/li&gt;</find>
+      <find>&lt;li class=&quot;button red fit-content&quot;&gt;&lt;a href=&quot;&quot; target=&quot;_self&quot;&gt;Contáctanos&lt;/a&gt;&lt;/li&gt;</find>
+      <find>atv</find>
+      <find>proceso.h</find>
+      <find>tel-wra</find>
+      <find>14%</find>
+      <find>https://code.jquery.com/jquery-3.3.1.min.js</find>
+      <find>mision</find>
+      <find>body</find>
+      <find>ayuda.ht</find>
+      <find>input</find>
+      <find>image-</find>
+      <find>red light</find>
+      <find>nuestro-cafe</find>
       <find>form</find>
+      <find>noticias.h</find>
+      <find>productos.h</find>
+      <find>order</find>
+      <find>grid-2</find>
+      <find>grid-2-left-text</find>
+      <find>ubica</find>
+      <find>image-cora</find>
     </findStrings>
     <replaceStrings>
       <replace>inicio</replace>
@@ -165,6 +221,9 @@
       <replace>&quot;foot-info p-small&quot;</replace>
       <replace>&lt;li&gt;&lt;a href=&quot;index.html&quot; target=&quot;_self&quot;&gt;Inicio&lt;/a&gt;&lt;/li&gt;</replace>
       <replace>label</replace>
+      <replace>&lt;li class=&quot;button red light&quot;&gt;&lt;a href=&quot;&quot; target=&quot;_self&quot;&gt;Contáctanos&lt;/a&gt;&lt;/li&gt;</replace>
+      <replace>&lt;li class=&quot;button red light fit-content&quot;&gt;&lt;a href=&quot;&quot; target=&quot;_self&quot;&gt;Contáctanos&lt;/a&gt;&lt;/li&gt;</replace>
+      <replace>js/jquery.js</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -193,25 +252,26 @@
         <option value="$PROJECT_DIR$/backend/grid-backend.css" />
         <option value="$PROJECT_DIR$/backend/pedidos-backend.html" />
         <option value="$PROJECT_DIR$/backend/main-backend.css" />
-        <option value="$PROJECT_DIR$/organico.html" />
-        <option value="$PROJECT_DIR$/proceso.html" />
-        <option value="$PROJECT_DIR$/ayuda.html" />
-        <option value="$PROJECT_DIR$/nosotros.html" />
-        <option value="$PROJECT_DIR$/productos.html" />
         <option value="$PROJECT_DIR$/testing/bootstrap.min.js" />
-        <option value="$PROJECT_DIR$/nuestro-cafe.html" />
         <option value="$PROJECT_DIR$/testing/bootstrap-datetimepicker.min.css" />
-        <option value="$PROJECT_DIR$/noticias.html" />
         <option value="$PROJECT_DIR$/testing/index.html" />
         <option value="$PROJECT_DIR$/js/datetimepicker.js" />
         <option value="$USER_HOME$/Downloads/bootstrap-datetimepicker-master/sample in bootstrap v3/index.html" />
         <option value="$PROJECT_DIR$/js/jquery.mask.js" />
         <option value="$PROJECT_DIR$/js/mask.js" />
         <option value="$PROJECT_DIR$/js/email-autocomplete.js" />
-        <option value="$PROJECT_DIR$/grid.css" />
-        <option value="$PROJECT_DIR$/style.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/style 2.css" />
+        <option value="$PROJECT_DIR$/js/jquery.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/ayuda.html" />
+        <option value="$PROJECT_DIR$/proceso.html" />
+        <option value="$PROJECT_DIR$/productos.html" />
+        <option value="$PROJECT_DIR$/noticias.html" />
+        <option value="$PROJECT_DIR$/organico.html" />
+        <option value="$PROJECT_DIR$/nosotros.html" />
+        <option value="$PROJECT_DIR$/grid.css" />
+        <option value="$PROJECT_DIR$/nuestro-cafe.html" />
       </list>
     </option>
   </component>
@@ -314,41 +374,6 @@
       <workItem from="1552779030086" duration="484000" />
       <workItem from="1552932149692" duration="844000" />
       <workItem from="1553025633803" duration="2176000" />
-    </task>
-    <task id="LOCAL-00001" summary="Reorganización de contenido&#10;Agregué tipografía">
-      <created>1552066604756</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1552066604756</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Login images.">
-      <created>1552068208236</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1552068208236</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Added Bats'il Maya logo.">
-      <created>1552086182766</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1552086182766</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Added Bats'il Maya logo.">
-      <created>1552086731360</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1552086731360</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Added Bats'il Maya logo.">
-      <created>1552086832527</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1552086832527</updated>
     </task>
     <task id="LOCAL-00006" summary="Added Bats'il Maya logo.">
       <created>1552087154962</created>
@@ -609,11 +634,95 @@
       <option name="project" value="LOCAL" />
       <updated>1553539043308</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Solved conflicts in style.css&#10;Added molidos.">
+      <created>1553539966904</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1553539966904</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Fixed header padding problem.">
+      <created>1553561397100</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1553561397100</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Active page is now indicated.&#10;Fixed color button in mobile nav.">
+      <created>1553561913248</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1553561913248</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Added active class to footer and some missing instances.">
+      <created>1553562209965</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1553562209965</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Fixed nav colors on all HTMLs.">
+      <created>1553562483444</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1553562483444</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Fixed mobile nav input width causing all pages to have a blank space to the right.">
+      <created>1553562592691</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1553562592691</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Fixed width of time selectors in contact form.">
+      <created>1553562789470</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1553562789470</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Fixed MÁS SOBRE NOSOTROS image sizes and added grid gap to the class.">
+      <created>1553563024224</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1553563024225</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Fixed NUESTROS CLIENTES mobile H2 padding.">
+      <created>1553563211616</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1553563211617</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Added more padding to MISIÓN Y VISIÓN.">
+      <created>1553564028557</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1553564028557</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Updated form in all HTMls.&#10;Added a jquery local library.">
+      <created>1553564811159</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1553564811159</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Improved ENVIANOS UN CORREO form.">
+      <created>1553565164012</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1553565164012</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138207000" />
+    <option name="totallyTimeSpent" value="144097000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -626,8 +735,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5068493" visible="true" weight="0.2573471" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5068493" weight="0.2573471" />
       <window_info id="Structure" order="1" sideWeight="0.49315068" side_tool="true" weight="0.2573471" />
       <window_info id="Favorites" order="2" sideWeight="0.49387756" side_tool="true" weight="0.2573471" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -731,18 +841,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Fixed mobile menu color and position." />
-    <MESSAGE value="Fixed nav&#10;Worked on form&#10;Added logo shadow" />
-    <MESSAGE value="Fixed gridproduct." />
-    <MESSAGE value="Added mexico.svg under nosotros." />
-    <MESSAGE value="Added mexico.svg under nosotros&#10;Added pedidos.html&#10;Added grid-backend.css" />
-    <MESSAGE value="Created backend structure.&#10;Pedidos-backend.html initialized.&#10;Progress ………………………………………………… 20%." />
-    <MESSAGE value="Pedidos-backend.html updated.&#10;Progress ……………………………………… 22%.&#10;&#10;Closing section tag matches nothing &gt; productos.html — Solved." />
-    <MESSAGE value="Closing master div tag matches nothing on multiple html files — Solved." />
-    <MESSAGE value="Added Chilón to México.svg." />
-    <MESSAGE value="New mexico.svg." />
-    <MESSAGE value="Avances en grid.css de nsootros.html" />
-    <MESSAGE value="Avances en grid.css de nosotros.html&#10;Added molidos images in /nosotros" />
     <MESSAGE value="Fixed desktop grid in Cultura Tsetal in nosotros.html" />
     <MESSAGE value="More fixes to desktop grid in Cultura Tseltal in nosotros.html" />
     <MESSAGE value="workspace.xml" />
@@ -756,7 +854,19 @@
     <MESSAGE value="Added JS date and time pickers.&#10;Fixed certificados images from oversizing." />
     <MESSAGE value="ADDED A TIME DATE PICKER in testing." />
     <MESSAGE value="FIXED HOMEPAGE." />
-    <option name="LAST_COMMIT_MESSAGE" value="FIXED HOMEPAGE." />
+    <MESSAGE value="Solved conflicts in style.css&#10;Added molidos." />
+    <MESSAGE value="Fixed header padding problem." />
+    <MESSAGE value="Active page is now indicated.&#10;Fixed color button in mobile nav." />
+    <MESSAGE value="Added active class to footer and some missing instances." />
+    <MESSAGE value="Fixed nav colors on all HTMLs." />
+    <MESSAGE value="Fixed mobile nav input width causing all pages to have a blank space to the right." />
+    <MESSAGE value="Fixed width of time selectors in contact form." />
+    <MESSAGE value="Fixed MÁS SOBRE NOSOTROS image sizes and added grid gap to the class." />
+    <MESSAGE value="Fixed NUESTROS CLIENTES mobile H2 padding." />
+    <MESSAGE value="Added more padding to MISIÓN Y VISIÓN." />
+    <MESSAGE value="Updated form in all HTMls.&#10;Added a jquery local library." />
+    <MESSAGE value="Improved ENVIANOS UN CORREO form." />
+    <option name="LAST_COMMIT_MESSAGE" value="Improved ENVIANOS UN CORREO form." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -841,46 +951,8 @@
     <entry file="file://$PROJECT_DIR$/images/certificates/certificado_certimex.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/organico.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="230" column="38" selection-start-line="230" selection-start-column="38" selection-end-line="230" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/demo.html">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ayuda.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="33" column="68" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proceso.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" column="29" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nosotros.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="45" column="40" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/productos.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4051">
-          <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testing/bootstrap-datetimepicker.min.js" />
     <entry file="file://$PROJECT_DIR$/testing/bootstrap.min.css" />
@@ -899,22 +971,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/noticias.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="33" column="69" selection-start-line="33" selection-start-column="69" selection-end-line="33" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mapa.css">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nuestro-cafe.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="80" column="56" selection-start-line="80" selection-start-column="46" selection-end-line="80" selection-end-column="75" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testing/index.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -956,20 +1014,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7945">
-          <caret line="530" column="26" selection-start-line="530" selection-start-column="26" selection-end-line="530" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="166" column="18" selection-start-line="166" selection-start-column="14" selection-end-line="166" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/datetimepicker.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1546">
@@ -977,17 +1021,120 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grid.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="344" column="5" selection-start-line="344" selection-start-column="1" selection-end-line="344" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/style 2.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="653">
-          <caret line="874" column="1" selection-start-line="874" selection-start-column="1" selection-end-line="874" selection-end-column="1" />
+          <caret line="881" column="1" selection-start-line="881" selection-start-column="1" selection-end-line="881" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="86841" selection-start-line="1" selection-start-column="86841" selection-end-line="1" selection-end-column="86841" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="481" column="15" selection-start-line="481" selection-start-column="15" selection-end-line="481" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="599" selection-start-line="599" selection-end-line="634" selection-end-column="9" />
+          <folding>
+            <element signature="n#form#0;n#div#0;n#section#0;n#div#3;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proceso.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
+          <folding>
+            <element signature="n#form#0;n#div#0;n#section#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#10821#10826#0" expanded="true" />
+            <element signature="e#27000#27005#0" expanded="true" />
+            <element signature="e#29901#29906#0" expanded="true" />
+            <element signature="e#30427#30432#0" expanded="true" />
+            <element signature="e#32042#32047#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/productos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="53" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
+          <folding>
+            <element signature="e#16821#16826#0" expanded="true" />
+            <element signature="e#32372#32377#0" expanded="true" />
+            <element signature="e#35161#35166#0" expanded="true" />
+            <element signature="e#35667#35672#0" expanded="true" />
+            <element signature="e#37185#37190#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/noticias.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
+          <folding>
+            <element signature="e#8064#8069#0" expanded="true" />
+            <element signature="e#23615#23620#0" expanded="true" />
+            <element signature="e#26404#26409#0" expanded="true" />
+            <element signature="e#26910#26915#0" expanded="true" />
+            <element signature="e#28428#28433#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ayuda.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2535">
+          <caret line="169" column="20" lean-forward="true" selection-start-line="169" selection-start-column="20" selection-end-line="169" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/organico.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grid.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="824" column="22" selection-start-line="824" selection-start-column="22" selection-end-line="824" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nosotros.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="101" column="12" selection-start-line="101" selection-start-column="12" selection-end-line="116" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#form#0;n#div#0;n#section#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nuestro-cafe.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="132" column="68" selection-start-line="132" selection-start-column="68" selection-end-line="132" selection-end-column="68" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#form#0;n#div#0;n#section#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>

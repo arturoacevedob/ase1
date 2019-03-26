@@ -43,12 +43,12 @@
                             <li><a href="proceso.html" target="_self">Proceso</a></li>
                             <li><a href="productos.html" target="_self">Productos</a></li>
                             <li><a href="noticias.html" target="_self">Noticias</a></li>
-                            <li><a class="active" href="" target="_self">Ayuda</a></li>
+                            <li><a class="active" href="noticias.html" target="_self">Ayuda</a></li>
                         </ul>
                     </nav>
                     <ul>
                         <li class="button outline"><a href="" target="_self">Iniciar Sesión</a></li>
-                        <li class="button red"><a href="" target="_self">Contáctanos</a></li>
+                        <li class="button red light"><a href="" target="_self">Contáctanos</a></li>
                     </ul>
                 </div>
 
@@ -69,7 +69,7 @@
                             <li><a href="noticias.html" target="_self">Noticias</a></li>
                             <li><a class="active" href="ayuda.html" target="_self">Ayuda</a></li>
                             <li class="button outline fit-content"><a href="" target="_self">Iniciar Sesión</a></li>
-                            <li class="button red fit-content"><a href="" target="_self">Contáctanos</a></li>
+                            <li class="button red light fit-content"><a href="" target="_self">Contáctanos</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -142,12 +142,13 @@
         <aside class="help-mail">
             <h2>Envíanos un correo</h2>
             <form>
-                <label for="form-name2" id="form-name1">Nombre</label>
-                <input id="form-name2" name="nombre" placeholder="Maria Bravo" required type="name"><br>
-                <label id="form-mail1">Correo</label>
-                <input id="form-mail2" name="email" placeholder="Ej. mariabravo@gmail.com" required type="email"><br>
+                <label for="name">Nombre</label>
+                <input id="name" name="name" placeholder="Maria Bravo" required type="text">
+                <label for="email">Correo</label>
+                <input class="email" id="email" name="email" placeholder="mariabravo@gmail.com" required
+                       type="email">
                 <label>Mensaje</label>
-                <input name="mensaje" placeholder="Mensaje" required type="text">
+                <textarea name="mensaje" placeholder="Mensaje" required rows="5" type="text"></textarea>
                 <p class="formbutton">
                     <input class="button dark" type="submit" value="Enviar Correo">
                 </p>
@@ -164,7 +165,7 @@
                     <li><a href="proceso.html" target="_self">Proceso</a></li>
                     <li><a href="productos.html" target="_self">Productos</a></li>
                     <li><a href="noticias.html" target="_self">Noticias</a></li>
-                    <li><a href="ayuda.html" target="_self">Ayuda</a></li>
+                    <li><a class="active" href="ayuda.html" target="_self">Ayuda</a></li>
                 </ul>
             </aside>
             <footer>
@@ -188,5 +189,16 @@
         </div>
     </div>
 </div>
+
+
+<script charset="UTF-8" src="js/jquery.js"></script>
+<script charset="UTF-8" src="js/email-autocomplete.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $(".email").emailautocomplete();
+    });
+</script>
+
 </body>
 </html>
