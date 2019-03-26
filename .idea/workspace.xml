@@ -6,7 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b0b4be1-8d7c-4364-8440-568a85826da6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -57,8 +57,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/proceso.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="68">
-                  <caret line="42" column="65" selection-start-line="42" selection-start-column="56" selection-end-line="42" selection-end-column="65" />
+                <state relative-caret-position="111">
+                  <caret line="43" column="45" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
                 </state>
               </provider>
             </entry>
@@ -103,20 +103,20 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="293">
-                  <caret line="505" column="16" selection-start-line="505" selection-start-column="16" selection-end-line="505" selection-end-column="16" />
+                <state relative-caret-position="186">
+                  <caret line="496" column="14" lean-forward="true" selection-start-line="496" selection-start-column="14" selection-end-line="496" selection-end-column="14" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/grid.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="218">
-                  <caret line="105" column="22" selection-start-line="105" selection-start-column="22" selection-end-line="105" selection-end-column="22" />
+                <state relative-caret-position="336">
+                  <caret line="392" column="16" lean-forward="true" selection-start-line="392" selection-start-column="16" selection-end-line="392" selection-end-column="16" />
                 </state>
               </provider>
             </entry>
@@ -160,11 +160,11 @@
       <find>productos.ht</find>
       <find>noticias.h</find>
       <find>ayuda.ht</find>
-      <find>proceso.h</find>
       <find>&lt;li class=&quot;button red&quot;&gt;&lt;a href=&quot;&quot; target=&quot;_self&quot;&gt;Contáctanos&lt;/a&gt;&lt;/li&gt;</find>
       <find>&lt;li class=&quot;button red fit-content&quot;&gt;&lt;a href=&quot;&quot; target=&quot;_self&quot;&gt;Contáctanos&lt;/a&gt;&lt;/li&gt;</find>
       <find>red light</find>
       <find>atv</find>
+      <find>proceso.h</find>
       <find>tel-wra</find>
     </findStrings>
     <replaceStrings>
@@ -233,8 +233,8 @@
         <option value="$PROJECT_DIR$/noticias.html" />
         <option value="$PROJECT_DIR$/ayuda.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/grid.css" />
         <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/grid.css" />
       </list>
     </option>
   </component>
@@ -337,13 +337,6 @@
       <workItem from="1552779030086" duration="484000" />
       <workItem from="1552932149692" duration="844000" />
       <workItem from="1553025633803" duration="2176000" />
-    </task>
-    <task id="LOCAL-00001" summary="Reorganización de contenido&#10;Agregué tipografía">
-      <created>1552066604756</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1552066604756</updated>
     </task>
     <task id="LOCAL-00002" summary="Login images.">
       <created>1552068208236</created>
@@ -674,11 +667,25 @@
       <option name="project" value="LOCAL" />
       <updated>1553562592691</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Fixed width of time selectors in contact form.">
+      <created>1553562789470</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1553562789470</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Fixed MÁS SOBRE NOSOTROS image sizes and added grid gap to the class.">
+      <created>1553563024224</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1553563024225</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139992000" />
+    <option name="totallyTimeSpent" value="140262000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -797,8 +804,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Pedidos-backend.html updated.&#10;Progress ……………………………………… 22%.&#10;&#10;Closing section tag matches nothing &gt; productos.html — Solved." />
-    <MESSAGE value="Closing master div tag matches nothing on multiple html files — Solved." />
     <MESSAGE value="Added Chilón to México.svg." />
     <MESSAGE value="New mexico.svg." />
     <MESSAGE value="Avances en grid.css de nsootros.html" />
@@ -822,7 +827,9 @@
     <MESSAGE value="Added active class to footer and some missing instances." />
     <MESSAGE value="Fixed nav colors on all HTMLs." />
     <MESSAGE value="Fixed mobile nav input width causing all pages to have a blank space to the right." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed mobile nav input width causing all pages to have a blank space to the right." />
+    <MESSAGE value="Fixed width of time selectors in contact form." />
+    <MESSAGE value="Fixed MÁS SOBRE NOSOTROS image sizes and added grid gap to the class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed MÁS SOBRE NOSOTROS image sizes and added grid gap to the class." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1038,22 +1045,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/proceso.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="42" column="65" selection-start-line="42" selection-start-column="56" selection-end-line="42" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grid.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="105" column="22" selection-start-line="105" selection-start-column="22" selection-end-line="105" selection-end-column="22" />
+        <state relative-caret-position="111">
+          <caret line="43" column="45" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="505" column="16" selection-start-line="505" selection-start-column="16" selection-end-line="505" selection-end-column="16" />
+        <state relative-caret-position="186">
+          <caret line="496" column="14" lean-forward="true" selection-start-line="496" selection-start-column="14" selection-end-line="496" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grid.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="392" column="16" lean-forward="true" selection-start-line="392" selection-start-column="16" selection-end-line="392" selection-end-column="16" />
         </state>
       </provider>
     </entry>
