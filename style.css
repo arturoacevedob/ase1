@@ -110,11 +110,6 @@ h1, nav > h2 {
 .red {
     color: var(--red);
 }
-
-.green {
-    color: var(--green);
-}
-
 .white{
     color: var(--white);
 }
@@ -337,12 +332,6 @@ a.dark:visited {
     transition: background-color var(--time) var(--ease);
 }
 
-.button.green {
-    color: var(--a-link);
-    background-color: var(--green);
-    transition: background-color var(--time) var(--ease);
-}
-
 .button.dark {
     width: 100%;
     color: var(--light);
@@ -375,13 +364,6 @@ a.dark:visited {
 }
 
 .button.red:hover {
-    text-decoration: none;
-    background-color: var(--button-hover);
-    border-bottom: none;
-    transition: background-color var(--time) var(--ease);
-}
-
-.button.green:hover {
     text-decoration: none;
     background-color: var(--button-hover);
     border-bottom: none;
@@ -997,10 +979,13 @@ margin-bottom: 7%;
                url(images/nosotros/header_nosotros_somos_la_planta_transformadora_de_café_batsil_maya.jpg) 70% 0 / cover no-repeat;
 }
 #nosotros #image-nuestra-historia{
+    
     position: relative;
     background: url(images/nosotros/mexico_2.svg) 0% 100% / cover no-repeat;
 }
 #nosotros #image-nuestra-historia p{
+    max-width: 200px;
+    margin: 0;
     position: relative;
     top: 61%;
     left: 42%;
