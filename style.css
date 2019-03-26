@@ -248,12 +248,10 @@ a.dark:visited {
     width: max-content !important;
     margin: 0 auto;
 }
-
 .full-width {
     width: 100% !important;
     box-sizing: border-box;
 }
-
 .button {
     padding: var(--button-padding);
     display: inline-block;
@@ -971,7 +969,15 @@ margin-bottom: 7%;
     background:url(images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
                url(images/nosotros/header_nosotros_somos_la_planta_transformadora_de_café_batsil_maya.jpg) 70% 0 / cover no-repeat;
 }
-
+#nosotros #image-nuestra-historia{
+    position: relative;
+    background: url(images/nosotros/mexico_2.svg) 70% 20% / cover no-repeat;
+}
+#nosotros #image-nuestra-historia p{
+    position: relative;
+    top: 68%;
+    left: 41%;
+}
 #nosotros #image-el-pueblo-tseltal {
     background: url(images/nosotros/el_pueblo_tseltal_batsil_maya.jpg) 70% 20% / cover no-repeat;
 }

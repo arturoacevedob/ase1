@@ -412,18 +412,20 @@ input {
     grid-row: 1 / 2;
 }
 
-.grid-product-view figure {
+#premium_organico {
     grid-column: 1 / 2;
     grid-row: 1 / 5;
-}
-
-.grid-product-view img {
-    width: 100%;
+    background: url("images/productos/cafe/granos_de_cafe_premium_organico_batsil_maya.jpg");
+    0 0 / cover no-repeat;
 }
 
 .grid-product-view form {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+}
+
+.grid-product-view fieldset {
+    padding-bottom: 1em;
 }
 
 .grid-product-form {
@@ -755,6 +757,50 @@ input {
         grid-auto-rows: auto;
         grid-gap: 5px;
     }
+
+    .grid-product-view {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #premium_organico {
+        height: 30vh;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .grid-product-view .product-description {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    #premium_organico {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        background: url("images/productos/cafe/granos_de_cafe_premium_organico_batsil_maya.jpg");
+        0 0 / cover no-repeat;
+    }
+
+    .grid-product-view form {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    .grid-product-form {
+        display: grid;
+        grid-auto-flow: column;
+        grid-row: 1 / 2;
+    }
+
+    .grid-product-view .product-buy {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+
+    .grid-product-view > p {
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -989,6 +1035,7 @@ input {
     .chat {
         grid-area: chat;
     }
+
     .chat h2 {
         padding: 1% 0% 1% 11%;
         background: url(images/ayuda/sprites_ayuda_iconos.svg) 0% 0% / 9% no-repeat;
@@ -1010,6 +1057,13 @@ input {
     .help-mail h2 {
         padding: 1% 0% 1% 11%;
         background: url(images/ayuda/sprites_ayuda_iconos.svg) 0% 99% / 9% no-repeat;
+    }
+    .help-mail form input {
+        border: 2px solid rgba(64,41,10,.3);
+    }
+    .help-mail form textarea {
+        border: 2px solid rgba(64,41,10,.3);
+        border-radius: 14px;
     }
 
     .alt-nav {
