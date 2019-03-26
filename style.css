@@ -420,8 +420,13 @@ header a {
 .grid-image-first h2{
     display: none;
 }
+.grid-image-first p:nth-child(3){
+    width: 60%;
+    margin: 3% auto 5%;
+
+}
 .grid-image-first p:last-child{
-    width: 47%;
+    width: 44%;
     margin: auto;
 
 }
@@ -659,7 +664,157 @@ margin-bottom: 7%;
     left: 79.5%;
 
 }
+@media screen and (min-width: 1024px) {
+    h2 {
+        font-size: 40px;
+    }
 
+    .h2-header {
+        font-size: 65px;
+    }
+
+    .h2-subtitle {
+        padding: 1em 0;
+        font-size: 25px;
+    }
+
+    #productos .product-title {
+        font-size: 25px;
+    }
+
+    .h2-small {
+        font-size: 16px;
+    }
+
+    h3, .h3-big {
+        font-size: 35px;
+        line-height: 1.2em;
+    }
+
+    .h3-small {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    .p-big {
+        font-size: 22px;
+    }
+
+    .p-small {
+        font-size: 13px;
+    }
+    .grid-image-first p:nth-child(3){
+        width: 100%;
+    }
+    #proceso .tipo-tueste p:nth-child(8){
+        left: -3%;
+    }
+    
+}
+@media screen and (max-width: 1023px) {
+    .logo > img {
+        height: 50px;
+    }
+}
+@media screen and (min-width: 769px) {
+    .yomol h3 {
+        font-size: 16px;
+    }
+    #nosotros .yomol img{
+        width: 20%;
+    }
+    
+    
+}
+@media screen and (max-width:768px){
+    #nosotros .yomol img{
+        width: 30%;
+    }
+    .grid-image-first p:nth-child(3){
+        width: 90%;
+    }
+    .grid-image-first p:last-child{
+        width: 90%;
+        margin: auto;
+    
+    }
+
+}
+@media screen and (min-width: 640px) {
+    h2 {
+        font-size: 40px;
+    }
+
+    .h2-header {
+        font-size: 50px;
+    }
+
+    .h2-subtitle {
+        padding: 1em 0;
+        font-size: 25px;
+    }
+
+    .h2-small {
+        font-size: 16px;
+    }
+
+    #productos .product-title {
+        font-size: 25px;
+    }
+
+    h3, .h3-big {
+        font-size: 35px;
+        line-height: 1.2em;
+    }
+
+    .h3-small {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    .p-big {
+        font-size: 22px;
+    }
+
+    .p-small {
+        font-size: 13px;
+    }
+
+    .bigfoot {
+        font-size: 18px;
+        background: url(images/footer/footer_granos_de_cafe_batsil_maya.jpg
+        ) 0 0 / cover no-repeat;
+    }
+
+    /* —————— AQUÍ EMPIEZAN ESTILOS DE NOSOTROS—————— */
+    #nosotros .mision {
+        border-right: 2px solid var(--yellow);
+        padding-right: 14%;
+    }
+
+    #nosotros .vision {
+        padding-left: 14%;
+    }
+
+    /* —————— AQUÍ EMPIEZAN ESTILOS DE PROCESO—————— */
+    #proceso .tipo-tueste p:nth-child(8) {
+        top: 80%;
+        left: -5%;
+
+    }
+    #proceso .tueste-italiano{
+        top: 30%;
+        left: 76%;
+    
+    }
+    
+}
 @media screen and (max-width: 639px) {
     h2 {
         font-size: 40px;
@@ -702,7 +857,9 @@ margin-bottom: 7%;
     .p-small {
         font-size: 13px;
     }
-
+    .grid-image-first p:last-child{
+        width: 57%;
+    }
     .grid-image-first p:last-child{
         width: 100%;
         margin: 0% auto 11%;
@@ -788,148 +945,6 @@ margin-bottom: 7%;
     }
     #proceso .tueste-italiano h3{
         font-size: 13px;
-    }
-}
-@media screen and (min-width: 640px) {
-    h2 {
-        font-size: 40px;
-    }
-
-    .h2-header {
-        font-size: 50px;
-    }
-
-    .h2-subtitle {
-        padding: 1em 0;
-        font-size: 25px;
-    }
-
-    .h2-small {
-        font-size: 16px;
-    }
-
-    #productos .product-title {
-        font-size: 25px;
-    }
-
-    h3, .h3-big {
-        font-size: 35px;
-        line-height: 1.2em;
-    }
-
-    .h3-small {
-        font-size: 20px;
-    }
-
-    h4 {
-        font-size: 20px;
-    }
-
-    .p-big {
-        font-size: 22px;
-    }
-
-    .p-small {
-        font-size: 13px;
-    }
-
-    .bigfoot {
-        font-size: 18px;
-        background: url(images/footer/footer_granos_de_cafe_batsil_maya.jpg
-        ) 0 0 / cover no-repeat;
-    }
-
-    /* —————— AQUÍ EMPIEZAN ESTILOS DE NOSOTROS—————— */
-    #nosotros .mision {
-        border-right: 2px solid var(--yellow);
-        padding-right: 14%;
-    }
-
-    #nosotros .vision {
-        padding-left: 14%;
-    }
-
-    /* —————— AQUÍ EMPIEZAN ESTILOS DE PROCESO—————— */
-    #proceso .tipo-tueste p:nth-child(8) {
-        top: 80%;
-        left: -5%;
-
-    }
-    #proceso .tueste-italiano{
-        top: 30%;
-        left: 76%;
-    
-    }
-    
-}
-@media screen and (max-width:767){
-    #nosotros .yomol img{
-        width: 30%;
-    }
-}
-@media screen and (min-width: 768px) {
-    .yomol h3 {
-        font-size: 16px;
-    }
-    #nosotros .yomol img{
-        width: 20%;
-    }
-    .grid-image-first p:last-child{
-        width: 63%;
-        margin: auto;
-    
-    }
-}
-@media screen and (min-width: 1024px) {
-    h2 {
-        font-size: 40px;
-    }
-
-    .h2-header {
-        font-size: 65px;
-    }
-
-    .h2-subtitle {
-        padding: 1em 0;
-        font-size: 25px;
-    }
-
-    #productos .product-title {
-        font-size: 25px;
-    }
-
-    .h2-small {
-        font-size: 16px;
-    }
-
-    h3, .h3-big {
-        font-size: 35px;
-        line-height: 1.2em;
-    }
-
-    .h3-small {
-        font-size: 20px;
-    }
-
-    h4 {
-        font-size: 20px;
-    }
-
-    .p-big {
-        font-size: 22px;
-    }
-
-    .p-small {
-        font-size: 13px;
-    }
-    #proceso .tipo-tueste p:nth-child(8){
-        left: -3%;
-    }
-}
-
-@media screen and (max-width: 1023px) {
-    .logo > img {
-        height: 50px;
     }
 }
 
