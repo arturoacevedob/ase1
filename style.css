@@ -685,7 +685,7 @@ input[name="tel"] {
     }
 }
 @media screen and (max-width:767){
-    #nosotros .yomol img{
+    #nosotros .yomol{
         width: 30%;
     }
 }
