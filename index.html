@@ -597,7 +597,7 @@
     </div>
 </div>
 
-<script charset="UTF-8" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script charset="UTF-8" src="js/jquery.js"></script>
 <script charset="UTF-8" src="js/datetimepicker.js"></script>
 <script charset="UTF-8" src="js/datetimepicker.es.js"></script>
 <script charset="UTF-8" src="js/email-autocomplete.js"></script>
@@ -607,34 +607,30 @@
     $(document).ready(function () {
         $('.phone_with_ddd').mask('(00) 0000-0000');
         $(".email").emailautocomplete();
-    });
-
-
-    $('.form_date').datetimepicker({
-        language: 'es',
-        todayBtn: 1,
-        autoclose: 1,
-        todayHighlight: 1,
-        startView: 2,
-        minView: 2,
-        forceParse: 0,
-        startDate: new Date(),
-    });
-
-    $('.form_date').datetimepicker('setDaysOfWeekDisabled', [0, 6]);
-
-    $('.form_time').datetimepicker({
-        language: 'es',
-        weekStart: 1,
-        todayBtn: 1,
-        autoclose: 1,
-        todayHighlight: 1,
-        startView: 1,
-        minView: 0,
-        maxView: 1,
-        forceParse: 0,
-        showMeridian: 1,
-        minuteStep: 15
+        $('.form_date').datetimepicker({
+            language: 'es',
+            todayBtn: 1,
+            autoclose: 1,
+            todayHighlight: 1,
+            startView: 2,
+            minView: 2,
+            forceParse: 0,
+            startDate: new Date(),
+        });
+        $('.form_date').datetimepicker('setDaysOfWeekDisabled', [0, 6]);
+        $('.form_time').datetimepicker({
+            language: 'es',
+            weekStart: 1,
+            todayBtn: 1,
+            autoclose: 1,
+            todayHighlight: 1,
+            startView: 1,
+            minView: 0,
+            maxView: 1,
+            forceParse: 0,
+            showMeridian: 1,
+            minuteStep: 15
+        });
     });
 </script>
 
