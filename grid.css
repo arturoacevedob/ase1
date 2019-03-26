@@ -439,6 +439,10 @@ input {
     grid-row: 3 / 4;
 }
 
+.grid-product-view .product-buy > p {
+    font-size: 2em;
+}
+
 .grid-product-view > p {
     grid-column: 2 / 3;
     grid-row: 4 / 5;
