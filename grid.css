@@ -590,6 +590,9 @@ input {
         content: '';
         width: 10px;
     }
+    .clients h2{
+        padding: var(--container-padding);
+    }
 
     /*to here*/
     .addbutton1 {
@@ -736,6 +739,12 @@ input {
         align-items: start;
     }
 
+    .clients .grid-scroll-x{
+        grid-template-columns: repeat(5,1fr);
+    }
+    .clients .grid-scroll-x img{
+        max-width: 80%;
+    }
     .extra-articles {
         grid-template-columns: repeat(2, 1fr);
     }
