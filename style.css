@@ -110,11 +110,6 @@ h1, nav > h2 {
 .red {
     color: var(--red);
 }
-
-.green {
-    color: var(--green);
-}
-
 .white{
     color: var(--white);
 }
@@ -337,12 +332,6 @@ a.dark:visited {
     transition: background-color var(--time) var(--ease);
 }
 
-.button.green {
-    color: var(--a-link);
-    background-color: var(--green);
-    transition: background-color var(--time) var(--ease);
-}
-
 .button.dark {
     width: 100%;
     color: var(--light);
@@ -375,13 +364,6 @@ a.dark:visited {
 }
 
 .button.red:hover {
-    text-decoration: none;
-    background-color: var(--button-hover);
-    border-bottom: none;
-    transition: background-color var(--time) var(--ease);
-}
-
-.button.green:hover {
     text-decoration: none;
     background-color: var(--button-hover);
     border-bottom: none;
