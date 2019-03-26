@@ -77,7 +77,12 @@ img {
 .botones-p {
     padding-bottom: 3%;
 }
-
+.kill{
+    display:none;
+}
+.gimme-padding{
+    padding: 11px 0 15px 0;
+}
 
 /* Hides `Bats'il Maya` and `Menu Principal` */
 h1, nav > h2 {
