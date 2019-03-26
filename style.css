@@ -425,12 +425,12 @@ header a {
 .grid-image-first h2{
     display: none;
 }
-.grid-image-first p:nth-child(3){
+#homepage .grid-image-first p:nth-child(3){
     width: 60%;
     margin: 3% auto 5%;
 
 }
-.grid-image-first p:last-child{
+#homepage .map .grid-image-first p:last-child{
     width: 44%;
     margin: auto;
 
@@ -711,7 +711,7 @@ margin-bottom: 7%;
     .p-small {
         font-size: 13px;
     }
-    .grid-image-first p:nth-child(3){
+    #homepage .grid-image-first p:nth-child(3){
         width: 100%;
     }
     #proceso .tipo-tueste p:nth-child(8){
@@ -736,7 +736,7 @@ margin-bottom: 7%;
 }
 @media screen and (max-width:768px){
     #nosotros .yomol img{
-        width: 30%;
+        width: 80%;
     }
     .grid-image-first p:nth-child(3){
         width: 90%;
@@ -975,8 +975,11 @@ margin-bottom: 7%;
     border-bottom: 2px solid var(--yellow);
     padding-bottom: 9%;
 }
-#nosotros .deskktop-family h3{
-    text-indent: -999px;
+.desktop-family h3{
+    display:none;
+}
+.mobile-family h3{
+    display: none;
 }
 
 #nosotros .yomol{
