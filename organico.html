@@ -78,36 +78,45 @@
     </div>
     <section>
         <div class="container grid-2 no-padding-top-bottom">
-            <figure></figure>
             <article>
-                <h3>Premium Orgánico</h3>
+                <h2>Premium Orgánico</h2>
                 <p>Un café de preparación americana con excelente calidad que pocos cafés en el mercado nacional
                     logran ofrecer.</p>
-                <h4>Peso</h4>
-                <div class="grid-2-two">
-                    <ul>
-                        <li>250gr</li>
-                        <li>500gr</li>
-                        <li>1kg</li>
-                        <li>Otro peso</li>
-                    </ul>
-                    <div>
-                        <label>Cantidad</label>
-                        <select name="cantidad">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                            <option value="11">11</option>
-                            <option value="12">12</option>
-                        </select>
-                    </div>
+                <div>
+                    <form class="grid-2">
+                        <fieldset class="h3-small">
+                            <strong>Peso</strong>
+                            <p class="radio-group">
+                                <input id="molido-one" name="selector" type="radio">
+                                <label for="molido-one">250gr</label>
+                                <input id="molido-two" name="selector" type="radio">
+                                <label for="molido-two">500gr</label>
+                                <input id="molido-three" name="selector" type="radio">
+                                <label for="molido-three">1kg</label>
+                                <input id="molido-four" name="selector" type="radio">
+                                <label for="molido-four">Otro</label>
+                            </p>
+                        </fieldset>
+                        <fieldset class="h3-small">
+                            <div class="grid-2 align-end">
+                                <label>Cantidad</label>
+                                <select name="cantidad">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                            </div>
+                        </fieldset>
+                    </form>
                 </div>
                 <ul>
                     <h4>Molido del Café</h4>
@@ -122,6 +131,7 @@
                     <a class="button" href="" target="">Comprar</a>
                 </div>
                 <p class="center-aligned">Envío nacional gratis en pedidos mayores a 10kgs</p>
+                <figure></figure>
             </article>
         </div>
     </section>

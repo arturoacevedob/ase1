@@ -77,7 +77,7 @@
     order: 2;
 }
 
-label, legend {
+label, legend, fieldset {
     padding: 10px 1em 2px;
     display: block;
 }
@@ -617,7 +617,7 @@ input {
     .clients h2 {
         max-width: 1100px;
         margin: 0 auto;
-        padding-top: var(--padding-top-bottom);
+        padding-top: var(--padding-top-bottom) var(--padding-left-right) 0;
     }
 
     .llamada {
