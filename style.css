@@ -709,6 +709,10 @@ margin-bottom: 7%;
     .grid-image-first p:nth-child(3){
         width: 100%;
     }
+    .grid-image-first p:last-child{
+        width: 45%;
+    }
+    
     #proceso .tipo-tueste p:nth-child(8){
         left: -3%;
     }
@@ -895,6 +899,9 @@ margin-bottom: 7%;
     }
     #nosotros .vision {
         padding-top: var(--padding-top-bottom);
+    }
+    #nosotros .yomol img {
+        width: 80%;
     }
 
      /* —————— AQUÍ EMPIEZAN ESTILOS DE PROCESO—————— */
