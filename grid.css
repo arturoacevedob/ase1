@@ -881,6 +881,15 @@ input {
         grid-row: 2;
     }
 
+    .border-padding{
+        padding: 5%;
+        border: 2px solid var(--dark);
+        border-radius: 30px;
+    }
+
+    .margin-bottom{
+        margin-bottom: 4%;
+    }
     .grid-ayuda{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -889,7 +898,7 @@ input {
         grid-template-areas: "faq faq grid-contactanos";
     }
     .grid-contactanos{
-        height: 85%;
+        height: 44%;
         grid-area: grid-contactanos;
         display: grid;
         grid-template-columns: 1fr;
@@ -902,16 +911,13 @@ input {
     }
     .chat {
         grid-area: chat;
-        border: 2px solid var(--dark);
     }
     .call {
         grid-area: call;
-        border: 2px solid var(--dark);
     }
 
     .help-mail {
         grid-area: mail;
-        border: 2px solid var(--dark);
     }
 
     .alt-nav {
