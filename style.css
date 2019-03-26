@@ -550,29 +550,29 @@ input[name="tel"] {
 #proceso .tueste-claro{
     position: absolute;
     top: 34%;
-    left: 8%;
+    left: 11%;
 }
 
 #proceso .tueste-medio{
     position: absolute;
-    top: 66%;
-    left: 22%;
+    top: 69%;
+    left: 26%;
 }
 
 #proceso .tueste-vienes{
     position: absolute;
-    top: 28%;
-    left: 39%;
+    top: 30%;
+    left: 43%;
 }
 #proceso .tueste-oscuro{
     position: absolute;
-    top: 62%;
-    left: 58%;
+    top: 65%;
+    left: 61%;
 }
 #proceso .tueste-italiano{
     position: absolute;
-    top: 28%;
-    left: 74%;
+    top: 31%;
+    left: 79%;
 
 }
 
