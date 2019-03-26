@@ -439,6 +439,10 @@ input {
     grid-row: 3 / 4;
 }
 
+.grid-product-view .product-buy > p {
+    font-size: 2em;
+}
+
 .grid-product-view > p {
     grid-column: 2 / 3;
     grid-row: 4 / 5;
@@ -918,7 +922,9 @@ input {
         grid-column: 3;
         grid-row: 1 / 4;
     }
-    #nuestrocafe .grid-2-text-photo{}
+    #proceso .grid-2-text-photo{
+        grid-gap: 33px;
+    }
     .grid-2-text-photo {
         padding: var(--padding-top-bottom) 0;
         display: grid;
@@ -949,7 +955,7 @@ input {
     }
 
     .grid-2-left-text > .wrapper-text {
-        padding: 0 15% 0 c;
+        padding: 0 15% 0;
         grid-column: 1 / 2;
     }
 
