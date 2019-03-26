@@ -415,7 +415,7 @@ input {
 #premium_organico {
     grid-column: 1 / 2;
     grid-row: 1 / 5;
-    background: url("images/productos/cafe/granos_de_cafe_premium_organico_batsil_maya.jpg");
+    background: url("images/productos/cafe/granos_de_cafe_premium_organico_batsil_maya.jpg")
     0 0 / cover no-repeat;
 }
 
@@ -777,7 +777,7 @@ input {
     #premium_organico {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
-        background: url("images/productos/cafe/granos_de_cafe_premium_organico_batsil_maya.jpg");
+        background: url("images/productos/cafe/granos_de_cafe_premium_organico_batsil_maya.jpg")
         0 0 / cover no-repeat;
     }
 
@@ -935,6 +935,7 @@ input {
         grid-row: 1 / 2;
         grid-template-columns: repeat(2, 1fr);
         order: 1;
+    }
     
     #proceso .grid-2-left-text{
         grid-gap: 22px;
