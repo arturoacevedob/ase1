@@ -408,6 +408,7 @@ header a {
     max-width: 700px;
     margin: 0 auto;
     grid-row: 1;
+    font-family: 'Qualion', sans-serif;
 }
 
 .map .world-map .h2-small {
