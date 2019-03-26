@@ -249,6 +249,11 @@ a.dark:visited {
     margin: 0 auto;
 }
 
+.full-width {
+    width: 100% !important;
+    box-sizing: border-box;
+}
+
 .button {
     padding: var(--button-padding);
     display: inline-block;
