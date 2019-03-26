@@ -565,6 +565,7 @@ input[name="tel"] {
 }
 
 .radio-group {
+    width: fit-content;
     display: grid;
     grid-auto-flow: column;
     border-radius: 33px;
@@ -579,7 +580,7 @@ input[type="radio"] {
 }
 
 .radio-group label {
-    padding: 5px 20px;
+    padding: 5px 10px;
     display: inline-block;
     color: var(--dark);
     text-align: center;
