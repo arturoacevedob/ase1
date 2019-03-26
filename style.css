@@ -502,6 +502,10 @@ input.button {
     display: flex;
 }
 
+.tel-wrapper > .form-group {
+    width: 100%;
+}
+
 .tel-wrapper > span {
     padding: 2.4em 0.5em 0;
 }
