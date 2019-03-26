@@ -83,6 +83,9 @@ img {
 .gimme-padding{
     padding: 11px 0 15px 0;
 }
+.gimme-padding-2{
+    padding: 33px 0 33px 0;
+}
 
 /* Hides `Bats'il Maya` and `Menu Principal` */
 h1, nav > h2 {
@@ -749,7 +752,7 @@ margin-bottom: 7%;
         height: 50px;
     }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
     .yomol h3 {
         font-size: 16px;
     }
@@ -762,7 +765,7 @@ margin-bottom: 7%;
     }
     
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:767px){
     #nosotros .yomol img{
         width: 80%;
     }
