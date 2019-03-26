@@ -971,7 +971,7 @@ margin-bottom: 7%;
 }
 #nosotros #image-nuestra-historia{
     position: relative;
-    background: url(images/nosotros/mexico_2.svg) 70% 20% / cover no-repeat;
+    background: url(images/nosotros/mexico_2.svg) 0% 100% / cover no-repeat;
 }
 #nosotros #image-nuestra-historia p{
     position: relative;
