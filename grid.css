@@ -949,7 +949,7 @@ input {
     }
 
     .grid-2-left-text > .wrapper-text {
-        padding: 0 15% 0 c;
+        padding: 0 15% 0;
         grid-column: 1 / 2;
     }
 
