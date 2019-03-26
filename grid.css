@@ -629,7 +629,7 @@ input {
 
     .clients h2 {
         max-width: 1100px;
-        margin: 0 auto;
+        margin: 5% auto;
         padding-top: var(--padding-top-bottom) var(--padding-left-right) 0;
     }
 
