@@ -714,7 +714,7 @@ margin-bottom: 7%;
     #homepage .grid-image-first p:nth-child(3){
         width: 100%;
     }
-    .grid-image-first p:last-child{
+    #homepage .grid-image-first p:last-child{
         width: 45%;
     }
     
@@ -735,7 +735,10 @@ margin-bottom: 7%;
     #nosotros .yomol img{
         width: 20%;
     }
-    
+    .padding-text-center{
+        margin: 1% auto;
+        width: 31%;
+    }
     
 }
 @media screen and (max-width:768px){
@@ -750,7 +753,10 @@ margin-bottom: 7%;
         margin: auto;
     
     }
-
+    .padding-text-center{
+        margin: 1% auto;
+        width: 77%;
+    }
 }
 @media screen and (min-width: 640px) {
     h2 {
