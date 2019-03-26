@@ -978,10 +978,13 @@ margin-bottom: 7%;
                url(images/nosotros/header_nosotros_somos_la_planta_transformadora_de_café_batsil_maya.jpg) 70% 0 / cover no-repeat;
 }
 #nosotros #image-nuestra-historia{
+    
     position: relative;
     background: url(images/nosotros/mexico_2.svg) 0% 100% / cover no-repeat;
 }
 #nosotros #image-nuestra-historia p{
+    max-width: 200px;
+    margin: 0;
     position: relative;
     top: 61%;
     left: 42%;
