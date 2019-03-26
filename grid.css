@@ -5,6 +5,7 @@
     --container-padding: 4em 2vmax;
     --padding-top-bottom: 4em;
     --padding-left-right: 2vmax;
+    --gutter: 3%;
 }
 
 #nosotros header {
@@ -539,11 +540,6 @@ input {
 }
 
 @media screen and (max-width: 767px) {
-
-    /*from here*/
-    :root {
-        --gutter: 3%;
-    }
 
     .container.footer {
         padding-bottom: calc(var(--padding-top-bottom) / 3);

@@ -5,12 +5,8 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b0b4be1-8d7c-4364-8440-568a85826da6" name="Default Changelist" comment="Test - Molidos?">
+    <list default="true" id="2b0b4be1-8d7c-4364-8440-568a85826da6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/grid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuestro-cafe.html" beforeDir="false" afterPath="$PROJECT_DIR$/nuestro-cafe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proceso.html" beforeDir="false" afterPath="$PROJECT_DIR$/proceso.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -149,8 +145,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/grid.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="83">
-                  <caret line="377" column="1" lean-forward="true" selection-start-line="377" selection-start-column="1" selection-end-line="377" selection-end-column="1" />
+                <state relative-caret-position="218">
+                  <caret line="470" column="15" selection-start-line="470" selection-start-column="5" selection-end-line="470" selection-end-column="15" />
                 </state>
               </provider>
             </entry>
@@ -170,7 +166,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>productos.ht</find>
       <find>&lt;li class=&quot;button red&quot;&gt;&lt;a href=&quot;&quot; target=&quot;_self&quot;&gt;Contáctanos&lt;/a&gt;&lt;/li&gt;</find>
       <find>&lt;li class=&quot;button red fit-content&quot;&gt;&lt;a href=&quot;&quot; target=&quot;_self&quot;&gt;Contáctanos&lt;/a&gt;&lt;/li&gt;</find>
       <find>atv</find>
@@ -193,13 +188,14 @@
       <find>ubica</find>
       <find>red light</find>
       <find>mision</find>
-      <find>gridthree2</find>
       <find>americano</find>
       <find>noticias.h</find>
       <find>l</find>
       <find>visited</find>
       <find>form</find>
       <find>image-f</find>
+      <find>gutter</find>
+      <find>gridthree2</find>
     </findStrings>
     <replaceStrings>
       <replace>inicio</replace>
@@ -269,8 +265,8 @@
         <option value="$PROJECT_DIR$/organico.html" />
         <option value="$PROJECT_DIR$/nosotros.html" />
         <option value="$PROJECT_DIR$/nuestro-cafe.html" />
-        <option value="$PROJECT_DIR$/grid.css" />
         <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/grid.css" />
       </list>
     </option>
   </component>
@@ -378,20 +374,6 @@
       <workItem from="1552779030086" duration="484000" />
       <workItem from="1552932149692" duration="844000" />
       <workItem from="1553025633803" duration="2176000" />
-    </task>
-    <task id="LOCAL-00011" summary="Optimized images.">
-      <created>1552265503683</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1552265503683</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Fixed nav, containers, some classes and images.&#10;Animated hovers all types of links.&#10;More optimizations.">
-      <created>1552281866590</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1552281866591</updated>
     </task>
     <task id="LOCAL-00013" summary="Changed paddings.">
       <created>1552318338741</created>
@@ -722,11 +704,25 @@
       <option name="project" value="LOCAL" />
       <updated>1553574782415</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="Solved conflicts?">
+      <created>1553578359867</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1553578359867</updated>
+    </task>
+    <task id="LOCAL-00061" summary="More conflict solving. Gridthree2 align start.">
+      <created>1553578702675</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1553578702675</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146917000" />
+    <option name="totallyTimeSpent" value="147358000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -739,9 +735,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5068493" visible="true" weight="0.2573471" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5068493" weight="0.2573471" />
       <window_info id="Structure" order="1" sideWeight="0.49315068" side_tool="true" weight="0.2573471" />
       <window_info id="Favorites" order="2" sideWeight="0.49387756" side_tool="true" weight="0.2573471" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -752,7 +747,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49960285" weight="0.32876712" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49642575" weight="0.5506849" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.49642575" visible="true" weight="0.5506849" />
       <window_info anchor="bottom" id="Inspection Results" order="9" sideWeight="0.4980143" weight="0.32876712" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32944608" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50357425" side_tool="true" weight="0.9589041" />
@@ -814,6 +809,17 @@
               <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
                 <collection />
               </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="text">
+                    <value>
+                      <list>
+                        <option value="gap" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
               <option name="COLUMN_ORDER">
                 <list>
                   <option value="0" />
@@ -845,8 +851,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Replaced phone number and email to the correct ones." />
-    <MESSAGE value="Changed desktop nav buttons html markdown to UL." />
     <MESSAGE value="Fixed Bats'il Maya &amp; Certimex images.&#10;Changed grid-2 class name." />
     <MESSAGE value="Fixed footer." />
     <MESSAGE value="AAAAAAAH" />
@@ -870,7 +874,9 @@
     <MESSAGE value="Added align-items: start; to grid-scroll-x and gridthree2.&#10;Striped h2-small classes from NUESTRO CAFÉ." />
     <MESSAGE value="Fixed NOSOTROS image order." />
     <MESSAGE value="Test - Molidos?" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test - Molidos?" />
+    <MESSAGE value="Solved conflicts?" />
+    <MESSAGE value="More conflict solving. Gridthree2 align start." />
+    <option name="LAST_COMMIT_MESSAGE" value="More conflict solving. Gridthree2 align start." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1134,8 +1140,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grid.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="377" column="1" lean-forward="true" selection-start-line="377" selection-start-column="1" selection-end-line="377" selection-end-column="1" />
+        <state relative-caret-position="218">
+          <caret line="470" column="15" selection-start-line="470" selection-start-column="5" selection-end-line="470" selection-end-column="15" />
         </state>
       </provider>
     </entry>
