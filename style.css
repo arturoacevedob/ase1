@@ -655,31 +655,51 @@ input[name="tel"] {
      /* —————— AQUÍ EMPIEZAN ESTILOS DE PROCESO—————— */
     #proceso .tipo-tueste p:nth-child(8){
         top: 59%;
-        left: -11%;
+        left: -9%;
+        font-size: 13px;
     }
-    
+
+    #proceso .tipo-tueste p:last-child{
+        font-size: 13px;
+    }
+
     #proceso .tueste-claro{
-        top: 34%;
+        top: 41%;
         left: 8%;
+    }
+    #proceso .tueste-claro h3{
+        font-size: 13px;
     }
     
     #proceso .tueste-medio{
-        top: 66%;
-        left: 22%;
+        top: 64%;
+        left: 22%;    
+    }
+    #proceso .tueste-medio h3{
+        font-size: 13px;
     }
     
     #proceso .tueste-vienes{
-        top: 28%;
-        left: 39%;
+        top: 39%;
+        left: 38%;
+    }
+    #proceso .tueste-vienes h3{
+        font-size: 13px;
     }
     #proceso .tueste-oscuro{
-        top: 62%;
-        left: 58%;
+        top: 61%;
+        left: 56%;
+    }
+    #proceso .tueste-oscuro h3{
+        font-size: 13px;
     }
     #proceso .tueste-italiano{
-        top: 28%;
-        left: 74%;
+        top: 38%;
+        left: 71%;
     
+    }
+    #proceso .tueste-italiano h3{
+        font-size: 13px;
     }
 }
 @media screen and (min-width: 640px) {
@@ -740,6 +760,20 @@ input[name="tel"] {
     #nosotros .vision {
         padding-left: 14%;
     }
+
+    /* —————— AQUÍ EMPIEZAN ESTILOS DE PROCESO—————— */
+    #proceso .tipo-tueste p:nth-child(8) {
+        top: 73%;
+        left: -5%;
+
+    }
+
+    #proceso .tueste-italiano{
+        top: 30%;
+        left: 76%;
+    
+    }
+    
 }
 @media screen and (max-width:767){
     #nosotros .yomol img{
@@ -796,7 +830,9 @@ input[name="tel"] {
     .p-small {
         font-size: 13px;
     }
-
+    #proceso .tipo-tueste p:nth-child(8){
+        left: -3%;
+    }
 }
 
 @media screen and (max-width: 1023px) {
