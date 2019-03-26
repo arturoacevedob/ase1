@@ -528,6 +528,53 @@ input[name="tel"] {
     padding-right: 44px;
 }
 
+/* —————— AQUÍ EMPIEZAN ESTILOS DE PROCESO—————— */
+#proceso header {
+    background: url(images/fade/header_fade_light_batsil_maya.png) 0 100% / contain repeat-x,
+    url(images/proceso/header_proceso_desde_el_cafetal_a_la_taza_batsil_maya.jpg) 70% 0 / cover no-repeat;
+}
+
+#proceso .tipo-tueste{
+    position: relative;
+}
+
+#proceso .tipo-tueste p:nth-child(8){
+    position: absolute;
+    top: 77%;
+    left: -4%;
+    -ms-transform: rotate(-90deg); 
+    -webkit-transform: rotate(-90deg); 
+    transform: rotate(-90deg);
+}
+
+#proceso .tueste-claro{
+    position: absolute;
+    top: 34%;
+    left: 8%;
+}
+
+#proceso .tueste-medio{
+    position: absolute;
+    top: 66%;
+    left: 22%;
+}
+
+#proceso .tueste-vienes{
+    position: absolute;
+    top: 28%;
+    left: 39%;
+}
+#proceso .tueste-oscuro{
+    position: absolute;
+    top: 62%;
+    left: 58%;
+}
+#proceso .tueste-italiano{
+    position: absolute;
+    top: 28%;
+    left: 74%;
+
+}
 
 @media screen and (max-width: 639px) {
     h2 {
@@ -603,6 +650,36 @@ input[name="tel"] {
     }
     #nosotros .vision {
         padding-top: 5%;
+    }
+
+     /* —————— AQUÍ EMPIEZAN ESTILOS DE PROCESO—————— */
+    #proceso .tipo-tueste p:nth-child(8){
+        top: 59%;
+        left: -11%;
+    }
+    
+    #proceso .tueste-claro{
+        top: 34%;
+        left: 8%;
+    }
+    
+    #proceso .tueste-medio{
+        top: 66%;
+        left: 22%;
+    }
+    
+    #proceso .tueste-vienes{
+        top: 28%;
+        left: 39%;
+    }
+    #proceso .tueste-oscuro{
+        top: 62%;
+        left: 58%;
+    }
+    #proceso .tueste-italiano{
+        top: 28%;
+        left: 74%;
+    
     }
 }
 @media screen and (min-width: 640px) {
@@ -848,11 +925,7 @@ input[name="tel"] {
     width: 50%;
 }
 
-/* —————— AQUÍ EMPIEZAN ESTILOS DE PROCESO—————— */
-#proceso header {
-    background: url(images/fade/header_fade_light_batsil_maya.png) 0 100% / contain repeat-x,
-    url(images/proceso/header_proceso_desde_el_cafetal_a_la_taza_batsil_maya.jpg) 70% 0 / cover no-repeat;
-}
+
 
 /* —————— AQUÍ EMPIEZAN ESTILOS DE PRODUCTOS—————— */
 #productos header {
