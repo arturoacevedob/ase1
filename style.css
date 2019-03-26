@@ -703,6 +703,10 @@ margin-bottom: 7%;
         font-size: 13px;
     }
 
+    .grid-image-first p:last-child{
+        width: 100%;
+        margin: 0% auto 11%;
+    }
     /* —————— certificados —————— */
     .one {
         background: url(images/noticias/conoce_nuevo_capeltic_universidad_iberoamericana_cdmx_batsil_maya.jpg) 0 73% / cover no-repeat;
@@ -869,6 +873,11 @@ margin-bottom: 7%;
     }
     #nosotros .yomol img{
         width: 20%;
+    }
+    .grid-image-first p:last-child{
+        width: 63%;
+        margin: auto;
+    
     }
 }
 @media screen and (min-width: 1024px) {
