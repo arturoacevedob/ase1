@@ -6,16 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b0b4be1-8d7c-4364-8440-568a85826da6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Iniciar_sesion.html" beforeDir="false" afterPath="$PROJECT_DIR$/Iniciar_sesion.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ayuda.html" beforeDir="false" afterPath="$PROJECT_DIR$/ayuda.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nosotros.html" beforeDir="false" afterPath="$PROJECT_DIR$/nosotros.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/noticias.html" beforeDir="false" afterPath="$PROJECT_DIR$/noticias.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuestro-cafe.html" beforeDir="false" afterPath="$PROJECT_DIR$/nuestro-cafe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/organico.html" beforeDir="false" afterPath="$PROJECT_DIR$/organico.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proceso.html" beforeDir="false" afterPath="$PROJECT_DIR$/proceso.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/productos.html" beforeDir="false" afterPath="$PROJECT_DIR$/productos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,11 +24,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.49563146">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="539">
-                  <caret line="72" column="101" lean-forward="true" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="101" />
+                  <caret line="72" column="107" lean-forward="true" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="107" />
                 </state>
               </provider>
             </entry>
@@ -63,10 +54,10 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/proceso.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="218">
+                <state relative-caret-position="68">
                   <caret line="42" column="65" selection-start-line="42" selection-start-column="56" selection-end-line="42" selection-end-column="65" />
                 </state>
               </provider>
@@ -115,8 +106,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="218">
-                  <caret line="135" column="59" selection-start-line="135" selection-start-column="59" selection-end-line="135" selection-end-column="59" />
+                <state relative-caret-position="293">
+                  <caret line="505" column="16" selection-start-line="505" selection-start-column="16" selection-end-line="505" selection-end-column="16" />
                 </state>
               </provider>
             </entry>
@@ -124,8 +115,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/grid.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-848">
-                  <caret line="236" column="30" selection-start-line="236" selection-start-column="23" selection-end-line="236" selection-end-column="30" />
+                <state relative-caret-position="218">
+                  <caret line="105" column="22" selection-start-line="105" selection-start-column="22" selection-end-line="105" selection-end-column="22" />
                 </state>
               </provider>
             </entry>
@@ -145,9 +136,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>menu-mobile-content</find>
-      <find>.menu-mobile-content {</find>
-      <find>mobile-menu</find>
       <find>desktop</find>
       <find>tel</find>
       <find>input</find>
@@ -175,6 +163,9 @@
       <find>proceso.h</find>
       <find>&lt;li class=&quot;button red&quot;&gt;&lt;a href=&quot;&quot; target=&quot;_self&quot;&gt;Contáctanos&lt;/a&gt;&lt;/li&gt;</find>
       <find>&lt;li class=&quot;button red fit-content&quot;&gt;&lt;a href=&quot;&quot; target=&quot;_self&quot;&gt;Contáctanos&lt;/a&gt;&lt;/li&gt;</find>
+      <find>red light</find>
+      <find>atv</find>
+      <find>tel-wra</find>
     </findStrings>
     <replaceStrings>
       <replace>inicio</replace>
@@ -234,8 +225,6 @@
         <option value="$PROJECT_DIR$/js/mask.js" />
         <option value="$PROJECT_DIR$/js/email-autocomplete.js" />
         <option value="$PROJECT_DIR$/style 2.css" />
-        <option value="$PROJECT_DIR$/grid.css" />
-        <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/nosotros.html" />
         <option value="$PROJECT_DIR$/nuestro-cafe.html" />
         <option value="$PROJECT_DIR$/proceso.html" />
@@ -244,6 +233,8 @@
         <option value="$PROJECT_DIR$/noticias.html" />
         <option value="$PROJECT_DIR$/ayuda.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/grid.css" />
+        <option value="$PROJECT_DIR$/style.css" />
       </list>
     </option>
   </component>
@@ -669,11 +660,25 @@
       <option name="project" value="LOCAL" />
       <updated>1553562209965</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Fixed nav colors on all HTMLs.">
+      <created>1553562483444</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1553562483444</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Fixed mobile nav input width causing all pages to have a blank space to the right.">
+      <created>1553562592691</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1553562592691</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139728000" />
+    <option name="totallyTimeSpent" value="139992000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -686,6 +691,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5068493" weight="0.2573471" />
       <window_info id="Structure" order="1" sideWeight="0.49315068" side_tool="true" weight="0.2573471" />
@@ -791,8 +797,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Added mexico.svg under nosotros&#10;Added pedidos.html&#10;Added grid-backend.css" />
-    <MESSAGE value="Created backend structure.&#10;Pedidos-backend.html initialized.&#10;Progress ………………………………………………… 20%." />
     <MESSAGE value="Pedidos-backend.html updated.&#10;Progress ……………………………………… 22%.&#10;&#10;Closing section tag matches nothing &gt; productos.html — Solved." />
     <MESSAGE value="Closing master div tag matches nothing on multiple html files — Solved." />
     <MESSAGE value="Added Chilón to México.svg." />
@@ -816,7 +820,9 @@
     <MESSAGE value="Fixed header padding problem." />
     <MESSAGE value="Active page is now indicated.&#10;Fixed color button in mobile nav." />
     <MESSAGE value="Added active class to footer and some missing instances." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added active class to footer and some missing instances." />
+    <MESSAGE value="Fixed nav colors on all HTMLs." />
+    <MESSAGE value="Fixed mobile nav input width causing all pages to have a blank space to the right." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed mobile nav input width causing all pages to have a blank space to the right." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -978,20 +984,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grid.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-848">
-          <caret line="236" column="30" selection-start-line="236" selection-start-column="23" selection-end-line="236" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="135" column="59" selection-start-line="135" selection-start-column="59" selection-end-line="135" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nosotros.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
@@ -1037,17 +1029,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="72" column="107" lean-forward="true" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/proceso.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
+        <state relative-caret-position="68">
           <caret line="42" column="65" selection-start-line="42" selection-start-column="56" selection-end-line="42" selection-end-column="65" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/grid.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="72" column="101" lean-forward="true" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="101" />
+        <state relative-caret-position="218">
+          <caret line="105" column="22" selection-start-line="105" selection-start-column="22" selection-end-line="105" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="505" column="16" selection-start-line="505" selection-start-column="16" selection-end-line="505" selection-end-column="16" />
         </state>
       </provider>
     </entry>
