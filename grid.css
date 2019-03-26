@@ -606,10 +606,6 @@ input {
         grid-template-rows: 1fr 1fr;
     }
 
-    .grid-2-text-photo-left {
-        order: 1;
-    }
-
     .grid-history {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -816,36 +812,37 @@ input {
         padding: 0 var(--padding-left-right);
     }
 
-    .grid-2-text-photo-left {
+    .grid-2-left-text {
+        display: grid;
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+        grid-template-columns: repeat(2, 1fr);
+        order: 1;
+    }
+
+    .grid-2-right-text {
         display: grid;
         grid-column: 1 / 3;
         grid-row: 1 / 2;
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .grid-2-text-photo-right {
-        display: grid;
-        grid-column: 1 / 3;
-        grid-row: 1 / 2;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .grid-2-text-photo-left > .wrapper-text {
+    .grid-2-left-text > .wrapper-text {
         padding: 0 15% 0 c;
         grid-column: 1 / 2;
     }
 
-    .grid-2-text-photo-right > .wrapper-text {
+    .grid-2-right-text > .wrapper-text {
         padding: 0 10% 0 15%;
         grid-column: 2 / 3;
     }
 
-    #image-el-pueblo-tseltal, #image-la-actividad-mas-importante {
+    .grid-2-left-image {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
     }
 
-    #image-corazon-tseltal {
+    .grid-2-right-image {
         grid-column: 2 / 3;
         grid-row: 1 / 2;
     }
