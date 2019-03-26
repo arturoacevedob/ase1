@@ -412,18 +412,20 @@ input {
     grid-row: 1 / 2;
 }
 
-.grid-product-view figure {
+#premium_organico {
     grid-column: 1 / 2;
     grid-row: 1 / 5;
-}
-
-.grid-product-view img {
-    width: 100%;
+    background: url("images/productos/cafe/granos_de_cafe_premium_organico_batsil_maya.jpg");
+    0 0 / cover no-repeat;
 }
 
 .grid-product-view form {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+}
+
+.grid-product-view fieldset {
+    padding-bottom: 1em;
 }
 
 .grid-product-form {
@@ -754,6 +756,50 @@ input {
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: auto;
         grid-gap: 5px;
+    }
+
+    .grid-product-view {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #premium_organico {
+        height: 30vh;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .grid-product-view .product-description {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    #premium_organico {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        background: url("images/productos/cafe/granos_de_cafe_premium_organico_batsil_maya.jpg");
+        0 0 / cover no-repeat;
+    }
+
+    .grid-product-view form {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    .grid-product-form {
+        display: grid;
+        grid-auto-flow: column;
+        grid-row: 1 / 2;
+    }
+
+    .grid-product-view .product-buy {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+
+    .grid-product-view > p {
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
     }
 }
 
