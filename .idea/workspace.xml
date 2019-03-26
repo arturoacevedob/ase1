@@ -7,9 +7,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2b0b4be1-8d7c-4364-8440-568a85826da6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/molidos/Expreso.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/organico.html" beforeDir="false" afterPath="$PROJECT_DIR$/organico.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proceso.html" beforeDir="false" afterPath="$PROJECT_DIR$/proceso.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -51,11 +50,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/nuestro-cafe.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="227">
-                  <caret line="208" column="105" selection-start-line="208" selection-start-column="105" selection-end-line="208" selection-end-column="105" />
+                <state relative-caret-position="414">
+                  <caret line="83" column="52" lean-forward="true" selection-start-line="83" selection-start-column="52" selection-end-line="83" selection-end-column="52" />
                   <folding>
                     <element signature="n#style#0;n#div#1;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#form#0;n#div#0;n#section#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -68,7 +67,7 @@
             <entry file="file://$PROJECT_DIR$/proceso.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="28">
-                  <caret line="100" column="35" selection-start-line="100" selection-start-column="35" selection-end-line="100" selection-end-column="35" />
+                  <caret line="100" column="66" selection-start-line="100" selection-start-column="66" selection-end-line="100" selection-end-column="66" />
                   <folding>
                     <element signature="n#STYLE#0;n#div#0;n#article#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#STYLE#0;n#div#0;n#article#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -99,11 +98,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/organico.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="579">
-                  <caret line="122" column="59" selection-start-line="122" selection-start-column="52" selection-end-line="122" selection-end-column="59" />
+                <state relative-caret-position="576">
+                  <caret line="123" column="33" selection-start-line="123" selection-start-column="33" selection-end-line="123" selection-end-column="33" />
                 </state>
               </provider>
             </entry>
@@ -140,10 +139,10 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="214">
-                  <caret line="586" selection-start-line="586" selection-end-line="587" />
+                <state relative-caret-position="-208">
+                  <caret line="568" selection-start-line="568" selection-end-line="568" />
                   <folding>
-                    <element signature="e#10203#16710#2" expanded="true" />
+                    <element signature="e#9848#16355#2" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -152,8 +151,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/grid.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="218">
-                  <caret line="1002" column="29" selection-start-line="1002" selection-start-column="25" selection-end-line="1002" selection-end-column="29" />
+                <state relative-caret-position="1028">
+                  <caret line="1056" column="29" selection-start-line="1056" selection-start-column="29" selection-end-line="1056" selection-end-column="29" />
                 </state>
               </provider>
             </entry>
@@ -173,9 +172,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>h2</find>
-      <find>input</find>
-      <find>padding-left</find>
       <find>field</find>
       <find>label</find>
       <find>option</find>
@@ -202,7 +198,10 @@
       <find>5px 20px</find>
       <find>red</find>
       <find>Expreso</find>
+      <find>Inicio Sesión</find>
+      <find>Iniciar Sesión</find>
       <find>expreso</find>
+      <find>iniciar</find>
     </findStrings>
     <replaceStrings>
       <replace>inicio</replace>
@@ -218,7 +217,6 @@
       <replace>»</replace>
       <replace>class=&quot;logo-footer&quot;</replace>
       <replace>01-919-6710172</replace>
-      <replace />
       <replace>&lt;a href=&quot;index.html&quot; target=&quot;_self&quot;&gt;&lt;img alt=&quot;Bats'il Maya Logo&quot; src=&quot;images/logos/batsil_maya_logo.svg&quot;&gt;&lt;/a&gt;</replace>
       <replace>&quot;foot-info p-small&quot;</replace>
       <replace>&lt;li&gt;&lt;a href=&quot;index.html&quot; target=&quot;_self&quot;&gt;Inicio&lt;/a&gt;&lt;/li&gt;</replace>
@@ -229,10 +227,15 @@
       <replace>&lt;li class=&quot;button red&quot;&gt;&lt;a class=&quot;light&quot; href=&quot;&quot; target=&quot;_self&quot;&gt;Contáctanos&lt;/a&gt;&lt;/li&gt;</replace>
       <replace>&lt;li class=&quot;button red fit-content&quot;&gt;&lt;a class=&quot;light&quot; href=&quot;&quot; target=&quot;_self&quot;&gt;Contáctanos&lt;/a&gt;&lt;/li&gt;</replace>
       <replace>peso</replace>
-      <replace>molido</replace>
       <replace>Espresso</replace>
       <replace>espresso</replace>
+      <replace>Iniciar sesión</replace>
+      <replace />
+      <replace>molido</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/images/logos</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -273,12 +276,12 @@
         <option value="$PROJECT_DIR$/ayuda.html" />
         <option value="$PROJECT_DIR$/productos.html" />
         <option value="$PROJECT_DIR$/noticias.html" />
-        <option value="$PROJECT_DIR$/nuestro-cafe.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/grid.css" />
         <option value="$PROJECT_DIR$/nosotros.html" />
         <option value="$PROJECT_DIR$/proceso.html" />
         <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/nuestro-cafe.html" />
         <option value="$PROJECT_DIR$/organico.html" />
       </list>
     </option>
@@ -387,13 +390,6 @@
       <workItem from="1552779030086" duration="484000" />
       <workItem from="1552932149692" duration="844000" />
       <workItem from="1553025633803" duration="2176000" />
-    </task>
-    <task id="LOCAL-00023" summary="Closing master div tag matches nothing on multiple html files — Solved.">
-      <created>1552598037971</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1552598037971</updated>
     </task>
     <task id="LOCAL-00024" summary="Added Chilón to México.svg.">
       <created>1552600360786</created>
@@ -731,11 +727,18 @@
       <option name="project" value="LOCAL" />
       <updated>1553637011429</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="Corrección de textos.">
+      <created>1553643095914</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1553643095914</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158500000" />
+    <option name="totallyTimeSpent" value="158974000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -748,6 +751,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5068493" weight="0.2573471" />
       <window_info id="Structure" order="1" sideWeight="0.49315068" side_tool="true" weight="0.2573471" />
@@ -864,7 +868,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Added active class to footer and some missing instances." />
     <MESSAGE value="Fixed nav colors on all HTMLs." />
     <MESSAGE value="Fixed mobile nav input width causing all pages to have a blank space to the right." />
     <MESSAGE value="Fixed width of time selectors in contact form." />
@@ -889,7 +892,8 @@
     <MESSAGE value="Nuevo Mexico v2.&#10;Grid de precio en ORGANICO." />
     <MESSAGE value="Mejoras a vista de producto." />
     <MESSAGE value="MEXICO v2.4&#10;Y COMIENZO DE CAMBIOS DE PROCESO" />
-    <option name="LAST_COMMIT_MESSAGE" value="MEXICO v2.4&#10;Y COMIENZO DE CAMBIOS DE PROCESO" />
+    <MESSAGE value="Corrección de textos." />
+    <option name="LAST_COMMIT_MESSAGE" value="Corrección de textos." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1113,7 +1117,7 @@
     <entry file="file://$PROJECT_DIR$/proceso.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
-          <caret line="100" column="35" selection-start-line="100" selection-start-column="35" selection-end-line="100" selection-end-column="35" />
+          <caret line="100" column="66" selection-start-line="100" selection-start-column="66" selection-end-line="100" selection-end-column="66" />
           <folding>
             <element signature="n#STYLE#0;n#div#0;n#article#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#STYLE#0;n#div#0;n#article#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1129,22 +1133,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grid.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="1002" column="29" selection-start-line="1002" selection-start-column="25" selection-end-line="1002" selection-end-column="29" />
+        <state relative-caret-position="1028">
+          <caret line="1056" column="29" selection-start-line="1056" selection-start-column="29" selection-end-line="1056" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/organico.html">
+    <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="579">
-          <caret line="122" column="59" selection-start-line="122" selection-start-column="52" selection-end-line="122" selection-end-column="59" />
+        <state relative-caret-position="-208">
+          <caret line="568" selection-start-line="568" selection-end-line="568" />
+          <folding>
+            <element signature="e#9848#16355#2" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nuestro-cafe.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="208" column="105" selection-start-line="208" selection-start-column="105" selection-end-line="208" selection-end-column="105" />
+        <state relative-caret-position="414">
+          <caret line="83" column="52" lean-forward="true" selection-start-line="83" selection-start-column="52" selection-end-line="83" selection-end-column="52" />
           <folding>
             <element signature="n#style#0;n#div#1;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#form#0;n#div#0;n#section#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -1152,13 +1159,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
+    <entry file="file://$PROJECT_DIR$/organico.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="586" selection-start-line="586" selection-end-line="587" />
-          <folding>
-            <element signature="e#10203#16710#2" expanded="true" />
-          </folding>
+        <state relative-caret-position="576">
+          <caret line="123" column="33" selection-start-line="123" selection-start-column="33" selection-end-line="123" selection-end-column="33" />
         </state>
       </provider>
     </entry>
