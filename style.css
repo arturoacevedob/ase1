@@ -860,6 +860,10 @@ input[name="tel"] {
     font-size: 16px;
 }
 
+#nuestrocafe .molidos img{
+    width: 50%;
+}
+
 /* —————— AQUÍ EMPIEZAN ESTILOS DE PROCESO—————— */
 #proceso header {
     background: url(images/fade/header_fade_light_batsil_maya.png) 0 100% / contain repeat-x,
