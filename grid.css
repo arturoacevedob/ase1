@@ -387,7 +387,6 @@ input {
 .grid-image-first{
     display: grid;
     grid-template-columns: auto;
-    grid-gap: var(--gutter);
 }
 .image-top-first-round{
     grid-row: 1;
@@ -472,7 +471,7 @@ input {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-auto-rows: auto;
-        grid-gap: 11px;
+        grid-gap: 44px;
     }
 
     .gridnews {
