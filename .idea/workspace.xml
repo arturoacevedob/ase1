@@ -7,10 +7,10 @@
   <component name="ChangeListManager">
     <list default="true" id="2b0b4be1-8d7c-4364-8440-568a85826da6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/molidos/americano.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/molidos/americano.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/molidos/expreso.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/molidos/expreso.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/molidos/fino-turco.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/molidos/fino-turco.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/molidos/percoladora.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/molidos/percoladora.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/molidos/Americano.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/molidos/Americano.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/molidos/Expreso.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/molidos/Expreso.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/molidos/Fino-turco.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/molidos/Fino-turco.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/molidos/Percoladora.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/molidos/Percoladora.svg" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -43,8 +43,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/nosotros.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="84">
-                  <caret line="174" column="50" selection-start-line="174" selection-start-column="50" selection-end-line="174" selection-end-column="50" />
+                <state relative-caret-position="-180">
+                  <caret line="119" column="24" selection-start-line="119" selection-start-column="24" selection-end-line="119" selection-end-column="24" />
                   <folding>
                     <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#form#0;n#div#0;n#section#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -149,8 +149,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/grid.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="84">
-                  <caret line="761" column="26" selection-start-line="761" selection-start-column="26" selection-end-line="761" selection-end-column="26" />
+                <state relative-caret-position="249">
+                  <caret line="772" column="29" lean-forward="true" selection-start-line="772" selection-start-column="29" selection-end-line="772" selection-end-column="29" />
                 </state>
               </provider>
             </entry>
@@ -373,13 +373,6 @@
       <workItem from="1552779030086" duration="484000" />
       <workItem from="1552932149692" duration="844000" />
       <workItem from="1553025633803" duration="2176000" />
-    </task>
-    <task id="LOCAL-00009" summary="Merge commit.">
-      <created>1552240374092</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1552240374092</updated>
     </task>
     <task id="LOCAL-00010" summary="Fixed redundancies.">
       <created>1552245596289</created>
@@ -717,11 +710,18 @@
       <option name="project" value="LOCAL" />
       <updated>1553567914377</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="Fixed NOSOTROS image order.">
+      <created>1553571472937</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1553571472938</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145085000" />
+    <option name="totallyTimeSpent" value="145404000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -746,7 +746,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49960285" weight="0.32876712" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.49642575" visible="true" weight="0.5506849" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49642575" weight="0.5506849" />
       <window_info anchor="bottom" id="Inspection Results" order="9" sideWeight="0.4980143" weight="0.32876712" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32944608" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50357425" side_tool="true" weight="0.9589041" />
@@ -839,7 +839,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Light beneficios in proceso.html&#10;Fixed mobile nav bar." />
     <MESSAGE value="Fixed footer grid and items.&#10;Fixed nosotros map TODO: change mobile text size." />
     <MESSAGE value="Replaced phone number and email to the correct ones." />
     <MESSAGE value="Changed desktop nav buttons html markdown to UL." />
@@ -864,7 +863,8 @@
     <MESSAGE value="Fixed CARACTERÍSTICAS EN TAZA." />
     <MESSAGE value="Fixed UBICACIÓN." />
     <MESSAGE value="Added align-items: start; to grid-scroll-x and gridthree2.&#10;Striped h2-small classes from NUESTRO CAFÉ." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added align-items: start; to grid-scroll-x and gridthree2.&#10;Striped h2-small classes from NUESTRO CAFÉ." />
+    <MESSAGE value="Fixed NOSOTROS image order." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed NOSOTROS image order." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1120,15 +1120,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grid.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="761" column="26" selection-start-line="761" selection-start-column="26" selection-end-line="761" selection-end-column="26" />
+        <state relative-caret-position="249">
+          <caret line="772" column="29" lean-forward="true" selection-start-line="772" selection-start-column="29" selection-end-line="772" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nosotros.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="174" column="50" selection-start-line="174" selection-start-column="50" selection-end-line="174" selection-end-column="50" />
+        <state relative-caret-position="-180">
+          <caret line="119" column="24" selection-start-line="119" selection-start-column="24" selection-end-line="119" selection-end-column="24" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#form#0;n#div#0;n#section#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
