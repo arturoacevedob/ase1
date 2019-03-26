@@ -435,12 +435,13 @@ input {
 }
 
 .grid-product-view .product-buy {
+    align-items: center;
     grid-column: 2 / 3;
     grid-row: 3 / 4;
 }
 
 .grid-product-view .product-buy > p {
-    font-size: 2em;
+    font-size: 3em;
 }
 
 .grid-product-view > p {
