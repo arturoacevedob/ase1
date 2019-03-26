@@ -122,8 +122,8 @@ h1, nav > h2 {
     background-color: var(--yellow);
 }
 
-.nav .active {
-    border-bottom: 3px solid var(--a-hover);
+.active {
+    border-bottom: 3px solid var(--a-hover) !important;
 }
 
 
@@ -216,6 +216,10 @@ a:visited {
     color: var(--red);
 }
 
+.light a:visited {
+    color: var(--light);
+}
+
 .dark a:visited {
     color: var(--dark);
 }
@@ -272,8 +276,20 @@ a:visited {
     transition: border var(--time) var(--ease);
 }
 
+.mobile .button.outline {
+    padding: calc(var(--button-padding) - 0.20rem);
+    background-color: transparent;
+    border: 3px solid var(--red);
+    transition: border var(--time) var(--ease);
+}
+
 .button.outline a {
     color: var(--a-link);
+    transition: color var(--time) var(--ease);
+}
+
+.mobile .button.outline a {
+    color: var(--red);
     transition: color var(--time) var(--ease);
 }
 

@@ -5,13 +5,9 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b0b4be1-8d7c-4364-8440-568a85826da6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/style 2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/molidos/americano.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/molidos/americano.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/molidos/expreso.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/molidos/expreso.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/molidos/fino-turco.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/molidos/fino-turco.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/molidos/percoladora.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/molidos/percoladora.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker.es.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/datetimepicker.es.js" afterDir="false" />
+    <list default="true" id="2b0b4be1-8d7c-4364-8440-568a85826da6" name="Default Changelist" comment="Fixed header padding problem.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -27,14 +23,14 @@
     <favorites_list name="ASE I" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6211279">
+    <splitter split-orientation="horizontal" split-proportion="0.49563146">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="7945">
-                  <caret line="530" column="26" selection-start-line="530" selection-start-column="26" selection-end-line="530" selection-end-column="26" />
+                <state relative-caret-position="340">
+                  <caret line="71" column="31" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
                 </state>
               </provider>
             </entry>
@@ -73,11 +69,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/style.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="218">
-                  <caret line="166" column="18" selection-start-line="166" selection-start-column="14" selection-end-line="166" selection-end-column="18" />
+                  <caret line="271" selection-start-line="271" selection-end-line="271" />
                 </state>
               </provider>
             </entry>
@@ -85,17 +81,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/grid.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="218">
-                  <caret line="344" column="5" selection-start-line="344" selection-start-column="1" selection-end-line="344" selection-end-column="5" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/style 2.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="653">
-                  <caret line="874" column="1" selection-start-line="874" selection-start-column="1" selection-end-line="874" selection-end-column="1" />
+                <state relative-caret-position="-848">
+                  <caret line="236" column="30" selection-start-line="236" selection-start-column="23" selection-end-line="236" selection-end-column="30" />
                 </state>
               </provider>
             </entry>
@@ -115,9 +102,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>time</find>
-      <find>5</find>
-      <find>pm</find>
       <find>onRenderHour</find>
       <find>hoursDisabled</find>
       <find>hours</find>
@@ -141,10 +125,13 @@
       <find>num-</find>
       <find>num</find>
       <find>tel-w</find>
-      <find>grid-header</find>
       <find>legend</find>
       <find>fieldset</find>
       <find>form</find>
+      <find>grid-header</find>
+      <find>visited</find>
+      <find>contact</find>
+      <find>contác</find>
     </findStrings>
     <replaceStrings>
       <replace>inicio</replace>
@@ -208,10 +195,10 @@
         <option value="$PROJECT_DIR$/js/jquery.mask.js" />
         <option value="$PROJECT_DIR$/js/mask.js" />
         <option value="$PROJECT_DIR$/js/email-autocomplete.js" />
+        <option value="$PROJECT_DIR$/style 2.css" />
         <option value="$PROJECT_DIR$/grid.css" />
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/style 2.css" />
       </list>
     </option>
   </component>
@@ -609,11 +596,25 @@
       <option name="project" value="LOCAL" />
       <updated>1553539043308</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Solved conflicts in style.css&#10;Added molidos.">
+      <created>1553539966904</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1553539966904</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Fixed header padding problem.">
+      <created>1553561397100</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1553561397100</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138207000" />
+    <option name="totallyTimeSpent" value="139038000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -627,7 +628,7 @@
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5068493" visible="true" weight="0.2573471" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5068493" weight="0.2573471" />
       <window_info id="Structure" order="1" sideWeight="0.49315068" side_tool="true" weight="0.2573471" />
       <window_info id="Favorites" order="2" sideWeight="0.49387756" side_tool="true" weight="0.2573471" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -731,8 +732,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Fixed mobile menu color and position." />
-    <MESSAGE value="Fixed nav&#10;Worked on form&#10;Added logo shadow" />
     <MESSAGE value="Fixed gridproduct." />
     <MESSAGE value="Added mexico.svg under nosotros." />
     <MESSAGE value="Added mexico.svg under nosotros&#10;Added pedidos.html&#10;Added grid-backend.css" />
@@ -756,7 +755,9 @@
     <MESSAGE value="Added JS date and time pickers.&#10;Fixed certificados images from oversizing." />
     <MESSAGE value="ADDED A TIME DATE PICKER in testing." />
     <MESSAGE value="FIXED HOMEPAGE." />
-    <option name="LAST_COMMIT_MESSAGE" value="FIXED HOMEPAGE." />
+    <MESSAGE value="Solved conflicts in style.css&#10;Added molidos." />
+    <MESSAGE value="Fixed header padding problem." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed header padding problem." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -956,20 +957,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7945">
-          <caret line="530" column="26" selection-start-line="530" selection-start-column="26" selection-end-line="530" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="166" column="18" selection-start-line="166" selection-start-column="14" selection-end-line="166" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/datetimepicker.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1546">
@@ -977,17 +964,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grid.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="344" column="5" selection-start-line="344" selection-start-column="1" selection-end-line="344" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/style 2.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="653">
-          <caret line="874" column="1" selection-start-line="874" selection-start-column="1" selection-end-line="874" selection-end-column="1" />
+          <caret line="881" column="1" selection-start-line="881" selection-start-column="1" selection-end-line="881" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grid.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-848">
+          <caret line="236" column="30" selection-start-line="236" selection-start-column="23" selection-end-line="236" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="71" column="31" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="271" selection-start-line="271" selection-end-line="271" />
         </state>
       </provider>
     </entry>
