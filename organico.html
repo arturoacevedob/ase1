@@ -25,8 +25,6 @@
 </head>
 <body>
 <div id="productoorganico">
-    <!--TODO: colocar divs dobles por sección.-->
-    <!--    Uno para el fondo y otro para la retícula grid.-->
     <div>
         <header>
             <div class="grid-header container">
@@ -74,6 +72,8 @@
                             </li>
                         </ul>
                     </nav>
+                </div>
+            </div>
         </header>
     </div>
     <section>
@@ -82,25 +82,25 @@
                 <h2>Premium Orgánico</h2>
                 <p>Un café de preparación americana con excelente calidad que pocos cafés en el mercado nacional
                     logran ofrecer.</p>
-                <div>
-                    <form class="grid-2">
+                <form>
+                    <div class="grid-product">
                         <fieldset class="h3-small">
                             <strong>Peso</strong>
                             <p class="radio-group">
-                                <input id="molido-one" name="selector" type="radio">
-                                <label for="molido-one">250gr</label>
-                                <input id="molido-two" name="selector" type="radio">
-                                <label for="molido-two">500gr</label>
-                                <input id="molido-three" name="selector" type="radio">
-                                <label for="molido-three">1kg</label>
-                                <input id="molido-four" name="selector" type="radio">
-                                <label for="molido-four">Otro</label>
+                                <input id="peso-one" name="peso-selector" type="radio">
+                                <label for="peso-one">250gr</label>
+                                <input id="peso-two" name="peso-selector" type="radio">
+                                <label for="peso-two">500gr</label>
+                                <input id="peso-three" name="peso-selector" type="radio">
+                                <label for="peso-three">1kg</label>
+                                <input id="peso-four" name="peso-selector" type="radio">
+                                <label for="peso-four">Otro</label>
                             </p>
                         </fieldset>
                         <fieldset class="h3-small">
                             <div class="grid-2 align-end">
-                                <label>Cantidad</label>
-                                <select name="cantidad">
+                                <label for="cantidad">Cantidad</label>
+                                <select id="cantidad" name="cantidad">
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
@@ -116,15 +116,21 @@
                                 </select>
                             </div>
                         </fieldset>
+                    </div>
+                    <fieldset class="h3-small">
+                        <strong>Molido del café</strong>
+                        <p class="radio-group">
+                            <input id="molido-one" name="molido-selector" type="radio">
+                            <label for="molido-one">Percoladora</label>
+                            <input id="molido-two" name="molido-selector" type="radio">
+                            <label for="molido-two">Americano</label>
+                            <input id="molido-three" name="molido-selector" type="radio">
+                            <label for="molido-three">Expreso</label>
+                            <input id="molido-four" name="molido-selector" type="radio">
+                            <label for="molido-four">Fino</label>
+                        </p>
+                    </fieldset>
                     </form>
-                </div>
-                <ul>
-                    <h4>Molido del Café</h4>
-                    <li>Percoladora</li>
-                    <li>Americano</li>
-                    <li>Expreso</li>
-                    <li>Fino</li>
-                </ul>
                 <div class="center-aligned">
                     <p>500gr x 12, Molido fino = 1260</p>
                     <a class="button red" href="" target="">Agregar al carrito</a>
