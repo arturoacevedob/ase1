@@ -387,6 +387,7 @@ input {
 .grid-image-first{
     display: grid;
     grid-template-columns: auto;
+    grid-gap: var(--gutter);
 }
 .image-top-first-round{
     grid-row: 1;
@@ -589,9 +590,6 @@ input {
     .grid-scroll-x:after {
         content: '';
         width: 10px;
-    }
-    .clients h2{
-        padding: var(--container-padding);
     }
 
     /*to here*/
