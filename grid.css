@@ -394,8 +394,14 @@ input {
  #homepage .image-top-first-round img{
     border-radius: 111px;
 }
+#family h2{
+    margin-bottom: 20px;
+}
+.desktop-family .yomol p{
+    padding: 0 30%;
+}
 .desktop-family p{
-    padding: 0 4%;
+    padding: 0 12%;
 }
 .desktop-family .grid-conditions{
     margin-top: 22px;
@@ -675,7 +681,6 @@ input {
         display: none;
     }
     #family h2{
-        margin-bottom: 20px;
         font-size: 30px;
     }
     .grid-4{
