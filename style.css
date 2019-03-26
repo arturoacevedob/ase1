@@ -544,10 +544,8 @@ input[name="tel"] {
 
 /* —————— NOSOTROS —————— */
 #nosotros .m-and-v .extra-articles{
-    padding-left: 44px;
-    padding-right: 44px;
+    padding: 10% 44px;
 }
-
 
 @media screen and (max-width: 639px) {
     h2 {
@@ -615,14 +613,14 @@ input[name="tel"] {
     }
     #nosotros .mision-vision {
         border-bottom: 2px solid var(--yellow);
-        padding-bottom: 9%;
+        padding-bottom: var(--padding-top-bottom);
     }
     #nosotros .mision {
         border-bottom: 2px solid var(--yellow);
-        padding-bottom: 5%;
+        padding-bottom: var(--padding-top-bottom);
     }
     #nosotros .vision {
-        padding-top: 5%;
+        padding-top: var(--padding-top-bottom);
     }
 }
 @media screen and (min-width: 640px) {
