@@ -1031,6 +1031,7 @@ input {
     .chat {
         grid-area: chat;
     }
+
     .chat h2 {
         padding: 1% 0% 1% 11%;
         background: url(images/ayuda/sprites_ayuda_iconos.svg) 0% 0% / 9% no-repeat;
@@ -1052,6 +1053,13 @@ input {
     .help-mail h2 {
         padding: 1% 0% 1% 11%;
         background: url(images/ayuda/sprites_ayuda_iconos.svg) 0% 99% / 9% no-repeat;
+    }
+    .help-mail form input {
+        border: 2px solid rgba(64,41,10,.3);
+    }
+    .help-mail form textarea {
+        border: 2px solid rgba(64,41,10,.3);
+        border-radius: 14px;
     }
 
     .alt-nav {
