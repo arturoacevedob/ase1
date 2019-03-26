@@ -683,7 +683,7 @@ input[name="tel"] {
     }
 }
 @media screen and (max-width:767){
-    #nosotros .yomol img{
+    #nosotros .yomol{
         width: 30%;
     }
 }
@@ -692,7 +692,7 @@ input[name="tel"] {
         font-size: 16px;
     }
     #nosotros .yomol img{
-        width: 30%;
+        width: 20%;
     }
 }
 @media screen and (min-width: 1024px) {
@@ -775,9 +775,6 @@ input[name="tel"] {
 #nosotros .yomol{
     margin: auto;
     max-width: 100%;
-}
-#nosotros .yomol img{
-    width: 22%;
 }
 
 #nosotros .tsumbal {
