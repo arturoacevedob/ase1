@@ -407,7 +407,6 @@ header a {
     padding: 0 88px 3em 88px;
 }
 
-
 .map span {
     color: var(--yellow);
 }
@@ -418,7 +417,14 @@ header a {
     box-sizing: border-box;
     background:url(images/inicio/icono_inicio_envios_batsil_maya.svg) 0 57% / contain no-repeat;
 }
+.grid-image-first h2{
+    display: none;
+}
+.grid-image-first p:last-child{
+    width: 47%;
+    margin: auto;
 
+}
 /* —————— Nuestros clientes —————— */
 .clients article h3 {
     display: none;
