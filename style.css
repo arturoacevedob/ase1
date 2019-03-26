@@ -83,6 +83,9 @@ img {
 .gimme-padding{
     padding: 11px 0 15px 0;
 }
+.gimme-padding-2{
+    padding: 33px 0 33px 0;
+}
 
 /* Hides `Bats'il Maya` and `Menu Principal` */
 h1, nav > h2 {
