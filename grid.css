@@ -918,7 +918,7 @@ input {
         grid-column: 3;
         grid-row: 1 / 4;
     }
-
+    #nuestrocafe .grid-2-text-photo{}
     .grid-2-text-photo {
         padding: var(--padding-top-bottom) 0;
         display: grid;
