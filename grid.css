@@ -259,7 +259,8 @@ legend {
     grid-auto-flow: column;
 
 }
-.grid-2{
+
+.grid-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -484,7 +485,8 @@ input {
         grid-auto-rows: auto;
         grid-gap: 11px;
     }
-    .grid-2{
+
+    .grid-2 {
         grid-template-columns: 1fr;
         grid-auto-flow: row;
     }
