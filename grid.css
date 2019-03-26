@@ -473,6 +473,7 @@ input {
         grid-template-columns: repeat(1, 1fr);
         grid-auto-rows: auto;
         grid-gap: 44px;
+        align-items: start;
     }
 
     .gridnews {
@@ -505,6 +506,7 @@ input {
         grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: auto;
         grid-gap: 15px;
+        align-items: start;
     }
 
     .gridnews {
@@ -1051,6 +1053,7 @@ input {
         grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: auto;
         grid-gap: 44px;
+        align-items: start;
     }
 
     .gridnews {
