@@ -49,7 +49,6 @@
 .container.grid-header {
     padding-top: 0;
     padding-bottom: 2em;
-    box-sizing: border-box;
 }
 
 .container.no-padding {
