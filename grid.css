@@ -89,7 +89,7 @@
     order: 2;
 }
 
-label, legend, fieldset {
+label, label + span, legend, fieldset {
     padding: 10px 12px 2px;
     display: block;
 }
@@ -527,6 +527,36 @@ input {
     padding: 5%;
     border: 2px solid rgba(64,41,10,.5);
     border-radius: 14px;
+}
+
+.login-wrapper {
+    position: absolute;
+    top: 35%;
+    left: calc(50% - 150px);
+    width: 300px;
+}
+
+.login-wrapper a {
+    text-decoration: underline;
+}
+
+.login-wrapper span {
+    color: gray;
+}
+
+.label-span {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+}
+
+form input {
+    border: 1px solid rgba(64, 41, 10, .3);
+}
+
+form textarea {
+    border: 1px solid rgba(64, 41, 10, .3);
+    border-radius: 15px;
 }
 
 @media screen and (max-width: 639px) {
@@ -1163,15 +1193,6 @@ input {
     .help-mail h2 {
         padding: 1% 0% 1% 11%;
         background: url(images/ayuda/sprites_ayuda_iconos.svg) 0% 99% / 9% no-repeat;
-    }
-
-    form input {
-        border: 1px solid rgba(64, 41, 10, .3);
-    }
-
-    form textarea {
-        border: 1px solid rgba(64, 41, 10, .3);
-        border-radius: 15px;
     }
 
     .alt-nav {

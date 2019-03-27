@@ -518,7 +518,7 @@ input, textarea {
     border: thin solid var(--light);
     border-radius: 33px;
     box-sizing: border-box;
-    box-shadow: 0 0 0 rgba(235, 160, 12, 0.15);
+    box-shadow: 0 0 0 rgba(235, 160, 12, 0.1);
     transition: border-color var(--time) var(--ease), box-shadow var(--time) var(--ease);
 }
 
@@ -526,7 +526,7 @@ input:focus, select:focus {
     outline: none;
     border: 1px solid var(--yellow);
     border-radius: 33px;
-    box-shadow: 0 10px 20px rgba(235, 160, 12, 0.15);
+    box-shadow: 0 5px 10px rgba(235, 160, 12, 0.1);
     transition: border-color var(--time) var(--ease), box-shadow var(--time) var(--ease);
 }
 
@@ -534,7 +534,7 @@ textarea:focus {
     outline: none;
     border: 1px solid var(--yellow);
     border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(235, 160, 12, 0.15);
+    box-shadow: 0 5px 10px rgba(235, 160, 12, 0.1);
     transition: border-color var(--time) var(--ease), box-shadow var(--time) var(--ease);
 }
 
