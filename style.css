@@ -583,8 +583,7 @@ select {
     width: auto;
     height: auto;
     border-radius: 33px 0 0 33px;
-    border: none;
-    border-right: 2px solid var(--light-80);
+    border-right: 1px solid var(--light-80);
 }
 
 .num-list:focus {
