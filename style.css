@@ -503,8 +503,6 @@ fieldset {
 }
 
 fieldset > label {
-    padding: 0;
-    text-indent: 12px;
     font-weight: 700;
 }
 
