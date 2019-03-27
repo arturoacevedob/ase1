@@ -7,8 +7,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2b0b4be1-8d7c-4364-8440-568a85826da6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/molidos/Expreso.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/grid.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/organico.html" beforeDir="false" afterPath="$PROJECT_DIR$/organico.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -85,8 +86,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/productos.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="20" column="53" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
+                <state relative-caret-position="218">
+                  <caret line="589" column="44" selection-start-line="589" selection-start-column="38" selection-end-line="589" selection-end-column="44" />
                   <folding>
                     <element signature="e#16821#16826#0" expanded="true" />
                     <element signature="e#32372#32377#0" expanded="true" />
@@ -101,8 +102,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/organico.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="576">
-                  <caret line="123" column="33" selection-start-line="123" selection-start-column="33" selection-end-line="123" selection-end-column="33" />
+                <state relative-caret-position="420">
+                  <caret line="99" column="43" selection-start-line="99" selection-start-column="43" selection-end-line="99" selection-end-column="43" />
                 </state>
               </provider>
             </entry>
@@ -139,8 +140,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-208">
-                  <caret line="568" selection-start-line="568" selection-end-line="568" />
+                <state relative-caret-position="323">
+                  <caret line="597" lean-forward="true" selection-start-line="597" selection-end-line="597" />
                   <folding>
                     <element signature="e#9848#16355#2" expanded="true" />
                   </folding>
@@ -151,8 +152,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/grid.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1028">
-                  <caret line="1056" column="29" selection-start-line="1056" selection-start-column="29" selection-end-line="1056" selection-end-column="29" />
+                <state relative-caret-position="218">
+                  <caret line="1015" column="21" selection-start-line="1015" selection-start-column="17" selection-end-line="1015" selection-end-column="21" />
                 </state>
               </provider>
             </entry>
@@ -172,20 +173,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>field</find>
-      <find>label</find>
-      <find>option</find>
-      <find>body</find>
-      <find>select</find>
-      <find>product-</find>
-      <find>product-view</find>
-      <find>#</find>
-      <find>radio</find>
-      <find>grid-prod</find>
-      <find>76</find>
-      <find>radio-</find>
-      <find>grid-</find>
-      <find>grid-produ</find>
       <find>product-b</find>
       <find>.red</find>
       <find>green</find>
@@ -194,7 +181,6 @@
       <find>mision</find>
       <find>form</find>
       <find>20px+</find>
-      <find>20px</find>
       <find>5px 20px</find>
       <find>red</find>
       <find>Expreso</find>
@@ -202,6 +188,21 @@
       <find>Iniciar Sesión</find>
       <find>expreso</find>
       <find>iniciar</find>
+      <find>input</find>
+      <find>20px</find>
+      <find>trans</find>
+      <find>inpu</find>
+      <find>focus</find>
+      <find>grid</find>
+      <find>grid-product-form</find>
+      <find>fieldset</find>
+      <find>field</find>
+      <find>strong</find>
+      <find>select</find>
+      <find>llamada</find>
+      <find>text</find>
+      <find>textarea</find>
+      <find>0.15</find>
     </findStrings>
     <replaceStrings>
       <replace>inicio</replace>
@@ -277,12 +278,12 @@
         <option value="$PROJECT_DIR$/productos.html" />
         <option value="$PROJECT_DIR$/noticias.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/grid.css" />
         <option value="$PROJECT_DIR$/nosotros.html" />
         <option value="$PROJECT_DIR$/proceso.html" />
-        <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/nuestro-cafe.html" />
         <option value="$PROJECT_DIR$/organico.html" />
+        <option value="$PROJECT_DIR$/grid.css" />
+        <option value="$PROJECT_DIR$/style.css" />
       </list>
     </option>
   </component>
@@ -390,20 +391,6 @@
       <workItem from="1552779030086" duration="484000" />
       <workItem from="1552932149692" duration="844000" />
       <workItem from="1553025633803" duration="2176000" />
-    </task>
-    <task id="LOCAL-00024" summary="Added Chilón to México.svg.">
-      <created>1552600360786</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1552600360786</updated>
-    </task>
-    <task id="LOCAL-00025" summary="New mexico.svg.">
-      <created>1552606509374</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1552606509374</updated>
     </task>
     <task id="LOCAL-00026" summary="Avances en grid.css de nsootros.html">
       <created>1552676573153</created>
@@ -734,11 +721,25 @@
       <option name="project" value="LOCAL" />
       <updated>1553643095914</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="Mexico v2.5">
+      <created>1553643696507</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1553643696507</updated>
+    </task>
+    <task id="LOCAL-00074" summary="Fancy form focus.">
+      <created>1553647828386</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1553647828386</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158974000" />
+    <option name="totallyTimeSpent" value="164009000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -868,8 +869,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Fixed nav colors on all HTMLs." />
-    <MESSAGE value="Fixed mobile nav input width causing all pages to have a blank space to the right." />
     <MESSAGE value="Fixed width of time selectors in contact form." />
     <MESSAGE value="Fixed MÁS SOBRE NOSOTROS image sizes and added grid gap to the class." />
     <MESSAGE value="Fixed NUESTROS CLIENTES mobile H2 padding." />
@@ -893,7 +892,9 @@
     <MESSAGE value="Mejoras a vista de producto." />
     <MESSAGE value="MEXICO v2.4&#10;Y COMIENZO DE CAMBIOS DE PROCESO" />
     <MESSAGE value="Corrección de textos." />
-    <option name="LAST_COMMIT_MESSAGE" value="Corrección de textos." />
+    <MESSAGE value="Mexico v2.5" />
+    <MESSAGE value="Fancy form focus." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fancy form focus." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1090,20 +1091,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/productos.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="53" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
-          <folding>
-            <element signature="e#16821#16826#0" expanded="true" />
-            <element signature="e#32372#32377#0" expanded="true" />
-            <element signature="e#35161#35166#0" expanded="true" />
-            <element signature="e#35667#35672#0" expanded="true" />
-            <element signature="e#37185#37190#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nosotros.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
@@ -1131,23 +1118,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grid.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1028">
-          <caret line="1056" column="29" selection-start-line="1056" selection-start-column="29" selection-end-line="1056" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-208">
-          <caret line="568" selection-start-line="568" selection-end-line="568" />
-          <folding>
-            <element signature="e#9848#16355#2" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nuestro-cafe.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
@@ -1159,10 +1129,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/productos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="589" column="44" selection-start-line="589" selection-start-column="38" selection-end-line="589" selection-end-column="44" />
+          <folding>
+            <element signature="e#16821#16826#0" expanded="true" />
+            <element signature="e#32372#32377#0" expanded="true" />
+            <element signature="e#35161#35166#0" expanded="true" />
+            <element signature="e#35667#35672#0" expanded="true" />
+            <element signature="e#37185#37190#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/organico.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="123" column="33" selection-start-line="123" selection-start-column="33" selection-end-line="123" selection-end-column="33" />
+        <state relative-caret-position="420">
+          <caret line="99" column="43" selection-start-line="99" selection-start-column="43" selection-end-line="99" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grid.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="1015" column="21" selection-start-line="1015" selection-start-column="17" selection-end-line="1015" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="597" lean-forward="true" selection-start-line="597" selection-end-line="597" />
+          <folding>
+            <element signature="e#9848#16355#2" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

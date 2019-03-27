@@ -424,14 +424,17 @@ input {
     grid-row: 2 / 3;
 }
 
-.grid-product-view fieldset {
-    padding-bottom: 1em;
-}
-
 .grid-product-form {
     display: grid;
-    grid-auto-flow: column;
-    grid-row: 1 / 2;
+    grid-auto-flow: row;
+    grid-gap: calc(var(--gutter) * 2);
+}
+
+.grid-2-left-aligned {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: left;
+    grid-gap: var(--gutter);
 }
 
 .grid-product-view .product-buy {
@@ -792,7 +795,7 @@ input {
         grid-row: 3 / 4;
     }
 
-    .grid-product-form {
+    .grid-2-left-aligned {
         display: grid;
         grid-auto-flow: column;
         grid-row: 1 / 2;
@@ -1120,12 +1123,14 @@ input {
         padding: 1% 0% 1% 11%;
         background: url(images/ayuda/sprites_ayuda_iconos.svg) 0% 99% / 9% no-repeat;
     }
-    .help-mail form input {
-        border: 2px solid rgba(64,41,10,.3);
+
+    form input {
+        border: 1px solid rgba(64, 41, 10, .3);
     }
-    .help-mail form textarea {
-        border: 2px solid rgba(64,41,10,.3);
-        border-radius: 14px;
+
+    form textarea {
+        border: 1px solid rgba(64, 41, 10, .3);
+        border-radius: 15px;
     }
 
     .alt-nav {

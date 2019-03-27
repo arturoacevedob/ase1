@@ -501,8 +501,10 @@ fieldset {
     border: none;
 }
 
-fieldset > strong {
-    padding: 10px 1em 2px;
+fieldset > label {
+    padding: 0;
+    text-indent: 12px;
+    font-weight: 700;
 }
 
 input, textarea {
@@ -519,10 +521,18 @@ input, textarea {
     transition: border-color var(--time) var(--ease), box-shadow var(--time) var(--ease);
 }
 
-input:focus, select:focus, textarea:focus {
+input:focus, select:focus {
     outline: none;
     border: 1px solid var(--yellow);
     border-radius: 33px;
+    box-shadow: 0 10px 20px rgba(235, 160, 12, 0.15);
+    transition: border-color var(--time) var(--ease), box-shadow var(--time) var(--ease);
+}
+
+textarea:focus {
+    outline: none;
+    border: 1px solid var(--yellow);
+    border-radius: 15px;
     box-shadow: 0 10px 20px rgba(235, 160, 12, 0.15);
     transition: border-color var(--time) var(--ease), box-shadow var(--time) var(--ease);
 }
@@ -554,7 +564,7 @@ input.button {
 }
 
 select {
-    width: 75px;
+    width: 100%;
     height: 35px;
     padding-left: 20px;
     font-size: 15px;
@@ -578,11 +588,18 @@ select {
 
 .num-list:focus {
     border-radius: 33px 0 0 33px;
+    box-shadow: 0 10px 20px rgba(235, 160, 12, 0.1);
+    transition: border-color var(--time) var(--ease), box-shadow var(--time) var(--ease);
 }
 
 input[name="tel"] {
-
     border-radius: 0 33px 33px 0;
+}
+
+input[name="tel"]:focus {
+    border-radius: 0 33px 33px 0;
+    box-shadow: 0 10px 20px rgba(235, 160, 12, 0.1);
+    transition: border-color var(--time) var(--ease), box-shadow var(--time) var(--ease);
 }
 
 .radio-group {
