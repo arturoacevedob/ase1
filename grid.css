@@ -89,8 +89,8 @@
     order: 2;
 }
 
-label, legend, fieldset {
-    padding: 10px 1em 2px;
+label, label + span, legend, fieldset {
+    padding: 10px 12px 2px;
     display: block;
 }
 
@@ -424,14 +424,17 @@ input {
     grid-row: 2 / 3;
 }
 
-.grid-product-view fieldset {
-    padding-bottom: 1em;
-}
-
 .grid-product-form {
     display: grid;
-    grid-auto-flow: column;
-    grid-row: 1 / 2;
+    grid-auto-flow: row;
+    grid-gap: calc(var(--gutter) * 2);
+}
+
+.grid-2-left-aligned {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: left;
+    grid-gap: var(--gutter);
 }
 
 .grid-product-view .product-buy {
@@ -524,6 +527,36 @@ input {
     padding: 5%;
     border: 2px solid rgba(64,41,10,.5);
     border-radius: 14px;
+}
+
+.login-wrapper {
+    position: absolute;
+    top: 35%;
+    left: calc(50% - 150px);
+    width: 300px;
+}
+
+.login-wrapper a {
+    text-decoration: underline;
+}
+
+.login-wrapper span {
+    color: gray;
+}
+
+.label-span {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+}
+
+form input {
+    border: 1px solid rgba(64, 41, 10, .3);
+}
+
+form textarea {
+    border: 1px solid rgba(64, 41, 10, .3);
+    border-radius: 15px;
 }
 
 @media screen and (max-width: 639px) {
@@ -836,7 +869,7 @@ input {
         grid-row: 3 / 4;
     }
 
-    .grid-product-form {
+    .grid-2-left-aligned {
         display: grid;
         grid-auto-flow: column;
         grid-row: 1 / 2;
@@ -910,7 +943,7 @@ input {
     .crazy-icon-padding{
         padding: 1% 0% 1% 11%;
     }
-    
+
     .gridbigproduct {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -1129,6 +1162,37 @@ input {
         grid-template-rows: auto auto auto;
         grid-row-gap: 5%;
         grid-template-areas: "chat" "call" "mail";
+    }
+
+    .faq {
+        grid-area: faq;
+    }
+
+    .chat {
+        grid-area: chat;
+    }
+
+    .chat h2 {
+        padding: 1% 0% 1% 11%;
+        background: url(images/ayuda/sprites_ayuda_iconos.svg) 0% 0% / 9% no-repeat;
+    }
+
+    .call {
+        grid-area: call;
+    }
+
+    .call h2 {
+        padding: 1% 0% 1% 11%;
+        background: url(images/ayuda/sprites_ayuda_iconos.svg) 0% 49% / 9% no-repeat;
+    }
+
+    .help-mail {
+        grid-area: mail;
+    }
+
+    .help-mail h2 {
+        padding: 1% 0% 1% 11%;
+        background: url(images/ayuda/sprites_ayuda_iconos.svg) 0% 99% / 9% no-repeat;
     }
 
     .alt-nav {

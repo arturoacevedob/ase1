@@ -7,7 +7,7 @@ article, aside, footer, header, hgroup, main, nav, section {
 
 :root {
     --red: #C24819;
-    --yellow: #EBA00C;
+    --yellow: rgb(235, 160, 12);
     --green: #758A17;
     --light: #FFFEF5;
     --dark: #40290A;
@@ -502,23 +502,44 @@ fieldset {
     border: none;
 }
 
-fieldset > strong {
-    padding: 10px 1em 2px;
+fieldset > label {
+    font-weight: 700;
 }
 
 input, textarea {
     width: 100%;
     padding: 7px 12px;
     display: block;
-    font-family: Qualion;
+    color: var(--dark);
+    font-family: inherit;
     font-size: 1em;
     border: thin solid var(--light);
     border-radius: 33px;
     box-sizing: border-box;
+    box-shadow: 0 0 0 rgba(235, 160, 12, 0.1);
+    transition: border-color var(--time) var(--ease), box-shadow var(--time) var(--ease);
 }
 
-.eac-input-wrap {
-    color: var(--light-80);
+input:focus, select:focus {
+    outline: none;
+    border: 1px solid var(--yellow);
+    border-radius: 33px;
+    box-shadow: 0 5px 10px rgba(235, 160, 12, 0.1);
+    transition: border-color var(--time) var(--ease), box-shadow var(--time) var(--ease);
+}
+
+textarea:focus {
+    outline: none;
+    border: 1px solid var(--yellow);
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(235, 160, 12, 0.1);
+    transition: border-color var(--time) var(--ease), box-shadow var(--time) var(--ease);
+}
+
+input[type="submit"]:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
 }
 
 input.button {
@@ -537,8 +558,12 @@ input.button {
     padding: 2.4em 0.5em 0;
 }
 
+.eac-input-wrap {
+    color: var(--light-80);
+}
+
 select {
-    width: 75px;
+    width: 100%;
     height: 35px;
     padding-left: 20px;
     font-size: 15px;
@@ -556,12 +581,23 @@ select {
     width: auto;
     height: auto;
     border-radius: 33px 0 0 33px;
-    border: none;
-    border-right: 2px solid var(--light-80);
+    border-right: 1px solid var(--light-80);
+}
+
+.num-list:focus {
+    border-radius: 33px 0 0 33px;
+    box-shadow: 0 10px 20px rgba(235, 160, 12, 0.1);
+    transition: border-color var(--time) var(--ease), box-shadow var(--time) var(--ease);
 }
 
 input[name="tel"] {
     border-radius: 0 33px 33px 0;
+}
+
+input[name="tel"]:focus {
+    border-radius: 0 33px 33px 0;
+    box-shadow: 0 10px 20px rgba(235, 160, 12, 0.1);
+    transition: border-color var(--time) var(--ease), box-shadow var(--time) var(--ease);
 }
 
 .radio-group {
