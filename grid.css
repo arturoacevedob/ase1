@@ -655,7 +655,7 @@ input {
 
 @media screen and (max-width: 767px) {
    .crazy-icon-padding{
-    padding: 0% 0% 4% 11%;
+    padding: 1% 0% 7% 11%;
    }
     .margin-thingy{
         margin: 22px 0;
@@ -908,7 +908,7 @@ input {
 
 @media screen and (min-width: 768px) {
     .crazy-icon-padding{
-        padding: 1% 0% 1% 11%;
+        padding: 0% 0% 0% 11%;
     }
     
     .gridbigproduct {
@@ -1240,6 +1240,9 @@ input {
 }
 
 @media screen and (min-width: 1024px) {
+    .crazy-icon-padding{
+        padding: 1% 0% 1% 11%;
+    }
     .nav-wrapper.mobile {
         display: none;
     }
