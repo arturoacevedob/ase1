@@ -940,6 +940,9 @@ form textarea {
 }
 
 @media screen and (min-width: 768px) {
+    .logo-footer {
+        text-align: center;
+    }
     .crazy-icon-padding{
         padding: 0% 0% 0% 11%;
     }
