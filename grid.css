@@ -253,7 +253,6 @@ legend {
 
 .product {
     padding-bottom: 4vmax;
-    border-radius: 0 0 130% 130% / 10%;
 }
 
 .clients .grid-scroll-x {
@@ -283,6 +282,7 @@ legend {
 .nav-wrapper.desktop {
     padding: 10px 0 30px;
     display: grid;
+    grid-template-columns: 107px auto 260px;
     grid-auto-flow: column;
     grid-gap: 3%;
 }
@@ -309,6 +309,7 @@ legend {
     grid-auto-flow: column;
     align-items: center;
     justify-items: center;
+    grid-gap: var(--gutter);
 }
 
 .ind-product {
