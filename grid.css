@@ -689,7 +689,7 @@ form textarea {
 
 @media screen and (max-width: 767px) {
    .crazy-icon-padding{
-    padding: 0% 0% 4% 11%;
+    padding: 1% 0% 7% 11%;
    }
     .margin-thingy{
         margin: 22px 0;
@@ -941,8 +941,11 @@ form textarea {
 }
 
 @media screen and (min-width: 768px) {
+    .logo-footer {
+        text-align: center;
+    }
     .crazy-icon-padding{
-        padding: 1% 0% 1% 11%;
+        padding: 0% 0% 0% 11%;
     }
 
     .gridbigproduct {
@@ -1212,6 +1215,7 @@ form textarea {
     }
 
     .grid-news-page {
+        margin-bottom: 5%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: auto;
@@ -1305,6 +1309,9 @@ form textarea {
 }
 
 @media screen and (min-width: 1024px) {
+    .crazy-icon-padding{
+        padding: 1% 0% 1% 11%;
+    }
     .nav-wrapper.mobile {
         display: none;
     }
