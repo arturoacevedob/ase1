@@ -1250,6 +1250,10 @@ progress::-webkit-progress-value {
     background: url(images/nuestro_cafe/ubicacion_chiapas_batsil_maya.jpg) 0 0 / cover no-repeat;;
 }
 
+.organic-height{
+    margin: 11px;
+    height: 44px;
+}
 
 .altura {
     padding-top: 15%;
