@@ -879,7 +879,7 @@ progress::-webkit-progress-value {
     }
 
     #nosotros .yomol img {
-        width: 20%;
+        width: 12%;
     }
 
     .padding-text-center {
@@ -1189,7 +1189,7 @@ progress::-webkit-progress-value {
 }
 
 #nosotros .tsumbal img {
-    width: 60%;
+    width: 40%;
 }
 
 #nosotros .batsil-maya {
@@ -1198,16 +1198,16 @@ progress::-webkit-progress-value {
 }
 
 #nosotros .batsil-maya img {
-    width: 60%;
+    width: 40%;
 }
 
 #nosotros .capeltic {
     margin: auto;
-    max-width: 100%;
+    max-width: 70%;
 }
 
 #nosotros .capeltic img {
-    width: 60%;
+    width: 80%;
 }
 
 #nosotros .chabnichim {
@@ -1216,12 +1216,12 @@ progress::-webkit-progress-value {
 }
 
 #nosotros .chabnichim img {
-    width: 60%;
+    width: 70%;
 }
 
-#nosotros .xapotic {
+#nosotros .xapontic img{
     margin: auto;
-    max-width: 100%;
+    max-width: 70%;
 }
 
 #nosotros .xampotic img {
