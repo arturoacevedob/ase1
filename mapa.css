@@ -52,9 +52,9 @@
   outline: none;
   z-index: 0;
   position: absolute;
-  width: 20px;
-  height: 20px;
-  border-radius: 15px;
+  width: 25px;
+  height: 25px;
+  border-radius: 20px;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);

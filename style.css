@@ -123,6 +123,10 @@ h1, nav > h2 {
     color: var(--white);
 }
 
+.white-bg{
+    background-color: var(--white);
+}
+
 .light-bg {
     background-color: var(--light);
 }
