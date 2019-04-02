@@ -22,22 +22,10 @@
     <link href="main-backend.css" rel="stylesheet">
 
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script>
-        function moveToPendientes() {
-            $("#source").appendTo("#pendiente");
-        }
-
-        function moveToEnRuta() {
-            $("#source").appendTo("#enruta");
-        }
-
-        function moveToEntregado() {
-            $("#source").appendTo("#entregado");
-        }
-    </script>
 
     <title>Products</title>
 </head>
+
 <body class="main-grid">
 <div class="order-2">
     <div class="toolbar">
@@ -46,7 +34,6 @@
         <button>Agregar pedido</button>
     </div>
     <div id="pendiente">
-        <h2>Pendiente</h2>
         <div class="wrapper order" id="source">
             <div class="header">
                 <h3>#236</h3>
@@ -137,12 +124,6 @@
                 <button onclick="moveToEntregado()">Entregado</button>
             </div>
         </div>
-    </div>
-    <div id="enruta">
-        <h2>En ruta</h2>
-    </div>
-    <div id="entregado">
-        <h2>Entregado</h2>
     </div>
 </div>
 <nav class="order-1">
