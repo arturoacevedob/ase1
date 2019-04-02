@@ -1277,7 +1277,7 @@ form textarea {
     }
 
     .grid-news-page {
-        margin-bottom: 5%;
+        margin-bottom: 12%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: auto;
