@@ -1341,5 +1341,5 @@ progress::-webkit-progress-value {
 /* —————— AQUÍ EMPIEZAN ESTILOS DE INICIO DE SESIÓN—————— */
 #iniciar_sesion header {
     background: url(images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
-    grey 70% 71% / cover no-repeat;
+    url(images/login/header_iniciar_sesión_batsil_maya.jpg) 70% 71% / cover no-repeat;;
 }
