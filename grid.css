@@ -70,7 +70,7 @@
 }
 
 .no-padding {
-    padding: 0;
+    padding: 0 !important;
 }
 
 .wrapper-text {
@@ -282,6 +282,10 @@ legend {
     grid-template-columns: auto auto;
     justify-content: space-between;
     grid-gap: 10px;
+}
+
+.align-grid-center {
+    align-items: center;
 }
 
 .extra-articles article {
@@ -585,7 +589,7 @@ form textarea {
 .grid-two-column-auto-row-responsive {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-template-rows: repeat(auto-fit, 1fr);
     grid-gap: 20px;
 }
 
