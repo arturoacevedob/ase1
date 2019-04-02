@@ -1181,17 +1181,17 @@ progress::-webkit-progress-value {
 }
 
 
-#nuestrocafe .altura {
+ .altura {
     padding-top: 15%;
     background: url(images/nuestro_cafe/altura_900_1400_msnm_batsil_maya.svg) 50% 100% / contain no-repeat;
 }
 
-#nuestrocafe .temperatura {
+ .temperatura {
     padding-top: 15%;
     background: url(images/nuestro_cafe/temperatura_batsil_maya.svg) 50% 100% / contain no-repeat;
 }
 
-#nuestrocafe .suelo {
+ .suelo {
     padding-top: 15%;
     background: url(images/nuestro_cafe/suelo_con_abundante_materia_orgánica_batsil_maya.svg) 50% 100% / contain no-repeat;
 }
