@@ -2,11 +2,11 @@
 <label><input type="radio" name="type" class="radio" value="1">$1</label>
 <label><input type="radio" name="type" class="radio" value="5">$5</label>
 <label><input type="radio" name="type" class="radio" value="10">$10</label>
-<label><input type="radio" name="type" class="radio other" value="">Other:</label>
-<input type="number" id="custom_amount" disabled="true">
+<label><input type="radio" name="type" class="radio other-input" value="">Other:</label>
+<input type="number" id="molido-custom" disabled="true">
 
 <script>
     $('.radio').change(function () {
-        $('#custom_amount').prop('disabled', !$(this).is('.other'));
+        $('#molido-custom').prop('disabled', !$(this).is('.other-input'));
     });
 </script>

@@ -2,7 +2,8 @@
     outline: 3px solid black;
 }*/
 :root {
-    --container-padding: 4em 2vmax;
+    --container-padding: 3em 2vmax;
+    --container-padding-mobile: 2em 2vmax;
     --padding-top-bottom: 4em;
     --padding-left-right: 2vmax;
     --gutter: 3%;
@@ -275,6 +276,13 @@ legend {
     grid-template-columns: 1fr 1fr;
 }
 
+.grid-2-space-between {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    grid-gap: 10px;
+}
+
 .extra-articles article {
     text-align: center;
 }
@@ -282,9 +290,9 @@ legend {
 .nav-wrapper.desktop {
     padding: 10px 0 30px;
     display: grid;
-    grid-template-columns: 107px auto 260px;
+    grid-template-columns: 107px auto 270px;
     grid-auto-flow: column;
-    grid-gap: 3%;
+    grid-gap: 20px;
 }
 
 .nav-wrapper.mobile {
@@ -309,7 +317,7 @@ legend {
     grid-auto-flow: column;
     align-items: center;
     justify-items: center;
-    grid-gap: var(--gutter);
+    grid-gap: 20px;
 }
 
 .ind-product {
@@ -317,7 +325,7 @@ legend {
     grid-template-columns: auto;
     grid-auto-rows: auto;
     align-content: start;
-    grid-gap: 2%;
+    grid-gap: 5px;
 }
 
 .pname {
@@ -344,7 +352,6 @@ legend {
 
 .pdescription {
     padding: 0;
-    margin: 0 0 22px 0;
     grid-column: 1;
     grid-row: 4;
 }
@@ -405,7 +412,7 @@ input {
 .grid-product-view {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: var(--gutter);
+    grid-gap: 20px;
 }
 
 .grid-product-view .product-description {
@@ -428,14 +435,19 @@ input {
 .grid-product-form {
     display: grid;
     grid-auto-flow: row;
-    grid-gap: calc(var(--gutter) * 2);
+    grid-gap: 10px;
+}
+
+.grid-product-form fieldset > label {
+    padding: 0;
+    text-indent: 12px;
 }
 
 .grid-2-left-aligned {
     display: grid;
     grid-template-columns: repeat(2, auto);
     justify-content: left;
-    grid-gap: var(--gutter);
+    grid-gap: 20px;
 }
 
 .grid-product-view .product-buy {
@@ -444,7 +456,7 @@ input {
     grid-row: 3 / 4;
 }
 
-.grid-product-view .product-buy > p {
+.grid-product-view .product-buy p {
     font-size: 3em;
 }
 
@@ -456,7 +468,8 @@ input {
 .grid-image-first {
     display: grid;
     grid-template-columns: auto;
-    grid-gap: var(--gutter);
+    grid-gap: 10px;
+    justify-items: center;
 }
 
 .image-top-first-round {
@@ -551,12 +564,8 @@ input {
     align-items: center;
 }
 
-form input {
-    border: 1px solid rgba(64, 41, 10, .3);
-}
-
 form textarea {
-    border: 1px solid rgba(64, 41, 10, .3);
+    border: 1px solid var(--light-80);
     border-radius: 15px;
 }
 
@@ -575,7 +584,7 @@ form textarea {
 
     .grid-scroll-x {
         grid-row: 2;
-        grid-gap: calc(var(--gutter) / .2);
+        grid-gap: calc(20px / .2);
     }
 
     .extra-articles {
@@ -640,7 +649,7 @@ form textarea {
 
 @media screen and (min-width: 640px) {
     .grid-scroll-x {
-        grid-gap: calc(var(--gutter) / 1);
+        grid-gap: calc(20px / 1);
     }
 
     .gridthree1 {
@@ -691,9 +700,15 @@ form textarea {
    .crazy-icon-padding{
     padding: 1% 0% 7% 11%;
    }
+
     .margin-thingy{
         margin: 22px 0;
     }
+
+    .container {
+        padding: var(--container-padding-mobile);
+    }
+
     .container.footer {
         padding-bottom: calc(var(--padding-top-bottom) / 3);
     }
@@ -706,10 +721,10 @@ form textarea {
     }
 
     .gridbigproduct {
-        padding: var(--gutter) 0;
+        padding: 20px 0;
         display: grid;
-        grid-gap: var(--gutter) 0;
-        grid-template-columns: var(--gutter) 1fr var(--gutter);
+        grid-gap: 20px 0;
+        grid-template-columns: 20px 1fr 20px;
         align-content: start;
     }
 
@@ -724,17 +739,17 @@ form textarea {
     .grid-scroll-x {
         overflow-y: hidden;
         display: grid;
-        grid-gap: calc(var(--gutter) / 2);
+        grid-gap: calc(4% / 2);
         grid-template-columns: 10px;
         grid-template-rows: auto;
         grid-auto-flow: column;
-        grid-auto-columns: calc(50% - var(--gutter) * 2);
+        grid-auto-columns: calc(50% - 4% * 2);
         align-items: start;
 
         overflow-x: scroll;
         scroll-snap-type: x proximity;
-        padding-bottom: calc(.75 * var(--gutter));
-        margin-bottom: calc(-.25 * var(--gutter));
+        padding-bottom: calc(.75 * 20px);
+        margin-bottom: calc(-.25 * 20px);
     }
 
     .grid-scroll-x:before,
@@ -845,10 +860,11 @@ form textarea {
     .grid-product-view {
         display: grid;
         grid-template-columns: 1fr;
+        grid-template-rows: auto minmax(300px, auto) auto auto auto;
     }
 
     #premium_organico {
-        height: 30vh;
+        height: auto;
         grid-column: 1 / 2;
         grid-row: 2 / 3;
     }
@@ -922,19 +938,19 @@ form textarea {
 
     #news6 {
         height: 144px;
-        background: url(images/noticias/noticia10.jpg) 0% 0% / cover no-repeat;
+        background: url(images/noticias/noticia10.jpg) 0% 0 / cover no-repeat;
     }
 
     #news7 {
         height: 144px;
-        background: url(images/noticias/noticia11.jpg) 0% 0% / cover no-repeat;
+        background: url(images/noticias/noticia11.jpg) 0 0 / cover no-repeat;
 
     }
 
     #news8 {
         margin-bottom: 55px;
         height: 144px;
-        background: url(images/noticias/noticia12.jpg) 0% 0% / cover no-repeat;
+        background: url(images/noticias/noticia12.jpg) 0 0 / cover no-repeat;
 
     }
 
@@ -945,7 +961,7 @@ form textarea {
         text-align: center;
     }
     .crazy-icon-padding{
-        padding: 0% 0% 0% 11%;
+        padding: 0 0 0 11%;
     }
 
     .gridbigproduct {
@@ -1177,8 +1193,8 @@ form textarea {
     }
 
     .chat h2 {
-        padding: 1% 0% 1% 11%;
-        background: url(images/ayuda/sprites_ayuda_iconos.svg) 0% 0% / 9% no-repeat;
+        padding: 1% 0 1% 11%;
+        background: url(images/ayuda/sprites_ayuda_iconos.svg) 0 0 / 9% no-repeat;
     }
 
     .call {
@@ -1186,8 +1202,8 @@ form textarea {
     }
 
     .call h2 {
-        padding: 1% 0% 1% 11%;
-        background: url(images/ayuda/sprites_ayuda_iconos.svg) 0% 49% / 9% no-repeat;
+        padding: 1% 0 1% 11%;
+        background: url(images/ayuda/sprites_ayuda_iconos.svg) 0 49% / 9% no-repeat;
     }
 
     .help-mail {
@@ -1195,8 +1211,8 @@ form textarea {
     }
 
     .help-mail h2 {
-        padding: 1% 0% 1% 11%;
-        background: url(images/ayuda/sprites_ayuda_iconos.svg) 0% 99% / 9% no-repeat;
+        padding: 1% 0 1% 11%;
+        background: url(images/ayuda/sprites_ayuda_iconos.svg) 0 99% / 9% no-repeat;
     }
 
     .alt-nav {
@@ -1265,14 +1281,14 @@ form textarea {
         height: 441px;
         grid-column: 2;
         grid-row: 3 / 7;
-        background: url(images/noticias/noticia10.jpg) 0% 0% / cover no-repeat;
+        background: url(images/noticias/noticia10.jpg) 0 0 / cover no-repeat;
     }
 
     #news7 {
         height: auto;
         grid-column: 3;
         grid-row: 3 / 5;
-        background: url(images/noticias/noticia11.jpg) 0% 0% / cover no-repeat;
+        background: url(images/noticias/noticia11.jpg) 0 0 / cover no-repeat;
 
     }
 
@@ -1280,7 +1296,7 @@ form textarea {
         height: 366px;
         grid-column: 3;
         grid-row: 5 / 7;
-        background: url(images/noticias/noticia12.jpg) 0% 0% / cover no-repeat;
+        background: url(images/noticias/noticia12.jpg) 0 0 / cover no-repeat;
 
     }
 
@@ -1310,7 +1326,7 @@ form textarea {
 
 @media screen and (min-width: 1024px) {
     .crazy-icon-padding{
-        padding: 1% 0% 1% 11%;
+        padding: 1% 0 1% 11%;
     }
     .nav-wrapper.mobile {
         display: none;

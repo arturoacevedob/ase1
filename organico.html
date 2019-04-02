@@ -98,44 +98,47 @@
                             </p>
                         </fieldset>
                     <fieldset class="h3-small">
-                        <label>Cantidad</label>
-                            <select id="cantidad" name="cantidad">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                                <option value="11">11</option>
-                                <option value="12">12</option>
-                            </select>
+                        <label for="cantidad">Cantidad</label>
+                        <p><input id="cantidad" name="cantidad" type="number" max="100" min="0"/></p>
                         </fieldset>
                     </div>
                     <fieldset class="h3-small">
                         <label>Molido del café</label>
                         <p class="radio-group">
-                            <input id="molido-one" name="molido-selector" type="radio">
+                            <input id="molido-one" class="radio" name="molido-selector" type="radio">
                             <label for="molido-one">Americano</label>
-                            <input id="molido-two" name="molido-selector" type="radio">
+                            <input id="molido-two" class="radio" name="molido-selector" type="radio">
                             <label for="molido-two">Espresso</label>
-                            <label for="molido-three">Otro</label>
-                            <input id="molido-three" name="molido-selector" type="number">
+                            <input id="molido-custom-radio" type="radio" name="molido-selector"
+                                   class="radio other-input">
+                            <label for="molido-custom-radio">Otro</label>
+                            <select type="number" id="molido-custom-value" class="dependent-input" disabled>
+                                <option value="">#1</option>
+                                <option value="">#2</option>
+                                <option value="">#3</option>
+                                <option value="">#4</option>
+                                <option value="">#5</option>
+                                <option value="">#6</option>
+                                <option value="">#7</option>
+                            </select>
+
                         </p>
                     </fieldset>
                 </form>
 
-            <div class="product-buy grid-2">
-                <p><strong>$1260</strong></p>
+            <div class="product-buy grid-2-space-between">
+                <div class="grid-2-space-between align-center bold">
+                    <span>Qt. x</span>
+                    <p>$1260</p>
+                </div>
                 <div>
                     <a class="button red" href="" target="">Agregar al carrito</a>
-                    <a class="button green" href="" target="">Comprar</a>
                 </div>
-                </div>
-                <p class="center-aligned">Envío nacional gratis en pedidos mayores a 10kgs</p>
+            </div>
+            <div class="center-aligned">
+                <p>Pide 11KG para envío nacional gratis</p>
+                <progress max="11" value="7"></progress>
+            </div>
             <div id="premium_organico">
             </div>
         </article>
@@ -255,5 +258,14 @@
         </div>
     </div>
 </div>
+
+<script charset="UTF-8" src="js/jquery.js"></script>
+
+<script>
+    $('.radio').change(function () {
+        $('#molido-custom-value').prop('disabled', !$(this).is('.other-input'));
+    });
+</script>
+
 </body>
 </html>
