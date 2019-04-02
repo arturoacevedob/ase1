@@ -19,7 +19,7 @@
     --button-active: #FFAE0D;
 
     --button-padding: 0.7rem;
-    --border-radius: 1.4rem;
+    --button-border-radius: 1.4rem;
     --time: 0.2s;
     --ease: ease-out;
 }

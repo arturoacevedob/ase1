@@ -26,7 +26,8 @@ article, aside, footer, header, hgroup, main, nav, section {
     --button-active: #FFAE0D;
 
     --button-padding: 0.7rem;
-    --border-radius: 1.4rem;
+    --button-border-radius: 1.4rem;
+    --card-border-radius: 14px;
     --time: 0.2s;
     --ease: ease-out;
 }
@@ -77,13 +78,16 @@ img {
 .botones-p {
     padding-bottom: 3%;
 }
-.kill{
-    display:none;
+
+.kill {
+    display: none;
 }
-.gimme-padding{
+
+.gimme-padding {
     padding: 11px 0 15px 0;
 }
-.gimme-padding-2{
+
+.gimme-padding-2 {
     padding: 33px 0 33px 0;
 }
 
@@ -115,7 +119,7 @@ h1, nav > h2 {
     color: var(--green);
 }
 
-.white{
+.white {
     color: var(--white);
 }
 
@@ -138,7 +142,6 @@ h1, nav > h2 {
 .active {
     border-bottom: 3px solid var(--a-hover) !important;
 }
-
 
 
 /* —————— Font Import—————— */
@@ -245,21 +248,25 @@ a.dark:visited {
     color: var(--dark);
 }
 
+.sidebar-nav-responsive a:visited {
+    color: var(--dark);
+}
+
 /* —————— Nav Links —————— */
 
-#menu-desktop a, .alt-nav a, .menu-mobile-content a {
+#menu-desktop a, .footer-nav a, .menu-mobile-content a, .sidebar-nav-responsive a {
     color: var(--a-link);
     border-bottom: 0 solid var(--a-hover);
     transition: border-bottom-width var(--time) var(--ease);
 }
 
-#menu-desktop a:hover, .alt-nav a:hover, .menu-mobile-content a:hover {
+#menu-desktop a:hover, .footer-nav a:hover, .menu-mobile-content a:hover, .sidebar-nav-responsive a:hover {
     text-decoration: none;
     border-bottom: 3px solid var(--a-hover);
     transition: border-bottom-width var(--time) var(--ease);
 }
 
-#menu-desktop a:active, .alt-nav a:active, .menu-mobile-content a:active {
+#menu-desktop a:active, .footer-nav a:active, .menu-mobile-content a:active {
     color: var(--a-hover);
 }
 
@@ -269,17 +276,19 @@ a.dark:visited {
     width: max-content !important;
     margin: 0 auto;
 }
+
 .full-width {
     width: 100% !important;
     box-sizing: border-box;
 }
+
 .button {
     padding: var(--button-padding);
     display: inline-block;
     color: var(--light);
     text-align: center;
     font-weight: 700;
-    border-radius: var(--border-radius);
+    border-radius: var(--button-border-radius);
     cursor: pointer;
 }
 
@@ -430,7 +439,7 @@ header a {
     color: #ffffff;
 }
 
-.map .world-map p{
+.map .world-map p {
     max-width: 700px;
     margin: 0 auto;
     grid-row: 1;
@@ -441,7 +450,7 @@ header a {
     margin: 2em 0;
 }
 
-.map .extra-articles{
+.map .extra-articles {
     padding: 0 88px 3em 88px;
 }
 
@@ -453,20 +462,24 @@ header a {
     margin: auto;
     padding: 7%;
     box-sizing: border-box;
-    background:url(images/inicio/icono_inicio_envios_batsil_maya.svg) 0 57% / contain no-repeat;
+    background: url(images/inicio/icono_inicio_envios_batsil_maya.svg) 0 57% / contain no-repeat;
 }
-.grid-image-first h2{
+
+.grid-image-first h2 {
     display: none;
 }
-#homepage .grid-image-first p:nth-child(3){
+
+#homepage .grid-image-first p:nth-child(3) {
     width: 60%;
 
 }
-#homepage .map .grid-image-first p:last-child{
+
+#homepage .map .grid-image-first p:last-child {
     width: 100%;
     margin: 0 auto 2em;
 
 }
+
 /* —————— Nuestros clientes —————— */
 .clients article h3 {
     display: none;
@@ -520,6 +533,14 @@ header a {
 }
 
 /* —————— form —————— */
+
+.form a {
+    text-decoration: underline;
+}
+
+.form span {
+    color: gray;
+}
 
 fieldset {
     padding: 0;
@@ -708,7 +729,7 @@ label + input[type="radio"] + label {
 }
 
 /* —————— NOSOTROS —————— */
-#nosotros .m-and-v .extra-articles{
+#nosotros .m-and-v .extra-articles {
     padding-left: 44px;
     padding-right: 44px;
 }
@@ -719,47 +740,50 @@ label + input[type="radio"] + label {
     url(images/proceso/header_proceso_desde_el_cafetal_a_la_taza_batsil_maya.jpg) 70% 0 / cover no-repeat;
 }
 
-#proceso .tipo-tueste{
+#proceso .tipo-tueste {
     position: relative;
 }
-#proceso .tipo-tueste h2{
-margin-bottom: 7%;
+
+#proceso .tipo-tueste h2 {
+    margin-bottom: 7%;
 }
 
-#proceso .tipo-tueste p:nth-child(8){
+#proceso .tipo-tueste p:nth-child(8) {
     position: absolute;
     top: 77%;
     left: -4%;
-    -ms-transform: rotate(-90deg); 
-    -webkit-transform: rotate(-90deg); 
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
 }
 
-#proceso .tueste-claro{
+#proceso .tueste-claro {
     position: absolute;
     top: 42%;
     left: 12.5%;
 }
 
-#proceso .tueste-medio{
+#proceso .tueste-medio {
     position: absolute;
     top: 72%;
     left: 26.5%;
 
 }
 
-#proceso .tueste-vienes{
+#proceso .tueste-vienes {
     position: absolute;
     top: 38%;
     left: 43%;
 
 }
-#proceso .tueste-oscuro{
+
+#proceso .tueste-oscuro {
     position: absolute;
     top: 68%;
     left: 61.5%;
 }
-#proceso .tueste-italiano{
+
+#proceso .tueste-italiano {
     position: absolute;
     top: 36%;
     left: 79.5%;
@@ -824,53 +848,64 @@ progress::-webkit-progress-value {
     .p-small {
         font-size: 13px;
     }
-    #homepage .grid-image-first p:nth-child(3){
+
+    #homepage .grid-image-first p:nth-child(3) {
         width: 100%;
     }
-    #homepage .grid-image-first p:last-child{
+
+    #homepage .grid-image-first p:last-child {
         width: 45%;
     }
-    
-    #proceso .tipo-tueste p:nth-child(8){
+
+    #proceso .tipo-tueste p:nth-child(8) {
         left: -3%;
     }
-    
+
 }
+
 @media screen and (max-width: 1023px) {
     .logo > img {
         height: 50px;
     }
 }
+
 @media screen and (min-width: 768px) {
     .yomol h3 {
         font-size: 16px;
     }
-    #nosotros .yomol img{
+
+    #nosotros .yomol img {
         width: 20%;
     }
-    .padding-text-center{
+
+    .padding-text-center {
         margin: 1% auto;
         width: 40%;
     }
-    
+
 }
-@media screen and (max-width:767px){
-    #nosotros .yomol img{
+
+@media screen and (max-width: 767px) {
+    #nosotros .yomol img {
         width: 80%;
     }
-    .grid-image-first p:nth-child(3){
+
+    .grid-image-first p:nth-child(3) {
         width: 90%;
     }
-    .grid-image-first p:last-child{
+
+    .grid-image-first p:last-child {
         width: 90%;
         margin: auto;
-    
+
     }
-    .padding-text-center{
+
+    .padding-text-center {
         margin: 1% auto;
         width: 77%;
     }
 }
+
 @media screen and (min-width: 640px) {
     h2 {
         font-size: 40px;
@@ -936,13 +971,15 @@ progress::-webkit-progress-value {
         left: -5%;
 
     }
-    #proceso .tueste-italiano{
+
+    #proceso .tueste-italiano {
         top: 30%;
         left: 76%;
-    
+
     }
-    
+
 }
+
 @media screen and (max-width: 639px) {
     h2 {
         font-size: 40px;
@@ -985,13 +1022,16 @@ progress::-webkit-progress-value {
     .p-small {
         font-size: 13px;
     }
-    .grid-image-first p:last-child{
+
+    .grid-image-first p:last-child {
         width: 57%;
     }
-    .grid-image-first p:last-child{
+
+    .grid-image-first p:last-child {
         width: 100%;
         margin: 0 auto 11%;
     }
+
     /* —————— certificados —————— */
     .one {
         background: url(images/noticias/conoce_nuevo_capeltic_universidad_iberoamericana_cdmx_batsil_maya.jpg) 0 73% / cover no-repeat;
@@ -1013,88 +1053,102 @@ progress::-webkit-progress-value {
     .wrapper-text {
         padding: 4% 8% 4% 3%;
     }
+
     #nosotros .mision-vision {
         border-bottom: 2px solid var(--yellow);
         padding-bottom: var(--padding-top-bottom);
     }
+
     #nosotros .mision {
         border-bottom: 2px solid var(--yellow);
         padding-bottom: var(--padding-top-bottom);
     }
+
     #nosotros .vision {
         padding-top: var(--padding-top-bottom);
     }
+
     #nosotros .yomol img {
         width: 80%;
     }
 
-     /* —————— AQUÍ EMPIEZAN ESTILOS DE PROCESO—————— */
-    #proceso .tipo-tueste p:nth-child(8){
+    /* —————— AQUÍ EMPIEZAN ESTILOS DE PROCESO—————— */
+    #proceso .tipo-tueste p:nth-child(8) {
         top: 59%;
         left: -9%;
         font-size: 13px;
     }
 
-    #proceso .tipo-tueste p:last-child{
+    #proceso .tipo-tueste p:last-child {
         font-size: 13px;
     }
 
-    #proceso .tueste-claro{
+    #proceso .tueste-claro {
         top: 41%;
         left: 8%;
     }
-    #proceso .tueste-claro h3{
+
+    #proceso .tueste-claro h3 {
         font-size: 13px;
     }
-    
-    #proceso .tueste-medio{
+
+    #proceso .tueste-medio {
         top: 64%;
-        left: 22%;    
+        left: 22%;
     }
-    #proceso .tueste-medio h3{
+
+    #proceso .tueste-medio h3 {
         font-size: 13px;
     }
-    
-    #proceso .tueste-vienes{
+
+    #proceso .tueste-vienes {
         top: 39%;
         left: 38%;
     }
-    #proceso .tueste-vienes h3{
+
+    #proceso .tueste-vienes h3 {
         font-size: 13px;
     }
-    #proceso .tueste-oscuro{
+
+    #proceso .tueste-oscuro {
         top: 61%;
         left: 56%;
     }
-    #proceso .tueste-oscuro h3{
+
+    #proceso .tueste-oscuro h3 {
         font-size: 13px;
     }
-    #proceso .tueste-italiano{
+
+    #proceso .tueste-italiano {
         top: 38%;
         left: 71%;
-    
+
     }
-    #proceso .tueste-italiano h3{
+
+    #proceso .tueste-italiano h3 {
         font-size: 13px;
     }
 }
 
 /* —————— AQUÍ EMPIEZAN ESTILOS DE NOSOTROS—————— */
 #nosotros header {
-    background:url(images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
-               url(images/nosotros/header_nosotros_somos_la_planta_transformadora_de_café_batsil_maya.jpg) 70% 0 / cover no-repeat;
+    background: url(images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
+    url(images/nosotros/header_nosotros_somos_la_planta_transformadora_de_café_batsil_maya.jpg) 70% 0 / cover no-repeat;
 }
-#nosotros #image-nuestra-historia{
+
+#nosotros #image-nuestra-historia {
     position: relative;
     background: url(images/nosotros/mexico_2.svg) 0 100% / contain no-repeat;
 }
-#nosotros #image-nuestra-historia p{
+
+#nosotros #image-nuestra-historia p {
     max-width: 200px;
     margin: 0;
     position: relative;
     top: 61%;
     left: 42%;
 }
+
 #nosotros #image-el-pueblo-tseltal {
     background: url(images/nosotros/el_pueblo_tseltal_batsil_maya.jpg) 70% 20% / cover no-repeat;
 }
@@ -1111,14 +1165,16 @@ progress::-webkit-progress-value {
     border-bottom: 2px solid var(--yellow);
     padding-bottom: 9%;
 }
-.desktop-family h3{
-    display:none;
-}
-.mobile-family h3{
+
+.desktop-family h3 {
     display: none;
 }
 
-#nosotros .yomol{
+.mobile-family h3 {
+    display: none;
+}
+
+#nosotros .yomol {
     margin: auto;
     max-width: 100%;
 }
@@ -1127,38 +1183,48 @@ progress::-webkit-progress-value {
     margin: auto;
     max-width: 100%;
 }
-#nosotros .tsumbal img{
+
+#nosotros .tsumbal img {
     width: 60%;
 }
-#nosotros .batsil-maya{
+
+#nosotros .batsil-maya {
     margin: auto;
     max-width: 100%;
 }
-#nosotros .batsil-maya img{
+
+#nosotros .batsil-maya img {
     width: 60%;
 }
-#nosotros .capeltic{
+
+#nosotros .capeltic {
     margin: auto;
     max-width: 100%;
 }
-#nosotros .capeltic img{
+
+#nosotros .capeltic img {
     width: 60%;
 }
-#nosotros .chabnichim{
+
+#nosotros .chabnichim {
     margin: auto;
     max-width: 100%;
 }
-#nosotros .chabnichim img{
+
+#nosotros .chabnichim img {
     width: 60%;
 }
-#nosotros .xapotic{
+
+#nosotros .xapotic {
     margin: auto;
     max-width: 100%;
 }
-#nosotros .xampotic img{
+
+#nosotros .xampotic img {
     width: 60%;
 }
-#nosotros .bnosotros{
+
+#nosotros .bnosotros {
     background: url(images/botones/boton_nosotros_somos_la_planta_transformadora_de_cafe_batsil_maya.jpg) 70% 0 / cover no-repeat;
 }
 
@@ -1176,22 +1242,22 @@ progress::-webkit-progress-value {
     url(images/nuestro_cafe/header_nuestro_cafe_desde_el_cafetal_hasta_la_taza_batsil_maya.jpg) 59% 5% / cover no-repeat;
 }
 
-#nuestrocafe #image-ubicacion{
+#nuestrocafe #image-ubicacion {
     background: url(images/nuestro_cafe/ubicacion_chiapas_batsil_maya.jpg) 0 0 / cover no-repeat;;
 }
 
 
- .altura {
+.altura {
     padding-top: 15%;
     background: url(images/nuestro_cafe/altura_900_1400_msnm_batsil_maya.svg) 50% 100% / contain no-repeat;
 }
 
- .temperatura {
+.temperatura {
     padding-top: 15%;
     background: url(images/nuestro_cafe/temperatura_batsil_maya.svg) 50% 100% / contain no-repeat;
 }
 
- .suelo {
+.suelo {
     padding-top: 15%;
     background: url(images/nuestro_cafe/suelo_con_abundante_materia_orgánica_batsil_maya.svg) 50% 100% / contain no-repeat;
 }
@@ -1205,10 +1271,9 @@ progress::-webkit-progress-value {
     font-size: 16px;
 }
 
- .molidos img{
+.molidos img {
     width: 50%;
 }
-
 
 
 /* —————— AQUÍ EMPIEZAN ESTILOS DE PRODUCTOS—————— */
@@ -1231,8 +1296,8 @@ progress::-webkit-progress-value {
 
 
 /* —————— AQUÍ EMPIEZAN ESTILOS DE PRODUCTOS ORGANICOS—————— */
-#productoorganico header{
-    background:url(images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
+#productoorganico header {
+    background: url(images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
     url(images/productos/header_productos_batsil_maya.jpg) 70% 71% / cover no-repeat;
 
 }
@@ -1252,8 +1317,21 @@ progress::-webkit-progress-value {
     padding: 0 0 3% 3%;
     color: var(--light);
 }
+
 /* —————— AQUÍ EMPIEZAN ESTILOS DE AYUDA—————— */
 #ayuda header {
     background: url(images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
     url(images/ayuda/header_ayuda_batsil_maya.jpg) 70% 71% / cover no-repeat;
+}
+
+/* —————— AQUÍ EMPIEZAN ESTILOS DE CUENTA—————— */
+#cuenta header {
+    background: url(images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
+    grey 70% 71% / cover no-repeat;
+}
+
+/* —————— AQUÍ EMPIEZAN ESTILOS DE INICIO DE SESIÓN—————— */
+#iniciar_sesion header {
+    background: url(images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
+    grey 70% 71% / cover no-repeat;
 }
