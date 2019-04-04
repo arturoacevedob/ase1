@@ -598,6 +598,9 @@ form textarea {
     border: 1px solid var(--dark);
     border-radius: var(--card-border-radius);
 }
+.grid-cart-list{
+    grid-auto-rows: auto;
+}
 
 @media screen and (max-width: 639px) {
 
@@ -1361,6 +1364,9 @@ form textarea {
         grid-template-columns: repeat(4, 1fr);
         grid-auto-rows: auto;
         grid-gap: 11px;
+    }
+    .grid-cart-item{
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
