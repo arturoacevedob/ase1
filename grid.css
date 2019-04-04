@@ -21,29 +21,6 @@
     padding: 0 var(--padding-left-right) var(--padding-top-bottom);
 }
 
-#nosotros header {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-}
-
-#mapa-nosotros {
-    grid-column: 1 / 2;
-    grid-row: 1 / 3;
-    z-index: 0;
-}
-
-#nosotros .grid-header {
-    grid-column: 1 / 2;
-    grid-row: 1 / 3;
-    z-index: 1;
-}
-
-#header-image-nosotros {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    z-index: -1;
-}
-
 .padding-top {
     padding-top: 33px;
 }

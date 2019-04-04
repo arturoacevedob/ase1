@@ -224,6 +224,11 @@ p {
 
 /* —————— General Links —————— */
 
+a.light:link {
+    color: var(--light);
+    text-decoration: none;
+}
+
 a:link {
     color: var(--red);
     text-decoration: none;

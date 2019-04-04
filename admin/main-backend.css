@@ -24,6 +24,11 @@
     --ease: ease-out;
 }
 
+/* Resets */
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
 /* Colors */
 
 
@@ -38,54 +43,67 @@
 
 /* Main grid */
 .main-grid {
-    /*min-width: 1024px;*/
     display: grid;
-    grid-template-columns: fit-content(100%) auto;
+    grid-template-columns: min-content auto;
 }
 
 /* Toolbar */
-.toolbar {
+.grid-2-space-between {
     display: grid;
-    grid-template-columns: fit-content(100%) auto auto;
+    grid-auto-flow: column;
+    justify-content: space-between;
 }
 
 /* Wrappers */
 .wrapper {
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 15px;
 }
 
-.wrapper.order {
+/*      Wrappers > Pendiente */
+.wrapper.pending-item {
+    /*padding: 20px;*/
     display: grid;
-    grid-template-rows: repeat(3, auto);
+    grid-auto-flow: row;
 }
 
-/*      Header */
-.wrapper.order .header {
+/*      Wrappers > En ruta */
+
+/*      Wrappers > Entrega */
+
+/* Header */
+
+/*      Header > Pendiente */
+.pending-item .header {
     display: grid;
-    grid-template-columns: repeat(3, fit-content(100%));
+    grid-auto-flow: column;
     justify-content: space-between;
 }
 
-.wrapper.order .header h3 {
+.pending-item .header h3 {
     order: 1;
 }
 
-/*      grid-4 */
-.grid-4 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+.pending-item .header p:last-of-type {
+    order: 2;
 }
 
-/*      Etapa de envío */
-.etapa-envío {
+/*            > this right-justifies the last div (tracking number) */
+.wrapper.pending-item div:last-of-type {
     display: grid;
-    grid-template-columns: repeat(4, fit-content(100%));
-    justify-content: center;
+    justify-content: right;
 }
 
+/*  grid-two-thirds (Contenido Principal de Pendiente) */
+.grid-two-thirds {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
 
-/*      Pedido Table */
+/* Pedido Table */
+.order-table {
+}
+
 table > thead {
     display: none;
 }
@@ -106,4 +124,3 @@ tr > td:nth-child(n+2) {
 .pseudo-table span:last-of-type {
     float: right;
 }
-
