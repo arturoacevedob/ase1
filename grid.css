@@ -988,7 +988,21 @@ form textarea {
         background: url(images/noticias/noticia12.jpg) 0 0 / cover no-repeat;
 
     }
-
+    .grid-cart-item{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        grid-gap: 11px;
+    }
+    .grid-cart-item div, .grid-cart-item button{
+        grid-column: 1 / 3;
+    }
+    .grid-cart-item p{
+        grid-column: 1;
+    }
+    .grid-cart-item span{
+        grid-column: 2;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -1356,6 +1370,9 @@ form textarea {
     .grid-cart-item .i-be-four-too{
         grid-column: 4;
         grid-row: 2;
+    }
+    .crazy-margin{
+        margin-left: 25%;
     }
 }
 
