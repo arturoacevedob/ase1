@@ -4,19 +4,10 @@
     <option name="AUTOSCROLL_TO_SOURCE" value="true" />
   </component>
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/style.css" description="text-decoration: underline;" line="217" />
+    <bookmark url="file://$PROJECT_DIR$/style.css" description="text-decoration: underline;" line="221" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b0b4be1-8d7c-4364-8440-568a85826da6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/clientes-backend.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/clientes-backend.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/main-backend.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/main-backend.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/pedidos-backend.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pedidos-backend.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/productos-backend.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/productos-backend.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/grid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proceso.html" beforeDir="false" afterPath="$PROJECT_DIR$/proceso.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="2b0b4be1-8d7c-4364-8440-568a85826da6" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -37,7 +28,7 @@
             <entry file="file://$PROJECT_DIR$/admin/pedidos-backend.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="247">
-                  <caret line="51" column="27" lean-forward="true" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
+                  <caret line="51" column="27" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
                   <folding>
                     <element signature="n#style#0;n#h2#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -60,7 +51,7 @@
             <entry file="file://$PROJECT_DIR$/testing/index.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="165">
-                  <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+                  <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
                   <folding>
                     <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -73,7 +64,7 @@
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="3915">
-                  <caret line="305" column="65" lean-forward="true" selection-start-line="305" selection-start-column="65" selection-end-line="305" selection-end-column="65" />
+                  <caret line="305" column="65" selection-start-line="305" selection-start-column="65" selection-end-line="305" selection-end-column="65" />
                   <folding>
                     <element signature="n#head#0;n#html#0;n#!!top" />
                     <element signature="n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
@@ -85,10 +76,11 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/proceso.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="158">
-                  <caret line="474" column="30" lean-forward="true" selection-start-line="474" selection-start-column="30" selection-end-line="474" selection-end-column="30" />
+                <state relative-caret-position="183">
+                  <caret line="474" column="30" selection-start-line="474" selection-start-column="30" selection-end-line="474" selection-end-column="30" />
                   <folding>
                     <element signature="n#STYLE#0;n#div#0;n#article#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#STYLE#0;n#div#0;n#article#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -126,8 +118,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="217">
-                  <caret line="893" column="13" selection-start-line="893" selection-start-column="4" selection-end-line="893" selection-end-column="13" />
+                <state relative-caret-position="277">
+                  <caret line="897" column="13" selection-start-line="897" selection-start-column="13" selection-end-line="897" selection-end-column="13" />
                 </state>
               </provider>
             </entry>
@@ -386,14 +378,7 @@
       <workItem from="1554158047991" duration="18456000" />
       <workItem from="1554228217706" duration="70000" />
       <workItem from="1554228387150" duration="77000" />
-      <workItem from="1554228491680" duration="11391000" />
-    </task>
-    <task id="LOCAL-00034" summary="Changed desktop nav buttons html markdown to UL.">
-      <created>1553185582478</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1553185582478</updated>
+      <workItem from="1554228491680" duration="11737000" />
     </task>
     <task id="LOCAL-00035" summary="Fixed Bats'il Maya &amp; Certimex images.&#10;Changed grid-2 class name.">
       <created>1553191031531</created>
@@ -731,11 +716,18 @@
       <option name="project" value="LOCAL" />
       <updated>1554239688129</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="Did some backend things yesterday.&#10;Fixed proceso.html header margins.">
+      <created>1554342254153</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1554342254153</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="201236000" />
+    <option name="totallyTimeSpent" value="201582000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -870,7 +862,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/js/tiny-date-picker" />
     </ignored-roots>
-    <MESSAGE value="Fixed UBICACIÓN." />
     <MESSAGE value="Added align-items: start; to grid-scroll-x and gridthree2.&#10;Striped h2-small classes from NUESTRO CAFÉ." />
     <MESSAGE value="Fixed NOSOTROS image order." />
     <MESSAGE value="Test - Molidos?" />
@@ -895,7 +886,8 @@
     <MESSAGE value="Added some Cuenta HTMLs." />
     <MESSAGE value="OPTIMIZED MOLIDOS." />
     <MESSAGE value="Más cosas de cuenta." />
-    <option name="LAST_COMMIT_MESSAGE" value="Más cosas de cuenta." />
+    <MESSAGE value="Did some backend things yesterday.&#10;Fixed proceso.html header margins." />
+    <option name="LAST_COMMIT_MESSAGE" value="Did some backend things yesterday.&#10;Fixed proceso.html header margins." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1146,7 +1138,7 @@
     <entry file="file://$PROJECT_DIR$/testing/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
           <folding>
             <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1244,7 +1236,7 @@
     <entry file="file://$PROJECT_DIR$/admin/pedidos-backend.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
-          <caret line="51" column="27" lean-forward="true" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
+          <caret line="51" column="27" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
           <folding>
             <element signature="n#style#0;n#h2#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -1262,8 +1254,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="893" column="13" selection-start-line="893" selection-start-column="4" selection-end-line="893" selection-end-column="13" />
+        <state relative-caret-position="277">
+          <caret line="897" column="13" selection-start-line="897" selection-start-column="13" selection-end-line="897" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1277,7 +1269,7 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3915">
-          <caret line="305" column="65" lean-forward="true" selection-start-line="305" selection-start-column="65" selection-end-line="305" selection-end-column="65" />
+          <caret line="305" column="65" selection-start-line="305" selection-start-column="65" selection-end-line="305" selection-end-column="65" />
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
@@ -1287,10 +1279,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/proceso.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="474" column="30" lean-forward="true" selection-start-line="474" selection-start-column="30" selection-end-line="474" selection-end-column="30" />
+        <state relative-caret-position="183">
+          <caret line="474" column="30" selection-start-line="474" selection-start-column="30" selection-end-line="474" selection-end-column="30" />
           <folding>
             <element signature="n#STYLE#0;n#div#0;n#article#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#STYLE#0;n#div#0;n#article#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
