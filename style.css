@@ -1144,6 +1144,13 @@ progress::-webkit-progress-value {
     #proceso .tueste-italiano h3 {
         font-size: 13px;
     }
+    .humedo{
+        border-bottom: 2px solid var(--white);
+        padding-bottom: var(--padding-top-bottom);
+    }
+    .seco{
+        padding-top: var(--padding-top-bottom);
+    }
 }
 
 /* —————— AQUÍ EMPIEZAN ESTILOS DE NOSOTROS—————— */
