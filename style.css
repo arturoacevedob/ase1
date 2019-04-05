@@ -1174,6 +1174,10 @@ progress::-webkit-progress-value {
     border-bottom: 2px solid var(--yellow);
     padding-bottom: 9%;
 }
+#nosotros .mision p, #nosotros .vision p{
+    padding-left: 1.5%;
+    text-align: left;
+}
 
 .desktop-family h3 {
     display: none;
