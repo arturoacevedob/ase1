@@ -986,6 +986,13 @@ progress::-webkit-progress-value {
         left: 76%;
 
     }
+    .humedo{
+        border-right: 2px solid var(--white);
+        padding-right: 16%;
+    }
+    .seco{
+        padding-left: 13%;
+    }
 
 }
 
@@ -1137,6 +1144,13 @@ progress::-webkit-progress-value {
     #proceso .tueste-italiano h3 {
         font-size: 13px;
     }
+    .humedo{
+        border-bottom: 2px solid var(--white);
+        padding-bottom: var(--padding-top-bottom);
+    }
+    .seco{
+        padding-top: var(--padding-top-bottom);
+    }
 }
 
 /* —————— AQUÍ EMPIEZAN ESTILOS DE NOSOTROS—————— */
@@ -1174,6 +1188,10 @@ progress::-webkit-progress-value {
     border-bottom: 2px solid var(--yellow);
     padding-bottom: 9%;
 }
+#nosotros .mision p, #nosotros .vision p{
+    padding-left: 1.5%;
+    text-align: left;
+}
 
 .desktop-family h3 {
     display: none;
@@ -1194,7 +1212,7 @@ progress::-webkit-progress-value {
 }
 
 #nosotros .tsumbal img {
-    width: 40%;
+    width: 24%;
 }
 
 #nosotros .batsil-maya {

@@ -29,12 +29,13 @@
 .centered-y {
   position: absolute;
   width: 100%;
-  top: 50%;
+  top: 52%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
 .distribution-map {
+  padding: 20px;
   position: relative;
   width: 100%;
   box-sizing: border-box;

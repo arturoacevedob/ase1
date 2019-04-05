@@ -478,10 +478,12 @@ input {
 }
 
 .desktop-family .yomol p {
-    padding: 0 30%;
+    padding: 0 35%;
 }
-
-.desktop-family p {
+.shorter-text-space p{
+    padding: 0 20%;
+}
+.not-so-short-text p {
     padding: 0 12%;
 }
 
@@ -1167,7 +1169,7 @@ form textarea {
     }
 
     .grid-2-left-text > .wrapper-text {
-        padding: 0 15% 0;
+        padding: 0 15% 0 10%;
         grid-column: 1 / 2;
     }
 
