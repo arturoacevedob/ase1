@@ -986,6 +986,13 @@ progress::-webkit-progress-value {
         left: 76%;
 
     }
+    .humedo{
+        border-right: 2px solid var(--white);
+        padding-right: 16%;
+    }
+    .seco{
+        padding-left: 13%;
+    }
 
 }
 
