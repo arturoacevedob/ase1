@@ -13,8 +13,9 @@
     padding: var(--padding-top-bottom) 0;
 }
 
-.container.no-padding-top-bottom {
-    padding: 0 var(--padding-left-right);
+.no-padding-top-bottom {
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .container.no-padding-top {
@@ -103,12 +104,12 @@ legend {
 
 /*** LABEL ***/
 #menu-mobile label {
-    width: 25px;
+    width: 30px;
     cursor: pointer;
     display: block;
-    padding: 1em;
+    padding-top: 1em;
     position: absolute;
-    right: 4vmax;
+    right: 3vmax;
     top: calc(2vmax + 10px);
 }
 
@@ -240,7 +241,7 @@ legend {
 
 .container.gridbigproduct {
     padding-top: 1em;
-    padding-bottom: 1em;
+    padding-bottom: 0em;
 }
 
 .extra-articles {
