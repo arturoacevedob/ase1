@@ -54,6 +54,17 @@ h1, h2, h3, h4, h5, h6, p {
     justify-content: space-between;
 }
 
+.grid-tabs {
+    width: max-content;
+    margin: auto;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.grid-tabs > * {
+    padding: 0 2em 0;
+}
+
 /* Wrappers */
 .wrapper {
     border: 1px solid black;
@@ -91,6 +102,12 @@ h1, h2, h3, h4, h5, h6, p {
 /*            > this right-justifies the last div (tracking number) */
 .wrapper.pending-item div:last-of-type {
     display: grid;
+    justify-content: right;
+}
+
+.grid-end {
+    display: grid;
+    grid-auto-flow: column;
     justify-content: right;
 }
 

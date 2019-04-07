@@ -31,9 +31,9 @@
     <h2 style="display: none">Menú</h2>
     <div><img alt="Logo de Bats'il Maya" src="../images/logos/batsil_maya_logo.svg"></div>
     <ul>
-        <li><a href="clientes-backend.html" target="_self">Clientes</a></li>
+        <li><a href="clients-backend.html" target="_self">Clientes</a></li>
         <li><a href="pedidos-backend.html" target="_self">Pedidos</a></li>
-        <li><a href="productos-backend.html" target="_self">Productos</a></li>
+        <li><a href="products-backend.html" target="_self">Productos</a></li>
     </ul>
 </nav>
 
@@ -43,16 +43,19 @@
         <h1>Pedidos</h1>
     </div>
 
-    <ul>
-        <li><a id="pending">Pendiente</a></li>
-        <li><a id="enroute">En Ruta</a></li>
-        <li><a id="delivered">Entregado</a></li>
+    <ul class="grid-tabs">
+        <li><a class="active" href="orders-pending-backend.html" id="pending" target="_self">Pendiente</a></li>
+        <li><a href="orders-enroute-backend.html" id="enroute" target="_self">En Ruta</a></li>
+        <li><a href="orders-delivered-backend.html" id="delivered" target="_self">Entregado</a></li>
     </ul>
 
     <div class="container" id="pendingContainer">
 
         <div class="grid-2-space-between">
-            <input placeholder="Buscar" type="search">
+            <div>
+                <label for="search"></label>
+                <input id="search" placeholder="Buscar" type="search">
+            </div>
             <button>Agregar pedido</button>
         </div>
 
@@ -142,35 +145,15 @@
                     </table>
                 </div>
             </div>
-            <div>
-                <label for="tracking-number">Número de rastreo</label>
-                <input id="tracking-number" type="text">
+            <div class="grid-end">
+                <label class="label-left" for="tracking-number">Número de rastreo</label>
+                <input class="input-right" id="tracking-number" type="text">
             </div>
         </div>
 
     </div>
 
 </div>
-
-<script>
-    $(document).ready(function () {
-
-        $('#tabs li a:not(:first)').addClass('inactive');
-        $('.container').hide();
-        $('.container:first').show();
-
-        $('#tabs li a').click(function () {
-            var t = $(this).attr('id');
-            if ($(this).hasClass('inactive')) { //this is the start of our condition
-                $('#tabs li a').addClass('inactive');
-                $(this).removeClass('inactive');
-                $('.container').hide();
-                $('#' + t + 'Container').fadeIn('slow');
-            }
-        });
-
-    });
-</script>
 
 </body>
 </html>
