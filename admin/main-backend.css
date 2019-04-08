@@ -41,6 +41,10 @@ h1, h2, h3, h4, h5, h6, p {
     order: 2;
 }
 
+.hide-label {
+    display: none;
+}
+
 /* Main grid */
 .main-grid {
     display: grid;
@@ -78,9 +82,14 @@ h1, h2, h3, h4, h5, h6, p {
     grid-auto-flow: row;
 }
 
-/*      Wrappers > En ruta */
+/*      Wrappers > En route */
 
-/*      Wrappers > Entrega */
+/*      Wrappers > Delivered */
+
+.grid-column {
+    display: grid;
+    grid-auto-flow: column;
+}
 
 /* Header */
 
