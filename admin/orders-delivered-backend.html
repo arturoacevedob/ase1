@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html dir="ltr" lang="en">
+<html dir="ltr" lang="en" >
 
 <head>
     <!-- Metadata -->
@@ -35,7 +35,7 @@
     <div><img alt="Logo de Bats'il Maya" src="../images/logos/batsil_maya_logo.svg"></div>
     <ul>
         <li><a href="clients-backend.html" target="_self">Clientes</a></li>
-        <li><a href="pedidos-backend.html" target="_self">Pedidos</a></li>
+        <li><a href="orders-pending-backend.html" target="_self">Pedidos</a></li>
         <li><a href="products-backend.html" target="_self">Productos</a></li>
     </ul>
 </nav>
@@ -56,7 +56,7 @@
 
         <div>
             <div>
-                <label for="search"></label>
+                <label class="hide-label" for="search">Buscar</label>
                 <input id="search" placeholder="Buscar" type="search">
             </div>
             <div>
@@ -71,13 +71,11 @@
             </div>
         </div>
 
-        <div class="wrapper pending-item">
+        <div class="grid-column">
             <div class="header">
-                <h3>#236</h3>
-                <p>Hoy - 26/02/19</p>
-                <p class="client">Capeltic <a href="">»</a></p>
+
             </div>
-            <div class="grid-two-thirds">
+            <div class="delivered-item">
                 <div>
                     <h4>Pedido</h4>
                     <table class="order-table">
@@ -181,12 +179,12 @@
             startDate: start,
             endDate: end,
             ranges: {
-                'Today': [moment(), moment()],
-                'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-                'Last 7 Days': [moment().subtract(6, 'days'), moment()],
-                'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-                'This Month': [moment().startOf('month'), moment().endOf('month')],
-                'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                'Hoy': [moment(), moment()],
+                'Ayer': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                'Últimos 7 días': [moment().subtract(6, 'days'), moment()],
+                'Últimos 30 días': [moment().subtract(29, 'days'), moment()],
+                'Este mes': [moment().startOf('month'), moment().endOf('month')],
+                'Último mes': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
             }
         }, cb);
 
