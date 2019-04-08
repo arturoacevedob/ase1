@@ -5,10 +5,10 @@ function connect() {
     global $connection;
 
     // Datos del servidor MySQL.
-    $host   = "[database-host-here]";
-    $db     = "[database-name-here]";
-    $usr    = "[user-here]";
-    $pwd    = "[pass-here]";
+    $host   = "198.91.81.5";
+    $db     = "arturox7_dci3db";
+    $usr    = "arturox7";
+    $pwd    = "clerk.obsess.footrace.claw.monitory";
     
     $connection = mysqli_connect($host, $usr, $pwd, $db) or die("No se pudo conectar al servidor MySQL.");
     // Permite visualizar los acentos y caracteres especiales.

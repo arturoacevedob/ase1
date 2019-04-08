@@ -3,6 +3,13 @@ ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
 include 'connection.php';
+session_start();
+
+if(!isset($_SESSION['user'])) {
+    http_response_code(401);
+    echo "Acceso no autorizado.";
+    die();
+}
 
 if(isset($_POST['insert'])) {
     $uploadOk = 0;
@@ -12,7 +19,7 @@ if(isset($_POST['insert'])) {
     $brand = $_POST['brand'];
 
     if($_FILES['image']['name'] != "") {
-        $fileName = $_FILES['image']['name'];
+        $fileName = strtolower($_FILES['image']['name']);
         $tempFile = $_FILES['image']['tmp_name'];
         $fileNamePath = 'images/' . $fileName;
 
@@ -22,7 +29,7 @@ if(isset($_POST['insert'])) {
             echo "Error al cargar el archivo.";
         }
     }
-    echo "Pasó carga de imagen.";
+    
     if($uploadOk == 1) {
         $q = "insert into products (name, description, price, brand, image) values ('$name','$description','$price','$brand','$fileNamePath')";
         execute($q);
@@ -41,7 +48,7 @@ if(isset($_POST['insert'])) {
         Descripción: <input type='text' name='description'> <br>
         Precio: <input type='number' name='price' step='any'> <br>
         Marca: <input type='text' name='brand'> <br>
-        Foto: <input type='file' name='image'> <br>
+        Foto: <input type='file' name='image'> <br><br>
         <input type='submit' value='Crear producto'>
     </form>
 </body>
