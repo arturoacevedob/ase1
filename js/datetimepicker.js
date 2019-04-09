@@ -104,7 +104,7 @@
             this.minView = j.minView
         } else {
             if ("minView" in this.element.data()) {
-                this.minView = this.element.data("min-view")
+                this.minView = this.element.data("min-collapsed-view")
             }
         }
         this.minView = c.convertViewMode(this.minView);
@@ -113,7 +113,7 @@
             this.maxView = j.maxView
         } else {
             if ("maxView" in this.element.data()) {
-                this.maxView = this.element.data("max-view")
+                this.maxView = this.element.data("max-collapsed-view")
             }
         }
         this.maxView = c.convertViewMode(this.maxView);
@@ -122,7 +122,7 @@
             this.wheelViewModeNavigation = j.wheelViewModeNavigation
         } else {
             if ("wheelViewModeNavigation" in this.element.data()) {
-                this.wheelViewModeNavigation = this.element.data("view-mode-wheel-navigation")
+                this.wheelViewModeNavigation = this.element.data("collapsed-view-mode-wheel-navigation")
             }
         }
         this.wheelViewModeNavigationInverseDirection = false;
@@ -130,7 +130,7 @@
             this.wheelViewModeNavigationInverseDirection = j.wheelViewModeNavigationInverseDirection
         } else {
             if ("wheelViewModeNavigationInverseDirection" in this.element.data()) {
-                this.wheelViewModeNavigationInverseDirection = this.element.data("view-mode-wheel-navigation-inverse-dir")
+                this.wheelViewModeNavigationInverseDirection = this.element.data("collapsed-view-mode-wheel-navigation-inverse-dir")
             }
         }
         this.wheelViewModeNavigationDelay = 100;
@@ -138,7 +138,7 @@
             this.wheelViewModeNavigationDelay = j.wheelViewModeNavigationDelay
         } else {
             if ("wheelViewModeNavigationDelay" in this.element.data()) {
-                this.wheelViewModeNavigationDelay = this.element.data("view-mode-wheel-navigation-delay")
+                this.wheelViewModeNavigationDelay = this.element.data("collapsed-view-mode-wheel-navigation-delay")
             }
         }
         this.startViewMode = 2;
@@ -146,7 +146,7 @@
             this.startViewMode = j.startView
         } else {
             if ("startView" in this.element.data()) {
-                this.startViewMode = this.element.data("start-view")
+                this.startViewMode = this.element.data("start-collapsed-view")
             }
         }
         this.startViewMode = c.convertViewMode(this.startViewMode);
@@ -156,7 +156,7 @@
             this.viewSelect = j.viewSelect
         } else {
             if ("viewSelect" in this.element.data()) {
-                this.viewSelect = this.element.data("view-select")
+                this.viewSelect = this.element.data("collapsed-view-select")
             }
         }
         this.viewSelect = c.convertViewMode(this.viewSelect);

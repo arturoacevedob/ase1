@@ -25,14 +25,15 @@
 }
 
 /* Resets */
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, td, th {
     margin: 0;
+    padding: 0;
 }
 
 /* Colors */
 
 
-/* Constant classes */
+/* Utility classes */
 .order-1 {
     order: 1;
 }
@@ -41,8 +42,38 @@ h1, h2, h3, h4, h5, h6, p {
     order: 2;
 }
 
-.hide-label {
+.hide {
+    visibility: hidden;
+}
+
+.kill {
     display: none;
+}
+
+/* Unit Classes */
+.weight:after {
+    content: " KG";
+}
+
+.currency:before {
+    content: "$";
+}
+
+.discount:before {
+    content: "-$";
+}
+
+.percentage:after {
+    content: "%";
+}
+
+.units:after {
+    content: 'u';
+}
+
+/* Icon Classes */
+.chevron-width {
+    width: 15px;
 }
 
 /* Main grid */
@@ -86,11 +117,6 @@ h1, h2, h3, h4, h5, h6, p {
 
 /*      Wrappers > Delivered */
 
-.grid-column {
-    display: grid;
-    grid-auto-flow: column;
-}
-
 /* Header */
 
 /*      Header > Pendiente */
@@ -109,29 +135,26 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /*            > this right-justifies the last div (tracking number) */
-.wrapper.pending-item div:last-of-type {
-    display: grid;
-    justify-content: right;
-}
-
 .grid-end {
     display: grid;
     grid-auto-flow: column;
     justify-content: right;
 }
 
-/*  grid-two-thirds (Contenido Principal de Pendiente) */
+/*  Grid Setups */
 .grid-two-thirds {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
 }
 
-/* Pedido Table */
-.order-table {
+.grid-column {
+    display: grid;
+    grid-auto-flow: column;
 }
 
-table > thead {
-    display: none;
+/* Table Classes */
+caption {
+    text-align: left;
 }
 
 table {
@@ -139,14 +162,51 @@ table {
     border-spacing: 0;
 }
 
-table td {
-    width: fit-content;
+th {
+    text-align: left;
 }
 
-tr > td:nth-child(n+2) {
+/*      Table Classes > Order Table */
+.order-table {
+
+}
+
+.order-table > thead {
+    display: none;
+}
+
+.order-table tr > td:nth-child(n+3) {
+    /* Aligns from the quantity column to the right */
     text-align: right;
 }
 
-.pseudo-table span:last-of-type {
-    float: right;
+/*      Table Classes > Expandable Table */
+table.expandable-table > tbody > tr.collapsed-view td {
+    cursor: pointer;
+}
+
+table.expandable-table > tbody > tr.collapsed-view td:last-child {
+    background: transparent url(icons/chevron-down.svg) center no-repeat;
+    padding-right: 10px;
+    transition: all .3s var(--ease);
+}
+
+table.expandable-table > tbody > tr.collapsed-view:hover {
+    background: lightgrey;
+}
+
+table.expandable-table > tbody > tr.collapsed-view.open {
+    background: lightgray;
+}
+
+table.expandable-table > tbody > tr.collapsed-view.open td:last-child {
+    transform: rotate3d(1, 0, 0, 180deg);
+}
+
+table.expandable-table > tbody > tr.expanded-view {
+    display: none;
+}
+
+table.expandable-table > tbody > tr.expanded-view.open {
+    display: table-row;
 }

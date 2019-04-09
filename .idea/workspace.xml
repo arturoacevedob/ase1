@@ -8,9 +8,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b0b4be1-8d7c-4364-8440-568a85826da6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/admin/icons/chevron-down.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/connection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/main-backend.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/main-backend.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/orders-delivered-backend.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/orders-delivered-backend.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/orders-enroute-backend.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/orders-enroute-backend.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/orders-pending-backend.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/orders-pending-backend.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/datetimepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/datetimepicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testing/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/testing/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -39,23 +44,55 @@
     <favorites_list name="ASE I" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.54567116">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/admin/main-backend.css">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/admin/orders-pending-backend.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="930">
-                  <caret line="62" column="17" lean-forward="true" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
+                <state relative-caret-position="275">
+                  <caret line="153" column="21" lean-forward="true" selection-start-line="153" selection-start-column="21" selection-end-line="153" selection-end-column="21" />
+                  <folding>
+                    <element signature="n#style#0;n#h2#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/admin/connection.php">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/admin/orders-enroute-backend.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="150">
-                  <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+                <state relative-caret-position="338">
+                  <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+                  <folding>
+                    <element signature="n#style#0;n#h2#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#table#0;n#div#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#table#1;n#div#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#table#2;n#div#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/admin/orders-delivered-backend.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="141">
+                  <caret line="207" column="4" selection-start-line="207" selection-start-column="4" selection-end-line="211" selection-end-column="7" />
+                  <folding>
+                    <element signature="n#style#0;n#h2#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#div#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/admin/js/moment.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="90">
+                  <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
                 </state>
               </provider>
             </entry>
@@ -63,12 +100,26 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+        <leaf>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/testing/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-2964">
+                  <caret line="102" selection-start-line="102" selection-end-line="102" />
+                  <folding>
+                    <element signature="n#thead#0;n#table#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#tr#1;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/admin/main-backend.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="399">
-                  <caret line="79" column="16" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
+                <state relative-caret-position="717">
+                  <caret line="200" lean-forward="true" selection-start-line="200" selection-end-line="200" />
                 </state>
               </provider>
             </entry>
@@ -88,24 +139,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>test</find>
-      <find>outline</find>
-      <find>card</find>
-      <find>crazy</find>
-      <find>grid-twoco</find>
-      <find>&lt;h3 class=&quot;h3-small&quot;&gt;Zedec Santa Fe&lt;/h3&gt;</find>
-      <find>14px</find>
-      <find>space-be</find>
-      <find>padding-top</find>
-      <find>.padding-top</find>
-      <find>order</find>
-      <find>header</find>
-      <find>clients</find>
-      <find>etapa-envio</find>
-      <find>Tokyo</find>
-      <find>pendingContainer</find>
-      <find>#nosotros</find>
-      <find>cart</find>
       <find>cart-item</find>
       <find>#premium</find>
       <find>wrapper-text</find>
@@ -118,10 +151,26 @@
       <find>809</find>
       <find>custom range</find>
       <find>cancel</find>
+      <find>grid-delivered</find>
+      <find>moment</find>
+      <find>moment.locale</find>
+      <find>es</find>
+      <find>es</find>
+      <find>locale</find>
+      <find>january</find>
+      <find>mañamna</find>
+      <find>&quot;</find>
+      <find>h4</find>
+      <find>monthname</find>
+      <find>view</find>
+      <find>order-ta</find>
+      <find>const</find>
+      <find>grid-del</find>
+      <find>grid-colu</find>
+      <find>container</find>
+      <find>fold-table</find>
     </findStrings>
     <replaceStrings>
-      <replace>div</replace>
-      <replace>#menu-mobile</replace>
       <replace>menu-mobile-content</replace>
       <replace>--container-padding</replace>
       <replace>contacto@batsilmaya.org</replace>
@@ -150,6 +199,8 @@
       <replace>0</replace>
       <replace>grid-auto-columns: calc(50% - 4% * 2);</replace>
       <replace>Entregado</replace>
+      <replace>'</replace>
+      <replace>expandable-table</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/images/logos</dir>
@@ -167,8 +218,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/testing/mobile-menu.css" />
-        <option value="$PROJECT_DIR$/images/logos/batsil_maya_logo.svg" />
         <option value="$PROJECT_DIR$/normalize.css" />
         <option value="$PROJECT_DIR$/grid-backend.css" />
         <option value="$PROJECT_DIR$/clientes.html" />
@@ -197,7 +246,6 @@
         <option value="$PROJECT_DIR$/cuenta-informacion.html" />
         <option value="$PROJECT_DIR$/backend/pedidos-backend.html" />
         <option value="$PROJECT_DIR$/backend/main-backend.css" />
-        <option value="$PROJECT_DIR$/testing/index.html" />
         <option value="$PROJECT_DIR$/proceso.html" />
         <option value="$PROJECT_DIR$/carrito.html" />
         <option value="$PROJECT_DIR$/cuenta-envio.html" />
@@ -212,12 +260,15 @@
         <option value="$USER_HOME$/Desktop/index.html" />
         <option value="$PROJECT_DIR$/admin/pedidos-backend.html" />
         <option value="$PROJECT_DIR$/admin/pedidos-pendiente-backend.html" />
-        <option value="$PROJECT_DIR$/admin/orders-enroute-backend.html" />
-        <option value="$PROJECT_DIR$/admin/orders-pending-backend.html" />
+        <option value="$PROJECT_DIR$/admin/connection.php" />
+        <option value="$PROJECT_DIR$/testing/style.css" />
         <option value="$PROJECT_DIR$/admin/js/daterangepicker.js" />
+        <option value="$PROJECT_DIR$/testing/index.html" />
+        <option value="$PROJECT_DIR$/admin/js/moment.js" />
         <option value="$PROJECT_DIR$/admin/orders-delivered-backend.html" />
         <option value="$PROJECT_DIR$/admin/main-backend.css" />
-        <option value="$PROJECT_DIR$/admin/connection.php" />
+        <option value="$PROJECT_DIR$/admin/orders-enroute-backend.html" />
+        <option value="$PROJECT_DIR$/admin/orders-pending-backend.html" />
       </list>
     </option>
   </component>
@@ -253,7 +304,7 @@
               <item name="ASE I" type="b2602c69:ProjectViewProjectNode" />
               <item name="ASE I" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="icons" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ASE I" type="b2602c69:ProjectViewProjectNode" />
@@ -265,6 +316,16 @@
               <item name="ASE I" type="462c0819:PsiDirectoryNode" />
               <item name="testing" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ASE I" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ASE I" type="462c0819:PsiDirectoryNode" />
+              <item name="testing" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ASE I" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -275,7 +336,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin/icons" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.path.for.package.stylelint" value="project" />
@@ -288,15 +349,16 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/admin/icons" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/testing" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/admin/icons" />
+      <recent name="$PROJECT_DIR$/testing" />
+      <recent name="$PROJECT_DIR$/admin" />
       <recent name="$PROJECT_DIR$/admin/js" />
       <recent name="$PROJECT_DIR$/js" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/backend" />
-      <recent name="$PROJECT_DIR$/images/inicio" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -356,21 +418,7 @@
       <workItem from="1554228491680" duration="17511000" />
       <workItem from="1554474733880" duration="1970000" />
       <workItem from="1554499763508" duration="6626000" />
-      <workItem from="1554726864084" duration="387000" />
-    </task>
-    <task id="LOCAL-00039" summary="ADDED A TIME DATE PICKER in testing.">
-      <created>1553391830891</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1553391830891</updated>
-    </task>
-    <task id="LOCAL-00040" summary="ADDED A TIME DATE PICKER in testing.">
-      <created>1553392386406</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1553392386406</updated>
+      <workItem from="1554726864084" duration="1333000" />
     </task>
     <task id="LOCAL-00041" summary="FIXED HOMEPAGE.">
       <created>1553392467326</created>
@@ -701,11 +749,25 @@
       <option name="project" value="LOCAL" />
       <updated>1554623904562</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="added new admin stuff from our copy paste lord Abel *suelo*">
+      <created>1554727464257</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1554727464258</updated>
+    </task>
+    <task id="LOCAL-00089" summary="mooooore abeeeeel valllllleee">
+      <created>1554727495727</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1554727495727</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="216152000" />
+    <option name="totallyTimeSpent" value="232096000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -717,10 +779,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25605816" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25496426" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25655282" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.25655282" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -842,8 +904,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/js/tiny-date-picker" />
     </ignored-roots>
-    <MESSAGE value="More conflict solving. Gridthree2 align start." />
-    <MESSAGE value="Fixed gutter declaration." />
     <MESSAGE value="A better fix for visited conflicts." />
     <MESSAGE value="Formatted grid.css." />
     <MESSAGE value="Advances in ORGANICO and fixed CLIENTES h2 padding." />
@@ -867,30 +927,14 @@
     <MESSAGE value="Fixed map?" />
     <MESSAGE value="Fixed some paddings and organico's grid." />
     <MESSAGE value="advances in backend HTMLs" />
-    <option name="LAST_COMMIT_MESSAGE" value="advances in backend HTMLs" />
+    <MESSAGE value="added new admin stuff from our copy paste lord Abel *suelo*" />
+    <MESSAGE value="mooooore abeeeeel valllllleee" />
+    <option name="LAST_COMMIT_MESSAGE" value="mooooore abeeeeel valllllleee" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/testing/datetimepicker.js" />
-    <entry file="file://$PROJECT_DIR$/testing/datetimepicker.css" />
-    <entry file="file://$USER_HOME$/Downloads/bootstrap-datetimepicker-master/sample in bootstrap v3/index.html" />
-    <entry file="file://$PROJECT_DIR$/js/email-autocomplete.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2190">
-          <caret line="146" lean-forward="true" selection-start-line="146" selection-end-line="146" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datetimepicker.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1546">
-          <caret line="441" column="17" selection-start-line="441" selection-start-column="17" selection-end-line="441" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style 2.css" />
     <entry file="file://$PROJECT_DIR$/js/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -1165,23 +1209,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/create.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="43" selection-start-line="43" selection-end-line="49" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/create.php" />
     <entry file="file://$PROJECT_DIR$/carrito.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
@@ -1202,16 +1230,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3525">
           <caret line="235" column="1" lean-forward="true" selection-start-line="235" selection-start-column="1" selection-end-line="235" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testing/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-          <folding>
-            <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1241,26 +1259,6 @@
     </entry>
     <entry file="file://$USER_HOME$/Desktop/style.css" />
     <entry file="file://$USER_HOME$/Desktop/index.html" />
-    <entry file="file://$PROJECT_DIR$/admin/orders-enroute-backend.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="154" column="6" selection-start-line="154" selection-start-column="6" selection-end-line="154" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#h2#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/orders-pending-backend.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="156" selection-start-line="156" selection-end-line="156" />
-          <folding>
-            <element signature="n#style#0;n#h2#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
@@ -1272,34 +1270,113 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/admin/connection.php" />
+    <entry file="file://$PROJECT_DIR$/admin/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-340">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testing/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="1" lean-forward="true" selection-end-line="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/accordion-table/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="12" lean-forward="true" selection-end-line="578" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testing/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/admin/js/daterangepicker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-763">
-          <caret line="73" column="28" selection-start-line="73" selection-start-column="28" selection-end-line="73" selection-end-column="28" />
+        <state relative-caret-position="-2951">
+          <caret line="95" column="61" selection-start-line="95" selection-start-column="61" selection-end-line="95" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/js/moment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/icons/chevron-down.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testing/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2964">
+          <caret line="102" selection-start-line="102" selection-end-line="102" />
+          <folding>
+            <element signature="n#thead#0;n#table#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#tr#1;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/orders-delivered-backend.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="74" column="16" selection-start-line="74" selection-start-column="13" selection-end-line="74" selection-end-column="16" />
+        <state relative-caret-position="141">
+          <caret line="207" column="4" selection-start-line="207" selection-start-column="4" selection-end-line="211" selection-end-column="7" />
           <folding>
             <element signature="n#style#0;n#h2#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/main-backend.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="62" column="17" lean-forward="true" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
+        <state relative-caret-position="717">
+          <caret line="200" lean-forward="true" selection-start-line="200" selection-end-line="200" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/connection.php">
+    <entry file="file://$PROJECT_DIR$/admin/orders-enroute-backend.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+        <state relative-caret-position="338">
+          <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+          <folding>
+            <element signature="n#style#0;n#h2#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#table#0;n#div#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#table#1;n#div#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#table#2;n#div#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/orders-pending-backend.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="153" column="21" lean-forward="true" selection-start-line="153" selection-start-column="21" selection-end-line="153" selection-end-column="21" />
+          <folding>
+            <element signature="n#style#0;n#h2#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

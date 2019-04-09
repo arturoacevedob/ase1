@@ -20,7 +20,7 @@
     <!-- Link a CSS -->
     <link href="main-backend.css" rel="stylesheet">
 
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="../js/jquery.js"></script>
 
     <title>Products</title>
 </head>
@@ -49,8 +49,6 @@
         <li><a href="orders-delivered-backend.html" id="delivered" target="_self">Entregado</a></li>
     </ul>
 
-    <div class="container" id="pendingContainer">
-
         <div>
             <div>
                 <label for="search"></label>
@@ -58,101 +56,149 @@
             </div>
         </div>
 
-        <div class="wrapper pending-item">
-            <div class="header">
-                <h3>#236</h3>
-                <p>Hoy - 26/02/19</p>
-                <p class="client">Capeltic <a href="">»</a></p>
-            </div>
-            <div class="grid-two-thirds">
-                <div>
-                    <h4>Pedido</h4>
+    <table class="expandable-table">
+        <thead>
+        <tr>
+            <th>Pedido</th>
+            <th>Cliente</th>
+            <th>Orden</th>
+            <th>Dirección</th>
+            <th>Fecha de entrega</th>
+            <th>No. de rastreo</th>
+            <th></th>
+            <th class="chevron-width"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="collapsed-view">
+            <td>#236</td>
+            <td>Capeltic <span>»</span></td>
+            <td>30u, 24KG, $4320 <span>»</span></td>
+            <td>Zedec Santa Fe</td>
+            <td>26/02/18</td>
+            <td>0823783459209</td>
+            <td>
+                <button>Enviar a <strong>Entregado</strong></button>
+            </td>
+            <td>• • •</td>
+            <td></td>
+        </tr>
+        <tr class="expanded-view">
+            <td colspan="9">
+                <div class="grid-two-thirds expanded-view-content">
                     <table class="order-table">
+                        <caption>Orden</caption>
                         <thead>
                         <tr>
                             <th>Artículo</th>
-                            <th>Peso</th>
                             <th>Molido</th>
                             <th>Cantidad</th>
+                            <th>Peso</th>
                             <th>Precio</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
                             <td>Orgánico</td>
-                            <td>1/4 KG</td>
-                            <td>Americano</td>
+                            <td>Espresso</td>
                             <td>10 x</td>
-                            <td>180</td>
+                            <td class="weight">1/4</td>
+                            <td class="currency">180</td>
                         </tr>
                         <tr>
                             <td>Gourmet</td>
-                            <td>1/2 KG</td>
                             <td>Americano</td>
                             <td>8 x</td>
-                            <td>220</td>
+                            <td class="weight">1/2</td>
+                            <td class="currency">220</td>
                         </tr>
                         <tr>
                             <td>Especialidad</td>
-                            <td>1/4 KG</td>
-                            <td>Americano</td>
+                            <td>Espresso</td>
                             <td>6 x</td>
-                            <td>250</td>
+                            <td class="weight">1/4</td>
+                            <td class="currency">250</td>
                         </tr>
                         <tr>
                             <td>Especialidad</td>
-                            <td>1 KG</td>
                             <td>Americano</td>
                             <td>6 x</td>
-                            <td>250</td>
+                            <td class="weight">1</td>
+                            <td class="currency">250</td>
+                        </tr>
+                        </tbody>
+                        <tfoot>
+                        <tr>
+                            <th>Descuento del <span class="percentage">15</span></th>
+                            <td colspan="3"></td>
+                            <td class="discount">759</td>
+                        </tr>
+                        <tr>
+                            <th>Total</th>
+                            <td></td>
+                            <td class="units">30</td>
+                            <td class="weight">24</td>
+                            <td class="currency">4320</td>
+                        </tr>
+                        </tfoot>
+                    </table>
+                    <table>
+                        <caption>Dirección</caption>
+                        <thead>
+                        <tr>
+                            <th>Capeltic Santa Fe</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Joaquín Gallo 258</td>
+                        </tr>
+                        <tr>
+                            <td>CDMX, 01219</td>
+                        </tr>
+                        <tr>
+                            <td>Ciudad de México, México</td>
                         </tr>
                         </tbody>
                     </table>
-                    <div class="pseudo-table">Descuento <span>15%</span><span>-$759</span></div>
-                    <div class="pseudo-table">Total<span>$4301</span></div>
-                </div>
-                <div>
-                    <h4>Dirección de envío</h4>
-                    <p>Joaquín Gallo 258<br>
-                        Santa Fe, Zedec Sta Fé<br>
-                        01219 Santa Fe<br>
-                        CDMX</p>
-                </div>
-                <div>
-                    <h4>Datos</h4>
-                    <table class="item data-table">
+                    <table>
+                        <caption>Fechas</caption>
                         <thead>
                         <tr>
-                            <th>Etapa de envío</th>
+                            <th>Estatus</th>
                             <th>Fecha</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
                             <td>Pendiente</td>
-                            <td>Hoy - 26/02/19</td>
+                            <td>26/02/19</td>
                         </tr>
                         <tr>
-                            <td>En ruta</td>
-                            <td>-</td>
+                            <td>En Ruta</td>
+                            <td>26/02/19</td>
                         </tr>
                         <tr>
                             <td>Entregado</td>
-                            <td>-</td>
+                            <td>26/02/19</td>
                         </tr>
                         </tbody>
                     </table>
                 </div>
-            </div>
-            <div class="grid-end">
-                <label class="label-left" for="tracking-number">Número de rastreo</label>
-                <input class="input-right" id="tracking-number" type="text">
-            </div>
-        </div>
-
-    </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
 
 </div>
+
+<script>
+    $(function () {
+        $(".expandable-table tr.collapsed-view").on("click", function () {
+            $(this).toggleClass("open").next(".expanded-view").toggleClass("open");
+        });
+    });
+</script>
 
 </body>
 </html>
