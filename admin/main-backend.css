@@ -243,6 +243,13 @@ table.expandable-table > tbody > tr.expanded-view.open {
     display: table-row;
 }
 
+/*      Table Classes > Last Orders Table */
+.last-orders-table > div > div {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+}
+
 /* Form Classes */
 textarea {
     padding: 0;
