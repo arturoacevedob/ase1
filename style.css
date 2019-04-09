@@ -1358,7 +1358,7 @@ progress::-webkit-progress-value {
 /* —————— AQUÍ EMPIEZAN ESTILOS DE CUENTA—————— */
 #cuenta header {
     background: url(images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
-    grey 70% 71% / cover no-repeat;
+    url(images/cuenta/header_cuenta_batsil_maya.jpg) 70% 71% / cover no-repeat;
 }
 
 /* —————— AQUÍ EMPIEZAN ESTILOS DE INICIO DE SESIÓN—————— */
@@ -1366,3 +1366,4 @@ progress::-webkit-progress-value {
     background: url(images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
     url(images/login/header_iniciar_sesión_batsil_maya.jpg) 70% 71% / cover no-repeat;;
 }
+
