@@ -4,14 +4,13 @@
     <option name="AUTOSCROLL_TO_SOURCE" value="true" />
   </component>
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/style.css" description="text-decoration: underline;" line="221" />
+    <bookmark url="file://$PROJECT_DIR$/style.css" description="text-decoration: underline;" line="229" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b0b4be1-8d7c-4364-8440-568a85826da6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/clients-backend.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/clients-backend.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/main-backend.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/main-backend.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cuenta-envio.html" beforeDir="false" afterPath="$PROJECT_DIR$/cuenta-envio.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/grid.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -43,11 +42,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/admin/clients-backend.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="295">
-                  <caret line="126" column="28" lean-forward="true" selection-start-line="126" selection-start-column="28" selection-end-line="126" selection-end-column="28" />
+                <state relative-caret-position="350">
+                  <caret line="130" column="51" lean-forward="true" selection-start-line="130" selection-start-column="51" selection-end-line="130" selection-end-column="51" />
                   <folding>
                     <element signature="n#style#0;n#h2#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#tr#0;n#tbody#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -58,11 +57,6 @@
                   </folding>
                 </state>
               </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/images/logos/visa.svg">
-              <provider selected="true" editor-type-id="images" />
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
@@ -109,7 +103,7 @@
             <entry file="file://$PROJECT_DIR$/grid.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="-3656">
-                  <caret line="587" column="1" lean-forward="true" selection-start-line="587" selection-start-column="1" selection-end-line="587" selection-end-column="1" />
+                  <caret line="591" column="1" lean-forward="true" selection-start-line="591" selection-start-column="1" selection-end-line="591" selection-end-column="1" />
                 </state>
               </provider>
             </entry>
@@ -117,8 +111,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="15">
-                  <caret line="86" column="23" selection-start-line="86" selection-start-column="23" selection-end-line="86" selection-end-column="23" />
+                <state relative-caret-position="45">
+                  <caret line="88" column="23" selection-start-line="88" selection-start-column="23" selection-end-line="88" selection-end-column="23" />
                 </state>
               </provider>
             </entry>
@@ -126,8 +120,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/admin/main-backend.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="241">
-                  <caret line="217" lean-forward="true" selection-start-line="217" selection-end-line="217" />
+                <state relative-caret-position="644">
+                  <caret line="249" column="35" selection-start-line="249" selection-start-column="35" selection-end-line="249" selection-end-column="35" />
                 </state>
               </provider>
             </entry>
@@ -147,7 +141,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>gimme</find>
       <find>no-padding</find>
       <find>.no-padding-top-bottom</find>
       <find>product</find>
@@ -177,6 +170,7 @@
       <find>grid-co</find>
       <find>clients</find>
       <find>grid-two-column</find>
+      <find>grid-col</find>
     </findStrings>
     <replaceStrings>
       <replace>menu-mobile-content</replace>
@@ -226,7 +220,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pedidos.html" />
         <option value="$PROJECT_DIR$/pedidos-backend.html" />
         <option value="$PROJECT_DIR$/productos-backend.html" />
         <option value="$PROJECT_DIR$/backend/style-backend.css" />
@@ -273,10 +266,11 @@
         <option value="$PROJECT_DIR$/admin/products-backend.html" />
         <option value="$PROJECT_DIR$/admin/orders-pending-backend.html" />
         <option value="$PROJECT_DIR$/admin/products-coffee-backend.html" />
-        <option value="$PROJECT_DIR$/admin/main-backend.css" />
         <option value="$PROJECT_DIR$/cuenta-envio.html" />
         <option value="$PROJECT_DIR$/grid.css" />
+        <option value="$PROJECT_DIR$/images/logos/visa.svg" />
         <option value="$PROJECT_DIR$/admin/clients-backend.html" />
+        <option value="$PROJECT_DIR$/admin/main-backend.css" />
       </list>
     </option>
   </component>
@@ -434,13 +428,6 @@
       <workItem from="1554474733880" duration="1970000" />
       <workItem from="1554499763508" duration="6626000" />
       <workItem from="1554726864084" duration="1333000" />
-    </task>
-    <task id="LOCAL-00044" summary="Fixed header padding problem.">
-      <created>1553561397100</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1553561397100</updated>
     </task>
     <task id="LOCAL-00045" summary="Active page is now indicated.&#10;Fixed color button in mobile nav.">
       <created>1553561913248</created>
@@ -778,11 +765,18 @@
       <option name="project" value="LOCAL" />
       <updated>1554833571355</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="Mooooore baaaaackend.&#10;Oh, and mastercard and visa svgs.">
+      <created>1554845843184</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1554845843184</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="243693000" />
+    <option name="totallyTimeSpent" value="244554000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -919,7 +913,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/js/tiny-date-picker" />
     </ignored-roots>
-    <MESSAGE value="HELP ME" />
     <MESSAGE value="Fixed a random character." />
     <MESSAGE value="Nuevo Mexico v2.&#10;Grid de precio en ORGANICO." />
     <MESSAGE value="Mejoras a vista de producto." />
@@ -944,7 +937,8 @@
     <MESSAGE value="All backend accordion modules deployed.&#10;Rearraged order-table order.&#10;Optimized main-backend.css.&#10;Added an chevron icon.&#10;Animated accordion chevron icon.&#10;Rewrote item content to tables.&#10;Simplified all HTMLs." />
     <MESSAGE value="Client module developed.&#10;Missing multiple contacts and addresses module." />
     <MESSAGE value="Products module developed.&#10;Missing edit module." />
-    <option name="LAST_COMMIT_MESSAGE" value="Products module developed.&#10;Missing edit module." />
+    <MESSAGE value="Mooooore baaaaackend.&#10;Oh, and mastercard and visa svgs." />
+    <option name="LAST_COMMIT_MESSAGE" value="Mooooore baaaaackend.&#10;Oh, and mastercard and visa svgs." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1323,15 +1317,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="86" column="23" selection-start-line="86" selection-start-column="23" selection-end-line="86" selection-end-column="23" />
+        <state relative-caret-position="45">
+          <caret line="88" column="23" selection-start-line="88" selection-start-column="23" selection-end-line="88" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grid.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3656">
-          <caret line="587" column="1" lean-forward="true" selection-start-line="587" selection-start-column="1" selection-end-line="587" selection-end-column="1" />
+          <caret line="591" column="1" lean-forward="true" selection-start-line="591" selection-start-column="1" selection-end-line="591" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1374,17 +1368,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/images/logos/visa.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/admin/main-backend.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="217" lean-forward="true" selection-start-line="217" selection-end-line="217" />
+        <state relative-caret-position="644">
+          <caret line="249" column="35" selection-start-line="249" selection-start-column="35" selection-end-line="249" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/clients-backend.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="126" column="28" lean-forward="true" selection-start-line="126" selection-start-column="28" selection-end-line="126" selection-end-column="28" />
+        <state relative-caret-position="350">
+          <caret line="130" column="51" lean-forward="true" selection-start-line="130" selection-start-column="51" selection-end-line="130" selection-end-column="51" />
           <folding>
             <element signature="n#style#0;n#h2#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#tr#0;n#tbody#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -1395,9 +1392,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/logos/visa.svg">
-      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
   <component name="masterDetails">
