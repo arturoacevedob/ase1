@@ -587,7 +587,7 @@ form textarea {
 .grid-two-column-auto-row-responsive {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 20px;
 }
 
