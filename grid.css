@@ -249,6 +249,12 @@ legend {
     grid-auto-flow: column;
 
 }
+.space-between{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: space-between;
+    grid-gap: 10px;
+}
 
 .grid-2 {
     display: grid;
