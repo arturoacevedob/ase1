@@ -149,6 +149,11 @@ h1, h2, h3, h4, h5, h6, p, td, th {
 }
 
 /*  Grid Setups */
+.grid-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .grid-2-1-1 {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
