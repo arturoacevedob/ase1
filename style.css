@@ -482,6 +482,13 @@ header a {
     background: url(images/inicio/icono_inicio_envios_batsil_maya.svg) 0 57% / contain no-repeat;
 }
 
+.visa{
+    margin: auto;
+    padding: 3%;
+    box-sizing: border-box;
+    background: url(images/logos/visa.svg) 0 0 / 7% no-repeat;
+}
+
 .grid-image-first h2 {
     display: none;
 }
