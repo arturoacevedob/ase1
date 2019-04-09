@@ -150,6 +150,7 @@ h1, nav > h2 {
 }
 
 .border{
+    margin-bottom: 2%;
     border: 3px solid var(--grey-dark);
     background-color: var(--grey)
 }
