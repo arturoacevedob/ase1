@@ -368,6 +368,10 @@ input {
     text-align: right;
 }
 
+.big-height{
+    height: 100%;
+}
+
 .center-text {
     text-align: center;
 }
