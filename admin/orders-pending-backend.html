@@ -22,7 +22,7 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
-    <title>Products</title>
+    <title>Pedidos: Pendientes</title>
 </head>
 
 <body class="main-grid">
@@ -44,9 +44,12 @@
     </div>
 
     <ul class="grid-tabs">
-        <li><a class="active" href="orders-pending-backend.html" id="pending" target="_self">Pendiente</a></li>
-        <li><a href="orders-enroute-backend.html" id="enroute" target="_self">En Ruta</a></li>
-        <li><a href="orders-delivered-backend.html" id="delivered" target="_self">Entregado</a></li>
+        <li><a class="active" href="orders-pending-backend.html" id="pending" target="_self">Pendiente <span
+                class="tab-counter">#</span></a></li>
+        <li><a href="orders-enroute-backend.html" id="enroute" target="_self">En Ruta <span class="tab-counter">#</span></a>
+        </li>
+        <li><a href="orders-delivered-backend.html" id="delivered" target="_self">Entregado <span
+                class="tab-counter">#</span></a></li>
     </ul>
 
     <div class="grid-2-space-between">
@@ -63,7 +66,7 @@
             <p>Hoy - 26/02/19</p>
             <p class="client">Capeltic <a href="">»</a></p>
         </div>
-        <div class="grid-two-thirds">
+        <div class="grid-2-1-1">
             <table class="order-table">
                 <caption>Orden</caption>
                 <thead>

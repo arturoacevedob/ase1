@@ -32,7 +32,6 @@ h1, h2, h3, h4, h5, h6, p, td, th {
 
 /* Colors */
 
-
 /* Utility classes */
 .order-1 {
     order: 1;
@@ -59,6 +58,10 @@ h1, h2, h3, h4, h5, h6, p, td, th {
     content: "$";
 }
 
+.quantity:after {
+    content: " x";
+}
+
 .discount:before {
     content: "-$";
 }
@@ -72,8 +75,12 @@ h1, h2, h3, h4, h5, h6, p, td, th {
 }
 
 /* Icon Classes */
-.chevron-width {
-    width: 15px;
+.email {
+
+}
+
+.tel {
+
 }
 
 /* Main grid */
@@ -142,9 +149,19 @@ h1, h2, h3, h4, h5, h6, p, td, th {
 }
 
 /*  Grid Setups */
-.grid-two-thirds {
+.grid-2-1-1 {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
+}
+
+.grid-1-2-1 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.grid-1-1-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
 }
 
 .grid-column {
@@ -166,6 +183,10 @@ th {
     text-align: left;
 }
 
+.hide-all-headers th {
+    display: none;
+}
+
 /*      Table Classes > Order Table */
 .order-table {
 
@@ -180,12 +201,24 @@ th {
     text-align: right;
 }
 
+.client .order-table tr > td:nth-child(n+2) {
+    /* Aligns from the quantity column to the right */
+    text-align: right;
+}
+
+/*      Table Classes > Notes Table */
+.notes-table {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
 /*      Table Classes > Expandable Table */
 table.expandable-table > tbody > tr.collapsed-view td {
     cursor: pointer;
 }
 
 table.expandable-table > tbody > tr.collapsed-view td:last-child {
+    width: 15px;
     background: transparent url(icons/chevron-down.svg) center no-repeat;
     padding-right: 10px;
     transition: all .3s var(--ease);
@@ -209,4 +242,10 @@ table.expandable-table > tbody > tr.expanded-view {
 
 table.expandable-table > tbody > tr.expanded-view.open {
     display: table-row;
+}
+
+/* Form Classes */
+textarea {
+    padding: 0;
+    margin: 0;
 }
