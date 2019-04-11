@@ -391,15 +391,17 @@ input {
 #productoorganico li {
     display: inline-block;
 }
-
-.grid-methods{
-align-items: center;
+.grid-auto-flow{
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-auto-rows: auto;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
 }
-.grid-methods h3{
-    grid-column: 1 / 4;
+.grid-methods{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-auto-rows: auto;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .grid-4 h3 {
