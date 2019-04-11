@@ -482,32 +482,25 @@ header a {
     background: url(images/inicio/icono_inicio_envios_batsil_maya.svg) 0 57% / contain no-repeat;
 }
 
-.margin-right{
-    margin-right: 25%;
-}
-
-.inline{
-    display: inline-block;
-}
 
 .visa{
     margin: auto;
-    padding: 3%;
+    padding: 20%;
     box-sizing: border-box;
     background: url(images/logos/visa.svg) 0 50% / auto no-repeat;
 }
 .mastercard{
     margin: auto;
-    padding: 3%;
+    padding: 20%;
     box-sizing: border-box;
     background: url(images/logos/mastercard.svg) 0 50% / auto no-repeat;
 }
 .americanexpress{
     box-align: right;
     margin: auto;
-    padding: 3%;
+    padding: 20%;
     box-sizing: border-box;
-    background: url(images/logos/americanexpress.svg) 0 10% / auto no-repeat;
+    background: url(images/logos/americanexpress.svg) 0 0 / auto no-repeat;
 }
 
 .grid-image-first h2 {
