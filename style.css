@@ -1396,3 +1396,9 @@ progress::-webkit-progress-value {
     url(images/login/header_iniciar_sesión_batsil_maya.jpg) 70% 71% / cover no-repeat;;
 }
 
+/* —————— AQUÍ EMPIEZAN ESTILOS DE PRODUCTOS ORGANICOS—————— */
+
+#confirmardireccion header{
+    background: url(images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
+    url(images/confirmacion_de_direccion/header_proceso_de_compra_batsil_maya.png) 70% 71% / cover no-repeat;;
+}
