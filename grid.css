@@ -391,11 +391,6 @@ input {
 #productoorganico li {
     display: inline-block;
 }
-.grid-auto-flow{
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: repeat(3, minmax(100px, 1fr));
-}
 .grid-methods{
     display: grid;
     grid-template-columns: auto auto;
@@ -774,6 +769,10 @@ form textarea {
         padding: var(--container-padding-mobile);
     }
 
+    .container-threequel{
+        padding: var(--container-padding-mobile);
+    }
+
     .container.footer {
         padding-bottom: calc(var(--padding-top-bottom) / 3);
     }
@@ -1033,6 +1032,11 @@ form textarea {
     .grid-cart-item span{
         grid-column: 2;
     }
+    .grid-auto-flow{
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: repeat(3, minmax(60px, 1fr));
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -1042,6 +1046,18 @@ form textarea {
     .crazy-icon-padding{
         padding: 0 0 0 11%;
     }
+
+    
+.grid-auto-flow{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+}
+.container-threequel{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20vmax;
+}
 
     .gridbigproduct {
         display: grid;
