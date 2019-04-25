@@ -426,6 +426,11 @@ a.dark:visited {
     background-color: var(--button-active);
 }
 
+.carrito{
+    display: none;
+    background: url(images/nav/shopping-cart.svg) 0 0 / 100% no-repeat;
+}
+
 /* —————— Header —————— */
 
 header {
