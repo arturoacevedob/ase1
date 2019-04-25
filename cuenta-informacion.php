@@ -1,3 +1,7 @@
+<?php
+
+?>
+
 <!DOCTYPE html>
 
 <html dir="ltr" lang="es">
@@ -29,29 +33,29 @@
     <div class="grid-header container">
         <h1>Bats'il Maya: Inicio</h1>
         <div class="nav-wrapper desktop">
-            <a class="logo" href="index.html" target="_self">
+            <a class="logo" href="index.php" target="_self">
                 <img alt="Bats'il Maya Logo" class="shadow" src="images/logos/batsil_maya_logo.svg">
             </a>
             <nav id="menu-desktop">
                 <h2>Menú</h2>
                 <ul class="menu-desktop-content">
-                    <li><a href="index.html" target="_self">Inicio</a></li>
-                    <li><a href="nosotros.html" target="_self">Nosotros</a></li>
-                    <li><a href="nuestro-cafe.html" target="_self">Nuestro café</a></li>
-                    <li><a href="proceso.html" target="_self">Proceso</a></li>
-                    <li><a href="productos.html" target="_self">Productos</a></li>
-                    <li><a href="noticias.html" target="_self">Noticias</a></li>
-                    <li><a href="ayuda.html" target="_self">Ayuda</a></li>
+                    <li><a href="index.php" target="_self">Inicio</a></li>
+                    <li><a href="nosotros.php" target="_self">Nosotros</a></li>
+                    <li><a href="nuestro-cafe.php" target="_self">Nuestro café</a></li>
+                    <li><a href="proceso.php" target="_self">Proceso</a></li>
+                    <li><a href="productos.php" target="_self">Productos</a></li>
+                    <li><a href="noticias.php" target="_self">Noticias</a></li>
+                    <li><a href="ayuda.php" target="_self">Ayuda</a></li>
                 </ul>
             </nav>
             <ul>
-                <li class="button outline"><a href="iniciar_sesion.html" target="_self">Iniciar sesión</a></li>
-                <li class="button red"><a class="light" href="contactanos.html" target="_self">Contáctanos</a></li>
+                <li class="button outline"><a href="iniciar_sesion.php" target="_self">Iniciar sesión</a></li>
+                <li class="button red"><a class="light" href="contactanos.php" target="_self">Contáctanos</a></li>
             </ul>
         </div>
 
         <div class="nav-wrapper mobile">
-            <a class="logo" href="index.html" target="_self">
+            <a class="logo" href="index.php" target="_self">
                 <img alt="Bats'il Maya Logo" class="shadow" src="images/logos/batsil_maya_logo.svg">
             </a>
             <nav id="menu-mobile">
@@ -59,16 +63,16 @@
                 <label for="menu-mobile-toggle"><span id="menu-icon"></span></label>
                 <div id="overlay"></div>
                 <ul class="menu-mobile-content light-bg">
-                    <li><a class="active" href="index.html" target="_self">Inicio</a></li>
-                    <li><a href="nosotros.html" target="_self">Nosotros</a></li>
-                    <li><a href="nuestro-cafe.html" target="_self">Nuestro café</a></li>
-                    <li><a href="proceso.html" target="_self">Proceso</a></li>
-                    <li><a href="productos.html" target="_self">Productos</a></li>
-                    <li><a href="noticias.html" target="_self">Noticias</a></li>
-                    <li><a href="ayuda.html" target="_self">Ayuda</a></li>
-                    <li class="button outline fit-content"><a href="iniciar_sesion.html" target="_self">Iniciar
+                    <li><a class="active" href="index.php" target="_self">Inicio</a></li>
+                    <li><a href="nosotros.php" target="_self">Nosotros</a></li>
+                    <li><a href="nuestro-cafe.php" target="_self">Nuestro café</a></li>
+                    <li><a href="proceso.php" target="_self">Proceso</a></li>
+                    <li><a href="productos.php" target="_self">Productos</a></li>
+                    <li><a href="noticias.php" target="_self">Noticias</a></li>
+                    <li><a href="ayuda.php" target="_self">Ayuda</a></li>
+                    <li class="button outline fit-content"><a href="iniciar_sesion.php" target="_self">Iniciar
                         sesión</a></li>
-                    <li class="button red fit-content"><a class="light" href="contactanos.html" target="_self">Contáctanos</a></li>
+                    <li class="button red fit-content"><a class="light" href="contactanos.php" target="_self">Contáctanos</a></li>
                 </ul>
             </nav>
         </div>
@@ -79,8 +83,8 @@
 <div class="container grid-two-thirds-responsive ">
     <aside>
         <ul class="sidebar-nav-responsive">
-            <li><a class="active" href="cuenta-informacion.html">Información</a></li>
-            <li><a href="cuenta-envio.html">Dirección de envío</a></li>
+            <li><a class="active" href="cuenta-informacion.php">Información</a></li>
+            <li><a href="cuenta-enviophp">Dirección de envío</a></li>
             <li><a href="">Métodos de pago</a></li>
             <li><a href="">Pedidos</a></li>
         </ul>
