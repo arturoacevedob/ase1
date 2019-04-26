@@ -7,26 +7,6 @@
 <html dir="ltr" lang="es">
 
 <head>
-    <!-- Metadata -->
-    <meta charset="UTF-8">
-    <meta content="Sarah Raquel Quintana Cortés,Arturo Alejandro Acevedo Bravo, Mathias Thomsen Cuéllar" name="author">
-    <meta content="Resuelve cualquier duda buscando en las preguntas frecuentes o contactando directamente a Bats'il Maya."
-          name="description">
-    <meta content="Tseltal, Bats'il Maya, café, miel, jabón, jabones, Chiapas, Orgánico, ayuda, faq, preguntas, contacto, dudas, respuestas, problemas"
-          name="keywords">
-    <!-- Scripts de compatibilidad -->
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-    <!-- Escala de viewport -->
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <!-- Link a CSS -->
-    <link href="grid.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-    <!-- Link a favicon -->
-    <link href="images/logos/batsil_maya_logo.svg" rel="icon">
-
-    <title>Ayuda</title>
 </head>
 <body>
 <div id="ayuda">
