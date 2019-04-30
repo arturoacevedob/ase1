@@ -84,12 +84,12 @@
     <form class="form login-wrapper">
         <h2 style="text-align: center">Inicia sesion</h2>
         <label for="email">Correo</label>
-        <input class="email" id="email" name="email" placeholder="mariabravo@gmail.com" required type="email">
+        <input class="email" id="email" name="user" placeholder="mariabravo@gmail.com" required type="email">
         <div class="label-span">
             <label for="password">Contraseña</label>
             <span class="p-small right-aligned"><a>¿Olvidaste tu contraseña?</a></span>
         </div>
-        <input class="password" id="password" name="password" placeholder="" required type="password">
+        <input class="password" id="password" name="pass" placeholder="" required type="password">
         <p class="formbutton"><input class="login button red margin-bottom" id="login" type="submit"
                                      value="Iniciar sesión"></p>
         <p class="p-small center-aligned"><span>¿No eres miembro? <a>Agenda un llamada</a></span></p>
