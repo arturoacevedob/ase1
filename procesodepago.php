@@ -1,3 +1,7 @@
+<?php
+
+?>
+
 <!DOCTYPE html>
 
 <html dir="ltr" lang="es">
@@ -30,7 +34,7 @@
                 <div class="grid-header container">
                     <h1>Bats'il Maya: Proceso de Pago</h1>
                     <div class="nav-wrapper">
-                        <a class="logo" href="index.html" target="_self">
+                        <a class="logo" href="index.php" target="_self">
                             <img alt="Bats'il Maya Logo" class="shadow" src="images/logos/batsil_maya_logo.svg">
                         </a>
                         
