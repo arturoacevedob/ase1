@@ -33,6 +33,9 @@
 <body id="homepage">
 
 <header>
+    <?php
+    renderHeader();
+    ?>
     <div class="grid-header container">
         <h1>Bats'il Maya: Inicio</h1>
         <div class="nav-wrapper desktop">
