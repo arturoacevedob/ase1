@@ -17,19 +17,16 @@ function createProductListOptions() {
 
 
 	while ($row = mysqli_fetch_array($recordSet)) {
-        $name_legal = $row['name_legal'];
         $name_alias = $row['name_alias'];
         $giro = $row['giro'];
         $client_type = $row['client_type'];
-        $image = $row['image'];
-        $isVisible = ($row['visible'] != '0') ? 'Si' : 'No';
         $tableHtml = "
 	    <table class="expandable-table client wrapper">
 	        <tbody>
 	        <tr class="collapsed-view">
 	            <td>
-	                Capeltic <span class="tag">Minorista</span><br>
-	                Breve descripción del giro del cliente.
+	                $name_alias <span class="tag">$client_type</span><br>
+	                $giro
 	            </td>
 	            <td>Editar</td>
 	            <td></td>
@@ -281,21 +278,7 @@ function createProductListOptions() {
 	            </td>
 	        </tr>
 	        </tbody>
-	    </table>";"
-            <tr>
-                <td>$id_product</td>
-                <td>$name</td>
-                <td>$description</td>
-                <td>$price</td>
-                <td>$brand</td>
-                <td>$image</td>
-                <td><img src='$image' height='50px'></td>
-                <td>$isVisible</td>
-                <td>
-                    <a href='update.php?idproduct=$id_product'>Editar</a>
-                    <a href='delete.php?idproduct=$id_product'>Eliminar</a>
-                </td>
-            <tr>";
+	    </table>";
     }
 
     echo $tableHtml;

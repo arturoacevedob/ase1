@@ -79,7 +79,7 @@
                 </ul>
             </nav>
         </div>
-        <h2 class="h2-header">Café tseltal.<br>Solidario, trabajador, digno</h2>
+        <h2 class="h2-header">Café tseltal,<br>Solidario, trabajador, digno</h2>
         <p class="h2-subtitle">Dándole el máximo valor agregado que nos permite la construcción
             <wbr>
             de un precio justo y
