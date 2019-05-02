@@ -55,7 +55,8 @@
                         <ul>
                             <li class="button outline"><a href="iniciar_sesion.php" target="_self">Iniciar sesión</a>
                             </li>
-                            <li class="button red"><a class="light" href="contactanos.php" target="_self">Contáctanos</a></li>
+                            <li class="button red"><a class="light" href="contactanos.php"
+                                                      target="_self">Contáctanos</a></li>
                         </ul>
                     </div>
 
@@ -76,8 +77,9 @@
                                 <li><a href="noticias.php" target="_self">Noticias</a></li>
                                 <li><a href="ayuda.php" target="_self">Ayuda</a></li>
                                 <li class="button outline"><a href="iniciar_sesion.php" target="_self">Iniciar
-                                    sesión</a></li>
-                                <li class="button red"><a class="light" href="contactanos.php" target="_self">Contáctanos</a></li>
+                                        sesión</a></li>
+                                <li class="button red"><a class="light" href="contactanos.php" target="_self">Contáctanos</a>
+                                </li>
                             </ul>
                         </nav>
                     </div>
@@ -87,23 +89,25 @@
         </header>
     </div>
     <section>
-            <div>
-                    <h2 class="kill">Nuestra historia</h2>
-                    <article class="grid-2-text-photo">
-                        <div class="grid-2-left-image" id="image-nuestra-historia">
-                        </div>
-                        <div class="grid-2-right-text container">
-                            <div class="wrapper-text">
-                                <h3>En septiembre de 1993 en Chilón, Chiapas</h3><br>
-                                <p class="p-big">Inicia nuestra historia como respuesta a la marginación en que se encuentran las comunidades
-                                        indígenas tseltales, que los hace presas del abuso por parte de intermediarios en el acopio y precio
-                                        pagado por su café.</p><br>
-                                <p>Dentro de la cooperativa Ts’umbal Xilaha’</p>
-                                <p>Nuestros productores se organizaron en el 2001, iniciando con solo 12 comunidades.</p>
-                            </div>
-                        </div>
-                        </article>
-            </div>
+        <div>
+            <h2 class="kill">Nuestra historia</h2>
+            <article class="grid-2-text-photo">
+                <div class="grid-2-left-image" id="image-nuestra-historia">
+                </div>
+                <div class="grid-2-right-text container">
+                    <div class="wrapper-text">
+                        <h3>Nuestra historia inicia en septiembre de 1993 en Chilón, Chiapas</h3><br>
+                        <p class="p-big">Surge como una respuesta a la marginación en las que se encuentran
+                            las comunidades
+                            indígenas tseltales, que las hace presas del abuso por parte de intermediarios en el acopio
+                            y precio
+                            pagado por su café.</p><br>
+                        <p>Dentro de la cooperativa Ts’umbal Xilaha’,</p>
+                        <p>nuestros productores se organizaron en el 2001, iniciando con solo 12 comunidades.</p>
+                    </div>
+                </div>
+            </article>
+        </div>
     </section>
     <section>
         <div>
@@ -112,15 +116,13 @@
                 <div class="grid-2-right-image" id="image-el-pueblo-tseltal"></div>
                 <div class="grid-2-left-text container">
                     <div class="wrapper-text">
-                        <h3>El pueblo tseltal</h3><br>
-                        <p class="p-big">pertenece a la familia maya. Actualmente son el grupo indígena más numeroso en
-                            Chiapas,
-                            34% de los habitantes del estado piensan la vida en tseltal.</p><br>
+                        <h3>El pueblo tseltal pertenece a la familia maya</h3><br>
+                        <p class="p-big">Actualmente son el grupo indígena más numeroso en
+                            Chiapas, 34% de los habitantes del estado piensan la vida en tseltal.</p><br>
                         <p>Los tseltales se definen a sí mismos como los “Bats’il Winiquetic”, los hombres verdaderos, o
-                            bien
-                            “Pas C’altic Winiquetic”, los hombres que hacen milpa ya que la vida comunitaria y familiar
-                            está
-                            organizada alrededor de la siembra del maíz.</p>
+                            bien “Pas C’altic Winiquetic”, los hombres que hacen milpa ya que la vida comunitaria y
+                            familiar
+                            está organizada alrededor de la siembra del maíz.</p>
                     </div>
                 </div>
             </article>
@@ -539,7 +541,8 @@
                                     -->
                                 </optgroup>
                             </select>
-                            <input class="phone_with_ddd dependent-input" id="tel" name="tel" placeholder="(55) 1234-5678" required
+                            <input class="phone_with_ddd dependent-input" id="tel" name="tel"
+                                   placeholder="(55) 1234-5678" required
                                    type="tel">
                         </div>
                     </fieldset>
@@ -551,7 +554,8 @@
                                  data-link-field="dtp_input1" data-link-format="yyyy-mm-dd">
                                 <input class="form-control" readonly size="16" type="text" value="">
                                 <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
-                                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                <span class="input-group-addon"><span
+                                            class="glyphicon glyphicon-calendar"></span></span>
                             </div>
                             <input id="dtp_input1" type="hidden" value=""/>
                         </div>
@@ -561,8 +565,10 @@
                                 <div class="input-group date form_time" data-date="" data-date-format="hh:ii"
                                      data-link-field="dtp_input2" data-link-format="hh:ii">
                                     <input class="form-control" readonly size="16" type="text" value="">
-                                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
-                                    <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
+                                    <span class="input-group-addon"><span
+                                                class="glyphicon glyphicon-remove"></span></span>
+                                    <span class="input-group-addon"><span
+                                                class="glyphicon glyphicon-time"></span></span>
                                 </div>
                                 <input id="dtp_input2" type="hidden" value=""/>
                             </div>
@@ -572,8 +578,10 @@
                                 <div class="input-group date form_time" data-date="" data-date-format="hh:ii"
                                      data-link-field="dtp_input3" data-link-format="hh:ii">
                                     <input class="form-control" readonly size="16" type="text" value="">
-                                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
-                                    <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
+                                    <span class="input-group-addon"><span
+                                                class="glyphicon glyphicon-remove"></span></span>
+                                    <span class="input-group-addon"><span
+                                                class="glyphicon glyphicon-time"></span></span>
                                 </div>
                                 <input id="dtp_input3" type="hidden" value=""/>
                             </div>
