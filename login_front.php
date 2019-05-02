@@ -10,15 +10,15 @@ if(isset($_GET['killsession'])) {
 }
 
 if(isset($_POST['user'])) {
-    $mail = $_POST['mail'];
+    $user = $_POST['user'];
     $pass = $_POST['pass'];
-    $q = "select * from clients where mail = '$mail' and pass = password('$pass')";
+    $q = "select * from users where user = '$user' and pass = password('$pass')";
     $recordSet = execute($q);
     
     if($row = mysqli_fetch_array($recordSet)) {
-        $_SESSION['user'] = $row['mail'];
-        $_SESSION['name'] = $row['pass'];
-        header("Location: index.php");
+        $_SESSION['user'] = $row['user'];
+        $_SESSION['name'] = $row['name'];
+        header("Location: inciar_sesion.php");
     } else {
         session_destroy();
         echo "Verificar usuario y contraseña.";
