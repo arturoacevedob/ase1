@@ -34,7 +34,7 @@
             <div class="grid-header container">
                 <h1>Bats'il Maya: Inicio</h1>
                 <div class="nav-wrapper desktop">
-                    <a class="logo" href="index.php" target="_self">
+                    <a class="logo" href="index.php" target="_self" >
                         <img alt="Bats'il Maya Logo" class="shadow" src="images/logos/batsil_maya_logo.svg">
                     </a>
                     <nav id="menu-desktop">
@@ -81,10 +81,10 @@
             </div>
         </header>
     </div>
-    <form class="form login-wrapper">
+    <form class="form login-wrapper" action='login_front.php' method='post'>
         <h2 style="text-align: center">Inicia sesion</h2>
         <label for="email">Correo</label>
-        <input class="email" id="email" name="user" placeholder="mariabravo@gmail.com" required type="email">
+        <input class="email" id="email" name="mail" placeholder="mariabravo@gmail.com" required type="email">
         <div class="label-span">
             <label for="password">Contraseña</label>
             <span class="p-small right-aligned"><a>¿Olvidaste tu contraseña?</a></span>
