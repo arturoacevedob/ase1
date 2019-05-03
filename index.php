@@ -79,11 +79,10 @@
                 </ul>
             </nav>
         </div>
-        <h2 class="h2-header">Café tseltal.<br>Solidario, trabajador, digno</h2>
-        <p class="h2-subtitle">Dándole el máximo valor agregado que nos permite la construcción
+        <h2 class="h2-header">Café tseltal:<br>Producto de un trabajo solidario y digno</h2>
+        <p class="h2-subtitle">Una cooperativa que tuesta, muele, y comercializa
             <wbr>
-            de un precio justo y
-            digno al trabajo de quienes los siembran.
+            un producto de calidad a precio justo
         </p>
         <a class="button red fit-content" href="nosotros.php" target="_self">Sobre nosotros</a>
     </div>
