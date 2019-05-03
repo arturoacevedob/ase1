@@ -150,7 +150,7 @@ include 'header.php';
         <p class="h3-big light center-aligned">Nuestro café, <span>100% orgánico</span>,
             <wbr>
             es cultivado por familias
-            indígenas <span>Tseltales</span> en la selva norte de <span>Chiapas</span></p>
+            indígenas <span>tseltales</span> en la selva norte de <span>Chiapas</span></p>
         <div class="distribution-map mapa">
             <figure><img alt="Mapa mundi de Bats'il Maya para concocer Dónde están y a Dónde llegan" class="mapa-mundi"
                          src="images/inicio/mapa_mundi_donde_estamos_donde_llegamos_batsil_maya.svg">
@@ -272,11 +272,11 @@ include 'header.php';
                 <figure class="image-top-first-round">
                     <img src="images/inicio/nosotros_granos_de_cafe_batsil_maya.jpg" alt="Café de Bats'il Maya">
                 </figure>
-                <p>Nuestra historia,cultura, visión, misión y organización.</p>
+                <p>Nuestra historia, cultura, visión, misión y organización.</p>
                 <a class="button red fit-content" target="_self" href="nosotros.php">Conócenos</a>
             </section>
             <section class="grid-image-first">
-                <h3 class="h3-small">Nuestro Café</h3>
+                <h3 class="h3-small">Nuestro café</h3>
                 <figure class="image-top-first-round">
                     <img src="images/inicio/nuestro_cafe_batsil_maya.jpg" alt="Manos con café">
                 </figure>
