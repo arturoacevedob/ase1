@@ -52,8 +52,9 @@
                         </ul>
                     </nav>
                     <ul>
-                        <li class="button outline"><a href="iniciar_sesion.php" target="_self">Iniciar sesión</a></li>
-                        <li class="button red"><a class="light" href="contactanos.php" target="_self">Contáctanos</a></li>
+                        <?php
+                        renderHeader()
+                        ?>
                     </ul>
                 </div>
 
@@ -73,10 +74,9 @@
                             <li><a href="productos.php" target="_self">Productos</a></li>
                             <li><a class="active" href="noticias.php" target="_self">Noticias</a></li>
                             <li><a href="ayuda.php" target="_self">Ayuda</a></li>
-                            <li class="button outline fit-content"><a href="iniciar_sesion.php" target="_self">Iniciar
-                                sesión</a></li>
-                            <li class="button red fit-content"><a class="light" href="contactanos.php" target="_self">Contáctanos</a>
-                            </li>
+                            <?php
+                            renderHeader()
+                            ?>
                         </ul>
                     </nav>
                 </div>
@@ -381,7 +381,8 @@
                                     -->
                                 </optgroup>
                             </select>
-                            <input class="phone_with_ddd dependent-input" id="tel" name="tel" placeholder="(55) 1234-5678" required
+                            <input class="phone_with_ddd dependent-input" id="tel" name="tel"
+                                   placeholder="(55) 1234-5678" required
                                    type="tel">
                         </div>
                     </fieldset>
@@ -393,7 +394,8 @@
                                  data-link-field="dtp_input1" data-link-format="yyyy-mm-dd">
                                 <input class="form-control" readonly size="16" type="text" value="">
                                 <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
-                                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                <span class="input-group-addon"><span
+                                            class="glyphicon glyphicon-calendar"></span></span>
                             </div>
                             <input id="dtp_input1" type="hidden" value=""/>
                         </div>
@@ -403,8 +405,10 @@
                                 <div class="input-group date form_time" data-date="" data-date-format="hh:ii"
                                      data-link-field="dtp_input2" data-link-format="hh:ii">
                                     <input class="form-control" readonly size="16" type="text" value="">
-                                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
-                                    <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
+                                    <span class="input-group-addon"><span
+                                                class="glyphicon glyphicon-remove"></span></span>
+                                    <span class="input-group-addon"><span
+                                                class="glyphicon glyphicon-time"></span></span>
                                 </div>
                                 <input id="dtp_input2" type="hidden" value=""/>
                             </div>
@@ -414,8 +418,10 @@
                                 <div class="input-group date form_time" data-date="" data-date-format="hh:ii"
                                      data-link-field="dtp_input3" data-link-format="hh:ii">
                                     <input class="form-control" readonly size="16" type="text" value="">
-                                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
-                                    <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
+                                    <span class="input-group-addon"><span
+                                                class="glyphicon glyphicon-remove"></span></span>
+                                    <span class="input-group-addon"><span
+                                                class="glyphicon glyphicon-time"></span></span>
                                 </div>
                                 <input id="dtp_input3" type="hidden" value=""/>
                             </div>
@@ -451,7 +457,7 @@
                         contacto@batsilmaya.org
                     </li>
                     <li class="logo-footer"><a href="index.php" target="_self"><img alt="Bats'il Maya Logo"
-                                                                                     src="images/logos/batsil_maya_logo.svg"></a>
+                                                                                    src="images/logos/batsil_maya_logo.svg"></a>
                     </li>
                     <li id="office1"><strong>Oficina</strong><br>
                         lugar ###<br> Chilón, Chiapas

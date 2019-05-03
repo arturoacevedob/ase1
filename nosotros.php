@@ -53,10 +53,9 @@
                             </ul>
                         </nav>
                         <ul>
-                            <li class="button outline"><a href="iniciar_sesion.php" target="_self">Iniciar sesión</a>
-                            </li>
-                            <li class="button red"><a class="light" href="contactanos.php"
-                                                      target="_self">Contáctanos</a></li>
+                            <?php
+                            renderHeader()
+                            ?>
                         </ul>
                     </div>
 
@@ -76,10 +75,9 @@
                                 <li><a href="productos.php" target="_self">Productos</a></li>
                                 <li><a href="noticias.php" target="_self">Noticias</a></li>
                                 <li><a href="ayuda.php" target="_self">Ayuda</a></li>
-                                <li class="button outline"><a href="iniciar_sesion.php" target="_self">Iniciar
-                                        sesión</a></li>
-                                <li class="button red"><a class="light" href="contactanos.php" target="_self">Contáctanos</a>
-                                </li>
+                                <?php
+                                renderHeader()
+                                ?>
                             </ul>
                         </nav>
                     </div>

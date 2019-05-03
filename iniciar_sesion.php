@@ -74,8 +74,9 @@ if(isset($_POST['user'])) {
                         </ul>
                     </nav>
                     <ul>
-                        <li class="button outline"><a href="iniciar_sesion.php" target="_self">Iniciar sesión</a></li>
-                        <li class="button red"><a class="light" href="contactanos.php" target="_self">Contáctanos</a></li>
+                        <?php
+                        renderHeader()
+                        ?>
                     </ul>
                 </div>
 
