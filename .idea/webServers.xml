@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="9de22a28-e52c-40f9-b7c8-9f8e4034fa93" name="Test" url="http://127.0.0.1">
+        <fileTransfer host="127.0.0.1" port="8889">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="8889" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="1d3347b8-8da9-4ed8-8cad-63504bd7a6d3" name="Test (1)" url="http://127.0.0.1">
+        <fileTransfer host="127.0.0.1" port="8889">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="8889" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

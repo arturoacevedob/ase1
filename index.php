@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -20,10 +20,10 @@
     <!-- Escala de viewport -->
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <!-- Link a CSS -->
-    <link href="grid.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-    <link href="mapa.css" rel="stylesheet">
-    <link href="datetimepicker.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/mapa.css" rel="stylesheet">
+    <link href="css/datetimepicker.css" rel="stylesheet">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <!-- Link a favicon -->
     <link href="images/logos/batsil_maya_logo.svg" rel="icon">
@@ -33,59 +33,9 @@
 <body id="homepage">
 
 <header>
-    <div class="grid-header container">
-        <h1>Bats'il Maya: Inicio</h1>
-        <div class="nav-wrapper desktop">
-            <a class="logo" href="index.php" target="_self">
-                <img alt="Bats'il Maya Logo" class="shadow" src="images/logos/batsil_maya_logo.svg">
-            </a>
-            <nav id="menu-desktop">
-                <h2>Menú</h2>
-                <ul class="menu-desktop-content">
-                    <li><a class="active" href="" target="_self">Inicio</a></li>
-                    <li><a href="nosotros.php" target="_self">Nosotros</a></li>
-                    <li><a href="nuestro-cafe.php" target="_self">Nuestro café</a></li>
-                    <li><a href="proceso.php" target="_self">Proceso</a></li>
-                    <li><a href="productos.php" target="_self">Productos</a></li>
-                    <li><a href="noticias.php" target="_self">Noticias</a></li>
-                    <li><a href="ayuda.php" target="_self">Ayuda</a></li>
-                </ul>
-            </nav>
-            <ul>
-                <li class="button outline"><a href="iniciar_sesion.php" target="_self">Iniciar sesión</a></li>
-                <li class="button red"><a class="light" href="contactanos.php" target="_self">Contáctanos</a></li>
-            </ul>
-        </div>
-
-        <div class="nav-wrapper mobile">
-            <a class="logo" href="index.php" target="_self">
-                <img alt="Bats'il Maya Logo" class="shadow" src="images/logos/batsil_maya_logo.svg">
-            </a>
-            <nav id="menu-mobile">
-                <input id="menu-mobile-toggle" type="checkbox">
-                <label for="menu-mobile-toggle"><span id="menu-icon"></span></label>
-                <div id="overlay"></div>
-                <ul class="menu-mobile-content light-bg">
-                    <li><a class="active" href="index.php" target="_self">Inicio</a></li>
-                    <li><a href="nosotros.php" target="_self">Nosotros</a></li>
-                    <li><a href="nuestro-cafe.php" target="_self">Nuestro café</a></li>
-                    <li><a href="proceso.php" target="_self">Proceso</a></li>
-                    <li><a href="productos.php" target="_self">Productos</a></li>
-                    <li><a href="noticias.php" target="_self">Noticias</a></li>
-                    <li><a href="ayuda.php" target="_self">Ayuda</a></li>
-                    <li class="button outline fit-content"><a href="iniciar_sesion.php" target="_self">Iniciar
-                        sesión</a></li>
-                    <li class="button red fit-content"><a class="light" href="contactanos.php" target="_self">Contáctanos</a></li>
-                </ul>
-            </nav>
-        </div>
-        <h2 class="h2-header">Café tseltal:<br>Producto de un trabajo solidario y digno</h2>
-        <p class="h2-subtitle">Una cooperativa que tuesta, muele, y comercializa
-            <wbr>
-            un producto de calidad a precio justo
-        </p>
-        <a class="button red fit-content" href="nosotros.php" target="_self">Sobre nosotros</a>
-    </div>
+    <?php
+    renderHeader();
+    ?>
 </header>
 
 
@@ -145,7 +95,7 @@
         <p class="h3-big light center-aligned">Nuestro café, <span>100% orgánico</span>,
             <wbr>
             es cultivado por familias
-            indígenas <span>Tseltales</span> en la selva norte de <span>Chiapas</span></p>
+            indígenas <span>tseltales</span> en la selva norte de <span>Chiapas</span></p>
         <div class="distribution-map mapa">
             <figure><img alt="Mapa mundi de Bats'il Maya para concocer Dónde están y a Dónde llegan" class="mapa-mundi"
                          src="images/inicio/mapa_mundi_donde_estamos_donde_llegamos_batsil_maya.svg">
@@ -267,11 +217,11 @@
                 <figure class="image-top-first-round">
                     <img src="images/inicio/nosotros_granos_de_cafe_batsil_maya.jpg" alt="Café de Bats'il Maya">
                 </figure>
-                <p>Nuestra historia,cultura, visión, misión y organización.</p>
+                <p>Nuestra historia, cultura, visión, misión y organización.</p>
                 <a class="button red fit-content" target="_self" href="nosotros.php">Conócenos</a>
             </section>
             <section class="grid-image-first">
-                <h3 class="h3-small">Nuestro Café</h3>
+                <h3 class="h3-small">Nuestro café</h3>
                 <figure class="image-top-first-round">
                     <img src="images/inicio/nuestro_cafe_batsil_maya.jpg" alt="Manos con café">
                 </figure>

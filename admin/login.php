@@ -12,7 +12,7 @@ if(isset($_GET['killsession'])) {
 if(isset($_POST['user'])) {
     $user = $_POST['user'];
     $pass = $_POST['pass'];
-    $q = "select * from users where user = '$user' and pass = password('$pass')";
+    $q = "select * from clients where user = '$user' and pass = password('$pass')";
     $recordSet = execute($q);
     
     if($row = mysqli_fetch_array($recordSet)) {
@@ -30,10 +30,16 @@ if(isset($_POST['user'])) {
 <html>
 <body>
     <h1>Autenticación del Administrador</h1>
-    <form action='login.php' method='post'>
-        Usuario: <input type='text' name='user'><br>
-        Contraseña: <input type='password' name='pass'><br><br>
-        <input type='submit' value='Ingresar'>
+    <form class="form login-wrapper" action='login.php' method='post'>
+        <h2 style="text-align: center">Inicia sesion</h2>
+        <label for="email">Correo</label>
+        <input class="email" id="email" name="user" placeholder="mariabravo@gmail.com" required type="text">
+        <div class="label-span">
+            <label for="password" name='pass'>Contraseña</label>
+        </div>
+        <input class="password" id="password" name="pass" placeholder="" required type="password">
+        <p class="formbutton"><input class="login button red margin-bottom" id="login" type="submit"
+                                     value="Ingresar"></p>
     </form>
 </body>
 </html>

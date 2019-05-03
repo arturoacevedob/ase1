@@ -160,18 +160,18 @@ h1, nav > h2 {
 
 @font-face {
     font-family: 'Qualion';
-    src: url("fonts/Qualion Bold/Qualion-Bold.eot");
-    src: url("fonts/Qualion Bold/Qualion-Bold.woff") format('woff'),
-    url("fonts/Qualion Bold/Qualion-Bold.ttf") format('truetype');
+    src: url("../fonts/Qualion Bold/Qualion-Bold.eot");
+    src: url("../fonts/Qualion Bold/Qualion-Bold.woff") format('woff'),
+    url("../fonts/Qualion Bold/Qualion-Bold.ttf") format('truetype');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Qualion';
-    src: url("fonts/Qualion/Qualion-Regular.eot");
-    src: url("fonts/Qualion/Qualion-Regular.woff") format('woff'),
-    url("fonts/Qualion/Qualion-Regular.ttf") format('truetype');
+    src: url("../fonts/Qualion/Qualion-Regular.eot");
+    src: url("../fonts/Qualion/Qualion-Regular.woff") format('woff'),
+    url("../fonts/Qualion/Qualion-Regular.ttf") format('truetype');
     font-weight: 400;
     font-style: normal;
 }
@@ -387,25 +387,25 @@ a.dark:visited {
 .bnuestrocafe {
     padding: 10% 0;
     box-sizing: border-box;
-    background: url(images/botones/boton_nuestro_cafe_desde_el_cafetal_a_la_taza_batsil_maya.jpg) 70% 0 / cover no-repeat;
+    background: url(../images/botones/boton_nuestro_cafe_desde_el_cafetal_a_la_taza_batsil_maya.jpg) 70% 0 / cover no-repeat;
 }
 
 .bnosotros {
     padding: 10% 0;
     box-sizing: border-box;
-    background: url(images/botones/boton_nosotros_somos_la_planta_transformadora_de_cafe_batsil_maya.jpg) 70% 0 / cover no-repeat;
+    background: url(../images/botones/boton_nosotros_somos_la_planta_transformadora_de_cafe_batsil_maya.jpg) 70% 0 / cover no-repeat;
 }
 
 .bproductos {
     padding: 10% 0;
     box-sizing: border-box;
-    background: url(images/botones/boton_productos_cafe_tseltal_miel_organica_jabones_artesanales_batsil_maya.jpg) 70% 0 / cover no-repeat;
+    background: url(../images/botones/boton_productos_cafe_tseltal_miel_organica_jabones_artesanales_batsil_maya.jpg) 70% 0 / cover no-repeat;
 }
 
 .bproceso {
     padding: 10% 0;
     box-sizing: border-box;
-    background: url(images/botones/boton_proceso_batsil_maya.jpg) 70% 0 / cover no-repeat;
+    background: url(../images/botones/boton_proceso_batsil_maya.jpg) 70% 0 / cover no-repeat;
 }
 
 .button.red:hover {
@@ -428,7 +428,7 @@ a.dark:visited {
 
 .carrito{
     display: none;
-    background: url(images/nav/shopping-cart.svg) 0 0 / 100% no-repeat;
+    background: url(../images/nav/shopping-cart.svg) 0 0 / 100% no-repeat;
 }
 
 /* —————— Header —————— */
@@ -447,8 +447,8 @@ header a {
 }
 
 #homepage header {
-    background: url(images/fade/header_fade_light_batsil_maya.png) 0 100% / contain repeat-x,
-    url(images/inicio/header_café_tseltal_solidario_trabajo_digno_batsil_maya.jpg) 70% 0 / cover no-repeat;
+    background: url(../images/fade/header_fade_light_batsil_maya.png) 0 100% / contain repeat-x,
+    url(../images/inicio/header_café_tseltal_solidario_trabajo_digno_batsil_maya.jpg) 70% 0 / cover no-repeat;
 }
 
 /* —————— Dónde estamos y a dónde llegamos —————— */
@@ -484,7 +484,7 @@ header a {
     margin: auto;
     padding: 7%;
     box-sizing: border-box;
-    background: url(images/inicio/icono_inicio_envios_batsil_maya.svg) 0 57% / contain no-repeat;
+    background: url(../images/inicio/icono_inicio_envios_batsil_maya.svg) 0 57% / contain no-repeat;
 }
 
 
@@ -492,20 +492,20 @@ header a {
     margin: auto;
     padding: 20%;
     box-sizing: border-box;
-    background: url(images/logos/visa.svg) 0 50% / auto no-repeat;
+    background: url(../images/logos/visa.svg) 0 50% / auto no-repeat;
 }
 .mastercard{
     margin: auto;
     padding: 20%;
     box-sizing: border-box;
-    background: url(images/logos/mastercard.svg) 0 50% / auto no-repeat;
+    background: url(../images/logos/mastercard.svg) 0 50% / auto no-repeat;
 }
 .americanexpress{
     box-align: right;
     margin: auto;
     padding: 20%;
     box-sizing: border-box;
-    background: url(images/logos/americanexpress.svg) 0 0 / auto no-repeat;
+    background: url(../images/logos/americanexpress.svg) 0 0 / auto no-repeat;
 }
 
 .grid-image-first h2 {
@@ -547,19 +547,19 @@ header a {
 }
 
 .one {
-    background: url(images/noticias/conoce_nuevo_capeltic_universidad_iberoamericana_cdmx_batsil_maya.jpg) 0 57% / cover no-repeat;
+    background: url(../images/noticias/conoce_nuevo_capeltic_universidad_iberoamericana_cdmx_batsil_maya.jpg) 0 57% / cover no-repeat;
 }
 
 .two {
-    background: url(images/noticias/noticia2.jpg) 52% 60% / cover no-repeat;
+    background: url(../images/noticias/noticia2.jpg) 52% 60% / cover no-repeat;
 }
 
 .three {
-    background: url(images/noticias/noticia3.jpg) 0 39% / cover no-repeat;
+    background: url(../images/noticias/noticia3.jpg) 0 39% / cover no-repeat;
 }
 
 .four {
-    background: url(images/noticias/noticia4.jpg) 0 38% / cover no-repeat;
+    background: url(../images/noticias/noticia4.jpg) 0 38% / cover no-repeat;
 }
 
 
@@ -763,7 +763,7 @@ label + input[type="radio"] + label {
 .bigfoot {
     color: #ffffff;
     font-size: 16px;
-    background: url(images/footer/footer_mobile_granos_de_cafe_batsil_maya.jpg) 50% 50% / cover no-repeat;
+    background: url(../images/footer/footer_mobile_granos_de_cafe_batsil_maya.jpg) 50% 50% / cover no-repeat;
 }
 
 .footer li {
@@ -779,8 +779,8 @@ label + input[type="radio"] + label {
 
 /* —————— AQUÍ EMPIEZAN ESTILOS DE PROCESO—————— */
 #proceso header {
-    background: url(images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
-        url(images/proceso/header_proceso_desde_el_cafetal_a_la_taza_batsil_maya.jpg) 70% 0 / cover no-repeat;
+    background: url(../images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
+        url(../images/proceso/header_proceso_desde_el_cafetal_a_la_taza_batsil_maya.jpg) 70% 0 / cover no-repeat;
 }
 
 #proceso .tipo-tueste {
@@ -994,7 +994,7 @@ progress::-webkit-progress-value {
 
     .bigfoot {
         font-size: 18px;
-        background: url(images/footer/footer_granos_de_cafe_batsil_maya.jpg
+        background: url(../images/footer/footer_granos_de_cafe_batsil_maya.jpg
         ) 0 0 / cover no-repeat;
     }
 
@@ -1084,19 +1084,19 @@ progress::-webkit-progress-value {
 
     /* —————— certificados —————— */
     .one {
-        background: url(images/noticias/conoce_nuevo_capeltic_universidad_iberoamericana_cdmx_batsil_maya.jpg) 0 73% / cover no-repeat;
+        background: url(../images/noticias/conoce_nuevo_capeltic_universidad_iberoamericana_cdmx_batsil_maya.jpg) 0 73% / cover no-repeat;
     }
 
     .two {
-        background: url(images/noticias/noticia2.jpg) 52% 7% / cover no-repeat;
+        background: url(../images/noticias/noticia2.jpg) 52% 7% / cover no-repeat;
     }
 
     .three {
-        background: url(images/noticias/noticia3.jpg) 0 29% / cover no-repeat;
+        background: url(../images/noticias/noticia3.jpg) 0 29% / cover no-repeat;
     }
 
     .four {
-        background: url(images/noticias/noticia4.jpg) 0 38% / cover no-repeat;
+        background: url(../images/noticias/noticia4.jpg) 0 38% / cover no-repeat;
     }
 
     /* —————— AQUÍ EMPIEZAN ESTILOS DE NOSOTROS—————— */
@@ -1189,13 +1189,13 @@ progress::-webkit-progress-value {
 
 /* —————— AQUÍ EMPIEZAN ESTILOS DE NOSOTROS—————— */
 #nosotros header {
-    background: url(images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
-    url(images/nosotros/header_nosotros_somos_la_planta_transformadora_de_café_batsil_maya.jpg) 70% 0 / cover no-repeat;
+    background: url(../images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
+    url(../images/nosotros/header_nosotros_somos_la_planta_transformadora_de_café_batsil_maya.jpg) 70% 0 / cover no-repeat;
 }
 
 #nosotros #image-nuestra-historia {
     position: relative;
-    background: url(images/nosotros/mexico_2.svg) 0 100% / contain no-repeat;
+    background: url(../images/nosotros/mexico_2.svg) 0 100% / contain no-repeat;
 }
 
 #nosotros #image-nuestra-historia p {
@@ -1207,15 +1207,15 @@ progress::-webkit-progress-value {
 }
 
 #nosotros #image-el-pueblo-tseltal {
-    background: url(images/nosotros/el_pueblo_tseltal_batsil_maya.jpg) 70% 20% / cover no-repeat;
+    background: url(../images/nosotros/el_pueblo_tseltal_batsil_maya.jpg) 70% 20% / cover no-repeat;
 }
 
 #nosotros #image-corazon-tseltal {
-    background: url(images/nosotros/corazon_tseltal_batsil_maya.jpg) 70% 0 / cover no-repeat;
+    background: url(../images/nosotros/corazon_tseltal_batsil_maya.jpg) 70% 0 / cover no-repeat;
 }
 
 #nosotros #image-la-actividad-mas-importante {
-    background: url(images/nosotros/la_actividad_mas_importante_del_pueblo_tsental_batsil_maya.jpg) 70% 0 / cover no-repeat;
+    background: url(../images/nosotros/la_actividad_mas_importante_del_pueblo_tsental_batsil_maya.jpg) 70% 0 / cover no-repeat;
 }
 
 #nosotros .mision-vision {
@@ -1286,11 +1286,11 @@ progress::-webkit-progress-value {
 }
 
 #nosotros .bnosotros {
-    background: url(images/botones/boton_nosotros_somos_la_planta_transformadora_de_cafe_batsil_maya.jpg) 70% 0 / cover no-repeat;
+    background: url(../images/botones/boton_nosotros_somos_la_planta_transformadora_de_cafe_batsil_maya.jpg) 70% 0 / cover no-repeat;
 }
 
 #nosotros .bproductos {
-    background: url(images/botones/boton_productos_cafe_tseltal_miel_organica_jabones_artesanales_batsil_maya.jpg) 70% 0 / cover no-repeat;
+    background: url(../images/botones/boton_productos_cafe_tseltal_miel_organica_jabones_artesanales_batsil_maya.jpg) 70% 0 / cover no-repeat;
 }
 
 #nosotros .gridthree2 h3 {
@@ -1299,12 +1299,12 @@ progress::-webkit-progress-value {
 
 /* —————— AQUÍ EMPIEZAN ESTILOS DE NUESTRO CAFÉ—————— */
 #nuestrocafe header {
-    background: url(images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
-    url(images/nuestro_cafe/header_nuestro_cafe_desde_el_cafetal_hasta_la_taza_batsil_maya.jpg) 59% 5% / cover no-repeat;
+    background: url(../images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
+    url(../images/nuestro_cafe/header_nuestro_cafe_desde_el_cafetal_hasta_la_taza_batsil_maya.jpg) 59% 5% / cover no-repeat;
 }
 
 #nuestrocafe #image-ubicacion {
-    background: url(images/nuestro_cafe/ubicacion_chiapas_batsil_maya.jpg) 0 0 / cover no-repeat;;
+    background: url(../images/nuestro_cafe/ubicacion_chiapas_batsil_maya.jpg) 0 0 / cover no-repeat;;
 }
 
 .organic-height{
@@ -1314,22 +1314,22 @@ progress::-webkit-progress-value {
 
 .altura {
     padding-top: 15%;
-    background: url(images/nuestro_cafe/altura_900_1400_msnm_batsil_maya.svg) 50% 100% / contain no-repeat;
+    background: url(../images/nuestro_cafe/altura_900_1400_msnm_batsil_maya.svg) 50% 100% / contain no-repeat;
 }
 
 .temperatura {
     padding-top: 15%;
-    background: url(images/nuestro_cafe/temperatura_batsil_maya.svg) 50% 100% / contain no-repeat;
+    background: url(../images/nuestro_cafe/temperatura_batsil_maya.svg) 50% 100% / contain no-repeat;
 }
 
 .suelo {
     padding-top: 15%;
-    background: url(images/nuestro_cafe/suelo_con_abundante_materia_orgánica_batsil_maya.svg) 50% 100% / contain no-repeat;
+    background: url(../images/nuestro_cafe/suelo_con_abundante_materia_orgánica_batsil_maya.svg) 50% 100% / contain no-repeat;
 }
 
 #nuestrocafe .variedad {
     padding-top: 15%;
-    background: url(images/nuestro_cafe/gran_variedad_de_arboles_de_sombra_batsil_maya.svg) 50% 100% / contain no-repeat;
+    background: url(../images/nuestro_cafe/gran_variedad_de_arboles_de_sombra_batsil_maya.svg) 50% 100% / contain no-repeat;
 }
 
 .grid-conditions h3 {
@@ -1343,8 +1343,8 @@ progress::-webkit-progress-value {
 
 /* —————— AQUÍ EMPIEZAN ESTILOS DE PRODUCTOS—————— */
 #productos header {
-    background: url(images/fade/header_fade_cafe_batsil_maya.png) 0 100% / contain repeat-x,
-    url(images/product/header_productos_batsil_maya.jpg) 70% 0 / cover no-repeat;
+    background: url(../images/fade/header_fade_cafe_batsil_maya.png) 0 100% / contain repeat-x,
+    url(../images/product/header_productos_batsil_maya.jpg) 70% 0 / cover no-repeat;
 }
 
 #productos .product {
@@ -1362,15 +1362,15 @@ progress::-webkit-progress-value {
 
 /* —————— AQUÍ EMPIEZAN ESTILOS DE PRODUCTOS ORGANICOS—————— */
 #productoorganico header {
-    background: url(images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
-    url(images/productos/header_productos_batsil_maya.jpg) 70% 71% / cover no-repeat;
+    background: url(../images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
+    url(../images/productos/header_productos_batsil_maya.jpg) 70% 71% / cover no-repeat;
 
 }
 
 /* —————— AQUÍ EMPIEZAN ESTILOS DE NOTICIAS—————— */
 #noticias header {
-    background: url(images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
-    url(images/noticias/header_noticias_batsil_maya.jpg) 70% 71% / cover no-repeat;
+    background: url(../images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
+    url(../images/noticias/header_noticias_batsil_maya.jpg) 70% 71% / cover no-repeat;
 }
 
 .news-text h3 {
@@ -1385,25 +1385,25 @@ progress::-webkit-progress-value {
 
 /* —————— AQUÍ EMPIEZAN ESTILOS DE AYUDA—————— */
 #ayuda header {
-    background: url(images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
-    url(images/ayuda/header_ayuda_batsil_maya.jpg) 70% 71% / cover no-repeat;
+    background: url(../images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
+    url(../images/ayuda/header_ayuda_batsil_maya.jpg) 70% 71% / cover no-repeat;
 }
 
 /* —————— AQUÍ EMPIEZAN ESTILOS DE CUENTA—————— */
 #cuenta header {
-    background: url(images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
-    url(images/cuenta/header_cuenta_batsil_maya.jpg) 70% 71% / cover no-repeat;
+    background: url(../images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
+    url(../images/cuenta/header_cuenta_batsil_maya.jpg) 70% 71% / cover no-repeat;
 }
 
 /* —————— AQUÍ EMPIEZAN ESTILOS DE INICIO DE SESIÓN—————— */
 #iniciar_sesion header {
-    background: url(images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
-    url(images/login/header_iniciar_sesión_batsil_maya.jpg) 70% 71% / cover no-repeat;;
+    background: url(../images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
+    url(../images/login/header_iniciar_sesión_batsil_maya.jpg) 70% 71% / cover no-repeat;;
 }
 
 /* —————— AQUÍ EMPIEZAN ESTILOS DE PRODUCTOS ORGANICOS—————— */
 
 #confirmardireccion header{
-    background: url(images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
-    url(images/confirmacion_de_direccion/header_proceso_de_compra_batsil_maya.png) 70% 71% / cover no-repeat;;
+    background: url(../images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
+    url(../images/confirmacion_de_direccion/header_proceso_de_compra_batsil_maya.png) 70% 71% / cover no-repeat;;
 }
