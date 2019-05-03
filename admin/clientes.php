@@ -9,7 +9,7 @@
 <h2>Listado de contactos de clientes</h2>
 <hr size="1">
 <?php
-include "connection.php";
+include "crud/connection.php";
 
 $sql = "select name_alias, giro, client_type from clients";
 $rs = ejecutar($sql);
@@ -45,7 +45,6 @@ for ($i = 0; $i < count($clientes); $i++) {
 }
 
 ?>
-
 
 </body>
 </html>

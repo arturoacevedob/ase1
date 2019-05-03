@@ -2,8 +2,9 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-include 'connection.php';
 session_start();
+include 'connection.php';
+include 'header.php';
 
 if(isset($_GET['killsession'])) {
     session_destroy();
@@ -14,7 +15,7 @@ if(isset($_POST['user'])) {
     $pass = $_POST['pass'];
     $q = "select * from clients where user = '$user' and pass = password('$pass')";
     $recordSet = execute($q);
-    
+
     if($row = mysqli_fetch_array($recordSet)) {
         $_SESSION['user'] = $row['user'];
         $_SESSION['name'] = $row['name'];
@@ -44,8 +45,8 @@ if(isset($_POST['user'])) {
     <!-- Escala de viewport -->
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <!-- Link a CSS -->
-    <link href="grid.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <!-- Link a favicon -->
     <link href="images/logos/batsil_maya_logo.svg" rel="icon">
 
@@ -97,7 +98,7 @@ if(isset($_POST['user'])) {
                             <li><a href="noticias.php" target="_self">Noticias</a></li>
                             <li><a href="ayuda.php" target="_self">Ayuda</a></li>
                             <li class="active" class="button outline fit-content"><a href="iniciar_sesion.php" target="_self">Iniciar
-                                sesión</a></li>
+                                    sesión</a></li>
                             <li class="button red fit-content"><a class="light" href="contactanos.php" target="_self">Contáctanos</a>
                             </li>
                         </ul>

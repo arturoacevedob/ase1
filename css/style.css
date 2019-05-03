@@ -780,7 +780,7 @@ label + input[type="radio"] + label {
 /* —————— AQUÍ EMPIEZAN ESTILOS DE PROCESO—————— */
 #proceso header {
     background: url(../images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
-        url(../images/proceso/header_proceso_desde_el_cafetal_a_la_taza_batsil_maya.jpg) 70% 0 / cover no-repeat;
+    url(../images/proceso/header_proceso_desde_el_cafetal_a_la_taza_batsil_maya.jpg) 70% 0 / cover no-repeat;
 }
 
 #proceso .tipo-tueste {
@@ -1190,7 +1190,7 @@ progress::-webkit-progress-value {
 /* —————— AQUÍ EMPIEZAN ESTILOS DE NOSOTROS—————— */
 #nosotros header {
     background: url(../images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
-    url(../images/nosotros/header_nosotros_somos_la_planta_transformadora_de_café_batsil_maya.jpg) 70% 0 / cover no-repeat;
+    url(../images/nosotros/header_nosotros_somos_la_planta_transformadora_de_cafe_batsil_maya.jpg) 70% 0 / cover no-repeat;
 }
 
 #nosotros #image-nuestra-historia {
