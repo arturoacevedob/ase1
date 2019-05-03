@@ -447,8 +447,8 @@ header a {
 }
 
 #homepage header {
-    background: url(../images/fade/header_fade_light_batsil_maya.png) 0 100% / contain repeat-x,
-    url(../images/inicio/header_café_tseltal_solidario_trabajo_digno_batsil_maya.jpg) 70% 0 / cover no-repeat;
+    background: url("../images/fade/header_fade_light_batsil_maya.png") 0 100% / contain repeat-x,
+    url("../images/inicio/header_cafe_tseltal_solidario_trabajo_digno_batsil_maya.jpg") 70% 0 / cover no-repeat;
 }
 
 /* —————— Dónde estamos y a dónde llegamos —————— */

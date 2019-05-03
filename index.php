@@ -1,5 +1,9 @@
-<?php
+<?php	
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+
 session_start();
+include 'header.php';
 ?>
 
 <!DOCTYPE html>
@@ -16,7 +20,7 @@ session_start();
     <!-- Scripts de compatibilidad -->
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/php5shiv/3.7.3/php5shiv.js"></script><![endif]-->
     <!-- Escala de viewport -->
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <!-- Link a CSS -->
@@ -33,11 +37,62 @@ session_start();
 <body id="homepage">
 
 <header>
-    <?php
-    renderHeader();
-    ?>
-</header>
+    <div class="grid-header container">
+        <h1>Bats'il Maya: Inicio</h1>
+        <div class="nav-wrapper desktop">
+            <a class="logo" href="index.php" target="_self">
+                <img alt="Bats'il Maya Logo" class="shadow" src="images/logos/batsil_maya_logo.svg">
+            </a>
+            <nav id="menu-desktop">
+                <h2>Menú</h2>
+                <ul class="menu-desktop-content">
+                    <li><a class="active" href="" target="_self">Inicio</a></li>
+                    <li><a href="nosotros.php" target="_self">Nosotros</a></li>
+                    <li><a href="nuestro-cafe.php" target="_self">Nuestro café</a></li>
+                    <li><a href="proceso.php" target="_self">Proceso</a></li>
+                    <li><a href="productos.php" target="_self">Productos</a></li>
+                    <li><a href="noticias.php" target="_self">Noticias</a></li>
+                    <li><a href="ayuda.php" target="_self">Ayuda</a></li>
+                </ul>
+            </nav>
+            <ul>
+                <?php
+	            renderHeader()    
+	            ?>
+            </ul>
+        </div>
 
+        <div class="nav-wrapper mobile">
+            <a class="logo" href="index.php" target="_self">
+                <img alt="Bats'il Maya Logo" class="shadow" src="images/logos/batsil_maya_logo.svg">
+            </a>
+            <nav id="menu-mobile">
+                <input id="menu-mobile-toggle" type="checkbox">
+                <label for="menu-mobile-toggle"><span id="menu-icon"></span></label>
+                <div id="overlay"></div>
+                <ul class="menu-mobile-content light-bg">
+                    <li><a class="active" href="index.php" target="_self">Inicio</a></li>
+                    <li><a href="nosotros.php" target="_self">Nosotros</a></li>
+                    <li><a href="nuestro-cafe.php" target="_self">Nuestro café</a></li>
+                    <li><a href="proceso.php" target="_self">Proceso</a></li>
+                    <li><a href="productos.php" target="_self">Productos</a></li>
+                    <li><a href="noticias.php" target="_self">Noticias</a></li>
+                    <li><a href="ayuda.php" target="_self">Ayuda</a></li>
+                    <?php
+	                renderHeader()    
+	                ?>
+                </ul>
+            </nav>
+        </div>
+        <h2 class="h2-header">Café tseltal.<br>Solidario, trabajador, digno</h2>
+        <p class="h2-subtitle">Dándole el máximo valor agregado que nos permite la construcción
+            <wbr>
+            de un precio justo y
+            digno al trabajo de quienes los siembran.
+        </p>
+        <a class="button red fit-content" href="nosotros.php" target="_self">Sobre nosotros</a>
+    </div>
+</header>
 
 <div class="dark-bg">
     <aside class="no-padding-top-bottom light-bg">

@@ -12,7 +12,7 @@ if(isset($_GET['killsession'])) {
 if(isset($_POST['user'])) {
     $user = $_POST['user'];
     $pass = $_POST['pass'];
-    $q = "select * from clients where user = '$user' and pass = password('$pass')";
+    $q = "select * from admin where user = '$user' and pass = password('$pass')";
     $recordSet = execute($q);
     
     if($row = mysqli_fetch_array($recordSet)) {
