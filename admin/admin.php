@@ -292,7 +292,7 @@ function createProductListOptions() {
     <h3>Administrador</h3>
     <a href='login.php?killsession=1'>Terminar Sesión</a>
     <br><br>
-    <a href='create.php'>Registro de productos</a>
+    <a href='crud/create.php'>Registro de productos</a>
     <br><br>
     <?php createProductListOptions(); ?>
 </body>

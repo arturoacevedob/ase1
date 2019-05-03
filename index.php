@@ -20,10 +20,10 @@ session_start();
     <!-- Escala de viewport -->
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <!-- Link a CSS -->
-    <link href="grid.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-    <link href="mapa.css" rel="stylesheet">
-    <link href="datetimepicker.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/mapa.css" rel="stylesheet">
+    <link href="css/datetimepicker.css" rel="stylesheet">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <!-- Link a favicon -->
     <link href="images/logos/batsil_maya_logo.svg" rel="icon">
@@ -36,7 +36,6 @@ session_start();
     <?php
     renderHeader();
     ?>
-    
 </header>
 
 

@@ -425,13 +425,13 @@ input {
     grid-row: 1 / 3;
 }
 .premium_organico {
-    background: url("images/productos/cafe/granos_de_cafe_premium_organico_batsil_maya.jpg")
+    background: url("../images/productos/cafe/granos_de_cafe_premium_organico_batsil_maya.jpg")
     0 0 / cover no-repeat;
 }
 #productoorganico .premium_organico {
     grid-column: 1 / 2;
     grid-row: 1 / 5;
-    background: url("images/productos/cafe/granos_de_cafe_premium_organico_batsil_maya.jpg")
+    background: url("../images/productos/cafe/granos_de_cafe_premium_organico_batsil_maya.jpg")
     0 0 / cover no-repeat;
 }
 
@@ -522,7 +522,7 @@ input {
 }
 
 .chat h2 {
-    background: url(images/ayuda/sprites_ayuda_iconos.svg) 0 0 / 9% no-repeat;
+    background: url(../images/ayuda/sprites_ayuda_iconos.svg) 0 0 / 9% no-repeat;
 }
 
 .call {
@@ -530,7 +530,7 @@ input {
 }
 
 .call h2 {
-    background: url(images/ayuda/sprites_ayuda_iconos.svg) 0 49% / 9% no-repeat;
+    background: url(../images/ayuda/sprites_ayuda_iconos.svg) 0 49% / 9% no-repeat;
 }
 
 .help-mail {
@@ -538,7 +538,7 @@ input {
 }
 
 .help-mail h2 {
-    background: url(images/ayuda/sprites_ayuda_iconos.svg) 0 99% / 9% no-repeat;
+    background: url(../images/ayuda/sprites_ayuda_iconos.svg) 0 99% / 9% no-repeat;
 }
 .help-mail form input {
     border: 2px solid rgba(64,41,10,.3);
@@ -927,7 +927,7 @@ form textarea {
         grid-template-rows: auto minmax(300px, auto) auto auto auto;
     }
     .premium_organico{
-        background: url("images/productos/cafe/granos_de_cafe_premium_organico_batsil_maya.jpg")
+        background: url("../images/productos/cafe/granos_de_cafe_premium_organico_batsil_maya.jpg")
         0 0 / cover no-repeat;
     }
 
@@ -972,49 +972,49 @@ form textarea {
     }
     .ultima-noticia-1 {
         height: 144px;
-        background: url(images/noticias/noticia1.jpg) 70% 71% / cover no-repeat;
+        background: url(../images/noticias/noticia1.jpg) 70% 71% / cover no-repeat;
     }
 
     #news1 {
         height: 144px;
-        background: url(images/noticias/noticia5.jpg) 70% 71% / cover no-repeat;
+        background: url(../images/noticias/noticia5.jpg) 70% 71% / cover no-repeat;
     }
 
     #news2 {
         height: 144px;
-        background: url(images/noticias/noticia6.jpg) 70% 71% / cover no-repeat;
+        background: url(../images/noticias/noticia6.jpg) 70% 71% / cover no-repeat;
     }
 
     #news3 {
         height: 144px;
-        background: url(images/noticias/noticia7.jpg) 70% 71% / cover no-repeat;
+        background: url(../images/noticias/noticia7.jpg) 70% 71% / cover no-repeat;
     }
 
     #news4 {
         height: 144px;
-        background: url(images/noticias/noticia8.jpg) 70% 71% / cover no-repeat;
+        background: url(../images/noticias/noticia8.jpg) 70% 71% / cover no-repeat;
     }
 
     #news5 {
         height: 144px;
-        background: url(images/noticias/noticia9.jpg) 70% 71% / cover no-repeat;
+        background: url(../images/noticias/noticia9.jpg) 70% 71% / cover no-repeat;
     }
 
     #news6 {
         height: 144px;
-        background: url(images/noticias/noticia10.jpg) 0 0 / cover no-repeat;
+        background: url(../images/noticias/noticia10.jpg) 0 0 / cover no-repeat;
     }
 
     #news7 {
         height: 144px;
-        background: url(images/noticias/noticia11.jpg) 0 0 / cover no-repeat;
+        background: url(../images/noticias/noticia11.jpg) 0 0 / cover no-repeat;
 
     }
 
     #news8 {
         margin-bottom: 55px;
         height: 144px;
-        background: url(images/noticias/noticia12.jpg) 0 0 / cover no-repeat;
+        background: url(../images/noticias/noticia12.jpg) 0 0 / cover no-repeat;
 
     }
     .grid-cart-item{
@@ -1285,7 +1285,7 @@ form textarea {
 
     .chat h2 {
         padding: 1% 0 1% 22%;
-        background: url(images/ayuda/sprites_ayuda_iconos.svg) 0 0 / 15% no-repeat;
+        background: url(../images/ayuda/sprites_ayuda_iconos.svg) 0 0 / 15% no-repeat;
     }
 
     .call {
@@ -1294,7 +1294,7 @@ form textarea {
 
     .call h2 {
         padding: 1% 0 1% 22%;
-        background: url(images/ayuda/sprites_ayuda_iconos.svg) 0 49% / 15% no-repeat;
+        background: url(../images/ayuda/sprites_ayuda_iconos.svg) 0 49% / 15% no-repeat;
     }
 
     .help-mail {
@@ -1303,7 +1303,7 @@ form textarea {
 
     .help-mail h2 {
         padding: 1% 0 1% 22%;
-        background: url(images/ayuda/sprites_ayuda_iconos.svg) 0 99% / 15% no-repeat;
+        background: url(../images/ayuda/sprites_ayuda_iconos.svg) 0 99% / 15% no-repeat;
     }
 
     .footer-nav {
@@ -1331,55 +1331,55 @@ form textarea {
 
     .ultima-noticia-1 {
         height: 276px;
-        background: url(images/noticias/noticia1.jpg) 70% 71% / cover no-repeat;
+        background: url(../images/noticias/noticia1.jpg) 70% 71% / cover no-repeat;
     }
 
     #news1 {
         height: 293px;
         grid-column: 1 / 3;
         grid-row: 1;
-        background: url(images/noticias/noticia5.jpg) 70% 71% / cover no-repeat;
+        background: url(../images/noticias/noticia5.jpg) 70% 71% / cover no-repeat;
     }
 
     #news2 {
         grid-column: 3;
         grid-row: 1;
-        background: url(images/noticias/noticia6.jpg) 70% 71% / cover no-repeat;
+        background: url(../images/noticias/noticia6.jpg) 70% 71% / cover no-repeat;
     }
 
     #news3 {
         height: 392px;
         grid-column: 1;
         grid-row: 2 / 4;
-        background: url(images/noticias/noticia7.jpg) 70% 71% / cover no-repeat;
+        background: url(../images/noticias/noticia7.jpg) 70% 71% / cover no-repeat;
     }
 
     #news4 {
         height: 288px;
         grid-column: 2 / 4;
         grid-row: 2;
-        background: url(images/noticias/noticia8.jpg) 70% 71% / cover no-repeat;
+        background: url(../images/noticias/noticia8.jpg) 70% 71% / cover no-repeat;
     }
 
     #news5 {
         height: 546px;
         grid-column: 1;
         grid-row: 4 / 7;
-        background: url(images/noticias/noticia9.jpg) 70% 71% / cover no-repeat;
+        background: url(../images/noticias/noticia9.jpg) 70% 71% / cover no-repeat;
     }
 
     #news6 {
         height: 441px;
         grid-column: 2;
         grid-row: 3 / 7;
-        background: url(images/noticias/noticia10.jpg) 0 0 / cover no-repeat;
+        background: url(../images/noticias/noticia10.jpg) 0 0 / cover no-repeat;
     }
 
     #news7 {
         height: auto;
         grid-column: 3;
         grid-row: 3 / 5;
-        background: url(images/noticias/noticia11.jpg) 0 0 / cover no-repeat;
+        background: url(../images/noticias/noticia11.jpg) 0 0 / cover no-repeat;
 
     }
 
@@ -1387,7 +1387,7 @@ form textarea {
         height: 366px;
         grid-column: 3;
         grid-row: 5 / 7;
-        background: url(images/noticias/noticia12.jpg) 0 0 / cover no-repeat;
+        background: url(../images/noticias/noticia12.jpg) 0 0 / cover no-repeat;
 
     }
 
@@ -1425,7 +1425,7 @@ form textarea {
 @media screen and (min-width: 918px) {
 .chat h2 {
     padding: 1% 0 1% 11%;
-    background: url(images/ayuda/sprites_ayuda_iconos.svg) 0 0 / 9% no-repeat;
+    background: url(../images/ayuda/sprites_ayuda_iconos.svg) 0 0 / 9% no-repeat;
 }
 
 .call {
@@ -1434,7 +1434,7 @@ form textarea {
 
 .call h2 {
     padding: 1% 0 1% 11%;
-    background: url(images/ayuda/sprites_ayuda_iconos.svg) 0 49% / 9% no-repeat;
+    background: url(../images/ayuda/sprites_ayuda_iconos.svg) 0 49% / 9% no-repeat;
 }
 
 .help-mail {
@@ -1443,7 +1443,7 @@ form textarea {
 
 .help-mail h2 {
     padding: 1% 0 1% 11%;
-    background: url(images/ayuda/sprites_ayuda_iconos.svg) 0 99% / 9% no-repeat;
+    background: url(../images/ayuda/sprites_ayuda_iconos.svg) 0 99% / 9% no-repeat;
 }
 }
 
