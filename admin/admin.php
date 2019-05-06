@@ -199,7 +199,7 @@ function createProductListOptions()
                 <label class="kill" for="search"></label>
                 <input id="search" placeholder="Buscar" type="search">
             </div>
-            <button>Agregar cliente</button>
+            <a href='crud/create.php'>Agregar cliente</a>
         </div>
     </div>
 
