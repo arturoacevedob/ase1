@@ -7,8 +7,7 @@
     <list default="true" id="2b0b4be1-8d7c-4364-8440-568a85826da6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iniciar_sesion.php" beforeDir="false" afterPath="$PROJECT_DIR$/iniciar_sesion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/main-backend.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/main-backend.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -40,20 +39,20 @@
     <splitter split-orientation="horizontal" split-proportion="0.5024233">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/admin/admin.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="149">
-                  <caret line="50" column="60" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="60" />
+                <state relative-caret-position="-445">
+                  <caret line="341" column="2" selection-start-line="341" selection-start-column="2" selection-end-line="341" selection-end-column="2" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/admin/main-backend.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                  <caret line="48" column="1" lean-forward="true" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
+                <state relative-caret-position="462">
+                  <caret line="164" lean-forward="true" selection-end-line="261" selection-end-column="1" />
                 </state>
               </provider>
             </entry>
@@ -65,8 +64,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/admin/clients-backend.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-613">
-                  <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+                <state relative-caret-position="7">
+                  <caret line="107" column="50" lean-forward="true" selection-start-line="107" selection-start-column="50" selection-end-line="107" selection-end-column="50" />
                   <folding>
                     <element signature="n#style#0;n#h2#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
@@ -89,9 +88,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>mañamna</find>
-      <find>&quot;</find>
-      <find>h4</find>
       <find>monthname</find>
       <find>view</find>
       <find>order-ta</find>
@@ -119,6 +115,9 @@
       <find>all-</find>
       <find>address-multiple-table</find>
       <find>contact-multiple-table</find>
+      <find>&quot;</find>
+      <find>grid-1-1</find>
+      <find>grid -</find>
     </findStrings>
     <replaceStrings>
       <replace>contacto@batsilmaya.org</replace>
@@ -205,7 +204,6 @@
         <option value="$PROJECT_DIR$/cuenta-envio.html" />
         <option value="$PROJECT_DIR$/grid.css" />
         <option value="$PROJECT_DIR$/images/logos/visa.svg" />
-        <option value="$PROJECT_DIR$/admin/clients-backend.html" />
         <option value="$PROJECT_DIR$/admin/orders-enroute-backend.html" />
         <option value="$PROJECT_DIR$/nuestro-cafe.html" />
         <option value="$PROJECT_DIR$/admin/connection.php" />
@@ -217,8 +215,9 @@
         <option value="$PROJECT_DIR$/admin/clientes.php" />
         <option value="$PROJECT_DIR$/admin/login.php" />
         <option value="$PROJECT_DIR$/iniciar_sesion.php" />
-        <option value="$PROJECT_DIR$/admin/admin.php" />
+        <option value="$PROJECT_DIR$/admin/clients-backend.html" />
         <option value="$PROJECT_DIR$/admin/main-backend.css" />
+        <option value="$PROJECT_DIR$/admin/admin.php" />
       </list>
     </option>
   </component>
@@ -399,21 +398,7 @@
       <workItem from="1556816040003" duration="7290000" />
       <workItem from="1556885341866" duration="1242000" />
       <workItem from="1556895413942" duration="10334000" />
-      <workItem from="1557148000525" duration="935000" />
-    </task>
-    <task id="LOCAL-00051" summary="Fixed NUESTROS CLIENTES mobile H2 padding.">
-      <created>1553563211616</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1553563211617</updated>
-    </task>
-    <task id="LOCAL-00052" summary="Added more padding to MISIÓN Y VISIÓN.">
-      <created>1553564028557</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1553564028557</updated>
+      <workItem from="1557148000525" duration="2400000" />
     </task>
     <task id="LOCAL-00053" summary="Updated form in all HTMls.&#10;Added a jquery local library.">
       <created>1553564811159</created>
@@ -744,11 +729,25 @@
       <option name="project" value="LOCAL" />
       <updated>1556905320666</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="Día 14">
+      <created>1557149218825</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1557149218826</updated>
+    </task>
+    <task id="LOCAL-00101" summary="finished clientes table&#10;missing pedidos table in sql">
+      <created>1557149892197</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1557149892197</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="267567000" />
+    <option name="totallyTimeSpent" value="269032000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -892,8 +891,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/js/tiny-date-picker" />
     </ignored-roots>
-    <MESSAGE value="Fancy form focus." />
-    <MESSAGE value="Sombra experimental a AYUDA." />
     <MESSAGE value="Inicio de sesión." />
     <MESSAGE value="num-list border" />
     <MESSAGE value="Added index.html to organico nav." />
@@ -917,7 +914,9 @@
     <MESSAGE value="New connection and clients PHPs" />
     <MESSAGE value="All headers updated?" />
     <MESSAGE value="updated login and tables" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated login and tables" />
+    <MESSAGE value="Día 14" />
+    <MESSAGE value="finished clientes table&#10;missing pedidos table in sql" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished clientes table&#10;missing pedidos table in sql" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1210,25 +1209,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/clients-backend.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-613">
-          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="7">
+          <caret line="107" column="50" lean-forward="true" selection-start-line="107" selection-start-column="50" selection-end-line="107" selection-end-column="50" />
           <folding>
             <element signature="n#style#0;n#h2#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/admin.php">
+    <entry file="file://$PROJECT_DIR$/admin/main-backend.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="50" column="60" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="60" />
+        <state relative-caret-position="462">
+          <caret line="164" lean-forward="true" selection-end-line="261" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/main-backend.css">
+    <entry file="file://$PROJECT_DIR$/admin/admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="48" column="1" lean-forward="true" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
+        <state relative-caret-position="-445">
+          <caret line="341" column="2" selection-start-line="341" selection-start-column="2" selection-end-line="341" selection-end-column="2" />
         </state>
       </provider>
     </entry>

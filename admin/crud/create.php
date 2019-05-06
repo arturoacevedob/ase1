@@ -23,7 +23,7 @@ if(isset($_POST['insert'])) {
     if($uploadOk == 1) {
         $q = "insert into clients (name_legal, name_alias, giro, client_type) values ('$name_legal','$name_alias','$giro','$client_type')";
         execute($q);
-        header("Location: admin.php");
+        header("Location: clients.php");
     }
 }
 ?>

@@ -63,7 +63,7 @@ if (isset($_POST['update'])) {
             where id_product = '$id_product'";
 
     execute($q);
-    header("Location: admin.php");
+    header("Location: clients.php");
 }
 ?>
 

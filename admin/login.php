@@ -18,7 +18,7 @@ if(isset($_POST['user'])) {
     if($row = mysqli_fetch_array($recordSet)) {
         $_SESSION['user'] = $row['user'];
         $_SESSION['name'] = $row['name'];
-        header("Location: admin.php");
+        header("Location: clients.php");
     } else {
         session_destroy();
         echo "Verificar usuario y contraseña.";
