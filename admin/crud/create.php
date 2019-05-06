@@ -31,13 +31,13 @@ if(isset($_POST['insert'])) {
 <!DOCTYPE html>
 <html>
 <body>
-    <h1>Productos</h1>
+    <h1>Datos Generales</h1>
     <form action='create.php' method='post' enctype='multipart/form-data'>
         <input type='hidden' name='insert' value='insert'>
         Nombre Legal: <input type='text' name='name_legal'> <br>
         Alias: <input type='text' name='name_alias'> <br>
         Giro: <input type='text' name='giro'> <br>
-        Tipo de cliente: <input type='text' name='client_type'> <br>
+        Tipo de cliente: <input type='radio' name='client_type'> <br>
         <input type='submit' value='Guardar cliente'>
     </form>
 </body>
