@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2b0b4be1-8d7c-4364-8440-568a85826da6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/main-backend.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/main-backend.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/crud/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/crud/create.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -36,14 +35,23 @@
     <favorites_list name="ASE I" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5024233">
+    <splitter split-orientation="horizontal" split-proportion="0.65993536">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/admin/admin.php">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/admin/clients.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-445">
-                  <caret line="341" column="2" selection-start-line="341" selection-start-column="2" selection-end-line="341" selection-end-column="2" />
+                <state relative-caret-position="-1410">
+                  <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/admin/crud/create.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="573">
+                  <caret line="43" column="48" lean-forward="true" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
                 </state>
               </provider>
             </entry>
@@ -167,7 +175,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js/jquery.mask.js" />
         <option value="$PROJECT_DIR$/js/mask.js" />
         <option value="$PROJECT_DIR$/js/email-autocomplete.js" />
         <option value="$PROJECT_DIR$/style 2.css" />
@@ -218,6 +225,7 @@
         <option value="$PROJECT_DIR$/admin/clients-backend.html" />
         <option value="$PROJECT_DIR$/admin/main-backend.css" />
         <option value="$PROJECT_DIR$/admin/admin.php" />
+        <option value="$PROJECT_DIR$/admin/crud/create.php" />
       </list>
     </option>
   </component>
@@ -277,12 +285,8 @@
             <path>
               <item name="ASE I" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="~/Documents/• Projects/ASE I" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="css" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="ASE I" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/Documents/• Projects/ASE I" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="js" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="icons" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -398,14 +402,7 @@
       <workItem from="1556816040003" duration="7290000" />
       <workItem from="1556885341866" duration="1242000" />
       <workItem from="1556895413942" duration="10334000" />
-      <workItem from="1557148000525" duration="2400000" />
-    </task>
-    <task id="LOCAL-00053" summary="Updated form in all HTMls.&#10;Added a jquery local library.">
-      <created>1553564811159</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1553564811159</updated>
+      <workItem from="1557148000525" duration="3053000" />
     </task>
     <task id="LOCAL-00054" summary="Improved ENVIANOS UN CORREO form.">
       <created>1553565164012</created>
@@ -743,11 +740,18 @@
       <option name="project" value="LOCAL" />
       <updated>1557149892197</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="Refactored admin.php to clients.php">
+      <created>1557154458120</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1557154458120</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="269032000" />
+    <option name="totallyTimeSpent" value="269685000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -891,7 +895,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/js/tiny-date-picker" />
     </ignored-roots>
-    <MESSAGE value="Inicio de sesión." />
     <MESSAGE value="num-list border" />
     <MESSAGE value="Added index.html to organico nav." />
     <MESSAGE value="Added some Cuenta HTMLs." />
@@ -916,7 +919,8 @@
     <MESSAGE value="updated login and tables" />
     <MESSAGE value="Día 14" />
     <MESSAGE value="finished clientes table&#10;missing pedidos table in sql" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished clientes table&#10;missing pedidos table in sql" />
+    <MESSAGE value="Refactored admin.php to clients.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored admin.php to clients.php" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1145,20 +1149,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/crud/create.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/crud/connection.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/clientes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="49" column="7" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1224,10 +1218,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/admin.php">
+    <entry file="file://$PROJECT_DIR$/admin/clientes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-445">
-          <caret line="341" column="2" selection-start-line="341" selection-start-column="2" selection-end-line="341" selection-end-column="2" />
+        <state relative-caret-position="735">
+          <caret line="49" column="7" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/clients.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1410">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/crud/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="573">
+          <caret line="43" column="48" lean-forward="true" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
         </state>
       </provider>
     </entry>
