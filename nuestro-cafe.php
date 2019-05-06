@@ -93,7 +93,7 @@ include 'header.php';
             <div class="grid-2-left-text container">
                 <div class="wrapper-text">
                     <h2>Ubicación</h2><br>
-                    <p class="p-big">Nuestra región, la Selva Norte de Chiapas, por su ubicación geográfica, tiene las
+                    <p class="p-big">Nuestra región, la Selva Norte de Chiapas, por su localización geográfica, tiene las
                         condiciones óptimas
                         para el cultivo de café de alta calidad.</p> <br>
                     <p>Todo nuestro café es cultivado bajo prácticas agroecológicas y contamos con café orgánico
@@ -133,8 +133,7 @@ include 'header.php';
         <div class="grid-2-right-text container">
             <div class="wrapper-text">
                 <h2 class="taza-h2">​Características en taza</h2><br>
-                <p class="p-big">Quienes lo disfrutan encuentran un balance propio de los cafés de altura</p><br>
-                <p>Caracterizado por un delicado y fino sabor, cuerpo abundante y cremoso, y acidez cítrica.</p><br>
+                <p class="p-big">Quienes lo disfrutan encuentran un balance propio de los cafés de altura caracterizado por un delicado y fino sabor, cuerpo abundante y cremoso, y acidez cítrica.</p><br>
                 <p>Sus notas son florales, acarameladas y achocolatadas.</p><br>
                 <p>En Yomol A’tel, cuidamos cada uno de los trabajos y pasos que sigue nuestro café, desde el cafetal a
                     la taza.</p>
