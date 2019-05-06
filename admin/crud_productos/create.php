@@ -15,7 +15,7 @@ if(isset($_POST['insert'])) {
     $uploadOk = 0;
     $name = $_POST['name'];
     $description = $_POST['description'];
-    $price = $_POST['price'];
+    $notes = $_POST['notes'];
     $brand = $_POST['brand'];
 
     if($_FILES['image']['name'] != "") {
