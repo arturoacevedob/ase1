@@ -93,7 +93,7 @@ include 'header.php';
             <div class="grid-2-left-text container">
                 <div class="wrapper-text">
                     <h2>Ubicación</h2><br>
-                    <p class="p-big">Nuestra región, la Selva Norte de Chiapas, por su ubicación geográfica, tiene las
+                    <p class="p-big">Nuestra región, la Selva Norte de Chiapas, por su localización geográfica, tiene las
                         condiciones óptimas
                         para el cultivo de café de alta calidad.</p> <br>
                     <p>Todo nuestro café es cultivado bajo prácticas agroecológicas y contamos con café orgánico
