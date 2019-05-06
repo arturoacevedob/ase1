@@ -27,7 +27,12 @@ if(isset($_POST['user'])) {
 ?>
 
 <!DOCTYPE html>
-<html>
+<html dir="ltr" lang="es">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
 <body>
 <h1>Autenticación del Administrador</h1>
 <form class="form login-wrapper" action='login.php' method='post'>

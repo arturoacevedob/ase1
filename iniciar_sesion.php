@@ -129,6 +129,7 @@ if(isset($_POST['user'])) {
 <script>
     $(document).ready(function () {
         $(".email").emailautocomplete();
+        ["capeltic.org"]
     });
 </script>
 

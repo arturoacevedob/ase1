@@ -1,5 +1,5 @@
 <?php
-ini_set('display_errors', 1);
+ini_set('display_errorecordSet', 1);
 error_reporting(E_ALL);
 
 include 'crud/connection.php';
@@ -13,51 +13,207 @@ if (!isset($_SESSION['user'])) {
 
 function createProductListOptions()
 {
-    $sql = "select name_alias, giro, client_type from clients";
-    $rs = execute($sql);
+    $query = "select name_alias, giro, client_type from clients";
+    $recordSet = execute($query);
 
-    $clientes = array();
-    $k = 0;
-    while ($d = mysqli_fetch_array($rs)) {
-        $clientes[$k] = array();
-        $clientes[$k]["name_alias"] = $d["name_alias"];
-        $clientes[$k]["giro"] = $d["giro"];
-        $clientes[$k]["client_type"] = $d["client_type"];
-        $k++;
+    $clients = array();
+    $counter = 0;
+    while ($d = mysqli_fetch_array($recordSet)) {
+        $clients[$counter] = array();
+        $clients[$counter]["name_alias"] = $d["name_alias"];
+        $clients[$counter]["giro"] = $d["giro"];
+        $clients[$counter]["client_type"] = $d["client_type"];
+        $counter++;
     }
 
-    for ($i = 0; $i < count($clientes); $i++) {
-        echo "<strong>Cliente: </strong>" . $clientes[$i]["name_alias"] . "<br>";
-        echo "<strong>Giro: </strong>" . $clientes[$i]["giro"] . "<br>";
-        echo "<strong>Tipo Cliente: </strong>" . $clientes[$i]["client_type"] . "<br>";
-        echo "<br>";
-        echo "<table border='1'>";
-        echo "<tr><th>Nombre</th><th>Email</th><th>Telefono</th></tr>";
-        $sql = "select clients.name_alias, contacts.* from clients inner join contacts on clients.id_client = contacts.id_client where clients.name_alias = '" . $clientes[$i]["name_alias"] . "'";
-        $rs2 = execute($sql);
-        while ($d2 = mysqli_fetch_array($rs2)) {
-            echo "<tr>";
-            echo "<td>" . $d2["name"] . "</td>";
-            echo "<td>" . $d2["email"] . "</td>";
-            echo "<td>", $d2["phone"] . "</td>";
-            echo "</tr>";
+    for ($i = 0; $i < count($clients); $i++) {
+
+        echo "
+        <table class='expandable-table client wrapper'>
+        <tbody>
+        <tr class='collapsed-view'>
+            <td>" .
+            $clients[$i]["name_alias"] . "<span class='tag'>" . $clients[$i]["client_type"] . "</span><br>" .
+            $clients[$i]["giro"] .
+            "</td>
+            <td>Editar</td>
+            <td></td>
+        </tr>";
+
+        $query2 = "select clients.name_alias, contacts.* from clients inner join contacts on clients.id_client = contacts.id_client where clients.name_alias = '" . $clients[$i]["name_alias"] . "'";
+        $recordSet2 = execute($query2);
+        while ($contact = mysqli_fetch_array($recordSet2)) {
+            echo "
+        
+            <tr class='expanded-view'>
+                <td colspan='3'>
+                    <div class='grid-1-1-1-1 expanded-view-content'>
+                        <table class='contact-multiple-table hide-all-headers'>
+                            <caption>Contactos</caption>
+                            <tbody>
+                            <tr>
+                                <th>Nombre</th>
+                                <td>" . $contact["name"] . "</td>
+                            </tr>
+                            <tr>
+                                <th>Título</th>
+                                <td>Administradora</td>
+                            </tr>
+                            <tr>
+                                <th>Correo</th>
+                                <td class='email'>" . $contact["email"] . "</td>
+                            </tr>
+                            <tr>
+                                <th>Teléfono</th>
+                                <td class='tel'>" . $contact["phone"] . "</td>
+                            </tr>
+                            </tbody>
+                        </table>";
         }
-        echo "</table>";
-        echo "<hr size='1'>";
+
+        $query3 = "select clients.name_alias, addresses.* from clients inner join addresses on clients.id_client = addresses.id_client where clients.name_alias = '" . $clients[$i]["name_alias"] . "'";
+        $recordSet3 = execute($query3);
+        while ($address = mysqli_fetch_array($recordSet3)) {
+            echo "
+                        
+                        <table class='address-multiple-table hide-all-headers'>
+                            <caption>Direcciones</caption>
+        
+                            <tbody>
+                            <tr>
+                                <th>Nombre del lugar</th>
+                                <td>" . $address["name"] . "</td>
+                            </tr>
+                            <tr>
+                                <th>Calle y número</th>
+                                <td>" . $address["address1"] . "</td>
+                            </tr>
+                            <tr>
+                                <th>Depto, piso, suite, etc.</th>
+                                <td>" . $address["address2"] . "</td>
+                            </tr>
+                            <tr>
+                                <th>Ciudad y CP</th>
+                                <td>" . $address["city"] . ", " . $address["cp"] . "</td>
+                            </tr>
+                            <tr>
+                                <th>Estado y país</th>
+                                <td>" . $address["state"] . ", " . $address["country"] . "</td>
+                            </tr>
+                            <tr>
+                                <th>Teléfono</th>
+                                <td class='tel'>" . $address["phone"] . "</td>
+                            </tr>
+                        </table>";
+        }
+
+        $query4 = "select clients.name_alias, billing.* from clients inner join billing on clients.id_client = billing.id_client where clients.name_alias = '" . $clients[$i]["name_alias"] . "'";
+        $recordSet4 = execute($query4);
+        while ($billing = mysqli_fetch_array($recordSet4)) {
+            echo "
+                        
+                        <table class='address-multiple-table hide-all-headers'>
+                            <caption>Facturación</caption>
+        
+                            <tbody>
+                            <tr>
+                                <th>Nómina o razón social</th>
+                                <td>" . $billing["payroll"] . "</td>
+                            </tr>
+                            <tr>
+                                <th>Dirección fiscal</th>
+                                <td>" . $billing["fiscal_address"] . "</td>
+                            </tr>
+                            <tr>
+                                <th>RFC</th>
+                                <td>" . $billing["rfc"] . "</td>
+                            </tr>
+                            <tr>
+                                <th>Método de pago</th>
+                                <td>" . $billing["payment_method"] . "</td>
+                            </tr>
+                            <tr>
+                                <th>Forma y uso de pago</th>
+                                <td>" . $billing["payment_form"] . ", " . $billing["payment_use"] . "</td>
+                            </tr>
+                        </table>";
+        }
+
+        echo "
+                        
+                    <div class='notes-table'>
+                        <label for='notes'>Notas</label>
+                        <textarea id='notes'></textarea>
+                    </div>";
     }
 }
-
 ?>
 
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Productos</h1>
-<h3>Administrador</h3>
-<a href='login.php?killsession=1'>Terminar Sesión</a>
-<br><br>
-<a href='crud/create.php'>Registro de productos</a>
-<br><br>
-<?php createProductListOptions(); ?>
+
+<html dir="ltr" lang="en">
+
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta content="Arturo Acevedo Bravo" name="author">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Scripts de compatibilidad -->
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+
+    <!-- Escala de viewport -->
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Link a CSS -->
+    <link href="main-backend.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <title>Clientes</title>
+</head>
+
+<body class="main-grid">
+
+<nav>
+    <h2 style="display: none">Menú</h2>
+    <div><img alt="Logo de Bats'il Maya" src="../images/logos/batsil_maya_logo.svg"></div>
+    <ul>
+        <li><a class="active" href="clients-backend.html" target="_self">Clientes</a></li>
+        <li><a href="orders-pending-backend.html" target="_self">Pedidos</a></li>
+        <li><a href="products-coffee-backend.html" target="_self">Productos</a></li>
+        <li><a href='login.php?killsession=1'>Terminar Sesión</a></li>
+        <li><a href='crud/create.php'>Registro de productos</a></li>
+    </ul>
+</nav>
+
+<div>
+
+    <div class="global-toolbar grid-2-space-between">
+        <h1>Clientes</h1>
+        <div class="grid-column">
+            <div>
+                <label class="kill" for="search"></label>
+                <input id="search" placeholder="Buscar" type="search">
+            </div>
+            <button>Agregar cliente</button>
+        </div>
+    </div>
+
+    <?php createProductListOptions(); ?>
+
+</div>
+
+<script>
+    $(function () {
+        $(".expandable-table tr.collapsed-view").on("click", function () {
+            $(this).toggleClass("open").next(".expanded-view").toggleClass("open");
+        });
+    });
+</script>
+
 </body>
 </html>
