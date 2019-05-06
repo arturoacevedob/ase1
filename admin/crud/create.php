@@ -12,19 +12,16 @@ if(!isset($_SESSION['user'])) {
 }
 
 if(isset($_POST['insert'])) {
-    $uploadOk = 0;
+    $uploadOk = 1;
     $name_legal = $_POST['name_legal'];
     $name_alias = $_POST['name_alias'];
     $giro= $_POST['giro'];
     $client_type = $_POST['client_type'];
-    
-    
 
-    
     if($uploadOk == 1) {
         $q = "insert into clients (name_legal, name_alias, giro, client_type) values ('$name_legal','$name_alias','$giro','$client_type')";
         execute($q);
-        header("Location: clients.php");
+        header("Location: ../clients.php");
     }
 }
 ?>
@@ -32,18 +29,18 @@ if(isset($_POST['insert'])) {
 <!DOCTYPE html>
 <html>
 <body>
-    <h1>Datos Generales</h1>
-    <form action='create.php' method='post' enctype='multipart/form-data'>
-        <input type='hidden' name='insert' value='insert'>
-        Nombre Legal: <input type='text' name='name_legal'> <br>
-        Alias: <input type='text' name='name_alias'> <br>
-        Giro: <input type='text' name='giro'> <br>
-        Tipo de cliente:
-        <input type='radio' name='client_type' id="minorista" value='0'>
-        <label for="minorista">Minorista</label>
-        <input type='radio' name='client_type' id="mayorista" value='1'>
-        <label for="mayorista">Mayorista</label>
-        <input type='submit' value='Guardar cliente'>
-    </form>
+<h1>Datos Generales</h1>
+<form action="create.php" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="insert" value="insert">
+    Nombre Legal: <input type="text" name="name_legal"> <br>
+    Alias: <input type="text" name="name_alias"> <br>
+    Giro: <input type="text" name="giro"> <br>
+    Tipo de cliente:
+    <input type="radio" name="client_type" id="minorista" value="0">
+    <label for="minorista">Minorista</label>
+    <input type="radio" name="client_type" id="mayorista" value="1">
+    <label for="mayorista">Mayorista</label>
+    <input type="submit" value="Guardar cliente">
+</form>
 </body>
 </html>
