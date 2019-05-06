@@ -144,7 +144,198 @@ function createProductListOptions()
                     <div class='notes-table'>
                         <label for='notes'>Notas</label>
                         <textarea id='notes'></textarea>
-                    </div>";
+                    </div>
+                </div>
+                        <div class="grid - 2 - space - between">
+                            <div>Últimos pedidos</div>
+                            <div><a href="">Todos los pedidos</a></div>
+                        </div>
+                        <div class="grid - column last - orders - table">
+                            <div>
+                                <div>
+                                    <div>Hoy - 03/03/19</div>
+                                    <div>#236 »</div>
+                                </div>
+                                <table class="order - table">
+                                    <caption>Pendiente</caption>
+                                    <thead>
+                                    <tr>
+                                        <th>Producto</th>
+                                        <th>Cantidad</th>
+                                        <th>Precio</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Orgánico</td>
+                                        <td class="quantity">10</td>
+                                        <td class="currency">180</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gourmet</td>
+                                        <td class="quantity">8</td>
+                                        <td class="currency">220</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Especialidad</td>
+                                        <td class="quantity">6</td>
+                                        <td class="currency">250</td>
+                                    </tr>
+                                    </tbody>
+                                    <tfoot>
+                                    <tr>
+                                        <th>Descuento del <span class="percentage">15</span></th>
+                                        <td class="units">30</td>
+                                        <td class="discount">759</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Total</th>
+                                        <td class="units">30</td>
+                                        <td class="currency">4320</td>
+                                    </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <div>
+                                <div>
+                                    <div>Hoy - 03/03/19</div>
+                                    <div>#236 »</div>
+                                </div>
+                                <table class="order - table">
+                                    <caption>Pendiente</caption>
+                                    <thead>
+                                    <tr>
+                                        <th>Producto</th>
+                                        <th>Cantidad</th>
+                                        <th>Precio</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Orgánico</td>
+                                        <td class="quantity">10</td>
+                                        <td class="currency">180</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gourmet</td>
+                                        <td class="quantity">8</td>
+                                        <td class="currency">220</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Especialidad</td>
+                                        <td class="quantity">6</td>
+                                        <td class="currency">250</td>
+                                    </tr>
+                                    </tbody>
+                                    <tfoot>
+                                    <tr>
+                                        <th>Descuento del <span class="percentage">15</span></th>
+                                        <td class="units">30</td>
+                                        <td class="discount">759</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Total</th>
+                                        <td class="units">30</td>
+                                        <td class="currency">4320</td>
+                                    </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <div>
+                                <div>
+                                    <div>Hoy - 03/03/19</div>
+                                    <div>#236 »</div>
+                                </div>
+                                <table class="order - table">
+                                    <caption>Pendiente</caption>
+                                    <thead>
+                                    <tr>
+                                        <th>Producto</th>
+                                        <th>Cantidad</th>
+                                        <th>Precio</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Orgánico</td>
+                                        <td class="quantity">10</td>
+                                        <td class="currency">180</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gourmet</td>
+                                        <td class="quantity">8</td>
+                                        <td class="currency">220</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Especialidad</td>
+                                        <td class="quantity">6</td>
+                                        <td class="currency">250</td>
+                                    </tr>
+                                    </tbody>
+                                    <tfoot>
+                                    <tr>
+                                        <th>Descuento del <span class="percentage">15</span></th>
+                                        <td class="units">30</td>
+                                        <td class="discount">759</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Total</th>
+                                        <td class="units">30</td>
+                                        <td class="currency">4320</td>
+                                    </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <div>
+                                <div>
+                                    <div>Hoy - 03/03/19</div>
+                                    <div>#236 »</div>
+                                </div>
+                                <table class="order - table">
+                                    <caption>Pendiente</caption>
+                                    <thead>
+                                    <tr>
+                                        <th>Producto</th>
+                                        <th>Cantidad</th>
+                                        <th>Precio</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Orgánico</td>
+                                        <td class="quantity">10</td>
+                                        <td class="currency">180</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gourmet</td>
+                                        <td class="quantity">8</td>
+                                        <td class="currency">220</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Especialidad</td>
+                                        <td class="quantity">6</td>
+                                        <td class="currency">250</td>
+                                    </tr>
+                                    </tbody>
+                                    <tfoot>
+                                    <tr>
+                                        <th>Descuento del <span class="percentage">15</span></th>
+                                        <td class="units">30</td>
+                                        <td class="discount">759</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Total</th>
+                                        <td class="units">30</td>
+                                        <td class="currency">4320</td>
+                                    </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>";
     }
 }
 ?>
