@@ -37,7 +37,11 @@ if(isset($_POST['insert'])) {
         Nombre Legal: <input type='text' name='name_legal'> <br>
         Alias: <input type='text' name='name_alias'> <br>
         Giro: <input type='text' name='giro'> <br>
-        Tipo de cliente: <input type='radio' name='client_type'> <br>
+        Tipo de cliente:
+        <input type='radio' name='client_type' id="minorista" value='0'>
+        <label for="minorista">Minorista</label>
+        <input type='radio' name='client_type' id="mayorista" value='1'>
+        <label for="mayorista">Mayorista</label>
         <input type='submit' value='Guardar cliente'>
     </form>
 </body>
