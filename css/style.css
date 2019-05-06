@@ -427,11 +427,9 @@ a.dark:visited {
 }
 
 .cuenta{
-    display: none;
     background: url(../images/nav/cuenta-icon.svg) 0 0 / 100% no-repeat;
 }
 .carrito{
-    display: none;
     background: url(../images/nav/shopping-cart.svg) 0 0 / 100% no-repeat;
 }
 
