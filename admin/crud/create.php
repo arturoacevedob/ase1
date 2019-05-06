@@ -18,6 +18,7 @@ if(isset($_POST['insert'])) {
     $giro= $_POST['giro'];
     $client_type = $_POST['client_type'];
     
+    
 
     
     if($uploadOk == 1) {
