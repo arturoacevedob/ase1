@@ -38,16 +38,16 @@ function createProductListOptions()
             "</td>
             <td>Editar</td>
             <td></td>
-        </tr>";
+        </tr>
+        <tr class='expanded-view'>
+                <td colspan='3'>
+                    <div class='grid-1-1-1-1 expanded-view-content'>";
 
         $query2 = "select clients.name_alias, contacts.* from clients inner join contacts on clients.id_client = contacts.id_client where clients.name_alias = '" . $clients[$i]["name_alias"] . "'";
         $recordSet2 = execute($query2);
         while ($contact = mysqli_fetch_array($recordSet2)) {
             echo "
-        
-            <tr class='expanded-view'>
-                <td colspan='3'>
-                    <div class='grid-1-1-1-1 expanded-view-content'>
+
                         <table class='contact-multiple-table hide-all-headers'>
                             <caption>Contactos</caption>
                             <tbody>
@@ -146,17 +146,17 @@ function createProductListOptions()
                         <textarea id='notes'></textarea>
                     </div>
                 </div>
-                        <div class="grid - 2 - space - between">
+                        <div class='grid-2-space-between'>
                             <div>Últimos pedidos</div>
-                            <div><a href="">Todos los pedidos</a></div>
+                            <div><a href=''>Todos los pedidos</a></div>
                         </div>
-                        <div class="grid - column last - orders - table">
+                        <div class='grid-column last-orders-table'>
                             <div>
                                 <div>
                                     <div>Hoy - 03/03/19</div>
                                     <div>#236 »</div>
                                 </div>
-                                <table class="order - table">
+                                <table class='order-table'>
                                     <caption>Pendiente</caption>
                                     <thead>
                                     <tr>
@@ -168,30 +168,30 @@ function createProductListOptions()
                                     <tbody>
                                     <tr>
                                         <td>Orgánico</td>
-                                        <td class="quantity">10</td>
-                                        <td class="currency">180</td>
+                                        <td class='quantity'>10</td>
+                                        <td class='currency'>180</td>
                                     </tr>
                                     <tr>
                                         <td>Gourmet</td>
-                                        <td class="quantity">8</td>
-                                        <td class="currency">220</td>
+                                        <td class='quantity'>8</td>
+                                        <td class='currency'>220</td>
                                     </tr>
                                     <tr>
                                         <td>Especialidad</td>
-                                        <td class="quantity">6</td>
-                                        <td class="currency">250</td>
+                                        <td class='quantity'>6</td>
+                                        <td class='currency'>250</td>
                                     </tr>
                                     </tbody>
                                     <tfoot>
                                     <tr>
-                                        <th>Descuento del <span class="percentage">15</span></th>
-                                        <td class="units">30</td>
-                                        <td class="discount">759</td>
+                                        <th>Descuento del <span class='percentage'>15</span></th>
+                                        <td class='units'>30</td>
+                                        <td class='discount'>759</td>
                                     </tr>
                                     <tr>
                                         <th>Total</th>
-                                        <td class="units">30</td>
-                                        <td class="currency">4320</td>
+                                        <td class='units'>30</td>
+                                        <td class='currency'>4320</td>
                                     </tr>
                                     </tfoot>
                                 </table>
@@ -201,7 +201,7 @@ function createProductListOptions()
                                     <div>Hoy - 03/03/19</div>
                                     <div>#236 »</div>
                                 </div>
-                                <table class="order - table">
+                                <table class='order-table'>
                                     <caption>Pendiente</caption>
                                     <thead>
                                     <tr>
@@ -213,30 +213,30 @@ function createProductListOptions()
                                     <tbody>
                                     <tr>
                                         <td>Orgánico</td>
-                                        <td class="quantity">10</td>
-                                        <td class="currency">180</td>
+                                        <td class='quantity'>10</td>
+                                        <td class='currency'>180</td>
                                     </tr>
                                     <tr>
                                         <td>Gourmet</td>
-                                        <td class="quantity">8</td>
-                                        <td class="currency">220</td>
+                                        <td class='quantity'>8</td>
+                                        <td class='currency'>220</td>
                                     </tr>
                                     <tr>
                                         <td>Especialidad</td>
-                                        <td class="quantity">6</td>
-                                        <td class="currency">250</td>
+                                        <td class='quantity'>6</td>
+                                        <td class='currency'>250</td>
                                     </tr>
                                     </tbody>
                                     <tfoot>
                                     <tr>
-                                        <th>Descuento del <span class="percentage">15</span></th>
-                                        <td class="units">30</td>
-                                        <td class="discount">759</td>
+                                        <th>Descuento del <span class='percentage'>15</span></th>
+                                        <td class='units'>30</td>
+                                        <td class='discount'>759</td>
                                     </tr>
                                     <tr>
                                         <th>Total</th>
-                                        <td class="units">30</td>
-                                        <td class="currency">4320</td>
+                                        <td class='units'>30</td>
+                                        <td class='currency'>4320</td>
                                     </tr>
                                     </tfoot>
                                 </table>
@@ -246,7 +246,7 @@ function createProductListOptions()
                                     <div>Hoy - 03/03/19</div>
                                     <div>#236 »</div>
                                 </div>
-                                <table class="order - table">
+                                <table class='order-table'>
                                     <caption>Pendiente</caption>
                                     <thead>
                                     <tr>
@@ -258,30 +258,30 @@ function createProductListOptions()
                                     <tbody>
                                     <tr>
                                         <td>Orgánico</td>
-                                        <td class="quantity">10</td>
-                                        <td class="currency">180</td>
+                                        <td class='quantity'>10</td>
+                                        <td class='currency'>180</td>
                                     </tr>
                                     <tr>
                                         <td>Gourmet</td>
-                                        <td class="quantity">8</td>
-                                        <td class="currency">220</td>
+                                        <td class='quantity'>8</td>
+                                        <td class='currency'>220</td>
                                     </tr>
                                     <tr>
                                         <td>Especialidad</td>
-                                        <td class="quantity">6</td>
-                                        <td class="currency">250</td>
+                                        <td class='quantity'>6</td>
+                                        <td class='currency'>250</td>
                                     </tr>
                                     </tbody>
                                     <tfoot>
                                     <tr>
-                                        <th>Descuento del <span class="percentage">15</span></th>
-                                        <td class="units">30</td>
-                                        <td class="discount">759</td>
+                                        <th>Descuento del <span class='percentage'>15</span></th>
+                                        <td class='units'>30</td>
+                                        <td class='discount'>759</td>
                                     </tr>
                                     <tr>
                                         <th>Total</th>
-                                        <td class="units">30</td>
-                                        <td class="currency">4320</td>
+                                        <td class='units'>30</td>
+                                        <td class='currency'>4320</td>
                                     </tr>
                                     </tfoot>
                                 </table>
@@ -291,7 +291,7 @@ function createProductListOptions()
                                     <div>Hoy - 03/03/19</div>
                                     <div>#236 »</div>
                                 </div>
-                                <table class="order - table">
+                                <table class='order-table'>
                                     <caption>Pendiente</caption>
                                     <thead>
                                     <tr>
@@ -303,30 +303,30 @@ function createProductListOptions()
                                     <tbody>
                                     <tr>
                                         <td>Orgánico</td>
-                                        <td class="quantity">10</td>
-                                        <td class="currency">180</td>
+                                        <td class='quantity'>10</td>
+                                        <td class='currency'>180</td>
                                     </tr>
                                     <tr>
                                         <td>Gourmet</td>
-                                        <td class="quantity">8</td>
-                                        <td class="currency">220</td>
+                                        <td class='quantity'>8</td>
+                                        <td class='currency'>220</td>
                                     </tr>
                                     <tr>
                                         <td>Especialidad</td>
-                                        <td class="quantity">6</td>
-                                        <td class="currency">250</td>
+                                        <td class='quantity'>6</td>
+                                        <td class='currency'>250</td>
                                     </tr>
                                     </tbody>
                                     <tfoot>
                                     <tr>
-                                        <th>Descuento del <span class="percentage">15</span></th>
-                                        <td class="units">30</td>
-                                        <td class="discount">759</td>
+                                        <th>Descuento del <span class='percentage'>15</span></th>
+                                        <td class='units'>30</td>
+                                        <td class='discount'>759</td>
                                     </tr>
                                     <tr>
                                         <th>Total</th>
-                                        <td class="units">30</td>
-                                        <td class="currency">4320</td>
+                                        <td class='units'>30</td>
+                                        <td class='currency'>4320</td>
                                     </tr>
                                     </tfoot>
                                 </table>
@@ -338,6 +338,7 @@ function createProductListOptions()
             </table>";
     }
 }
+
 ?>
 
 <!DOCTYPE html>
