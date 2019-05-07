@@ -435,11 +435,9 @@ a.dark:visited {
     background: url(../images/nav/shopping-cart.svg) 0 0 / 100% no-repeat;
 }
 
-<<<<<<< HEAD
 .disable{
     background-color: var(--disable);
 }
-=======
 /* —————— SUBMENU —————— */
 
 
@@ -470,7 +468,6 @@ li:hover .submenu{
 }
 
 
->>>>>>> b65a6e3f0bf998f42d3ab241227150790e2e0760
 
 
 /* —————— Header —————— */
