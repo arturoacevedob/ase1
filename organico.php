@@ -4,6 +4,7 @@ error_reporting(E_ALL);
 
 session_start();
 include 'header.php';
+include 'agregar-producto.php';
 ?>
 
 <!DOCTYPE html>
@@ -140,13 +141,12 @@ include 'header.php';
                     <span>Qt. x</span>
                     <p>$1260</p>
                 </div>
-                <div>
-                    <a class="button red" href="carrito.php" target="_self">Agregar al carrito</a>
-                </div>
+                <?php
+                compra()
+                ?>
             </div>
             <div class="center-aligned">
                 <p>Pide 11KG para envío nacional gratis</p>
-                <progress max="11" value="7"></progress>
             </div>
             <div class="premium_organico">
             </div>
