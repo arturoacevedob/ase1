@@ -446,12 +446,13 @@ a.dark:visited {
 
 
 .submenu{
+    padding: 5px;
 	width: auto;
 	display: none;
 	flex-flow: column wrap;
 	justify-content: space-around;
 	position: absolute;
-	top: 2%;
+	top: 44px;
 	list-style: none;
 	background-color: var(--light);
 }
