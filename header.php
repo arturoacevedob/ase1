@@ -2,7 +2,7 @@
 function renderHeader(){
     $headerUser = "
         <div class='cuenta'><li class='fit-content'><a class='kill' href='cuenta-informacion.php' target='_self'>Cuenta</a>
-        <ul id='submenu'>
+        <ul class='submenu'>
                       <li><a href='#' target='_self'>Información</a></li>
                       <li><a href='#' target='_self'>Dirección de envío</a></li>
                       <li><a href='#' target='_self'>Métodos de pago</a></li>

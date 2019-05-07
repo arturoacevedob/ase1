@@ -436,7 +436,7 @@ a.dark:visited {
 /* —————— SUBMENU —————— */
 
 
-#submenu{
+.submenu{
 	width: auto;
 	display: none;
 	flex-flow: column wrap;
@@ -446,15 +446,15 @@ a.dark:visited {
 	list-style: none;
 	background-color: var(--light);
 }
-#submenu li{
+.submenu li{
 	flex-basis: 50%;
 }
 /*Declarar selector para aparecer la lista anidada #submenu cuando el usuario pasa por encima del li*/
-li:hover #submenu{
+li:hover .submenu{
 	display:flex;
 }
 /* Estilos para los <a> del #submenu asignar otro color y cambiando el text-shadow */
-#submenu a:link{
+.submenu a:link{
 	width: 100%;
 	height: 100%;
 	display: block;
