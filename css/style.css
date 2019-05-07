@@ -742,10 +742,6 @@ select {
     border-radius: 0 33px 33px 0;
 }
 
-.dependent-input:disabled {
-
-}
-
 #molido-custom-value {
     width: 50px;
     height: auto;
