@@ -1,8 +1,16 @@
 <?php
 function renderHeader(){
     $headerUser = "
-        <li class='fit-content cuenta'><a href='cuenta-informacion.php' target='_self'>Cuenta</a></li>
-        <li class='fit-content carrito'><a class='light' href='carrito.php' target='_self'>Carrito</a></li>"; 
+        <div class='cuenta'><li class='fit-content'><a class='kill' href='cuenta-informacion.php' target='_self'>Cuenta</a>
+        <ul class='submenu'>
+                      <li><a href='#' target='_self'>Información</a></li>
+                      <li><a href='#' target='_self'>Dirección de envío</a></li>
+                      <li><a href='#' target='_self'>Métodos de pago</a></li>
+                      <li><a href='#' target='_self'>Pedidos</a></li>
+					  <li><a href='#' target='_self'>Cerrar sesión</a></li>
+				  </ul>
+        </li></div>
+        <div class='carrito'><li class='fit-content'><a class='kill' class='light' href='carrito.php' target='_self'>Carrito</a></li></div>"; 
     
     $header = "
         <li class='button outline fit-content'><a href='iniciar_sesion.php' target='_self'>Iniciar sesión</a></li>

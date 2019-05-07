@@ -125,7 +125,7 @@ include 'header.php';
                     <p class="pdescription">Un café de preparación americana con excelente calidad.<br> <a
                             class="link" href="productos.php" target="_self">Ver más »</a></p>
                 </section>
-                <section class="ind-product">
+                <section class="ind-product margin-product-right">
                     <h3 class="title pname h3-small">Descafeinado</h3>
                     <p><span class="price red">$80-$100</span></p>
                     <figure class="pimage"><img alt="Granos de café descafeinado de Bats'il Maya"
@@ -135,7 +135,7 @@ include 'header.php';
                         <a class="link" href="productos.php" target="_self">Ver más »</a></p>
                 </section>
             </div>
-            <a class="h2-link right-aligned" href="productos.php" target="_self">Todos los productos »</a>
+            <a class="h2-link right-aligned little-font" href="productos.php" target="_self">Todos los productos »</a>
             <a class="button red addbutton1" href="nuestro-cafe.php" target="_self">Nuestro café</a>
             <a class="button red addbutton2" href="proceso.php" target="_self">Proceso</a>
         </div>
