@@ -10,7 +10,7 @@ function renderHeader(){
 					  <li><a href='#' target='_self'>Cerrar sesión</a></li>
 				  </ul>
         </li>
-        <li class='carrito'><a class='light' href='carrito.php' target='_self' aria-label='cuenta'></a></li>"; 
+        <li class='carrito'><a class='light' href='carrito.php' target='_self' aria-label='carrito'></a></li>"; 
     
     $header = "
         <li class='button outline fit-content'><a href='iniciar_sesion.php' target='_self'>Iniciar sesión</a></li>

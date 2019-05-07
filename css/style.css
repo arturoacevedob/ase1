@@ -433,10 +433,21 @@ a.dark:visited {
     height: 56px;
     background: url(../images/nav/cuenta-icon.svg) 0 0 / 100% no-repeat;
 }
+
+.cuenta a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
 .carrito{
     width: 56px;
     height: 56px;
     background: url(../images/nav/shopping-cart.svg) 0 0 / 100% no-repeat;
+}
+.carrito a{
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 .disable{
@@ -454,7 +465,7 @@ a.dark:visited {
 	flex-flow: column wrap;
 	justify-content: space-around;
 	position: absolute;
-	top: 80px;
+	top: 78px;
 	list-style: none;
 	background-color: var(--light);
 }
