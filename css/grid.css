@@ -796,6 +796,16 @@ form textarea {
         grid-column: 2 / -2;
     }
 
+    .margin-product-right{
+        margin-right: 11px;
+    }
+
+    .product-title{
+        grid-row: 1;
+    }
+    .little-font{
+        grid-row: 1;
+    }
     .gridbigproduct > .grid-scroll-x {
         grid-column: 1 / -1;
     }

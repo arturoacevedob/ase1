@@ -1034,6 +1034,10 @@ progress::-webkit-progress-value {
 }
 
 @media screen and (max-width: 639px) {
+    .little-font{
+        font-size: 13px;
+    }
+
     h2 {
         font-size: 40px;
     }
