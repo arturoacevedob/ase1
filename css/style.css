@@ -427,9 +427,13 @@ a.dark:visited {
 }
 
 .cuenta{
+    width: 56px;
+    height: 56px;
     background: url(../images/nav/cuenta-icon.svg) 0 0 / 100% no-repeat;
 }
 .carrito{
+    width: 56px;
+    height: 56px;
     background: url(../images/nav/shopping-cart.svg) 0 0 / 100% no-repeat;
 }
 
@@ -442,7 +446,7 @@ a.dark:visited {
 	flex-flow: column wrap;
 	justify-content: space-around;
 	position: absolute;
-	top: 70%;
+	top: 2%;
 	list-style: none;
 	background-color: var(--light);
 }
