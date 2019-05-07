@@ -216,6 +216,11 @@ th {
     grid-template-rows: auto 1fr;
 }
 
+/*      Table Classes > Collapsed Table */
+.collapsed-view > td:nth-child(2) {
+    text-align: right;
+}
+
 /*      Table Classes > Expandable Table */
 table.expandable-table > tbody > tr.collapsed-view td {
     cursor: pointer;
