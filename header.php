@@ -1,7 +1,15 @@
 <?php
 function renderHeader(){
     $headerUser = "
-        <div class='cuenta'><li class='fit-content kill'><a href='cuenta-informacion.php' target='_self'>Cuenta</a></li></div>
+        <div class='cuenta'><li class='fit-content kill'><a href='cuenta-informacion.php' target='_self'>Cuenta</a>
+        <ul id='submenu'>
+                      <li><a href='#' target='_self'>Información</a></li>
+                      <li><a href='#' target='_self'>Dirección de envío</a></li>
+                      <li><a href='#' target='_self'>Métodos de pago</a></li>
+                      <li><a href='#' target='_self'>Pedidos</a></li>
+					  <li><a href='#' target='_self'>Cerrar sesión</a></li>
+				  </ul>
+        </li></div>
         <div class='carrito'><li class='fit-content kill'><a class='light' href='carrito.php' target='_self'>Carrito</a></li></div>"; 
     
     $header = "
