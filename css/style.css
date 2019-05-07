@@ -429,10 +429,25 @@ a.dark:visited {
 }
 
 .cuenta{
+    width: 56px;
+    height: 56px;
     background: url(../images/nav/cuenta-icon.svg) 0 0 / 100% no-repeat;
 }
+
+.cuenta a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
 .carrito{
+    width: 56px;
+    height: 56px;
     background: url(../images/nav/shopping-cart.svg) 0 0 / 100% no-repeat;
+}
+.carrito a{
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 .disable{
@@ -442,16 +457,20 @@ a.dark:visited {
 
 
 .submenu{
+    border-radius: 9px;
+    padding: 9px;
+    border: 3px solid var(--red);
 	width: auto;
 	display: none;
 	flex-flow: column wrap;
 	justify-content: space-around;
 	position: absolute;
-	top: 70%;
+	top: 78px;
 	list-style: none;
 	background-color: var(--light);
 }
 .submenu li{
+    padding: 3px 0;
 	flex-basis: 50%;
 }
 /*Declarar selector para aparecer la lista anidada #submenu cuando el usuario pasa por encima del li*/
