@@ -29,7 +29,7 @@ function execute($query) {
     $id = mysqli_insert_id($connection);
     disconnect();
     $pos = strpos($query, "insert");
-    if ($pos == !false) {
+    if ($pos !== false) {
         return $id;
     } else {
         return $recordSet;
