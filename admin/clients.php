@@ -43,7 +43,7 @@ function createProductListOptions()
                 <td colspan='3'>
                     <div class='grid-1-1-1-1 expanded-view-content'>";
 
-        $query2 = "select clients.name_alias, contacts.* from clients inner join contacts on clients.id_client = contacts.id_client where clients.name_alias = '" . $clients[$i]["name_alias"] . "'";
+        $query2 = "select contacts.* from clients inner join contacts on clients.id_client = contacts.id_client";
         $recordSet2 = execute($query2);
         while ($contact = mysqli_fetch_array($recordSet2)) {
             echo "
@@ -53,7 +53,7 @@ function createProductListOptions()
                             <tbody>
                             <tr>
                                 <th>Nombre</th>
-                                <td>" . $contact["name"] . "</td>
+                                <td>" . $contact["name_contact"] . "</td>
                             </tr>
                             <tr>
                                 <th>Título</th>
