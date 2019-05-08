@@ -429,8 +429,8 @@ a.dark:visited {
 }
 
 .cuenta{
-    width: 56px;
-    height: 56px;
+    width: 36px;
+    height: 36px;
     background: url(../images/nav/cuenta-icon.svg) 0 0 / 100% no-repeat;
 }
 
@@ -440,8 +440,8 @@ a.dark:visited {
     height: 100%;
 }
 .carrito{
-    width: 56px;
-    height: 56px;
+    width: 37px;
+    height: 37px;
     background: url(../images/nav/shopping-cart.svg) 0 0 / 100% no-repeat;
 }
 .carrito a{
@@ -452,6 +452,16 @@ a.dark:visited {
 
 .disable{
     background-color: var(--disable);
+}
+
+.unavailable{
+    color: var(--a-link);
+    background-color: var(--light-80);
+}
+.note{
+    font-size: 15px;
+    color: var(--red);
+    margin-top: 3px;
 }
 /* —————— SUBMENU —————— */
 
@@ -465,7 +475,7 @@ a.dark:visited {
 	flex-flow: column wrap;
 	justify-content: space-around;
 	position: absolute;
-	top: 78px;
+	top: 70px;
 	list-style: none;
 	background-color: var(--light);
 }
@@ -740,10 +750,6 @@ select {
 
 .dependent-input, .dependent-input:focus {
     border-radius: 0 33px 33px 0;
-}
-
-.dependent-input:disabled {
-
 }
 
 #molido-custom-value {

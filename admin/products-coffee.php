@@ -235,7 +235,7 @@ function createCoffeeListOptions()
             </div>
         </div>
 
-        <a href='crud/create.php'>Agregar productos</a>
+        <a href='crud_productos/create.php'>Agregar productos</a>
     </div>
 
 </div>
