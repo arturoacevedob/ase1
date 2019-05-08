@@ -16,7 +16,7 @@ if(isset($_POST['insert'])) {
     $name = $_POST['name'];
     $description = $_POST['description'];
     $notes = $_POST['notes'];
-    $brand = $_POST['brand'];
+ 
 
     if($_FILES['image']['name'] != "") {
         $fileName = strtolower($_FILES['image']['name']);

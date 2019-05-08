@@ -429,8 +429,8 @@ a.dark:visited {
 }
 
 .cuenta{
-    width: 56px;
-    height: 56px;
+    width: 36px;
+    height: 36px;
     background: url(../images/nav/cuenta-icon.svg) 0 0 / 100% no-repeat;
 }
 
@@ -440,8 +440,8 @@ a.dark:visited {
     height: 100%;
 }
 .carrito{
-    width: 56px;
-    height: 56px;
+    width: 37px;
+    height: 37px;
     background: url(../images/nav/shopping-cart.svg) 0 0 / 100% no-repeat;
 }
 .carrito a{
