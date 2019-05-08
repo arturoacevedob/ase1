@@ -18,6 +18,8 @@ if(isset($_POST['insert'])) {
     $notes = $_POST['notes'];
     $weight = $_POST['weight'];
     $price = $_POST['price'];
+    $ground_type = $_POST['ground_type'];
+    $notes = $_POST['notes'];
  
 
     if($_FILES['image']['name'] != "") {
