@@ -475,7 +475,7 @@ a.dark:visited {
 	flex-flow: column wrap;
 	justify-content: space-around;
 	position: absolute;
-	top: 78px;
+	top: 70px;
 	list-style: none;
 	background-color: var(--light);
 }
