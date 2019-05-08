@@ -29,7 +29,6 @@ if(isset($_POST['insert'])) {
     $phone = $_POST['phone'];
     $cp = $_POST['cp'];
     $payroll = $_POST['payroll'];
-    $fiscal_address = $_POST['fiscal_address'];
     $rfc = $_POST['rfc'];
     $payment_method = $_POST['payment_method'];
     $payment_form = $_POST['payment_form'];
@@ -40,7 +39,7 @@ if(isset($_POST['insert'])) {
         $q = "insert into clients (name_legal, name_alias, giro, client_type) values ('$name_legal','$name_alias','$giro','$client_type'); 
               insert into contacts(name,email,phone) values ('$name','$email','$phone');
               insert into addresses (name_place,address1,address2,country,city,state,phone,cp)values('$name_place,'$address1','$address2','$country','$city','$state','$phone','$cp');
-              insert into billing (payroll,fiscal_address,rfc,payment_method,payment_form,payment_use)values('$payroll','$fiscal_address','$rfc','$payment_method','$payment_form','$payment_use')";
+              insert into billing (payroll,rfc,payment_method,payment_form,payment_use)values('$payroll','$rfc','$payment_method','$payment_form','$payment_use')";
         execute($q);
         header("Location: ../clients.php");
     }
