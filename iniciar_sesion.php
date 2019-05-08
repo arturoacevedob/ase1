@@ -7,7 +7,10 @@ include 'connection.php';
 include 'header.php';
 
 if(isset($_GET['killsession'])) {
+    $page = $_GET['killsession'];
+    session_unset();
     session_destroy();
+    header("Location: $page");
 }
 
 if(isset($_POST['user'])) {
