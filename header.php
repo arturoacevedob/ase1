@@ -9,11 +9,7 @@ function renderHeader(){
                       <li><a href='direccion-envio.php target='_self'>Dirección de envío</a></li>
                       <li><a href='metodos-de-contacto.php' target='_self'>Métodos de pago</a></li>
                       <li><a href='pedidos.php' target='_self'>Pedidos</a></li>
-<<<<<<< HEAD
-					  <li><a href='iniciar_sesion.php?killsession=index.php' target='_self'>Cerrar sesión</a></li>
-=======
 					  <li><a href='iniciar_sesion.php?killsession=" . $origin . "' target='_self'>Cerrar sesión</a></li>
->>>>>>> c045eb022fbd641312887323af939846092bf733
 				  </ul>
         </li>
         <li class='carrito'><a class='light' href='carrito.php' target='_self' aria-label='carrito'></a></li>";

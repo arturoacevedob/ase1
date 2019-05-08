@@ -53,7 +53,6 @@ if (isset($_POST['insert'])) {
 <form action="create.php" method="post" enctype="multipart/form-data">
     <h2>Datos Generales</h2>
     <fieldset>
-<<<<<<< HEAD
     <input type="hidden" name="insert" value="insert" >
     <label for="name_legal">Nombre legal</label>
     <input id="name_legal" type="text" name="name_legal" min="1" max="100" require> <br>
@@ -76,33 +75,9 @@ if (isset($_POST['insert'])) {
     <input id="phone" type="text" name="phone" min="1" max="50" require> <br>
     <label for="email">Correo electrónico</label>
     <input id="email" type="tel" name="email" min="1" max="20" require> <br>
-=======
-        <input type="hidden" name="insert" value="insert">
-        <label for="name_legal">Nombre legal</label>
-        <input id="name_legal" type="text" name="name_legal"> <br>
-        <label for="name_alias">Aliasl</label>
-        <input id="name_alias" type="text" name="name_alias"> <br>
-        <label for="giro">Giro</label>
-        <input ide="giro" type="text" name="giro"> <br>
-        <label for="client_type">Tipo de cliente</label>
-        <input type="radio" name="client_type" id="minorista" value="0">
-        <label for="minorista">Minorista</label>
-        <input type="radio" name="client_type" id="mayorista" value="1">
-        <label for="mayorista">Mayorista</label>
-    </fieldset>
-    <fieldset>
-        <h2>Contacto</h2>
-        <label for="name">Nombre</label>
-        <input id="name" type="text" name="name"> <br>
-        <label for="phone">Número telefónico</label>
-        <input id="phone" type="text" name="phone"> <br>
-        <label for="email">Correo electrónico</label>
-        <input id="email" type="text" name="email"> <br>
->>>>>>> c045eb022fbd641312887323af939846092bf733
     </fieldset>
 
     <fieldset>
-<<<<<<< HEAD
     <h2>Dirección</h2>
     <label for="name_place">Nombre del lugar</label>
     <input id="name_place" type="text" name="name_place" min="1" max="25" require> <br>
@@ -119,24 +94,6 @@ if (isset($_POST['insert'])) {
     <input id="state" type="text" name="state"> <br>
     <label for="phone">Teléfono</label>
     <input id="phone" type="text" name="phone"> <br>
-=======
-        <h2>Dirección</h2>
-        <label for="name_place">Nombre del lugar</label>
-        <input id="name_place" type="text" name="name_place"> <br>
-        <label for="country">País</label>
-        <input id="country" type="text" name="country"> <br>
-        <label for="address1">Calle y número</label>
-        <input id="address1" type="text" name="address1" placeholder="Calle y número"> <br>
-        <input id="address2" type="text" name="address2" placeholder="Depto, piso, etc..(opcional)"> <br>
-        <label for="city">Ciudad</label>
-        <input id="city" type="text" name="city"> <br>
-        <label for="cp">C.P.</label>
-        <input id="cp" type="text" name="cp"> <br>
-        <label for="state">Estado</label>
-        <input id="state" type="text" name="state"> <br>
-        <label for="phone">Teléfono</label>
-        <input id="phone" type="text" name="phone"> <br>
->>>>>>> c045eb022fbd641312887323af939846092bf733
     </fieldset>
 
     <fieldset>
