@@ -1,3 +1,40 @@
+<?php
+ini_set('display_errorecordSet', 1);
+error_reporting(E_ALL);
+
+include 'crud/connection.php';
+session_start();
+
+if (!isset($_SESSION['user'])) {
+    http_response_code(401);
+    echo "Acceso no autorizado.";
+    die();
+}
+
+function createCoffeeListOptions()
+{
+    $query = "select 'name', description, notes, client_type from products;
+              select images.image_path, products.product_id from images inner join products on images.product_id = products.product_id;
+              select weight_price.weight, weight_price.price, products.product_id from weight_price inner join products on weight_price.products.product_id = products.product_id";
+    $recordSet = execute($query);
+
+    $products = array();
+    $counter = 0;
+    while ($d = mysqli_fetch_array($recordSet)) {
+        $products[$counter] = array();
+        $products[$counter]["name_alias"] = $d["name_alias"];
+        $products[$counter]["giro"] = $d["giro"];
+        $products[$counter]["client_type"] = $d["client_type"];
+        $counter++;
+    }
+
+    for ($i = 0; $i < count($products); $i++) {
+
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 
 <html dir="ltr" lang="en">
@@ -33,7 +70,7 @@
     <ul>
         <li><a class="active" href="clients.php" target="_self">Clientes</a></li>
         <li><a href="orders-pending-backend.php" target="_self">Pedidos</a></li>
-        <li><a href="products-coffee-backend.php" target="_self">Productos</a></li>
+        <li><a href="products-coffee.php" target="_self">Productos</a></li>
         <li><a href='login.php?killsession=1'>Terminar Sesión</a></li>
         <li><a href='crud_productos/create.php'>Registro de productos</a></li>
     </ul>
