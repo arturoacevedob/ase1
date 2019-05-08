@@ -7,7 +7,7 @@ function compra(){
     
     $boton_disable= "
     <div>
-    <a class='button disable' href='carrito.php' target='_self'>Agregar al carrito</a>
+    <a class='button disable ' target='_self'>Agregar al carrito</a>
     <p> *Regístrate para comprar</p>
     </div>";
 
