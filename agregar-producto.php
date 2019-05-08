@@ -7,8 +7,8 @@ function compra(){
     
     $boton_disable= "
     <div>
-    <a class='button disable ' target='_self'>Agregar al carrito</a>
-    <p> *Regístrate para comprar</p>
+    <a class='button disable' target='_self'>Agregar al carrito</a>
+    <p class=''> *Regístrate para comprar</p>
     </div>";
 
 	if( isset($_SESSION['user']) ) {
