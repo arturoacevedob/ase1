@@ -36,10 +36,14 @@ if (isset($_POST['insert'])) {
 
 
     if ($uploadOk == 1) {
-        $q = "insert into clients (name_legal, name_alias, giro, client_type) values ('$name_legal', '$name_alias', '$giro', '$client_type'); 
-              insert into contacts(name_contact, email, phone) values ('$name', '$email', '$phone');
-              insert into addresses (name_place, address1, address2, country, city, state, phone, cp) values ('$name_place','$address1','$address2','$country','$city','$state','$phone','$cp');
-              insert into billing (payroll, rfc, payment_method, payment_form, payment_use) values ('$payroll', '$rfc', '$payment_method', '$payment_form', '$payment_use')";
+        $q = "insert into clients (name_legal, name_alias, giro, client_type) values ('$name_legal', '$name_alias', '$giro', '$client_type');";
+        $id_client = $id;
+        execute($q);
+        $q = "insert into contacts(name_contact, email, phone, id_client) values ('$name', '$email', '$phone', '$id_client');";
+        execute($q);
+        $q = "insert into addresses (name_place, address1, address2, country, city, state, phone, cp, id_client) values ('$name_place','$address1','$address2','$country','$city','$state','$phone','$cp', '$id_client');";
+        execute($q);
+        $q = "insert into billing (payroll, rfc, payment_method, payment_form, payment_use, id_client) values ('$payroll', '$rfc', '$payment_method', '$payment_form', '$payment_use', '$id_client');";
         execute($q);
         header("Location: ../clients.php");
     }

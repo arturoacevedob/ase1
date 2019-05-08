@@ -13,26 +13,52 @@ if (!isset($_SESSION['user'])) {
 
 function createCoffeeListOptions()
 {
-    $query = "select 'name', description, notes, client_type from products;
-              select images.image_path, products.product_id from images inner join products on images.product_id = products.product_id;
-              select weight_price.weight, weight_price.price, products.product_id from weight_price inner join products on weight_price.products.product_id = products.product_id";
+    $query = "select name_product, description, notes, client_type from products;";
     $recordSet = execute($query);
 
     $products = array();
     $counter = 0;
     while ($d = mysqli_fetch_array($recordSet)) {
         $products[$counter] = array();
-        $products[$counter]["name_alias"] = $d["name_alias"];
-        $products[$counter]["giro"] = $d["giro"];
+        $products[$counter]["name_product"] = $d["name_product"];
+        $products[$counter]["description"] = $d["description"];
+        $products[$counter]["notes"] = $d["notes"];
         $products[$counter]["client_type"] = $d["client_type"];
         $counter++;
     }
 
     for ($i = 0; $i < count($products); $i++) {
 
+        echo "
+        <div class='product-item grid-1-1'>
+            <div style='background: transparent url(\"images/cup_of_coffee.jpg\") 50% 50% / cover no-repeat;'></div>
+            <div>
+                <h3>" . $products[$i]["name_product"] . "<span>" . $products[$i]["client_type"] . "</span><span>edit</span></h3>
+                <p>" . $products[$i]["description"] . "</p>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Peso</th>
+                        <th>Precio</th>
+                    </tr>
+                    </thead>
+                    <tbody>";
+
+        $query2 = "select products.id_product, weight_price.weight, weight_price.price from weight_price inner join products on weight_price.id_product = products.id_product;";
+        $recordSet2 = execute($query2);
+        while ($weight_price = mysqli_fetch_array($recordSet2)) {
+            echo "
+                    <tr>
+                        <td>" . $weight_price["weight"] . "</td>
+                        <td>" . $weight_price["price"] . "</td>
+                    </tr>";
+        }
+        echo "
+                </table>
+            </div>
+        </div>";
     }
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -89,152 +115,9 @@ function createCoffeeListOptions()
     </ul>
 
     <div class="grid-1-1">
-        <div class="product-item grid-1-1">
-            <div style="background: transparent url('images/cup_of_coffee.JPG') 50% 50% / cover no-repeat;"></div>
-            <div>
-                <h3>Orgánico <span>Sólo mayoristas</span><span>edit</span></h3>
-                <p>Un café de preparación americana con excelente…</p>
-                <table>
-                    <thead>
-                    <tr>
-                        <th>Peso</th>
-                        <th>Precio</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>250gr</td>
-                        <td>$65</td>
-                    </tr>
-                    <tr>
-                        <td>500gr</td>
-                        <td>$105</td>
-                    </tr>
-                    <tr>
-                        <td>1KG</td>
-                        <td>$190</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="product-item grid-1-1">
-            <div style="background: transparent url('images/cup_of_coffee.JPG') 50% 50% / cover no-repeat;"></div>
-            <div>
-                <h3>Orgánico <span>Sólo mayoristas</span><span>edit</span></h3>
-                <p>Un café de preparación americana con excelente…</p>
-                <table>
-                    <thead>
-                    <tr>
-                        <th>Peso</th>
-                        <th>Precio</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>250gr</td>
-                        <td>$65</td>
-                    </tr>
-                    <tr>
-                        <td>500gr</td>
-                        <td>$105</td>
-                    </tr>
-                    <tr>
-                        <td>1KG</td>
-                        <td>$190</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="product-item grid-1-1">
-            <div style="background: transparent url('images/cup_of_coffee.JPG') 50% 50% / cover no-repeat;"></div>
-            <div>
-                <h3>Orgánico <span>Sólo mayoristas</span><span>edit</span></h3>
-                <p>Un café de preparación americana con excelente…</p>
-                <table>
-                    <thead>
-                    <tr>
-                        <th>Peso</th>
-                        <th>Precio</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>250gr</td>
-                        <td>$65</td>
-                    </tr>
-                    <tr>
-                        <td>500gr</td>
-                        <td>$105</td>
-                    </tr>
-                    <tr>
-                        <td>1KG</td>
-                        <td>$190</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="product-item grid-1-1">
-            <div style="background: transparent url('images/cup_of_coffee.JPG') 50% 50% / cover no-repeat;"></div>
-            <div>
-                <h3>Orgánico <span>Sólo mayoristas</span><span>edit</span></h3>
-                <p>Un café de preparación americana con excelente…</p>
-                <table>
-                    <thead>
-                    <tr>
-                        <th>Peso</th>
-                        <th>Precio</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>250gr</td>
-                        <td>$65</td>
-                    </tr>
-                    <tr>
-                        <td>500gr</td>
-                        <td>$105</td>
-                    </tr>
-                    <tr>
-                        <td>1KG</td>
-                        <td>$190</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="product-item grid-1-1">
-            <div style="background: transparent url('images/cup_of_coffee.JPG') 50% 50% / cover no-repeat;"></div>
-            <div>
-                <h3>Orgánico <span>Sólo mayoristas</span><span>edit</span></h3>
-                <p>Un café de preparación americana con excelente…</p>
-                <table>
-                    <thead>
-                    <tr>
-                        <th>Peso</th>
-                        <th>Precio</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>250gr</td>
-                        <td>$65</td>
-                    </tr>
-                    <tr>
-                        <td>500gr</td>
-                        <td>$105</td>
-                    </tr>
-                    <tr>
-                        <td>1KG</td>
-                        <td>$190</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
+        <?php
+        createCoffeeListOptions()
+        ?>
         <a href='crud_productos/create.php'>Agregar productos</a>
     </div>
 

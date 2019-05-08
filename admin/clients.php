@@ -43,7 +43,7 @@ function createProductListOptions()
                 <td colspan='3'>
                     <div class='grid-1-1-1-1 expanded-view-content'>";
 
-        $query2 = "select contacts.* from clients inner join contacts on clients.id_client = contacts.id_client";
+        $query2 = "select clients.name_alias, contacts.* from clients inner join contacts on clients.id_client = contacts.id_client where clients.name_alias = '" . $clients[$i]["name_alias"] . "'";
         $recordSet2 = execute($query2);
         while ($contact = mysqli_fetch_array($recordSet2)) {
             echo "
@@ -53,7 +53,7 @@ function createProductListOptions()
                             <tbody>
                             <tr>
                                 <th>Nombre</th>
-                                <td>" . $contact["name_contact"] . "</td>
+                                <td>" . $contact["name"] . "</td>
                             </tr>
                             <tr>
                                 <th>Título</th>
@@ -140,11 +140,11 @@ function createProductListOptions()
         }
 
         echo "
-                        
-                    <div class='notes-table'>
+                    <form class='notes-table' action='update.php' method='post' enctype='multipart/form-data'>
                         <label for='notes'>Notas</label>
-                        <textarea id='notes'></textarea>
-                    </div>
+                        <textarea id='notes' name='notes'></textarea>
+                        <input type='submit' value='Guardar cambios'>
+                    </form>
                 </div>
                         <div class='grid-2-space-between'>
                             <div>Últimos pedidos</div>

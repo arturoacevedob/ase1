@@ -7,7 +7,10 @@ include 'connection.php';
 include 'header.php';
 
 if(isset($_GET['killsession'])) {
+    $page = $_GET['killsession'];
+    session_unset();
     session_destroy();
+    header("Location: $page");
 }
 
 if(isset($_POST['user'])) {
@@ -20,10 +23,11 @@ if(isset($_POST['user'])) {
         $_SESSION['user'] = $row['user'];
         $_SESSION['name'] = $row['name'];
         header("Location: index.php");
-    } /* else {
+    } else {
+        session_unset();
         session_destroy();
         echo "Verificar usuario y contraseña.";
-    } */
+    }
 }
 ?>
 
@@ -127,9 +131,9 @@ if(isset($_POST['user'])) {
 <script charset="UTF-8" src="js/email-autocomplete.js"></script>
 
 <script>
-    $(document).ready(function () {
-        $(".email").emailautocomplete();
-        ["capeltic.org"]
+    $(".email").emailautocomplete({
+        suggClass: "Capeltic",
+        domains: ["capeltic.org"]
     });
 </script>
 

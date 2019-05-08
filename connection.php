@@ -9,7 +9,7 @@ function connect() {
     $db     = "b17_23304306_batsil";
     $usr    = "b17_23304306";
     $pwd    = "hola12345";
-    
+
     $connection = mysqli_connect($host, $usr, $pwd, $db) or die("No se pudo conectar al servidor MySQL.");
     // Permite visualizar los acentos y caracteres especiales.
     mysqli_set_charset($connection, "utf8");
