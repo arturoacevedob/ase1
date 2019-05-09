@@ -99,16 +99,16 @@ if (isset($_POST['update'])) {
     <label for="giro">Giro</label>
     <input ide="giro" type="text" name="giro" min="1" max="250" require value='<?php echo $giro; ?>'> <br>
     <label for="client_type">Tipo de cliente</label>
-    <input type="radio" name="client_type" id="minorista" value="0" min="1" max="12" require>
+    <input type="radio" name="client_type" id="minorista" value="0" min="1" max="12" require value='<?php echo $client_type; ?>'>
     <label for="minorista">Minorista</label>
-    <input type="radio" name="client_type" id="mayorista" value="1">
+    <input type="radio" name="client_type" id="mayorista" value="1" value='<?php echo $client_type; ?>'>
     <label for="mayorista">Mayorista</label>
     </fieldset>  
 
     <fieldset>
     <h2>Contacto</h2>
     <label for="name">Nombre</label>
-    <input id="name" type="text" name="name" min="1" max="50" require> <br>
+    <input id="name" type="text" name="name" min="1" max="50" require value='<?php echo $name; ?>'> <br>
     <label for="phone">Número telefónico</label>
     <input id="phone" type="text" name="phone" min="1" max="50" require> <br>
     <label for="email">Correo electrónico</label>
