@@ -288,7 +288,7 @@ body{
 
 nav{
     padding: 15px 35px;
-    height: 100%;
+    height: 100vw;
     background-color: var(--dark);
 }
 
