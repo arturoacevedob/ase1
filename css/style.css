@@ -466,9 +466,16 @@ a.dark:visited {
     background-color: var(--light-80);
 }
 .note{
-    font-size: 15px;
+    font-size: 15px !important;
     color: var(--red);
     margin-top: 3px;
+}
+
+.padding-top-bottom{
+    padding: 25px 0;
+}
+.padding-bottom-25{
+    padding-bottom: 25px;
 }
 /* —————— SUBMENU —————— */
 
