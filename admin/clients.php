@@ -36,7 +36,8 @@ function createProductListOptions()
             $clients[$i]["name_alias"] . "<span class='tag'>" . $clients[$i]["client_type"] . "</span><br>" .
             $clients[$i]["giro"] .
             "</td>
-            <td>Editar</td>
+            <td><a href='crud/update.php'>Editar</a></td>
+            <td><a href='update.php'>Eliminar</a></td>
             <td></td>
         </tr>
         <tr class='expanded-view'>
