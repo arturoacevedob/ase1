@@ -15,13 +15,14 @@ function createCoffeeListOptions()
 {
     /*$query = "select products.id_product, images.image_path from images inner join products on products.id_product = images.id_product;";
     execute($query);*/
-    $query = "select name_product, description, notes, client_type from products;";
+    $query = "select * from products;";
     $recordSet = execute($query);
 
     $products = array();
     $counter = 0;
     while ($d = mysqli_fetch_array($recordSet)) {
         $products[$counter] = array();
+        $products[$counter]["id_product"] = $d["id_product"];
         $products[$counter]["name_product"] = $d["name_product"];
         $products[$counter]["description"] = $d["description"];
         $products[$counter]["notes"] = $d["notes"];
@@ -46,8 +47,8 @@ function createCoffeeListOptions()
                     </thead>
                     <tbody>";
 
-        $query3 = "select products.id_product, weight_price.weight, weight_price.price from weight_price inner join products on weight_price.id_product = products.id_product;";
-        $recordSet3 = execute($query3);
+        $query2 = "select products.id_product, weight_price.weight, weight_price.price from weight_price inner join products on weight_price.id_product = products.id_product where weight_price.id_product = '" . $products[$i]["id_product"] . "'";
+        $recordSet2 = execute($query2);
         while ($weight_price = mysqli_fetch_array($recordSet2)) {
             echo "
                     <tr>
