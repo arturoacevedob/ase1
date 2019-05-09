@@ -15,7 +15,7 @@ function createCoffeeListOptions()
 {
     /*$query = "select products.id_product, images.image_path from images inner join products on products.id_product = images.id_product;";
     execute($query);*/
-    $query = "select id_client, name_product, description, notes, client_type from products;";
+    $query = "select name_product, description, notes, client_type from products;";
     $recordSet = execute($query);
 
     $products = array();
