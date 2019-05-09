@@ -4,7 +4,7 @@ error_reporting(E_ALL);
 
 include 'connection.php';
 
-$id_client;
+$id_clients;
 $name_legal;
 $name_alias;
 $giro;
@@ -18,7 +18,7 @@ $address2;
 $country;
 $city;
 $state;
-$phone ;
+$phone;
 $cp;
 $payroll;
 $rfc;
@@ -32,26 +32,26 @@ if (isset($_GET['idclient'])) {
     $q = "select * from clients where id_client = $id_client";
     $recordSet = execute($q);
     if ($row = mysqli_fetch_array($recordSet)) {
-    $name_legal = $_ow['name_legal'];
-    $name_alias = $row['name_alias'];
-    $giro = $row['giro'];
-    $client_type = $row['client_type'];
-    $name = $row['name'];
-    $email = $row['email'];
-    $phone = $row['phone'];
-    $name_place = $row['name_place'];
-    $address1 = $row['address1'];
-    $address2 = $row['address2'];
-    $country = $row['country'];
-    $city = $row['city'];
-    $state = $row['state'];
-    $phone = $row['phone'];
-    $cp = $row['cp'];
-    $payroll = $row['payroll'];
-    $rfc = $row['rfc'];
-    $payment_method = $row['payment_method'];
-    $payment_form = $row['payment_form'];
-    $payment_use = $row['payment_use'];
+        $name_legal = $row['name_legal'];
+        $name_alias = $row['name_alias'];
+        $giro = $row['giro'];
+        $client_type = $row['client_type'];
+        $name_contact = $row['name'];
+        $email = $row['email'];
+        $phone = $row['phone'];
+        $name_place = $row['name_place'];
+        $address1 = $row['address1'];
+        $address2 = $row['address2'];
+        $country = $row['country'];
+        $city = $row['city'];
+        $state = $row['state'];
+        $phone = $row['phone'];
+        $cp = $row['cp'];
+        $payroll = $row['payroll'];
+        $rfc = $row['rfc'];
+        $payment_method = $row['payment_method'];
+        $payment_form = $row['payment_form'];
+        $payment_use = $row['payment_use'];
     }
 }
 
@@ -79,6 +79,12 @@ if (isset($_POST['update'])) {
     $payment_use = $_POST['payment_use'];
 
     echo "$visibility<br>";
+
+    $q = "update clients set name = '$name', description = '$description',
+            price = '$price', brand = '$brand', visible = '$visible'
+            $imageField
+            where id_client = '$id_client'";
+
     execute($q);
     header("Location: clients.php");
 }

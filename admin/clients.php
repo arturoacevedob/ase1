@@ -13,13 +13,14 @@ if (!isset($_SESSION['user'])) {
 
 function createProductListOptions()
 {
-    $query = "select name_alias, giro, client_type from clients";
+    $query = "select id_client, name_alias, giro, client_type from clients";
     $recordSet = execute($query);
 
     $clients = array();
     $counter = 0;
     while ($d = mysqli_fetch_array($recordSet)) {
         $clients[$counter] = array();
+        $clients[$counter]["id_client"] = $d["id_client"];
         $clients[$counter]["name_alias"] = $d["name_alias"];
         $clients[$counter]["giro"] = $d["giro"];
         $clients[$counter]["client_type"] = $d["client_type"];
@@ -36,8 +37,7 @@ function createProductListOptions()
             $clients[$i]["name_alias"] . "<span class='tag'>" . $clients[$i]["client_type"] . "</span><br>" .
             $clients[$i]["giro"] .
             "</td>
-            <td><a href='crud/update.php'>Editar</a></td>
-            <td><a href='update.php'>Eliminar</a></td>
+            <td><a href='crud/update.php?idclient=" . $clients[$i]["id_client"] . "'>Editar</a><a href='crud/delete.php'>Eliminar</a></td>
             <td></td>
         </tr>
         <tr class='expanded-view'>
