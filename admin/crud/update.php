@@ -110,9 +110,9 @@ if (isset($_POST['update'])) {
     <label for="name">Nombre</label>
     <input id="name" type="text" name="name" min="1" max="50" require value='<?php echo $name; ?>'> <br>
     <label for="phone">Número telefónico</label>
-    <input id="phone" type="text" name="phone" min="1" max="50" require> <br>
+    <input id="phone" type="tel" name="phone" min="1" max="50" require value='<?php echo $phone; ?>'> <br>
     <label for="email">Correo electrónico</label>
-    <input id="email" type="tel" name="email" min="1" max="20" require> <br>
+    <input id="email" type="mail" name="email" min="1" max="20" require value='<?php echo $name; ?>'> <br>
     </fieldset>
 
     <fieldset>
