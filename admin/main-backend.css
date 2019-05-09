@@ -245,6 +245,7 @@ table.expandable-table > tbody > tr.collapsed-view:hover {
 
 table.expandable-table > tbody > tr.collapsed-view.open {
     background: lightgray;
+    border-radius: 15px 15px 0 0;
 }
 
 table.expandable-table > tbody > tr.collapsed-view.open td:last-child {
