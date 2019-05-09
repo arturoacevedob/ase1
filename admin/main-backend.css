@@ -288,9 +288,12 @@ body{
 }
 
 nav{
-    padding: 15px 35px;
     height: 100vw;
     background-color: var(--dark);
+}
+nav img{
+    padding: 15px 35px;
+    width: 65%;
 }
 
 ul {
@@ -301,4 +304,16 @@ ul {
 
 .padding-for-all{
     padding: 20px;
+}
+
+.active{
+    color: white;
+    padding: 10px 60px 10px 70px;
+    width: 100%;
+    background-color: #4D310C;
+    border-left: solid 3px var(--a-active);
+}
+
+nav ul a{
+    padding: 10px 60px 10px 70px;
 }
