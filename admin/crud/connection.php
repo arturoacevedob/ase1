@@ -28,8 +28,8 @@ function execute($query) {
     $recordSet = mysqli_query($connection, $query) or die("Error en el query: $query");
     $id = mysqli_insert_id($connection);
     disconnect();
-    $pos = strpos($q, "insert");
-    if ($pos == !false) {
+    $pos = strpos($query, "insert");
+    if ($pos !== false) {
         return $id;
     } else {
         return $recordSet;

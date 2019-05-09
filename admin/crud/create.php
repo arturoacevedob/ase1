@@ -2,7 +2,7 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-include 'connection.php';
+include '../crud/connection.php';
 session_start();
 
 if (!isset($_SESSION['user'])) {
@@ -36,10 +36,13 @@ if (isset($_POST['insert'])) {
 
 
     if ($uploadOk == 1) {
-        $q = "insert into clients (name_legal, name_alias, giro, client_type) values ('$name_legal', '$name_alias', '$giro', '$client_type'); 
-              insert into contacts(name_contact, email, phone) values ('$name', '$email', '$phone');
-              insert into addresses (name_place, address1, address2, country, city, state, phone, cp) values ('$name_place','$address1','$address2','$country','$city','$state','$phone','$cp');
-              insert into billing (payroll, rfc, payment_method, payment_form, payment_use) values ('$payroll', '$rfc', '$payment_method', '$payment_form', '$payment_use')";
+        $q = "insert into clients (name_legal, name_alias, giro, client_type) values ('$name_legal', '$name_alias', '$giro', '$client_type');";
+        $id_client = execute($q);
+        $q = "insert into contacts(name_contact, email, phone, id_client) values ('$name', '$email', '$phone', '$id_client');";
+        execute($q);
+        $q = "insert into addresses (name_place, address1, address2, country, city, state, phone, cp, id_client) values ('$name_place','$address1','$address2','$country','$city','$state','$phone','$cp', '$id_client');";
+        execute($q);
+        $q = "insert into billing (payroll, rfc, payment_method, payment_form, payment_use, id_client) values ('$payroll', '$rfc', '$payment_method', '$payment_form', '$payment_use', '$id_client');";
         execute($q);
         header("Location: ../clients.php");
     }
@@ -53,47 +56,47 @@ if (isset($_POST['insert'])) {
 <form action="create.php" method="post" enctype="multipart/form-data">
     <h2>Datos Generales</h2>
     <fieldset>
-    <input type="hidden" name="insert" value="insert" >
-    <label for="name_legal">Nombre legal</label>
-    <input id="name_legal" type="text" name="name_legal" min="1" max="100" require> <br>
-    <label for="name_alias">Aliasl</label>
-    <input id="name_alias" type="text" name="name_alias" min="1" max="100" require> <br>
-    <label for="giro">Giro</label>
-    <input ide="giro" type="text" name="giro" min="1" max="250" require> <br>
-    <label for="client_type">Tipo de cliente</label>
-    <input type="radio" name="client_type" id="minorista" value="0" min="1" max="12" require>
-    <label for="minorista">Minorista</label>
-    <input type="radio" name="client_type" id="mayorista" value="1">
-    <label for="mayorista">Mayorista</label>
-    </fieldset>  
-
-    <fieldset>
-    <h2>Contacto</h2>
-    <label for="name">Nombre</label>
-    <input id="name" type="text" name="name" min="1" max="50" require> <br>
-    <label for="phone">Número telefónico</label>
-    <input id="phone" type="text" name="phone" min="1" max="50" require> <br>
-    <label for="email">Correo electrónico</label>
-    <input id="email" type="tel" name="email" min="1" max="20" require> <br>
+        <input type="hidden" name="insert" value="insert">
+        <label for="name_legal">Nombre legal</label>
+        <input id="name_legal" type="text" name="name_legal" min="1" max="100" require> <br>
+        <label for="name_alias">Aliasl</label>
+        <input id="name_alias" type="text" name="name_alias" min="1" max="100" require> <br>
+        <label for="giro">Giro</label>
+        <input ide="giro" type="text" name="giro" min="1" max="250" require> <br>
+        <label for="client_type">Tipo de cliente</label>
+        <input type="radio" name="client_type" id="minorista" value="0" min="1" max="12" require>
+        <label for="minorista">Minorista</label>
+        <input type="radio" name="client_type" id="mayorista" value="1">
+        <label for="mayorista">Mayorista</label>
     </fieldset>
 
     <fieldset>
-    <h2>Dirección</h2>
-    <label for="name_place">Nombre del lugar</label>
-    <input id="name_place" type="text" name="name_place" min="1" max="25" require> <br>
-    <label for="country">País</label>
-    <input id="country" type="text" name="country" min="1" max="200" require> <br>
-    <label for="address1">Calle y número</label>
-    <input id="address1" type="text" name="address1" placeholder="Calle y número"> <br>
-    <input id="address2" type="text" name="address2" placeholder="Depto, piso, etc..(opcional)"> <br>
-    <label for="city">Ciudad</label>
-    <input id="city" type="text" name="city"> <br>
-    <label for="cp">C.P.</label>
-    <input id="cp" type="text" name="cp"> <br>
-    <label for="state">Estado</label>
-    <input id="state" type="text" name="state"> <br>
-    <label for="phone">Teléfono</label>
-    <input id="phone" type="text" name="phone"> <br>
+        <h2>Contacto</h2>
+        <label for="name">Nombre</label>
+        <input id="name" type="text" name="name" min="1" max="50" require> <br>
+        <label for="phone">Número telefónico</label>
+        <input id="phone" type="text" name="phone" min="1" max="50" require> <br>
+        <label for="email">Correo electrónico</label>
+        <input id="email" type="tel" name="email" min="1" max="20" require> <br>
+    </fieldset>
+
+    <fieldset>
+        <h2>Dirección</h2>
+        <label for="name_place">Nombre del lugar</label>
+        <input id="name_place" type="text" name="name_place" min="1" max="25" require> <br>
+        <label for="country">País</label>
+        <input id="country" type="text" name="country" min="1" max="200" require> <br>
+        <label for="address1">Calle y número</label>
+        <input id="address1" type="text" name="address1" placeholder="Calle y número"> <br>
+        <input id="address2" type="text" name="address2" placeholder="Depto, piso, etc..(opcional)"> <br>
+        <label for="city">Ciudad</label>
+        <input id="city" type="text" name="city"> <br>
+        <label for="cp">C.P.</label>
+        <input id="cp" type="text" name="cp"> <br>
+        <label for="state">Estado</label>
+        <input id="state" type="text" name="state"> <br>
+        <label for="phone">Teléfono</label>
+        <input id="phone" type="text" name="phone"> <br>
     </fieldset>
 
     <fieldset>
