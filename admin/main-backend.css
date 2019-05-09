@@ -291,3 +291,7 @@ nav{
     height: 100%;
     background-color: var(--dark);
 }
+
+nav ul{
+    list-style: none;
+}
