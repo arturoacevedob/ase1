@@ -2,6 +2,10 @@
 
 /* Variables */
 :root {
+    --dark: #40290A;
+    --red: #C24819;
+    --light: #FFFEF5;
+
     --a-link: var(--light);
     --a-visited: #cccbc6;
     --a-hover: #EA9A07;
@@ -79,6 +83,8 @@ h1, h2, h3, h4, h5, h6, p, td, th {
 
 /* Main grid */
 .main-grid {
+    margin: 0;
+    padding: 0;
     display: grid;
     grid-template-columns: min-content auto;
 }
@@ -239,6 +245,7 @@ table.expandable-table > tbody > tr.collapsed-view:hover {
 
 table.expandable-table > tbody > tr.collapsed-view.open {
     background: lightgray;
+    border-radius: 15px 15px 0 0;
 }
 
 table.expandable-table > tbody > tr.collapsed-view.open td:last-child {
@@ -264,4 +271,32 @@ table.expandable-table > tbody > tr.expanded-view.open {
 textarea {
     padding: 0;
     margin: 0;
+}
+
+/* Styles */
+body{
+    margin: 0;
+    padding: 0;
+    color: var(--dark);
+    font-family: Qualion, sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+}
+
+.padding-thing{
+    padding: 30px;
+}
+
+nav{
+    padding: 15px 35px;
+    height: 100vw;
+    background-color: var(--dark);
+}
+
+nav ul{
+    list-style: none;
+}
+
+.padding-for-all{
+    padding: 20px;
 }

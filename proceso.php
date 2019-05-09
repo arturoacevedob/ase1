@@ -55,11 +55,9 @@ include 'header.php';
                             <li><a href="ayuda.php" target="_self">Ayuda</a></li>
                         </ul>
                     </nav>
-                    <ul>
                         <?php
                         renderHeader()
                         ?>
-                    </ul>
                 </div>
 
                 <div class="nav-wrapper mobile">
@@ -162,6 +160,7 @@ include 'header.php';
         <p>Temperatura</p>
         <p>Tiempo</p>
     </section>
+    <div class="light-bg">
     <section class="container center-text">
         <h2 class="kill">Molidos</h2>
         <article>
@@ -191,6 +190,7 @@ include 'header.php';
         </div>
         <p class="mol6">Contamos con dos molinos con una capacidad</p>
     </section>
+</div>
     <div class="container center-button">
         <a class="button red addbutton1" href="nuestro-cafe.php" target="_self">Nuestro Café</a>
     </div>

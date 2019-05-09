@@ -13,13 +13,14 @@ if (!isset($_SESSION['user'])) {
 
 function createProductListOptions()
 {
-    $query = "select name_alias, giro, client_type from clients";
+    $query = "select id_client, name_alias, giro, client_type from clients";
     $recordSet = execute($query);
 
     $clients = array();
     $counter = 0;
     while ($d = mysqli_fetch_array($recordSet)) {
         $clients[$counter] = array();
+        $clients[$counter]["id_client"] = $d["id_client"];
         $clients[$counter]["name_alias"] = $d["name_alias"];
         $clients[$counter]["giro"] = $d["giro"];
         $clients[$counter]["client_type"] = $d["client_type"];
@@ -31,14 +32,15 @@ function createProductListOptions()
         echo "
         <table class='expandable-table client wrapper'>
         <tbody>
-        <tr class='collapsed-view'>
+        <tr class='collapsed-view padding-for-all'>
             <td>" .
             $clients[$i]["name_alias"] . "<span class='tag'>" . $clients[$i]["client_type"] . "</span><br>" .
             $clients[$i]["giro"] .
             "</td>
-            <td>Editar</td>
+            <td><a href='crud/update.php?idclient=" . $clients[$i]["id_client"] . "'>Editar</a><a href='crud/delete.php'>Eliminar</a></td>
             <td></td>
         </tr>
+        <div class='padding-for-all'>
         <tr class='expanded-view'>
                 <td colspan='3'>
                     <div class='grid-1-1-1-1 expanded-view-content'>";
@@ -334,6 +336,7 @@ function createProductListOptions()
                         </div>
                     </td>
                 </tr>
+                </div>
                 </tbody>
             </table>";
     }
@@ -378,11 +381,10 @@ function createProductListOptions()
         <li><a href="orders-pending-backend.php" target="_self">Pedidos</a></li>
         <li><a href="products-coffee.php" target="_self">Productos</a></li>
         <li><a href='login.php?killsession=1'>Terminar Sesión</a></li>
-        <li><a href='crud_productos/create.php'>Registro de productos</a></li>
     </ul>
 </nav>
 
-<div>
+<div class="padding-thing">
 
     <div class="global-toolbar grid-2-space-between">
         <h1>Clientes</h1>
