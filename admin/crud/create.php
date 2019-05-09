@@ -17,7 +17,7 @@ if (isset($_POST['insert'])) {
     $name_alias = $_POST['name_alias'];
     $giro = $_POST['giro'];
     $client_type = $_POST['client_type'];
-    $name = $_POST['name'];
+    $name_contact = $_POST['name_contact'];
     $email = $_POST['email'];
     $phone = $_POST['phone'];
     $name_place = $_POST['name_place'];
@@ -75,9 +75,9 @@ if (isset($_POST['insert'])) {
         <label for="name">Nombre</label>
         <input id="name" type="text" name="name" min="1" max="50" require> <br>
         <label for="phone">Número telefónico</label>
-        <input id="phone" type="text" name="phone" min="1" max="50" require> <br>
+        <input id="phone" type="tel" name="phone" min="1" max="50" require> <br>
         <label for="email">Correo electrónico</label>
-        <input id="email" type="tel" name="email" min="1" max="20" require> <br>
+        <input id="email" type="mail" name="email" min="1" max="20" require> <br>
     </fieldset>
 
     <fieldset>
