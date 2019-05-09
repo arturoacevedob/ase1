@@ -79,8 +79,11 @@ h1, h2, h3, h4, h5, h6, p, td, th {
 
 /* Main grid */
 .main-grid {
+    margin: 0;
+    padding: 0;
     display: grid;
     grid-template-columns: min-content auto;
+    grid-gap: 50px;
 }
 
 /* Toolbar */
