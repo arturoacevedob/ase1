@@ -245,6 +245,7 @@ table.expandable-table > tbody > tr.collapsed-view:hover {
 
 table.expandable-table > tbody > tr.collapsed-view.open {
     background: lightgray;
+    border-radius: 15px 15px 0 0;
 }
 
 table.expandable-table > tbody > tr.collapsed-view.open td:last-child {
@@ -288,10 +289,14 @@ body{
 
 nav{
     padding: 15px 35px;
-    height: 100%;
+    height: 100vw;
     background-color: var(--dark);
 }
 
 nav ul{
     list-style: none;
+}
+
+.padding-for-all{
+    padding: 20px;
 }

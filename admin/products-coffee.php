@@ -100,7 +100,6 @@ function createCoffeeListOptions()
         <li><a href="orders-pending-backend.php" target="_self">Pedidos</a></li>
         <li><a href="products-coffee.php" target="_self">Productos</a></li>
         <li><a href='login.php?killsession=1'>Terminar Sesión</a></li>
-        <li><a href='crud_productos/create.php'>Registro de productos</a></li>
     </ul>
 </nav>
 

@@ -142,7 +142,7 @@ include 'header.php';
     </section>
     <section class="more container">
         <h2>Variedades</h2>
-        <p class="padding-text-center p-big">Trabajamos con café 100% arábigo con variedades typica, borbón y oro azteca.</p>
+        <p class="padding-text-center p-big padding-top-bottom">Trabajamos con café 100% arábigo con variedades typica, borbón y oro azteca.</p>
         <div class="gridthree2">
             <article>
                 <h3 class="h3-small">Typica</h3>
@@ -162,7 +162,7 @@ include 'header.php';
     </section>
     <div class="light-bg">
         <section class="more container">
-            <h2>Mezclas de tuestes</h2>
+            <h2 class="padding-bottom-25">Mezclas de tuestes</h2>
             <div class="gridthree2">
                 <article class="grid-image-first">
                     <h3 class="h3-small">Claro</h3>
@@ -193,8 +193,8 @@ include 'header.php';
     </div>
     <section class="container center-text">
         <h2>Molidos</h2>
-        <p class="p-big padding-text-center">El molido lo efectuamos al gusto del cliente o de acuerdo al tipo de cafetera que utilice.</p>
-        <p class="padding-text-center">Contamos con dos molinos con una capacidad de 3 kg. por minuto, con 9 niveles de molido.</p>
+        <p class="p-big padding-text-center padding-top-bottom">El molido lo efectuamos al gusto del cliente o de acuerdo al tipo de cafetera que utilice.</p>
+        <p class="padding-text-center padding-bottom-25">Contamos con dos molinos con una capacidad de 3 kg. por minuto, con 9 niveles de molido.</p>
         <div class="gridthree2">
            
             <article class="grid-image-first molidos">
