@@ -31,7 +31,7 @@ function createProductListOptions()
         echo "
         <table class='expandable-table client wrapper'>
         <tbody>
-        <tr class='collapsed-view'>
+        <tr class='collapsed-view padding-for-all'>
             <td>" .
             $clients[$i]["name_alias"] . "<span class='tag'>" . $clients[$i]["client_type"] . "</span><br>" .
             $clients[$i]["giro"] .
@@ -40,6 +40,7 @@ function createProductListOptions()
             <td><a href='update.php'>Eliminar</a></td>
             <td></td>
         </tr>
+        <div class='padding-for-all'>
         <tr class='expanded-view'>
                 <td colspan='3'>
                     <div class='grid-1-1-1-1 expanded-view-content'>";
@@ -335,6 +336,7 @@ function createProductListOptions()
                         </div>
                     </td>
                 </tr>
+                </div>
                 </tbody>
             </table>";
     }
