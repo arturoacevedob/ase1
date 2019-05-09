@@ -382,7 +382,7 @@ function createProductListOptions()
     </ul>
 </nav>
 
-<div>
+<div class="padding-thing">
 
     <div class="global-toolbar grid-2-space-between">
         <h1>Clientes</h1>

@@ -104,7 +104,7 @@ function createCoffeeListOptions()
     </ul>
 </nav>
 
-<div>
+<div class="padding-thing">
 
     <div class="global-toolbar">
         <h1>Productos</h1>

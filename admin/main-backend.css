@@ -2,6 +2,10 @@
 
 /* Variables */
 :root {
+    --dark: #40290A;
+    --red: #C24819;
+    --light: #FFFEF5;
+
     --a-link: var(--light);
     --a-visited: #cccbc6;
     --a-hover: #EA9A07;
@@ -83,7 +87,6 @@ h1, h2, h3, h4, h5, h6, p, td, th {
     padding: 0;
     display: grid;
     grid-template-columns: min-content auto;
-    grid-gap: 50px;
 }
 
 /* Toolbar */
@@ -267,4 +270,24 @@ table.expandable-table > tbody > tr.expanded-view.open {
 textarea {
     padding: 0;
     margin: 0;
+}
+
+/* Styles */
+body{
+    margin: 0;
+    padding: 0;
+    color: var(--dark);
+    font-family: Qualion, sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+}
+
+.padding-thing{
+    padding: 30px;
+}
+
+nav{
+    padding: 15px 35px;
+    height: 100%;
+    background-color: var(--dark);
 }
