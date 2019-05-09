@@ -78,11 +78,9 @@ if(isset($_POST['user'])) {
                             <li><a href="ayuda.php" target="_self">Ayuda</a></li>
                         </ul>
                     </nav>
-                    <ul>
                         <?php
                         renderHeader()
                         ?>
-                    </ul>
                 </div>
 
                 <div class="nav-wrapper mobile">
