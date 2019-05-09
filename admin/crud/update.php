@@ -112,42 +112,42 @@ if (isset($_POST['update'])) {
     <label for="phone">Número telefónico</label>
     <input id="phone" type="tel" name="phone" min="1" max="50" require value='<?php echo $phone; ?>'> <br>
     <label for="email">Correo electrónico</label>
-    <input id="email" type="mail" name="email" min="1" max="20" require value='<?php echo $name; ?>'> <br>
+    <input id="email" type="mail" name="email" min="1" max="20" require value='<?php echo $email; ?>'> <br>
     </fieldset>
 
     <fieldset>
     <h2>Dirección</h2>
     <label for="name_place">Nombre del lugar</label>
-    <input id="name_place" type="text" name="name_place" min="1" max="25" require> <br>
+    <input id="name_place" type="text" name="name_place" min="1" max="25" require value='<?php echo $name_place; ?>'> <br>
     <label for="country">País</label>
-    <input id="country" type="text" name="country" min="1" max="200" require> <br>
+    <input id="country" type="text" name="country" min="1" max="200" require value='<?php echo $country; ?>'> <br>
     <label for="address1">Calle y número</label>
-    <input id="address1" type="text" name="address1" placeholder="Calle y número"> <br>
-    <input id="address2" type="text" name="address2" placeholder="Depto, piso, etc..(opcional)"> <br>
+    <input id="address1" type="text" name="address1" placeholder="Calle y número" value='<?php echo $address1; ?>'> <br>
+    <input id="address2" type="text" name="address2" placeholder="Depto, piso, etc..(opcional)" value='<?php echo $address2; ?>'> <br>
     <label for="city">Ciudad</label>
-    <input id="city" type="text" name="city"> <br>
+    <input id="city" type="text" name="city" value='<?php echo $city ?>'> <br>
     <label for="cp">C.P.</label>
-    <input id="cp" type="text" name="cp"> <br>
+    <input id="cp" type="text" name="cp" value='<?php echo $cp; ?>'> <br>
     <label for="state">Estado</label>
-    <input id="state" type="text" name="state"> <br>
+    <input id="state" type="text" name="state" value='<?php echo $state; ?>'> <br>
     <label for="phone">Teléfono</label>
-    <input id="phone" type="text" name="phone"> <br>
+    <input id="phone" type="text" name="phone" value='<?php echo $phone; ?>'> <br>
     </fieldset>
 
     <fieldset>
         <h2>Facturación</h2>
         <label for="payroll">Nómina o razón social</label>
-        <input id="payroll" type="text" name="payroll"> <br>
+        <input id="payroll" type="text" name="payroll" value='<?php echo $payroll; ?>'> <br>
         <!-- <label for="fiscal_address">Domicilio fiscal</label>
         <input id="fiscal_address" type="text" name="fiscal_address"> <br> -->
         <label for="rfc">RFC</label>
-        <input id="rfc" type="text" name="rfc"> <br>
+        <input id="rfc" type="text" name="rfc" value='<?php echo $rfc; ?>'> <br>
         <label for="payment_method">Método de pago</label>
 
         <fieldset>
             <h2>Método de pago</h2>
             <div class="radio-group">
-                <input class='radio' type="radio" name="payment_method" id="opcion-one" value="0">
+                <input class='radio' type="radio" name="payment_method" id="opcion-one" value="0" >
                 <label for="opcion-one">PUE una exhib.</label>
                 <input type="radio" name="payment_method" id="opcion-dos" value="1">
                 <label for="opcion-dos">PPD parcialid</label>
