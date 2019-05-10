@@ -78,13 +78,14 @@ if (isset($_POST['update'])) {
     $payment_form = $_POST['payment_form'];
     $payment_use = $_POST['payment_use'];
 
-    echo "$visibility<br>";
-
-    $q = "update clients set name = '$name', description = '$description',
-            price = '$price', brand = '$brand', visible = '$visible'
-            $imageField
-            where id_client = '$id_client'";
-
+    $q = "update clients set name_legal = '$name_legal', name_alias = '$name_alias',
+            giro = '$giro', client_type = '$client_type' where clients.id_client = '$id_client'";
+    execute($q);
+    $q = "update contacts set name_contact = '$name_contact', email = '$email', phone_contact='$phone_contact' where contacts.id_client = '$id_client'";
+    execute($q);
+    $q = "update addresses set name_place = '$name_place', address1 = '$address1', address2 = '$address2', country = '$country', city = '$city', state = '$state', phone_address = '$phone_address', cp = '$cp' where addresses.id_client = '$id_client'";
+    execute($q);
+    $q = "update billing set payroll = '$payroll', rfc = '$rfc', payment_method = '$payment_method', payment_form = '$payment_form', payment_use = '$payment_use' where billing.id_client = '$id_client'";
     execute($q);
     header("Location: clients.php");
 }
@@ -105,7 +106,7 @@ if (isset($_POST['update'])) {
         <input id="name_alias" type="text" name="name_alias" min="1" max="100" require
                value='<?php echo $name_alias; ?>'> <br>
         <label for="giro">Giro</label>
-        <input ide="giro" type="text" name="giro" min="1" max="250" require value='<?php echo $giro; ?>'> <br>
+        <input id="giro" type="text" name="giro" min="1" max="250" require value='<?php echo $giro; ?>'> <br>
         <label for="client_type">Tipo de cliente</label>
         <input type="radio" name="client_type" id="minorista" value="0" min="1" max="12" require
                value='<?php echo $client_type; ?>'>
@@ -116,8 +117,9 @@ if (isset($_POST['update'])) {
 
     <fieldset>
         <h2>Contacto</h2>
-        <label for="name">Nombre</label>
-        <input id="name" type="text" name="name" min="1" max="50" require value='<?php echo $name_contact; ?>'> <br>
+        <label for="name_contact">Nombre</label>
+        <input id="name_contact" type="text" name="name_contact" min="1" max="50" require
+               value='<?php echo $name_contact; ?>'> <br>
         <label for="phone_contact">Número telefónico</label>
         <input id="phone_contact" type="tel" name="phone_contact" min="1" max="50" require
                value='<?php echo $phone_contact; ?>'> <br>
