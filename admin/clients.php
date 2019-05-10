@@ -84,7 +84,7 @@ function createProductListOptions()
                             <tbody>
                             <tr>
                                 <th>Nombre del lugar</th>
-                                <td>" . $address["name"] . "</td>
+                                <td>" . $address["name_place"] . "</td>
                             </tr>
                             <tr>
                                 <th>Calle y número</th>

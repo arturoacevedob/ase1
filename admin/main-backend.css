@@ -297,15 +297,15 @@ ul {
     list-style: none;
 }
 
-.padding-for-all{
+.padding-for-all {
     padding: 20px;
 }
 
-.padding-for-all-2{
+.padding-for-all-2 {
     padding: 10px;
 }
 
-.active{
+.active {
     color: white;
     padding: 10px 60px 10px 70px;
     width: 100%;
@@ -316,10 +316,11 @@ ul {
 nav ul a{
     padding: 10px 60px 10px 70px;
 }
-.radius-left{
+
+.radius-left {
     border-radius: 15px 0 0 15px;
 }
 
-.radius-right{
+.radius-right {
     border-radius:0 15px 15px 0;
 }
