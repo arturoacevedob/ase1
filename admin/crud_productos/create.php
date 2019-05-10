@@ -13,15 +13,15 @@ if(!isset($_SESSION['user'])) {
 
 if(isset($_POST['insert'])) {
     $uploadOk = 0;
-    $name = $_POST['name'];
+    $name_product = $_POST['name_product'];
     $description = $_POST['description'];
     $notes = $_POST['notes'];
+    $client_type = $_POST['client_type'];
     $weight = $_POST['weight'];
     $price = $_POST['price'];
     $ground_type = $_POST['ground_type'];
-    $notes = $_POST['notes'];
+    $image_path = $_POST['image_path'];
  
-
     if($_FILES['image']['name'] != "") {
         $fileName = strtolower($_FILES['image']['name']);
         $tempFile = $_FILES['image']['tmp_name'];
@@ -35,9 +35,13 @@ if(isset($_POST['insert'])) {
     }
     
     if($uploadOk == 1) {
-        $q = "insert into products (name, description, price, brand, image) values ('$name','$description','$price','$brand','$fileNamePath')";
+        $q = "insert into products (name_product, description, notes, client_type) values ('$name_product','$description','$notes','$client_type')";
         execute($q);
-        header("Location: admin.php");
+        $q = "insert into weight_price (weight, price) values ('$weight','$price')";
+        execute($q);
+        $q = "insert into ground_type (ground_type) values ('$ground_type)";
+        execute($q);
+        header("Location: products-coffee.php");
     }
 }
 ?>
@@ -45,12 +49,13 @@ if(isset($_POST['insert'])) {
 <!DOCTYPE html>
 <html>
 <body>
-    <h1>Datos Generales</h1>
+    <h1>Producto nuevo</h1>
     <form action='create.php' method='post' enctype='multipart/form-data'>
         <input type='hidden' name='insert' value='insert'>
-        Nombre Legal: <input type='text' name='name_legal'> <br>
-        Alias: <input type='text' name='name_alias'> <br>
-        Giro: <input type='text' name='giro'> <br>
+        Nombre del producto <input type='text' name='name_product'> <br>
+        Descripción <input type='text' name='description'> <br>
+        Notas <input type='text' name='notes'> <br>
+        Notas <input type='text' name='notes'> <br>
         Tipo de cliente:
         <input type='radio' name='client_type' id="minorista" value='0'>
         <label for="minorista">Minorista</label>
