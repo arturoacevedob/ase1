@@ -32,18 +32,18 @@ function createProductListOptions()
         echo "
         <table class='expandable-table client wrapper'>
         <tbody>
-        <tr class='collapsed-view padding-for-all'>
-            <td>" .
+        <tr class='collapsed-view'>
+            <td class='padding-for-all'>" .
             $clients[$i]["name_alias"] . "<span class='tag'>" . $clients[$i]["client_type"] . "</span><br>" .
             $clients[$i]["giro"] .
             "</td>
             <td><a href='crud/update.php?idclient=" . $clients[$i]["id_client"] . "'>Editar</a><a href='crud/delete.php'>Eliminar</a></td>
             <td></td>
         </tr>
-        <div class='padding-for-all'>
+        <div class='padding-for-all-2'>
         <tr class='expanded-view'>
                 <td colspan='3'>
-                    <div class='grid-1-1-1-1 expanded-view-content'>";
+                    <div class='grid-1-1-1-1 expanded-view-content padding-for-all'>";
 
         $query2 = "select clients.name_alias, contacts.* from clients inner join contacts on clients.id_client = contacts.id_client where clients.name_alias = '" . $clients[$i]["name_alias"] . "'";
         $recordSet2 = execute($query2);
@@ -148,11 +148,11 @@ function createProductListOptions()
                         <input type='submit' value='Guardar cambios'>
                     </form>
                 </div>
-                        <div class='grid-2-space-between'>
+                        <div class='grid-2-space-between padding-for-all'>
                             <div>Últimos pedidos</div>
                             <div><a href=''>Todos los pedidos</a></div>
                         </div>
-                        <div class='grid-column last-orders-table'>
+                        <div class='grid-column last-orders-table padding-for-all'>
                             <div>
                                 <div>
                                     <div>Hoy - 03/03/19</div>

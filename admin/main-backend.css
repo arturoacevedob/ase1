@@ -306,6 +306,10 @@ ul {
     padding: 20px;
 }
 
+.padding-for-all-2{
+    padding: 10px;
+}
+
 .active{
     color: white;
     padding: 10px 60px 10px 70px;
