@@ -110,6 +110,7 @@ h1, h2, h3, h4, h5, h6, p, td, th {
 /* Wrappers */
 .wrapper {
     border-radius: 15px;
+    border: 1px solid black;
 }
 
 /*      Wrappers > Pendiente */
