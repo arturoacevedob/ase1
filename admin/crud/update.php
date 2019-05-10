@@ -38,14 +38,14 @@ if (isset($_GET['idclient'])) {
         $client_type = $row['client_type'];
         $name_contact = $row['name'];
         $email = $row['email'];
-        $phone = $row['phone'];
+        $phone_contact = $row['phone_contact'];
         $name_place = $row['name_place'];
         $address1 = $row['address1'];
         $address2 = $row['address2'];
         $country = $row['country'];
         $city = $row['city'];
         $state = $row['state'];
-        $phone = $row['phone'];
+        $phone_address = $row['phone_address'];
         $cp = $row['cp'];
         $payroll = $row['payroll'];
         $rfc = $row['rfc'];
@@ -63,14 +63,14 @@ if (isset($_POST['update'])) {
     $client_type = $_POST['client_type'];
     $name = $_POST['name'];
     $email = $_POST['email'];
-    $phone = $_POST['phone'];
+    $phone_contact = $_POST['phone_contact'];
     $name_place = $_POST['name_place'];
     $address1 = $_POST['address1'];
     $address2 = $_POST['address2'];
     $country = $_POST['country'];
     $city = $_POST['city'];
     $state = $_POST['state'];
-    $phone = $_POST['phone'];
+    $phone_address = $_POST['phone_address'];
     $cp = $_POST['cp'];
     $payroll = $_POST['payroll'];
     $rfc = $_POST['rfc'];
@@ -115,8 +115,9 @@ if (isset($_POST['update'])) {
     <h2>Contacto</h2>
     <label for="name">Nombre</label>
     <input id="name" type="text" name="name" min="1" max="50" require value='<?php echo $name; ?>'> <br>
-    <label for="phone">Número telefónico</label>
-    <input id="phone" type="tel" name="phone" min="1" max="50" require value='<?php echo $phone; ?>'> <br>
+        <label for="phone_contact">Número telefónico</label>
+        <input id="phone_contact" type="tel" name="phone_contact" min="1" max="50" require
+               value='<?php echo $phone_contact; ?>'> <br>
     <label for="email">Correo electrónico</label>
     <input id="email" type="mail" name="email" min="1" max="20" require value='<?php echo $email; ?>'> <br>
     </fieldset>
@@ -136,8 +137,8 @@ if (isset($_POST['update'])) {
     <input id="cp" type="text" name="cp" value='<?php echo $cp; ?>'> <br>
     <label for="state">Estado</label>
     <input id="state" type="text" name="state" value='<?php echo $state; ?>'> <br>
-    <label for="phone">Teléfono</label>
-    <input id="phone" type="text" name="phone" value='<?php echo $phone; ?>'> <br>
+        <label for="phone_address">Teléfono</label>
+        <input id="phone_address" type="text" name="phone_address" value='<?php echo $phone_address; ?>'> <br>
     </fieldset>
 
     <fieldset>
