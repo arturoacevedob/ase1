@@ -109,7 +109,6 @@ h1, h2, h3, h4, h5, h6, p, td, th {
 
 /* Wrappers */
 .wrapper {
-    border: 2px solid var(--red);
     border-radius: 15px;
 }
 
@@ -253,6 +252,7 @@ table.expandable-table > tbody > tr.expanded-view {
 
 table.expandable-table > tbody > tr.expanded-view.open {
     display: table-row;
+    border: 2px solid var(--red);
 }
 
 /*      Table Classes > Last Orders Table */
