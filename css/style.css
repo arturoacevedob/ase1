@@ -271,6 +271,12 @@ a.dark:visited {
     color: var(--dark);
 }
 
+a.unavailable:hover {
+    color: var(--dark);
+    text-decoration: none;
+    text-decoration-color: var(--dark);
+}
+
 /* —————— Nav Links —————— */
 
 #menu-desktop a, .footer-nav a, .menu-mobile-content a, .sidebar-nav-responsive a {

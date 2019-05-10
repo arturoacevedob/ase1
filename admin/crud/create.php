@@ -19,14 +19,14 @@ if (isset($_POST['insert'])) {
     $client_type = $_POST['client_type'];
     $name_contact = $_POST['name_contact'];
     $email = $_POST['email'];
-    $phone = $_POST['phone'];
+    $phone_contact = $_POST['phone_contact'];
     $name_place = $_POST['name_place'];
     $address1 = $_POST['address1'];
     $address2 = $_POST['address2'];
     $country = $_POST['country'];
     $city = $_POST['city'];
     $state = $_POST['state'];
-    $phone = $_POST['phone'];
+    $phone_address = $_POST['phone_address'];
     $cp = $_POST['cp'];
     $payroll = $_POST['payroll'];
     $rfc = $_POST['rfc'];
@@ -38,9 +38,9 @@ if (isset($_POST['insert'])) {
     if ($uploadOk == 1) {
         $q = "insert into clients (name_legal, name_alias, giro, client_type) values ('$name_legal', '$name_alias', '$giro', '$client_type');";
         $id_client = execute($q);
-        $q = "insert into contacts(name_contact, email, phone, id_client) values ('$name', '$email', '$phone', '$id_client');";
+        $q = "insert into contacts(name_contact, email, phone_contact, id_client) values ('$name_contact', '$email', '$phone_contact', '$id_client');";
         execute($q);
-        $q = "insert into addresses (name_place, address1, address2, country, city, state, phone, cp, id_client) values ('$name_place','$address1','$address2','$country','$city','$state','$phone','$cp', '$id_client');";
+        $q = "insert into addresses (name_place, address1, address2, country, city, state, phone_address, cp, id_client) values ('$name_place','$address1','$address2','$country','$city','$state','$phone_address','$cp', '$id_client');";
         execute($q);
         $q = "insert into billing (payroll, rfc, payment_method, payment_form, payment_use, id_client) values ('$payroll', '$rfc', '$payment_method', '$payment_form', '$payment_use', '$id_client');";
         execute($q);
@@ -74,8 +74,8 @@ if (isset($_POST['insert'])) {
         <h2>Contacto</h2>
         <label for="name">Nombre</label>
         <input id="name" type="text" name="name" min="1" max="50" require> <br>
-        <label for="phone">Número telefónico</label>
-        <input id="phone" type="tel" name="phone" min="1" max="50" require> <br>
+        <label for="phone_contact">Número telefónico</label>
+        <input id="phone_contact" type="tel" name="phone_contact" min="1" max="50" require> <br>
         <label for="email">Correo electrónico</label>
         <input id="email" type="mail" name="email" min="1" max="20" require> <br>
     </fieldset>
@@ -95,8 +95,8 @@ if (isset($_POST['insert'])) {
         <input id="cp" type="text" name="cp"> <br>
         <label for="state">Estado</label>
         <input id="state" type="text" name="state"> <br>
-        <label for="phone">Teléfono</label>
-        <input id="phone" type="text" name="phone"> <br>
+        <label for="phone_address">Teléfono</label>
+        <input id="phone_address" type="text" name="phone_address"> <br>
     </fieldset>
 
     <fieldset>
@@ -126,11 +126,11 @@ if (isset($_POST['insert'])) {
                 <label for="forman-one">Efectivo</label>
                 <input type="radio" name="payment_form" id="forma-dos" value="1">
                 <label for="forma-dos">Cheque</label>
-                <input type="radio" name="payment_form" id="forma-tres" value="1">
+                <input type="radio" name="payment_form" id="forma-tres" value="2">
                 <label for="forma-tres">Transferencia</label>
-                <input type="radio" name="payment_form" id="forma-cuatro" value="1">
+                <input type="radio" name="payment_form" id="forma-cuatro" value="3">
                 <label for="forma-cuatro">Tarjeto de crédito</label>
-                <input type="radio" name="payment_form" id="forma-cinco" value="1">
+                <input type="radio" name="payment_form" id="forma-cinco" value="4">
                 <label for="forma-cinco">Monedero</label>
             </div>
         </fieldset>
@@ -140,7 +140,7 @@ if (isset($_POST['insert'])) {
             <div class="radio-group">
                 <input class='radio' type="radio" name="payment_use" id="use-one" value="0">
                 <label for="use-one">G01 Adquis. Merc.</label>
-                <input type="radio" name="payment_method" id="use-dos" value="1">
+                <input type="radio" name="payment_use" id="use-dos" value="1">
                 <label for="use-dos">G03 Gastos Gral.</label>
             </div>
         </fieldset>

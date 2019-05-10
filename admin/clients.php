@@ -67,7 +67,7 @@ function createProductListOptions()
                             </tr>
                             <tr>
                                 <th>Teléfono</th>
-                                <td class='tel'>" . $contact["phone"] . "</td>
+                                <td class='tel'>" . $contact["phone_contact"] . "</td>
                             </tr>
                             </tbody>
                         </table>";
@@ -84,7 +84,7 @@ function createProductListOptions()
                             <tbody>
                             <tr>
                                 <th>Nombre del lugar</th>
-                                <td>" . $address["name"] . "</td>
+                                <td>" . $address["name_place"] . "</td>
                             </tr>
                             <tr>
                                 <th>Calle y número</th>
@@ -104,7 +104,7 @@ function createProductListOptions()
                             </tr>
                             <tr>
                                 <th>Teléfono</th>
-                                <td class='tel'>" . $address["phone"] . "</td>
+                                <td class='tel'>" . $address["phone_address"] . "</td>
                             </tr>
                         </table>";
         }
