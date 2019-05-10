@@ -308,11 +308,13 @@ ul {
 .active {
     color: white;
     padding: 10px 60px 10px 70px;
-    width: 100%;
     background-color: #4D310C;
     border-left: solid 3px var(--a-active);
 }
 
+nav ul li{
+    display: block;
+}
 nav ul a{
     padding: 10px 60px 10px 70px;
 }
