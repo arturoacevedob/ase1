@@ -314,11 +314,15 @@ nav .active {
     border-left: solid 3px var(--a-active);
 }
 
+nav ul{
+    display: grid;
+    grid-gap: 25px;
+}
 nav ul li{
     display: block;
 }
 nav ul a{
-    padding: 10px 75px 10px 70px;
+    padding: 10px 60px 10px 70px;
 }
 
 .radius-left {
