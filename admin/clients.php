@@ -13,7 +13,7 @@ if (!isset($_SESSION['user'])) {
 
 function createProductListOptions()
 {
-    $query = "select id_client, name_alias, giro, client_type from clients";
+    $query = "select * from clients";
     $recordSet = execute($query);
 
     $clients = array();
