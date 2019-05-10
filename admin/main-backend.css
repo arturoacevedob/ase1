@@ -305,9 +305,9 @@ ul {
     padding: 10px;
 }
 
-.active {
+nav .active {
     color: white;
-    padding: 10px 60px 10px 70px;
+    padding: 10px 75px 10px 70px;
     background-color: #4D310C;
     border-left: solid 3px var(--a-active);
 }
@@ -316,7 +316,7 @@ nav ul li{
     display: block;
 }
 nav ul a{
-    padding: 10px 60px 10px 70px;
+    padding: 10px 75px 10px 70px;
 }
 
 .radius-left {
