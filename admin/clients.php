@@ -408,6 +408,9 @@ function createProductListOptions()
         $(".expandable-table tr.collapsed-view").on("click", function () {
             $(this).toggleClass("open").next(".expanded-view").toggleClass("open");
         });
+        $(".expandable-table.client.wrapper").on("click", function () {
+            $(this).toggleClass("open");
+        });
     });
 </script>
 
