@@ -221,7 +221,9 @@ th {
     display: grid;
     grid-template-rows: auto 1fr;
 }
-
+.expandable-table.client.wrapper.open{
+    border: 2px solid var(--red);
+}
 /*      Table Classes > Collapsed Table */
 .collapsed-view > td:nth-child(2) {
     text-align: right;
@@ -253,7 +255,6 @@ table.expandable-table > tbody > tr.expanded-view {
 
 table.expandable-table > tbody > tr.expanded-view.open {
     display: table-row;
-    border: 2px solid var(--red);
 }
 
 /*      Table Classes > Last Orders Table */
