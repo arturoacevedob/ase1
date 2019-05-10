@@ -284,6 +284,7 @@ body{
 }
 
 nav{
+    max-width: 280px;
     position: fixed;
     height: 100vw;
     background-color: var(--dark);
@@ -309,13 +310,14 @@ ul {
 
 nav .active {
     color: white;
-    padding: 10px 75px 10px 70px;
+    padding: 10px 143px 10px 70px;
     background-color: #4D310C;
     border-left: solid 3px var(--a-active);
 }
 
 nav ul{
     display: grid;
+    margin-top: 30px;
     grid-gap: 25px;
 }
 nav ul li{
