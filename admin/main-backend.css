@@ -109,7 +109,7 @@ h1, h2, h3, h4, h5, h6, p, td, th {
 
 /* Wrappers */
 .wrapper {
-    border: 1px solid black;
+    border: 2px solid var(--red);
     border-radius: 15px;
 }
 
@@ -241,7 +241,6 @@ table.expandable-table > tbody > tr.collapsed-view td:last-child {
 
 table.expandable-table > tbody > tr.collapsed-view:hover {
     background: lightgrey;
-    border-radius: 15px 15px 0 0;
 }
 
 table.expandable-table > tbody > tr.collapsed-view.open td:last-child {
@@ -316,4 +315,11 @@ ul {
 
 nav ul a{
     padding: 10px 60px 10px 70px;
+}
+.radius-left{
+    border-radius: 15px 0 15px 0;
+}
+
+.radius-right{
+    border-radius:0 15px 0 15px;
 }

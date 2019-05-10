@@ -33,12 +33,12 @@ function createProductListOptions()
         <table class='expandable-table client wrapper'>
         <tbody>
         <tr class='collapsed-view'>
-            <td class='padding-for-all radius-top-left'>" .
+            <td class='padding-for-all radius-left'>" .
             $clients[$i]["name_alias"] . "<span class='tag'>" . $clients[$i]["client_type"] . "</span><br>" .
             $clients[$i]["giro"] .
             "</td>
             <td><a href='crud/update.php?idclient=" . $clients[$i]["id_client"] . "'>Editar</a><a href='crud/delete.php'>Eliminar</a></td>
-            <td class='radius-top-right'></td>
+            <td class='radius-right'></td>
         </tr>
         <div class='padding-for-all-2'>
         <tr class='expanded-view'>
