@@ -55,7 +55,7 @@ if(isset($_POST['insert'])) {
         Nombre del producto <input type='text' name='name_product'> <br>
         Descripción <input type='text' name='description'> <br>
         Notas <input type='text' name='notes'> <br>
-        Notas <input type='text' name='notes'> <br>
+        Tipo de Cliente <input type='text' name='notes'> <br>
         Tipo de cliente:
         <input type='radio' name='client_type' id="minorista" value='0'>
         <label for="minorista">Minorista</label>

@@ -11,9 +11,9 @@ if(!isset($_SESSION['user'])) {
     die();
 }
 
-if(isset($_GET['idproduct'])) {
+if(isset($_GET['idclients'])) {
     $id_clients = $_GET['idclients'];
-    $q = "delete from clients where id_clients = $id_clients";
+    $q = "delete from clients where id_client = $id_client";
     $recordSet = execute($q);
     header("Location: clients.php");
     die();
