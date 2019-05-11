@@ -1214,8 +1214,8 @@ progress::-webkit-progress-value {
 
     /* —————— AQUÍ EMPIEZAN ESTILOS DE PROCESO—————— */
 
-    #proceso #image-restauracion{
-        background: url(../images/proceso/proceso_tipos_de_tueste_grafica_batsil_maya.svg) 0 0 / cover no-repeat;;
+    #proceso .image-restauracion{
+        background: url(../images/proceso/hombre_restaurando_cafetal_batsil_maya.svg) 0 0 / cover no-repeat;
     }
     #proceso .tipo-tueste p:nth-child(8) {
         top: 59%;
