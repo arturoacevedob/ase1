@@ -270,6 +270,19 @@ textarea {
     padding: 0;
     margin: 0;
 }
+/* Lables & stuff*/
+label, label + span, legend, fieldset {
+    padding: 10px 12px 2px;
+    display: block;
+}
+
+/* Login */
+.login-wrapper {
+    position: absolute;
+    top: 35%;
+    left: calc(50% - 150px);
+    width: 300px;
+}
 
 /* Styles */
 body{
