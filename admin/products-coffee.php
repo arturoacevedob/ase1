@@ -102,9 +102,9 @@ function createCoffeeListOptions()
     <h2 style="display: none">Menú</h2>
     <div><img alt="Logo de Bats'il Maya" src="../images/logos/batsil_maya_logo.svg"></div>
     <ul>
-        <li><a class="active" href="clients.php" target="_self">Clientes</a></li>
+        <li><a href="clients.php" target="_self">Clientes</a></li>
         <li><a href="orders-pending-backend.php" target="_self">Pedidos</a></li>
-        <li><a href="products-coffee.php" target="_self">Productos</a></li>
+        <li><a class="active" href="products-coffee.php" target="_self">Productos</a></li>
         <li><a href='login.php?killsession=1'>Terminar Sesión</a></li>
     </ul>
 </nav>

@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6, p, td, th {
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: min-content auto;
+    background-color: #F2F2F2;
 }
 
 /* Toolbar */
@@ -109,8 +109,9 @@ h1, h2, h3, h4, h5, h6, p, td, th {
 
 /* Wrappers */
 .wrapper {
-    border: 2px solid var(--red);
+    background-color: white;
     border-radius: 15px;
+    border: 1px solid black;
 }
 
 /*      Wrappers > Pendiente */
@@ -221,7 +222,9 @@ th {
     display: grid;
     grid-template-rows: auto 1fr;
 }
-
+.expandable-table.client.wrapper.open{
+    border: 2px solid var(--red);
+}
 /*      Table Classes > Collapsed Table */
 .collapsed-view > td:nth-child(2) {
     text-align: right;
@@ -283,6 +286,8 @@ body{
 }
 
 nav{
+    max-width: 280px;
+    position: fixed;
     height: 100vw;
     background-color: var(--dark);
 }
@@ -305,16 +310,27 @@ ul {
     padding: 10px;
 }
 
-.active {
+nav .active {
     color: white;
-    padding: 10px 60px 10px 70px;
-    width: 100%;
+    padding: 10px 143px 10px 70px;
     background-color: #4D310C;
     border-left: solid 3px var(--a-active);
 }
 
+nav ul{
+    display: grid;
+    margin-top: 30px;
+    grid-gap: 25px;
+}
+nav ul li{
+    display: block;
+}
 nav ul a{
     padding: 10px 60px 10px 70px;
+}
+
+.big-margin{
+    margin-left: 300px;
 }
 
 .radius-left {
