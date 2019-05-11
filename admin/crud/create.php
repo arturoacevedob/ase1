@@ -58,13 +58,13 @@ if (isset($_POST['insert'])) {
     <fieldset>
         <input type="hidden" name="insert" value="insert">
         <label for="name_legal">Nombre legal</label>
-        <input id="name_legal" type="text" name="name_legal" min="1" max="100" require> <br>
+        <input id="name_legal" type="text" name="name_legal" min="1" max="100" required> <br>
         <label for="name_alias">Aliasl</label>
-        <input id="name_alias" type="text" name="name_alias" min="1" max="100" require> <br>
+        <input id="name_alias" type="text" name="name_alias" min="1" max="100" required> <br>
         <label for="giro">Giro</label>
-        <input ide="giro" type="text" name="giro" min="1" max="250" require> <br>
+        <input ide="giro" type="text" name="giro" min="1" max="250" required> <br>
         <label for="client_type">Tipo de cliente</label>
-        <input type="radio" name="client_type" id="minorista" value="0" min="1" max="12" require>
+        <input type="radio" name="client_type" id="minorista" value="0" min="1" max="12" required>
         <label for="minorista">Minorista</label>
         <input type="radio" name="client_type" id="mayorista" value="1">
         <label for="mayorista">Mayorista</label>
@@ -73,19 +73,19 @@ if (isset($_POST['insert'])) {
     <fieldset>
         <h2>Contacto</h2>
         <label for="name">Nombre</label>
-        <input id="name" type="text" name="name" min="1" max="50" require> <br>
+        <input id="name" type="text" name="name" min="1" max="50" required> <br>
         <label for="phone_contact">Número telefónico</label>
-        <input id="phone_contact" type="tel" name="phone_contact" min="1" max="50" require> <br>
+        <input id="phone_contact" type="tel" name="phone_contact" min="1" max="50" required> <br>
         <label for="email">Correo electrónico</label>
-        <input id="email" type="mail" name="email" min="1" max="20" require> <br>
+        <input id="email" type="mail" name="email" min="1" max="20" required> <br>
     </fieldset>
 
     <fieldset>
         <h2>Dirección</h2>
         <label for="name_place">Nombre del lugar</label>
-        <input id="name_place" type="text" name="name_place" min="1" max="25" require> <br>
+        <input id="name_place" type="text" name="name_place" min="1" max="25" required> <br>
         <label for="country">País</label>
-        <input id="country" type="text" name="country" min="1" max="200" require> <br>
+        <input id="country" type="text" name="country" min="1" max="200" required> <br>
         <label for="address1">Calle y número</label>
         <input id="address1" type="text" name="address1" placeholder="Calle y número"> <br>
         <input id="address2" type="text" name="address2" placeholder="Depto, piso, etc..(opcional)"> <br>

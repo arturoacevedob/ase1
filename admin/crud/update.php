@@ -2,7 +2,7 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-include 'connection.php';
+include '../crud/connection.php';
 
 $id_clients;
 $name_legal;
@@ -87,12 +87,12 @@ if (isset($_POST['update'])) {
     execute($q);
     $q = "update billing set payroll = '$payroll', rfc = '$rfc', payment_method = '$payment_method', payment_form = '$payment_form', payment_use = '$payment_use' where billing.id_client = '$id_client'";
     execute($q);
-    header("Location: clients.php");
+    header("Location: ../clients.php");
 }
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <body>
 
 <form action="update.php" method="post" enctype="multipart/form-data">
@@ -100,40 +100,41 @@ if (isset($_POST['update'])) {
     <fieldset>
         <input type="hidden" name="update" value="update">
         <label for="name_legal">Nombre legal</label>
-        <input id="name_legal" type="text" name="name_legal" min="1" max="100" require
+        <input id="name_legal" type="text" name="name_legal" min="1" max="100" required
                value='<?php echo $name_legal; ?>'> <br>
         <label for="name_alias">Aliasl</label>
-        <input id="name_alias" type="text" name="name_alias" min="1" max="100" require
+        <input id="name_alias" type="text" name="name_alias" min="1" max="100" required
                value='<?php echo $name_alias; ?>'> <br>
         <label for="giro">Giro</label>
-        <input id="giro" type="text" name="giro" min="1" max="250" require value='<?php echo $giro; ?>'> <br>
-        <label for="client_type">Tipo de cliente</label>
-        <input type="radio" name="client_type" id="minorista" value="0" min="1" max="12" require
-               value='<?php echo $client_type; ?>'>
+        <input id="giro" type="text" name="giro" min="1" max="250" required value='<?php echo $giro; ?>'> <br>
+        <label>Tipo de cliente</label>
+        <input type="radio" name="client_type" id="minorista"
+               value="0" <?php if ($client_type == '0') echo 'checked="checked"'; ?> required>
         <label for="minorista">Minorista</label>
-        <input type="radio" name="client_type" id="mayorista" value="1" value='<?php echo $client_type; ?>'>
+        <input type="radio" name="client_type" id="mayorista"
+               value="1" <?php if ($client_type == '1') echo 'checked="checked"'; ?> required>
         <label for="mayorista">Mayorista</label>
     </fieldset>
 
     <fieldset>
         <h2>Contacto</h2>
         <label for="name_contact">Nombre</label>
-        <input id="name_contact" type="text" name="name_contact" min="1" max="50" require
+        <input id="name_contact" type="text" name="name_contact" min="1" max="50" required
                value='<?php echo $name_contact; ?>'> <br>
         <label for="phone_contact">Número telefónico</label>
-        <input id="phone_contact" type="tel" name="phone_contact" min="1" max="50" require
+        <input id="phone_contact" type="tel" name="phone_contact" min="1" max="50" required
                value='<?php echo $phone_contact; ?>'> <br>
         <label for="email">Correo electrónico</label>
-        <input id="email" type="mail" name="email" min="1" max="20" require value='<?php echo $email; ?>'> <br>
+        <input id="email" type="email" name="email" min="1" max="20" required value='<?php echo $email; ?>'> <br>
     </fieldset>
 
     <fieldset>
         <h2>Dirección</h2>
         <label for="name_place">Nombre del lugar</label>
-        <input id="name_place" type="text" name="name_place" min="1" max="25" require
+        <input id="name_place" type="text" name="name_place" min="1" max="25" required
                value='<?php echo $name_place; ?>'> <br>
         <label for="country">País</label>
-        <input id="country" type="text" name="country" min="1" max="200" require value='<?php echo $country; ?>'> <br>
+        <input id="country" type="text" name="country" min="1" max="200" required value='<?php echo $country; ?>'> <br>
         <label for="address1">Calle y número</label>
         <input id="address1" type="text" name="address1" placeholder="Calle y número" value='<?php echo $address1; ?>'>
         <br>
@@ -162,9 +163,11 @@ if (isset($_POST['update'])) {
         <fieldset>
             <h2>Método de pago</h2>
             <div class="radio-group">
-                <input class='radio' type="radio" name="payment_method" id="opcion-one" value="0" >
+                <input class='radio' type="radio" name="payment_method" id="opcion-one"
+                       value="0" <?php if ($payment_method == '0') echo 'checked="checked"'; ?>>
                 <label for="opcion-one">PUE una exhib.</label>
-                <input type="radio" name="payment_method" id="opcion-dos" value="1">
+                <input class='radio' type="radio" name="payment_method" id="opcion-dos"
+                       value="1" <?php if ($payment_method == '1') echo 'checked="checked"'; ?>>
                 <label for="opcion-dos">PPD parcialid</label>
             </div>
         </fieldset>
@@ -172,15 +175,20 @@ if (isset($_POST['update'])) {
         <fieldset>
             <h2>Forma</h2>
             <div class="radio-group">
-                <input class='radio' type="radio" name="payment_form" id="forma-one" value="0">
-                <label for="forman-one">Efectivo</label>
-                <input type="radio" name="payment_form" id="forma-dos" value="1">
+                <input class='radio' type="radio" name="payment_form" id="forma-one"
+                       value="0" <?php if ($payment_form == '0') echo 'checked="checked"'; ?>>
+                <label for="forma-one">Efectivo</label>
+                <input class='radio' type="radio" name="payment_form" id="forma-dos"
+                       value="1" <?php if ($payment_form == '1') echo 'checked="checked"'; ?>>
                 <label for="forma-dos">Cheque</label>
-                <input type="radio" name="payment_form" id="forma-tres" value="1">
+                <input class='radio' type="radio" name="payment_form" id="forma-tres"
+                       value="2" <?php if ($payment_form == '2') echo 'checked="checked"'; ?>>
                 <label for="forma-tres">Transferencia</label>
-                <input type="radio" name="payment_form" id="forma-cuatro" value="1">
+                <input class='radio' type="radio" name="payment_form" id="forma-cuatro"
+                       value="3" <?php if ($payment_form == '3') echo 'checked="checked"'; ?>>
                 <label for="forma-cuatro">Tarjeto de crédito</label>
-                <input type="radio" name="payment_form" id="forma-cinco" value="1">
+                <input class='radio' type="radio" name="payment_form" id="forma-cinco"
+                       value="4" <?php if ($payment_form == '4') echo 'checked="checked"'; ?>>
                 <label for="forma-cinco">Monedero</label>
             </div>
         </fieldset>
@@ -188,14 +196,17 @@ if (isset($_POST['update'])) {
         <fieldset>
             <h2>Uso</h2>
             <div class="radio-group">
-                <input class='radio' type="radio" name="payment_use" id="use-one" value="0">
+                <input class='radio' type="radio" name="payment_use" id="use-one"
+                       value="0" <?php if ($payment_use == '0') echo 'checked="checked"'; ?>>
                 <label for="use-one">G01 Adquis. Merc.</label>
-                <input type="radio" name="payment_method" id="use-dos" value="1">
+                <input class='radio' type="radio" name="payment_use" id="use-dos"
+                       value="1" <?php if ($payment_use == '1') echo 'checked="checked"'; ?>>
                 <label for="use-dos">G03 Gastos Gral.</label>
             </div>
         </fieldset>
+    </fieldset>
 
-        <input type="submit" value="Guardar cliente">
+    <input type="submit" value="Guardar cliente">
 
 
 </form>

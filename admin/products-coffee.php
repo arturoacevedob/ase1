@@ -32,9 +32,14 @@ function createCoffeeListOptions()
 
     for ($i = 0; $i < count($products); $i++) {
 
+        $q = "select image_path from images where images.id_product = " . $products[$i]['id_product'] . " limit 1";
+        $rs_image = execute($q);
+        $image_row = mysqli_fetch_array($rs_image);
+        $image_path = $image_row['image_path'];
+
         echo "
         <div class='product-item grid-1-1'>
-            <div style='background: transparent url(\"images/cup_of_coffee.jpg\") 50% 50% / cover no-repeat;'></div>
+            <div style='background: transparent url(\"images/$image_path\") 50% 50% / cover no-repeat;'></div>
             <div>
                 <h3>" . $products[$i]["name_product"] . "<span>" . $products[$i]["client_type"] . "</span><span>edit</span></h3>
                 <p>" . $products[$i]["description"] . "</p>
