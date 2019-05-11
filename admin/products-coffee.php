@@ -105,7 +105,7 @@ function createCoffeeListOptions()
         <li><a href="clients.php" target="_self">Clientes</a></li>
         <li><a href="orders-pending-backend.php" target="_self">Pedidos</a></li>
         <li><a class="active" href="products-coffee.php" target="_self">Productos</a></li>
-        <li><a href='login.php?killsession=1'>Terminar Sesión</a></li>
+        <li><a href='login.php?killsession=1'>Cerrar sesión</a></li>
     </ul>
 </nav>
 
@@ -116,7 +116,7 @@ function createCoffeeListOptions()
     </div>
 
     <ul class="grid-tabs">
-        <li><a class="active" href="products-coffee-backend.html" id="coffee" target="_self">Café</a></li>
+        <li><a class="active" href="products-coffee.php" id="coffee" target="_self">Café</a></li>
         <li><a href="products-honey-backend.html" id="honey" target="_self">Miel</a></li>
         <li><a href="products-soap-backend.html" id="soap" target="_self">Jabón</a></li>
     </ul>

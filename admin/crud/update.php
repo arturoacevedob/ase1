@@ -4,28 +4,6 @@ error_reporting(E_ALL);
 
 include '../crud/connection.php';
 
-$id_clients;
-$name_legal;
-$name_alias;
-$giro;
-$client_type;
-$name_contact;
-$email;
-$phone_contact;
-$name_place;
-$address1;
-$address2;
-$country;
-$city;
-$state;
-$phone_address;
-$cp;
-$payroll;
-$rfc;
-$payment_method;
-$payment_form;
-$payment_use;
-
 // Entra aquí si se manda por URL (GET) el ID de producto.
 if (isset($_GET['idclient'])) {
     $id_client = $_GET['idclient'];
