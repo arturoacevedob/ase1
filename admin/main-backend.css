@@ -315,6 +315,14 @@ input:focus, select:focus {
 }
 
 /* Styles */
+.batsil-login{
+    display: grid;
+    grid-column: auto auto;
+}
+.batsil-login img{
+    padding: 10px;
+    width: 180px;
+}
 #login{
     color: white;
     background-color: var(--dark);
