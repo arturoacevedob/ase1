@@ -2,7 +2,7 @@
 ini_set('display_errorecordSet', 1);
 error_reporting(E_ALL);
 
-include 'crud/connection.php';
+include '../admin/connection.php';
 session_start();
 
 if (!isset($_SESSION['user'])) {
@@ -37,7 +37,7 @@ function createProductListOptions()
             $clients[$i]["name_alias"] . "<span class='tag'>" . $clients[$i]["client_type"] . "</span><br>" .
             $clients[$i]["giro"] .
             "</td>
-            <td><a href='crud/update.php?idclient=" . $clients[$i]["id_client"] . "'>Editar</a><a href='crud/delete.php'>Eliminar</a></td>
+            <td><a href='crud/update_client.php?idclient=" . $clients[$i]["id_client"] . "'>Editar</a><a href='crud/delete_client.php'>Eliminar</a></td>
             <td class='radius-right'></td>
         </tr>
         <div class='padding-for-all-2'>
@@ -142,7 +142,7 @@ function createProductListOptions()
         }
 
         echo "
-                    <form class='notes-table' action='update.php' method='post' enctype='multipart/form-data'>
+                    <form class='notes-table' action='update_client.php' method='post' enctype='multipart/form-data'>
                         <label for='notes'>Notas</label>
                         <textarea id='notes' name='notes'></textarea>
                         <input type='submit' value='Guardar cambios'>
@@ -395,7 +395,7 @@ function createProductListOptions()
                 <label class="kill" for="search"></label>
                 <input id="search" placeholder="Buscar" type="search">
             </div>
-            <a href='crud/create.php'>Agregar cliente</a>
+            <a href='crud/create_client.php'>Agregar cliente</a>
         </div>
     </div>
 

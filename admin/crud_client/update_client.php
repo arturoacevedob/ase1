@@ -2,7 +2,7 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-include '../crud/connection.php';
+include '../connection.php';
 
 // Entra aquí si se manda por URL (GET) el ID de producto.
 if (isset($_GET['idclient'])) {
@@ -75,7 +75,7 @@ if (isset($_POST['update'])) {
 <html lang="en">
 <body>
 
-<form action="update.php" method="post" enctype="multipart/form-data">
+<form action="update_client.php" method="post" enctype="multipart/form-data">
 
     <input type="hidden" name="update" value="update">
     <input type="hidden" name="id_client" value="<?php echo $id_client; ?>">

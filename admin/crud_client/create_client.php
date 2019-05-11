@@ -2,7 +2,7 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-include '../crud/connection.php';
+include '../connection.php';
 session_start();
 
 if (!isset($_SESSION['user'])) {
@@ -53,7 +53,7 @@ if (isset($_POST['insert'])) {
 <html lang="en">
 <body>
 
-<form action="create.php" method="post" enctype="multipart/form-data">
+<form action="create_client.php" method="post" enctype="multipart/form-data">
 
     <input type="hidden" name="insert" value="insert">
 

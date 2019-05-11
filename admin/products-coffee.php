@@ -2,7 +2,7 @@
 ini_set('display_errorecordSet', 1);
 error_reporting(E_ALL);
 
-include 'crud/connection.php';
+include '../admin/connection.php';
 session_start();
 
 if (!isset($_SESSION['user'])) {
@@ -125,7 +125,7 @@ function createCoffeeListOptions()
         <?php
         createCoffeeListOptions()
         ?>
-        <a href='crud_productos/create.php'>Agregar productos</a>
+        <a href='crud_product/create_product.php'>Agregar productos</a>
     </div>
 
 </div>

@@ -2,7 +2,7 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-include '../crud/connection.php';
+include '../connection.php';
 session_start();
 
 if(!isset($_SESSION['user'])) {

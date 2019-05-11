@@ -2,7 +2,7 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-include '../crud_productos/connection.php';
+include '../connection.php';
 
 $id_product;
 $name;
@@ -71,7 +71,7 @@ if (isset($_POST['update'])) {
 <html>
 <body>
     <h1>Productos</h1>
-    <form action='update.php' method='post' enctype='multipart/form-data'>
+    <form action='update_product.php' method='post' enctype='multipart/form-data'>
         <input type='hidden' name='update' value='update'>
         <input type='hidden' name='id_product' value='<?php echo $id_product; ?>'>
 

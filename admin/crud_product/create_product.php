@@ -2,7 +2,7 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-include '../crud_productos/connection.php';
+include '../connection.php';
 session_start();
 
 if(!isset($_SESSION['user'])) {
@@ -39,7 +39,7 @@ if(isset($_POST['insert'])) {
         execute($q);
         $q = "insert into weight_price (weight, price) values ('$weight','$price')";
         execute($q);
-        $q = "insert into ground_type (ground_type) values ('$ground_type)";
+        $q = "insert into ground_type (ground_type) values ('$ground_type')";
         execute($q);
         header("Location: products-coffee.php");
     }
@@ -50,10 +50,14 @@ if(isset($_POST['insert'])) {
 <html>
 <body>
     <h1>Producto nuevo</h1>
-    <form action='create.php' method='post' enctype='multipart/form-data'>
+    <form action='create_product.php' method='post' enctype='multipart/form-data'>
+
         <input type='hidden' name='insert' value='insert'>
-        Nombre del producto <input type='text' name='name_product'> <br>
-        Descripción <input type='text' name='description'> <br>
+
+        <label for="name_product">Nombre</label>
+        <input id="name_product" type='text' name='name_product' max="">
+        <label for="description">Descripción</label>
+        <input id="description" type='text' name='description'> <br>
         Notas <input type='text' name='notes'> <br>
         Tipo de Cliente <input type='text' name='notes'> <br>
         Tipo de cliente:
