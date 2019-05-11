@@ -266,6 +266,15 @@ table.expandable-table > tbody > tr.expanded-view.open {
     grid-auto-flow: column;
     justify-content: space-between;
 }
+/* buttons */
+.button.red {
+    color: var(--a-link);
+    background-color: var(--button-link);
+    transition: background-color var(--time) var(--ease);
+}
+.formbutton{
+    padding: 25px 0 0 0;
+}
 
 /* Form Classes */
 textarea {
