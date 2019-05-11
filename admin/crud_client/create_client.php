@@ -51,6 +51,15 @@ if (isset($_POST['insert'])) {
 
 <!DOCTYPE html>
 <html lang="en">
+
+<head>
+    <style>
+        label, input {
+            display: block;
+        }
+    </style>
+</head>
+
 <body>
 
 <form action="create_client.php" method="post" enctype="multipart/form-data">
@@ -66,10 +75,12 @@ if (isset($_POST['insert'])) {
         <label for="giro">Giro</label>
         <input id="giro" type="text" name="giro" min="1" max="250" required>
         <label>Tipo de cliente</label>
-        <input type="radio" name="client_type" id="minorista" value="0" required>
-        <label for="minorista">Minorista</label>
-        <input type="radio" name="client_type" id="mayorista" value="1" required>
-        <label for="mayorista">Mayorista</label>
+        <p class="radio-group">
+            <input type="radio" name="client_type" id="minorista" value="0" required>
+            <label for="minorista">Minorista</label>
+            <input type="radio" name="client_type" id="mayorista" value="1" required>
+            <label for="mayorista">Mayorista</label>
+        </p>
     </fieldset>
 
     <fieldset>

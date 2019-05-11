@@ -61,7 +61,8 @@ function createCoffeeListOptions()
                         <td>" . $weight_price["price"] . "</td>
                     </tr>";
         }
-        echo "
+        echo "      
+                    </tbody>
                 </table>
             </div>
         </div>";

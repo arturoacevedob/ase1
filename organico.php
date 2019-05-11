@@ -54,9 +54,9 @@ include 'agregar-producto.php';
                             <li><a href="ayuda.php" target="_self">Ayuda</a></li>
                         </ul>
                     </nav>
-                        <?php
-                        renderHeader()
-                        ?>
+                    <?php
+                    renderHeader()
+                    ?>
                 </div>
 
                 <div class="nav-wrapper mobile">
@@ -87,52 +87,53 @@ include 'agregar-producto.php';
     <section>
         <h2 class="kill">producto</h2>
         <article class="grid-product-view container no-padding-top-bottom">
-                <div class="product-description order-0">
-                    <h2>Premium Orgánico</h2>
-                    <p>Un café de preparación americana con excelente calidad que pocos cafés en el mercado nacional
+            <div class="product-description order-0">
+                <h2>Premium Orgánico</h2>
+                <p>Un café de preparación americana con excelente calidad que pocos cafés en el mercado nacional
                     logran ofrecer.</p>
-                </div>
+            </div>
+
             <form class="grid-product-form">
                 <div class="grid-2-left-aligned">
-                        <fieldset class="h3-small">
-                            <label>Peso</label>
-                            <p class="radio-group">
-                                <input id="peso-one" name="peso-selector" type="radio">
-                                <label for="peso-one">250gr</label>
-                                <input id="peso-two" name="peso-selector" type="radio">
-                                <label for="peso-two">500gr</label>
-                                <input id="peso-three" name="peso-selector" type="radio">
-                                <label for="peso-three">1kg</label>
-                            </p>
-                        </fieldset>
+                    <fieldset class="h3-small">
+                        <label>Peso</label>
+                        <p class="radio-group">
+                            <input id="peso-one" name="peso-selector" type="radio">
+                            <label for="peso-one">250gr</label>
+                            <input id="peso-two" name="peso-selector" type="radio">
+                            <label for="peso-two">500gr</label>
+                            <input id="peso-three" name="peso-selector" type="radio">
+                            <label for="peso-three">1kg</label>
+                        </p>
+                    </fieldset>
                     <fieldset class="h3-small">
                         <label for="cantidad">Cantidad</label>
                         <p><input id="cantidad" name="cantidad" type="number" max="100" min="0"/></p>
-                        </fieldset>
-                    </div>
-                    <fieldset class="h3-small">
-                        <label>Molido del café</label>
-                        <p class="radio-group">
-                            <input id="molido-one" class="radio" name="molido-selector" type="radio">
-                            <label for="molido-one">Americano</label>
-                            <input id="molido-two" class="radio" name="molido-selector" type="radio">
-                            <label for="molido-two">Espresso</label>
-                            <input id="molido-custom-radio" type="radio" name="molido-selector"
-                                   class="radio other-input">
-                            <label for="molido-custom-radio">Otro</label>
-                            <select type="number" id="molido-custom-value" class="dependent-input" disabled>
-                                <option value="">#1</option>
-                                <option value="">#2</option>
-                                <option value="">#3</option>
-                                <option value="">#4</option>
-                                <option value="">#5</option>
-                                <option value="">#6</option>
-                                <option value="">#7</option>
-                            </select>
-
-                        </p>
                     </fieldset>
-                </form>
+                </div>
+                <fieldset class="h3-small">
+                    <label>Molido del café</label>
+                    <p class="radio-group">
+                        <input id="molido-one" class="radio" name="molido-selector" type="radio">
+                        <label for="molido-one">Americano</label>
+                        <input id="molido-two" class="radio" name="molido-selector" type="radio">
+                        <label for="molido-two">Espresso</label>
+                        <input id="molido-custom-radio" type="radio" name="molido-selector"
+                               class="radio other-input">
+                        <label for="molido-custom-radio">Otro</label>
+                        <select type="number" id="molido-custom-value" class="dependent-input" disabled>
+                            <option value="">#1</option>
+                            <option value="">#2</option>
+                            <option value="">#3</option>
+                            <option value="">#4</option>
+                            <option value="">#5</option>
+                            <option value="">#6</option>
+                            <option value="">#7</option>
+                        </select>
+
+                    </p>
+                </fieldset>
+            </form>
 
             <div class="product-buy grid-2-space-between">
                 <div class="grid-2-space-between align-center bold">
@@ -195,8 +196,8 @@ include 'agregar-producto.php';
                     <h3 class="title pname h3-small">Premium Orgánico</h3>
                     <p><span class="pprice">$80-$100</span></p>
                     <figure class="pimage"><img
-                            alt="Granos de café premium orgánico de Bats'il Maya"
-                            src="images/productos/cafe/granos_de_cafe_premium_organico_batsil_maya.jpg"></figure>
+                                alt="Granos de café premium orgánico de Bats'il Maya"
+                                src="images/productos/cafe/granos_de_cafe_premium_organico_batsil_maya.jpg"></figure>
                     <p class="pdescription">Únicamente granos que cumplen los más altos estándares de
                         calidad.<br> <a
                                 class="link" href="" target="_self">Ver más »</a></p>
@@ -205,10 +206,10 @@ include 'agregar-producto.php';
                     <h3 class="title pname h3-small">Gourmet Orgánico</h3>
                     <p><span class="pprice">$80-$100</span></p>
                     <figure class="pimage"><img
-                            alt="Granos de café gourmet orgánico de Bats'il Maya"
-                            src="images/productos/cafe/granos_de_cafe_gourmet_organico_batsil_maya.jpg"></figure>
+                                alt="Granos de café gourmet orgánico de Bats'il Maya"
+                                src="images/productos/cafe/granos_de_cafe_gourmet_organico_batsil_maya.jpg"></figure>
                     <p class="pdescription">Granos con preparación europea son seleccionados cuidadosamente.<br> <a
-                            class="link" href="" target="_self">Ver más »</a></p>
+                                class="link" href="" target="_self">Ver más »</a></p>
                 </section>
                 <section class="ind-product">
                     <h3 class="title pname h3-small">Orgánico</h3>
@@ -217,7 +218,7 @@ include 'agregar-producto.php';
                                                 src="images/productos/cafe/granos_de_cafe_organico_batsil_maya.jpg">
                     </figure>
                     <p class="pdescription">Un café de preparación americana con excelente calidad.<br> <a
-                            class="link" href="" target="_self">Ver más »</a></p>
+                                class="link" href="" target="_self">Ver más »</a></p>
                 </section>
                 <section class="ind-product">
                     <h3 class="title pname h3-small">Descafeinado</h3>
@@ -258,7 +259,7 @@ include 'agregar-producto.php';
                         contacto@batsilmaya.org
                     </li>
                     <li class="logo-footer"><a href="index.php" target="_self"><img alt="Bats'il Maya Logo"
-                                                                                     src="images/logos/batsil_maya_logo.svg"></a>
+                                                                                    src="images/logos/batsil_maya_logo.svg"></a>
                     </li>
                     <li id="office1"><strong>Oficina</strong><br>
                         lugar ###<br> Chilón, Chiapas

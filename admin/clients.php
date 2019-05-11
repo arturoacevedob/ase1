@@ -37,7 +37,7 @@ function createProductListOptions()
             $clients[$i]["name_alias"] . "<span class='tag'>" . $clients[$i]["client_type"] . "</span><br>" .
             $clients[$i]["giro"] .
             "</td>
-            <td><a href='crud/update_client.php?idclient=" . $clients[$i]["id_client"] . "'>Editar</a><a href='crud/delete_client.php'>Eliminar</a></td>
+            <td><a href='crud_client/update_client.php?idclient=" . $clients[$i]["id_client"] . "'>Editar</a><a href='crud_client/delete_client.php'>Eliminar</a></td>
             <td class='radius-right'></td>
         </tr>
         <div class='padding-for-all-2'>
@@ -366,6 +366,12 @@ function createProductListOptions()
     <!-- Link a CSS -->
     <link href="main-backend.css" rel="stylesheet">
 
+    <style>
+        label, input {
+            display: block;
+        }
+    </style>
+
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
     <title>Clientes</title>
@@ -395,7 +401,7 @@ function createProductListOptions()
                 <label class="kill" for="search"></label>
                 <input id="search" placeholder="Buscar" type="search">
             </div>
-            <a href='crud/create_client.php'>Agregar cliente</a>
+            <a href='crud_client/create_client.php'>Agregar cliente</a>
         </div>
     </div>
 
