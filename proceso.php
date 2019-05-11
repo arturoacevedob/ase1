@@ -107,7 +107,7 @@ include 'header.php';
             </div>
         </article>
         <article class="grid-2-text-photo">
-            <div class="grid-2-left-image image-restauracion" ></div>
+            <div class="grid-2-left-image" id="image-restauracion"></div>
             <div class="grid-2-right-text container" >
                 <div class="wrapper-text">
                     <h3>Restauración de los cafetales</h3><br>
