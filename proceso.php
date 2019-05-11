@@ -55,9 +55,9 @@ include 'header.php';
                             <li><a href="ayuda.php" target="_self">Ayuda</a></li>
                         </ul>
                     </nav>
-                        <?php
-                        renderHeader()
-                        ?>
+                    <?php
+                    renderHeader()
+                    ?>
                 </div>
 
                 <div class="nav-wrapper mobile">
@@ -93,7 +93,8 @@ include 'header.php';
             <div class="grid-2-left-text container">
                 <div class="wrapper-text">
                     <h3>Prácticas agroecológicas</h3><br>
-                    <p class="p-big">En el cafetal, nuestro café es cultivado de manera orgánica, por lo que no se utiliza ningún tipo
+                    <p class="p-big">En el cafetal, nuestro café es cultivado de manera orgánica, por lo que no se
+                        utiliza ningún tipo
                         de
                         agroquímico.</p><br>
                     <p>En su lugar, y bajo los principios de la agroecología, se mantiene el esquema tradicional de
@@ -112,36 +113,39 @@ include 'header.php';
                     <h3>Restauración de los cafetales</h3><br>
                     <p class="p-big">A través de la renovación de cafetos, se evitan nuevos brotes de la roya.</p><br>
                     <p>Existen proyectos de viveros para contraarrestrar el efecto devastador que la roya tuvo sobre los
-                            cafetales de la cooperativa en el 2013.</p><br>
+                        cafetales de la cooperativa en el 2013.</p><br>
                 </div>
             </div>
         </article>
-        
+
     </section>
     <section class="green-bg">
         <div class="container">
-        <h2 class="kill">Beneficios</h2>
-        <div class="grid-2-text-photo light ">
-            <article class="humedo">
-                <h3>¿Cuál es el beneficio húmedo?</h3>
-                <p>La técnica de secado al sol es minuciosa y requiere un control de tiempo para llegar al secado
-                    perfecto de cada grano de café.</p>
-                <p>Una vez que es cortado el café cereza se procede a despulpar, lavar y secar al sol, para así obtener
-                    el café pergamino.</p>
-            </article>
-            <article class="seco">
-                <h3>¿Cuál es el beneficio seco?</h3>
-                <p>Es en nuestra planta donde al café pergamino se le despoja de su cascarilla y así surge el grano de
-                    color verde.</p>
-                <p>Al que se le denomina como café oro y será seleccionado cuidadosamente antes de pasar a la
-                    tostadora. </p>
-            </article>
+            <h2 class="kill">Beneficios</h2>
+            <div class="grid-2-text-photo light ">
+                <article class="humedo">
+                    <h3>¿Cuál es el beneficio húmedo?</h3>
+                    <p>La técnica de secado al sol es minuciosa y requiere un control de tiempo para llegar al secado
+                        perfecto de cada grano de café.</p>
+                    <p>Una vez que es cortado el café cereza se procede a despulpar, lavar y secar al sol, para así
+                        obtener
+                        el café pergamino.</p>
+                </article>
+                <article class="seco">
+                    <h3>¿Cuál es el beneficio seco?</h3>
+                    <p>Es en nuestra planta donde al café pergamino se le despoja de su cascarilla y así surge el grano
+                        de
+                        color verde.</p>
+                    <p>Al que se le denomina como café oro y será seleccionado cuidadosamente antes de pasar a la
+                        tostadora. </p>
+                </article>
+            </div>
         </div>
-    </div>
     </section>
     <section class="container tipo-tueste">
         <h2 class="center-aligned">Tipos de tueste</h2>
-        <figure><img alt="Gráfica de Tipos de tueste" src="images/proceso/proceso_tipos_de_tueste_grafica_batsil_maya.svg"></figure>
+        <figure><img alt="Gráfica de Tipos de tueste"
+                     src="images/proceso/proceso_tipos_de_tueste_grafica_batsil_maya.svg"></figure>
         <article class="tueste-claro">
             <h3 class="p-big">Tueste claro</h3>
         </article>
@@ -161,38 +165,37 @@ include 'header.php';
         <p>Tiempo</p>
     </section>
     <div class="light-bg">
-    <section class="container center-text">
-        <h2 class="kill">Molidos</h2>
-        <article>
-            <h2>Molido</h2>
-            <p class="p-big">Lo efectuamos al gusto del cliente o de acuerdo al tipo de cafetera que utilice</p>
-        </article>
-        <div class="gridthree2 gimme-padding-2">
-        <article class="grid-image-first molidos">
-            <h3 class="h3-small">Medio</h3>
-            <figure class="image-top-first-round"><img alt="Molido Medio Americano"
-                                                       src="images/molidos/americano.svg">
-            </figure>
-            <p>Americano y cafeteras con filtro metálico</p>
-        </article>
-        <article class="grid-image-first molidos">
-            <h3 class="h3-small">Fino</h3>
-            <figure class="image-top-first-round"><img alt="Molido Fino Espresso" src="images/molidos/espresso.svg">
-            </figure>
-            <p>Espresso y cafeteras con filtro de trapo o de papel</p>
-        </article>
-        <article class="grid-image-first molidos">
-                <h3 class="h3-small">Personalizado</h3>
-                <figure class="image-top-first-round"><img alt="Molido Extrafino Turco" src="images/molidos/fino-turco.svg">
-                </figure>
-                <p>Elige un molido de acuerdo a tus necesidades</p>
+        <section class="container center-text">
+            <h2 class="kill">Molidos</h2>
+            <article>
+                <h2>Molido</h2>
+                <p class="p-big">Lo efectuamos al gusto del cliente o de acuerdo al tipo de cafetera que utilice</p>
             </article>
-        </div>
-        <p class="mol6">Contamos con dos molinos con una capacidad</p>
-    </section>
-</div>
-    <div class="container center-button">
-        <a class="button red addbutton1" href="nuestro-cafe.php" target="_self">Nuestro Café</a>
+            <div class="gridthree2 gimme-padding-2">
+                <article class="grid-image-first molidos">
+                    <h3 class="h3-small">Medio</h3>
+                    <figure class="image-top-first-round"><img alt="Molido Medio Americano"
+                                                               src="images/molidos/americano.svg">
+                    </figure>
+                    <p>Americano y cafeteras con filtro metálico</p>
+                </article>
+                <article class="grid-image-first molidos">
+                    <h3 class="h3-small">Fino</h3>
+                    <figure class="image-top-first-round"><img alt="Molido Fino Espresso"
+                                                               src="images/molidos/espresso.svg">
+                    </figure>
+                    <p>Espresso y cafeteras con filtro de trapo o de papel</p>
+                </article>
+                <article class="grid-image-first molidos">
+                    <h3 class="h3-small">Personalizado</h3>
+                    <figure class="image-top-first-round"><img alt="Molido Extrafino Turco"
+                                                               src="images/molidos/fino-turco.svg">
+                    </figure>
+                    <p>Elige un molido de acuerdo a tus necesidades</p>
+                </article>
+            </div>
+            <p class="mol6">Contamos con dos molinos con una capacidad</p>
+        </section>
     </div>
 
     <aside>
@@ -446,7 +449,8 @@ include 'header.php';
                                     -->
                                 </optgroup>
                             </select>
-                            <input class="phone_with_ddd dependent-input" id="tel" name="tel" placeholder="(55) 1234-5678" required
+                            <input class="phone_with_ddd dependent-input" id="tel" name="tel"
+                                   placeholder="(55) 1234-5678" required
                                    type="tel">
                         </div>
                     </fieldset>
@@ -458,7 +462,8 @@ include 'header.php';
                                  data-link-field="dtp_input1" data-link-format="yyyy-mm-dd">
                                 <input class="form-control" readonly size="16" type="text" value="">
                                 <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
-                                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                <span class="input-group-addon"><span
+                                            class="glyphicon glyphicon-calendar"></span></span>
                             </div>
                             <input id="dtp_input1" type="hidden" value=""/>
                         </div>
@@ -468,8 +473,10 @@ include 'header.php';
                                 <div class="input-group date form_time" data-date="" data-date-format="hh:ii"
                                      data-link-field="dtp_input2" data-link-format="hh:ii">
                                     <input class="form-control" readonly size="16" type="text" value="">
-                                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
-                                    <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
+                                    <span class="input-group-addon"><span
+                                                class="glyphicon glyphicon-remove"></span></span>
+                                    <span class="input-group-addon"><span
+                                                class="glyphicon glyphicon-time"></span></span>
                                 </div>
                                 <input id="dtp_input2" type="hidden" value=""/>
                             </div>
@@ -479,8 +486,10 @@ include 'header.php';
                                 <div class="input-group date form_time" data-date="" data-date-format="hh:ii"
                                      data-link-field="dtp_input3" data-link-format="hh:ii">
                                     <input class="form-control" readonly size="16" type="text" value="">
-                                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
-                                    <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
+                                    <span class="input-group-addon"><span
+                                                class="glyphicon glyphicon-remove"></span></span>
+                                    <span class="input-group-addon"><span
+                                                class="glyphicon glyphicon-time"></span></span>
                                 </div>
                                 <input id="dtp_input3" type="hidden" value=""/>
                             </div>
@@ -521,7 +530,7 @@ include 'header.php';
                         contacto@batsilmaya.org
                     </li>
                     <li class="logo-footer"><a href="index.php" target="_self"><img alt="Bats'il Maya Logo"
-                                                                                     src="images/logos/batsil_maya_logo.svg"></a>
+                                                                                    src="images/logos/batsil_maya_logo.svg"></a>
                     </li>
                     <li id="office1"><strong>Oficina</strong><br>
                         lugar ###<br> Chilón, Chiapas

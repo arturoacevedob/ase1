@@ -2,7 +2,7 @@
 ini_set('display_errorecordSet', 1);
 error_reporting(E_ALL);
 
-include 'crud/connection.php';
+include '../admin/connection.php';
 session_start();
 
 if (!isset($_SESSION['user'])) {
@@ -32,9 +32,14 @@ function createCoffeeListOptions()
 
     for ($i = 0; $i < count($products); $i++) {
 
+        $q = "select image_path from images where images.id_product = " . $products[$i]['id_product'] . " limit 1";
+        $rs_image = execute($q);
+        $image_row = mysqli_fetch_array($rs_image);
+        $image_path = $image_row['image_path'];
+
         echo "
         <div class='product-item grid-1-1'>
-            <div style='background: transparent url(\"images/cup_of_coffee.jpg\") 50% 50% / cover no-repeat;'></div>
+            <div style='background: transparent url(\"images/$image_path\") 50% 50% / cover no-repeat;'></div>
             <div>
                 <h3>" . $products[$i]["name_product"] . "<span>" . $products[$i]["client_type"] . "</span><span>edit</span></h3>
                 <p>" . $products[$i]["description"] . "</p>
@@ -100,7 +105,7 @@ function createCoffeeListOptions()
         <li><a href="clients.php" target="_self">Clientes</a></li>
         <li><a href="orders-pending-backend.php" target="_self">Pedidos</a></li>
         <li><a class="active" href="products-coffee.php" target="_self">Productos</a></li>
-        <li><a href='login.php?killsession=1'>Terminar Sesión</a></li>
+        <li><a href='login.php?killsession=1'>Cerrar sesión</a></li>
     </ul>
 </nav>
 
@@ -111,7 +116,7 @@ function createCoffeeListOptions()
     </div>
 
     <ul class="grid-tabs">
-        <li><a class="active" href="products-coffee-backend.html" id="coffee" target="_self">Café</a></li>
+        <li><a class="active" href="products-coffee.php" id="coffee" target="_self">Café</a></li>
         <li><a href="products-honey-backend.html" id="honey" target="_self">Miel</a></li>
         <li><a href="products-soap-backend.html" id="soap" target="_self">Jabón</a></li>
     </ul>
@@ -120,7 +125,7 @@ function createCoffeeListOptions()
         <?php
         createCoffeeListOptions()
         ?>
-        <a href='crud_productos/create.php'>Agregar productos</a>
+        <a href='crud_product/create_product.php'>Agregar productos</a>
     </div>
 
 </div>

@@ -497,7 +497,7 @@ a.unavailable:hover {
 	flex-flow: column wrap;
 	justify-content: space-around;
 	position: absolute;
-	top: 70 hpx;
+    top: 70px;
 	list-style: none;
 	background-color: var(--light);
 }

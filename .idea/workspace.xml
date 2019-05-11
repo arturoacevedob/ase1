@@ -4,9 +4,21 @@
     <option name="AUTOSCROLL_TO_SOURCE" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b0b4be1-8d7c-4364-8440-568a85826da6" name="Default Changelist" comment="">
+    <list default="true" id="2b0b4be1-8d7c-4364-8440-568a85826da6" name="Default Changelist" comment="Fixed some href.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/clients.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/clients.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/crud/connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/connection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/crud/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/crud_client/create_client.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/crud/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/crud_client/delete_client.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/crud/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/crud_client/update_client.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/crud_productos/connection.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/crud_productos/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/crud_product/create_product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/crud_productos/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/crud_product/delete_product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/crud_productos/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/crud_product/update_product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/products-coffee.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/products-coffee.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/connection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proceso.php" beforeDir="false" afterPath="$PROJECT_DIR$/proceso.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -40,53 +52,34 @@
     <favorites_list name="ASE I" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/crud/update.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="132" column="41" selection-start-line="132" selection-start-column="41" selection-end-line="132" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="276" column="37" selection-start-line="276" selection-start-column="37" selection-end-line="276" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/crud/create.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1860">
-              <caret line="124" column="62" selection-start-line="124" selection-start-column="62" selection-end-line="124" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/clients.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1320">
-              <caret line="88" column="32" selection-start-line="88" selection-start-column="32" selection-end-line="88" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/crud/connection.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/admin/crud_client/create_client.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="317">
+                  <caret line="45" column="20" lean-forward="true" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/admin/crud_product/create_product.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="381">
+                  <caret line="57" column="70" selection-start-line="57" selection-start-column="70" selection-end-line="57" selection-end-column="70" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -99,15 +92,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>grid-co</find>
-      <find>clients</find>
-      <find>grid-two-column</find>
-      <find>grid-col</find>
-      <find>el pueblo</find>
-      <find>ubi</find>
-      <find>ubicac</find>
-      <find>k</find>
-      <find>index</find>
       <find>rs</find>
       <find>record</find>
       <find>$address</find>
@@ -116,7 +100,6 @@
       <find>contact-multiple-table</find>
       <find>&quot;</find>
       <find>grid -</find>
-      <find>'</find>
       <find>grid-1-1</find>
       <find>mysqli_query()</find>
       <find>name_alias</find>
@@ -125,15 +108,22 @@
       <find>subm</find>
       <find>\&quot;</find>
       <find>border</find>
-      <find>phone</find>
       <find>name_place</find>
       <find>name</find>
       <find>a:</find>
+      <find>require</find>
+      <find>client_ty</find>
+      <find>radio</find>
+      <find>$client_type</find>
+      <find>1</find>
+      <find>'</find>
+      <find>name_cont</find>
+      <find>&lt;br&gt;</find>
+      <find>phone</find>
+      <find>products-coffee-backend.html</find>
+      <find>Terminar Sesión</find>
     </findStrings>
     <replaceStrings>
-      <replace>»</replace>
-      <replace>class=&quot;logo-footer&quot;</replace>
-      <replace>01-919-6710172</replace>
       <replace>&lt;a href=&quot;index.html&quot; target=&quot;_self&quot;&gt;&lt;img alt=&quot;Bats'il Maya Logo&quot; src=&quot;images/logos/batsil_maya_logo.svg&quot;&gt;&lt;/a&gt;</replace>
       <replace>&quot;foot-info p-small&quot;</replace>
       <replace>&lt;li&gt;&lt;a href=&quot;index.html&quot; target=&quot;_self&quot;&gt;Inicio&lt;/a&gt;&lt;/li&gt;</replace>
@@ -158,9 +148,12 @@
       <replace>expandable-table</replace>
       <replace>recordSet</replace>
       <replace>$billing</replace>
+      <replace>'</replace>
+      <replace>required</replace>
       <replace>&quot;</replace>
       <replace />
-      <replace>'</replace>
+      <replace>products-coffee.php</replace>
+      <replace>Cerrar sesión</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/images/logos</dir>
@@ -178,17 +171,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ayuda.html" />
-        <option value="$PROJECT_DIR$/organico.html" />
-        <option value="$PROJECT_DIR$/nosotros.html" />
-        <option value="$PROJECT_DIR$/noticias.html" />
-        <option value="$PROJECT_DIR$/testing/cuenta-informacion.html" />
-        <option value="$PROJECT_DIR$/iniciar_sesion.html" />
-        <option value="$PROJECT_DIR$/cuenta-informacion.html" />
-        <option value="$PROJECT_DIR$/backend/pedidos-backend.html" />
-        <option value="$PROJECT_DIR$/backend/main-backend.css" />
-        <option value="$PROJECT_DIR$/proceso.html" />
-        <option value="$PROJECT_DIR$/carrito.html" />
         <option value="$PROJECT_DIR$/mapa.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/style.css" />
@@ -212,23 +194,34 @@
         <option value="$PROJECT_DIR$/admin/orders-enroute-backend.html" />
         <option value="$PROJECT_DIR$/nuestro-cafe.html" />
         <option value="$PROJECT_DIR$/admin/connection.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/nosotros.php" />
         <option value="$PROJECT_DIR$/noticias.php" />
         <option value="$PROJECT_DIR$/admin/clientes.php" />
-        <option value="$PROJECT_DIR$/admin/login.php" />
         <option value="$PROJECT_DIR$/admin/admin.php" />
         <option value="$PROJECT_DIR$/admin/clients-backend.html" />
         <option value="$PROJECT_DIR$/connection.php" />
         <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/iniciar_sesion.php" />
         <option value="$PROJECT_DIR$/admin/crud/connection.php" />
-        <option value="$PROJECT_DIR$/admin/products-coffee.php" />
         <option value="$PROJECT_DIR$/admin/main-backend.css" />
-        <option value="$PROJECT_DIR$/admin/crud/create.php" />
-        <option value="$PROJECT_DIR$/admin/clients.php" />
-        <option value="$PROJECT_DIR$/admin/crud/update.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/css/grid.css" />
+        <option value="$PROJECT_DIR$/css/mapa.css" />
         <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/admin/orders-pending-backend.php" />
+        <option value="$PROJECT_DIR$/admin/crud_productos/create.php" />
+        <option value="$PROJECT_DIR$/admin/crud_productos/delete.php" />
+        <option value="$PROJECT_DIR$/admin/crud_productos/update.php" />
+        <option value="$PROJECT_DIR$/admin/crud/update.php" />
+        <option value="$PROJECT_DIR$/admin/crud/delete.php" />
+        <option value="$PROJECT_DIR$/admin/crud/create.php" />
+        <option value="$PROJECT_DIR$/admin/products-coffee.php" />
+        <option value="$PROJECT_DIR$/admin/login.php" />
+        <option value="$PROJECT_DIR$/admin/clients.php" />
+        <option value="$PROJECT_DIR$/admin/crud/create_client.php" />
+        <option value="$PROJECT_DIR$/admin/crud_client/update_client.php" />
+        <option value="$PROJECT_DIR$/admin/crud_product/create_product.php" />
+        <option value="$PROJECT_DIR$/proceso.php" />
       </list>
     </option>
   </component>
@@ -257,58 +250,39 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Tests'; set:Tests; class com.intellij.psi.search.scope.TestsScope">
-          <expand>
-            <path>
-              <item name="ASE I" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/Documents/• Projects/ASE I" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="ASE I" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/Documents/• Projects/ASE I" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="testing" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="ASE I" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/Documents/• Projects/ASE I" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="ASE I" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/Documents/• Projects/ASE I" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="ASE I" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/Documents/• Projects/ASE I" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="images" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="ASE I" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ASE I" type="462c0819:PsiDirectoryNode" />
+              <item name="ase1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ase1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ASE I" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ASE I" type="462c0819:PsiDirectoryNode" />
+              <item name="ase1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ase1" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ase1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ase1" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="crud_client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ase1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ase1" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="crud_product" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ase1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -323,19 +297,19 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.spelling" />
     <property name="two.files.diff.last.used.file" value="$USER_HOME$/Desktop/grid.css" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/admin/crud" />
-      <recent name="$PROJECT_DIR$/Styles" />
-      <recent name="$PROJECT_DIR$/admin" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/testing" />
       <recent name="$PROJECT_DIR$/admin/icons" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/admin" />
+      <recent name="$PROJECT_DIR$/admin/crud" />
+      <recent name="$PROJECT_DIR$/Styles" />
       <recent name="$PROJECT_DIR$/testing" />
       <recent name="$PROJECT_DIR$/admin/icons" />
     </key>
@@ -352,7 +326,7 @@
       </list>
     </option>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="1" Folder0="$PROJECT_DIR$/../../• Library/Web Library/Dictionaries" CustomDictionaries="1" CustomDictionary0="$PROJECT_DIR$/../../• Library/Web Library/Dictionaries/spanish-utf8.dic" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="project-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="1" Folder0="$USER_HOME$/Documents/• Library/Web Library/Dictionaries" CustomDictionaries="1" CustomDictionary0="$USER_HOME$/Documents/• Library/Web Library/Dictionaries/spanish-utf8.dic" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="project-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -404,49 +378,8 @@
       <workItem from="1557318192096" duration="4614000" />
       <workItem from="1557330231733" duration="9675000" />
       <workItem from="1557357349720" duration="3761000" />
-      <workItem from="1557491688200" duration="146000" />
-    </task>
-    <task id="LOCAL-00063" summary="A better fix for visited conflicts.">
-      <created>1553579688513</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1553579688513</updated>
-    </task>
-    <task id="LOCAL-00064" summary="Formatted grid.css.">
-      <created>1553617593977</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1553617593977</updated>
-    </task>
-    <task id="LOCAL-00065" summary="Advances in ORGANICO and fixed CLIENTES h2 padding.">
-      <created>1553621602745</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1553621602745</updated>
-    </task>
-    <task id="LOCAL-00066" summary="HELP ME">
-      <created>1553632158713</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1553632158713</updated>
-    </task>
-    <task id="LOCAL-00067" summary="HELP ME">
-      <created>1553635402611</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1553635402611</updated>
-    </task>
-    <task id="LOCAL-00068" summary="Fixed a random character.">
-      <created>1553635502807</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1553635502807</updated>
+      <workItem from="1557491688200" duration="9544000" />
+      <workItem from="1557600132812" duration="2615000" />
     </task>
     <task id="LOCAL-00069" summary="Nuevo Mexico v2.&#10;Grid de precio en ORGANICO.">
       <created>1553635789659</created>
@@ -749,11 +682,53 @@
       <option name="project" value="LOCAL" />
       <updated>1557449674094</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="got rid of the hover in disabled cart">
+      <created>1557491852365</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1557491852366</updated>
+    </task>
+    <task id="LOCAL-00113" summary="added open JS for client wrapper tables">
+      <created>1557493789800</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1557493789800</updated>
+    </task>
+    <task id="LOCAL-00114" summary="update.php changes">
+      <created>1557594600054</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1557594600055</updated>
+    </task>
+    <task id="LOCAL-00115" summary="update.php works but byethost is fucking with it">
+      <created>1557597716173</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1557597716173</updated>
+    </task>
+    <task id="LOCAL-00116" summary="Fixed some create.php typos and structure.">
+      <created>1557600567544</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1557600567544</updated>
+    </task>
+    <task id="LOCAL-00117" summary="Fixed some href.">
+      <created>1557601324007</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1557601324007</updated>
+    </task>
+    <option name="localTasksCounter" value="118" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="298463000" />
+    <option name="totallyTimeSpent" value="310476000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -768,11 +743,11 @@
     <frame x="0" y="22" width="1280" height="778" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.22132471" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25655282" />
-      <window_info id="Favorites" order="2" side_tool="true" weight="0.25655282" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49708456" weight="0.22132471" />
+      <window_info id="Structure" order="1" sideWeight="0.50291544" side_tool="true" weight="0.22132471" />
+      <window_info id="Favorites" order="2" side_tool="true" weight="0.25605816" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3265306" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32876712" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4260274" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -780,7 +755,7 @@
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49960285" weight="0.32876712" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49642575" weight="0.5506849" />
-      <window_info anchor="bottom" id="Inspection Results" order="9" sideWeight="0.4980143" weight="0.16027397" />
+      <window_info anchor="bottom" id="Inspection Results" order="9" sideWeight="0.4980143" weight="0.5772595" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32876712" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50357425" side_tool="true" weight="0.30821916" />
       <window_info anchor="bottom" id="Thumbnails" order="12" weight="0.32876712" />
@@ -867,17 +842,10 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$/js/tiny-date-picker" />
     </ignored-roots>
-    <MESSAGE value="advances in backend HTMLs" />
-    <MESSAGE value="added new admin stuff from our copy paste lord Abel *suelo*" />
-    <MESSAGE value="mooooore abeeeeel valllllleee" />
-    <MESSAGE value="All backend accordion modules deployed.&#10;Rearraged order-table order.&#10;Optimized main-backend.css.&#10;Added an chevron icon.&#10;Animated accordion chevron icon.&#10;Rewrote item content to tables.&#10;Simplified all HTMLs." />
-    <MESSAGE value="Client module developed.&#10;Missing multiple contacts and addresses module." />
-    <MESSAGE value="Products module developed.&#10;Missing edit module." />
     <MESSAGE value="Mooooore baaaaackend.&#10;Oh, and mastercard and visa svgs." />
     <MESSAGE value="Added American Express logo." />
     <MESSAGE value="Added American Express logo** jiji" />
@@ -897,7 +865,13 @@
     <MESSAGE value="please kill me" />
     <MESSAGE value="fixed table column names" />
     <MESSAGE value="UPDATE KIND OF WORKS" />
-    <option name="LAST_COMMIT_MESSAGE" value="UPDATE KIND OF WORKS" />
+    <MESSAGE value="got rid of the hover in disabled cart" />
+    <MESSAGE value="added open JS for client wrapper tables" />
+    <MESSAGE value="update.php changes" />
+    <MESSAGE value="update.php works but byethost is fucking with it" />
+    <MESSAGE value="Fixed some create.php typos and structure." />
+    <MESSAGE value="Fixed some href." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed some href." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -914,14 +888,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Desktop/products.sql" />
-    <entry file="file://$PROJECT_DIR$/carrito.html" />
-    <entry file="file://$PROJECT_DIR$/testing/test.css" />
-    <entry file="file://$PROJECT_DIR$/testing/cart.html" />
-    <entry file="file://$PROJECT_DIR$/productos.html" />
-    <entry file="file://$USER_HOME$/Desktop/style.css" />
-    <entry file="file://$USER_HOME$/Desktop/index.html" />
-    <entry file="file://$PROJECT_DIR$/testing/style.css" />
     <entry file="file://$USER_HOME$/Downloads/accordion-table/index.html" />
     <entry file="file://$PROJECT_DIR$/testing/js/index.js" />
     <entry file="file://$PROJECT_DIR$/admin/js/daterangepicker.js">
@@ -946,13 +912,6 @@
     <entry file="file://$PROJECT_DIR$/cuenta-envio.html" />
     <entry file="file://$PROJECT_DIR$/images/logos/visa.svg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/grid.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="608" column="7" selection-start-line="608" selection-start-column="7" selection-end-line="608" selection-end-column="7" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/orders-pending-backend.html" />
     <entry file="file://$PROJECT_DIR$/admin/orders-enroute-backend.html" />
@@ -980,11 +939,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/email-autocomplete.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2155" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/clientes.php" />
     <entry file="file://$PROJECT_DIR$/admin/clients-backend.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -993,34 +947,6 @@
           <folding>
             <element signature="n#style#0;n#h2#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/crud/delete.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/organico.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1785">
-          <caret line="119" column="81" lean-forward="true" selection-start-line="119" selection-start-column="81" selection-end-line="119" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1194">
-          <caret line="532" column="23" selection-start-line="532" selection-start-column="23" selection-end-line="532" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="9" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1034,10 +960,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/header.php">
+    <entry file="file://$PROJECT_DIR$/admin/images/cup_of_coffee.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/main-backend.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="2" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
+        <state relative-caret-position="202">
+          <caret line="303" column="20" lean-forward="true" selection-start-line="303" selection-start-column="20" selection-end-line="303" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1048,61 +977,141 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/crud_productos/connection.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/images/cup_of_coffee.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/products-coffee.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="9405">
+          <caret line="627" column="24" lean-forward="true" selection-start-line="627" selection-start-column="24" selection-end-line="627" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/main-backend.css">
+    <entry file="file://$PROJECT_DIR$/organico.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="303" column="20" lean-forward="true" selection-start-line="303" selection-start-column="20" selection-end-line="303" selection-end-column="20" />
+        <state relative-caret-position="1785">
+          <caret line="119" column="81" lean-forward="true" selection-start-line="119" selection-start-column="81" selection-end-line="119" selection-end-column="81" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/crud/update.php">
+    <entry file="file://$PROJECT_DIR$/admin/connection.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="132" column="41" selection-start-line="132" selection-start-column="41" selection-end-line="132" selection-end-column="41" />
+        <state relative-caret-position="285">
+          <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/crud/create.php">
+    <entry file="file://$PROJECT_DIR$/css/grid.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1860">
-          <caret line="124" column="62" selection-start-line="124" selection-start-column="62" selection-end-line="124" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/clients.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="88" column="32" selection-start-line="88" selection-start-column="32" selection-end-line="88" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/crud/connection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+        <state relative-caret-position="34">
+          <caret line="243" column="21" selection-start-line="243" selection-start-column="21" selection-end-line="243" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="276" column="37" selection-start-line="276" selection-start-column="37" selection-end-line="276" selection-end-column="37" />
+        <state relative-caret-position="80">
+          <caret line="499" column="11" lean-forward="true" selection-start-line="499" selection-start-column="11" selection-end-line="499" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/datetimepicker.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/mapa.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="91" column="50" selection-start-line="91" selection-start-column="50" selection-end-line="91" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/email-autocomplete.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cuenta-envio.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="16" column="78" lean-forward="true" selection-start-line="16" selection-start-column="78" selection-end-line="16" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agregar-producto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/crud_productos/connection.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/clients.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/crud_product/update_product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/crud_product/delete_product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/crud_client/delete_client.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/products-coffee.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/crud_client/update_client.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proceso.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="198" column="10" selection-start-line="198" selection-start-column="10" selection-end-line="198" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/crud_client/create_client.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="45" column="20" lean-forward="true" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/crud_product/create_product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="57" column="70" selection-start-line="57" selection-start-column="70" selection-end-line="57" selection-end-column="70" />
         </state>
       </provider>
     </entry>
