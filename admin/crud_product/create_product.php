@@ -86,6 +86,7 @@ if (isset($_POST['insert'])) {
         </tbody>
     </table>
 
+
 </form>
 
 <script charset="UTF-8" src="../../js/jquery.js"></script>
