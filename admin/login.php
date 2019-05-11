@@ -31,6 +31,7 @@ if(isset($_POST['user'])) {
 
 <head>
     <meta charset="UTF-8">
+    <link href="main-backend.css" rel="stylesheet">
 </head>
 
 <body>
