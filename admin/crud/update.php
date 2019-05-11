@@ -87,6 +87,7 @@ if (isset($_POST['update'])) {
     execute($q);
     $q = "update billing set payroll = '$payroll', rfc = '$rfc', payment_method = '$payment_method', payment_form = '$payment_form', payment_use = '$payment_use' where billing.id_client = '$id_client'";
     execute($q);
+
     header("Location: ../clients.php");
 }
 ?>
@@ -95,7 +96,11 @@ if (isset($_POST['update'])) {
 <html lang="en">
 <body>
 
-<form action="update.php" method="post" enctype="multipart/form-data">
+<form action="update.php?idclient=<?php echo $id_client ?>" method="post" enctype="multipart/form-data">
+
+    <input type="hidden" name="update" value="update">
+    <input type="hidden" name="id_product" value="<?php echo $id_client; ?>">
+
     <h2>Datos Generales</h2>
     <fieldset>
         <input type="hidden" name="update" value="update">
@@ -158,56 +163,54 @@ if (isset($_POST['update'])) {
         <input id="fiscal_address" type="text" name="fiscal_address"> <br> -->
         <label for="rfc">RFC</label>
         <input id="rfc" type="text" name="rfc" value='<?php echo $rfc; ?>'> <br>
-        <label for="payment_method">Método de pago</label>
+    </fieldset>
 
-        <fieldset>
-            <h2>Método de pago</h2>
-            <div class="radio-group">
-                <input class='radio' type="radio" name="payment_method" id="opcion-one"
-                       value="0" <?php if ($payment_method == '0') echo 'checked="checked"'; ?>>
-                <label for="opcion-one">PUE una exhib.</label>
-                <input class='radio' type="radio" name="payment_method" id="opcion-dos"
-                       value="1" <?php if ($payment_method == '1') echo 'checked="checked"'; ?>>
-                <label for="opcion-dos">PPD parcialid</label>
-            </div>
-        </fieldset>
+    <fieldset>
+        <h2>Método de pago</h2>
+        <div class="radio-group">
+            <input class='radio' type="radio" name="payment_method" id="opcion-one"
+                   value="0" <?php if ($payment_method == '0') echo 'checked="checked"'; ?>>
+            <label for="opcion-one">PUE una exhib.</label>
+            <input class='radio' type="radio" name="payment_method" id="opcion-dos"
+                   value="1" <?php if ($payment_method == '1') echo 'checked="checked"'; ?>>
+            <label for="opcion-dos">PPD parcialid</label>
+        </div>
+    </fieldset>
 
-        <fieldset>
-            <h2>Forma</h2>
-            <div class="radio-group">
-                <input class='radio' type="radio" name="payment_form" id="forma-one"
-                       value="0" <?php if ($payment_form == '0') echo 'checked="checked"'; ?>>
-                <label for="forma-one">Efectivo</label>
-                <input class='radio' type="radio" name="payment_form" id="forma-dos"
-                       value="1" <?php if ($payment_form == '1') echo 'checked="checked"'; ?>>
-                <label for="forma-dos">Cheque</label>
-                <input class='radio' type="radio" name="payment_form" id="forma-tres"
-                       value="2" <?php if ($payment_form == '2') echo 'checked="checked"'; ?>>
-                <label for="forma-tres">Transferencia</label>
-                <input class='radio' type="radio" name="payment_form" id="forma-cuatro"
-                       value="3" <?php if ($payment_form == '3') echo 'checked="checked"'; ?>>
-                <label for="forma-cuatro">Tarjeto de crédito</label>
-                <input class='radio' type="radio" name="payment_form" id="forma-cinco"
-                       value="4" <?php if ($payment_form == '4') echo 'checked="checked"'; ?>>
-                <label for="forma-cinco">Monedero</label>
-            </div>
-        </fieldset>
+    <fieldset>
+        <h2>Forma</h2>
+        <div class="radio-group">
+            <input class='radio' type="radio" name="payment_form" id="forma-one"
+                   value="0" <?php if ($payment_form == '0') echo 'checked="checked"'; ?>>
+            <label for="forma-one">Efectivo</label>
+            <input class='radio' type="radio" name="payment_form" id="forma-dos"
+                   value="1" <?php if ($payment_form == '1') echo 'checked="checked"'; ?>>
+            <label for="forma-dos">Cheque</label>
+            <input class='radio' type="radio" name="payment_form" id="forma-tres"
+                   value="2" <?php if ($payment_form == '2') echo 'checked="checked"'; ?>>
+            <label for="forma-tres">Transferencia</label>
+            <input class='radio' type="radio" name="payment_form" id="forma-cuatro"
+                   value="3" <?php if ($payment_form == '3') echo 'checked="checked"'; ?>>
+            <label for="forma-cuatro">Tarjeto de crédito</label>
+            <input class='radio' type="radio" name="payment_form" id="forma-cinco"
+                   value="4" <?php if ($payment_form == '4') echo 'checked="checked"'; ?>>
+            <label for="forma-cinco">Monedero</label>
+        </div>
+    </fieldset>
 
-        <fieldset>
-            <h2>Uso</h2>
-            <div class="radio-group">
-                <input class='radio' type="radio" name="payment_use" id="use-one"
-                       value="0" <?php if ($payment_use == '0') echo 'checked="checked"'; ?>>
-                <label for="use-one">G01 Adquis. Merc.</label>
-                <input class='radio' type="radio" name="payment_use" id="use-dos"
-                       value="1" <?php if ($payment_use == '1') echo 'checked="checked"'; ?>>
-                <label for="use-dos">G03 Gastos Gral.</label>
-            </div>
-        </fieldset>
+    <fieldset>
+        <h2>Uso</h2>
+        <div class="radio-group">
+            <input class='radio' type="radio" name="payment_use" id="use-one"
+                   value="0" <?php if ($payment_use == '0') echo 'checked="checked"'; ?>>
+            <label for="use-one">G01 Adquis. Merc.</label>
+            <input class='radio' type="radio" name="payment_use" id="use-dos"
+                   value="1" <?php if ($payment_use == '1') echo 'checked="checked"'; ?>>
+            <label for="use-dos">G03 Gastos Gral.</label>
+        </div>
     </fieldset>
 
     <input type="submit" value="Guardar cliente">
-
 
 </form>
 </body>
