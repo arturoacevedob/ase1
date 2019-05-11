@@ -57,6 +57,7 @@ if (isset($_GET['idclient'])) {
 
 // Entra aquí cuando se envía el formulario a este mismo archivo.
 if (isset($_POST['update'])) {
+    $id_client = $_POST['id_client'];
     $name_legal = $_POST['name_legal'];
     $name_alias = $_POST['name_alias'];
     $giro = $_POST['giro'];
@@ -96,10 +97,10 @@ if (isset($_POST['update'])) {
 <html lang="en">
 <body>
 
-<form action="update.php?idclient=<?php echo $id_client ?>" method="post" enctype="multipart/form-data">
+<form action="update.php" method="post" enctype="multipart/form-data">
 
     <input type="hidden" name="update" value="update">
-    <input type="hidden" name="id_product" value="<?php echo $id_client; ?>">
+    <input type="hidden" name="id_client" value="<?php echo $id_client; ?>">
 
     <h2>Datos Generales</h2>
     <fieldset>
