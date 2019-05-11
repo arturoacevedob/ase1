@@ -128,7 +128,7 @@ if (isset($_POST['update'])) {
         <input id="name_contact" type="text" name="name_contact" min="1" max="50" required
                value='<?php echo $name_contact; ?>'> <br>
         <label for="phone_contact">Número telefónico</label>
-        <input id="phone_contact" type="tel" name="phone_contact" min="1" max="50" required
+        <input id="phone_contact" type="tel" name="phone_contact" min="1" max="20" required
                value='<?php echo $phone_contact; ?>'> <br>
         <label for="email">Correo electrónico</label>
         <input id="email" type="email" name="email" min="1" max="20" required value='<?php echo $email; ?>'> <br>
