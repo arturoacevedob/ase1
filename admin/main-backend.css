@@ -315,6 +315,11 @@ input:focus, select:focus {
 }
 
 /* Styles */
+#login{
+    color: white;
+    background-color: var(--dark);
+}
+
 body{
     margin: 0;
     padding: 0;

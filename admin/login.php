@@ -34,7 +34,8 @@ if(isset($_POST['user'])) {
     <link href="main-backend.css" rel="stylesheet">
 </head>
 
-<body>
+<body id="login">
+<div><img alt="Logo de Bats'il Maya" src="../images/logos/batsil_maya_logo.svg"></div>
 <h1 class="padding-thing">Autenticación del Administrador</h1>
 <form class="form login-wrapper" action='login.php' method='post'>
     <h2 style="text-align: center">Inicia sesion</h2>
