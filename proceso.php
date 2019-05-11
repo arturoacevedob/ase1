@@ -106,8 +106,8 @@ include 'header.php';
             </div>
         </article>
         <article class="grid-2-text-photo">
-            <div STYLE="background-color: GRey" class="grid-2-left-image" id="image-el-pueblo-tseltal-2"></div>
-            <div class="grid-2-right-text container">
+            <div STYLE="background-color: GRey" class="grid-2-left-image" id="image-el-pueblo-tseltal-2 "></div>
+            <div class="grid-2-right-text container" >
                 <div class="wrapper-text">
                     <h3>Restauración de los cafetales</h3><br>
                     <p class="p-big">A través de la renovación de cafetos, se evitan nuevos brotes de la roya.</p><br>
