@@ -35,7 +35,7 @@ if(isset($_POST['user'])) {
 </head>
 
 <body>
-<h1>Autenticación del Administrador</h1>
+<h1 class="padding-thing">Autenticación del Administrador</h1>
 <form class="form login-wrapper" action='login.php' method='post'>
     <h2 style="text-align: center">Inicia sesion</h2>
     <label for="user">Usuario</label>
