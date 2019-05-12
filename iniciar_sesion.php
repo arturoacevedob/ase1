@@ -112,7 +112,7 @@ if(isset($_POST['user'])) {
     <form class="form login-wrapper" action='iniciar_sesion.php' method='post'>
         <h2 style="text-align: center">Inicia sesion</h2>
         <label for="email">Correo</label>
-        <input class="email" id="email" name="user" placeholder="mariabravo@gmail.com" required type="email">
+        <input class="email" id="email" name="user" placeholder="mariabravo@gmail.com" required type="email" autofocus>
         <div class="label-span">
             <label for="password">Contraseña</label>
             <span class="p-small right-aligned"><a>¿Olvidaste tu contraseña?</a></span>
