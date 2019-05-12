@@ -72,25 +72,55 @@ if (isset($_POST['insert'])) {
         </thead>
         <tbody>
         <tr>
-            <td><label for="weight1">250gr</label><input id="weight1" class="checkbox" type="checkbox" value="1"></td>
-            <td><input type="number" maxlength="3"></td>
+            <td><label for="weight1">250gr<input id="weight1" class="checkbox" type="checkbox" value="1"></label></td>
+            <td><input id="price1" type="number" maxlength="3" disabled="disabled"></td>
         </tr>
         <tr>
             <td><label for="weight2">500gr</label><input id="weight2" class="checkbox" type="checkbox" value="1"></td>
-            <td><input type="number" maxlength="3"></td>
+            <td><input id="price2" type="number" maxlength="3" disabled="disabled"></td>
         </tr>
         <tr>
             <td><label for="weight3">1kg</label><input id="weight3" class="checkbox" type="checkbox" value="1"></td>
-            <td><input type="number" maxlength="3"></td>
+            <td><input id="price3" type="number" maxlength="3" disabled="disabled"></td>
         </tr>
         </tbody>
     </table>
 
+
 </form>
 
+<script charset="UTF-8" src="../../js/jquery.js"></script>
+
 <script>
-    $('.checkbox').change(function () {
-        $('#molido-custom-value').prop('disabled', !$(this).is('.other-input'));
+    $(function () {
+        $("#weight1").click(function () {
+            if ($(this).is(":checked")) {
+                $("#price1").removeAttr("disabled");
+                $("#price1").focus();
+            } else {
+                $("#price1").attr("disabled", "disabled");
+            }
+        });
+    });
+    $(function () {
+        $("#weight2").click(function () {
+            if ($(this).is(":checked")) {
+                $("#price2").removeAttr("disabled");
+                $("#price2").focus();
+            } else {
+                $("#price2").attr("disabled", "disabled");
+            }
+        });
+    });
+    $(function () {
+        $("#weight3").click(function () {
+            if ($(this).is(":checked")) {
+                $("#price3").removeAttr("disabled");
+                $("#price3").focus();
+            } else {
+                $("#price3").attr("disabled", "disabled");
+            }
+        });
     });
 </script>
 
