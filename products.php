@@ -110,11 +110,6 @@ include 'header.php';
                     $products[$counter]["description"] = $row["description"];
                     $products[$counter]["notes"] = $row["notes"];
                     $products[$counter]["client_type"] = $row["client_type"];
-
-                    $clean_name = preg_replace('/\s*/', '', $row["name_product"]);
-                    $clean_name = strtolower($clean_name);
-                    $products[$counter]["filename"] = $clean_name;
-
                     $counter++;
                 }
 
@@ -128,14 +123,14 @@ include 'header.php';
                     echo "
                     <section class='ind-product'>
                         <h3 class='title pname h3-small'>" . $products[$i]['name_product'] . "</h3>
-                        <figure class='pimage'><img src='" . $image_path . "'></figure>
+                        <div style='height: 250px; background: transparent url(" . $image_path . ") 50% 50% / cover no-repeat;'></div>
                         <p class='pdescription'>" . $products[$i]['description'] . "<br> <a
                                 class='link ' href='product-view.php?idproduct=" . $products[$i]['id_product'] . "' target='_self'>Ver más »</a></p>
                     </section>";
                 }
                 ?>
 
-                <section class="ind-product">
+                <!--<section class="ind-product">
                     <h3 class="title pname h3-small">Premium Orgánico</h3>
                     <figure class="pimage"><img
                                 alt="Granos de café premium orgánico de Bats'il Maya"
@@ -166,7 +161,7 @@ include 'header.php';
                     </figure>
                     <p class="pdescription">Para aquellas personas que desean disfrutar un rico café libre de cafeína.<br>
                         <a class="link" href="" target="_self">Ver más »</a></p>
-                </section>
+                </section>-->
             </div>
         </div>
     </aside>
