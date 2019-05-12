@@ -144,7 +144,7 @@ include 'header.php';
     </section>
     <section class="container tipo-tueste">
         <h2 class="center-aligned">Tipos de tueste</h2>
-        <figure><img alt="Gráfica de Tipos de tueste"
+        <figure class="tipos-tueste"><img alt="Gráfica de Tipos de tueste"
                      src="images/proceso/proceso_tipos_de_tueste_grafica_batsil_maya.svg"></figure>
         <article class="tueste-claro">
             <h3 class="p-big">Tueste claro</h3>
