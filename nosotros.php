@@ -91,7 +91,7 @@ include 'header.php';
     <section>
         <div>
             <h2 class="kill">Nuestra historia</h2>
-            <article class="grid-2-text-photo">
+            <article class="grid-2-text-photo mapa-mobil-cafe">
                 <div class="grid-2-left-image" id="image-nuestra-historia">
                 </div>
                 <div class="grid-2-right-text container">
