@@ -114,7 +114,6 @@ if (isset($_POST['insert'])) {
         <input id="fiscal_address" type="text" name="fiscal_address"> -->
         <label for="rfc">RFC</label>
         <input id="rfc" type="text" name="rfc">
-        <label for="payment_method">Método de pago</label>
     
         <h2>Método de pago</h2>
         <div class="radio-group">

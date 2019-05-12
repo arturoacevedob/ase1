@@ -73,15 +73,19 @@ if (isset($_POST['update'])) {
 
 <!DOCTYPE html>
 <html lang="en">
-<body>
+<head>
+      <link href="../main-backend.css" rel="stylesheet">
+</head>
 
-<form action="update_client.php" method="post" enctype="multipart/form-data">
+<body class="padding-for-all">
 
+<form class="round-red-border" action="update_client.php" method="post" enctype="multipart/form-data">
+<div class="grid-1-1-1 padding-for-all-2">
     <input type="hidden" name="update" value="update">
     <input type="hidden" name="id_client" value="<?php echo $id_client; ?>">
 
-    <h2>Datos Generales</h2>
     <fieldset>
+           <h2>Datos Generales</h2>
         <input type="hidden" name="update" value="update">
         <label for="name_legal">Nombre legal</label>
         <input id="name_legal" type="text" name="name_legal" min="1" maxlength="100" required
@@ -92,15 +96,15 @@ if (isset($_POST['update'])) {
         <label for="giro">Giro</label>
         <input id="giro" type="text" name="giro" min="1" maxlength="250" required value='<?php echo $giro; ?>'> <br>
         <label>Tipo de cliente</label>
+       <p class="radio-group">
         <input type="radio" name="client_type" id="minorista"
                value="0" <?php if ($client_type == '0') echo 'checked="checked"'; ?> required>
         <label for="minorista">Minorista</label>
         <input type="radio" name="client_type" id="mayorista"
                value="1" <?php if ($client_type == '1') echo 'checked="checked"'; ?> required>
         <label for="mayorista">Mayorista</label>
-    </fieldset>
-
-    <fieldset>
+       </p>
+    
         <h2>Contacto</h2>
         <label for="name_contact">Nombre</label>
         <input id="name_contact" type="text" name="name_contact" min="1" maxlength="50" required
@@ -143,9 +147,7 @@ if (isset($_POST['update'])) {
         <input id="fiscal_address" type="text" name="fiscal_address"> <br> -->
         <label for="rfc">RFC</label>
         <input id="rfc" type="text" name="rfc" value='<?php echo $rfc; ?>'> <br>
-    </fieldset>
-
-    <fieldset>
+   
         <h2>Método de pago</h2>
         <div class="radio-group">
             <input class='radio' type="radio" name="payment_method" id="opcion-one"
@@ -155,9 +157,6 @@ if (isset($_POST['update'])) {
                    value="1" <?php if ($payment_method == '1') echo 'checked="checked"'; ?>>
             <label for="opcion-dos">PPD parcialid</label>
         </div>
-    </fieldset>
-
-    <fieldset>
         <h2>Forma</h2>
         <div class="radio-group">
             <input class='radio' type="radio" name="payment_form" id="forma-one"
@@ -176,9 +175,6 @@ if (isset($_POST['update'])) {
                    value="4" <?php if ($payment_form == '4') echo 'checked="checked"'; ?>>
             <label for="forma-cinco">Monedero</label>
         </div>
-    </fieldset>
-
-    <fieldset>
         <h2>Uso</h2>
         <div class="radio-group">
             <input class='radio' type="radio" name="payment_use" id="use-one"
@@ -189,9 +185,11 @@ if (isset($_POST['update'])) {
             <label for="use-dos">G03 Gastos Gral.</label>
         </div>
     </fieldset>
-
-    <input type="submit" value="Guardar cambios">
-
+</div>
+    
+    <div class="bottom-thing grid-1-1-1">
+    <input class="button red limited-width-2 limited-height" type="submit" value="Guardar cambios">
+    </div>
 </form>
 </body>
 </html>
