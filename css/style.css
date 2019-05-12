@@ -1069,9 +1069,14 @@ progress::-webkit-progress-value {
         font-size: 14px;
     
     }
-    #nosotros #image-nuestra-historia {
-        background: url(../images/nosotros/mexico_2.svg) 0 0% / contain no-repeat;
+   
+    .mapa-mobil-cafe{
+        grid-template-rows: 1fr 2fr;
     }
+    .taza-cafe{
+    grid-template-rows: 2fr 1fr;
+    }
+    
 }
 @media screen and (min-width: 640px) {
     h2 {
@@ -1134,6 +1139,9 @@ progress::-webkit-progress-value {
     #nosotros .vision {
         padding-left: 14%;
     }
+    .mapa-mobil-cafe{
+        grid-template-rows: 1fr 1fr;
+    }
 
     /* —————— AQUÍ EMPIEZAN ESTILOS DE PROCESO—————— */
     #proceso .tipo-tueste p:nth-child(8) {
@@ -1154,7 +1162,15 @@ progress::-webkit-progress-value {
     .seco{
         padding-left: 13%;
     }
-
+    .taza-cafe{
+        grid-template-rows: 1fr 1fr;
+        }
+        #nuestrocafe #caracteristicas-taza {
+            background: url(../images/nuestro_cafe/caracteristicas_del_cafe_batsil_maya.svg) 41% 0 / contain no-repeat !important;
+        }
+    .molidos img {
+    width: 30% !important;
+    }
 }
 
 @media screen and (max-width: 639px) {
@@ -1442,7 +1458,7 @@ progress::-webkit-progress-value {
     background: url(../images/nuestro_cafe/ubicacion_chiapas_batsil_maya.jpg) 0 0 / cover no-repeat;;
 }
 #nuestrocafe #caracteristicas-taza {
-    background: url(../images/nuestro_cafe/caracteristicas_del_cafe_batsil_maya.svg) 0 0 / cover no-repeat;;
+    background: url(../images/nuestro_cafe/caracteristicas_del_cafe_batsil_maya.svg) 0 0 / contain no-repeat;;
 }
 
 .organic-height{

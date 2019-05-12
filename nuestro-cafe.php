@@ -127,8 +127,8 @@ include 'header.php';
             </div>
         </div>
     </section>
-    <section class="grid-2-text-photo">
-        <div class="grid-2-right-text container">
+    <section class="grid-2-text-photo taza-cafe">
+        <div class="grid-2-right-text container ">
             <div class="wrapper-text">
                 <h2 class="taza-h2">​Características en taza</h2><br>
                 <p class="p-big">Quienes lo disfrutan encuentran un balance propio de los cafés de altura caracterizado por un delicado y fino sabor, cuerpo abundante y cremoso, y acidez cítrica.</p><br>
