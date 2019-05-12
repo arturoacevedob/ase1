@@ -34,6 +34,8 @@
         <li><a href="clients.php" target="_self">Clientes</a></li>
         <li><a class="active" href="orders-pending-backend.php" target="_self">Pedidos</a></li>
         <li><a href="products-coffee.php" target="_self">Productos</a></li>
+        <li><a href="blog.php" target="_self">Blog</a></li>
+
         <li><a href='login.php?killsession=1'>Cerrar sesión</a></li>
     </ul>
 </nav>
