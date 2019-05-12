@@ -89,8 +89,8 @@ include 'header.php';
     <section>
         <h2 class="kill">Prácticas</h2>
         <article class="grid-2-text-photo">
-            <div STYLE="background-color: GRey" class="grid-2-right-image" id=""></div>
-            <div class="grid-2-left-text container">
+            <div class="grid-2-right-image image-agroecologicas"></div>
+            <div class="grid-2-left-text container" >
                 <div class="wrapper-text">
                     <h3>Prácticas agroecológicas</h3><br>
                     <p class="p-big">En el cafetal, nuestro café es cultivado de manera orgánica, por lo que no se

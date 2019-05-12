@@ -920,6 +920,9 @@ label + input[type="radio"] + label {
     top: 36%;
     left: 79.5%;
 }
+#proceso .image-agroecologicas{
+    background: url(../images/proceso/practicas_agroecologicas_batsil_maya.jpg) 0% 0 / cover no-repeat;
+}
 
 progress {
     height: 5px;
@@ -1076,6 +1079,10 @@ progress::-webkit-progress-value {
     .taza-cafe{
     grid-template-rows: 2fr 1fr;
     }
+
+.molidos img {
+    width: 30% !important;
+}
     
 }
 @media screen and (min-width: 640px) {
@@ -1148,6 +1155,10 @@ progress::-webkit-progress-value {
     }
     .mapa-mobil-cafe{
         grid-template-rows: 1fr 1fr;
+    }
+
+    .tsumbal{
+        max-width: 50%;
     }
 
     /* —————— AQUÍ EMPIEZAN ESTILOS DE PROCESO—————— */
@@ -1277,12 +1288,14 @@ progress::-webkit-progress-value {
     }
 
     /* —————— AQUÍ EMPIEZAN ESTILOS DE PROCESO—————— */
+  
 
     #proceso .tipo-tueste p:nth-child(8) {
         top: 59%;
         left: -9%;
         font-size: 13px;
     }
+
 
     #proceso .tipo-tueste p:last-child {
         font-size: 13px;
@@ -1342,7 +1355,7 @@ progress::-webkit-progress-value {
     }
 }
 #proceso #image-restauracion{
-    background: url(../images/proceso/hombre_restaurando_cafetal_batsil_maya.svg) 64% 0 / contain no-repeat;
+    background: url(../images/proceso/restauracion_de_los_cafetales_batsil_maya.jpg) 0% 0 / cover no-repeat;
 }
 
 /* —————— AQUÍ EMPIEZAN ESTILOS DE NOSOTROS—————— */

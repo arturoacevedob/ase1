@@ -207,7 +207,7 @@ include 'header.php';
                 <article class="grid-image-first">
                     <h3 class="h3-small">Ts'umbal Xitalha</h3>
                     <figure class="image-top-first-round">
-                        <img alt="Logo de TS'umbal Xitalha" src="images/nosotros/logo-tsumbal_xitala.svg">
+                        <img class="tsumbal" alt="Logo de TS'umbal Xitalha" src="images/nosotros/logo-tsumbal_xitala.svg">
                     </figure>
                 </article>
                 <article class="grid-image-first">
