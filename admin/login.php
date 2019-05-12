@@ -42,7 +42,7 @@ if(isset($_POST['user'])) {
 <form class="form login-wrapper" action='login.php' method='post'>
     <h2 style="text-align: center">Inicia sesion</h2>
     <label for="user">Usuario</label>
-    <input class="user" id="user" name="user" placeholder="" required type="text">
+    <input class="user" id="user" name="user" placeholder="" required type="text" autofocus>
     <div class="label-span">
         <label for="password" name='pass'>Contraseña</label>
     </div>

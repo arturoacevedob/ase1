@@ -50,7 +50,7 @@ include 'header.php';
                             <li><a href="nosotros.php" target="_self">Nosotros</a></li>
                             <li><a class="active" href="nuestro-cafe.php" target="_self">Nuestro café</a></li>
                             <li><a href="proceso.php" target="_self">Proceso</a></li>
-                            <li><a href="productos.php" target="_self">Productos</a></li>
+                            <li><a href="products.php" target="_self">Productos</a></li>
                             <li><a href="noticias.php" target="_self">Noticias</a></li>
                             <li><a href="ayuda.php" target="_self">Ayuda</a></li>
                         </ul>
@@ -73,7 +73,7 @@ include 'header.php';
                             <li><a href="nosotros.php" target="_self">Nosotros</a></li>
                             <li><a class="active" href="nuestro-cafe.php" target="_self">Nuestro café</a></li>
                             <li><a href="proceso.php" target="_self">Proceso</a></li>
-                            <li><a href="productos.php" target="_self">Productos</a></li>
+                            <li><a href="products.php" target="_self">Productos</a></li>
                             <li><a href="noticias.php" target="_self">Noticias</a></li>
                             <li><a href="ayuda.php" target="_self">Ayuda</a></li>
                             <?php
@@ -228,7 +228,7 @@ include 'header.php';
             <article class="bproductos">
                 <h3 class="light botones-h3">Productos</h3>
                 <p class="botones-p">Café Tseltal, miel orgánica y jabones artesanales</p>
-                <a class="button red" href="productos.php" target="_self">Leer más »</a>
+                <a class="button red" href="products.php" target="_self">Leer más »</a>
             </article>
         </div>
     </aside>
@@ -526,7 +526,7 @@ include 'header.php';
                     <li><a href="nosotros.php" target="_self">Nosotros</a></li>
                     <li><a class="active" href="nuestro-cafe.php" target="_self">Nuestro café</a></li>
                     <li><a href="proceso.php" target="_self">Proceso</a></li>
-                    <li><a href="productos.php" target="_self">Productos</a></li>
+                    <li><a href="products.php" target="_self">Productos</a></li>
                     <li><a href="noticias.php" target="_self">Noticias</a></li>
                     <li><a href="ayuda.php" target="_self">Ayuda</a></li>
                 </ul>

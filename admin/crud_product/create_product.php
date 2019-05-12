@@ -28,8 +28,8 @@ if (isset($_POST['insert'])) {
     if ($_FILES['image_path']['name'] != "") {
         $fileName = strtolower($_FILES['image_path']['name']);
         $tempFile = $_FILES['image_path']['tmp_name'];
-        $fileNamePath = '../images/' . $fileName;
-        $relativePath = 'images/' . $fileName;
+        $fileNamePath = '../../images/productos/cafe' . $fileName;
+        $relativePath = 'images/productos/cafe' . $fileName;
         if (move_uploaded_file($tempFile, $fileNamePath)) {
             $uploadOk = 1;
         } else {
