@@ -57,8 +57,8 @@ function createCoffeeListOptions()
         while ($weight_price = mysqli_fetch_array($recordSet2)) {
             echo "
                     <tr>
-                        <td>" . $weight_price["weight"] . "</td>
-                        <td>" . $weight_price["price"] . "</td>
+                        <td class='weight-gr'>" . $weight_price["weight"] . "</td>
+                        <td class='currency'>" . $weight_price["price"] . "</td>
                     </tr>";
         }
         echo "      
@@ -121,12 +121,11 @@ function createCoffeeListOptions()
         <li><a href="products-honey-backend.html" id="honey" target="_self">Miel</a></li>
         <li><a href="products-soap-backend.html" id="soap" target="_self">Jabón</a></li>
     </ul>
-
-    <div class="grid-1-1">
+    <a class="button red limited-width" href='crud_product/create_product.php'>Agregar productos</a>
+    <div class="grid-1-1 give-me-gap">
         <?php
         createCoffeeListOptions()
         ?>
-        <a class="button red" href='crud_product/create_product.php'>Agregar productos</a>
     </div>
 
 </div>
