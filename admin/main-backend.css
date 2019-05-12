@@ -277,7 +277,7 @@ table.expandable-table > tbody > tr.expanded-view.open {
     padding: 25px 0 0 0;
 }
 input.button {
-    border: none;
+    border: none !important;
 }
 .button.red:hover {
     text-decoration: none;
