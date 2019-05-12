@@ -17,37 +17,45 @@ if (isset($_POST['insert'])) {
     $description = $_POST['description'];
     $notes = $_POST['notes'];
     $client_type = $_POST['client_type'];
-    $weight = $_POST['weight'];
-    $price = $_POST['price'];
-    $ground_type = $_POST['ground_type'];
-    $image_path = $_POST['image_path'];
+    $weight1 = $_POST['weight1'];
+    $weight2 = $_POST['weight2'];
+    $weight3 = $_POST['weight3'];
+    $price1 = $_POST['price1'];
+    $price2 = $_POST['price2'];
+    $price3 = $_POST['price3'];
 
-    if ($_FILES['image']['name'] != "") {
-        $fileName = strtolower($_FILES['image']['name']);
-        $tempFile = $_FILES['image']['tmp_name'];
-        $fileNamePath = 'images/' . $fileName;
-
-        if (move_uploaded_file($tempFile, $fileNamePath)) {
-            $uploadOk = 1;
-        } else {
-            echo "Error al cargar el archivo.";
-        }
+    if ($_FILES['image_path'] != "") {
+        $fileName = strtolower($_FILES['image_path']);
+        $fileNamePath = $fileName;
     }
 
     if ($uploadOk == 1) {
         $q = "insert into products (name_product, description, notes, client_type) values ('$name_product','$description','$notes','$client_type')";
+        $id_product = execute($q);
+        $q = "insert into weight_price (weight, price, id_client) values ('$weight1','$price1', '$id_product')";
         execute($q);
-        $q = "insert into weight_price (weight, price) values ('$weight','$price')";
+        $q = "insert into weight_price (weight, price, id_client) values ('$weight2','$price2', '$id_product')";
         execute($q);
-        $q = "insert into ground_type (ground_type) values ('$ground_type')";
+        $q = "insert into weight_price (weight, price, id_client) values ('$weight3','$price3', '$id_product')";
         execute($q);
-        header("Location: products-coffee.php");
+        $q = "insert into images (image_path, id_product) values ('$fileNamePath', '$id_product')";
+        header("Location: ../products-coffee.php");
     }
 }
 ?>
 
 <!DOCTYPE html>
 <html dir="ltr" lang="es">
+
+<head>
+    <style>
+        .thumb {
+            margin: 10px 5px 0 0;
+            width: 100px;
+        }
+    </style>
+</head>
+
 <body>
 <h1>Producto nuevo</h1>
 <form action='create_product.php' method='post' enctype='multipart/form-data'>
@@ -72,28 +80,28 @@ if (isset($_POST['insert'])) {
         </thead>
         <tbody>
         <tr>
-            <td><label for="weight1">250gr<input id="weight1" class="checkbox" type="checkbox" value="1"></label></td>
-            <td><input id="price1" type="number" maxlength="3" disabled="disabled"></td>
+            <td><label for="weight1">250gr<input id="weight1" class="checkbox" type="checkbox" name="weight1"
+                                                 value="250"></label></td>
+            <td><input id="price1" type="number" name="price1" maxlength="3" disabled="disabled"></td>
         </tr>
         <tr>
-            <td><label for="weight2">500gr</label><input id="weight2" class="checkbox" type="checkbox" value="1"></td>
-            <td><input id="price2" type="number" maxlength="3" disabled="disabled"></td>
+            <td><label for="weight2">500gr</label><input id="weight2" class="checkbox" type="checkbox" name="weight2"
+                                                         value="500"></td>
+            <td><input id="price2" type="number" name="price2" maxlength="3" disabled="disabled"></td>
         </tr>
         <tr>
-            <td><label for="weight3">1kg</label><input id="weight3" class="checkbox" type="checkbox" value="1"></td>
-            <td><input id="price3" type="number" maxlength="3" disabled="disabled"></td>
+            <td><label for="weight3">1kg</label><input id="weight3" class="checkbox" type="checkbox" name="weight3"
+                                                       value="1000"></td>
+            <td><input id="price3" type="number" name="price3" maxlength="3" disabled="disabled"></td>
         </tr>
         </tbody>
     </table>
 
-    <div>
-        <h4>Image Gallery</h4>
-        <ul id="photos_clearing" class="clearing-thumbs" data-clearing>
-        </ul>
-        <br/>
-        <label for='photos'>Add some a photo:</label>
-        <input type="file" id="photos" name="photos[]" multiple/>
-    </div>
+    <!--<input type="file" id="file-input" name="image_path" multiple/>
+    <div id="thumb-output"></div>-->
+    <input type='file' name='image_path'>
+
+    <input type="submit" value="Guardar producto">
 
 </form>
 
@@ -127,6 +135,34 @@ if (isset($_POST['insert'])) {
                 $("#price3").focus();
             } else {
                 $("#price3").attr("disabled", "disabled");
+            }
+        });
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+        $('#file-input').on('change', function () { //on file input change
+            if (window.File && window.FileReader && window.FileList && window.Blob) //check File API supported browser
+            {
+
+                var data = $(this)[0].files; //this file data
+
+                $.each(data, function (index, file) { //loop though each file
+                    if (/(\.|\/)(gif|jpe?g|png)$/i.test(file.type)) { //check supported file type
+                        var fRead = new FileReader(); //new filereader
+                        fRead.onload = (function (file) { //trigger function on successful read
+                            return function (e) {
+                                var img = $('<img/>').addClass('thumb').attr('src', e.target.result); //create image element
+                                $('#thumb-output').append(img); //append image to output element
+                            };
+                        })(file);
+                        fRead.readAsDataURL(file); //URL representing the file's data.
+                    }
+                });
+
+            } else {
+                alert("Your browser doesn't support File API!"); //if File API is absent
             }
         });
     });

@@ -625,15 +625,32 @@ include 'header.php';
         $('.phone_with_ddd').mask('(00) 0000-0000');
         $(".email").emailautocomplete();
         $('.form_date').datetimepicker({
-            language: 'es',
-            todayBtn: 1,
-            autoclose: 1,
-            todayHighlight: 1,
-            startView: 2,
-            minView: 2,
-            forceParse: 0,
-            startDate: new Date(),
-        });
+            w
+            language;
+    :
+        'es',
+            todayBtn;
+    :
+        1,
+            autoclose;
+    :
+        1,
+            todayHighlight;
+    :
+        1,
+            startView;
+    :
+        2,
+            minView;
+    :
+        2,
+            forceParse;
+    :
+        0,
+            startDate;
+    :
+        new Date(),
+    })
         $('.form_date').datetimepicker('setDaysOfWeekDisabled', [0, 6]);
         $('.form_time').datetimepicker({
             language: 'es',
