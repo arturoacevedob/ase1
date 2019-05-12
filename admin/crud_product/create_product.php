@@ -24,9 +24,15 @@ if (isset($_POST['insert'])) {
     $price2 = $_POST['price2'];
     $price3 = $_POST['price3'];
 
-    if ($_FILES['image_path'] != "") {
-        $fileName = strtolower($_FILES['image_path']);
-        $fileNamePath = $fileName;
+    if ($_FILES['image_path']['name'] != "") {
+        $fileName = strtolower($_FILES['image_path']['name']);
+        $tempFile = $_FILES['image_path']['tmp_name'];
+        $fileNamePath = 'images/' . $fileName;
+        if (move_uploaded_file($tempFile, $fileNamePath)) {
+            $uploadOk = 1;
+        } else {
+            echo "Error al cargar el archivo.";
+        }
     }
 
     if ($uploadOk == 1) {
