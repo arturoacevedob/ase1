@@ -39,7 +39,7 @@ function createProductListOptions()
             "</td>
             <td><a href='crud_client/update_client.php?idclient=" . $clients[$i]["id_client"] . "'>Editar</a><a href='crud_client/delete_client.php?idclient=" . $clients[$i]["id_client"] . "'>Eliminar</a></td>
             <td class='radius-right'></td>
-        </tr>
+            </tr>
         <div class='padding-for-all-2'>
         <tr class='expanded-view'>
                 <td colspan='3'>
