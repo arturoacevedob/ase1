@@ -1278,7 +1278,7 @@ progress::-webkit-progress-value {
     }
 }
 #proceso #image-restauracion{
-    background: url(../images/proceso/hombre_restaurando_cafetal_batsil_maya.svg) 0 0 / cover no-repeat;
+    background: url(../images/proceso/hombre_restaurando_cafetal_batsil_maya.svg) 64% 0 / contain no-repeat;
 }
 
 /* —————— AQUÍ EMPIEZAN ESTILOS DE NOSOTROS—————— */
@@ -1503,4 +1503,8 @@ progress::-webkit-progress-value {
 #confirmardireccion header{
     background: url(../images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
     url(../images/confirmacion_de_direccion/header_proceso_de_compra_batsil_maya.png) 70% 71% / cover no-repeat;;
+}
+
+#form-ilustracion{
+    background: url(../images/form/hombre_restaurando_cafetal_batsil_maya.svg) 0 0 / cover no-repeat;
 }
