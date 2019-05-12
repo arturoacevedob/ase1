@@ -67,7 +67,7 @@
             <p>Hoy - 26/02/19</p>
             <p class="client">Capeltic <a href="">»</a></p>
         </div>
-        <div class="grid-2-1-1">
+        <div class="grid-2-1-1 give-me-gap">
             <table class="order-table">
                 <caption>Orden</caption>
                 <thead>
