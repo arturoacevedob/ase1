@@ -41,7 +41,7 @@ function createCoffeeListOptions()
         <div class='product-item grid-1-1'>
             <div class='radius-left' style='background: transparent url(\"$image_path\") 50% 50% / cover no-repeat;'></div>
             <div class='product-info radius-right'>
-                <h3>" . $products[$i]["name_product"] . "<span>" . $products[$i]["client_type"] . "</span><span><a href='crud_product/update_product.php?idclient=" . $products[$i]["id_product"] . "'>Editar</a></span><span><a href='crud_product/delete_product.php?idproduct=" . $products[$i]["id_product"] ."'>eliminar</a></span></h3>
+                <h3>" . $products[$i]["name_product"] . "<span>" . $products[$i]["client_type"] . "</span><span><a href='crud_product/update_product.php?idproduct=" . $products[$i]["id_product"] . "'>Editar</a></span><span><a href='crud_product/delete_product.php?idproduct=" . $products[$i]["id_product"] . "'>eliminar</a></span></h3>
                 <p>" . $products[$i]["description"] . "</p>
                 <table>
                     <thead>
@@ -52,14 +52,32 @@ function createCoffeeListOptions()
                     </thead>
                     <tbody>";
 
-        $query2 = "select products.id_product, weight_price.weight, weight_price.price from weight_price inner join products on weight_price.id_product = products.id_product where weight_price.id_product = '" . $products[$i]["id_product"] . "'";
+        $query2 = "select *, products.id_product from weight_price inner join products on weight_price.id_product = products.id_product where weight_price.id_product = '" . $products[$i]["id_product"] . "'";
         $recordSet2 = execute($query2);
         while ($weight_price = mysqli_fetch_array($recordSet2)) {
-            echo "
+            if (!is_null($weight_price["weight1"])) {
+                echo "
                     <tr>
-                        <td class='weight-gr'>" . $weight_price["weight"] . "</td>
-                        <td class='currency'>" . $weight_price["price"] . "</td>
+                        <td class='weight-gr'>" . $weight_price["weight1"] . "</td>
+                        <td class='currency'>" . $weight_price["price1"] . "</td>
                     </tr>";
+            }
+
+            if (!is_null($weight_price["weight2"])) {
+                echo "
+                    <tr>
+                        <td class='weight-gr'>" . $weight_price["weight2"] . "</td>
+                        <td class='currency'>" . $weight_price["price2"] . "</td>
+                    </tr>";
+            }
+
+            if (!is_null($weight_price["weight3"])) {
+                echo "
+                    <tr>
+                        <td class='weight-gr'>" . $weight_price["weight3"] . "</td>
+                        <td class='currency'>" . $weight_price["price3"] . "</td>
+                    </tr>";
+            }
         }
         echo "      
                     </tbody>

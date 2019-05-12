@@ -84,13 +84,13 @@ if (isset($_POST['update'])) {
     <fieldset>
         <input type="hidden" name="update" value="update">
         <label for="name_legal">Nombre legal</label>
-        <input id="name_legal" type="text" name="name_legal" min="1" max="100" required
+        <input id="name_legal" type="text" name="name_legal" min="1" maxlength="100" required
                value='<?php echo $name_legal; ?>'> <br>
         <label for="name_alias">Aliasl</label>
-        <input id="name_alias" type="text" name="name_alias" min="1" max="100" required
+        <input id="name_alias" type="text" name="name_alias" min="1" maxlength="100" required
                value='<?php echo $name_alias; ?>'> <br>
         <label for="giro">Giro</label>
-        <input id="giro" type="text" name="giro" min="1" max="250" required value='<?php echo $giro; ?>'> <br>
+        <input id="giro" type="text" name="giro" min="1" maxlength="250" required value='<?php echo $giro; ?>'> <br>
         <label>Tipo de cliente</label>
         <input type="radio" name="client_type" id="minorista"
                value="0" <?php if ($client_type == '0') echo 'checked="checked"'; ?> required>
@@ -103,22 +103,23 @@ if (isset($_POST['update'])) {
     <fieldset>
         <h2>Contacto</h2>
         <label for="name_contact">Nombre</label>
-        <input id="name_contact" type="text" name="name_contact" min="1" max="50" required
+        <input id="name_contact" type="text" name="name_contact" min="1" maxlength="50" required
                value='<?php echo $name_contact; ?>'> <br>
         <label for="phone_contact">Número telefónico</label>
-        <input id="phone_contact" type="tel" name="phone_contact" min="1" max="20" required
+        <input id="phone_contact" type="tel" name="phone_contact" min="1" maxlength="20" required
                value='<?php echo $phone_contact; ?>'> <br>
         <label for="email">Correo electrónico</label>
-        <input id="email" type="email" name="email" min="1" max="20" required value='<?php echo $email; ?>'> <br>
+        <input id="email" type="email" name="email" min="1" maxlength="20" required value='<?php echo $email; ?>'> <br>
     </fieldset>
 
     <fieldset>
         <h2>Dirección</h2>
         <label for="name_place">Nombre del lugar</label>
-        <input id="name_place" type="text" name="name_place" min="1" max="25" required
+        <input id="name_place" type="text" name="name_place" min="1" maxlength="25" required
                value='<?php echo $name_place; ?>'> <br>
         <label for="country">País</label>
-        <input id="country" type="text" name="country" min="1" max="200" required value='<?php echo $country; ?>'> <br>
+        <input id="country" type="text" name="country" min="1" maxlength="200" required value='<?php echo $country; ?>'>
+        <br>
         <label for="address1">Calle y número</label>
         <input id="address1" type="text" name="address1" placeholder="Calle y número" value='<?php echo $address1; ?>'>
         <br>
@@ -189,7 +190,7 @@ if (isset($_POST['update'])) {
         </div>
     </fieldset>
 
-    <input type="submit" value="Guardar cliente">
+    <input type="submit" value="Guardar cambios">
 
 </form>
 </body>
