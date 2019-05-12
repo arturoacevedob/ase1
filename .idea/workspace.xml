@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2b0b4be1-8d7c-4364-8440-568a85826da6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/clients.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/clients.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/crud_client/create_client.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/crud_client/create_client.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/crud_client/delete_client.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/crud_client/delete_client.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/crud_product/create_product.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/crud_product/create_product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -50,8 +46,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/admin/crud_client/create_client.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="169">
-                  <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+                <state relative-caret-position="-1433">
+                  <caret line="35" selection-start-line="35" selection-end-line="35" />
                 </state>
               </provider>
             </entry>
@@ -63,8 +59,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/admin/crud_product/create_product.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="212">
-                  <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+                <state relative-caret-position="82">
+                  <caret line="148" column="4" selection-start-line="148" selection-end-line="174" selection-end-column="12" />
                 </state>
               </provider>
             </entry>
@@ -215,10 +211,10 @@
         <option value="$PROJECT_DIR$/agregar-producto.php" />
         <option value="$PROJECT_DIR$/admin/connection.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/admin/crud_product/create_product.php" />
         <option value="$PROJECT_DIR$/admin/clients.php" />
         <option value="$PROJECT_DIR$/admin/crud_client/delete_client.php" />
         <option value="$PROJECT_DIR$/admin/crud_client/create_client.php" />
+        <option value="$PROJECT_DIR$/admin/crud_product/create_product.php" />
       </list>
     </option>
   </component>
@@ -350,14 +346,7 @@
       <workItem from="1557357349720" duration="3761000" />
       <workItem from="1557491688200" duration="9544000" />
       <workItem from="1557600132812" duration="3026000" />
-      <workItem from="1557618126955" duration="7757000" />
-    </task>
-    <task id="LOCAL-00077" summary="num-list border">
-      <created>1553666971741</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1553666971741</updated>
+      <workItem from="1557618126955" duration="8596000" />
     </task>
     <task id="LOCAL-00078" summary="Added index.html to organico nav.">
       <created>1553667320650</created>
@@ -695,11 +684,18 @@
       <option name="project" value="LOCAL" />
       <updated>1557620053964</updated>
     </task>
-    <option name="localTasksCounter" value="126" />
+    <task id="LOCAL-00126" summary="fixed a lot shit">
+      <created>1557627326572</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1557627326572</updated>
+    </task>
+    <option name="localTasksCounter" value="127" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="326881000" />
+    <option name="totallyTimeSpent" value="327720000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -818,7 +814,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/js/tiny-date-picker" />
     </ignored-roots>
-    <MESSAGE value="Día 14" />
     <MESSAGE value="finished clientes table&#10;missing pedidos table in sql" />
     <MESSAGE value="Refactored admin.php to clients.php" />
     <MESSAGE value="created radio input in client's create.php" />
@@ -843,7 +838,8 @@
     <MESSAGE value="Create product now has weight and price table." />
     <MESSAGE value="more advances in create product" />
     <MESSAGE value="create product php things" />
-    <option name="LAST_COMMIT_MESSAGE" value="create product php things" />
+    <MESSAGE value="fixed a lot shit" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed a lot shit" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1069,15 +1065,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/crud_client/create_client.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="-1433">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/crud_product/create_product.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+        <state relative-caret-position="82">
+          <caret line="148" column="4" selection-start-line="148" selection-end-line="174" selection-end-column="12" />
         </state>
       </provider>
     </entry>

@@ -24,21 +24,28 @@ if (isset($_POST['insert'])) {
     $price2 = $_POST['price2'];
     $price3 = $_POST['price3'];
 
-    if ($_FILES['image_path'] != "") {
-        $fileName = strtolower($_FILES['image_path']);
-        $fileNamePath = $fileName;
+    if ($_FILES['image_path']['name'] != "") {
+        $fileName = strtolower($_FILES['image_path']['name']);
+        $tempFile = $_FILES['image_path']['tmp_name'];
+        $fileNamePath = 'images/' . $fileName;
+        if (move_uploaded_file($tempFile, $fileNamePath)) {
+            $uploadOk = 1;
+        } else {
+            echo "Error al cargar el archivo.";
+        }
     }
 
     if ($uploadOk == 1) {
         $q = "insert into products (name_product, description, notes, client_type) values ('$name_product','$description','$notes','$client_type')";
         $id_product = execute($q);
-        $q = "insert into weight_price (weight, price, id_client) values ('$weight1','$price1', '$id_product')";
+        $q = "insert into weight_price (weight, price, id_product) values ('$weight1','$price1', '$id_product')";
         execute($q);
-        $q = "insert into weight_price (weight, price, id_client) values ('$weight2','$price2', '$id_product')";
+        $q = "insert into weight_price (weight, price, id_product) values ('$weight2','$price2', '$id_product')";
         execute($q);
-        $q = "insert into weight_price (weight, price, id_client) values ('$weight3','$price3', '$id_product')";
+        $q = "insert into weight_price (weight, price, id_product) values ('$weight3','$price3', '$id_product')";
         execute($q);
         $q = "insert into images (image_path, id_product) values ('$fileNamePath', '$id_product')";
+        execute($q);
         header("Location: ../products-coffee.php");
     }
 }
