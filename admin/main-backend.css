@@ -7,6 +7,7 @@
     --light: #FFFEF5;
     --light-80: #CCCBC4;
     --yellow: rgb(235, 160, 12);
+    --coral: rgba(194, 72, 25, .5);
 
     --a-link: var(--light);
     --a-visited: #cccbc6;
@@ -225,7 +226,7 @@ th {
     grid-template-rows: auto 1fr;
 }
 .expandable-table.client.wrapper.open{
-    border: 2px solid var(--red);
+    border: 2px solid var(--coral);
 }
 /*      Table Classes > Collapsed Table */
 .collapsed-view > td:nth-child(2) {
@@ -403,4 +404,17 @@ nav ul a{
 
 .radius-right {
     border-radius:0 15px 15px 0;
+}
+
+.border-thing{
+    border-top: 2px solid var(--coral);
+    border-bottom: 2px solid var(--coral);
+}
+.border-thing table, .border-thing caption{
+    padding-left: 20px;
+    border-left: 2px solid var(--coral);
+}
+.border-thing table:first-of-type, .border-thing table:first-of-type caption{
+    padding-left: 0;
+    border-left: none;
 }
