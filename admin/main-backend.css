@@ -269,13 +269,22 @@ table.expandable-table > tbody > tr.expanded-view.open {
 /* buttons */
 .button.red {
     color: var(--a-link);
-    background-color: var(--button-link);
+    background-color: var(--button-link) !important;
     transition: background-color var(--time) var(--ease);
+    cursor: pointer;
 }
 .formbutton{
     padding: 25px 0 0 0;
 }
-
+input.button {
+    border: none;
+}
+.button.red:hover {
+    text-decoration: none;
+    background-color: var(--button-hover) !important;
+    border-bottom: none;
+    transition: background-color var(--time) var(--ease);
+}
 /* Form Classes */
 textarea {
     padding: 0;
@@ -316,14 +325,13 @@ input:focus, select:focus {
 
 /* Styles */
 .batsil-login{
-    display: grid;
-    grid-column: auto auto;
+    text-align: center;
 }
 .batsil-login img{
-    padding: 10px;
-    width: 180px;
+    padding: 10px 0;
+    width: 100px;
 }
-#login{
+.login-background{
     color: white;
     background-color: var(--dark);
 }
