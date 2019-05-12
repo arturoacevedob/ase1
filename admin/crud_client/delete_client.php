@@ -12,10 +12,10 @@ if(!isset($_SESSION['user'])) {
 }
 
 if(isset($_GET['idclient'])) {
-    $id_clients = $_GET['idclient'];
-    $q = "delete from clients where id_client = $id_client";
+    $id_client = $_GET['idclient'];
+    $q = "delete from clients where id_client = " . $id_client . "";
     $recordSet = execute($q);
-    header("Location: clients.php");
+    header("Location: ../clients.php");
     die();
 }
 ?>
