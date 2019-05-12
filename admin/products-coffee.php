@@ -57,8 +57,8 @@ function createCoffeeListOptions()
         while ($weight_price = mysqli_fetch_array($recordSet2)) {
             echo "
                     <tr>
-                        <td>" . $weight_price["weight"] . "</td>
-                        <td>" . $weight_price["price"] . "</td>
+                        <td class='weight-gr'>" . $weight_price["weight"] . "</td>
+                        <td class='currency'>" . $weight_price["price"] . "</td>
                     </tr>";
         }
         echo "      
