@@ -86,6 +86,14 @@ if (isset($_POST['insert'])) {
         </tbody>
     </table>
 
+    <div>
+        <h4>Image Gallery</h4>
+        <ul id="photos_clearing" class="clearing-thumbs" data-clearing>
+        </ul>
+        <br/>
+        <label for='photos'>Add some a photo:</label>
+        <input type="file" id="photos" name="photos[]" multiple/>
+    </div>
 
 </form>
 
