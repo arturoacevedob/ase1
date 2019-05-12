@@ -992,6 +992,12 @@ progress::-webkit-progress-value {
     #proceso .tipo-tueste p:nth-child(8) {
         left: -3%;
     }
+    .mapa-desktop{
+        display: block !important;
+    }
+    .mapa-mobil{
+        display: none;
+    }
 
 }
 
@@ -1038,6 +1044,35 @@ progress::-webkit-progress-value {
     }
 }
 
+@media screen and (min-width: 320px){
+    .mapa-desktop{
+        display:none;
+        }
+
+    .mapa-mobil{
+            padding: 20px;
+            position: relative;
+            width: 100%;
+            box-sizing: border-box;
+            margin: 0 auto;
+    }
+    .batsil{
+        position: absolute;
+        top: 49%;
+        left: 2%;
+        font-size: 14px;
+    }
+    .japon{
+        position: absolute;
+        top: 39%;
+        left: 82%;
+        font-size: 14px;
+    
+    }
+    #nosotros #image-nuestra-historia {
+        background: url(../images/nosotros/mexico_2.svg) 0 0% / contain no-repeat;
+    }
+}
 @media screen and (min-width: 640px) {
     h2 {
         font-size: 40px;
@@ -1087,6 +1122,9 @@ progress::-webkit-progress-value {
         ) 0 0 / cover no-repeat;
     }
 
+
+    
+    
     /* —————— AQUÍ EMPIEZAN ESTILOS DE NOSOTROS—————— */
     #nosotros .mision {
         border-right: 2px solid var(--yellow);

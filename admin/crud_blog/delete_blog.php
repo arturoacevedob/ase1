@@ -11,11 +11,11 @@ if(!isset($_SESSION['user'])) {
     die();
 }
 
-if(isset($_GET['idproduct'])) {
-    $id_product = $_GET['idproduct'];
-    $q = "delete from products where id_product = " . $id_product . "";
+if(isset($_GET['idblog'])) {
+    $id_blog = $_GET['idblog'];
+    $q = "delete from blogs where id_blog = " . $id_blog . "";
     $recordSet = execute($q);
-    header("Location: ../products-coffee.php");
+    header("Location: ../blog.php");
     die();
 }
 ?>
