@@ -38,7 +38,7 @@
     </ul>
 </nav>
 
-<div>
+<div class="big-margin">
 
     <div class="global-toolbar">
         <h1>Pedidos</h1>

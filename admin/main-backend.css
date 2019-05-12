@@ -8,6 +8,7 @@
     --light-80: #CCCBC4;
     --yellow: rgb(235, 160, 12);
     --coral: rgba(194, 72, 25, .5);
+    --light-grey: rgba(64, 41, 10, 0.05);
 
     --a-link: var(--light);
     --a-visited: #cccbc6;
@@ -32,6 +33,11 @@ h1, h2, h3, h4, h5, h6, p, td, th {
 }
 
 /* Colors */
+
+/* font */
+.bold{
+    font-weight: bold;
+}
 
 /* Utility classes */
 .order-1 {
@@ -181,6 +187,7 @@ h1, h2, h3, h4, h5, h6, p, td, th {
 .grid-column {
     display: grid;
     grid-auto-flow: column;
+    grid-gap: 10px;
 }
 
 /* Table Classes */
@@ -286,6 +293,22 @@ input.button {
     border-bottom: none;
     transition: background-color var(--time) var(--ease);
 }
+.button.red-outline {
+    padding: calc(var(--button-padding) - 0.20rem);
+    background-color: transparent;
+    color: var(--red);
+    border: 3px solid var(--red);
+    transition: border var(--time) var(--ease);
+}
+.button {
+    padding: var(--button-padding);
+    display: inline-block;
+    color: var(--light);
+    text-align: center;
+    font-weight: 700;
+    border-radius: var(--button-border-radius);
+    cursor: pointer;
+}
 /* Form Classes */
 textarea {
     padding: 0;
@@ -382,6 +405,10 @@ nav .active {
     border-left: solid 3px var(--a-active);
 }
 
+nav .active.pro{
+    padding: 10px 127px 10px 70px !important;
+}
+
 nav ul{
     display: grid;
     margin-top: 30px;
@@ -417,4 +444,19 @@ nav ul a{
 .border-thing table:first-of-type, .border-thing table:first-of-type caption{
     padding-left: 0;
     border-left: none;
+}
+
+.last-orders-table div{
+    padding: 8px;
+    background-color: var(--light-grey);
+    border-radius: 15px;
+}
+.order-table caption{
+    border-bottom: 1px solid grey;
+    margin-bottom: 15px;
+}
+.last-orders-table div div{
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
 }
