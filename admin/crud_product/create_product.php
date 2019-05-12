@@ -159,7 +159,7 @@ if (isset($_POST['insert'])) {
     });
 </script>
 
-<script>
+<!--<script>
     $(document).ready(function () {
         $('#file-input').on('change', function () { //on file input change
             if (window.File && window.FileReader && window.FileList && window.Blob) //check File API supported browser
@@ -185,7 +185,7 @@ if (isset($_POST['insert'])) {
             }
         });
     });
-</script>
+</script>-->
 
 </body>
 </html>
