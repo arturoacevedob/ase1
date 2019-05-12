@@ -39,8 +39,8 @@ function createCoffeeListOptions()
 
         echo "
         <div class='product-item grid-1-1'>
-            <div style='background: transparent url(\"images/$image_path\") 50% 50% / cover no-repeat;'></div>
-            <div>
+            <div class='radius-left' style='background: transparent url(\"images/$image_path\") 50% 50% / cover no-repeat;'></div>
+            <div class='product-info radius-right'>
                 <h3>" . $products[$i]["name_product"] . "<span>" . $products[$i]["client_type"] . "</span><span>edit</span></h3>
                 <p>" . $products[$i]["description"] . "</p>
                 <table>
@@ -94,7 +94,7 @@ function createCoffeeListOptions()
 
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
-    <title>Clientes</title>
+    <title>Productos</title>
 </head>
 
 <body class="main-grid">
@@ -126,7 +126,7 @@ function createCoffeeListOptions()
         <?php
         createCoffeeListOptions()
         ?>
-        <a href='crud_product/create_product.php'>Agregar productos</a>
+        <a class="button red" href='crud_product/create_product.php'>Agregar productos</a>
     </div>
 
 </div>

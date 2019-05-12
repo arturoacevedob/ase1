@@ -460,3 +460,9 @@ nav ul a{
     background-color: transparent;
     border-radius: 0;
 }
+
+
+.product-info{
+    padding: 7px;
+    border: 1px solid #D1CDC7;
+}
