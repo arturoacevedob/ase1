@@ -66,8 +66,29 @@ if (isset($_POST['update'])) {
         execute($q);
     }
 
-    $q = "update weight_price set weight1 = '$weight1', weight2 = '$weight2', weight3 = '$weight3', price1 = '$price1', price2 = '$price2', price3 = '$price3' where id_product = '$id_product'";
-    execute($q);
+    if (isset($_POST['weight1'])) {
+        $q = "update weight_price set weight1 = '$weight1', price1 = '$price1' where id_product = '$id_product'";
+        execute($q);
+    } else {
+        $q = "update weight_price set weight1 = null, price1 = null where id_product = '$id_product'";
+        execute($q);
+    }
+
+    if (isset($_POST['weight2']) AND isset($_POST['price2'])) {
+        $q = "update weight_price set weight2 = '$weight2', price2 = '$price2' where id_product = '$id_product'";
+        execute($q);
+    } else {
+        $q = "update weight_price set weight2 = null, price2 = null where id_product = '$id_product'";
+        execute($q);
+    }
+
+    if (isset($_POST['weight3']) AND isset($_POST['price3'])) {
+        $q = "update weight_price set weight3 = '$weight3', price3 = '$price3' where id_product = '$id_product'";
+        execute($q);
+    } else {
+        $q = "update weight_price set weight3 = null, price3 = null where id_product = '$id_product'";
+        execute($q);
+    }
 
     if ($uploadOk == 1) {
         $q = "update images set image_path = '$relativePath' where id_product = '$id_product'";

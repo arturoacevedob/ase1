@@ -51,7 +51,7 @@ include 'header.php';
                                 <li><a class="active" href="nosotros.php" target="_self">Nosotros</a></li>
                                 <li><a href="nuestro-cafe.php" target="_self">Nuestro café</a></li>
                                 <li><a href="proceso.php" target="_self">Proceso</a></li>
-                                <li><a href="productos.php" target="_self">Productos</a></li>
+                                <li><a href="products.php" target="_self">Productos</a></li>
                                 <li><a href="noticias.php" target="_self">Noticias</a></li>
                                 <li><a href="ayuda.php" target="_self">Ayuda</a></li>
                             </ul>
@@ -74,7 +74,7 @@ include 'header.php';
                                 <li><a class="active" href="nosotros.php" target="_self">Nosotros</a></li>
                                 <li><a href="nuestro-cafe.php" target="_self">Nuestro café</a></li>
                                 <li><a href="proceso.php" target="_self">Proceso</a></li>
-                                <li><a href="productos.php" target="_self">Productos</a></li>
+                                <li><a href="products.php" target="_self">Productos</a></li>
                                 <li><a href="noticias.php" target="_self">Noticias</a></li>
                                 <li><a href="ayuda.php" target="_self">Ayuda</a></li>
                                 <?php
@@ -207,7 +207,7 @@ include 'header.php';
                 <article class="grid-image-first">
                     <h3 class="h3-small">Ts'umbal Xitalha</h3>
                     <figure class="image-top-first-round">
-                        <img alt="Logo de TS'umbal Xitalha" src="images/nosotros/logo-tsumbal_xitala.svg">
+                        <img class="tsumbal" alt="Logo de TS'umbal Xitalha" src="images/nosotros/logo-tsumbal_xitala.svg">
                     </figure>
                 </article>
                 <article class="grid-image-first">
@@ -300,7 +300,7 @@ include 'header.php';
             <article class="bproductos">
                 <h3 class="light botones-h3">Productos</h3>
                 <p class="botones-p">Café Tseltal, miel orgánica y jabones artesanales</p>
-                <a class="button red" href="productos.php" target="_self">Leer más »</a>
+                <a class="button red" href="products.php" target="_self">Leer más »</a>
             </article>
         </div>
     </aside>
@@ -604,7 +604,7 @@ include 'header.php';
                     <li><a class="active" href="nosotros.php" target="_self">Nosotros</a></li>
                     <li><a href="nuestro-cafe.php" target="_self">Nuestro café</a></li>
                     <li><a href="proceso.php" target="_self">Proceso</a></li>
-                    <li><a href="productos.php" target="_self">Productos</a></li>
+                    <li><a href="products.php" target="_self">Productos</a></li>
                     <li><a href="noticias.php" target="_self">Noticias</a></li>
                     <li><a href="ayuda.php" target="_self">Ayuda</a></li>
                 </ul>

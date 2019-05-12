@@ -21,9 +21,13 @@ if (isset($_GET['idproduct'])) {
         }
         if (!is_null($row['weight2'])) {
             $weight2 = $row['weight2'];
+        } else {
+            $weight2 = null;
         }
         if (!is_null($row['weight3'])) {
             $weight3 = $row['weight3'];
+        } else {
+            $weight3 = null;
         }
         if (!is_null($row['price1'])) {
             $price1 = $row['price1'];
@@ -32,9 +36,13 @@ if (isset($_GET['idproduct'])) {
         }
         if (!is_null($row['price2'])) {
             $price2 = $row['price2'];
+        } else {
+            $price2 = null;
         }
         if (!is_null($row['price3'])) {
             $price3 = $row['price3'];
+        } else {
+            $price3 = null;
         }
 
         $image_path = $row['image_path'];

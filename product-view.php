@@ -49,7 +49,7 @@ include 'agregar-producto.php';
                             <li><a href="nosotros.php" target="_self">Nosotros</a></li>
                             <li><a href="nuestro-cafe.php" target="_self">Nuestro café</a></li>
                             <li><a href="proceso.php" target="_self">Proceso</a></li>
-                            <li><a class="active" href="productos.php" target="_self">Productos</a></li>
+                            <li><a class="active" href="products.php" target="_self">Productos</a></li>
                             <li><a href="noticias.php" target="_self">Noticias</a></li>
                             <li><a href="ayuda.php" target="_self">Ayuda</a></li>
                         </ul>
@@ -72,7 +72,7 @@ include 'agregar-producto.php';
                             <li><a href="nosotros.php" target="_self">Nosotros</a></li>
                             <li><a href="nuestro-cafe.php" target="_self">Nuestro café</a></li>
                             <li><a href="proceso.php" target="_self">Proceso</a></li>
-                            <li><a href="productos.php" target="_self">Productos</a></li>
+                            <li><a href="products.php" target="_self">Productos</a></li>
                             <li><a href="noticias.php" target="_self">Noticias</a></li>
                             <li><a href="ayuda.php" target="_self">Ayuda</a></li>
                             <?php
@@ -156,8 +156,9 @@ include 'agregar-producto.php';
         <div class="grid-4">
             <article>
                 <h3>Variedad</h3> <br>
-                <p class="p-big">Typica</p> 
-                <p>Uno de los cafés más importantes cultural y genéticamente en el mundo, con alta calidad en Centroamérica.</p>
+                <p class="p-big">Typica</p>
+                <p>Uno de los cafés más importantes cultural y genéticamente en el mundo, con alta calidad en
+                    Centroamérica.</p>
             </article>
             <article>
                 <h3>Mezclas</h3> <br>
@@ -175,7 +176,7 @@ include 'agregar-producto.php';
             </article>
             <article>
                 <h3>Altura</h3> <br>
-                <p >900 - 1400 msnm</p>
+                <p>900 - 1400 msnm</p>
             </article>
             <article>
                 <h3>Temperatura</h3> <br>
@@ -183,7 +184,8 @@ include 'agregar-producto.php';
             </article>
             <article>
                 <h3>Tipo de Suelo</h3> <br>
-                <p >Nuestros cafetales se concentran en la parte de la Selva Norte de Chiapas, en bosques de niebla, teniendo variación en tipos de suelo.</p>
+                <p>Nuestros cafetales se concentran en la parte de la Selva Norte de Chiapas, en bosques de niebla,
+                    teniendo variación en tipos de suelo.</p>
             </article>
         </div>
     </section>
@@ -232,7 +234,7 @@ include 'agregar-producto.php';
                         <a class="link" href="" target="_self">Ver más »</a></p>
                 </section>
             </div>
-            <a class="h2-link right-aligned" href="productos.php" target="_self">Todos los productos »</a>
+            <a class="h2-link right-aligned" href="products.php" target="_self">Todos los productos »</a>
         </aside>
     </div>
 
@@ -246,7 +248,7 @@ include 'agregar-producto.php';
                     <li><a href="nosotros.php" target="_self">Nosotros</a></li>
                     <li><a href="nuestro-cafe.php" target="_self">Nuestro café</a></li>
                     <li><a href="proceso.php" target="_self">Proceso</a></li>
-                    <li><a class="active" href="productos.php" target="_self">Productos</a></li>
+                    <li><a class="active" href="products.php" target="_self">Productos</a></li>
                     <li><a href="noticias.php" target="_self">Noticias</a></li>
                     <li><a href="ayuda.php" target="_self">Ayuda</a></li>
                 </ul>
