@@ -122,11 +122,11 @@ function createCoffeeListOptions()
         <li><a href="products-soap-backend.html" id="soap" target="_self">Jabón</a></li>
     </ul>
 
-    <div class="grid-1-1">
+    <div class="grid-1-1 give-me-gap">
         <?php
         createCoffeeListOptions()
         ?>
-        <a class="button red" href='crud_product/create_product.php'>Agregar productos</a>
+        <a class="button red limited-width" href='crud_product/create_product.php'>Agregar productos</a>
     </div>
 
 </div>

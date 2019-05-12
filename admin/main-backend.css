@@ -189,7 +189,9 @@ h1, h2, h3, h4, h5, h6, p, td, th {
     grid-auto-flow: column;
     grid-gap: 10px;
 }
-
+.give-me-gap{
+    grid-gap: 7px;
+}
 /* Table Classes */
 caption {
     text-align: left;
@@ -308,6 +310,12 @@ input.button {
     font-weight: 700;
     border-radius: var(--button-border-radius);
     cursor: pointer;
+}
+.limited-width{
+    max-width: 280px;
+}
+.kill-that-border{
+    border: none;
 }
 /* Form Classes */
 textarea {
@@ -464,5 +472,6 @@ nav ul a{
 
 .product-info{
     padding: 7px;
+    background-color: white;
     border: 1px solid #D1CDC7;
 }
