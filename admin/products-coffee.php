@@ -39,7 +39,7 @@ function createCoffeeListOptions()
 
         echo "
         <div class='product-item grid-1-1'>
-            <div class='radius-left' style='background: transparent url(\"$image_path\") 50% 50% / cover no-repeat;'></div>
+            <div class='radius-left' style='background: transparent url(\"../$image_path\") 50% 50% / cover no-repeat;'></div>
             <div class='product-info radius-right'>
                 <h3>" . $products[$i]["name_product"] . "<span>" . $products[$i]["client_type"] . "</span><span><a href='crud_product/update_product.php?idproduct=" . $products[$i]["id_product"] . "'>Editar</a></span><span><a href='crud_product/delete_product.php?idproduct=" . $products[$i]["id_product"] . "'>eliminar</a></span></h3>
                 <p>" . $products[$i]["description"] . "</p>

@@ -3,6 +3,7 @@ ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
 session_start();
+include 'connection.php';
 include 'header.php';
 include 'agregar-producto.php';
 ?>
@@ -86,57 +87,91 @@ include 'agregar-producto.php';
     </div>
     <section>
         <h2 class="kill">producto</h2>
-        <article class="grid-product-view container no-padding-top-bottom">
-            <div class="product-description order-0">
-                <h2>Premium Orgánico</h2>
-                <p>Un café de preparación americana con excelente calidad que pocos cafés en el mercado nacional
-                    logran ofrecer.</p>
+
+        <?php
+        if (isset($_GET['idproduct'])) {
+            $id_product = $_GET['idproduct'];
+            $query = "select * from products, weight_price, images where products.id_product = $id_product AND weight_price.id_product = $id_product AND images.id_product = $id_product";
+            $recordSet = execute($query);
+            if ($row = mysqli_fetch_array($recordSet)) {
+                $name_product = $row['name_product'];
+                $description = $row['description'];
+                $notes = $row['notes'];
+                $client_type = $row['client_type'];
+                $weight1 = $row['weight1'];
+                $weight2 = $row['weight2'];
+                $weight3 = $row['weight3'];
+                $price1 = $row['price1'];
+                $price2 = $row['price2'];
+                $price3 = $row['price3'];
+                $image_path = $row['image_path'];
+            }
+        }
+
+        echo "
+        <article class='grid-product-view container no-padding-top-bottom'>
+            <div class='product-description order-0'>
+                <h2>" . $name_product . "</h2>
+                <p>" . $description . "</p>
             </div>
 
-            <form class="grid-product-form">
-                <div class="grid-2-left-aligned">
-                    <fieldset class="h3-small">
+            <form class='grid-product-form'>
+                <div class='grid-2-left-aligned'>
+                    <fieldset class='h3-small'>
                         <label>Peso</label>
-                        <p class="radio-group">
-                            <input id="peso-one" name="peso-selector" type="radio">
-                            <label for="peso-one">250gr</label>
-                            <input id="peso-two" name="peso-selector" type="radio">
-                            <label for="peso-two">500gr</label>
-                            <input id="peso-three" name="peso-selector" type="radio">
-                            <label for="peso-three">1kg</label>
+                        <p class='radio-group'>";
+
+        if (!is_null($weight1)) {
+            echo "
+                            <input id='peso-one' name='peso-selector' type='radio'>
+                            <label for='peso-one'>250gr</label>";
+        }
+
+        if (!is_null($weight2)) {
+            echo "
+                            <input id='peso-two' name='peso-selector' type='radio'>
+                            <label for='peso-two'>500gr</label>";
+        }
+
+        if (!is_null($weight3)) {
+            echo "
+                            <input id='peso-three' name='peso-selector' type='radio'>
+                            <label for='peso-three'>1kg</label>";
+        }
+
+        echo "
                         </p>
                     </fieldset>
-                    <fieldset class="h3-small">
-                        <label for="cantidad">Cantidad</label>
-                        <p><input id="cantidad" name="cantidad" type="number" max="100" min="0"/></p>
+                    <fieldset class='h3-small'>
+                        <label for='cantidad'>Cantidad</label>
+                        <p><input id='cantidad' name='cantidad' type='number' max='100' min='0' value='1'/></p>
                     </fieldset>
                 </div>
-                <fieldset class="h3-small">
+                <fieldset class='h3-small'>
                     <label>Molido del café</label>
-                    <p class="radio-group">
-                        <input id="molido-one" class="radio" name="molido-selector" type="radio">
-                        <label for="molido-one">Americano</label>
-                        <input id="molido-two" class="radio" name="molido-selector" type="radio">
-                        <label for="molido-two">Espresso</label>
-                        <input id="molido-custom-radio" type="radio" name="molido-selector"
-                               class="radio other-input">
-                        <label for="molido-custom-radio">Otro</label>
-                        <select type="number" id="molido-custom-value" class="dependent-input" disabled>
-                            <option value="">#1</option>
-                            <option value="">#2</option>
-                            <option value="">#3</option>
-                            <option value="">#4</option>
-                            <option value="">#5</option>
-                            <option value="">#6</option>
-                            <option value="">#7</option>
+                    <p class='radio-group'>
+                        <input id='molido-one' class='radio' name='molido-selector' type='radio'>
+                        <label for='molido-one'>Americano</label>
+                        <input id='molido-two' class='radio' name='molido-selector' type='radio'>
+                        <label for='molido-two'>Espresso</label>
+                        <input id='molido-custom-radio' type='radio' name='molido-selector'
+                               class='radio other-input'>
+                        <label for='molido-custom-radio'>Otro</label>
+                        <select type='number' id='molido-custom-value' class='dependent-input' disabled>
+                            <option value=''>#1</option>
+                            <option value=''>#2</option>
+                            <option value=''>#3</option>
+                            <option value=''>#4</option>
+                            <option value=''>#5</option>
+                            <option value=''>#6</option>
+                            <option value=''>#7</option>
                         </select>
-
                     </p>
                 </fieldset>
             </form>
 
-            <div class="product-buy grid-2-space-between">
-                <div class="grid-2-space-between align-center bold">
+            <div class='product-buy grid-2-space-between'>
+                <div class='grid-2-space-between align-center bold'>
                     <span>Qt. x</span>
                     <p>$1260</p>
                 </div>
@@ -144,12 +179,14 @@ include 'agregar-producto.php';
                 compra()
                 ?>
             </div>
-            <div class="center-aligned">
+            <div class='center-aligned'>
                 <p>Pide 11KG para envío nacional gratis</p>
             </div>
-            <div class="premium_organico">
+            <div style='background: url($image_path) 50% 50% / cover no-repeat;' class='premium_organico'>
             </div>
-        </article>
+        </article>";
+        ?>
+
     </section>
     <section class="container">
         <h3>Detalles del café</h3> <br>
