@@ -34,6 +34,8 @@
         <li><a href="clients.php" target="_self">Clientes</a></li>
         <li><a class="active" href="orders-pending-backend.php" target="_self">Pedidos</a></li>
         <li><a href="products-coffee.php" target="_self">Productos</a></li>
+        <li><a href="blog.php" target="_self">Blog</a></li>
+
         <li><a href='login.php?killsession=1'>Cerrar sesión</a></li>
     </ul>
 </nav>
@@ -58,7 +60,7 @@
             <label for="search"></label>
             <input id="search" placeholder="Buscar" type="search">
         </div>
-        <button class="button red limited-width kill-that-border">Agregar pedido</button>
+        <button class="button red kill-that-border">Agregar pedido</button>
     </div>
 
     <div class="wrapper pending-item padding-for-all-2">
