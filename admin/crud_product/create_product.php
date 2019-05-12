@@ -40,12 +40,22 @@ if (isset($_POST['insert'])) {
     if ($uploadOk == 1) {
         $q = "insert into products (name_product, description, notes, client_type) values ('$name_product','$description','$notes','$client_type')";
         $id_product = execute($q);
-        $q = "insert into weight_price (weight, price, id_product) values ('$weight1', '$price1', '$id_product')";
-        execute($q);
-        $q = "insert into weight_price (weight, price, id_product) values ('$weight2', '$price2', '$id_product')";
-        execute($q);
-        $q = "insert into weight_price (weight, price, id_product) values ('$weight3', '$price3', '$id_product')";
-        execute($q);
+
+        if (isset($_POST['price1'])) {
+            $q = "insert into weight_price (weight, price, id_product) values ('$weight1', '$price1', '$id_product')";
+            execute($q);
+        }
+
+        if (isset($_POST['price2'])) {
+            $q = "insert into weight_price (weight, price, id_product) values ('$weight2', '$price2', '$id_product')";
+            execute($q);
+        }
+
+        if (isset($_POST['price3'])) {
+            $q = "insert into weight_price (weight, price, id_product) values ('$weight3', '$price3', '$id_product')";
+            execute($q);
+        }
+        
         $q = "insert into images (image_path, id_product) values ('$relativePath', '$id_product')";
         execute($q);
         header("Location: ../products-coffee.php");
