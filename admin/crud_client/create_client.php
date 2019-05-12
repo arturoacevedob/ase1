@@ -53,21 +53,18 @@ if (isset($_POST['insert'])) {
 <html lang="en">
 
 <head>
-    <style>
-        label, input {
-            display: block;
-        }
-    </style>
+      <link href="../main-backend.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="padding-for-all">
 
-<form action="create_client.php" method="post" enctype="multipart/form-data">
-
+<form class="round-red-border" action="create_client.php" method="post" enctype="multipart/form-data">
+<div class="grid-1-1-1 padding-for-all-2">
     <input type="hidden" name="insert" value="insert">
 
-    <h2>Datos Generales</h2>
+    
     <fieldset>
+    <h2>Datos Generales</h2>
         <label for="name_legal">Nombre legal</label>
         <input id="name_legal" type="text" name="name_legal" min="1" max="100" required>
         <label for="name_alias">Aliasl</label>
@@ -81,9 +78,6 @@ if (isset($_POST['insert'])) {
             <input type="radio" name="client_type" id="mayorista" value="1" required>
             <label for="mayorista">Mayorista</label>
         </p>
-    </fieldset>
-
-    <fieldset>
         <h2>Contacto</h2>
         <label for="name_contact">Nombre</label>
         <input id="name_contact" type="text" name="name_contact" min="1" max="50" required>
@@ -121,9 +115,7 @@ if (isset($_POST['insert'])) {
         <label for="rfc">RFC</label>
         <input id="rfc" type="text" name="rfc">
         <label for="payment_method">Método de pago</label>
-    </fieldset>
-
-    <fieldset>
+    
         <h2>Método de pago</h2>
         <div class="radio-group">
             <input class='radio' type="radio" name="payment_method" id="opcion-one" value="0">
@@ -131,9 +123,6 @@ if (isset($_POST['insert'])) {
             <input type="radio" name="payment_method" id="opcion-dos" value="1">
             <label for="opcion-dos">PPD parcialid</label>
         </div>
-    </fieldset>
-
-    <fieldset>
         <h2>Forma</h2>
         <div class="radio-group">
             <input class='radio' type="radio" name="payment_form" id="forma-one" value="0">
@@ -147,9 +136,6 @@ if (isset($_POST['insert'])) {
             <input class='radio' type="radio" name="payment_form" id="forma-cinco" value="4">
             <label for="forma-cinco">Monedero</label>
         </div>
-    </fieldset>
-
-    <fieldset>
         <h2>Uso</h2>
         <div class="radio-group">
             <input class='radio' type="radio" name="payment_use" id="use-one" value="0">
@@ -158,9 +144,10 @@ if (isset($_POST['insert'])) {
             <label for="use-dos">G03 Gastos Gral.</label>
         </div>
     </fieldset>
-
-    <input type="submit" value="Guardar cliente">
-
+</div>
+<div class="bottom-thing grid-1-1-1">
+    <input class="button red limited-width-2 limited-height" type="submit" value="Guardar cliente">
+    </div>
 </form>
 </body>
 </html>

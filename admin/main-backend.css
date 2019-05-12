@@ -183,7 +183,10 @@ h1, h2, h3, h4, h5, h6, p, td, th {
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
 }
-
+.grid-1-1-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 .grid-1-1-1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -196,6 +199,26 @@ h1, h2, h3, h4, h5, h6, p, td, th {
 }
 .give-me-gap{
     grid-gap: 7px;
+}
+.radio-group{
+    width: 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.radio-group input{
+    margin: 13px 0 0 40px;
+    justify-content: center;
+    text-align:left;
+    transition: none;
+}
+.bottom-thing{
+    padding: 30px 10px;
+    background-color: #CCCCCC;
+    border-radius: 0 0 15px 15px;
+}
+.bottom-thing input{
+    grid-column: 3;
+    justify-self: center;
 }
 /* Table Classes */
 caption {
@@ -319,6 +342,12 @@ input.button {
 .limited-width{
     max-width: 280px;
     max-height: 25px;
+}
+.limited-width-2{
+    max-width: 280px;
+}
+.limited-height{
+    max-height: 50px;
 }
 .kill-that-border{
     border: none;
@@ -475,4 +504,22 @@ nav ul a{
     padding: 7px;
     background-color: white;
     border: 1px solid #D1CDC7;
+}
+
+
+.round-red-border{
+    border: 2px solid var(--coral);
+    background-color: #F2F2F2;;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.02);
+}
+
+.round-red-border fieldset{
+    border:transparent;
+    padding-left: 20px;
+    border-left: 2px solid var(--light-80);
+}
+.round-red-border fieldset:first-of-type, .round-red-border fieldset:nth-of-type(5){
+    padding-left: 0;
+    border-left: none;
 }
