@@ -1278,7 +1278,7 @@ progress::-webkit-progress-value {
     }
 }
 #proceso #image-restauracion{
-    background: url(../images/proceso/hombre_restaurando_cafetal_batsil_maya.svg) 0 0 / cover no-repeat;
+    background: url(../images/proceso/hombre_restaurando_cafetal_batsil_maya.svg) 64% 0 / contain no-repeat;
 }
 
 /* —————— AQUÍ EMPIEZAN ESTILOS DE NOSOTROS—————— */
