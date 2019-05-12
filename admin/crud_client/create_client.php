@@ -38,7 +38,7 @@ if (isset($_POST['insert'])) {
     if ($uploadOk == 1) {
         $q = "insert into clients (name_legal, name_alias, giro, client_type) values ('$name_legal', '$name_alias', '$giro', '$client_type');";
         $id_client = execute($q);
-        $q = "insert into contacts(name_contact, email, phone_contact, id_client) values ('$name_contact', '$email', '$phone_contact', '$id_client');";
+        $q = "insert into contacts (name_contact, email, phone_contact, id_client) values ('$name_contact', '$email', '$phone_contact', '$id_client');";
         execute($q);
         $q = "insert into addresses (name_place, address1, address2, country, city, state, phone_address, cp, id_client) values ('$name_place','$address1','$address2','$country','$city','$state','$phone_address','$cp', '$id_client');";
         execute($q);
@@ -85,8 +85,8 @@ if (isset($_POST['insert'])) {
 
     <fieldset>
         <h2>Contacto</h2>
-        <label for="name">Nombre</label>
-        <input id="name" type="text" name="name" min="1" max="50" required>
+        <label for="name_contact">Nombre</label>
+        <input id="name_contact" type="text" name="name_contact" min="1" max="50" required>
         <label for="phone_contact">Número telefónico</label>
         <input id="phone_contact" type="tel" name="phone_contact" min="1" max="20" required>
         <label for="email">Correo electrónico</label>
@@ -160,7 +160,6 @@ if (isset($_POST['insert'])) {
     </fieldset>
 
     <input type="submit" value="Guardar cliente">
-
 
 </form>
 </body>
