@@ -43,7 +43,7 @@ function createProductListOptions()
         <div class='padding-for-all-2'>
         <tr class='expanded-view'>
                 <td colspan='3'>
-                    <div class='grid-1-1-1-1 expanded-view-content padding-for-all'>";
+                    <div class='grid-1-1-1-1 expanded-view-content padding-for-all border-thing'>";
 
         $query2 = "select clients.name_alias, contacts.* from clients inner join contacts on clients.id_client = contacts.id_client where clients.name_alias = '" . $clients[$i]["name_alias"] . "'";
         $recordSet2 = execute($query2);
