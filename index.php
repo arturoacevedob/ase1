@@ -148,7 +148,7 @@ include 'header.php';
             <wbr>
             es cultivado por familias
             indígenas <span>tseltales</span> en la selva norte de <span>Chiapas</span></p>
-        <div class="distribution-map mapa">
+        <div class="distribution-map mapa mapa-desktop">
             <figure><img alt="Mapa mundi de Bats'il Maya para concocer Dónde están y a Dónde llegan" class="mapa-mundi"
                          src="images/inicio/mapa_mundi_donde_estamos_donde_llegamos_batsil_maya.svg">
                 <button class="map-point boton1 fa fa-map-marker contentm centered-y" aria-hidden="true">
@@ -168,6 +168,22 @@ include 'header.php';
                         </div>
                     </div>
                 </button>
+            </figure>
+        </div>
+
+        <div class="mapa-mobil">
+            <figure><img alt="Mapa mundi de Bats'il Maya para concocer Dónde están y a Dónde llegan" class="mapa-mundi"
+                         src="images/inicio/mapa_mundi_mobil_donde_estamos_donde_llegamos_batsil_maya.svg">
+                    <div>
+                        <div >
+                            <h2 class="yellow batsil">Bats'il Maya</h2>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h2 class="yellow japon">Japón</h2>
+                        </div>
+                    </div>
             </figure>
         </div>
     </article>
