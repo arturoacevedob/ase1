@@ -317,6 +317,7 @@ input.button {
 }
 .limited-width{
     max-width: 280px;
+    max-height: 25px;
 }
 .kill-that-border{
     border: none;
