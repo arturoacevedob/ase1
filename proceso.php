@@ -504,7 +504,8 @@ include 'header.php';
             <article>
                 <h2 class="kill">article</h2>
 
-            </article>
+            </article>     
+        <div id="form-ilustracion"></div>
         </section>
     </div>
     <div class="bigfoot">

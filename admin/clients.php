@@ -43,7 +43,7 @@ function createProductListOptions()
         <div class='padding-for-all-2'>
         <tr class='expanded-view'>
                 <td colspan='3'>
-                    <div class='grid-1-1-1-1 expanded-view-content padding-for-all'>";
+                    <div class='grid-1-1-1-1 expanded-view-content padding-for-all border-thing'>";
 
         $query2 = "select clients.name_alias, contacts.* from clients inner join contacts on clients.id_client = contacts.id_client where clients.name_alias = '" . $clients[$i]["name_alias"] . "'";
         $recordSet2 = execute($query2);
@@ -55,7 +55,7 @@ function createProductListOptions()
                             <tbody>
                             <tr>
                                 <th>Nombre</th>
-                                <td>" . $contact["name_contact"] . "</td>
+                                <td class='bold'>" . $contact["name_contact"] . "</td>
                             </tr>
                             <tr>
                                 <th>Título</th>
@@ -84,7 +84,7 @@ function createProductListOptions()
                             <tbody>
                             <tr>
                                 <th>Nombre del lugar</th>
-                                <td>" . $address["name_place"] . "</td>
+                                <td class='bold'>" . $address["name_place"] . "</td>
                             </tr>
                             <tr>
                                 <th>Calle y número</th>
@@ -150,7 +150,7 @@ function createProductListOptions()
                 </div>
                         <div class='grid-2-space-between padding-for-all'>
                             <div>Últimos pedidos</div>
-                            <div><a href=''>Todos los pedidos</a></div>
+                            <div><a href=''>Todos los pedidos >></a></div>
                         </div>
                         <div class='grid-column last-orders-table padding-for-all'>
                             <div>
@@ -159,7 +159,7 @@ function createProductListOptions()
                                     <div>#236 »</div>
                                 </div>
                                 <table class='order-table'>
-                                    <caption>Pendiente</caption>
+                                    <caption class='bold'>Pendiente</caption>
                                     <thead>
                                     <tr>
                                         <th>Producto</th>
@@ -190,7 +190,7 @@ function createProductListOptions()
                                         <td class='units'>30</td>
                                         <td class='discount'>759</td>
                                     </tr>
-                                    <tr>
+                                    <tr class='bold'>
                                         <th>Total</th>
                                         <td class='units'>30</td>
                                         <td class='currency'>4320</td>
@@ -204,7 +204,7 @@ function createProductListOptions()
                                     <div>#236 »</div>
                                 </div>
                                 <table class='order-table'>
-                                    <caption>Pendiente</caption>
+                                    <caption class='bold'>Pendiente</caption>
                                     <thead>
                                     <tr>
                                         <th>Producto</th>
@@ -235,7 +235,7 @@ function createProductListOptions()
                                         <td class='units'>30</td>
                                         <td class='discount'>759</td>
                                     </tr>
-                                    <tr>
+                                    <tr class='bold'>
                                         <th>Total</th>
                                         <td class='units'>30</td>
                                         <td class='currency'>4320</td>
@@ -249,7 +249,7 @@ function createProductListOptions()
                                     <div>#236 »</div>
                                 </div>
                                 <table class='order-table'>
-                                    <caption>Pendiente</caption>
+                                    <caption class='bold'>Pendiente</caption>
                                     <thead>
                                     <tr>
                                         <th>Producto</th>
@@ -280,7 +280,7 @@ function createProductListOptions()
                                         <td class='units'>30</td>
                                         <td class='discount'>759</td>
                                     </tr>
-                                    <tr>
+                                    <tr class='bold'>
                                         <th>Total</th>
                                         <td class='units'>30</td>
                                         <td class='currency'>4320</td>
@@ -294,7 +294,7 @@ function createProductListOptions()
                                     <div>#236 »</div>
                                 </div>
                                 <table class='order-table'>
-                                    <caption>Pendiente</caption>
+                                    <caption class='bold'>Pendiente</caption>
                                     <thead>
                                     <tr>
                                         <th>Producto</th>
@@ -325,7 +325,7 @@ function createProductListOptions()
                                         <td class='units'>30</td>
                                         <td class='discount'>759</td>
                                     </tr>
-                                    <tr>
+                                    <tr class='bold'>
                                         <th>Total</th>
                                         <td class='units'>30</td>
                                         <td class='currency'>4320</td>
@@ -401,7 +401,7 @@ function createProductListOptions()
                 <label class="kill" for="search"></label>
                 <input id="search" placeholder="Buscar" type="search">
             </div>
-            <a href='crud_client/create_client.php'>Agregar cliente</a>
+            <a class="button red-outline" href='crud_client/create_client.php'>Agregar cliente</a>
         </div>
     </div>
 

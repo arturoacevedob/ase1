@@ -105,12 +105,12 @@ function createCoffeeListOptions()
     <ul>
         <li><a href="clients.php" target="_self">Clientes</a></li>
         <li><a href="orders-pending-backend.php" target="_self">Pedidos</a></li>
-        <li><a class="active" href="products-coffee.php" target="_self">Productos</a></li>
+        <li><a class="active pro" href="products-coffee.php" target="_self">Productos</a></li>
         <li><a href='login.php?killsession=1'>Cerrar sesión</a></li>
     </ul>
 </nav>
 
-<div class="padding-thing">
+<div class="padding-thing big-margin">
 
     <div class="global-toolbar">
         <h1>Productos</h1>

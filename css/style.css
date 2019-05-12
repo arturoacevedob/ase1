@@ -540,6 +540,9 @@ header a {
     background: url("../images/fade/header_fade_light_batsil_maya.png") 0 100% / contain repeat-x,
     url("../images/inicio/header_cafe_tseltal_solidario_trabajo_digno_batsil_maya.jpg") 70% 0 / cover no-repeat;
 }
+#Contáctanos header{
+    padding-bottom: 0 !important;
+}
 
 /* —————— Dónde estamos y a dónde llegamos —————— */
 
@@ -1214,9 +1217,6 @@ progress::-webkit-progress-value {
 
     /* —————— AQUÍ EMPIEZAN ESTILOS DE PROCESO—————— */
 
-    #proceso #image-restauracion{
-        background: url(../images/proceso/hombre_restaurando_cafetal_batsil_maya.svg) 0 0 / cover no-repeat;
-    }
     #proceso .tipo-tueste p:nth-child(8) {
         top: 59%;
         left: -9%;
@@ -1279,6 +1279,9 @@ progress::-webkit-progress-value {
     .seco{
         padding-top: var(--padding-top-bottom);
     }
+}
+#proceso #image-restauracion{
+    background: url(../images/proceso/hombre_restaurando_cafetal_batsil_maya.svg) 64% 0 / contain no-repeat;
 }
 
 /* —————— AQUÍ EMPIEZAN ESTILOS DE NOSOTROS—————— */
@@ -1503,4 +1506,8 @@ progress::-webkit-progress-value {
 #confirmardireccion header{
     background: url(../images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
     url(../images/confirmacion_de_direccion/header_proceso_de_compra_batsil_maya.png) 70% 71% / cover no-repeat;;
+}
+
+#form-ilustracion{
+    background: url(../images/form/hombre_restaurando_cafetal_batsil_maya.svg) 90% 50% / 60% no-repeat;
 }

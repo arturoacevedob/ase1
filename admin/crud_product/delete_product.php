@@ -13,9 +13,9 @@ if(!isset($_SESSION['user'])) {
 
 if(isset($_GET['idproduct'])) {
     $id_product = $_GET['idproduct'];
-    $q = "delete from products where id_product = $id_product";
+    $q = "delete from products where id_product = " . $id_product . "";
     $recordSet = execute($q);
-    header("Location: clients.php");
+    header("Location: ../products-coffee.php");
     die();
 }
 ?>

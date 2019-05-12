@@ -31,10 +31,14 @@ if(isset($_POST['user'])) {
 
 <head>
     <meta charset="UTF-8">
+    <link href="main-backend.css" rel="stylesheet">
 </head>
 
-<body>
-<h1>Autenticación del Administrador</h1>
+<body class="login-background">
+<div class="batsil-login">
+<div><img alt="Logo de Bats'il Maya" src="../images/logos/batsil_maya_logo.svg"></div>
+<h1 class="padding-for-all-2 h1-small">Autenticación del Administrador</h1>
+</div>
 <form class="form login-wrapper" action='login.php' method='post'>
     <h2 style="text-align: center">Inicia sesion</h2>
     <label for="user">Usuario</label>

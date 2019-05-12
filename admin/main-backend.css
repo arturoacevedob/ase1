@@ -5,6 +5,10 @@
     --dark: #40290A;
     --red: #C24819;
     --light: #FFFEF5;
+    --light-80: #CCCBC4;
+    --yellow: rgb(235, 160, 12);
+    --coral: rgba(194, 72, 25, .5);
+    --light-grey: rgba(64, 41, 10, 0.05);
 
     --a-link: var(--light);
     --a-visited: #cccbc6;
@@ -29,6 +33,11 @@ h1, h2, h3, h4, h5, h6, p, td, th {
 }
 
 /* Colors */
+
+/* font */
+.bold{
+    font-weight: bold;
+}
 
 /* Utility classes */
 .order-1 {
@@ -178,6 +187,7 @@ h1, h2, h3, h4, h5, h6, p, td, th {
 .grid-column {
     display: grid;
     grid-auto-flow: column;
+    grid-gap: 10px;
 }
 
 /* Table Classes */
@@ -223,7 +233,7 @@ th {
     grid-template-rows: auto 1fr;
 }
 .expandable-table.client.wrapper.open{
-    border: 2px solid var(--red);
+    border: 2px solid var(--coral);
 }
 /*      Table Classes > Collapsed Table */
 .collapsed-view > td:nth-child(2) {
@@ -264,14 +274,92 @@ table.expandable-table > tbody > tr.expanded-view.open {
     grid-auto-flow: column;
     justify-content: space-between;
 }
-
+/* buttons */
+.button.red {
+    color: var(--a-link);
+    background-color: var(--button-link) !important;
+    transition: background-color var(--time) var(--ease);
+    cursor: pointer;
+}
+.formbutton{
+    padding: 25px 0 0 0;
+}
+input.button {
+    border: none !important;
+}
+.button.red:hover {
+    text-decoration: none;
+    background-color: var(--button-hover) !important;
+    border-bottom: none;
+    transition: background-color var(--time) var(--ease);
+}
+.button.red-outline {
+    padding: calc(var(--button-padding) - 0.20rem);
+    background-color: transparent;
+    color: var(--red);
+    border: 3px solid var(--red);
+    transition: border var(--time) var(--ease);
+}
+.button {
+    padding: var(--button-padding);
+    display: inline-block;
+    color: var(--light);
+    text-align: center;
+    font-weight: 700;
+    border-radius: var(--button-border-radius);
+    cursor: pointer;
+}
 /* Form Classes */
 textarea {
     padding: 0;
     margin: 0;
 }
+/* Lables, inputs, & stuff*/
+label, label + span, legend, fieldset {
+    padding: 10px 12px 2px;
+    display: block;
+}
+input, textarea {
+    width: 100%;
+    padding: 7px 12px;
+    display: block;
+    color: var(--dark);
+    font-family: inherit;
+    font-size: 1em;
+    border: 1px solid var(--light-80);
+    border-radius: 33px;
+    box-sizing: border-box;
+    box-shadow: 0 0 0 rgba(235, 160, 12, 0.1), inset 0 0 10px 0 rgba(0, 0, 0, 0);
+    transition: border-color var(--time) var(--ease), box-shadow var(--time) var(--ease);
+}
+input:focus, select:focus {
+    outline: none;
+    border: 1px solid var(--yellow);
+    border-radius: 33px;
+    box-shadow: 0 5px 10px rgba(235, 160, 12, 0.1);
+    transition: border-color var(--time) var(--ease), box-shadow var(--time) var(--ease);
+}
+/* Login */
+.login-wrapper {
+    position: absolute;
+    top: 35%;
+    left: calc(50% - 150px);
+    width: 300px;
+}
 
 /* Styles */
+.batsil-login{
+    text-align: center;
+}
+.batsil-login img{
+    padding: 10px 0;
+    width: 100px;
+}
+.login-background{
+    color: white;
+    background-color: var(--dark);
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -317,6 +405,10 @@ nav .active {
     border-left: solid 3px var(--a-active);
 }
 
+nav .active.pro{
+    padding: 10px 127px 10px 70px !important;
+}
+
 nav ul{
     display: grid;
     margin-top: 30px;
@@ -339,4 +431,32 @@ nav ul a{
 
 .radius-right {
     border-radius:0 15px 15px 0;
+}
+
+.border-thing{
+    border-top: 2px solid var(--coral);
+    border-bottom: 2px solid var(--coral);
+}
+.border-thing table, .border-thing caption{
+    padding-left: 20px;
+    border-left: 2px solid var(--coral);
+}
+.border-thing table:first-of-type, .border-thing table:first-of-type caption{
+    padding-left: 0;
+    border-left: none;
+}
+
+.last-orders-table div{
+    padding: 8px;
+    background-color: var(--light-grey);
+    border-radius: 15px;
+}
+.order-table caption{
+    border-bottom: 1px solid grey;
+    margin-bottom: 15px;
+}
+.last-orders-table div div{
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
 }
