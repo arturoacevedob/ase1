@@ -314,6 +314,9 @@ input.button {
 .limited-width{
     max-width: 280px;
 }
+.kill-that-border{
+    border: none;
+}
 /* Form Classes */
 textarea {
     padding: 0;

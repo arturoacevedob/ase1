@@ -58,7 +58,7 @@
             <label for="search"></label>
             <input id="search" placeholder="Buscar" type="search">
         </div>
-        <button class="button red limited-width">Agregar pedido</button>
+        <button class="button red limited-width kill-that-border">Agregar pedido</button>
     </div>
 
     <div class="wrapper pending-item padding-for-all-2">
