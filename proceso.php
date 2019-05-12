@@ -89,8 +89,8 @@ include 'header.php';
     <section>
         <h2 class="kill">Prácticas</h2>
         <article class="grid-2-text-photo">
-            <div STYLE="background-color: GRey" class="grid-2-right-image" id=""></div>
-            <div class="grid-2-left-text container">
+            <div class="grid-2-right-image image-agroecologicas"></div>
+            <div class="grid-2-left-text container" >
                 <div class="wrapper-text">
                     <h3>Prácticas agroecológicas</h3><br>
                     <p class="p-big">En el cafetal, nuestro café es cultivado de manera orgánica, por lo que no se
@@ -144,7 +144,7 @@ include 'header.php';
     </section>
     <section class="container tipo-tueste">
         <h2 class="center-aligned">Tipos de tueste</h2>
-        <figure><img alt="Gráfica de Tipos de tueste"
+        <figure class="tipos-tueste"><img alt="Gráfica de Tipos de tueste"
                      src="images/proceso/proceso_tipos_de_tueste_grafica_batsil_maya.svg"></figure>
         <article class="tueste-claro">
             <h3 class="p-big">Tueste claro</h3>
