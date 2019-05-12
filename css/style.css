@@ -540,6 +540,9 @@ header a {
     background: url("../images/fade/header_fade_light_batsil_maya.png") 0 100% / contain repeat-x,
     url("../images/inicio/header_cafe_tseltal_solidario_trabajo_digno_batsil_maya.jpg") 70% 0 / cover no-repeat;
 }
+#Contáctanos header{
+    padding-bottom: 0 !important;
+}
 
 /* —————— Dónde estamos y a dónde llegamos —————— */
 
@@ -1506,5 +1509,5 @@ progress::-webkit-progress-value {
 }
 
 #form-ilustracion{
-    background: url(../images/form/hombre_restaurando_cafetal_batsil_maya.svg) 0 0 / cover no-repeat;
+    background: url(../images/form/hombre_restaurando_cafetal_batsil_maya.svg) 90% 50% / 60% no-repeat;
 }

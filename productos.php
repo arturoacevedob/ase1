@@ -558,11 +558,7 @@ include 'header.php';
                     </p>
                 </form>
             </div>
-            <article>
-                <h2 class="kill">article</h2>
-
-
-            </article>
+        <div id="form-ilustracion"></div>
         </section>
     </div>
     <div class="bigfoot">

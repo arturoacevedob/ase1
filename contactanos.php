@@ -369,6 +369,7 @@ include 'header.php';
                     </p>
                 </form>
             </div>
+        <div id="form-ilustracion"></div>
         </section>
     </div>
     <div class="bigfoot">
