@@ -38,13 +38,14 @@ if (isset($_POST['insert'])) {
     if ($uploadOk == 1) {
         $q = "insert into products (name_product, description, notes, client_type) values ('$name_product','$description','$notes','$client_type')";
         $id_product = execute($q);
-        $q = "insert into weight_price (weight, price, id_client) values ('$weight1','$price1', '$id_product')";
+        $q = "insert into weight_price (weight, price, id_product) values ('$weight1','$price1', '$id_product')";
         execute($q);
-        $q = "insert into weight_price (weight, price, id_client) values ('$weight2','$price2', '$id_product')";
+        $q = "insert into weight_price (weight, price, id_product) values ('$weight2','$price2', '$id_product')";
         execute($q);
-        $q = "insert into weight_price (weight, price, id_client) values ('$weight3','$price3', '$id_product')";
+        $q = "insert into weight_price (weight, price, id_product) values ('$weight3','$price3', '$id_product')";
         execute($q);
         $q = "insert into images (image_path, id_product) values ('$fileNamePath', '$id_product')";
+        execute($q);
         header("Location: ../products-coffee.php");
     }
 }

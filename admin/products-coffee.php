@@ -39,7 +39,7 @@ function createCoffeeListOptions()
 
         echo "
         <div class='product-item grid-1-1'>
-            <div style='background: transparent url(\"images/$image_path\") 50% 50% / cover no-repeat;'></div>
+            <div style='background: transparent url(\"$image_path\") 50% 50% / cover no-repeat;'></div>
             <div>
                 <h3>" . $products[$i]["name_product"] . "<span>" . $products[$i]["client_type"] . "</span><span>edit</span></h3>
                 <p>" . $products[$i]["description"] . "</p>
