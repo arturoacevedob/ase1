@@ -1127,7 +1127,14 @@ progress::-webkit-progress-value {
         ) 0 0 / cover no-repeat;
     }
 
-
+    .batsil {
+        top: 52%;
+        left: 10%;
+    }
+    .japon {
+        top: 40%;
+        left: 84%;
+    }
     
     
     /* —————— AQUÍ EMPIEZAN ESTILOS DE NOSOTROS—————— */
