@@ -414,24 +414,19 @@ ul {
 
 nav .active {
     color: white;
-    padding: 10px 143px 10px 70px;
     background-color: #4D310C;
     border-left: solid 3px var(--a-active);
 }
-
-nav .active.pro{
-    padding: 10px 127px 10px 70px !important;
-}
-
 nav ul{
     display: grid;
     margin-top: 30px;
-    grid-gap: 25px;
+    grid-gap: 11px;
 }
 nav ul li{
     display: block;
 }
 nav ul a{
+    display: block;
     padding: 10px 60px 10px 70px;
 }
 

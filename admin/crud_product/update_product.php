@@ -26,9 +26,10 @@ if (isset($_GET['idproduct'])) {
 
 // Entra aquí cuando se envía el formulario a este mismo archivo.
 if (isset($_POST['update'])) {
+    $uploadOk = 0;
+    $id_product = $_POST['id_product'];
     $name_product = $_POST['name_product'];
     $description = $_POST['description'];
-    $price = $_POST['price'];
     $notes = $_POST['notes'];
     $client_type = $_POST['client_type'];
     $weight1 = $_POST['weight1'];
@@ -37,13 +38,16 @@ if (isset($_POST['update'])) {
     $price1 = $_POST['price1'];
     $price2 = $_POST['price2'];
     $price3 = $_POST['price3'];
-    $image_path = $_POST['image_path'];
+    if (isset($_POST['image_path'])) {
+        $image_path = $_POST['image_path'];
+    }
 
     $fileName = "";
     $tempFile = "";
     $fileNamePath = "";
 
     if ($_FILES['image_path']['name'] != "") {
+        $uploadOk = 1;
         $fileName = strtolower($_FILES['image_path']['name']);
         $tempFile = $_FILES['image_path']['tmp_name'];
         $fileNamePath = '../images/' . $fileName;
@@ -54,27 +58,23 @@ if (isset($_POST['update'])) {
         }
     }
 
-    $imageField = "";
-    if ($_FILES['image_path']['name'] != "") {
-        $imageField = ", image_path = '$fileNamePath'";
+    $q = "update products set name_product = '$name_product', description = '$description', notes = '$notes' where id_product = '$id_product'";
+    execute($q);
+
+    if (isset($_POST['client_type'])) {
+        $q = "update products set client_type = '$client_type' where id_product = '$id_product'";
+        execute($q);
     }
 
-    $q = "update products set name_product = '$name_product', description = '$description', notes = '$notes', client_type = '$client_type' where id_product = '$id_product'";
+    $q = "update weight_price set weight1 = '$weight1', weight2 = '$weight2', weight3 = '$weight3', price1 = '$price1', price2 = '$price2', price3 = '$price3' where id_product = '$id_product'";
     execute($q);
 
-    $q = "update weight_price set weight1 = '$weight1', price1 = '$price1' where id_product = '$id_product'";
-    execute($q);
+    if ($uploadOk == 1) {
+        $q = "update images set image_path = '$relativePath' where id_product = '$id_product'";
+        execute($q);
+    }
 
-    $q = "update weight_price set weight2 = '$weight2', price2 = '$price2' where id_product = '$id_product'";
-    execute($q);
-
-    $q = "update weight_price set weight3 = '$weight3', price3 = '$price3' where id_product = '$id_product'";
-    execute($q);
-
-    $q = "update images set image_path = '$imageField' where id_product = '$id_product'";
-    execute($q);
-
-    header("Location: clients.php");
+    header("Location: ../products-coffee.php");
 }
 ?>
 
@@ -83,13 +83,9 @@ if (isset($_POST['update'])) {
 <body>
 <h1>Productos</h1>
 
-<?php
-echo "w1: $weight1 p1: $price1 w2: $weight2 p2: $price2 w3: $weight3 p3: $price3";
-?>
-
 <form action='update_product.php' method='post' enctype='multipart/form-data'>
 
-    <input type='hidden' name='insert' value='insert'>
+    <input type='hidden' name='update' value='update'>
     <input type="hidden" name="id_product" value="<?php echo $id_product; ?>">
 
     <label for="name_product">Nombre</label>
@@ -98,8 +94,9 @@ echo "w1: $weight1 p1: $price1 w2: $weight2 p2: $price2 w3: $weight3 p3: $price3
     <input id="description" type='text' name='description' value="<?php echo $description; ?>" maxlength=""> <br>
     <label for="notes">Notas</label>
     <input id="notes" type='text' name='notes' value="<?php echo $notes; ?>" maxlength=""> <br>
-    <label for="mayoristas">¿Disponible para mayoristas?</label>
-    <input type='checkbox' name='client_type' id="mayoristas"
+    <label for="client_type">¿Disponible para mayoristas?</label>
+    <input type='hidden' name='client_type' value='0'>
+    <input type='checkbox' name='client_type' id="client_type"
            value='1' <?php if ($client_type == '1') echo 'checked="checked"'; ?>>
 
     <table>
@@ -131,10 +128,10 @@ echo "w1: $weight1 p1: $price1 w2: $weight2 p2: $price2 w3: $weight3 p3: $price3
         </tbody>
     </table>
 
-    <img src="<?php echo $image_path; ?>" height="100px">
-    <!--<input type="file" id="file-input" name="image_path" multiple/>
-    <div id="thumb-output"></div>-->
-    <input type='file' name='image_path'>
+    <img src="<?php echo "../$image_path"; ?>" height="100px">
+
+    <label for="image_path">Carga una imagen</label>
+    <input type='file' name='image_path' id="image_path">
 
     <input type="submit" value="Guardar cambios">
 
@@ -143,6 +140,10 @@ echo "w1: $weight1 p1: $price1 w2: $weight2 p2: $price2 w3: $weight3 p3: $price3
 <script charset="UTF-8" src="../../js/jquery.js"></script>
 
 <script>
+    $('#client_type').on('change', function () {
+        this.value = this.checked ? 1 : 0;
+        // alert(this.value);
+    }).change();
     $(function () {
         $("#weight1").click(function () {
             if ($(this).is(":checked")) {
