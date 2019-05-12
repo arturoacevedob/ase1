@@ -1518,4 +1518,27 @@ form textarea {
     .mobile-family {
         display: none;
     }
+    #proceso .tipo-tueste p:nth-child(8) {
+        top: 80% !important;
+        left: 1% !important;
+    }
+    #proceso .tueste-claro {
+        top: 44% !important;
+        left: 14% !important;
+    }
+    #proceso .tueste-medio {
+        top: 71% !important;
+        left: 27% !important;
+    }
+    #proceso .tueste-vienes {
+        top: 40% !important;
+        left: 43% !important;
+    }#proceso .tueste-oscuro {
+        top: 67% !important;
+        left: 60% !important;
+    }
+    #proceso .tueste-italiano {
+        top: 39% !important;
+        left: 75% !important;
+    }
 }

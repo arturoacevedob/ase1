@@ -1001,6 +1001,29 @@ progress::-webkit-progress-value {
     .mapa-mobil{
         display: none;
     }
+    #proceso .tipo-tueste p:nth-child(8) {
+        top: 80% !important;
+        left: 1% !important;
+    }
+    #proceso .tueste-claro {
+        top: 44% !important;
+        left: 14% !important;
+    }
+    #proceso .tueste-medio {
+        top: 71% !important;
+        left: 27% !important;
+    }
+    #proceso .tueste-vienes {
+        top: 40% !important;
+        left: 43% !important;
+    }#proceso .tueste-oscuro {
+        top: 67% !important;
+        left: 60% !important;
+    }
+    #proceso .tueste-italiano {
+        top: 39% !important;
+        left: 75% !important;
+    }
 
 }
 
@@ -1083,6 +1106,42 @@ progress::-webkit-progress-value {
 .molidos img {
     width: 30% !important;
 }
+
+.tipos-tueste{
+    
+        margin: auto !important;
+        width: 90% !important;
+    
+}
+#proceso .tueste-claro {
+    top: 46% !important;
+    left: 11% !important;
+}
+#proceso .tueste-medio {
+    top: 70% !important;
+    left: 25% !important;
+}
+#proceso .tueste-vienes {
+    top: 43% !important;
+    left: 39% !important;
+}
+#proceso .tueste-oscuro {
+    top: 67% !important;
+    left: 56% !important;
+}
+#proceso .tueste-italiano {
+    top: 42% !important;
+    left: 71% !important;
+}
+#proceso .tipo-tueste p:nth-child(8) {
+    top: 67% !important;
+    left: -4% !important;
+}
+
+    #proceso .tipo-tueste p:last-child {
+        left: 5% !important;
+        position: relative !important;
+    }
     
 }
 @media screen and (min-width: 640px) {
@@ -1163,15 +1222,21 @@ progress::-webkit-progress-value {
 
     /* —————— AQUÍ EMPIEZAN ESTILOS DE PROCESO—————— */
     #proceso .tipo-tueste p:nth-child(8) {
-        top: 80%;
-        left: -5%;
-
+        top: 76% !important;
+        left: -1% !important;
+    }
+    #proceso .tueste-claro {
+        top: 43% !important;
+        left: 12% !important;
+    }
+    #proceso .tueste-vienes {
+        top: 40% !important;
+        left: 40% !important;
     }
 
     #proceso .tueste-italiano {
-        top: 30%;
-        left: 76%;
-
+        top: 39% !important;
+        left: 73% !important;
     }
     .humedo{
         border-right: 2px solid var(--white);
