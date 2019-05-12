@@ -1142,6 +1142,16 @@ progress::-webkit-progress-value {
         left: 5% !important;
         position: relative !important;
     }
+
+    .chat h2 {
+        background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% -8% / 7% no-repeat !important;
+    }
+    .help-mail h2 {
+        background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% 123% / 7% no-repeat !important;
+    }
+    .call h2 {
+        background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% 61% / 7% no-repeat !important;
+    }
     
 }
 @media screen and (min-width: 640px) {

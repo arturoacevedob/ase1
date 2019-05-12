@@ -522,7 +522,7 @@ input {
 }
 
 .chat h2 {
-    background: url(../images/ayuda/sprites_ayuda_iconos.svg) 0 0 / 9% no-repeat;
+    background: url(../images/ayuda/sprites_ayuda_iconos.svg) 0 0 / 9% no-repeat !important;
 }
 
 .call {
@@ -530,7 +530,7 @@ input {
 }
 
 .call h2 {
-    background: url(../images/ayuda/sprites_ayuda_iconos.svg) 0 49% / 9% no-repeat;
+    background: url(../images/ayuda/sprites_ayuda_iconos.svg) 0 59% / 9% no-repeat !important;
 }
 
 .help-mail {
@@ -538,7 +538,7 @@ input {
 }
 
 .help-mail h2 {
-    background: url(../images/ayuda/sprites_ayuda_iconos.svg) 0 99% / 9% no-repeat;
+    background: url(../images/ayuda/sprites_ayuda_iconos.svg) 0 116% / 9% no-repeat !important;
 }
 .help-mail form input {
     border: 2px solid rgba(64,41,10,.3);
@@ -1518,27 +1518,5 @@ form textarea {
     .mobile-family {
         display: none;
     }
-    #proceso .tipo-tueste p:nth-child(8) {
-        top: 80% !important;
-        left: 1% !important;
-    }
-    #proceso .tueste-claro {
-        top: 44% !important;
-        left: 14% !important;
-    }
-    #proceso .tueste-medio {
-        top: 71% !important;
-        left: 27% !important;
-    }
-    #proceso .tueste-vienes {
-        top: 40% !important;
-        left: 43% !important;
-    }#proceso .tueste-oscuro {
-        top: 67% !important;
-        left: 60% !important;
-    }
-    #proceso .tueste-italiano {
-        top: 39% !important;
-        left: 75% !important;
-    }
+    
 }
