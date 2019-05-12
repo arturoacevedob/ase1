@@ -53,15 +53,15 @@
                 class="tab-counter">#</span></a></li>
     </ul>
 
-    <div class="grid-2-space-between">
+    <div class="grid-2-space-between give-me-gap">
         <div>
             <label for="search"></label>
             <input id="search" placeholder="Buscar" type="search">
         </div>
-        <button>Agregar pedido</button>
+        <button class="button red limited-width">Agregar pedido</button>
     </div>
 
-    <div class="wrapper pending-item">
+    <div class="wrapper pending-item padding-for-all-2">
         <div class="header">
             <h3>#236</h3>
             <p>Hoy - 26/02/19</p>
