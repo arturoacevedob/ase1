@@ -149,7 +149,7 @@ function createProductListOptions()
                 </div>
                         <div class='grid-2-space-between padding-for-all'>
                             <div>Últimos pedidos</div>
-                            <div><a href=''>Todos los pedidos</a></div>
+                            <div><a href=''>Todos los pedidos >></a></div>
                         </div>
                         <div class='grid-column last-orders-table padding-for-all'>
                             <div>
