@@ -3,6 +3,7 @@ ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
 session_start();
+include 'connection.php';
 include 'header.php';
 ?>
 
@@ -49,14 +50,14 @@ include 'header.php';
                             <li><a href="nosotros.php" target="_self">Nosotros</a></li>
                             <li><a href="nuestro-cafe.php" target="_self">Nuestro café</a></li>
                             <li><a href="proceso.php" target="_self">Proceso</a></li>
-                            <li><a class="active" href="productos.php" target="_self">Productos</a></li>
+                            <li><a class="active" href="products.php" target="_self">Productos</a></li>
                             <li><a href="noticias.php" target="_self">Noticias</a></li>
                             <li><a href="ayuda.php" target="_self">Ayuda</a></li>
                         </ul>
                     </nav>
-                        <?php
-                        renderHeader()
-                        ?>
+                    <?php
+                    renderHeader()
+                    ?>
                 </div>
 
                 <div class="nav-wrapper mobile">
@@ -72,7 +73,7 @@ include 'header.php';
                             <li><a href="nosotros.php" target="_self">Nosotros</a></li>
                             <li><a href="nuestro-cafe.php" target="_self">Nuestro café</a></li>
                             <li><a href="proceso.php" target="_self">Proceso</a></li>
-                            <li><a class="active" href="productos.php" target="_self">Productos</a></li>
+                            <li><a class="active" href="products.php" target="_self">Productos</a></li>
                             <li><a href="noticias.php" target="_self">Noticias</a></li>
                             <li><a href="ayuda.php" target="_self">Ayuda</a></li>
                             <?php
@@ -95,21 +96,60 @@ include 'header.php';
         </div>
         <div class="gridbigproduct container">
             <div class="grid-scroll-x">
+
+                <?php
+                $query = "select * from products";
+                $recordSet = execute($query);
+
+                $products = array();
+                $counter = 0;
+                while ($row = mysqli_fetch_array($recordSet)) {
+                    $products[$counter] = array();
+                    $products[$counter]["id_product"] = $row["id_product"];
+                    $products[$counter]["name_product"] = $row["name_product"];
+                    $products[$counter]["description"] = $row["description"];
+                    $products[$counter]["notes"] = $row["notes"];
+                    $products[$counter]["client_type"] = $row["client_type"];
+
+                    $clean_name = preg_replace('/\s*/', '', $row["name_product"]);
+                    $clean_name = strtolower($clean_name);
+                    $products[$counter]["filename"] = $clean_name;
+
+                    $counter++;
+                }
+
+                for ($i = 0; $i < count($products); $i++) {
+
+                    $q = "select image_path from images where images.id_product = " . $products[$i]['id_product'] . " limit 1";
+                    $recordSetImage = execute($q);
+                    $image_row = mysqli_fetch_array($recordSetImage);
+                    $image_path = $image_row['image_path'];
+
+                    echo "
+                    <section class='ind-product'>
+                        <h3 class='title pname h3-small'>" . $products[$i]['name_product'] . "</h3>
+                        <figure class='pimage'><img src='" . $image_path . "'></figure>
+                        <p class='pdescription'>" . $products[$i]['description'] . "<br> <a
+                                class='link ' href='product-view.php?idproduct=" . $products[$i]['id_product'] . "' target='_self'>Ver más »</a></p>
+                    </section>";
+                }
+                ?>
+
                 <section class="ind-product">
                     <h3 class="title pname h3-small">Premium Orgánico</h3>
                     <figure class="pimage"><img
-                            alt="Granos de café premium orgánico de Bats'il Maya"
-                            src="images/productos/cafe/granos_de_cafe_premium_organico_batsil_maya.jpg"></figure>
+                                alt="Granos de café premium orgánico de Bats'il Maya"
+                                src="images/productos/cafe/granos_de_cafe_premium_organico_batsil_maya.jpg"></figure>
                     <p class="pdescription">Únicamente granos que cumplen los más altos estándares de calidad.<br> <a
-                            class="link " href="organico.php" target="_self">Ver más »</a></p>
+                                class="link " href="product-view.php" target="_self">Ver más »</a></p>
                 </section>
                 <section class="ind-product">
                     <h3 class="title pname h3-small">Gourmet Orgánico</h3>
                     <figure class="pimage"><img
-                            alt="Granos de café gourmet orgánico de Bats'il Maya"
-                            src="images/productos/cafe/granos_de_cafe_gourmet_organico_batsil_maya.jpg"></figure>
+                                alt="Granos de café gourmet orgánico de Bats'il Maya"
+                                src="images/productos/cafe/granos_de_cafe_gourmet_organico_batsil_maya.jpg"></figure>
                     <p class="pdescription">Granos con preparación europea son seleccionados cuidadosamente.<br> <a
-                            class="link" href="" target="_self">Ver más »</a></p>
+                                class="link" href="" target="_self">Ver más »</a></p>
                 </section>
                 <section class="ind-product">
                     <h3 class="title pname h3-small">Orgánico</h3>
@@ -117,7 +157,7 @@ include 'header.php';
                                                 src="images/productos/cafe/granos_de_cafe_organico_batsil_maya.jpg">
                     </figure>
                     <p class="pdescription">Un café de preparación americana con excelente calidad.<br> <a
-                            class="link" href="" target="_self">Ver más »</a></p>
+                                class="link" href="" target="_self">Ver más »</a></p>
                 </section>
                 <section class="ind-product">
                     <h3 class="title pname h3-small">Descafeinado</h3>
@@ -140,26 +180,26 @@ include 'header.php';
                 <section class="ind-product">
                     <h3 class="title pname h3-small">Bolsa bordada artesanal para tú café</h3>
                     <figure class="pimage"><img
-                            alt="Bolsa bordada artesanal para tú café"
-                            src="images/productos/extras/bolsa_artesanal_con_etiqueta_batsil_maya.jpg"></figure>
+                                alt="Bolsa bordada artesanal para tú café"
+                                src="images/productos/extras/bolsa_artesanal_con_etiqueta_batsil_maya.jpg"></figure>
                     <p class="pdescription">Nuestra bolsa artesanal es bordada a mano por tseltales.<br> <a
-                            class="link" href="" target="_self">Ver más »</a></p>
+                                class="link" href="" target="_self">Ver más »</a></p>
                 </section>
                 <section class="ind-product">
                     <h3 class="title pname h3-small">Granos de Café con Chocolate</h3>
                     <figure class="pimage"><img
-                            alt="Granos de café con chocolate de Bats'il Maya"
-                            src="images/productos/extras/granos_de_cafe_con_chocolate_batsil_maya.jpg"></figure>
+                                alt="Granos de café con chocolate de Bats'il Maya"
+                                src="images/productos/extras/granos_de_cafe_con_chocolate_batsil_maya.jpg"></figure>
                     <p class="pdescription">Nuestros deliciosos granos de café cubiertos con chocolate.<br> <a
-                            class="link" href="" target="_self">Ver más »</a></p>
+                                class="link" href="" target="_self">Ver más »</a></p>
                 </section>
                 <section class="ind-product">
                     <h3 class="title pname h3-small">Orgánico</h3>
                     <figure class="pimage"><img alt="Granos de café orgánico de Bats'il Maya"
-                        src="images/productos/cafe/granos_de_cafe_descafeinado_batsil_maya.jpg">
+                                                src="images/productos/cafe/granos_de_cafe_descafeinado_batsil_maya.jpg">
                     </figure>
                     <p class="pdescription">Un café de preparación americana con excelente calidad.<br> <a
-                            class="link" href="" target="_self">Ver más »</a></p>
+                                class="link" href="" target="_self">Ver más »</a></p>
                 </section>
             </div>
         </div>
@@ -180,18 +220,18 @@ include 'header.php';
                 <section class="ind-product">
                     <h3 class="title pname h3-small ">Miel envasada</h3>
                     <figure class="pimage"><img
-                            alt="Miel envasada de Bats'il Maya"
-                            src="images/productos/miel/miel_envasada_batsil_maya.jpg"></figure>
+                                alt="Miel envasada de Bats'il Maya"
+                                src="images/productos/miel/miel_envasada_batsil_maya.jpg"></figure>
                     <p class="pdescription">jhbiujogdjiskofjngoi<br> <a
-                            class="link" href="" target="_self">Ver más »</a></p>
+                                class="link" href="" target="_self">Ver más »</a></p>
                 </section>
                 <section class="ind-product">
                     <h3 class="title pname h3-small">Caja de sobres (16gr)</h3>
                     <figure class="pimage"><img
-                            alt="Caja de sobres de Bats'il Maya"
-                            src="images/productos/miel/caja_con_sobres_batsil_maya.jpg"></figure>
+                                alt="Caja de sobres de Bats'il Maya"
+                                src="images/productos/miel/caja_con_sobres_batsil_maya.jpg"></figure>
                     <p class="pdescription">Granos con preparación europea son seleccionados cuidadosamente.<br> <a
-                            class="link" href="" target="_self">Ver más »</a></p>
+                                class="link" href="" target="_self">Ver más »</a></p>
                 </section>
             </div>
         </div>
@@ -224,18 +264,18 @@ include 'header.php';
                 <section class="ind-product">
                     <h3 class="title pname h3-small">Jabón hotelero</h3>
                     <figure class="pimage"><img
-                            alt="Jabón hotelero de Bats'il Maya"
-                            src="images/productos/jabones/jabon_hotelero_batsil_maya.jpg"></figure>
+                                alt="Jabón hotelero de Bats'il Maya"
+                                src="images/productos/jabones/jabon_hotelero_batsil_maya.jpg"></figure>
                     <p class="pdescription">Únicamente granos que cumplen los más altos estándares de calidad.<br> <a
-                            class="link" href="" target="_self">Ver más »</a></p>
+                                class="link" href="" target="_self">Ver más »</a></p>
                 </section>
                 <section class="ind-product">
                     <h3 class="title pname h3-small">Jabón de tocador</h3>
                     <figure class="pimage"><img
-                            alt="Jabon de tocador de Bats'il Maya"
-                            src="images/productos/jabones/jabon_de_tocador_batsil_maya.jpg"></figure>
+                                alt="Jabon de tocador de Bats'il Maya"
+                                src="images/productos/jabones/jabon_de_tocador_batsil_maya.jpg"></figure>
                     <p class="pdescription">Granos con preparación europea son seleccionados cuidadosamente.<br> <a
-                            class="link" href="" target="_self">Ver más »</a></p>
+                                class="link" href="" target="_self">Ver más »</a></p>
                 </section>
                 <section class="ind-product">
                     <h3 class="title pname h3-small">Jabón individual</h3>
@@ -243,7 +283,7 @@ include 'header.php';
                                                 src="images/productos/jabones/jabon_individual_batsil_maya.jpg">
                     </figure>
                     <p class="pdescription">Un café de preparación americana con excelente calidad.<br> <a
-                            class="link" href="" target="_self">Ver más »</a></p>
+                                class="link" href="" target="_self">Ver más »</a></p>
                 </section>
                 <section class="ind-product">
                     <h3 class="title pname h3-small">Kit artesanal</h3>
@@ -258,7 +298,8 @@ include 'header.php';
         <div class="center-aligned container-sequel">
             <aside>
                 <h3 class="h3-small product-title red gimme-padding">Personaliza tu jabón para eventos</h3>
-                <p class="padding-text-center">La fajilla del jabón personalizada con nombre, fecha y mensaje a elegir por $2 extra por jabón.</p>
+                <p class="padding-text-center">La fajilla del jabón personalizada con nombre, fecha y mensaje a elegir
+                    por $2 extra por jabón.</p>
             </aside>
         </div>
     </aside>
@@ -513,7 +554,8 @@ include 'header.php';
                                     -->
                                 </optgroup>
                             </select>
-                            <input class="phone_with_ddd dependent-input" id="tel" name="tel" placeholder="(55) 1234-5678" required
+                            <input class="phone_with_ddd dependent-input" id="tel" name="tel"
+                                   placeholder="(55) 1234-5678" required
                                    type="tel">
                         </div>
                     </fieldset>
@@ -525,7 +567,8 @@ include 'header.php';
                                  data-link-field="dtp_input1" data-link-format="yyyy-mm-dd">
                                 <input class="form-control" readonly size="16" type="text" value="">
                                 <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
-                                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                <span class="input-group-addon"><span
+                                            class="glyphicon glyphicon-calendar"></span></span>
                             </div>
                             <input id="dtp_input1" type="hidden" value=""/>
                         </div>
@@ -535,8 +578,10 @@ include 'header.php';
                                 <div class="input-group date form_time" data-date="" data-date-format="hh:ii"
                                      data-link-field="dtp_input2" data-link-format="hh:ii">
                                     <input class="form-control" readonly size="16" type="text" value="">
-                                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
-                                    <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
+                                    <span class="input-group-addon"><span
+                                                class="glyphicon glyphicon-remove"></span></span>
+                                    <span class="input-group-addon"><span
+                                                class="glyphicon glyphicon-time"></span></span>
                                 </div>
                                 <input id="dtp_input2" type="hidden" value=""/>
                             </div>
@@ -546,8 +591,10 @@ include 'header.php';
                                 <div class="input-group date form_time" data-date="" data-date-format="hh:ii"
                                      data-link-field="dtp_input3" data-link-format="hh:ii">
                                     <input class="form-control" readonly size="16" type="text" value="">
-                                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
-                                    <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
+                                    <span class="input-group-addon"><span
+                                                class="glyphicon glyphicon-remove"></span></span>
+                                    <span class="input-group-addon"><span
+                                                class="glyphicon glyphicon-time"></span></span>
                                 </div>
                                 <input id="dtp_input3" type="hidden" value=""/>
                             </div>
@@ -558,7 +605,7 @@ include 'header.php';
                     </p>
                 </form>
             </div>
-        <div id="form-ilustracion"></div>
+            <div id="form-ilustracion"></div>
         </section>
     </div>
     <div class="bigfoot">
@@ -570,7 +617,7 @@ include 'header.php';
                     <li><a href="nosotros.php" target="_self">Nosotros</a></li>
                     <li><a href="nuestro-cafe.php" target="_self">Nuestro café</a></li>
                     <li><a href="proceso.php" target="_self">Proceso</a></li>
-                    <li><a class="active" href="productos.php" target="_self">Productos</a></li>
+                    <li><a class="active" href="products.php" target="_self">Productos</a></li>
                     <li><a href="noticias.php" target="_self">Noticias</a></li>
                     <li><a href="ayuda.php" target="_self">Ayuda</a></li>
                 </ul>

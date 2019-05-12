@@ -50,7 +50,7 @@ include 'header.php';
                     <li><a href="nosotros.php" target="_self">Nosotros</a></li>
                     <li><a href="nuestro-cafe.php" target="_self">Nuestro café</a></li>
                     <li><a href="proceso.php" target="_self">Proceso</a></li>
-                    <li><a href="productos.php" target="_self">Productos</a></li>
+                    <li><a href="products.php" target="_self">Productos</a></li>
                     <li><a href="noticias.php" target="_self">Noticias</a></li>
                     <li><a href="ayuda.php" target="_self">Ayuda</a></li>
                 </ul>
@@ -73,7 +73,7 @@ include 'header.php';
                     <li><a href="nosotros.php" target="_self">Nosotros</a></li>
                     <li><a href="nuestro-cafe.php" target="_self">Nuestro café</a></li>
                     <li><a href="proceso.php" target="_self">Proceso</a></li>
-                    <li><a href="productos.php" target="_self">Productos</a></li>
+                    <li><a href="products.php" target="_self">Productos</a></li>
                     <li><a href="noticias.php" target="_self">Noticias</a></li>
                     <li><a href="ayuda.php" target="_self">Ayuda</a></li>
                     <?php
@@ -103,7 +103,7 @@ include 'header.php';
                             alt="Granos de café premium orgánico de Bats'il Maya"
                             src="images/productos/cafe/granos_de_cafe_premium_organico_batsil_maya.jpg"></figure>
                     <p class="pdescription">Únicamente granos que cumplen los más altos estándares de calidad.<br> <a
-                            class="link" href="productos.php" target="_self">Ver más »</a></p>
+                                class="link" href="products.php" target="_self">Ver más »</a></p>
                 </section>
                 <section class="ind-product">
                     <h3 class="title pname h3-small">Gourmet Orgánico</h3>
@@ -112,7 +112,7 @@ include 'header.php';
                             alt="Granos de café gourmet orgánico de Bats'il Maya"
                             src="images/productos/cafe/granos_de_cafe_gourmet_organico_batsil_maya.jpg"></figure>
                     <p class="pdescription">Granos con preparación europea son seleccionados cuidadosamente.<br> <a
-                            class="link" href="productos.php" target="_self">Ver más »</a></p>
+                                class="link" href="products.php" target="_self">Ver más »</a></p>
                 </section>
                 <section class="ind-product">
                     <h3 class="title pname h3-small">Orgánico</h3>
@@ -121,7 +121,7 @@ include 'header.php';
                                                 src="images/productos/cafe/granos_de_cafe_organico_batsil_maya.jpg">
                     </figure>
                     <p class="pdescription">Un café de preparación americana con excelente calidad.<br> <a
-                            class="link" href="productos.php" target="_self">Ver más »</a></p>
+                                class="link" href="products.php" target="_self">Ver más »</a></p>
                 </section>
                 <section class="ind-product margin-product-right">
                     <h3 class="title pname h3-small">Descafeinado</h3>
@@ -130,10 +130,10 @@ include 'header.php';
                                                 src="images/productos/cafe/granos_de_cafe_descafeinado_batsil_maya.jpg">
                     </figure>
                     <p class="pdescription">Para aquellas personas que desean disfrutar un rico café libre de cafeína.<br>
-                        <a class="link" href="productos.php" target="_self">Ver más »</a></p>
+                        <a class="link" href="products.php" target="_self">Ver más »</a></p>
                 </section>
             </div>
-            <a class="h2-link right-aligned little-font" href="productos.php" target="_self">Todos los productos »</a>
+            <a class="h2-link right-aligned little-font" href="products.php" target="_self">Todos los productos »</a>
             <a class="button red addbutton1" href="nuestro-cafe.php" target="_self">Nuestro café</a>
             <a class="button red addbutton2" href="proceso.php" target="_self">Proceso</a>
         </div>
@@ -602,7 +602,7 @@ include 'header.php';
                 <li><a href="nosotros.php" target="_self">Nosotros</a></li>
                 <li><a href="nuestro-cafe.php" target="_self">Nuestro café</a></li>
                 <li><a href="proceso.php" target="_self">Proceso</a></li>
-                <li><a href="productos.php" target="_self">Productos</a></li>
+                <li><a href="products.php" target="_self">Productos</a></li>
                 <li><a href="noticias.php" target="_self">Noticias</a></li>
                 <li><a href="ayuda.php" target="_self">Ayuda</a></li>
             </ul>

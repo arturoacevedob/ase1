@@ -49,7 +49,7 @@ include 'header.php';
                             <li><a href="nosotros.php" target="_self">Nosotros</a></li>
                             <li><a href="nuestro-cafe.php" target="_self">Nuestro café</a></li>
                             <li><a href="proceso.php" target="_self">Proceso</a></li>
-                            <li><a href="productos.php" target="_self">Productos</a></li>
+                            <li><a href="products.php" target="_self">Productos</a></li>
                             <li><a href="noticias.php" target="_self">Noticias</a></li>
                             <li><a href="ayuda.php" target="_self">Ayuda</a></li>
                         </ul>
@@ -73,7 +73,7 @@ include 'header.php';
                             <li><a href="nosotros.php" target="_self">Nosotros</a></li>
                             <li><a href="nuestro-cafe.php" target="_self">Nuestro café</a></li>
                             <li><a href="proceso.php" target="_self">Proceso</a></li>
-                            <li><a href="productos.php" target="_self">Productos</a></li>
+                            <li><a href="products.php" target="_self">Productos</a></li>
                             <li><a href="noticias.php" target="_self">Noticias</a></li>
                             <li><a href="ayuda.php" target="_self">Ayuda</a></li>
                             <li class="button outline fit-content"><a href="iniciar_sesion.php" target="_self">Iniciar
@@ -381,7 +381,7 @@ include 'header.php';
                     <li><a href="nosotros.php" target="_self">Nosotros</a></li>
                     <li><a href="nuestro-cafe.php" target="_self">Nuestro café</a></li>
                     <li><a href="proceso.php" target="_self">Proceso</a></li>
-                    <li><a href="productos.php" target="_self">Productos</a></li>
+                    <li><a href="products.php" target="_self">Productos</a></li>
                     <li><a href="noticias.php" target="_self">Noticias</a></li>
                     <li><a href="ayuda.php" target="_self">Ayuda</a></li>
                 </ul>
