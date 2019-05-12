@@ -137,7 +137,7 @@ include 'header.php';
                     la taza.</p>
             </div>
         </div>
-        <div class="grid-2-left-image" style="background-color: grey">
+        <div class="grid-2-left-image" id="caracteristicas-taza">
         </div>
     </section>
     <section class="more container">
