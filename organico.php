@@ -152,37 +152,38 @@ include 'agregar-producto.php';
         </article>
     </section>
     <section class="container">
-        <h3>Detalles del café</h3>
+        <h3>Detalles del café</h3> <br>
         <div class="grid-4">
             <article>
-                <h3>Variedad</h3>
+                <h3>Variedad</h3> <br>
+                <p class="p-big">Typica</p> 
+                <p>Uno de los cafés más importantes cultural y genéticamente en el mundo, con alta calidad en Centroamérica.</p>
             </article>
             <article>
-                <h3>Mezclas</h3>
+                <h3>Mezclas</h3> <br>
             </article>
             <article>
-                <h3>Proceso</h3>
+                <h3>Proceso</h3> <br>
             </article>
             <article>
-                <h3>Notas</h3>
+                <h3>Notas</h3> <br>
+                <p>En su sabor se distinguen notas de avellana, caramelo, frutos rojos y cítricos.</p>
             </article>
             <article>
-                <h3>Ubicación</h3>
+                <h3>Ubicación</h3> <br>
+                <p>Chilón, Chiapas.</p>
             </article>
             <article>
-                <h3>Altura</h3>
-                <div class="altura organic-height"></div>
-                <p class="center-text">900 - 1400 msnm</p>
+                <h3>Altura</h3> <br>
+                <p >900 - 1400 msnm</p>
             </article>
             <article>
-                <h3>Temperatura</h3>
-                <div class="temperatura organic-height"></div>
-                <p></p>
+                <h3>Temperatura</h3> <br>
+                <p>17ºC - 24ºC</p>
             </article>
             <article>
-                <h3>Tipo de Suelo</h3>
-                <div class="suelo organic-height"></div>
-                <p class="center-text">Abundante materia orgánica</p>
+                <h3>Tipo de Suelo</h3> <br>
+                <p >Nuestros cafetales se concentran en la parte de la Selva Norte de Chiapas, en bosques de niebla, teniendo variación en tipos de suelo.</p>
             </article>
         </div>
     </section>
