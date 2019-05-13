@@ -213,7 +213,7 @@ include 'header.php';
                 <article class="grid-image-first">
                     <h3 class="h3-small">Bats'il Maya</h3>
                     <figure class="image-top-first-round">
-                        <img alt="Logo Bats'il Maya" src="images/nosotros/logo_bats_il_maya.svg">
+                        <img class="batsil-maya" alt="Logo Bats'il Maya" src="images/nosotros/logo_bats_il_maya.svg">
                     </figure>
                 </article>
                 <article class="grid-image-first">
