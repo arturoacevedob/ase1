@@ -3,7 +3,7 @@ function renderHeader(){
     $origin = basename($_SERVER['PHP_SELF']);
 
     $headerUser = "
-    <ul class='user-head'>
+    <ul class='user-head grid-nav-1'>
         <li class='cuenta'><a href='cuenta_informacion.php' target='_self' aria-label='cuenta'></a>
         <ul class='submenu'>
                       <li><a href='cuenta_informacion.php' target='_self'>Información</a></li>
@@ -17,7 +17,7 @@ function renderHeader(){
     </ul>";
 
     $header = "
-    <ul>
+    <ul class='grid-nav-1'>
         <li class='button outline fit-content'><a href='iniciar_sesion.php?origin=" . $origin . "' target='_self'>Iniciar sesión</a></li>
         <li class='button red fit-content'><a class='light' href='contactanos.php' target='_self'>Contáctanos</a></li>
     </ul>";
