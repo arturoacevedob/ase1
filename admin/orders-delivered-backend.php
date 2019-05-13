@@ -34,9 +34,9 @@
     <h2 style="display: none">Menú</h2>
     <div><img alt="Logo de Bats'il Maya" src="../images/logos/batsil_maya_logo.svg"></div>
     <ul>
-        <li><a href="clients.php cliente-disactive" target="_self">Clientes</a></li>
-        <li><a class="active bold" href="orders-pending-backend.html" target="_self">Pedidos</a></li>
-        <li><a href="products-backend.html productos-disactive" target="_self">Productos</a></li>
+        <li><a class=" cliente-disactive"href="clients.php" target="_self">Clientes</a></li>
+        <li><a class="active bold pedidos-active" href="orders-pending-backend.html" target="_self">Pedidos</a></li>
+        <li><a class="productos-disactive"href="products-backend.html " target="_self">Productos</a></li>
         <li><a  href="blog.php" target="_self">Blog</a></li>
 
     </ul>
