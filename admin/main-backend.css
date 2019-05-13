@@ -490,7 +490,15 @@ nav ul a{
 .productos-active {
     background: url(../admin/images/strings/backend_strings_amarillo.svg) 16% 115% / 10% no-repeat;
 }
-
+.cliente-disactive {
+    background: url(../admin/images/strings/backend_strings.svg) 16% -12% / 10% no-repeat;
+}
+.pedidos-disactive {
+    background: url(../admin/images/strings/backend_strings.svg) 16% 50% / 10% no-repeat;
+}
+.productos-disactive {
+    background: url(../admin/images/strings/backend_strings.svg) 16% 115% / 10% no-repeat;
+}
 .big-margin{
     margin-left: 300px;
 }
