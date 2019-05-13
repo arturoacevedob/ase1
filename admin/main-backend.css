@@ -458,7 +458,7 @@ ul {
 nav .active {
     color: var(--light);
     background-color: #4D310C;
-    border-left: solid 5px var(--a-active);
+    border-left: solid 15px var(--a-active);
 }
 nav ul{
     display: grid;
