@@ -64,7 +64,8 @@
         <button class="button red kill-that-border">Agregar pedido</button>
     </div>
 
-    <div class="wrapper pending-item padding-for-all-2 margin-top-thing">
+    <div class="wrapper pending-item margin-top-thing">
+        <div class="padding-for-all-2">
         <div class="header">
             <h3>#236</h3>
             <p>Hoy - 26/02/19</p>
@@ -170,10 +171,11 @@
                 </tbody>
             </table>
         </div>
-        <div class="grid-end">
+</div>
+        <div class="bottom-thing grid-end padding-for-all-2">
             <label class="label-left" for="tracking-number">Número de rastreo</label>
             <input class="input-right" id="tracking-number" required type="text">
-            <button type="submit">Enviar a <strong>En Ruta</strong></button>
+            <button class="button red limited-width-2 limited-height kill-that-border" type="submit">Enviar a <strong>En Ruta</strong></button>
         </div>
     </div>
 

@@ -235,6 +235,9 @@ nav a:visited {
     grid-column: 3;
     justify-self: center;
 }
+.pending-orders .bottom-thing input{
+    grid-column: auto;
+}
 /* Table Classes */
 caption {
     text-align: left;
