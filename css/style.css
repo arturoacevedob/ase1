@@ -1163,7 +1163,7 @@ and (max-width: 800px){
         padding-left: 14%;
     }
     .mapa-mobil-cafe{
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr !important;
     }
 
     .tsumbal{
