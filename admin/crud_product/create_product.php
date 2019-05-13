@@ -62,12 +62,14 @@ if (isset($_POST['insert'])) {
             width: 100px;
         }
     </style>
+    <link href="../main-backend.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="padding-for-all">
 <h1>Producto nuevo</h1>
-<form action='create_product.php' method='post' enctype='multipart/form-data'>
-
+<form class="round-red-border" action='create_product.php' method='post' enctype='multipart/form-data'>
+<div class="grid-1-1-1 padding-for-all-2">
+ <fieldset>
     <input type='hidden' name='insert' value='insert'>
 
     <label for="name_product">Nombre</label>
@@ -76,8 +78,11 @@ if (isset($_POST['insert'])) {
     <input id="description" type='text' name='description' max=""> <br>
     <label for="notes">Notas</label>
     <input id="notes" type='text' name='notes' max=""> <br>
+    <p class="radio-group">
     <label for="mayoristas">¿Disponible para mayoristas?</label>
     <input type='checkbox' name='client_type' id="mayoristas" value='1'>
+    </p>
+</fieldset>
 
     <table>
         <thead>
@@ -104,12 +109,12 @@ if (isset($_POST['insert'])) {
         </tr>
         </tbody>
     </table>
-
+</div>
     <!--<input type="file" id="file-input" name="image_path" multiple/>
     <div id="thumb-output"></div>-->
-    <input type='file' name='image_path'>
+    <input class="button limited-width-2 limited-height" type='file' name='image_path'>
 
-    <input type="submit" value="Guardar producto">
+    <input class="button red limited-width-2 limited-height" type="submit" value="Guardar producto">
 
 </form>
 
