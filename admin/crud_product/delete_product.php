@@ -14,7 +14,11 @@ if(!isset($_SESSION['user'])) {
 if(isset($_GET['idproduct'])) {
     $id_product = $_GET['idproduct'];
     $q = "delete from products where id_product = " . $id_product . "";
-    $recordSet = execute($q);
+    execute($q);
+    $q = "delete from weight_price where id_product = " . $id_product . "";
+    execute($q);
+    $q = "delete from images where id_product = " . $id_product . "";
+    execute($q);
     header("Location: ../products_coffee.php");
     die();
 }

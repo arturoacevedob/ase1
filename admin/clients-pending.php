@@ -11,7 +11,7 @@ if (!isset($_SESSION['user'])) {
     die();
 }
 
-function createClientList()
+function createPendingClientList()
 {
     $query = "select * from clients";
     $recordSet = execute($query);
@@ -383,7 +383,7 @@ function createClientList()
     <h2 style="display: none">Menú</h2>
     <div><img alt="Logo de Bats'il Maya" src="../images/logos/batsil_maya_logo.svg"></div>
     <ul>
-        <li><a class="active" href="clients.php" target="_self">Clientes</a></li>
+        <li><a href="clients.php" target="_self">Clientes</a></li>
         <li><a href="orders-pending-backend.php" target="_self">Pedidos</a></li>
         <li><a href="products_coffee.php" target="_self">Productos</a></li>
         <li><a href="blog.php" target="_self">Blog</a></li>
@@ -401,8 +401,8 @@ function createClientList()
     </div>
 
     <ul class="grid-tabs">
-        <li><a href="clients-pending.php" id="clients-pending" target="_self">Pendientes</a></li>
-        <li><a class="active" href="clients.php" id="clients" target="_self">Todos los clientes</a></li>
+        <li><a class="active" href="clients-pending.php" id="clients-pending" target="_self">Pendientes</a></li>
+        <li><a href="clients.php" id="clients" target="_self">Todos los clientes</a></li>
     </ul>
 
     <div class="grid-2-space-between give-me-gap">
@@ -413,7 +413,7 @@ function createClientList()
         <a class="button red-outline" href='crud_client/create_client.php'>Agregar cliente</a>
     </div>
 
-    <?php createClientList(); ?>
+    <?php createPendingClientList(); ?>
 
 </div>
 
