@@ -1031,6 +1031,12 @@ progress::-webkit-progress-value {
         top: 39% !important;
         left: 75% !important;
     }
+    .mapa-mobil-cafe {
+        grid-template-rows: 1fr 0fr !important;
+    }
+    .taza-cafe {
+        grid-template-rows: 1fr 0fr !important;
+    }
 
 }
 
