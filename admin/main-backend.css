@@ -479,6 +479,10 @@ nav ul a{
     padding: 10px 60px 10px 70px;
 }
 
+.cliente-active {
+    background: url(../admin/images/strings/backend_strings_amarillo.svg) 16% -12% / 10% no-repeat;
+}
+
 .big-margin{
     margin-left: 300px;
 }
