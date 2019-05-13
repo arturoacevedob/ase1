@@ -1113,6 +1113,33 @@ and (max-width: 639px){
     .call h2 {
         background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% 61% / 7% no-repeat;
     }
+    #proceso .tipo-tueste p:nth-child(8) {
+        top: 66% !important;
+        left: -5% !important;
+    }
+}
+@media screen 
+and (min-width: 700px) 
+and (max-width: 800px){
+    #nosotros #image-nuestra-historia{
+    background: url(../images/nosotros/mexico_2.svg) 0 50% / contain no-repeat !important;
+    }
+    .mapa-mobil-cafe{
+        grid-template-rows: 1fr !important;
+}  
+.kill-padding-bottom{
+    padding-bottom: 0 !important;
+}
+#nuestrocafe #caracteristicas-taza {
+    background: url(../images/nuestro_cafe/caracteristicas_del_cafe_batsil_maya.svg) 46% 44% / 170% no-repeat !important;
+}
+}
+@media screen 
+and (min-width: 640px) 
+and (max-width: 700px){
+#nuestrocafe #caracteristicas-taza {
+    background: url(../images/nuestro_cafe/caracteristicas_del_cafe_batsil_maya.svg) 49% 0 / contain no-repeat !important;
+}
 }
 
 @media screen and (min-width: 640px) {
@@ -1212,9 +1239,7 @@ and (max-width: 639px){
     .taza-cafe{
         grid-template-rows: 1fr 1fr;
         }
-        #nuestrocafe #caracteristicas-taza {
-            background: url(../images/nuestro_cafe/caracteristicas_del_cafe_batsil_maya.svg) 49% 0 / contain no-repeat !important;
-        }
+        
     .molidos img {
     width: 30% !important;
     }
@@ -1474,10 +1499,7 @@ and (max-width: 639px){
     top: 42% !important;
     left: 71% !important;
 }
-#proceso .tipo-tueste p:nth-child(8) {
-    top: 66% !important;
-    left: -5% !important;
-}
+
 
     #proceso .tipo-tueste p:last-child {
         left: 5% !important;
