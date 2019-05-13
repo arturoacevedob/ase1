@@ -465,7 +465,7 @@ ul {
 nav .active {
     color: var(--light);
     background-color: #4D310C;
-    border-left: solid 15px var(--a-active);
+    border-left: solid 15px var(--a-active) !important;
 }
 nav ul{
     display: grid;
@@ -478,6 +478,7 @@ nav ul li{
 nav ul a{
     display: block;
     padding: 10px 60px 10px 70px;
+    border-left: 15px solid var(--dark);
 }
 
 .big-margin{
@@ -546,8 +547,7 @@ nav ul a{
 }
 
 
-
-.pending-orders .margin-top-thing{
+.margin-top-thing{
     margin-top: 20px;
 }
 .pending-orders .header{

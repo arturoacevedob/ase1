@@ -150,7 +150,7 @@ function createCoffeeListOptions()
             <input id="search" placeholder="Buscar" type="search">
         </div>
         <a class="button red limited-width" href='crud_product/create_product.php'>Agregar productos</a></div>
-    <div class="grid-1-1 give-me-gap">
+    <div class="grid-1-1 give-me-gap margin-top-thing">
         <?php
         createCoffeeListOptions()
         ?>
