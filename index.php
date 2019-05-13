@@ -1,4 +1,4 @@
-<?php	
+<?php
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
@@ -55,9 +55,9 @@ include 'header.php';
                     <li><a href="ayuda.php" target="_self">Ayuda</a></li>
                 </ul>
             </nav>
-                <?php
-	            renderHeader()    
-	            ?>
+            <?php
+            renderHeader()
+            ?>
         </div>
 
         <div class="nav-wrapper mobile">
@@ -77,8 +77,8 @@ include 'header.php';
                     <li><a href="noticias.php" target="_self">Noticias</a></li>
                     <li><a href="ayuda.php" target="_self">Ayuda</a></li>
                     <?php
-	                renderHeader()    
-	                ?>
+                    renderHeader()
+                    ?>
                 </ul>
             </nav>
         </div>
@@ -100,8 +100,8 @@ include 'header.php';
                     <h3 class="title pname h3-small">Premium Orgánico</h3>
                     <p><span class="price red">$80-$100</span></p>
                     <figure class="pimage"><img
-                            alt="Granos de café premium orgánico de Bats'il Maya"
-                            src="images/productos/cafe/granos_de_cafe_premium_organico_batsil_maya.jpg"></figure>
+                                alt="Granos de café premium orgánico de Bats'il Maya"
+                                src="images/productos/cafe/granos_de_cafe_premium_organico_batsil_maya.jpg"></figure>
                     <p class="pdescription">Únicamente granos que cumplen los más altos estándares de calidad.<br> <a
                                 class="link" href="products.php" target="_self">Ver más »</a></p>
                 </section>
@@ -109,8 +109,8 @@ include 'header.php';
                     <h3 class="title pname h3-small">Gourmet Orgánico</h3>
                     <p><span class="price red">$80-$100</span></p>
                     <figure class="pimage"><img
-                            alt="Granos de café gourmet orgánico de Bats'il Maya"
-                            src="images/productos/cafe/granos_de_cafe_gourmet_organico_batsil_maya.jpg"></figure>
+                                alt="Granos de café gourmet orgánico de Bats'il Maya"
+                                src="images/productos/cafe/granos_de_cafe_gourmet_organico_batsil_maya.jpg"></figure>
                     <p class="pdescription">Granos con preparación europea son seleccionados cuidadosamente.<br> <a
                                 class="link" href="products.php" target="_self">Ver más »</a></p>
                 </section>
@@ -174,16 +174,16 @@ include 'header.php';
         <div class="mapa-mobil">
             <figure><img alt="Mapa mundi de Bats'il Maya para concocer Dónde están y a Dónde llegan" class="mapa-mundi"
                          src="images/inicio/mapa_mundi_mobil_donde_estamos_donde_llegamos_batsil_maya.svg">
+                <div>
                     <div>
-                        <div >
-                            <h2 class="yellow batsil">Bats'il Maya</h2>
-                        </div>
+                        <h2 class="yellow batsil">Bats'il Maya</h2>
                     </div>
+                </div>
+                <div>
                     <div>
-                        <div>
-                            <h2 class="yellow japon">Japón</h2>
-                        </div>
+                        <h2 class="yellow japon">Japón</h2>
                     </div>
+                </div>
             </figure>
         </div>
     </article>
@@ -301,7 +301,8 @@ include 'header.php';
                 <figure class="image-top-first-round">
                     <img src="images/inicio/proceso_batsil_maya.jpg" alt="Manos con la cereza de café">
                 </figure>
-                <p class="set-height-us">Prácticas agroecológicas, restauración de cafetales, beneficio húmedo y seco.</p>
+                <p class="set-height-us">Prácticas agroecológicas, restauración de cafetales, beneficio húmedo y
+                    seco.</p>
                 <a class="button red fit-content" target="_self" href="proceso.php">Nuestras prácticas</a>
             </section>
         </div>
@@ -310,7 +311,7 @@ include 'header.php';
 <div class="green-bg">
     <section class="llamada container light">
         <div class="join">
-            <form>
+            <form action="contact_pending.php" method='post' enctype='multipart/form-data'>
                 <h2>¡Agenda una llamada!</h2>
                 <p>Integer et arcu id nisl mollis lacinia. Sed accumsan ornare metus a tristique. Donec gravida odio
                     lorem, ac aliquet nibh sodales eu.</p>

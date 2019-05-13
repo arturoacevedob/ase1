@@ -262,7 +262,8 @@ th {
     display: grid;
     grid-template-rows: auto 1fr;
 }
-.expandable-table.client.wrapper.open{
+
+.expandable-table.wrapper.open {
     border: 2px solid var(--coral);
 }
 /*      Table Classes > Collapsed Table */

@@ -20,6 +20,7 @@ function createPendingClientList()
     $counter = 0;
     while ($row = mysqli_fetch_array($recordSet)) {
         $clients_pending[$counter] = array();
+        $clients_pending[$counter]["id_client_pending"] = $row['id_client_pending'];
         $clients_pending[$counter]["name_client_pending"] = $row["name_client_pending"];
         $clients_pending[$counter]["email_client_pending"] = $row["email_client_pending"];
         $clients_pending[$counter]["phone_client_pending"] = $row["phone_client_pending"];
@@ -41,308 +42,156 @@ function createPendingClientList()
             <td><span>Día</span><br>" . $clients_pending[$i][day_client_pending] . "</td>
             <td><span>Desde</span><br>" . $clients_pending[$i][from_client_pending] . "</td>
             <td><span>Hasta</span><br>" . $clients_pending[$i][to_client_pending] . "</td>
-            <td><a href='crud_client/register_client.php?idclient=" . $clients[$i]["id_client"] . "'>Registrar</a><a href='crud_client/delete_client.php?idclient=" . $clients[$i]["id_client"] . "'>Eliminar</a></td>
+            <td><a href='crud_client/delete_client_pending.php?idclient=" . $clients_pending[$i]["id_client_pending"] . "'>Eliminar</a></td>
             <td class='radius-right'></td>
         </tr>
         <div class='padding-for-all-2'>
         <tr class='expanded-view'>
                 <td colspan='8'>
-                    <div class='grid-1-1-1-1 expanded-view-content padding-for-all border-thing'>";
+                    <div class='expanded-view-content'>";
 
-        $query2 = "select clients.name_alias, contacts.* from clients inner join contacts on clients.id_client = contacts.id_client where clients.name_alias = '" . $clients[$i]["name_alias"] . "'";
-        $recordSet2 = execute($query2);
-        while ($contact = mysqli_fetch_array($recordSet2)) {
-            echo "
+        if (isset($_POST['insert'])) {
+            $uploadOk = 1;
+            $id_client_pending = $_POST['id_client_pending'];
+            $name_legal = $_POST['name_legal'];
+            $name_alias = $_POST['name_alias'];
+            $giro = $_POST['giro'];
+            $client_type = $_POST['client_type'];
+            $name_contact = $_POST['name_contact'];
+            $email = $_POST['email'];
+            $phone_contact = $_POST['phone_contact'];
+            $name_place = $_POST['name_place'];
+            $address1 = $_POST['address1'];
+            $address2 = $_POST['address2'];
+            $country = $_POST['country'];
+            $city = $_POST['city'];
+            $state = $_POST['state'];
+            $phone_address = $_POST['phone_address'];
+            $cp = $_POST['cp'];
+            $payroll = $_POST['payroll'];
+            $rfc = $_POST['rfc'];
+            $payment_method = $_POST['payment_method'];
+            $payment_form = $_POST['payment_form'];
+            $payment_use = $_POST['payment_use'];
 
-                        <table class='contact-multiple-table hide-all-headers'>
-                            <caption>Contactos</caption>
-                            <tbody>
-                            <tr>
-                                <th>Nombre</th>
-                                <td class='bold'>" . $contact["name_contact"] . "</td>
-                            </tr>
-                            <tr>
-                                <th>Título</th>
-                                <td>Administradora</td>
-                            </tr>
-                            <tr>
-                                <th>Correo</th>
-                                <td class='email'>" . $contact["email"] . "</td>
-                            </tr>
-                            <tr>
-                                <th>Teléfono</th>
-                                <td class='tel'>" . $contact["phone_contact"] . "</td>
-                            </tr>
-                            </tbody>
-                        </table>";
-        }
 
-        $query3 = "select clients.name_alias, addresses.* from clients inner join addresses on clients.id_client = addresses.id_client where clients.name_alias = '" . $clients[$i]["name_alias"] . "'";
-        $recordSet3 = execute($query3);
-        while ($address = mysqli_fetch_array($recordSet3)) {
-            echo "
-                        
-                        <table class='address-multiple-table hide-all-headers'>
-                            <caption>Direcciones</caption>
-        
-                            <tbody>
-                            <tr>
-                                <th>Nombre del lugar</th>
-                                <td class='bold'>" . $address["name_place"] . "</td>
-                            </tr>
-                            <tr>
-                                <th>Calle y número</th>
-                                <td>" . $address["address1"] . "</td>
-                            </tr>
-                            <tr>
-                                <th>Depto, piso, suite, etc.</th>
-                                <td>" . $address["address2"] . "</td>
-                            </tr>
-                            <tr>
-                                <th>Ciudad y CP</th>
-                                <td>" . $address["city"] . ", " . $address["cp"] . "</td>
-                            </tr>
-                            <tr>
-                                <th>Estado y país</th>
-                                <td>" . $address["state"] . ", " . $address["country"] . "</td>
-                            </tr>
-                            <tr>
-                                <th>Teléfono</th>
-                                <td class='tel'>" . $address["phone_address"] . "</td>
-                            </tr>
-                        </table>";
-        }
-
-        $query4 = "select clients.name_alias, billing.* from clients inner join billing on clients.id_client = billing.id_client where clients.name_alias = '" . $clients[$i]["name_alias"] . "'";
-        $recordSet4 = execute($query4);
-        while ($billing = mysqli_fetch_array($recordSet4)) {
-            echo "
-                        
-                        <table class='address-multiple-table hide-all-headers'>
-                            <caption>Facturación</caption>
-        
-                            <tbody>
-                            <tr>
-                                <th>Nómina o razón social</th>
-                                <td>" . $billing["payroll"] . "</td>
-                            </tr>
-                            <tr>
-                                <th>Dirección fiscal</th>
-                                <td>" . $billing["fiscal_address"] . "</td>
-                            </tr>
-                            <tr>
-                                <th>RFC</th>
-                                <td>" . $billing["rfc"] . "</td>
-                            </tr>
-                            <tr>
-                                <th>Método de pago</th>
-                                <td>" . $billing["payment_method"] . "</td>
-                            </tr>
-                            <tr>
-                                <th>Forma y uso de pago</th>
-                                <td>" . $billing["payment_form"] . ", " . $billing["payment_use"] . "</td>
-                            </tr>
-                        </table>";
+            if ($uploadOk == 1) {
+                $q = "insert into clients (name_legal, name_alias, giro, client_type) values ('$name_legal', '$name_alias', '$giro', '$client_type');";
+                $id_client = execute($q);
+                $q = "insert into contacts (name_contact, email, phone_contact, id_client) values ('$name_contact', '$email', '$phone_contact', '$id_client');";
+                execute($q);
+                $q = "insert into addresses (name_place, address1, address2, country, city, state, phone_address, cp, id_client) values ('$name_place','$address1','$address2','$country','$city','$state','$phone_address','$cp', '$id_client');";
+                execute($q);
+                $q = "insert into billing (payroll, rfc, payment_method, payment_form, payment_use, id_client) values ('$payroll', '$rfc', '$payment_method', '$payment_form', '$payment_use', '$id_client');";
+                execute($q);
+                $q = "delete from clients_pending where id_client_pending = " . $id_client_pending . "";
+                execute($q);
+                header("Location: clients.php");
+            }
         }
 
         echo "
-                    <form class='notes-table' action='update_client.php' method='post' enctype='multipart/form-data'>
-                        <label for='notes'>Notas</label>
-                        <textarea id='notes' name='notes'></textarea>
-                        <input type='submit' value='Guardar cambios'>
-                    </form>
+        <form class='round-red-border' action='clients-pending.php' method='post' enctype='multipart/form-data'>
+        <div class='grid-1-1-1 padding-for-all-2'>
+        
+            <input type='hidden' name='insert' value='insert'>
+            <input type='hidden' name='id_client_pending' value='" . $clients_pending[$i]['id_client_pending'] . "'>
+            
+            <fieldset>
+            <h2>Datos Generales</h2>
+                <label for='name_legal'>Nombre legal</label>
+                <input id='name_legal' type='text' name='name_legal' min='1' max='100' required>
+                <label for='name_alias'>Aliasl</label>
+                <input id='name_alias' type='text' name='name_alias' min='1' max='100' required>
+                <label for='giro'>Giro</label>
+                <input id='giro' type='text' name='giro' min='1' max='250' required>
+                <label>Tipo de cliente</label>
+                <p class='radio-group'>
+                    <input type='radio' name='client_type' id='minorista' value='0' required>
+                    <label for='minorista'>Minorista</label>
+                    <input type='radio' name='client_type' id='mayorista' value='1' required>
+                    <label for='mayorista'>Mayorista</label>
+                </p>
+                <h2>Contacto</h2>
+                <label for='name_contact'>Nombre</label>
+                <input id='name_contact' type='text' name='name_contact' min='1' max='50' required
+                       value='" . $clients_pending[$i]['name_client_pending'] . "'>
+                <label for='phone_contact'>Número telefónico</label>
+                <input id='phone_contact' type='tel' name='phone_contact' min='1' max='20' required
+                       value='" . $clients_pending[$i]['phone_client_pending'] . "'>
+                <label for='email'>Correo electrónico</label>
+                <input id='email' type='email' name='email' min='1' max='20' required
+                       value='" . $clients_pending[$i]['email_client_pending'] . "'>
+            </fieldset>
+        
+            <fieldset>
+                <h2>Dirección</h2>
+                <label for='name_place'>Nombre del lugar</label>
+                <input id='name_place' type='text' name='name_place' min='1' max='25' required>
+                <label for='country'>País</label>
+                <input id='country' type='text' name='country' min='1' max='200' required>
+                <label for='address1'>Calle y número</label>
+                <input id='address1' type='text' name='address1' placeholder='Calle y número'>
+                <input id='address2' type='text' name='address2' placeholder='Depto, piso, etc. (opcional)'>
+                <label for='city'>Ciudad</label>
+                <input id='city' type='text' name='city'>
+                <label for='cp'>C.P.</label>
+                <input id='cp' type='number' name='cp' maxlength='5'>
+                <label for='state'>Estado</label>
+                <input id='state' type='text' name='state'>
+                <label for='phone_address'>Teléfono</label>
+                <input id='phone_address' type='text' name='phone_address'>
+            </fieldset>
+        
+            <fieldset>
+                <h2>Facturación</h2>
+                <label for='payroll'>Nómina o razón social</label>
+                <input id='payroll' type='text' name='payroll'>
+                <!-- <label for='fiscal_address'>Domicilio fiscal</label>
+                <input id='fiscal_address' type='text' name='fiscal_address'> -->
+                <label for='rfc'>RFC</label>
+                <input id='rfc' type='text' name='rfc'>
+            
+                <h2>Método de pago</h2>
+                <div class='radio-group'>
+                    <input class='radio' type='radio' name='payment_method' id='opcion-one' value='0'>
+                    <label for='opcion-one'>PUE una exhib.</label>
+                    <input type='radio' name='payment_method' id='opcion-dos' value='1'>
+                    <label for='opcion-dos'>PPD parcialid</label>
                 </div>
-                        <div class='grid-2-space-between padding-for-all'>
-                            <div>Últimos pedidos</div>
-                            <div><a href=''>Todos los pedidos >></a></div>
-                        </div>
-                        <div class='grid-column last-orders-table padding-for-all'>
-                            <div>
-                                <div>
-                                    <div>Hoy - 03/03/19</div>
-                                    <div>#236 »</div>
-                                </div>
-                                <table class='order-table'>
-                                    <caption class='bold'>Pendiente</caption>
-                                    <thead>
-                                    <tr>
-                                        <th>Producto</th>
-                                        <th>Cantidad</th>
-                                        <th>Precio</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td>Orgánico</td>
-                                        <td class='quantity'>10</td>
-                                        <td class='currency'>180</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Gourmet</td>
-                                        <td class='quantity'>8</td>
-                                        <td class='currency'>220</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Especialidad</td>
-                                        <td class='quantity'>6</td>
-                                        <td class='currency'>250</td>
-                                    </tr>
-                                    </tbody>
-                                    <tfoot>
-                                    <tr>
-                                        <th>Descuento del <span class='percentage'>15</span></th>
-                                        <td class='units'>30</td>
-                                        <td class='discount'>759</td>
-                                    </tr>
-                                    <tr class='bold'>
-                                        <th>Total</th>
-                                        <td class='units'>30</td>
-                                        <td class='currency'>4320</td>
-                                    </tr>
-                                    </tfoot>
-                                </table>
-                            </div>
-                            <div>
-                                <div>
-                                    <div>Hoy - 03/03/19</div>
-                                    <div>#236 »</div>
-                                </div>
-                                <table class='order-table'>
-                                    <caption class='bold'>Pendiente</caption>
-                                    <thead>
-                                    <tr>
-                                        <th>Producto</th>
-                                        <th>Cantidad</th>
-                                        <th>Precio</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td>Orgánico</td>
-                                        <td class='quantity'>10</td>
-                                        <td class='currency'>180</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Gourmet</td>
-                                        <td class='quantity'>8</td>
-                                        <td class='currency'>220</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Especialidad</td>
-                                        <td class='quantity'>6</td>
-                                        <td class='currency'>250</td>
-                                    </tr>
-                                    </tbody>
-                                    <tfoot>
-                                    <tr>
-                                        <th>Descuento del <span class='percentage'>15</span></th>
-                                        <td class='units'>30</td>
-                                        <td class='discount'>759</td>
-                                    </tr>
-                                    <tr class='bold'>
-                                        <th>Total</th>
-                                        <td class='units'>30</td>
-                                        <td class='currency'>4320</td>
-                                    </tr>
-                                    </tfoot>
-                                </table>
-                            </div>
-                            <div>
-                                <div>
-                                    <div>Hoy - 03/03/19</div>
-                                    <div>#236 »</div>
-                                </div>
-                                <table class='order-table'>
-                                    <caption class='bold'>Pendiente</caption>
-                                    <thead>
-                                    <tr>
-                                        <th>Producto</th>
-                                        <th>Cantidad</th>
-                                        <th>Precio</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td>Orgánico</td>
-                                        <td class='quantity'>10</td>
-                                        <td class='currency'>180</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Gourmet</td>
-                                        <td class='quantity'>8</td>
-                                        <td class='currency'>220</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Especialidad</td>
-                                        <td class='quantity'>6</td>
-                                        <td class='currency'>250</td>
-                                    </tr>
-                                    </tbody>
-                                    <tfoot>
-                                    <tr>
-                                        <th>Descuento del <span class='percentage'>15</span></th>
-                                        <td class='units'>30</td>
-                                        <td class='discount'>759</td>
-                                    </tr>
-                                    <tr class='bold'>
-                                        <th>Total</th>
-                                        <td class='units'>30</td>
-                                        <td class='currency'>4320</td>
-                                    </tr>
-                                    </tfoot>
-                                </table>
-                            </div>
-                            <div>
-                                <div>
-                                    <div>Hoy - 03/03/19</div>
-                                    <div>#236 »</div>
-                                </div>
-                                <table class='order-table'>
-                                    <caption class='bold'>Pendiente</caption>
-                                    <thead>
-                                    <tr>
-                                        <th>Producto</th>
-                                        <th>Cantidad</th>
-                                        <th>Precio</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td>Orgánico</td>
-                                        <td class='quantity'>10</td>
-                                        <td class='currency'>180</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Gourmet</td>
-                                        <td class='quantity'>8</td>
-                                        <td class='currency'>220</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Especialidad</td>
-                                        <td class='quantity'>6</td>
-                                        <td class='currency'>250</td>
-                                    </tr>
-                                    </tbody>
-                                    <tfoot>
-                                    <tr>
-                                        <th>Descuento del <span class='percentage'>15</span></th>
-                                        <td class='units'>30</td>
-                                        <td class='discount'>759</td>
-                                    </tr>
-                                    <tr class='bold'>
-                                        <th>Total</th>
-                                        <td class='units'>30</td>
-                                        <td class='currency'>4320</td>
-                                    </tr>
-                                    </tfoot>
-                                </table>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
+                <h2>Forma</h2>
+                <div class='radio-group'>
+                    <input class='radio' type='radio' name='payment_form' id='forma-one' value='0'>
+                    <label for='forma-one'>Efectivo</label>
+                    <input class='radio' type='radio' name='payment_form' id='forma-dos' value='1'>
+                    <label for='forma-dos'>Cheque</label>
+                    <input class='radio' type='radio' name='payment_form' id='forma-tres' value='2'>
+                    <label for='forma-tres'>Transferencia</label>
+                    <input class='radio' type='radio' name='payment_form' id='forma-cuatro' value='3'>
+                    <label for='forma-cuatro'>Tarjeto de crédito</label>
+                    <input class='radio' type='radio' name='payment_form' id='forma-cinco' value='4'>
+                    <label for='forma-cinco'>Monedero</label>
                 </div>
-                </tbody>
-            </table>";
+                <h2>Uso</h2>
+                <div class='radio-group'>
+                    <input class='radio' type='radio' name='payment_use' id='use-one' value='0'>
+                    <label for='use-one'>G01 Adquis. Merc.</label>
+                    <input class='radio' type='radio' name='payment_use' id='use-dos' value='1'>
+                    <label for='use-dos'>G03 Gastos Gral.</label>
+                </div>
+            </fieldset>
+        </div>
+        <div class='bottom-thing grid-1-1-1'>
+            <input class='button red limited-width-2 limited-height' type='submit' value='Guardar cliente'>
+            </div>
+        </form>";
+
+        echo "
+                </td>
+        </tr>
+        </div>
+        </tbody>
+        </table>";
     }
 }
 
@@ -387,7 +236,7 @@ function createPendingClientList()
     <h2 style="display: none">Menú</h2>
     <div><img alt="Logo de Bats'il Maya" src="../images/logos/batsil_maya_logo.svg"></div>
     <ul>
-        <li><a href="clients.php" target="_self">Clientes</a></li>
+        <li><a class="active" href="clients.php" target="_self">Clientes</a></li>
         <li><a href="orders-pending-backend.php" target="_self">Pedidos</a></li>
         <li><a href="products_coffee.php" target="_self">Productos</a></li>
         <li><a href="blog.php" target="_self">Blog</a></li>
@@ -426,7 +275,7 @@ function createPendingClientList()
         $(".expandable-table tr.collapsed-view").on("click", function () {
             $(this).toggleClass("open").next(".expanded-view").toggleClass("open");
         });
-        $(".expandable-table.client.wrapper").on("click", function () {
+        $(".expandable-table.wrapper").on("click", function () {
             $(this).toggleClass("open");
         });
     });
