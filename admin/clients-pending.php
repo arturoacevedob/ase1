@@ -32,39 +32,21 @@ function createPendingClientList()
     for ($i = 0; $i < count($clients_pending); $i++) {
 
         echo "
-        <table class='expandable-table client wrapper'>
+        <table class='expandable-table wrapper'>
         <tbody>
         <tr class='collapsed-view'>
-            <td>
-            <div>
-            </table>
-                <thead>
-                    <tr>
-                        <th>Nombre</th>
-                        <th>Correo</th>
-                        <th>Teléfono</th>
-                        <th>Día</th>
-                        <th>Desde</th>
-                        <th>Hasta</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>" . $clients_pending[$i][name_client_pending] . "</td>
-                        <td>" . $clients_pending[$i][email_client_pending] . "</td>
-                        <td>" . $clients_pending[$i][phone_client_pending] . "</td>
-                        <td>" . $clients_pending[$i][day_client_pending] . "</td>
-                        <td>" . $clients_pending[$i][from_client_pending] . "</td>
-                        <td>" . $clients_pending[$i][to_client_pending] . "</td>
-                    </tr>
-                </tbody>
-            </table>
-            </div>
-            </td>
+            <td><span>Nombre</span><br>" . $clients_pending[$i][name_client_pending] . "</td>
+            <td><span>Correo</span><br>" . $clients_pending[$i][email_client_pending] . "</td>
+            <td><span>Teléfono</span><br>" . $clients_pending[$i][phone_client_pending] . "</td>
+            <td><span>Día</span><br>" . $clients_pending[$i][day_client_pending] . "</td>
+            <td><span>Desde</span><br>" . $clients_pending[$i][from_client_pending] . "</td>
+            <td><span>Hasta</span><br>" . $clients_pending[$i][to_client_pending] . "</td>
+            <td><a href='crud_client/register_client.php?idclient=" . $clients[$i]["id_client"] . "'>Registrar</a><a href='crud_client/delete_client.php?idclient=" . $clients[$i]["id_client"] . "'>Eliminar</a></td>
+            <td class='radius-right'></td>
         </tr>
         <div class='padding-for-all-2'>
         <tr class='expanded-view'>
-                <td colspan='3'>
+                <td colspan='8'>
                     <div class='grid-1-1-1-1 expanded-view-content padding-for-all border-thing'>";
 
         $query2 = "select clients.name_alias, contacts.* from clients inner join contacts on clients.id_client = contacts.id_client where clients.name_alias = '" . $clients[$i]["name_alias"] . "'";
