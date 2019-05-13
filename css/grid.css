@@ -1052,6 +1052,16 @@ form textarea {
         grid-auto-flow: column;
         grid-template-columns: repeat(3, minmax(60px, 1fr));
     }
+    .product-buy.grid-2-space-between{
+        display: grid;
+    grid-template-columns: auto;
+    justify-content: space-between;
+    }
+    .add-cart-register-to-buy{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 5px;
+    }
 }
 
 @media screen and (min-width: 768px) {
