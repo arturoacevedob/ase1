@@ -266,7 +266,7 @@ th {
     border: 2px solid var(--coral);
 }
 /*      Table Classes > Collapsed Table */
-.collapsed-view > td:nth-child(2) {
+.client .collapsed-view > td:nth-child(2) {
     text-align: right;
 }
 

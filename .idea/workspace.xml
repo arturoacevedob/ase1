@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b0b4be1-8d7c-4364-8440-568a85826da6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/clients-pending.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/clients.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/clients.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/crud_client/create_client.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/crud_client/create_client.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/crud_client/delete_client.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/crud_client/delete_client.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/crud_product/delete_product.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/crud_product/delete_product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/products_coffee.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/products_coffee.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/product_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/clients-pending.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/clients-pending.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/main-backend.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/main-backend.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -46,21 +41,21 @@
     <favorites_list name="ASE I" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/clients.php">
+        <entry file="file://$PROJECT_DIR$/admin/crud_client/create_client.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="25" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="25" />
+            <state relative-caret-position="229">
+              <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/crud_client/create_client.php">
+        <entry file="file://$PROJECT_DIR$/admin/clients.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+            <state relative-caret-position="278">
+              <caret line="39" column="12" lean-forward="true" selection-start-line="39" selection-start-column="12" selection-end-line="40" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -68,8 +63,26 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/clients-pending.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="50" lean-forward="true" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
+            <state relative-caret-position="143">
+              <caret line="43" column="45" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/main-backend.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="213">
+              <caret line="268" column="8" selection-start-line="268" selection-start-column="8" selection-end-line="268" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/orders-enroute-backend.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="84" column="13" selection-start-line="72" selection-start-column="8" selection-end-line="84" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -100,7 +113,6 @@
       <find>relative</find>
       <find>$weight1</find>
       <find>header</find>
-      <find>$clients</find>
       <find>productos</find>
       <find>1</find>
       <find>`</find>
@@ -117,9 +129,9 @@
       <find>create</find>
       <find>active</find>
       <find>todos</find>
+      <find>$clients</find>
     </findStrings>
     <replaceStrings>
-      <replace>js/jquery.js</replace>
       <replace>&lt;li class=&quot;button red&quot;&gt;&lt;a class=&quot;light&quot; href=&quot;&quot; target=&quot;_self&quot;&gt;Contáctanos&lt;/a&gt;&lt;/li&gt;</replace>
       <replace>&lt;li class=&quot;button red fit-content&quot;&gt;&lt;a class=&quot;light&quot; href=&quot;&quot; target=&quot;_self&quot;&gt;Contáctanos&lt;/a&gt;&lt;/li&gt;</replace>
       <replace>peso</replace>
@@ -149,6 +161,7 @@
       <replace>$row</replace>
       <replace>weight_select</replace>
       <replace>weight_selector</replace>
+      <replace>$clients_pending</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/images/logos</dir>
@@ -205,7 +218,6 @@
         <option value="$PROJECT_DIR$/connection.php" />
         <option value="$PROJECT_DIR$/admin/connection.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/admin/main-backend.css" />
         <option value="$PROJECT_DIR$/admin/blog.php" />
         <option value="$PROJECT_DIR$/organico.php" />
         <option value="$PROJECT_DIR$/productos.php" />
@@ -226,6 +238,7 @@
         <option value="$PROJECT_DIR$/admin/products_coffee.php" />
         <option value="$PROJECT_DIR$/admin/crud_client/create_client.php" />
         <option value="$PROJECT_DIR$/admin/clients.php" />
+        <option value="$PROJECT_DIR$/admin/main-backend.css" />
         <option value="$PROJECT_DIR$/admin/clients-pending.php" />
       </list>
     </option>
@@ -411,21 +424,8 @@
       <workItem from="1557491688200" duration="9544000" />
       <workItem from="1557600132812" duration="3026000" />
       <workItem from="1557618126955" duration="38555000" />
-      <workItem from="1557704200155" duration="11401000" />
-    </task>
-    <task id="LOCAL-00095" summary="Added American Express logo** jiji">
-      <created>1554846654563</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1554846654563</updated>
-    </task>
-    <task id="LOCAL-00096" summary="Client table variables.">
-      <created>1556828335964</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1556828335965</updated>
+      <workItem from="1557704200155" duration="13540000" />
+      <workItem from="1557782479307" duration="570000" />
     </task>
     <task id="LOCAL-00097" summary="New connection and clients PHPs">
       <created>1556836578633</created>
@@ -756,11 +756,25 @@
       <option name="project" value="LOCAL" />
       <updated>1557744872999</updated>
     </task>
-    <option name="localTasksCounter" value="144" />
+    <task id="LOCAL-00144" summary="everything product works now">
+      <created>1557754232612</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1557754232612</updated>
+    </task>
+    <task id="LOCAL-00145" summary="saving advances of clients_pending">
+      <created>1557761322254</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1557761322254</updated>
+    </task>
+    <option name="localTasksCounter" value="146" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="369080000" />
+    <option name="totallyTimeSpent" value="371789000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -879,8 +893,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/js/tiny-date-picker" />
     </ignored-roots>
-    <MESSAGE value="Fixed some create.php typos and structure." />
-    <MESSAGE value="Fixed some href." />
     <MESSAGE value="fixed some frontend things" />
     <MESSAGE value="renamed cruds&#10;temporarly changed to a local connection&#10;fixed some frontend things" />
     <MESSAGE value="reverted connection to local" />
@@ -904,13 +916,14 @@
     <MESSAGE value="saving advances in products and productview" />
     <MESSAGE value="calculate_price according to weight works.&#10;pending: quantity multiplication." />
     <MESSAGE value="quantity multiplication now works.&#10;pending: quantity to be displayed in UI." />
-    <option name="LAST_COMMIT_MESSAGE" value="quantity multiplication now works.&#10;pending: quantity to be displayed in UI." />
+    <MESSAGE value="everything product works now" />
+    <MESSAGE value="saving advances of clients_pending" />
+    <option name="LAST_COMMIT_MESSAGE" value="saving advances of clients_pending" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/testing/index.html" />
     <entry file="file://$USER_HOME$/Desktop/batsilmaya_2019-05-02.sql" />
     <entry file="file://$PROJECT_DIR$/testing/conexion.php" />
     <entry file="file://$PROJECT_DIR$/testing/clientes.php" />
@@ -1050,9 +1063,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/• Projects/ASE I/fran code/productos.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$USER_HOME$/Documents/• Projects/ASE I/fran code/productos.php" />
     <entry file="file://$PROJECT_DIR$/admin/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -1075,9 +1086,10 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="122.5" y="119.5" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="123.0" y="120.0" />
           <SelectedNodes />
           <Categories />
+          <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
@@ -1100,6 +1112,7 @@
           <settings layout="Hierarchic Group" zoom="1.0" x="105.0" y="84.0" />
           <SelectedNodes />
           <Categories />
+          <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
@@ -1128,11 +1141,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-21606" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css" />
     <entry file="file://$PROJECT_DIR$/products.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -1189,13 +1198,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/main-backend.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="197" column="16" selection-start-line="197" selection-start-column="14" selection-end-line="197" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/products_coffee.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
@@ -1203,24 +1205,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/admin/orders-enroute-backend.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="84" column="13" selection-start-line="72" selection-start-column="8" selection-end-line="84" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/admin/crud_client/create_client.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="229">
           <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/clients.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="25" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="25" />
+        <state relative-caret-position="278">
+          <caret line="39" column="12" lean-forward="true" selection-start-line="39" selection-start-column="12" selection-end-line="40" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/main-backend.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="268" column="8" selection-start-line="268" selection-start-column="8" selection-end-line="268" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/clients-pending.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="50" lean-forward="true" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
+        <state relative-caret-position="143">
+          <caret line="43" column="45" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
         </state>
       </provider>
     </entry>
