@@ -73,7 +73,7 @@
         </div>
         <div class="grid-2-1-1 give-me-gap pending-order-tables-thing">
             <table class="order-table">
-                <caption>Orden</caption>
+                <caption class="kill-me">Orden</caption>
                 <thead>
                 <tr>
                     <th>Artículo</th>

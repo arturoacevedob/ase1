@@ -560,7 +560,19 @@ nav ul a{
     padding-left: 20px;
     border-left: 2px solid var(--light-80);
 }
+.pending-order-tables-thing table caption{
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 11px;
+    padding-left: 20px;
+    border-left: 2px solid var(--light-80);
+}
 .pending-order-tables-thing table:first-of-type{
     padding-left: 0;
     border-left: none;
+}
+.kill-me{
+    border-left: transparent !important;
+    border-bottom: transparent !important;
+    padding-left:0 !important;
 }
