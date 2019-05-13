@@ -1181,6 +1181,9 @@ progress::-webkit-progress-value {
     .molidos img {
     width: 30% !important;
     }
+    .help-mail h2 {
+        background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% 113% / 5% no-repeat !important;
+    }
 }
 
 
