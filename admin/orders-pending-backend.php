@@ -32,12 +32,11 @@
     <div><img alt="Logo de Bats'il Maya" src="../images/logos/batsil_maya_logo.svg"></div>
     <ul>
         <li><a href="clients.php" target="_self">Clientes</a></li>
-        <li><a class="active bold pedidos-active" href="orders-pending-backend.php" target="_self">Pedidos</a></li>
+        <li><a class="active bold" href="orders-pending-backend.php" target="_self">Pedidos</a></li>
         <li><a href="products_coffee.php" target="_self">Productos</a></li>
         <li><a href="blog.php" target="_self">Blog</a></li>
     </ul>
     <ul>
-        <li><a href="" target="_self">Ayuda</a></li>
         <li><a href='login.php?killsession=1'>Cerrar Sesión</a></li>
     </ul>
 </nav>
@@ -173,7 +172,7 @@
             </table>
         </div>
 </div>
-        <div class="bottom-thing grid-end padding-for-all-2 give-me-gap">
+        <div class="bottom-thing grid-end padding-for-all-2">
             <label class="label-left" for="tracking-number">Número de rastreo</label>
             <input class="input-right" id="tracking-number" required type="text">
             <button class="button red limited-width-2 limited-height kill-that-border" type="submit">Enviar a <strong>En Ruta</strong></button>
