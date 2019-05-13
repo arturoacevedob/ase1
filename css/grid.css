@@ -522,7 +522,7 @@ input {
 }
 
 .chat h2 {
-    background: url(../images/ayuda/sprites_ayuda_iconos.svg) 0 0 / 9% no-repeat !important;
+    background: url(../images/ayuda/sprites_ayuda_iconos.svg) 0 0 / 9% no-repeat;
 }
 
 .call {
@@ -530,7 +530,7 @@ input {
 }
 
 .call h2 {
-    background: url(../images/ayuda/sprites_ayuda_iconos.svg) 0 59% / 9% no-repeat !important;
+    background: url(../images/ayuda/sprites_ayuda_iconos.svg) 0 59% / 9% no-repeat;
 }
 
 .help-mail {
@@ -538,7 +538,7 @@ input {
 }
 
 .help-mail h2 {
-    background: url(../images/ayuda/sprites_ayuda_iconos.svg) 0 116% / 9% no-repeat !important;
+    background: url(../images/ayuda/sprites_ayuda_iconos.svg) 0 116% / 9% no-repeat;
 }
 .help-mail form input {
     border: 2px solid rgba(64,41,10,.3);

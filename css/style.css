@@ -1059,7 +1059,9 @@ progress::-webkit-progress-value {
         margin: 0 auto;
         width: 40%;
     }
-
+    .help-mail h2 {
+        background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% 113% / 5% no-repeat !important;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -1098,6 +1100,19 @@ and (max-width: 800px){
 .batsil-maya{
     max-height: 150px;
 }
+}
+@media screen 
+and (min-width: 320px) 
+and (max-width: 639px){
+    .chat h2 {
+        background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% -8% / 7% no-repeat;
+    }
+    .help-mail h2 {
+        background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% 123% / 7% no-repeat;
+    }
+    .call h2 {
+        background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% 61% / 7% no-repeat;
+    }
 }
 
 @media screen and (min-width: 640px) {
@@ -1204,7 +1219,13 @@ and (max-width: 800px){
     width: 30% !important;
     }
     .help-mail h2 {
-        background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% 113% / 5% no-repeat !important;
+        background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% 110% / 5% no-repeat;
+    }
+    .call h2 {
+        background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% 50% / 7% no-repeat;
+    }
+    .chat h2 {
+        background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% 0% / 7% no-repeat;
     }
 }
 
@@ -1463,15 +1484,7 @@ and (max-width: 800px){
         position: relative !important;
     }
 
-    .chat h2 {
-        background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% -8% / 7% no-repeat !important;
-    }
-    .help-mail h2 {
-        background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% 123% / 7% no-repeat !important;
-    }
-    .call h2 {
-        background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% 61% / 7% no-repeat !important;
-    }
+    
     
 }
 #proceso #image-restauracion{
