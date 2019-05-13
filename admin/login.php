@@ -20,6 +20,7 @@ if(isset($_POST['user'])) {
         $_SESSION['name'] = $row['name'];
         header("Location: clients.php");
     } else {
+        session_unset();
         session_destroy();
         echo "Verificar usuario y contraseña.";
     }

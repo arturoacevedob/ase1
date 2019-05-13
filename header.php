@@ -4,9 +4,9 @@ function renderHeader(){
 
     $headerUser = "
     <ul class='user-head'>
-        <li class='cuenta'><a href='cuenta-informacion.php' target='_self' aria-label='cuenta'></a>
+        <li class='cuenta'><a href='cuenta_informacion.php' target='_self' aria-label='cuenta'></a>
         <ul class='submenu'>
-                      <li><a href='cuenta-informacion.php' target='_self'>Información</a></li>
+                      <li><a href='cuenta_informacion.php' target='_self'>Información</a></li>
                       <li><a href='direccion-envio.php target='_self'>Dirección de envío</a></li>
                       <li><a href='metodos-de-contacto.php' target='_self'>Métodos de pago</a></li>
                       <li><a href='pedidos.php' target='_self'>Pedidos</a></li>

@@ -47,7 +47,7 @@ include 'header.php';
                         <ul class="menu-desktop-content">
                             <li><a href="index.php" target="_self">Inicio</a></li>
                             <li><a href="nosotros.php" target="_self">Nosotros</a></li>
-                            <li><a href="nuestro-cafe.php" target="_self">Nuestro café</a></li>
+                            <li><a href="nuestro_cafe.php" target="_self">Nuestro café</a></li>
                             <li><a href="proceso.php" target="_self">Proceso</a></li>
                             <li><a href="products.php" target="_self">Productos</a></li>
                             <li><a href="noticias.php" target="_self">Noticias</a></li>
@@ -71,7 +71,7 @@ include 'header.php';
                         <ul class="menu-mobile-content light-bg">
                             <li><a href="index.php" target="_self">Inicio</a></li>
                             <li><a href="nosotros.php" target="_self">Nosotros</a></li>
-                            <li><a href="nuestro-cafe.php" target="_self">Nuestro café</a></li>
+                            <li><a href="nuestro_cafe.php" target="_self">Nuestro café</a></li>
                             <li><a href="proceso.php" target="_self">Proceso</a></li>
                             <li><a href="products.php" target="_self">Productos</a></li>
                             <li><a href="noticias.php" target="_self">Noticias</a></li>
@@ -379,7 +379,7 @@ include 'header.php';
                 <ul class="nav footer-nav dark">
                     <li><a href="index.php" target="_self">Inicio</a></li>
                     <li><a href="nosotros.php" target="_self">Nosotros</a></li>
-                    <li><a href="nuestro-cafe.php" target="_self">Nuestro café</a></li>
+                    <li><a href="nuestro_cafe.php" target="_self">Nuestro café</a></li>
                     <li><a href="proceso.php" target="_self">Proceso</a></li>
                     <li><a href="products.php" target="_self">Productos</a></li>
                     <li><a href="noticias.php" target="_self">Noticias</a></li>

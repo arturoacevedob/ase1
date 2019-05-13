@@ -48,7 +48,7 @@ include 'header.php';
                         <ul class="menu-desktop-content">
                             <li><a href="index.php" target="_self">Inicio</a></li>
                             <li><a href="nosotros.php" target="_self">Nosotros</a></li>
-                            <li><a href="nuestro-cafe.php" target="_self">Nuestro café</a></li>
+                            <li><a href="nuestro_cafe.php" target="_self">Nuestro café</a></li>
                             <li><a href="proceso.php" target="_self">Proceso</a></li>
                             <li><a href="products.php" target="_self">Productos</a></li>
                             <li><a class="active" href="noticias.php" target="_self">Noticias</a></li>
@@ -71,7 +71,7 @@ include 'header.php';
                         <ul class="menu-mobile-content light-bg">
                             <li><a href="index.php" target="_self">Inicio</a></li>
                             <li><a href="nosotros.php" target="_self">Nosotros</a></li>
-                            <li><a href="nuestro-cafe.php" target="_self">Nuestro café</a></li>
+                            <li><a href="nuestro_cafe.php" target="_self">Nuestro café</a></li>
                             <li><a href="proceso.php" target="_self">Proceso</a></li>
                             <li><a href="products.php" target="_self">Productos</a></li>
                             <li><a class="active" href="noticias.php" target="_self">Noticias</a></li>
@@ -137,7 +137,7 @@ include 'header.php';
             <article class="bnuestrocafe">
                 <h3 class="light botones-h3">Nuestro café</h3>
                 <p class="botones-p">Desde el cafetal a la taza</p>
-                <a class="button red" href="nuestro-cafe.php" target="_self">Leer más »</a>
+                <a class="button red" href="nuestro_cafe.php" target="_self">Leer más »</a>
             </article>
             <article class="bproductos">
                 <h3 class="light botones-h3">Productos</h3>
@@ -444,7 +444,7 @@ include 'header.php';
                 <ul class="nav footer-nav">
                     <li><a href="index.php" target="_self">Inicio</a></li>
                     <li><a href="nosotros.php" target="_self">Nosotros</a></li>
-                    <li><a href="nuestro-cafe.php" target="_self">Nuestro café</a></li>
+                    <li><a href="nuestro_cafe.php" target="_self">Nuestro café</a></li>
                     <li><a href="proceso.php" target="_self">Proceso</a></li>
                     <li><a href="products.php" target="_self">Productos</a></li>
                     <li><a class="active" href="noticias.php" target="_self">Noticias</a></li>

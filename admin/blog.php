@@ -20,11 +20,11 @@ function createNoticia()
 
     $blogs = array();
     $counter = 0;
-    while ($d = mysqli_fetch_array($recordSet)) {
+    while ($row = mysqli_fetch_array($recordSet)) {
         $blogs[$counter] = array();
-        $blogs[$counter]["id_blog"] = $d["id_blog"];
-        $blogs[$counter]["name_blog"] = $d["name_blog"];
-        $blogs[$counter]["date_blog"] = $d["date_blog"];
+        $blogs[$counter]["id_blog"] = $row["id_blog"];
+        $blogs[$counter]["name_blog"] = $row["name_blog"];
+        $blogs[$counter]["date_blog"] = $row["date_blog"];
 
         $counter++;
     }
@@ -82,7 +82,7 @@ function createNoticia()
     <ul>
         <li><a href="clients.php" target="_self">Clientes</a></li>
         <li><a href="orders-pending-backend.php" target="_self">Pedidos</a></li>
-        <li><a href="products-coffee.php" target="_self">Productos</a></li>
+        <li><a href="products_coffee.php" target="_self">Productos</a></li>
         <li><a class="active pro" href="blog.php" target="_self">Blog</a></li>
 
         <li><a href='login.php?killsession=1'>Cerrar sesión</a></li>

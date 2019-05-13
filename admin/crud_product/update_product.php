@@ -96,7 +96,7 @@ if (isset($_POST['update'])) {
         execute($q);
     }
 
-    header("Location: ../products-coffee.php");
+    header("Location: ../products_coffee.php");
 }
 ?>
 

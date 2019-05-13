@@ -47,7 +47,7 @@ if (isset($_POST['insert'])) {
 
         $q = "insert into images (image_path, id_product) values ('$relativePath', '$id_product')";
         execute($q);
-        header("Location: ../products-coffee.php");
+        header("Location: ../products_coffee.php");
     }
 }
 ?>

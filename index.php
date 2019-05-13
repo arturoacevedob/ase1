@@ -48,7 +48,7 @@ include 'header.php';
                 <ul class="menu-desktop-content">
                     <li><a class="active" href="" target="_self">Inicio</a></li>
                     <li><a href="nosotros.php" target="_self">Nosotros</a></li>
-                    <li><a href="nuestro-cafe.php" target="_self">Nuestro café</a></li>
+                    <li><a href="nuestro_cafe.php" target="_self">Nuestro café</a></li>
                     <li><a href="proceso.php" target="_self">Proceso</a></li>
                     <li><a href="products.php" target="_self">Productos</a></li>
                     <li><a href="noticias.php" target="_self">Noticias</a></li>
@@ -71,7 +71,7 @@ include 'header.php';
                 <ul class="menu-mobile-content light-bg">
                     <li><a class="active" href="index.php" target="_self">Inicio</a></li>
                     <li><a href="nosotros.php" target="_self">Nosotros</a></li>
-                    <li><a href="nuestro-cafe.php" target="_self">Nuestro café</a></li>
+                    <li><a href="nuestro_cafe.php" target="_self">Nuestro café</a></li>
                     <li><a href="proceso.php" target="_self">Proceso</a></li>
                     <li><a href="products.php" target="_self">Productos</a></li>
                     <li><a href="noticias.php" target="_self">Noticias</a></li>
@@ -134,7 +134,7 @@ include 'header.php';
                 </section>
             </div>
             <a class="h2-link right-aligned little-font" href="products.php" target="_self">Todos los productos »</a>
-            <a class="button red addbutton1" href="nuestro-cafe.php" target="_self">Nuestro café</a>
+            <a class="button red addbutton1" href="nuestro_cafe.php" target="_self">Nuestro café</a>
             <a class="button red addbutton2" href="proceso.php" target="_self">Proceso</a>
         </div>
     </aside>
@@ -294,7 +294,7 @@ include 'header.php';
                     <img src="images/inicio/nuestro_cafe_batsil_maya.jpg" alt="Manos con café">
                 </figure>
                 <p>Nuestras condiciones, variedades, tostados, molidos y demás.</p>
-                <a class="button red fit-content" target="_self" href="nuestro-cafe.php">Nuestro café</a>
+                <a class="button red fit-content" target="_self" href="nuestro_cafe.php">Nuestro café</a>
             </section>
             <section class="grid-image-first">
                 <h3 class="h3-small">Proceso</h3>
@@ -600,7 +600,7 @@ include 'header.php';
             <ul class="nav footer-nav dark">
                 <li><a class="active" href="index.php" target="_self">Inicio</a></li>
                 <li><a href="nosotros.php" target="_self">Nosotros</a></li>
-                <li><a href="nuestro-cafe.php" target="_self">Nuestro café</a></li>
+                <li><a href="nuestro_cafe.php" target="_self">Nuestro café</a></li>
                 <li><a href="proceso.php" target="_self">Proceso</a></li>
                 <li><a href="products.php" target="_self">Productos</a></li>
                 <li><a href="noticias.php" target="_self">Noticias</a></li>

@@ -15,7 +15,7 @@ if(isset($_GET['idproduct'])) {
     $id_product = $_GET['idproduct'];
     $q = "delete from products where id_product = " . $id_product . "";
     $recordSet = execute($q);
-    header("Location: ../products-coffee.php");
+    header("Location: ../products_coffee.php");
     die();
 }
 ?>
