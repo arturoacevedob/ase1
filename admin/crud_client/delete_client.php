@@ -14,7 +14,13 @@ if(!isset($_SESSION['user'])) {
 if(isset($_GET['idclient'])) {
     $id_client = $_GET['idclient'];
     $q = "delete from clients where id_client = " . $id_client . "";
-    $recordSet = execute($q);
+    execute($q);
+    $q = "delete from contacts where id_client = " . $id_client . "";
+    execute($q);
+    $q = "delete from addresses where id_client = " . $id_client . "";
+    execute($q);
+    $q = "delete from billing where id_client = " . $id_client . "";
+    execute($q);
     header("Location: ../clients.php");
     die();
 }

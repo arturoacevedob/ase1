@@ -189,10 +189,11 @@ include 'agregar_producto.php';
                 <div class='grid-2-space-between align-center bold'>
                     <span id='quantity'>Qt. x</span>
                     <p id='calculated-total' class='currency'></p>
-                </div>
-                <?php
-                compra()
-                ?>
+                </div>";
+
+        compra();
+
+        echo "
             </div>
             <div class='center-aligned'>
                 <p>Pide 11KG para envío nacional gratis</p>

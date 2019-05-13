@@ -142,7 +142,13 @@ function createCoffeeListOptions()
         <li><a href="products-honey-backend.html" id="honey" target="_self">Miel</a></li>
         <li><a href="products-soap-backend.html" id="soap" target="_self">Jabón</a></li>
     </ul>
-    <a class="button red limited-width" href='crud_product/create_product.php'>Agregar productos</a>
+
+    <div class="grid-2-space-between give-me-gap">
+        <div>
+            <label class="kill" for="search"></label>
+            <input id="search" placeholder="Buscar" type="search">
+        </div>
+        <a class="button red limited-width" href='crud_product/create_product.php'>Agregar productos</a></div>
     <div class="grid-1-1 give-me-gap">
         <?php
         createCoffeeListOptions()

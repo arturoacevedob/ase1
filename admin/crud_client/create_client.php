@@ -14,7 +14,7 @@ if (!isset($_SESSION['user'])) {
 if (isset($_POST['insert'])) {
     $uploadOk = 1;
     $name_legal = $_POST['name_legal'];
-    $name_alias = $_POST['name_alias'];
+    $name_alias = $a_POST['name_alias'];
     $giro = $_POST['giro'];
     $client_type = $_POST['client_type'];
     $name_contact = $_POST['name_contact'];
