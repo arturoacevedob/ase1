@@ -444,7 +444,7 @@ ul {
 nav .active {
     color: white;
     background-color: #4D310C;
-    border-left: solid 3px var(--a-active);
+    border-left: solid 5px var(--a-active);
 }
 nav ul{
     display: grid;
@@ -522,4 +522,17 @@ nav ul a{
 .round-red-border fieldset:first-of-type, .round-red-border fieldset:nth-of-type(5){
     padding-left: 0;
     border-left: none;
+}
+
+
+
+.pending-orders .margin-top-thing{
+    margin-top: 20px;
+}
+.pending-orders .header{
+    font-weight: bold;
+    border-bottom: 2px solid var(--light-80);
+    padding-bottom: 5px;
+    
+    margin-bottom: 18px;
 }

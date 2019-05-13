@@ -25,7 +25,7 @@
     <title>Pedidos: Pendientes</title>
 </head>
 
-<body class="main-grid">
+<body class="main-grid pending-orders">
 
 <nav>
     <h2 style="display: none">Menú</h2>
@@ -41,7 +41,7 @@
     </ul>
 </nav>
 
-<div class="big-margin">
+<div class="big-margin padding-thing">
 
     <div class="global-toolbar">
         <h1>Pedidos</h1>
@@ -64,7 +64,7 @@
         <button class="button red kill-that-border">Agregar pedido</button>
     </div>
 
-    <div class="wrapper pending-item padding-for-all-2">
+    <div class="wrapper pending-item padding-for-all-2 margin-top-thing">
         <div class="header">
             <h3>#236</h3>
             <p>Hoy - 26/02/19</p>
