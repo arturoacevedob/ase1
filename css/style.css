@@ -1009,8 +1009,8 @@ progress::-webkit-progress-value {
         display: none;
     }
     #proceso .tipo-tueste p:nth-child(8) {
-        top: 80% !important;
-        left: 1% !important;
+        top: 79% !important;
+        left: 0% !important;
     }
     #proceso .tueste-claro {
         top: 44% !important;
@@ -1077,90 +1077,7 @@ progress::-webkit-progress-value {
     }
 }
 
-@media screen and (min-width: 320px){
-    .mapa-desktop{
-        display:none;
-        }
 
-    .mapa-mobil{
-            padding: 20px;
-            position: relative;
-            width: 100%;
-            box-sizing: border-box;
-            margin: 0 auto;
-    }
-    .batsil{
-        position: absolute;
-        top: 49%;
-        left: 2%;
-        font-size: 14px;
-    }
-    .japon{
-        position: absolute;
-        top: 39%;
-        left: 82%;
-        font-size: 14px;
-    
-    }
-   
-    .mapa-mobil-cafe{
-        grid-template-rows: 1fr 2fr;
-    }
-    .taza-cafe{
-    grid-template-rows: 2fr 1fr;
-    }
-
-.molidos img {
-    width: 30% !important;
-}
-
-.tipos-tueste{
-    
-        margin: auto !important;
-        width: 90% !important;
-    
-}
-#proceso .tueste-claro {
-    top: 46% !important;
-    left: 11% !important;
-}
-#proceso .tueste-medio {
-    top: 70% !important;
-    left: 25% !important;
-}
-#proceso .tueste-vienes {
-    top: 43% !important;
-    left: 39% !important;
-}
-#proceso .tueste-oscuro {
-    top: 67% !important;
-    left: 56% !important;
-}
-#proceso .tueste-italiano {
-    top: 42% !important;
-    left: 71% !important;
-}
-#proceso .tipo-tueste p:nth-child(8) {
-    top: 66% !important;
-    left: -5% !important;
-}
-
-    #proceso .tipo-tueste p:last-child {
-        left: 5% !important;
-        position: relative !important;
-    }
-
-    .chat h2 {
-        background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% -8% / 7% no-repeat !important;
-    }
-    .help-mail h2 {
-        background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% 123% / 7% no-repeat !important;
-    }
-    .call h2 {
-        background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% 61% / 7% no-repeat !important;
-    }
-    
-}
 @media screen and (min-width: 640px) {
     h2 {
         font-size: 40px;
@@ -1240,7 +1157,7 @@ progress::-webkit-progress-value {
     /* —————— AQUÍ EMPIEZAN ESTILOS DE PROCESO—————— */
     #proceso .tipo-tueste p:nth-child(8) {
         top: 75% !important;
-        left: -2% !important;
+        left: -1% !important;
     }
     #proceso .tueste-claro {
         top: 43% !important;
@@ -1265,6 +1182,7 @@ progress::-webkit-progress-value {
     width: 30% !important;
     }
 }
+
 
 @media screen and (max-width: 639px) {
     .little-font{
@@ -1447,6 +1365,90 @@ progress::-webkit-progress-value {
 }
 }
 
+@media screen and (min-width: 320px){
+    .mapa-desktop{
+        display:none;
+        }
+
+    .mapa-mobil{
+            padding: 20px;
+            position: relative;
+            width: 100%;
+            box-sizing: border-box;
+            margin: 0 auto;
+    }
+    .batsil{
+        position: absolute;
+        top: 49%;
+        left: 2%;
+        font-size: 14px;
+    }
+    .japon{
+        position: absolute;
+        top: 39%;
+        left: 82%;
+        font-size: 14px;
+    
+    }
+   
+    .mapa-mobil-cafe{
+        grid-template-rows: 1fr 2fr;
+    }
+    .taza-cafe{
+    grid-template-rows: 2fr 1fr;
+    }
+
+.molidos img {
+    width: 30% !important;
+}
+
+.tipos-tueste{
+    
+        margin: auto !important;
+        width: 90% !important;
+    
+}
+#proceso .tueste-claro {
+    top: 46% !important;
+    left: 11% !important;
+}
+#proceso .tueste-medio {
+    top: 70% !important;
+    left: 25% !important;
+}
+#proceso .tueste-vienes {
+    top: 43% !important;
+    left: 39% !important;
+}
+#proceso .tueste-oscuro {
+    top: 67% !important;
+    left: 56% !important;
+}
+#proceso .tueste-italiano {
+    top: 42% !important;
+    left: 71% !important;
+}
+#proceso .tipo-tueste p:nth-child(8) {
+    top: 66% !important;
+    left: -5% !important;
+}
+
+    #proceso .tipo-tueste p:last-child {
+        left: 5% !important;
+        position: relative !important;
+    }
+
+    .chat h2 {
+        background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% -8% / 7% no-repeat !important;
+    }
+    .help-mail h2 {
+        background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% 123% / 7% no-repeat !important;
+    }
+    .call h2 {
+        background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% 61% / 7% no-repeat !important;
+    }
+    
+}
 #proceso #image-restauracion{
     background: url(../images/proceso/restauracion_de_los_cafetales_batsil_maya.jpg) 0% 0 / cover no-repeat;
 }
