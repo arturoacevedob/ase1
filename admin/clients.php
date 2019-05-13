@@ -18,12 +18,12 @@ function createProductListOptions()
 
     $clients = array();
     $counter = 0;
-    while ($d = mysqli_fetch_array($recordSet)) {
+    while ($row = mysqli_fetch_array($recordSet)) {
         $clients[$counter] = array();
-        $clients[$counter]["id_client"] = $d["id_client"];
-        $clients[$counter]["name_alias"] = $d["name_alias"];
-        $clients[$counter]["giro"] = $d["giro"];
-        $clients[$counter]["client_type"] = $d["client_type"];
+        $clients[$counter]["id_client"] = $row["id_client"];
+        $clients[$counter]["name_alias"] = $row["name_alias"];
+        $clients[$counter]["giro"] = $row["giro"];
+        $clients[$counter]["client_type"] = $row["client_type"];
         $counter++;
     }
 
@@ -385,7 +385,7 @@ function createProductListOptions()
     <ul>
         <li><a class="active" href="clients.php" target="_self">Clientes</a></li>
         <li><a href="orders-pending-backend.php" target="_self">Pedidos</a></li>
-        <li><a href="products-coffee.php" target="_self">Productos</a></li>
+        <li><a href="products_coffee.php" target="_self">Productos</a></li>
         <li><a href="blog.php" target="_self">Blog</a></li>
 
 </ul>

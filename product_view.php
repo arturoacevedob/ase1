@@ -5,7 +5,7 @@ error_reporting(E_ALL);
 session_start();
 include 'connection.php';
 include 'header.php';
-include 'agregar-producto.php';
+include 'agregar_producto.php';
 ?>
 
 <!DOCTYPE html>
@@ -48,7 +48,7 @@ include 'agregar-producto.php';
                         <ul class="menu-desktop-content">
                             <li><a href="index.php" target="_self">Inicio</a></li>
                             <li><a href="nosotros.php" target="_self">Nosotros</a></li>
-                            <li><a href="nuestro-cafe.php" target="_self">Nuestro café</a></li>
+                            <li><a href="nuestro_cafe.php" target="_self">Nuestro café</a></li>
                             <li><a href="proceso.php" target="_self">Proceso</a></li>
                             <li><a class="active" href="products.php" target="_self">Productos</a></li>
                             <li><a href="noticias.php" target="_self">Noticias</a></li>
@@ -71,7 +71,7 @@ include 'agregar-producto.php';
                         <ul class="menu-mobile-content light-bg">
                             <li><a class="active" href="index.php" target="_self">Inicio</a></li>
                             <li><a href="nosotros.php" target="_self">Nosotros</a></li>
-                            <li><a href="nuestro-cafe.php" target="_self">Nuestro café</a></li>
+                            <li><a href="nuestro_cafe.php" target="_self">Nuestro café</a></li>
                             <li><a href="proceso.php" target="_self">Proceso</a></li>
                             <li><a href="products.php" target="_self">Productos</a></li>
                             <li><a href="noticias.php" target="_self">Noticias</a></li>
@@ -115,7 +115,10 @@ include 'agregar-producto.php';
                 <p>" . $description . "</p>
             </div>
 
-            <form class='grid-product-form'>
+            <form action='product_view.php' class='grid-product-form'>
+            
+                <input type='hidden' name='id_product' value='" . $id_product . "'>
+                
                 <div class='grid-2-left-aligned'>
                     <fieldset class='h3-small'>
                         <label>Peso</label>
@@ -123,20 +126,32 @@ include 'agregar-producto.php';
 
         if (!is_null($weight1)) {
             echo "
-                            <input id='peso-one' name='peso-selector' type='radio'>
+                            <input id='peso-one' name='peso-selector' type='radio' value='250'>
                             <label for='peso-one'>250gr</label>";
+        } else {
+            echo "
+                            <input id='peso-one' name='peso-selector' type='radio' value='250' disabled>
+                            <label for='peso-one' class='unavailable'>250gr</label>";
         }
 
         if (!is_null($weight2)) {
             echo "
-                            <input id='peso-two' name='peso-selector' type='radio'>
+                            <input id='peso-two' name='peso-selector' type='radio' value='500'>
                             <label for='peso-two'>500gr</label>";
+        } else {
+            echo "
+                            <input id='peso-two' name='peso-selector' type='radio' value='500' disabled>
+                            <label for='peso-two' class='unavailable'>500gr</label>";
         }
 
         if (!is_null($weight3)) {
             echo "
-                            <input id='peso-three' name='peso-selector' type='radio'>
+                            <input id='peso-three' name='peso-selector' type='radio' value='1000'>
                             <label for='peso-three'>1kg</label>";
+        } else {
+            echo "
+                            <input id='peso-three' name='peso-selector' type='radio' value='1000' disabled>
+                            <label for='peso-three' class='unavailable'>1kg</label>";
         }
 
         echo "
@@ -283,7 +298,7 @@ include 'agregar-producto.php';
                 <ul class="nav footer-nav">
                     <li><a href="index.php" target="_self">Inicio</a></li>
                     <li><a href="nosotros.php" target="_self">Nosotros</a></li>
-                    <li><a href="nuestro-cafe.php" target="_self">Nuestro café</a></li>
+                    <li><a href="nuestro_cafe.php" target="_self">Nuestro café</a></li>
                     <li><a href="proceso.php" target="_self">Proceso</a></li>
                     <li><a class="active" href="products.php" target="_self">Productos</a></li>
                     <li><a href="noticias.php" target="_self">Noticias</a></li>
@@ -319,6 +334,19 @@ include 'agregar-producto.php';
     $('.radio').change(function () {
         $('#molido-custom-value').prop('disabled', !$(this).is('.other-input'));
     });
+</script>
+
+<script>
+    function obtienePrecio(id_producto) {
+        $.ajax({
+            type: 'GET',
+            url: 'obtiene-precio.php',
+            data: $("#id-frm-product-" + id_producto).serialize(),
+            success: function (response) {
+                $('#id-precio-' + id_producto).html(response);
+            }
+        });
+    }
 </script>
 
 </body>

@@ -45,7 +45,7 @@ include 'header.php';
                 <ul class="menu-desktop-content">
                     <li><a href="index.php" target="_self">Inicio</a></li>
                     <li><a href="nosotros.php" target="_self">Nosotros</a></li>
-                    <li><a href="nuestro-cafe.php" target="_self">Nuestro café</a></li>
+                    <li><a href="nuestro_cafe.php" target="_self">Nuestro café</a></li>
                     <li><a href="proceso.php" target="_self">Proceso</a></li>
                     <li><a href="products.php" target="_self">Productos</a></li>
                     <li><a href="noticias.php" target="_self">Noticias</a></li>
@@ -68,7 +68,7 @@ include 'header.php';
                 <ul class="menu-mobile-content light-bg">
                     <li><a class="active" href="index.php" target="_self">Inicio</a></li>
                     <li><a href="nosotros.php" target="_self">Nosotros</a></li>
-                    <li><a href="nuestro-cafe.php" target="_self">Nuestro café</a></li>
+                    <li><a href="nuestro_cafe.php" target="_self">Nuestro café</a></li>
                     <li><a href="proceso.php" target="_self">Proceso</a></li>
                     <li><a href="products.php" target="_self">Productos</a></li>
                     <li><a href="noticias.php" target="_self">Noticias</a></li>
@@ -86,72 +86,29 @@ include 'header.php';
 <div class="container grid-two-thirds-responsive ">
     <aside>
         <ul class="sidebar-nav-responsive">
-            <li><a href="cuenta-informacion.php">Información</a></li>
-            <li><a class="active" href="cuenta-envio.php">Dirección de envío</a></li>
+            <li><a class="active" href="cuenta_informacion.php">Información</a></li>
+            <li><a href="cuenta-enviophp">Dirección de envío</a></li>
             <li><a href="">Métodos de pago</a></li>
             <li><a href="">Pedidos</a></li>
         </ul>
     </aside>
     <div>
-        <div class="grid-2-space-between align-grid-center gimme-padding">
-            <h2 class="h2-small no-padding">Direcciones de envío</h2>
-        </div>
-        <div class="grid-two-column-auto-row-responsive card">
-            <div>
-                <div class="grid-2-space-between">
-                    <div class="grid-2-space-between">
-                        <h3 class="h3-small">Zedec Santa Fe</h3>
-                        <div></div>
-                    </div>
-                    <div></div>
-                </div>
-                <p>Joaquín Gallo 258
-                    Santa Fe, Zedec Sta Fé
-                    01219 Santa Fe
-                    CDMX
-                </p>
-                <p>55 1234 5678</p>
-            </div>
-            <div>
-                <div class="grid-2-space-between">
-                    <h3 class="h3-small">Zedec Santa Fe</h3>
-                    <div></div>
-                </div>
-                <p>Joaquín Gallo 258
-                    Santa Fe, Zedec Sta Fé
-                    01219 Santa Fe
-                    CDMX
-                </p>
-                <p>55 1234 5678</p>
-            </div>
-            <div>
-                <div class="grid-2-space-between">
-                    <h3 class="h3-small">Zedec Santa Fe</h3>
-                    <div></div>
-                </div>
-                <p>Joaquín Gallo 258
-                    Santa Fe, Zedec Sta Fé
-                    01219 Santa Fe
-                    CDMX
-                </p>
-                <p>55 1234 5678</p>
-            </div>
-            <div>
-                <div class="grid-2-space-between">
-                    <h3 class="h3-small">Zedec Santa Fe</h3>
-                    <div></div>
-                </div>
-                <p>Joaquín Gallo 258
-                    Santa Fe, Zedec Sta Fé
-                    01219 Santa Fe
-                    CDMX
-                </p>
-                <p>55 1234 5678</p>
-            </div>
-            <button>
-                +
-            </button>
-        </div>
+        <form action="" class="form">
+            <label for="name">Nombre</label>
+            <input id="name" type="text">
+            <label for="business-name">Empresa</label>
+            <input id="business-name" type="text">
+            <label for="giro">Giro</label>
+            <input id="giro" type="text">
+            <label for="email">Correo Electrónico</label>
+            <input id="email" type="email">
+            <label for="tel">Teléfono</label>
+            <input id="tel" type="tel">
+            <p class="formbutton">
+                <input class="button red margin-bottom" type="submit" value="Guardar cambios">
+            </p>
+            <p class="p-small center-aligned"><span>¿Necesitas cambiar otro dato? <a>Contáctanos</a></span></p>
+        </form>
     </div>
 </div>
 </body>

@@ -20,13 +20,13 @@ function createCoffeeListOptions()
 
     $products = array();
     $counter = 0;
-    while ($d = mysqli_fetch_array($recordSet)) {
+    while ($row = mysqli_fetch_array($recordSet)) {
         $products[$counter] = array();
-        $products[$counter]["id_product"] = $d["id_product"];
-        $products[$counter]["name_product"] = $d["name_product"];
-        $products[$counter]["description"] = $d["description"];
-        $products[$counter]["notes"] = $d["notes"];
-        $products[$counter]["client_type"] = $d["client_type"];
+        $products[$counter]["id_product"] = $row["id_product"];
+        $products[$counter]["name_product"] = $row["name_product"];
+        $products[$counter]["description"] = $row["description"];
+        $products[$counter]["notes"] = $row["notes"];
+        $products[$counter]["client_type"] = $row["client_type"];
         $counter++;
     }
 
@@ -124,7 +124,7 @@ function createCoffeeListOptions()
     <ul>
         <li><a href="clients.php" target="_self">Clientes</a></li>
         <li><a href="orders-pending-backend.php" target="_self">Pedidos</a></li>
-        <li><a class="active" href="products-coffee.php" target="_self">Productos</a></li>
+        <li><a class="active" href="products_coffee.php" target="_self">Productos</a></li>
         <li><a href="blog.php" target="_self">Blog</a></li>
 
         <li><a href='login.php?killsession=1'>Cerrar sesión</a></li>
@@ -138,7 +138,7 @@ function createCoffeeListOptions()
     </div>
 
     <ul class="grid-tabs">
-        <li><a class="active" href="products-coffee.php" id="coffee" target="_self">Café</a></li>
+        <li><a class="active" href="products_coffee.php" id="coffee" target="_self">Café</a></li>
         <li><a href="products-honey-backend.html" id="honey" target="_self">Miel</a></li>
         <li><a href="products-soap-backend.html" id="soap" target="_self">Jabón</a></li>
     </ul>
