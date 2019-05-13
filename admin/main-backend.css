@@ -24,6 +24,7 @@
     --button-border-radius: 1.4rem;
     --time: 0.2s;
     --ease: ease-out;
+    
 }
 
 /* Resets */
@@ -38,7 +39,12 @@ ul {
 }
 
 a:link {
+    color: var(--light);
     text-decoration: none;
+}
+
+nav a:visited {
+    color: var(--light);
 }
 
 /* Colors */
@@ -364,6 +370,7 @@ input.button {
 .kill-that-border{
     border: none;
 }
+
 /* Form Classes */
 textarea {
     padding: 0;
@@ -432,6 +439,7 @@ nav{
     max-width: 280px;
     position: fixed;
     height: 100vw;
+    font-size: 1.3em;
     background-color: var(--dark);
 }
 nav img{
@@ -456,7 +464,7 @@ ul {
 nav .active {
     color: var(--light);
     background-color: #4D310C;
-    border-left: solid 5px var(--a-active);
+    border-left: solid 15px var(--a-active);
 }
 nav ul{
     display: grid;
