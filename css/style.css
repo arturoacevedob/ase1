@@ -1255,13 +1255,6 @@ progress::-webkit-progress-value {
         top: 39% !important;
         left: 73% !important;
     }
-    .humedo{
-        border-right: 2px solid var(--white);
-        padding-right: 16%;
-    }
-    .seco{
-        padding-left: 13%;
-    }
     .taza-cafe{
         grid-template-rows: 1fr 1fr;
         }
@@ -1428,14 +1421,32 @@ progress::-webkit-progress-value {
     #proceso .tueste-italiano h3 {
         font-size: 13px;
     }
+    
+}
+@media screen and (max-width: 917px){
     .humedo{
+        padding-right: 5%;
+        padding-left: 5%;
         border-bottom: 2px solid var(--white);
         padding-bottom: var(--padding-top-bottom);
     }
     .seco{
+        padding-right: 5%;
+        padding-left: 5%;
         padding-top: var(--padding-top-bottom);
     }
 }
+
+@media screen and (min-width: 918px){
+.humedo{
+    border-right: 2px solid var(--white);
+    padding-right: 16%;
+}
+.seco{
+    padding-left: 13%;
+}
+}
+
 #proceso #image-restauracion{
     background: url(../images/proceso/restauracion_de_los_cafetales_batsil_maya.jpg) 0% 0 / cover no-repeat;
 }
