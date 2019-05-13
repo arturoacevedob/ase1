@@ -89,7 +89,7 @@ include 'header.php';
     <section>
         <h2 class="kill">Prácticas</h2>
         <article class="grid-2-text-photo">
-            <div class="grid-2-right-image image-agroecologicas"></div>
+            <div class="grid-2-right-image image-agroecologicas order-2"></div>
             <div class="grid-2-left-text container" >
                 <div class="wrapper-text">
                     <h3>Prácticas agroecológicas</h3><br>
@@ -107,7 +107,7 @@ include 'header.php';
             </div>
         </article>
         <article class="grid-2-text-photo">
-            <div class="grid-2-left-image" id="image-restauracion"></div>
+            <div class="grid-2-left-image order-2" id="image-restauracion"></div>
             <div class="grid-2-right-text container" >
                 <div class="wrapper-text">
                     <h3>Restauración de los cafetales</h3><br>
@@ -122,7 +122,7 @@ include 'header.php';
     <section class="green-bg">
         <div class="container">
             <h2 class="kill">Beneficios</h2>
-            <div class="grid-2-text-photo light ">
+            <div class="grid-2-text-photo-2 light ">
                 <article class="humedo">
                     <h3>¿Cuál es el beneficio húmedo?</h3>
                     <p>La técnica de secado al sol es minuciosa y requiere un control de tiempo para llegar al secado
@@ -142,7 +142,7 @@ include 'header.php';
             </div>
         </div>
     </section>
-    <section class="container tipo-tueste">
+    <section class="container tipo-tueste max-width-909">
         <h2 class="center-aligned">Tipos de tueste</h2>
         <figure class="tipos-tueste"><img alt="Gráfica de Tipos de tueste"
                      src="images/proceso/proceso_tipos_de_tueste_grafica_batsil_maya.svg"></figure>
@@ -162,7 +162,7 @@ include 'header.php';
             <h3 class="p-big">Tueste italiano</h3>
         </article>
         <p>Temperatura</p>
-        <p>Tiempo</p>
+        <p class="max-width-111">Tiempo</p>
     </section>
     <div class="light-bg">
         <section class="container center-text">
