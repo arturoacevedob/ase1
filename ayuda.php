@@ -141,15 +141,15 @@ include 'header.php';
         <aside class="chat border-padding margin-thingy">
             <h2 class="h2-small crazy-icon-padding">Chatea con Nosotros</h2>
             <p>Inicia una sesión de chat ahora. <br>Espera estimada: 5 minutos o menos.</p>
-            <a class="button red full-width">Chat</a>
+            <a class="button red full-width help-margin-top-button">Chat</a>
         </aside>
         <aside class="call border-padding margin-thingy">
             <h2 class="h2-small crazy-icon-padding">Agenda una llamada</h2>
             <p>Agenda una llamada con Bats’il Maya para que te llamemos cuando te convenga.</p>
-            <a class="button red full-width">Agenda una llamada</a>
+            <a class="button red full-width help-margin-top-button">Agenda una llamada</a>
         </aside>
         <aside class="help-mail border-padding margin-thingy">
-            <h2 class="h2-small crazy-icon-padding">Envíanos un correo</h2>
+            <h2 class="h2-small crazy-icon-padding help-margin-top-button">Envíanos un correo</h2>
             <form>
                 <label for="name">Nombre</label>
                 <input id="name" name="name" placeholder="Maria Bravo" required type="text">
