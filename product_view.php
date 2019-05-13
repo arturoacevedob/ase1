@@ -115,7 +115,7 @@ include 'agregar_producto.php';
                 <p>" . $description . "</p>
             </div>
 
-            <form action='product_view.php' class='grid-product-form'>
+            <form class='product-form' action='product_view.php' class='grid-product-form'>
             
                 <input type='hidden' name='id_product' value='" . $id_product . "'>
                 
@@ -126,32 +126,32 @@ include 'agregar_producto.php';
 
         if (!is_null($weight1)) {
             echo "
-                            <input id='peso-one' name='peso-selector' type='radio' value='250'>
-                            <label for='peso-one'>250gr</label>";
+                            <input id='" . $weight1 . "' name='weight_selector' type='radio' value='250' onclick='calculatePrice()'>
+                            <label for='" . $weight1 . "'>250gr</label>";
         } else {
             echo "
-                            <input id='peso-one' name='peso-selector' type='radio' value='250' disabled>
-                            <label for='peso-one' class='unavailable'>250gr</label>";
+                            <input id='" . $weight1 . "' name='weight_selector' type='radio' value='250' disabled>
+                            <label for='" . $weight1 . "' class='unavailable'>250gr</label>";
         }
 
         if (!is_null($weight2)) {
             echo "
-                            <input id='peso-two' name='peso-selector' type='radio' value='500'>
-                            <label for='peso-two'>500gr</label>";
+                            <input id='" . $weight2 . "' name='weight_selector' type='radio' value='500' onclick='calculatePrice()'>
+                            <label for='" . $weight2 . "'>500gr</label>";
         } else {
             echo "
-                            <input id='peso-two' name='peso-selector' type='radio' value='500' disabled>
-                            <label for='peso-two' class='unavailable'>500gr</label>";
+                            <input id='" . $weight2 . "' name='weight_selector' type='radio' value='500' disabled>
+                            <label for='" . $weight2 . "' class='unavailable'>500gr</label>";
         }
 
         if (!is_null($weight3)) {
             echo "
-                            <input id='peso-three' name='peso-selector' type='radio' value='1000'>
-                            <label for='peso-three'>1kg</label>";
+                            <input id='" . $weight3 . "' name='weight_selector' type='radio' value='1000' onclick='calculatePrice()'>
+                            <label for='" . $weight3 . "'>1kg</label>";
         } else {
             echo "
-                            <input id='peso-three' name='peso-selector' type='radio' value='1000' disabled>
-                            <label for='peso-three' class='unavailable'>1kg</label>";
+                            <input id='" . $weight3 . "' name='weight_selector' type='radio' value='1000' disabled>
+                            <label for='" . $weight3 . "' class='unavailable'>1kg</label>";
         }
 
         echo "
@@ -188,7 +188,7 @@ include 'agregar_producto.php';
             <div class='product-buy grid-2-space-between'>
                 <div class='grid-2-space-between align-center bold'>
                     <span>Qt. x</span>
-                    <p>$1260</p>
+                    <p id='calculated-total' class='currency'></p>
                 </div>
                 <?php
                 compra()
@@ -337,13 +337,13 @@ include 'agregar_producto.php';
 </script>
 
 <script>
-    function obtienePrecio(id_producto) {
+    function calculatePrice() {
         $.ajax({
             type: 'GET',
-            url: 'obtiene-precio.php',
-            data: $("#id-frm-product-" + id_producto).serialize(),
+            url: 'price_calculation.php',
+            data: $('.product-form').serialize(),
             success: function (response) {
-                $('#id-precio-' + id_producto).html(response);
+                $('#calculated-total').html(response);
             }
         });
     }
