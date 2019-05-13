@@ -102,11 +102,16 @@ if (isset($_POST['update'])) {
 
 <!DOCTYPE html>
 <html>
-<body>
+<head>
+      <link href="../main-backend.css" rel="stylesheet">
+</head>
+
+<body class="padding-for-all">
 <h1>Productos</h1>
 
-<form action='update_product.php' method='post' enctype='multipart/form-data'>
-
+<form class="round-red-border" action='update_product.php' method='post' enctype='multipart/form-data'>
+<div class="grid-1-1-1 padding-for-all-2">
+<fieldset>
     <input type='hidden' name='update' value='update'>
     <input type="hidden" name="id_product" value="<?php echo $id_product; ?>">
 
@@ -120,7 +125,7 @@ if (isset($_POST['update'])) {
     <input type='hidden' name='client_type' value='0'>
     <input type='checkbox' name='client_type' id="client_type"
            value='1' <?php if ($client_type == '1') echo 'checked="checked"'; ?>>
-
+</fieldset>
     <table>
         <thead>
         <tr>
@@ -151,11 +156,12 @@ if (isset($_POST['update'])) {
     </table>
 
     <img src="<?php echo "../$image_path"; ?>" height="100px">
+</div>
 
     <label for="image_path">Carga una imagen</label>
-    <input type='file' name='image_path' id="image_path">
+    <input class="button limited-width-2 limited-height" type='file' name='image_path' id="image_path">
 
-    <input type="submit" value="Guardar cambios">
+    <input class="button red limited-width-2 limited-height" type="submit" value="Guardar cambios">
 
 </form>
 
