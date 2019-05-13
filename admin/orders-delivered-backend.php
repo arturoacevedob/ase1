@@ -35,7 +35,7 @@
     <div><img alt="Logo de Bats'il Maya" src="../images/logos/batsil_maya_logo.svg"></div>
     <ul>
         <li><a href="clients.php" target="_self">Clientes</a></li>
-        <li><a class="active" href="orders-pending-backend.html" target="_self">Pedidos</a></li>
+        <li><a class="active bold" href="orders-pending-backend.html" target="_self">Pedidos</a></li>
         <li><a href="products-backend.html" target="_self">Productos</a></li>
         <li><a  href="blog.php" target="_self">Blog</a></li>
 
