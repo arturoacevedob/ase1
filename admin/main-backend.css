@@ -24,6 +24,7 @@
     --button-border-radius: 1.4rem;
     --time: 0.2s;
     --ease: ease-out;
+    
 }
 
 /* Resets */
@@ -366,6 +367,7 @@ input.button {
 .kill-that-border{
     border: none;
 }
+
 /* Form Classes */
 textarea {
     padding: 0;
@@ -434,6 +436,7 @@ nav{
     max-width: 280px;
     position: fixed;
     height: 100vw;
+    font-size: 1.5em;
     background-color: var(--dark);
 }
 nav img{
