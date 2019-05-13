@@ -7,6 +7,7 @@ include 'connection.php';
 if (isset($_GET['id_product'])) {
     $id_product = $_GET['id_product'];
     $weight_selected = $_GET['weight_selector'];
+    $quantity = $_GET['quantity'];
 
     $query = "select * from weight_price where id_product = $id_product";
     $recordSet = execute($query);
@@ -20,11 +21,11 @@ if (isset($_GET['id_product'])) {
         $price3 = $row['price3'];
     }
 
-    if ($weight_selected == $weight1) {
-        echo $price1;
+    if ($weight_selected == $weight1 AND $quantity != '') {
+        echo $price1 * $quantity;
     } elseif ($weight_selected == $weight2) {
-        echo $price2;
+        echo $price2 * $quantity;
     } elseif ($weight_selected == $weight3) {
-        echo $price3;
+        echo $price3 * $quantity;
     }
 }

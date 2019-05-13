@@ -158,8 +158,8 @@ include 'agregar_producto.php';
                         </p>
                     </fieldset>
                     <fieldset class='h3-small'>
-                        <label for='cantidad'>Cantidad</label>
-                        <p><input id='cantidad' name='cantidad' type='number' max='100' min='0' value='1'/></p>
+                        <label for='quantity'>Cantidad</label>
+                        <p><input id='quantity' name='quantity' type='number' max='100' min='0' value='1' onchange='calculatePrice()'/></p>
                     </fieldset>
                 </div>
                 <fieldset class='h3-small'>
@@ -187,7 +187,7 @@ include 'agregar_producto.php';
 
             <div class='product-buy grid-2-space-between'>
                 <div class='grid-2-space-between align-center bold'>
-                    <span>Qt. x</span>
+                    <span id='quantity'>Qt. x</span>
                     <p id='calculated-total' class='currency'></p>
                 </div>
                 <?php
