@@ -25,29 +25,30 @@
     <title>Pedidos: Pendientes</title>
 </head>
 
-<body class="main-grid">
+<body class="main-grid pending-orders">
 
 <nav>
     <h2 style="display: none">Menú</h2>
     <div><img alt="Logo de Bats'il Maya" src="../images/logos/batsil_maya_logo.svg"></div>
     <ul>
         <li><a href="clients.php" target="_self">Clientes</a></li>
-        <li><a class="active" href="orders-pending-backend.php" target="_self">Pedidos</a></li>
+        <li><a class="active bold" href="orders-pending-backend.php" target="_self">Pedidos</a></li>
         <li><a href="products_coffee.php" target="_self">Productos</a></li>
         <li><a href="blog.php" target="_self">Blog</a></li>
-
-        <li><a href='login.php?killsession=1'>Cerrar sesión</a></li>
+    </ul>
+    <ul>
+        <li><a href='login.php?killsession=1'>Cerrar Sesión</a></li>
     </ul>
 </nav>
 
-<div class="big-margin">
+<div class="big-margin padding-thing">
 
     <div class="global-toolbar">
         <h1>Pedidos</h1>
     </div>
 
     <ul class="grid-tabs">
-        <li><a class="active" href="orders-pending-backend.html" id="pending" target="_self">Pendiente <span
+        <li><a class="active bold" href="orders-pending-backend.html" id="pending" target="_self">Pendiente <span
                 class="tab-counter">#</span></a></li>
         <li><a href="orders-enroute-backend.html" id="enroute" target="_self">En Ruta <span class="tab-counter">#</span></a>
         </li>
@@ -63,7 +64,8 @@
         <button class="button red kill-that-border">Agregar pedido</button>
     </div>
 
-    <div class="wrapper pending-item padding-for-all-2">
+    <div class="wrapper pending-item margin-top-thing">
+        <div class="padding-for-all-2">
         <div class="header">
             <h3>#236</h3>
             <p>Hoy - 26/02/19</p>
@@ -169,10 +171,11 @@
                 </tbody>
             </table>
         </div>
-        <div class="grid-end">
+</div>
+        <div class="bottom-thing grid-end padding-for-all-2">
             <label class="label-left" for="tracking-number">Número de rastreo</label>
             <input class="input-right" id="tracking-number" required type="text">
-            <button type="submit">Enviar a <strong>En Ruta</strong></button>
+            <button class="button red limited-width-2 limited-height kill-that-border" type="submit">Enviar a <strong>En Ruta</strong></button>
         </div>
     </div>
 

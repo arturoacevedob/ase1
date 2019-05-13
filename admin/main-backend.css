@@ -24,12 +24,27 @@
     --button-border-radius: 1.4rem;
     --time: 0.2s;
     --ease: ease-out;
+    
 }
 
 /* Resets */
 h1, h2, h3, h4, h5, h6, p, td, th {
     margin: 0;
     padding: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a:link {
+    color: var(--light);
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: var(--light);
 }
 
 /* Colors */
@@ -220,6 +235,9 @@ h1, h2, h3, h4, h5, h6, p, td, th {
     grid-column: 3;
     justify-self: center;
 }
+.pending-orders .bottom-thing input{
+    grid-column: auto;
+}
 /* Table Classes */
 caption {
     text-align: left;
@@ -353,6 +371,7 @@ input.button {
 .kill-that-border{
     border: none;
 }
+
 /* Form Classes */
 textarea {
     padding: 0;
@@ -421,6 +440,7 @@ nav{
     max-width: 280px;
     position: fixed;
     height: 100vw;
+    font-size: 1.3em;
     background-color: var(--dark);
 }
 nav img{
@@ -443,9 +463,9 @@ ul {
 }
 
 nav .active {
-    color: white;
+    color: var(--light);
     background-color: #4D310C;
-    border-left: solid 3px var(--a-active);
+    border-left: solid 15px var(--a-active);
 }
 nav ul{
     display: grid;
@@ -523,4 +543,17 @@ nav ul a{
 .round-red-border fieldset:first-of-type, .round-red-border fieldset:nth-of-type(5){
     padding-left: 0;
     border-left: none;
+}
+
+
+
+.pending-orders .margin-top-thing{
+    margin-top: 20px;
+}
+.pending-orders .header{
+    font-weight: bold;
+    border-bottom: 2px solid var(--light-80);
+    padding-bottom: 5px;
+
+    margin-bottom: 18px;
 }

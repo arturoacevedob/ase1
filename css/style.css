@@ -905,8 +905,7 @@ label + input[type="radio"] + label {
 #proceso .tueste-medio {
     position: absolute;
     top: 72%;
-    left: 26.5%;
-
+    left: 25.5%;
 }
 
 #proceso .tueste-vienes {
@@ -919,7 +918,7 @@ label + input[type="radio"] + label {
 #proceso .tueste-oscuro {
     position: absolute;
     top: 68%;
-    left: 61.5%;
+    left: 56.5%;
 }
 
 #proceso .tueste-italiano {
@@ -1059,9 +1058,7 @@ progress::-webkit-progress-value {
         margin: 0 auto;
         width: 40%;
     }
-    .help-mail h2 {
-        background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% 113% / 5% no-repeat !important;
-    }
+    
 }
 
 @media screen and (max-width: 767px) {
@@ -1100,6 +1097,19 @@ and (max-width: 800px){
 .batsil-maya{
     max-height: 150px;
 }
+#proceso .tueste-claro {
+    top: 43% ;
+    left: 12% ;
+}
+#proceso .tueste-vienes {
+    top: 40% ;
+    left: 40% ;
+}
+
+#proceso .tueste-italiano {
+    top: 39% ;
+    left: 73%;
+}
 }
 @media screen 
 and (min-width: 320px) 
@@ -1112,6 +1122,72 @@ and (max-width: 639px){
     }
     .call h2 {
         background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% 61% / 7% no-repeat;
+    }
+    #proceso .tipo-tueste p:nth-child(8) {
+        top: 66% !important;
+        left: -5% !important;
+    }
+    #proceso .tueste-claro {
+        top: 46% ;
+        left: 11%;
+    }
+    #proceso .tueste-medio {
+        top: 70% ;
+        left: 25% ;
+    }
+    #proceso .tueste-vienes {
+        top: 43%;
+        left: 39% ;
+    }
+    #proceso .tueste-oscuro {
+        top: 67% ;
+        left: 56%;
+    }
+    #proceso .tueste-italiano {
+        top: 42% ;
+        left: 71% ;
+    }
+}
+@media screen 
+and (min-width: 700px) 
+and (max-width: 800px){
+    #nosotros #image-nuestra-historia{
+    background: url(../images/nosotros/mexico_2.svg) 0 50% / contain no-repeat !important;
+    }
+    .mapa-mobil-cafe{
+        grid-template-rows: 1fr !important;
+}  
+.kill-padding-bottom{
+    padding-bottom: 0 !important;
+}
+#nuestrocafe #caracteristicas-taza {
+    background: url(../images/nuestro_cafe/caracteristicas_del_cafe_batsil_maya.svg) 46% 44% / 170% no-repeat !important;
+}
+.chat h2 {
+    background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% -6% / 15% no-repeat !important;
+}
+.call h2 {
+    background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% 50% / 15% no-repeat !important;
+}
+.help-mail h2 {
+    background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% 118% / 15% no-repeat !important;
+}
+.help-margin-top-button{
+    margin-top: 8px;
+}
+}
+@media screen 
+and (min-width: 640px) 
+and (max-width: 700px){
+#nuestrocafe #caracteristicas-taza {
+    background: url(../images/nuestro_cafe/caracteristicas_del_cafe_batsil_maya.svg) 49% 0 / contain no-repeat !important;
+}
+}
+@media screen 
+and (min-width: 768px) 
+and (max-width: 910px){
+    .help-mail h2 {
+        background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% 118% / 5% no-repeat;
     }
 }
 
@@ -1184,7 +1260,7 @@ and (max-width: 639px){
         padding-left: 14%;
     }
     .mapa-mobil-cafe{
-        grid-template-rows: 1fr 1fr !important;
+        grid-template-rows: 1fr 1fr;
     }
 
     .tsumbal{
@@ -1196,25 +1272,12 @@ and (max-width: 639px){
         top: 75% !important;
         left: -1% !important;
     }
-    #proceso .tueste-claro {
-        top: 43% !important;
-        left: 12% !important;
-    }
-    #proceso .tueste-vienes {
-        top: 40% !important;
-        left: 40% !important;
-    }
-
-    #proceso .tueste-italiano {
-        top: 39% !important;
-        left: 73% !important;
-    }
+   
+    
     .taza-cafe{
         grid-template-rows: 1fr 1fr;
         }
-        #nuestrocafe #caracteristicas-taza {
-            background: url(../images/nuestro_cafe/caracteristicas_del_cafe_batsil_maya.svg) 49% 0 / contain no-repeat !important;
-        }
+        
     .molidos img {
     width: 30% !important;
     }
@@ -1340,47 +1403,29 @@ and (max-width: 639px){
         font-size: 13px;
     }
 
-    #proceso .tueste-claro {
-        top: 41%;
-        left: 8%;
-    }
-
+    
     #proceso .tueste-claro h3 {
         font-size: 13px;
     }
 
-    #proceso .tueste-medio {
-        top: 64%;
-        left: 22%;
-    }
-
+   
     #proceso .tueste-medio h3 {
         font-size: 13px;
     }
 
-    #proceso .tueste-vienes {
-        top: 39%;
-        left: 38%;
-    }
+    
 
     #proceso .tueste-vienes h3 {
         font-size: 13px;
     }
 
-    #proceso .tueste-oscuro {
-        top: 61%;
-        left: 56%;
-    }
+
 
     #proceso .tueste-oscuro h3 {
         font-size: 13px;
     }
 
-    #proceso .tueste-italiano {
-        top: 38%;
-        left: 71%;
-
-    }
+   
 
     #proceso .tueste-italiano h3 {
         font-size: 13px;
@@ -1408,6 +1453,9 @@ and (max-width: 639px){
 }
 .seco{
     padding-left: 13%;
+}
+.help-margin-top-button{
+    margin-top: 10px;
 }
 }
 
@@ -1454,30 +1502,9 @@ and (max-width: 639px){
         width: 90% !important;
     
 }
-#proceso .tueste-claro {
-    top: 46% !important;
-    left: 11% !important;
-}
-#proceso .tueste-medio {
-    top: 70% !important;
-    left: 25% !important;
-}
-#proceso .tueste-vienes {
-    top: 43% !important;
-    left: 39% !important;
-}
-#proceso .tueste-oscuro {
-    top: 67% !important;
-    left: 56% !important;
-}
-#proceso .tueste-italiano {
-    top: 42% !important;
-    left: 71% !important;
-}
-#proceso .tipo-tueste p:nth-child(8) {
-    top: 66% !important;
-    left: -5% !important;
-}
+
+
+
 
     #proceso .tipo-tueste p:last-child {
         left: 5% !important;
