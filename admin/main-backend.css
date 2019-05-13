@@ -553,6 +553,14 @@ nav ul a{
     font-weight: bold;
     border-bottom: 2px solid var(--light-80);
     padding-bottom: 5px;
-
     margin-bottom: 18px;
+}
+
+.pending-order-tables-thing table{
+    padding-left: 20px;
+    border-left: 2px solid var(--light-80);
+}
+.pending-order-tables-thing table:first-of-type{
+    padding-left: 0;
+    border-left: none;
 }
