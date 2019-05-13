@@ -31,6 +31,15 @@ h1, h2, h3, h4, h5, h6, p, td, th {
     margin: 0;
     padding: 0;
 }
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a:link {
+    text-decoration: none;
+}
 
 /* Colors */
 
@@ -442,7 +451,7 @@ ul {
 }
 
 nav .active {
-    color: white;
+    color: var(--light);
     background-color: #4D310C;
     border-left: solid 5px var(--a-active);
 }
@@ -533,6 +542,6 @@ nav ul a{
     font-weight: bold;
     border-bottom: 2px solid var(--light-80);
     padding-bottom: 5px;
-    
+
     margin-bottom: 18px;
 }
