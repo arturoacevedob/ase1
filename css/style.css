@@ -905,8 +905,7 @@ label + input[type="radio"] + label {
 #proceso .tueste-medio {
     position: absolute;
     top: 72%;
-    left: 26.5%;
-
+    left: 25.5%;
 }
 
 #proceso .tueste-vienes {
@@ -919,7 +918,7 @@ label + input[type="radio"] + label {
 #proceso .tueste-oscuro {
     position: absolute;
     top: 68%;
-    left: 61.5%;
+    left: 56.5%;
 }
 
 #proceso .tueste-italiano {
@@ -1100,6 +1099,19 @@ and (max-width: 800px){
 .batsil-maya{
     max-height: 150px;
 }
+#proceso .tueste-claro {
+    top: 43% ;
+    left: 12% ;
+}
+#proceso .tueste-vienes {
+    top: 40% ;
+    left: 40% ;
+}
+
+#proceso .tueste-italiano {
+    top: 39% ;
+    left: 73%;
+}
 }
 @media screen 
 and (min-width: 320px) 
@@ -1116,6 +1128,26 @@ and (max-width: 639px){
     #proceso .tipo-tueste p:nth-child(8) {
         top: 66% !important;
         left: -5% !important;
+    }
+    #proceso .tueste-claro {
+        top: 46% ;
+        left: 11%;
+    }
+    #proceso .tueste-medio {
+        top: 70% ;
+        left: 25% ;
+    }
+    #proceso .tueste-vienes {
+        top: 43%;
+        left: 39% ;
+    }
+    #proceso .tueste-oscuro {
+        top: 67% ;
+        left: 56%;
+    }
+    #proceso .tueste-italiano {
+        top: 42% ;
+        left: 71% ;
     }
 }
 @media screen 
@@ -1211,7 +1243,7 @@ and (max-width: 700px){
         padding-left: 14%;
     }
     .mapa-mobil-cafe{
-        grid-template-rows: 1fr 1fr !important;
+        grid-template-rows: 1fr 1fr;
     }
 
     .tsumbal{
@@ -1223,19 +1255,8 @@ and (max-width: 700px){
         top: 75% !important;
         left: -1% !important;
     }
-    #proceso .tueste-claro {
-        top: 43% !important;
-        left: 12% !important;
-    }
-    #proceso .tueste-vienes {
-        top: 40% !important;
-        left: 40% !important;
-    }
-
-    #proceso .tueste-italiano {
-        top: 39% !important;
-        left: 73% !important;
-    }
+   
+    
     .taza-cafe{
         grid-template-rows: 1fr 1fr;
         }
@@ -1365,47 +1386,29 @@ and (max-width: 700px){
         font-size: 13px;
     }
 
-    #proceso .tueste-claro {
-        top: 41%;
-        left: 8%;
-    }
-
+    
     #proceso .tueste-claro h3 {
         font-size: 13px;
     }
 
-    #proceso .tueste-medio {
-        top: 64%;
-        left: 22%;
-    }
-
+   
     #proceso .tueste-medio h3 {
         font-size: 13px;
     }
 
-    #proceso .tueste-vienes {
-        top: 39%;
-        left: 38%;
-    }
+    
 
     #proceso .tueste-vienes h3 {
         font-size: 13px;
     }
 
-    #proceso .tueste-oscuro {
-        top: 61%;
-        left: 56%;
-    }
+
 
     #proceso .tueste-oscuro h3 {
         font-size: 13px;
     }
 
-    #proceso .tueste-italiano {
-        top: 38%;
-        left: 71%;
-
-    }
+   
 
     #proceso .tueste-italiano h3 {
         font-size: 13px;
@@ -1479,26 +1482,8 @@ and (max-width: 700px){
         width: 90% !important;
     
 }
-#proceso .tueste-claro {
-    top: 46% !important;
-    left: 11% !important;
-}
-#proceso .tueste-medio {
-    top: 70% !important;
-    left: 25% !important;
-}
-#proceso .tueste-vienes {
-    top: 43% !important;
-    left: 39% !important;
-}
-#proceso .tueste-oscuro {
-    top: 67% !important;
-    left: 56% !important;
-}
-#proceso .tueste-italiano {
-    top: 42% !important;
-    left: 71% !important;
-}
+
+
 
 
     #proceso .tipo-tueste p:last-child {
