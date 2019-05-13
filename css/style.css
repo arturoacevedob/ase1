@@ -1059,9 +1059,7 @@ progress::-webkit-progress-value {
         margin: 0 auto;
         width: 40%;
     }
-    .help-mail h2 {
-        background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% 113% / 5% no-repeat !important;
-    }
+    
 }
 
 @media screen and (max-width: 767px) {
@@ -1133,6 +1131,18 @@ and (max-width: 800px){
 #nuestrocafe #caracteristicas-taza {
     background: url(../images/nuestro_cafe/caracteristicas_del_cafe_batsil_maya.svg) 46% 44% / 170% no-repeat !important;
 }
+.chat h2 {
+    background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% -6% / 15% no-repeat !important;
+}
+.call h2 {
+    background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% 50% / 15% no-repeat !important;
+}
+.help-mail h2 {
+    background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% 118% / 15% no-repeat !important;
+}
+.help-margin-top-button{
+    margin-top: 8px;
+}
 }
 @media screen 
 and (min-width: 640px) 
@@ -1140,6 +1150,13 @@ and (max-width: 700px){
 #nuestrocafe #caracteristicas-taza {
     background: url(../images/nuestro_cafe/caracteristicas_del_cafe_batsil_maya.svg) 49% 0 / contain no-repeat !important;
 }
+}
+@media screen 
+and (min-width: 768px) 
+and (max-width: 910px){
+    .help-mail h2 {
+        background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% 118% / 5% no-repeat;
+    }
 }
 
 @media screen and (min-width: 640px) {
@@ -1433,6 +1450,9 @@ and (max-width: 700px){
 }
 .seco{
     padding-left: 13%;
+}
+.help-margin-top-button{
+    margin-top: 10px;
 }
 }
 
