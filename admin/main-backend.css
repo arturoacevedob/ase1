@@ -485,7 +485,10 @@ nav ul a{
     background: url(../admin/images/strings/backend_strings_amarillo.svg) 16% -12% / 10% no-repeat;
 }
 .pedidos-active {
-    background: url(../admin/images/strings/backend_strings_amarillo.svg) 16% -12% / 10% no-repeat;
+    background: url(../admin/images/strings/backend_strings_amarillo.svg) 16% 50% / 10% no-repeat;
+}
+.productos-active {
+    background: url(../admin/images/strings/backend_strings_amarillo.svg) 16% 115% / 10% no-repeat;
 }
 
 .big-margin{
