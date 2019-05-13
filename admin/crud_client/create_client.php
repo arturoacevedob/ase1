@@ -99,7 +99,7 @@ if (isset($_POST['insert'])) {
         <label for="city">Ciudad</label>
         <input id="city" type="text" name="city">
         <label for="cp">C.P.</label>
-        <input id="cp" type="text" name="cp">
+        <input id="cp" type="number" name="cp" maxlength="5">
         <label for="state">Estado</label>
         <input id="state" type="text" name="state">
         <label for="phone_address">Teléfono</label>

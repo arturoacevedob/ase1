@@ -89,7 +89,7 @@ include 'header.php';
     <section>
         <h2 class="kill">Prácticas</h2>
         <article class="grid-2-text-photo">
-            <div class="grid-2-right-image image-agroecologicas"></div>
+            <div class="grid-2-right-image image-agroecologicas order-2"></div>
             <div class="grid-2-left-text container" >
                 <div class="wrapper-text">
                     <h3>Prácticas agroecológicas</h3><br>
@@ -107,7 +107,7 @@ include 'header.php';
             </div>
         </article>
         <article class="grid-2-text-photo">
-            <div class="grid-2-left-image" id="image-restauracion"></div>
+            <div class="grid-2-left-image order-2" id="image-restauracion"></div>
             <div class="grid-2-right-text container" >
                 <div class="wrapper-text">
                     <h3>Restauración de los cafetales</h3><br>

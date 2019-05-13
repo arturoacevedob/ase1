@@ -4,35 +4,10 @@
     <option name="AUTOSCROLL_TO_SOURCE" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b0b4be1-8d7c-4364-8440-568a85826da6" name="Default Changelist" comment="saving advances in products and productview">
-      <change afterPath="$PROJECT_DIR$/price_calculation.php" afterDir="false" />
+    <list default="true" id="2b0b4be1-8d7c-4364-8440-568a85826da6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/blog.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/clients-backend.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/clients-backend.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/clients.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/clients.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/crud_product/create_product.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/crud_product/create_product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/crud_product/delete_product.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/crud_product/delete_product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/crud_product/update_product (test).php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/crud_product/update_product (test).php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/crud_product/update_product.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/crud_product/update_product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/orders-pending-backend.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/orders-pending-backend.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/products-coffee.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/products_coffee.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agregar-producto.php" beforeDir="false" afterPath="$PROJECT_DIR$/agregar_producto.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ayuda.php" beforeDir="false" afterPath="$PROJECT_DIR$/ayuda.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carrito.php" beforeDir="false" afterPath="$PROJECT_DIR$/carrito.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contactanos.php" beforeDir="false" afterPath="$PROJECT_DIR$/contactanos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cuenta-envio.php" beforeDir="false" afterPath="$PROJECT_DIR$/cuenta_envio.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cuenta-informacion.php" beforeDir="false" afterPath="$PROJECT_DIR$/cuenta_informacion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iniciar_sesion.php" beforeDir="false" afterPath="$PROJECT_DIR$/iniciar_sesion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nosotros.php" beforeDir="false" afterPath="$PROJECT_DIR$/nosotros.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/noticias.php" beforeDir="false" afterPath="$PROJECT_DIR$/noticias.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuestro-cafe.php" beforeDir="false" afterPath="$PROJECT_DIR$/nuestro_cafe.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proceso.php" beforeDir="false" afterPath="$PROJECT_DIR$/proceso.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/procesodepago.php" beforeDir="false" afterPath="$PROJECT_DIR$/proceso_de_pago.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-view.php" beforeDir="false" afterPath="$PROJECT_DIR$/product_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products.php" beforeDir="false" afterPath="$PROJECT_DIR$/products.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/price_calculation.php" beforeDir="false" afterPath="$PROJECT_DIR$/price_calculation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/product_view.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -70,8 +45,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/products.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
-              <caret line="127" column="60" selection-start-line="127" selection-start-column="60" selection-end-line="127" selection-end-column="60" />
+            <state relative-caret-position="95">
+              <caret line="119" column="51" selection-start-line="119" selection-start-column="33" selection-end-line="119" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -79,8 +54,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/product_view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="519">
-              <caret line="153" column="71" selection-start-line="153" selection-start-column="71" selection-end-line="153" selection-end-column="71" />
+            <state relative-caret-position="446">
+              <caret line="348" column="5" selection-start-line="348" selection-start-column="5" selection-end-line="348" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -88,8 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/price_calculation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="48" lean-forward="true" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+            <state relative-caret-position="420">
+              <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -97,8 +72,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fran code/productos.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3859">
-              <caret line="50" column="84" selection-start-line="50" selection-start-column="84" selection-end-line="50" selection-end-column="84" />
+            <state relative-caret-position="164">
+              <caret line="122" column="38" selection-start-line="122" selection-start-column="38" selection-end-line="122" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -125,11 +100,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>editar</find>
-      <find>$row</find>
-      <find>wrapper</find>
-      <find>elimia</find>
-      <find>product-item</find>
       <find>max</find>
       <find>price3</find>
       <find>edit</find>
@@ -154,11 +124,14 @@
       <find>\&quot;</find>
       <find>$d</find>
       <find>producto</find>
+      <find>peso-selector</find>
+      <find>weight_select</find>
       <find>precio-cafe</find>
+      <find>id-frm</find>
+      <find>quantu</find>
+      <find>quant</find>
     </findStrings>
     <replaceStrings>
-      <replace>&lt;li class=&quot;button red light&quot;&gt;&lt;a href=&quot;&quot; target=&quot;_self&quot;&gt;Contáctanos&lt;/a&gt;&lt;/li&gt;</replace>
-      <replace>&lt;li class=&quot;button red light fit-content&quot;&gt;&lt;a href=&quot;&quot; target=&quot;_self&quot;&gt;Contáctanos&lt;/a&gt;&lt;/li&gt;</replace>
       <replace>js/jquery.js</replace>
       <replace>&lt;li class=&quot;button red&quot;&gt;&lt;a class=&quot;light&quot; href=&quot;&quot; target=&quot;_self&quot;&gt;Contáctanos&lt;/a&gt;&lt;/li&gt;</replace>
       <replace>&lt;li class=&quot;button red fit-content&quot;&gt;&lt;a class=&quot;light&quot; href=&quot;&quot; target=&quot;_self&quot;&gt;Contáctanos&lt;/a&gt;&lt;/li&gt;</replace>
@@ -187,6 +160,8 @@
       <replace>3</replace>
       <replace>'</replace>
       <replace>$row</replace>
+      <replace>weight_select</replace>
+      <replace>weight_selector</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/images/logos</dir>
@@ -206,6 +181,10 @@
         <entry key="$PROJECT_DIR$" value="local" />
       </map>
     </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/price_calculation.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/product_view.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -243,7 +222,6 @@
         <option value="$PROJECT_DIR$/admin/connection.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/admin/crud_client/delete_client.php" />
-        <option value="$PROJECT_DIR$/admin/crud_client/create_client.php" />
         <option value="$PROJECT_DIR$/admin/main-backend.css" />
         <option value="$PROJECT_DIR$/admin/blog.php" />
         <option value="$PROJECT_DIR$/organico.php" />
@@ -258,8 +236,9 @@
         <option value="$PROJECT_DIR$/admin/login.php" />
         <option value="$PROJECT_DIR$/product-view.php" />
         <option value="$PROJECT_DIR$/agregar-producto.php" />
-        <option value="$PROJECT_DIR$/price_calculation.php" />
         <option value="$PROJECT_DIR$/products.php" />
+        <option value="$PROJECT_DIR$/admin/crud_client/create_client.php" />
+        <option value="$PROJECT_DIR$/price_calculation.php" />
         <option value="$PROJECT_DIR$/product_view.php" />
       </list>
     </option>
@@ -282,9 +261,8 @@
       <path value="-a" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="36" />
-    <option name="y" value="56" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="22" />
     <option name="width" value="1280" />
     <option name="height" value="778" />
   </component>
@@ -446,21 +424,7 @@
       <workItem from="1557491688200" duration="9544000" />
       <workItem from="1557600132812" duration="3026000" />
       <workItem from="1557618126955" duration="38555000" />
-      <workItem from="1557704200155" duration="4467000" />
-    </task>
-    <task id="LOCAL-00092" summary="Products module developed.&#10;Missing edit module.">
-      <created>1554833571354</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1554833571355</updated>
-    </task>
-    <task id="LOCAL-00093" summary="Mooooore baaaaackend.&#10;Oh, and mastercard and visa svgs.">
-      <created>1554845843184</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1554845843184</updated>
+      <workItem from="1557704200155" duration="8486000" />
     </task>
     <task id="LOCAL-00094" summary="Added American Express logo.">
       <created>1554846638872</created>
@@ -791,11 +755,25 @@
       <option name="project" value="LOCAL" />
       <updated>1557702149457</updated>
     </task>
-    <option name="localTasksCounter" value="141" />
+    <task id="LOCAL-00141" summary="saving advances in products and productview">
+      <created>1557710609572</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1557710609572</updated>
+    </task>
+    <task id="LOCAL-00142" summary="calculate_price according to weight works.&#10;pending: quantity multiplication.">
+      <created>1557743385233</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1557743385233</updated>
+    </task>
+    <option name="localTasksCounter" value="143" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="362146000" />
+    <option name="totallyTimeSpent" value="366165000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -807,7 +785,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="778" extended-state="6" />
+    <frame x="0" y="22" width="1280" height="778" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49708456" visible="true" weight="0.22132471" />
@@ -914,7 +892,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/js/tiny-date-picker" />
     </ignored-roots>
-    <MESSAGE value="update.php changes" />
     <MESSAGE value="update.php works but byethost is fucking with it" />
     <MESSAGE value="Fixed some create.php typos and structure." />
     <MESSAGE value="Fixed some href." />
@@ -939,13 +916,13 @@
     <MESSAGE value="UPDATE PRODUCT WORKS FLAWLESSLY" />
     <MESSAGE value="added autofocus to logins." />
     <MESSAGE value="saving advances in products and productview" />
-    <option name="LAST_COMMIT_MESSAGE" value="saving advances in products and productview" />
+    <MESSAGE value="calculate_price according to weight works.&#10;pending: quantity multiplication." />
+    <option name="LAST_COMMIT_MESSAGE" value="calculate_price according to weight works.&#10;pending: quantity multiplication." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin/products-coffee-backend.html" />
     <entry file="file://$PROJECT_DIR$/nuestro-cafe.html" />
     <entry file="file://$PROJECT_DIR$/index.html" />
     <entry file="file://$PROJECT_DIR$/testing/index.html" />
@@ -1129,24 +1106,10 @@
     <entry file="file://$USER_HOME$/Documents/• Projects/ASE I/fran code/productos.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/iniciar_sesion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="8" lean-forward="true" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/crud_client/create_client.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="56" column="7" lean-forward="true" selection-start-line="56" selection-start-column="7" selection-end-line="56" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1211,10 +1174,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fran code/productos.php">
+    <entry file="file://$PROJECT_DIR$/admin/crud_client/create_client.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3859">
-          <caret line="50" column="84" selection-start-line="50" selection-start-column="84" selection-end-line="50" selection-end-column="84" />
+        <state relative-caret-position="178">
+          <caret line="83" column="39" selection-start-line="83" selection-start-column="39" selection-end-line="83" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iniciar_sesion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/products.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="119" column="51" selection-start-line="119" selection-start-column="33" selection-end-line="119" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -1225,24 +1202,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/price_calculation.php">
+    <entry file="file://$PROJECT_DIR$/fran code/productos.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="48" lean-forward="true" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+        <state relative-caret-position="164">
+          <caret line="122" column="38" selection-start-line="122" selection-start-column="38" selection-end-line="122" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/products.php">
+    <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="127" column="60" selection-start-line="127" selection-start-column="60" selection-end-line="127" selection-end-column="60" />
+        <state relative-caret-position="-21606" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/price_calculation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/product_view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="153" column="71" selection-start-line="153" selection-start-column="71" selection-end-line="153" selection-end-column="71" />
+        <state relative-caret-position="446">
+          <caret line="348" column="5" selection-start-line="348" selection-start-column="5" selection-end-line="348" selection-end-column="5" />
         </state>
       </provider>
     </entry>

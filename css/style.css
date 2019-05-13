@@ -1141,8 +1141,8 @@ progress::-webkit-progress-value {
     left: 71% !important;
 }
 #proceso .tipo-tueste p:nth-child(8) {
-    top: 67% !important;
-    left: -4% !important;
+    top: 66% !important;
+    left: -5% !important;
 }
 
     #proceso .tipo-tueste p:last-child {
@@ -1239,8 +1239,8 @@ progress::-webkit-progress-value {
 
     /* —————— AQUÍ EMPIEZAN ESTILOS DE PROCESO—————— */
     #proceso .tipo-tueste p:nth-child(8) {
-        top: 76% !important;
-        left: -1% !important;
+        top: 75% !important;
+        left: -2% !important;
     }
     #proceso .tueste-claro {
         top: 43% !important;
