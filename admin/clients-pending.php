@@ -13,33 +13,55 @@ if (!isset($_SESSION['user'])) {
 
 function createPendingClientList()
 {
-    $query = "select * from clients";
+    $query = "select * from clients_pending";
     $recordSet = execute($query);
 
-    $clients = array();
+    $clients_pending = array();
     $counter = 0;
     while ($row = mysqli_fetch_array($recordSet)) {
-        $clients[$counter] = array();
-        $clients[$counter]["id_client"] = $row["id_client"];
-        $clients[$counter]["name_alias"] = $row["name_alias"];
-        $clients[$counter]["giro"] = $row["giro"];
-        $clients[$counter]["client_type"] = $row["client_type"];
+        $clients_pending[$counter] = array();
+        $clients_pending[$counter]["name_client_pending"] = $row["name_client_pending"];
+        $clients_pending[$counter]["email_client_pending"] = $row["email_client_pending"];
+        $clients_pending[$counter]["phone_client_pending"] = $row["phone_client_pending"];
+        $clients_pending[$counter]["day_client_pending"] = $row["day_client_pending"];
+        $clients_pending[$counter]["from_client_pending"] = $row["from_client_pending"];
+        $clients_pending[$counter]["to_client_pending"] = $row["to_client_pending"];
         $counter++;
     }
 
-    for ($i = 0; $i < count($clients); $i++) {
+    for ($i = 0; $i < count($clients_pending); $i++) {
 
         echo "
         <table class='expandable-table client wrapper'>
         <tbody>
         <tr class='collapsed-view'>
-            <td class='padding-for-all radius-left'>" .
-            $clients[$i]["name_alias"] . "<span class='tag'>" . $clients[$i]["client_type"] . "</span><br>" .
-            $clients[$i]["giro"] .
-            "</td>
-            <td><a href='crud_client/update_client.php?idclient=" . $clients[$i]["id_client"] . "'>Editar</a><a href='crud_client/delete_client.php?idclient=" . $clients[$i]["id_client"] . "'>Eliminar</a></td>
-            <td class='radius-right'></td>
-            </tr>
+            <td>
+            <div>
+            </table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Correo</th>
+                        <th>Teléfono</th>
+                        <th>Día</th>
+                        <th>Desde</th>
+                        <th>Hasta</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>" . $clients_pending[$i][name_client_pending] . "</td>
+                        <td>" . $clients_pending[$i][email_client_pending] . "</td>
+                        <td>" . $clients_pending[$i][phone_client_pending] . "</td>
+                        <td>" . $clients_pending[$i][day_client_pending] . "</td>
+                        <td>" . $clients_pending[$i][from_client_pending] . "</td>
+                        <td>" . $clients_pending[$i][to_client_pending] . "</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+            </td>
+        </tr>
         <div class='padding-for-all-2'>
         <tr class='expanded-view'>
                 <td colspan='3'>
