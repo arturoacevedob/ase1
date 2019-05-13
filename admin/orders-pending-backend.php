@@ -71,9 +71,9 @@
             <p>Hoy - 26/02/19</p>
             <p class="client">Capeltic <a href="">»</a></p>
         </div>
-        <div class="grid-2-1-1 give-me-gap">
+        <div class="grid-2-1-1 give-me-gap pending-order-tables-thing">
             <table class="order-table">
-                <caption>Orden</caption>
+                <caption class="kill-me">Orden</caption>
                 <thead>
                 <tr>
                     <th>Artículo</th>
@@ -129,7 +129,7 @@
                 </tfoot>
             </table>
             <table>
-                <caption>Dirección</caption>
+            <caption>Dirección</caption>
                 <thead>
                 <tr>
                     <th>Capeltic Santa Fe</th>

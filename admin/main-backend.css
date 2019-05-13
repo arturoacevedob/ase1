@@ -280,7 +280,8 @@ th {
     display: grid;
     grid-template-rows: auto 1fr;
 }
-.expandable-table.client.wrapper.open{
+
+.expandable-table.wrapper.open {
     border: 2px solid var(--coral);
 }
 /*      Table Classes > Collapsed Table */
@@ -557,6 +558,26 @@ nav ul a{
     font-weight: bold;
     border-bottom: 2px solid var(--light-80);
     padding-bottom: 5px;
-
     margin-bottom: 18px;
+}
+
+.pending-order-tables-thing table{
+    padding-left: 20px;
+    border-left: 2px solid var(--light-80);
+}
+.pending-order-tables-thing table caption{
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 11px;
+    padding-left: 20px;
+    border-left: 2px solid var(--light-80);
+}
+.pending-order-tables-thing table:first-of-type{
+    padding-left: 0;
+    border-left: none;
+}
+.kill-me{
+    border-left: transparent !important;
+    border-bottom: transparent !important;
+    padding-left:0 !important;
 }
