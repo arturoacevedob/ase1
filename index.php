@@ -285,7 +285,7 @@ include 'header.php';
                 <figure class="image-top-first-round">
                     <img src="images/inicio/nosotros_granos_de_cafe_batsil_maya.jpg" alt="Café de Bats'il Maya">
                 </figure>
-                <p>Nuestra historia, cultura, visión, misión y organización.</p>
+                <p class="set-height-us">Nuestra historia, cultura, visión, misión y organización.</p>
                 <a class="button red fit-content" target="_self" href="nosotros.php">Conócenos</a>
             </section>
             <section class="grid-image-first">
@@ -293,7 +293,7 @@ include 'header.php';
                 <figure class="image-top-first-round">
                     <img src="images/inicio/nuestro_cafe_batsil_maya.jpg" alt="Manos con café">
                 </figure>
-                <p>Nuestras condiciones, variedades, tostados, molidos y demás.</p>
+                <p class="set-height-us">Nuestras condiciones, variedades, tostados, molidos y demás.</p>
                 <a class="button red fit-content" target="_self" href="nuestro_cafe.php">Nuestro café</a>
             </section>
             <section class="grid-image-first">
@@ -301,7 +301,7 @@ include 'header.php';
                 <figure class="image-top-first-round">
                     <img src="images/inicio/proceso_batsil_maya.jpg" alt="Manos con la cereza de café">
                 </figure>
-                <p>Prácticas agroecológicas, restauración de cafetales, beneficio húmedo y seco.</p>
+                <p class="set-height-us">Prácticas agroecológicas, restauración de cafetales, beneficio húmedo y seco.</p>
                 <a class="button red fit-content" target="_self" href="proceso.php">Nuestras prácticas</a>
             </section>
         </div>
