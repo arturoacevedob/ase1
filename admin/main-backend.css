@@ -481,6 +481,13 @@ nav ul a{
     border-left: 15px solid var(--dark);
 }
 
+.cliente-active {
+    background: url(../admin/images/strings/backend_strings_amarillo.svg) 16% -12% / 10% no-repeat;
+}
+.pedidos-active {
+    background: url(../admin/images/strings/backend_strings_amarillo.svg) 16% -12% / 10% no-repeat;
+}
+
 .big-margin{
     margin-left: 300px;
 }
