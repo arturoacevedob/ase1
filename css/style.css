@@ -1240,7 +1240,7 @@ progress::-webkit-progress-value {
     /* —————— AQUÍ EMPIEZAN ESTILOS DE PROCESO—————— */
     #proceso .tipo-tueste p:nth-child(8) {
         top: 75% !important;
-        left: -2% !important;
+        left: -1% !important;
     }
     #proceso .tueste-claro {
         top: 43% !important;
