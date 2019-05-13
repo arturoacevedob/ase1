@@ -31,6 +31,15 @@ h1, h2, h3, h4, h5, h6, p, td, th {
     margin: 0;
     padding: 0;
 }
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a:link {
+    text-decoration: none;
+}
 
 /* Colors */
 
@@ -442,9 +451,9 @@ ul {
 }
 
 nav .active {
-    color: white;
+    color: var(--light);
     background-color: #4D310C;
-    border-left: solid 3px var(--a-active);
+    border-left: solid 15px var(--a-active);
 }
 nav ul{
     display: grid;
