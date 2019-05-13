@@ -595,3 +595,9 @@ nav ul a{
     border-bottom: transparent !important;
     padding-left:0 !important;
 }
+
+
+.lonely-ul{
+    grid-gap: 0 !important;
+    margin-top: 35% !important;
+}
