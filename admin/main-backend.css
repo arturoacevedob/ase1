@@ -436,7 +436,7 @@ nav{
     max-width: 280px;
     position: fixed;
     height: 100vw;
-    font-size: 1.5em;
+    font-size: 1.3em;
     background-color: var(--dark);
 }
 nav img{
