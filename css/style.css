@@ -1192,7 +1192,7 @@ and (max-width: 800px){
         grid-template-rows: 1fr 1fr;
         }
         #nuestrocafe #caracteristicas-taza {
-            background: url(../images/nuestro_cafe/caracteristicas_del_cafe_batsil_maya.svg) 41% 0 / contain no-repeat !important;
+            background: url(../images/nuestro_cafe/caracteristicas_del_cafe_batsil_maya.svg) 49% 0 / contain no-repeat !important;
         }
     .molidos img {
     width: 30% !important;
