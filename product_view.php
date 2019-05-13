@@ -69,11 +69,11 @@ include 'agregar_producto.php';
                         <label for="menu-mobile-toggle"><span id="menu-icon"></span></label>
                         <div id="overlay"></div>
                         <ul class="menu-mobile-content light-bg">
-                            <li><a class="active" href="index.php" target="_self">Inicio</a></li>
+                            <li><a href="index.php" target="_self">Inicio</a></li>
                             <li><a href="nosotros.php" target="_self">Nosotros</a></li>
                             <li><a href="nuestro_cafe.php" target="_self">Nuestro café</a></li>
                             <li><a href="proceso.php" target="_self">Proceso</a></li>
-                            <li><a href="products.php" target="_self">Productos</a></li>
+                            <li><a class="active" href="products.php" target="_self">Productos</a></li>
                             <li><a href="noticias.php" target="_self">Noticias</a></li>
                             <li><a href="ayuda.php" target="_self">Ayuda</a></li>
                             <?php
@@ -189,10 +189,11 @@ include 'agregar_producto.php';
                 <div class='grid-2-space-between align-center bold'>
                     <span id='quantity'>Qt. x</span>
                     <p id='calculated-total' class='currency'></p>
-                </div>
-                <?php
-                compra()
-                ?>
+                </div>";
+
+        compra();
+
+        echo "
             </div>
             <div class='center-aligned'>
                 <p>Pide 11KG para envío nacional gratis</p>
