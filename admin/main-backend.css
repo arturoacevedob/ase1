@@ -38,6 +38,7 @@ h1, h2, h3, h4, h5, h6, p, td, th {
     margin-left: 251px;
     background-color: var(--grey);
     padding: 30px;
+    z-index: 2;
 
 }
 ul {
@@ -55,7 +56,24 @@ nav a:visited {
     color: var(--light);
 }
 
+.tab1 {
+    max-width: 34%;
+    position: relative;
+    left: 230%;
+    top: 187%;
+    margin-top: 81px;
+    z-index: 1;
+}
+.tab2 {
+    max-width: 34%;
+    position: relative;
+    left: 230%;
+    top: 187%;
+    margin-top: 81px;
+    z-index: 1;
+}
 .tab-active{
+    
     padding: 8px 55px;
     background: url(../admin/images/strings/tab1.svg)52% 11%/72% no-repeat;
 }
@@ -145,11 +163,7 @@ nav a:visited {
 }
 
 .grid-tabs {
-    width: max-content;
-    margin: auto;
-    margin-bottom: -0.1%;
-    display: grid;
-    grid-auto-flow: column;
+    position:absolute;
 }
 
 .grid-tabs > * {
