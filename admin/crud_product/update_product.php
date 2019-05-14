@@ -67,7 +67,7 @@ if (isset($_POST['update'])) {
         execute($q);
     }
 
-    if (isset($_POST['weight1'])) {
+    if (isset($_POST['weight1']) AND isset($_POST['price1'])) {
         $q = "update weight_price set weight1 = '$weight1', price1 = '$price1' where id_product = '$id_product'";
         execute($q);
     } else {

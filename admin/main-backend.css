@@ -514,7 +514,7 @@ nav ul a{
     background: url(../admin/images/strings/backend_strings.svg) 16% 115% / 10% no-repeat;
 }
 .ayuda-disactive {
-    background: url(../admin/images/strings/backend_strings_ayuda.svg) 16% 115% / 10% no-repeat;
+    background: url(../admin/images/strings/backend_strings_ayuda.svg) 16% -21% / 10% no-repeat;
 }
 .cerrar-disactive {
     background: url(../admin/images/strings/backend_strings_ayuda.svg) 16% 115% / 10% no-repeat;
