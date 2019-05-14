@@ -34,7 +34,10 @@ h1, h2, h3, h4, h5, h6, p, td, th {
     padding: 0;
 }
 .b-grey{
-    color: var(--grey);
+    margin-left: 251px;
+    background-color: var(--grey);
+    padding: 30px;
+
 }
 ul {
     margin: 0;
@@ -63,7 +66,11 @@ nav a:visited {
 .bold{
     font-weight: bold;
 }
-
+.mono-font{
+    font-family: IBMPlexMono, sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+}
 /* Utility classes */
 .order-1 {
     order: 1;
@@ -124,6 +131,7 @@ nav a:visited {
     margin: 0;
     padding: 0;
     display: grid;
+    background-color: white;
 }
 
 /* Toolbar */
