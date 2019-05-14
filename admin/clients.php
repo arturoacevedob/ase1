@@ -407,13 +407,15 @@ function createClientList()
         <li><a href="clients-pending.php" id="clients-pending" target="_self">Pendientes</a></li>
         <li><a class="active" href="clients.php" id="clients" target="_self">Todos los clientes</a></li>
     </ul>
-
+    
+    <div class="b-grey">
     <div class="grid-2-space-between give-me-gap">
         <div>
             <label class="kill" for="search"></label>
             <input id="search" placeholder="Buscar" type="search">
         </div>
         <a class="button red-outline" href='crud_client/create_client.php'>Agregar cliente</a>
+    </div>
     </div>
 
     <?php createClientList(); ?>
