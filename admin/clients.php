@@ -155,7 +155,7 @@ function createClientList()
                             <div><a href=''>Todos los pedidos >></a></div>
                         </div>
                         <div class='grid-column last-orders-table padding-for-all'>
-                            <div>
+                            <div class='mono-font'>
                                 <div>
                                     <div>Hoy - 03/03/19</div>
                                     <div>#236 »</div>
