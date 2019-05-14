@@ -98,10 +98,10 @@ nav a:visited {
     margin-top: -20px;
     z-index: 1;
 }
-.tab6{
+.tab6 {
     max-width: 86%;
     position: relative;
-    left: 169%;
+    left: 179%;
     /* top: 0%; */
     margin-top: 81px;
     z-index: 1;
@@ -109,7 +109,7 @@ nav a:visited {
 .tab7{
     max-width: 86%;
     position: relative;
-    left: 219%;
+    left: 227%;
     /* top: 0%; */
     margin-top: -15px;
     z-index: 1;
@@ -117,7 +117,7 @@ nav a:visited {
 .tab8{
     max-width: 86%;
     position: relative;
-    left: 254%;
+    left: 259;
     /* top: 0%; */
     margin-top: -21px;
     z-index: 1;
