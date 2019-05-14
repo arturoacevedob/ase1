@@ -56,10 +56,12 @@ nav a:visited {
 }
 
 .tab-active{
-    background: url(../admin/images/strings/tab1.svg)0% 0%/contain no-repeat;
+    padding: 8px 55px;
+    background: url(../admin/images/strings/tab1.svg)52% 33%/72% no-repeat;
 }
-.tab-disactive{
-    background: url(../admin/images/strings/tab2.svg)0% 0%/contain no-repeat;
+.tab-disactive {
+    padding: 13px 71px;
+    background: url(../admin/images/strings/tab2.svg)52% 11%/72% no-repeat;
 }
 /* Colors */
 
@@ -145,6 +147,7 @@ nav a:visited {
 .grid-tabs {
     width: max-content;
     margin: auto;
+    margin-bottom: -0.1%;
     display: grid;
     grid-auto-flow: column;
 }

@@ -143,7 +143,7 @@ function createCoffeeListOptions()
     <div class="global-toolbar">
         <h1>Productos</h1>
     </div>
-
+    </div>
     <ul class="grid-tabs">
         <li><a class="active tab-active" href="products_coffee.php" id="coffee" target="_self">Café</a></li>
         <li><a class="tab-disactive"href="products-honey-backend.html" id="honey" target="_self">Miel</a></li>
@@ -163,7 +163,7 @@ function createCoffeeListOptions()
         ?>
     </div>
     </div>
-</div>
+
 
 </body>
 </html>

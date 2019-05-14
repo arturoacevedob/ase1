@@ -47,6 +47,7 @@
     <div class="global-toolbar">
         <h1>Pedidos</h1>
     </div>
+    </div>
 
     <ul class="grid-tabs">
         <li><a class="active bold" href="orders-pending-backend.html" id="pending" target="_self">Pendiente <span
@@ -57,6 +58,7 @@
                 class="tab-counter">#</span></a></li>
     </ul>
 
+    <div class="b-grey">
     <div class="grid-2-space-between give-me-gap">
         <div>
             <label for="search"></label>
@@ -172,7 +174,8 @@
                 </tbody>
             </table>
         </div>
-</div>
+        </div>
+
         <div class="bottom-thing grid-end padding-for-all-2 give-me-gap">
             <label class="label-left" for="tracking-number">Número de rastreo</label>
             <input class="input-right" id="tracking-number" required type="text">
