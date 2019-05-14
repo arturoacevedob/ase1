@@ -1688,11 +1688,12 @@ and (max-width: 910px) {
 }
 
 #nuestrocafe #image-ubicacion {
-    background: url(../images/nuestro_cafe/ubicacion_chiapas_batsil_maya.jpg) 0 0 / cover no-repeat;;
+    background: url(../images/nuestro_cafe/ubicacion_chiapas_batsil_maya.jpg) 0 0 / cover no-repeat;
 }
 
 #nuestrocafe #caracteristicas-taza {
-    background: url(../images/nuestro_cafe/caracteristicas_del_cafe_batsil_maya.svg) 0 0 / contain no-repeat;;
+    background: url(../images/nuestro_cafe/caracteristicas_del_cafe_batsil_maya.svg) 0 0 / contain no-repeat;
+    margin-left: 2em;
 }
 
 .organic-height {

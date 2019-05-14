@@ -5,10 +5,10 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b0b4be1-8d7c-4364-8440-568a85826da6" name="Default Changelist" comment="saving mah change gurl">
-      <change afterPath="$PROJECT_DIR$/admin/user_manual.pdf" afterDir="false" />
+    <list default="true" id="2b0b4be1-8d7c-4364-8440-568a85826da6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/clients.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/clients.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/nuestro_cafe/caracteristicas_del_cafe_batsil_maya.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/nuestro_cafe/caracteristicas_del_cafe_batsil_maya.svg" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -43,11 +43,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/clients.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="188">
-              <caret line="394" column="103" selection-start-line="394" selection-start-column="103" selection-end-line="394" selection-end-column="103" />
+              <caret line="394" column="8" selection-start-line="394" selection-start-column="8" selection-end-line="394" selection-end-column="112" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/products_coffee.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="135" column="8" selection-start-line="135" selection-start-column="8" selection-end-line="135" selection-end-column="112" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="158">
+              <caret line="1690" column="100" selection-start-line="1690" selection-start-column="100" selection-end-line="1690" selection-end-column="100" />
+              <folding>
+                <element signature="e#14111#20618#2" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -65,9 +86,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>id-frm</find>
-      <find>search</find>
-      <find>active</find>
       <find>todos</find>
       <find>$clients</find>
       <find>create</find>
@@ -95,9 +113,11 @@
       <find>s</find>
       <find>elimianr</find>
       <find>compra</find>
+      <find>cerrar</find>
+      <find>&lt;li&gt;&lt;a class=&quot;ayuda-disactive&quot; href=&quot;ayuda.php&quot; target=&quot;_self&quot;&gt;Ayuda&lt;/a&gt;&lt;/li&gt;</find>
+      <find>ayuda</find>
     </findStrings>
     <replaceStrings>
-      <replace>Iniciar sesión</replace>
       <replace>&lt;a href=&quot;iniciar_sesion.html&quot; target=&quot;_self&quot;&gt;Iniciar sesión</replace>
       <replace>molido</replace>
       <replace>10px</replace>
@@ -126,6 +146,7 @@
       <replace>&quot;</replace>
       <replace>-</replace>
       <replace>'</replace>
+      <replace>&lt;li&gt;&lt;a class=&quot;ayuda-disactive&quot; href=&quot;user_manual.pdf&quot; target=&quot;_black&quot; download=&quot;&quot;&gt;Manual de uso&lt;/a&gt;&lt;/li&gt;</replace>
       <replace>.</replace>
     </replaceStrings>
     <dirStrings>
@@ -186,11 +207,9 @@
         <option value="$PROJECT_DIR$/admin/main-backend.css" />
         <option value="$PROJECT_DIR$/admin/clients-pending.php" />
         <option value="$PROJECT_DIR$/admin/crud_product/test.php" />
-        <option value="$PROJECT_DIR$/admin/products_coffee.php" />
         <option value="$PROJECT_DIR$/admin/crud_product/create_product.php" />
         <option value="$PROJECT_DIR$/admin/crud_product/update_product.php" />
         <option value="$PROJECT_DIR$/admin/crud_client/create_client.php" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/css/grid.css" />
         <option value="$PROJECT_DIR$/contact_pending.php" />
         <option value="$PROJECT_DIR$/admin/crud_client/delete_client.php" />
@@ -205,6 +224,8 @@
         <option value="$PROJECT_DIR$/products.php" />
         <option value="$PROJECT_DIR$/product_view.php" />
         <option value="$PROJECT_DIR$/admin/clients.php" />
+        <option value="$PROJECT_DIR$/admin/products_coffee.php" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
@@ -373,21 +394,7 @@
       <workItem from="1557618126955" duration="38555000" />
       <workItem from="1557704200155" duration="13540000" />
       <workItem from="1557782479307" duration="10126000" />
-      <workItem from="1557809002855" duration="7802000" />
-    </task>
-    <task id="LOCAL-00107" summary="wtf is going on ;-;">
-      <created>1557357313359</created>
-      <option name="number" value="00107" />
-      <option name="presentableId" value="LOCAL-00107" />
-      <option name="project" value="LOCAL" />
-      <updated>1557357313359</updated>
-    </task>
-    <task id="LOCAL-00108" summary="is this working??? did i kind of replicate abel's work? idk&#10;i wanna die">
-      <created>1557359316757</created>
-      <option name="number" value="00108" />
-      <option name="presentableId" value="LOCAL-00108" />
-      <option name="project" value="LOCAL" />
-      <updated>1557359316758</updated>
+      <workItem from="1557809002855" duration="8309000" />
     </task>
     <task id="LOCAL-00109" summary="please kill me">
       <created>1557361024860</created>
@@ -718,11 +725,25 @@
       <option name="project" value="LOCAL" />
       <updated>1557851462753</updated>
     </task>
-    <option name="localTasksCounter" value="156" />
+    <task id="LOCAL-00156" summary="added user manual">
+      <created>1557857116385</created>
+      <option name="number" value="00156" />
+      <option name="presentableId" value="LOCAL-00156" />
+      <option name="project" value="LOCAL" />
+      <updated>1557857116385</updated>
+    </task>
+    <task id="LOCAL-00157" summary="fixed map on ipad">
+      <created>1557857598657</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
+      <option name="project" value="LOCAL" />
+      <updated>1557857598657</updated>
+    </task>
+    <option name="localTasksCounter" value="158" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="389147000" />
+    <option name="totallyTimeSpent" value="389654000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -868,8 +889,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/js/tiny-date-picker" />
     </ignored-roots>
-    <MESSAGE value="Enhancements to create products." />
-    <MESSAGE value="added units to products" />
     <MESSAGE value="commented some js for muliple images." />
     <MESSAGE value="added box shadow to wrapper and did some advances in product update" />
     <MESSAGE value="late night failed attempts" />
@@ -893,7 +912,9 @@
     <MESSAGE value="delete pending clients works" />
     <MESSAGE value="All pages now have the new contact form." />
     <MESSAGE value="scroll-x products now works." />
-    <option name="LAST_COMMIT_MESSAGE" value="scroll-x products now works." />
+    <MESSAGE value="added user manual" />
+    <MESSAGE value="fixed map on ipad" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed map on ipad" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1068,13 +1089,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/crud_product/test.php" />
-    <entry file="file://$PROJECT_DIR$/admin/products_coffee.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/crud_product/update_product.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2160">
@@ -1099,16 +1113,6 @@
     <entry file="file://$PROJECT_DIR$/js/datetimepicker.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-33261" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="506" column="11" selection-start-line="506" selection-start-column="11" selection-end-line="506" selection-end-column="11" />
-          <folding>
-            <element signature="e#14111#20618#2" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/grid.css">
@@ -1250,7 +1254,24 @@
     <entry file="file://$PROJECT_DIR$/admin/clients.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
-          <caret line="394" column="103" selection-start-line="394" selection-start-column="103" selection-end-line="394" selection-end-column="103" />
+          <caret line="394" column="8" selection-start-line="394" selection-start-column="8" selection-end-line="394" selection-end-column="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/products_coffee.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="135" column="8" selection-start-line="135" selection-start-column="8" selection-end-line="135" selection-end-column="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="1690" column="100" selection-start-line="1690" selection-start-column="100" selection-end-line="1690" selection-end-column="100" />
+          <folding>
+            <element signature="e#14111#20618#2" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
