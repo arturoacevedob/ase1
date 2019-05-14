@@ -59,7 +59,7 @@ nav a:visited {
 .tab1 {
     max-width: 34%;
     position: relative;
-    left: 230%;
+    left: 175%;
     top: 187%;
     margin-top: 81px;
     z-index: 1;
@@ -67,12 +67,12 @@ nav a:visited {
 .tab2 {
     max-width: 86%;
     position: relative;
-    left: 252%;
+    left: 199%;
     /* top: 0%; */
     margin-top: -24px;
     z-index: 1;
 }
-..tab-active {
+.tab-active {
     padding: 10px 99px;
     background: url(../admin/images/strings/tab1.svg)52% 11%/72% no-repeat;
 }
