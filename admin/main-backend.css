@@ -72,6 +72,15 @@ nav a:visited {
     margin-top: -24px;
     z-index: 1;
 }
+.tab3{
+    max-width: 86%;
+    position: relative;
+    left: 199%;
+    /* top: 0%; */
+    margin-top: -24px;
+    z-index: 1;
+
+}
 .tab-active {
     padding: 10px 99px;
     background: url(../admin/images/strings/tab1.svg)52% 11%/72% no-repeat;
