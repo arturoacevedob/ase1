@@ -238,6 +238,12 @@ nav a:visited {
 .pending-orders .bottom-thing input{
     grid-column: auto;
 }
+.botton-thing-sequel{
+    padding: 30px 10px;
+}
+.botton-thing-sequel .that-s-a-two{
+
+}
 /* Table Classes */
 caption {
     text-align: left;
@@ -599,5 +605,5 @@ nav ul a{
 
 .lonely-ul{
     grid-gap: 0 !important;
-    margin-top: 32% !important;
+    margin-top: 50% !important;
 }

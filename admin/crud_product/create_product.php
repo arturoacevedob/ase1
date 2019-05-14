@@ -109,13 +109,14 @@ if (isset($_POST['insert'])) {
         </tr>
         </tbody>
     </table>
-</div>
+</div> 
+<div class="botton-thing-sequel grid-1-1-1">
     <!--<input type="file" id="file-input" name="image_path" multiple/>
     <div id="thumb-output"></div>-->
-    <input class="button limited-width-2 limited-height" type='file' name='image_path'>
+    <input class="button red limited-width-2 limited-height" type='file' name='image_path'>
 
-    <input class="button red limited-width-2 limited-height" type="submit" value="Guardar producto">
-
+    <input class="button red limited-width-2 limited-height that-s-a-two" type="submit" value="Guardar producto">
+    </div>
 </form>
 
 <script charset="UTF-8" src="../../js/jquery.js"></script>
