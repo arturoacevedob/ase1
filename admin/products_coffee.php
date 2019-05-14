@@ -150,9 +150,9 @@ function createCoffeeListOptions()
         <li><a class="tab-disactive"href="products-soap-backend.html" id="soap" target="_self">Jabón</a></li>
     </ul>
 
-    <div>
+    <div class="b-grey">
     <div class="grid-2-space-between give-me-gap">
-        <div class="b-grey">
+        <div>
             <label class="kill" for="search"></label>
             <input id="search" placeholder="Buscar" type="search">
         </div>
