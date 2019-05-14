@@ -404,8 +404,8 @@ function createClientList()
     </div>
 
     <ul class="grid-tabs">
-        <li><a href="clients-pending.php" id="clients-pending" target="_self">Pendientes</a></li>
-        <li><a class="active" href="clients.php" id="clients" target="_self">Todos los clientes</a></li>
+        <li><a class="tab-"href="clients-pending.php" id="clients-pending" target="_self">Pendientes</a></li>
+        <li><a class="active tab-active" href="clients.php" id="clients" target="_self">Todos los clientes</a></li>
     </ul>
     
     <div class="b-grey">
@@ -416,10 +416,10 @@ function createClientList()
         </div>
         <a class="button red-outline" href='crud_client/create_client.php'>Agregar cliente</a>
     </div>
-    </div>
+    
 
     <?php createClientList(); ?>
-
+    </div>
 </div>
 
 <script>
