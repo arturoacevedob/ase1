@@ -41,7 +41,12 @@ function createCoffeeListOptions()
         <div class='product-item grid-1-1'>
             <div class='radius-left' style='background: transparent url(\"../$image_path\") 50% 50% / cover no-repeat;'></div>
             <div class='product-info radius-right'>
-                <h3>" . $products[$i]["name_product"] . "<span>" . $products[$i]["client_type"] . "</span><span><a href='crud_product/update_product.php?idproduct=" . $products[$i]["id_product"] . "'>Editar</a></span><span><a href='crud_product/delete_product.php?idproduct=" . $products[$i]["id_product"] . "'>eliminar</a></span></h3>
+            <div class='grid-ind-product'>
+                <h3>" . $products[$i]["name_product"] . "<span>" . $products[$i]["client_type"] . "</span><h3>
+                <span>
+                <p class='edit-pencil'><a href='crud_product/update_product.php?idproduct=" . $products[$i]["id_product"] . "' aria-label='Editar'></a></p>
+                </span>
+                </div>
                 <p>" . $products[$i]["description"] . "</p>
                 <table>
                     <thead>
@@ -140,13 +145,14 @@ function createCoffeeListOptions()
     </div>
 
     <ul class="grid-tabs">
-        <li><a class="active" href="products_coffee.php" id="coffee" target="_self">Café</a></li>
-        <li><a href="products-honey-backend.html" id="honey" target="_self">Miel</a></li>
-        <li><a href="products-soap-backend.html" id="soap" target="_self">Jabón</a></li>
+        <li><a class="active tab-active" href="products_coffee.php" id="coffee" target="_self">Café</a></li>
+        <li><a class="tab-disactive"href="products-honey-backend.html" id="honey" target="_self">Miel</a></li>
+        <li><a class="tab-disactive"href="products-soap-backend.html" id="soap" target="_self">Jabón</a></li>
     </ul>
 
+    <div>
     <div class="grid-2-space-between give-me-gap">
-        <div>
+        <div class="b-grey">
             <label class="kill" for="search"></label>
             <input id="search" placeholder="Buscar" type="search">
         </div>
@@ -156,7 +162,7 @@ function createCoffeeListOptions()
         createCoffeeListOptions()
         ?>
     </div>
-
+    </div>
 </div>
 
 </body>

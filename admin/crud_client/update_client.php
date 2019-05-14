@@ -188,6 +188,7 @@ if (isset($_POST['update'])) {
 </div>
     
     <div class="bottom-thing grid-1-1-1">
+    <a class="exterminate" href='delete_client.php?idclient=<?php echo $id_client; ?>'>Eliminar</a>
     <input class="button red limited-width-2 limited-height" type="submit" value="Guardar cambios">
     </div>
 </form>

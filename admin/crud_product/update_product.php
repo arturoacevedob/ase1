@@ -103,66 +103,74 @@ if (isset($_POST['update'])) {
 <!DOCTYPE html>
 <html>
 <head>
-      <link href="../main-backend.css" rel="stylesheet">
+    <link href="../main-backend.css" rel="stylesheet">
 </head>
 
 <body class="padding-for-all">
 <h1>Productos</h1>
 
 <form class="round-red-border" action='update_product.php' method='post' enctype='multipart/form-data'>
-<div class="grid-1-1-1 padding-for-all-2">
-<fieldset>
-    <input type='hidden' name='update' value='update'>
-    <input type="hidden" name="id_product" value="<?php echo $id_product; ?>">
+    <div class="grid-1-1-1 padding-for-all-2">
+        <fieldset>
+            <input type='hidden' name='update' value='update'>
+            <input type="hidden" name="id_product" value="<?php echo $id_product; ?>">
 
-    <label for="name_product">Nombre</label>
-    <input id="name_product" type='text' name='name_product' value="<?php echo $name_product; ?>" maxlength=""> <br>
-    <label for="description">Descripción</label>
-    <input id="description" type='text' name='description' value="<?php echo $description; ?>" maxlength=""> <br>
-    <label for="notes">Notas</label>
-    <input id="notes" type='text' name='notes' value="<?php echo $notes; ?>" maxlength=""> <br>
-    <label for="client_type">¿Disponible para mayoristas?</label>
-    <input type='hidden' name='client_type' value='0'>
-    <input type='checkbox' name='client_type' id="client_type"
-           value='1' <?php if ($client_type == '1') echo 'checked="checked"'; ?>>
-</fieldset>
-    <table>
-        <thead>
-        <tr>
-            <th>Peso</th>
-            <th>Precio</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td><label for="weight1">250gr<input id="weight1" class="checkbox" type="checkbox" name="weight1"
-                                                 value="250" <?php if ($weight1 == '250') echo 'checked="checked"'; ?>></label>
-            </td>
-            <td><input id="price1" type="number" name="price1" maxlength="3" value="<?php echo $price1; ?>"></td>
-        </tr>
-        <tr>
-            <td><label for="weight2">500gr</label><input id="weight2" class="checkbox" type="checkbox" name="weight2"
-                                                         value="500" <?php if ($weight2 == '500') echo 'checked="checked"'; ?>>
-            </td>
-            <td><input id="price2" type="number" name="price2" maxlength="3" value="<?php echo $price2; ?>"></td>
-        </tr>
-        <tr>
-            <td><label for="weight3">1kg</label><input id="weight3" class="checkbox" type="checkbox" name="weight3"
-                                                       value="1000" <?php if ($weight3 == '1000') echo 'checked="checked"'; ?>>
-            </td>
-            <td><input id="price3" type="number" name="price3" maxlength="3" value="<?php echo $price3; ?>"></td>
-        </tr>
-        </tbody>
-    </table>
+            <label for="name_product">Nombre</label>
+            <input id="name_product" type='text' name='name_product' value="<?php echo $name_product; ?>" maxlength="">
+            <br>
+            <label for="description">Descripción</label>
+            <input id="description" type='text' name='description' value="<?php echo $description; ?>" maxlength="">
+            <br>
+            <label for="notes">Notas</label>
+            <input id="notes" type='text' name='notes' value="<?php echo $notes; ?>" maxlength=""> <br>
+            <label for="client_type">¿Disponible para mayoristas?</label>
+            <input type='hidden' name='client_type' value='0'>
+            <input type='checkbox' name='client_type' id="client_type"
+                   value='1' <?php if ($client_type == '1') echo 'checked="checked"'; ?>>
+        </fieldset>
+        <table>
+            <thead>
+            <tr>
+                <th>Peso</th>
+                <th>Precio</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><label for="weight1">250gr<input id="weight1" class="checkbox" type="checkbox" name="weight1"
+                                                     value="250" <?php if ($weight1 == '250') echo 'checked="checked"'; ?>></label>
+                </td>
+                <td><input id="price1" type="number" name="price1" maxlength="3" value="<?php echo $price1; ?>"></td>
+            </tr>
+            <tr>
+                <td><label for="weight2">500gr</label><input id="weight2" class="checkbox" type="checkbox"
+                                                             name="weight2"
+                                                             value="500" <?php if ($weight2 == '500') echo 'checked="checked"'; ?>>
+                </td>
+                <td><input id="price2" type="number" name="price2" maxlength="3" value="<?php echo $price2; ?>"></td>
+            </tr>
+            <tr>
+                <td><label for="weight3">1kg</label><input id="weight3" class="checkbox" type="checkbox" name="weight3"
+                                                           value="1000" <?php if ($weight3 == '1000') echo 'checked="checked"'; ?>>
+                </td>
+                <td><input id="price3" type="number" name="price3" maxlength="3" value="<?php echo $price3; ?>"></td>
+            </tr>
+            </tbody>
+        </table>
 
-    <img src="<?php echo "../../$image_path"; ?>" height="100px">
-</div>
+        <img src="<?php echo "../../$image_path"; ?>" height="100px">
+    </div>
 
-    <label for="image_path">Carga una imagen</label>
-    <input class="button limited-width-2 limited-height" type='file' name='image_path' id="image_path">
-
-    <input class="button red limited-width-2 limited-height" type="submit" value="Guardar cambios">
-
+    <div>
+        <img src="<?php echo "../$image_path"; ?>" height="100px">
+        <label for="image_path">Carga una imagen</label>
+        <input class="button limited-height" type='file' name='image_path' id="image_path">
+    </div>
+    </div>
+    <div class="bottom-thing grid-1-1-1">
+        <a class="exterminate" href='delete_product.php?idproduct=<?php echo $id_product; ?>'>Eliminar</a>
+        <input class="button red limited-width-2 limited-height" type="submit" value="Guardar cambios">
+    </div>
 </form>
 
 <script charset="UTF-8" src="../../js/jquery.js"></script>
