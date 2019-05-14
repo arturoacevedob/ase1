@@ -642,7 +642,7 @@ form textarea {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 13px;
     }
-    
+
     .product-title {
         grid-column: 1;
         grid-row: 1;
@@ -1072,8 +1072,8 @@ form textarea {
         padding: 0 0 0 11%;
     }
 
-    
-.grid-auto-flow{
+
+    .grid-auto-flow{
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: repeat(3, minmax(100px, 1fr));
@@ -1229,7 +1229,7 @@ form textarea {
         grid-template-columns: repeat(2, 1fr);
         order: 1;
     }
-    
+
     #proceso .grid-2-left-text{
         grid-gap: 22px;
     }
@@ -1562,5 +1562,5 @@ form textarea {
     .mobile-family {
         display: none;
     }
-    
+
 }
