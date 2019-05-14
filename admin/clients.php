@@ -390,7 +390,7 @@ function createClientList()
 
     </ul>
     <ul class="lonely-ul">
-        <li><a href="" target="_self">Ayuda</a></li>
+        <li><a class="ayuda-disactive" href="" target="_self">Ayuda</a></li>
         <li><a href='login.php?killsession=1'>Cerrar Sesión</a></li>
     </ul>
 </nav>
