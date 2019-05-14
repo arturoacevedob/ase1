@@ -11,7 +11,7 @@ if(!isset($_SESSION['user'])) {
     die();
 }
 
-if(isset($_GET['idclient'])) {
+if (isset($_GET['idclient'])) {
     $id_client = $_GET['idclient'];
     $q = "delete from clients where id_client = " . $id_client . "";
     execute($q);
