@@ -75,7 +75,7 @@ nav a:visited {
 .tab3 {
     max-width: 86%;
     position: relative;
-    left: 188%;
+    left: 176%;
     /* top: 0%; */
     margin-top: 84px;
     z-index: 2;
@@ -83,7 +83,7 @@ nav a:visited {
 .tab4 {
     max-width: 86%;
     position: relative;
-    left: 215%;
+    left: 222%;
     /* top: 0%; */
     margin-top: -21px;
     z-index: 1;
@@ -93,7 +93,7 @@ nav a:visited {
 .tab5 {
     max-width: 86%;
     position: relative;
-    left: 249%;
+    left: 252%;
     /* top: 0%; */
     margin-top: -20px;
     z-index: 1;
@@ -132,6 +132,9 @@ nav a:visited {
     color: var(--dark) !important;
     padding: 10px 71px;
     background: url(../admin/images/strings/tab2.svg)52% 11%/72% no-repeat;
+}
+.pending-tab{
+    width: 285px;
 }
 /* Colors */
 

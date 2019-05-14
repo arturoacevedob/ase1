@@ -51,7 +51,7 @@
     </div>
 
     <ul class="grid-tabs">
-        <li class="tab3"><a class="active bold tab-active pending-tab" href="orders-pending-backend.html" id="pending" target="_self">Pendiente <span
+        <li class="tab3 pending-tab"><a class="active bold tab-active" href="orders-pending-backend.html" id="pending" target="_self">Pendiente <span
                 class="tab-counter"></span></a></li>
         <li class="tab4"><a class="tab-disactive" href="orders-enroute-backend.html" id="enroute" target="_self">En Ruta <span class="tab-counter"></span></a>
         </li>
