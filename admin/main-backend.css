@@ -59,7 +59,7 @@ nav a:visited {
 .tab1 {
     max-width: 34%;
     position: relative;
-    left: 175%;
+    left: 166%;
     top: 187%;
     margin-top: 81px;
     z-index: 1;
@@ -67,7 +67,7 @@ nav a:visited {
 .tab2 {
     max-width: 86%;
     position: relative;
-    left: 199%;
+    left: 192%;
     /* top: 0%; */
     margin-top: -24px;
     z-index: 1;
