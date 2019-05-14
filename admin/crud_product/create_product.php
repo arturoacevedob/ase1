@@ -169,7 +169,7 @@ if (isset($_POST['insert'])) {
 <div class="botton-thing-sequel grid-1-1-1">
     <!--<input type="file" id="file-input" name="image_path" multiple/>
     <div id="thumb-output"></div>-->
-    <input class="button red limited-width-2 limited-height that-s-a-one" type='file' name='image_path'>
+    <input class="button limited-width-2 limited-height that-s-a-one" type='file' name='image_path'>
 
     <input class="button red limited-width-2 limited-height that-s-a-two" type="submit" value="Guardar producto">
     </div>
