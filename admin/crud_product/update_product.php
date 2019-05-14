@@ -155,7 +155,7 @@ if (isset($_POST['update'])) {
         </tbody>
     </table>
 
-    <img src="<?php echo "../$image_path"; ?>" height="100px">
+    <img src="<?php echo "../../$image_path"; ?>" height="100px">
 </div>
 
     <label for="image_path">Carga una imagen</label>
