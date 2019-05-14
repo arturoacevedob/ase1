@@ -620,3 +620,8 @@ nav ul a{
     grid-gap: 0 !important;
     margin-top: 50% !important;
 }
+
+#search{
+    margin-left: 555px;
+    max-width: 280px;
+}
