@@ -92,6 +92,9 @@ nav a:visited {
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
 }
+.brown-font{
+    color: var(--dark);
+}
 /* Utility classes */
 .order-1 {
     order: 1;
