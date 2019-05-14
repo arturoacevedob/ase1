@@ -622,6 +622,28 @@ nav ul a{
 }
 
 #search{
-    margin-left: 555px;
+    margin-left: 522px;
     max-width: 280px;
+}
+
+.edit-pencil{
+    margin-top: 16px;
+    width: 50px;
+    height: 50px;
+    background: url(../admin/images/strings/lapiz_back.svg) 0 20% / 55% no-repeat;
+}
+.edit-pencil a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.width-80{
+    width: 865px;
+}
+
+.exterminate{
+    font-weight: bold;
+    padding-top: 12px;
+    color: var(--button-link) !important;
+    padding-left: 72px;
 }
