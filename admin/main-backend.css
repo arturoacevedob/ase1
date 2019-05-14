@@ -92,7 +92,7 @@ nav a:visited {
     -webkit-font-smoothing: antialiased;
 }
 .brown-font{
-    color: var(--dark);
+    color: var(--dark) !important;
 }
 /* Utility classes */
 .order-1 {
