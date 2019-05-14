@@ -164,7 +164,7 @@ if (isset($_POST['update'])) {
     <img src="<?php echo "../../$image_path"; ?>" height="100px">
         <img src="<?php echo "../$image_path"; ?>" height="100px">
         <label for="image_path">Carga una imagen</label>
-        <input class="button limited-height brown-font" type='file' name='image_path' id="image_path">
+        <input class="button limited-height grey-font" type='file' name='image_path' id="image_path">
     </div>
     </div>
     <div class="bottom-thing grid-1-1-1-1 give-me-gap">
