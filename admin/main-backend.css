@@ -59,7 +59,7 @@ nav a:visited {
 .tab1 {
     max-width: 34%;
     position: relative;
-    left: 175%;
+    left: 166%;
     top: 187%;
     margin-top: 81px;
     z-index: 1;
@@ -67,7 +67,7 @@ nav a:visited {
 .tab2 {
     max-width: 86%;
     position: relative;
-    left: 199%;
+    left: 192%;
     /* top: 0%; */
     margin-top: -24px;
     z-index: 1;
@@ -98,10 +98,10 @@ nav a:visited {
     margin-top: -20px;
     z-index: 1;
 }
-.tab6{
+.tab6 {
     max-width: 86%;
     position: relative;
-    left: 169%;
+    left: 203%;
     /* top: 0%; */
     margin-top: 81px;
     z-index: 1;
@@ -109,25 +109,28 @@ nav a:visited {
 .tab7{
     max-width: 86%;
     position: relative;
-    left: 219%;
+    left: 253%;
     /* top: 0%; */
-    margin-top: -15px;
+    margin-top: -19px;
     z-index: 1;
 }
 .tab8{
     max-width: 86%;
     position: relative;
-    left: 254%;
+    left: 286%;
     /* top: 0%; */
-    margin-top: -21px;
+    margin-top: -20px;
     z-index: 1;
 }
 .tab-active {
+    font-weight: bold;
+    color: var(--red) !important;
     padding: 10px 99px;
     background: url(../admin/images/strings/tab1.svg)52% 11%/72% no-repeat;
 }
 .tab-disactive {
-    padding: 13px 71px;
+    color: var(--dark) !important;
+    padding: 10px 71px;
     background: url(../admin/images/strings/tab2.svg)52% 11%/72% no-repeat;
 }
 /* Colors */
@@ -721,7 +724,6 @@ nav ul a{
 }
 
 #search{
-    margin-left: 522px;
     max-width: 280px;
 }
 
@@ -737,7 +739,7 @@ nav ul a{
     height: 100%;
 }
 .width-80{
-    width: 865px;
+    width: 915px;
 }
 
 .exterminate{
