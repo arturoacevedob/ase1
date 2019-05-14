@@ -110,7 +110,7 @@ if (isset($_POST['update'])) {
 <h1>Productos</h1>
 
 <form class="round-red-border" action='update_product.php' method='post' enctype='multipart/form-data'>
-    <div class="grid-1-1-1 padding-for-all-2">
+    <div class="grid-1-1-1 padding-for-all-2 give-me-gap">
         <fieldset>
             <input type='hidden' name='update' value='update'>
             <input type="hidden" name="id_product" value="<?php echo $id_product; ?>">
@@ -158,17 +158,17 @@ if (isset($_POST['update'])) {
             </tbody>
         </table>
 
-        <img src="<?php echo "../../$image_path"; ?>" height="100px">
-    </div>
 
     <div>
+    <img src="<?php echo "../../$image_path"; ?>" height="100px">
         <img src="<?php echo "../$image_path"; ?>" height="100px">
         <label for="image_path">Carga una imagen</label>
         <input class="button limited-height" type='file' name='image_path' id="image_path">
     </div>
     </div>
-    <div class="bottom-thing grid-1-1-1">
+    <div class="bottom-thing grid-1-1-1-1 give-me-gap">
         <a class="exterminate" href='delete_product.php?idproduct=<?php echo $id_product; ?>'>Eliminar</a>
+        <a class="button red-outline limited-width-2 cancel" href=''>Cancelar</a>
         <input class="button red limited-width-2 limited-height" type="submit" value="Guardar cambios">
     </div>
 </form>

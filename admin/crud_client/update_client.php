@@ -187,8 +187,9 @@ if (isset($_POST['update'])) {
     </fieldset>
 </div>
     
-    <div class="bottom-thing grid-1-1-1">
+    <div class="bottom-thing grid-1-1-1-1 give-me-gap">
     <a class="exterminate" href='delete_client.php?idclient=<?php echo $id_client; ?>'>Eliminar</a>
+    <a class="button red-outline limited-width-2 cancel" href=''>Cancelar</a>
     <input class="button red limited-width-2 limited-height" type="submit" value="Guardar cambios">
     </div>
 </form>

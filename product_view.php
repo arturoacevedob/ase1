@@ -248,44 +248,38 @@ include 'agregar_producto.php';
         <aside class="gridbigproduct container">
             <h2 class="h2-small product-title">Más Productos</h2>
             <div class="grid-scroll-x">
-                <section class="ind-product">
-                    <h3 class="title pname h3-small">Premium Orgánico</h3>
-                    <p><span class="pprice">$80-$100</span></p>
-                    <figure class="pimage"><img
-                                alt="Granos de café premium orgánico de Bats'il Maya"
-                                src="images/productos/cafe/granos_de_cafe_premium_organico_batsil_maya.jpg"></figure>
-                    <p class="pdescription">Únicamente granos que cumplen los más altos estándares de
-                        calidad.<br> <a
-                                class="link" href="" target="_self">Ver más »</a></p>
-                </section>
-                <section class="ind-product">
-                    <h3 class="title pname h3-small">Gourmet Orgánico</h3>
-                    <p><span class="pprice">$80-$100</span></p>
-                    <figure class="pimage"><img
-                                alt="Granos de café gourmet orgánico de Bats'il Maya"
-                                src="images/productos/cafe/granos_de_cafe_gourmet_organico_batsil_maya.jpg"></figure>
-                    <p class="pdescription">Granos con preparación europea son seleccionados cuidadosamente.<br> <a
-                                class="link" href="" target="_self">Ver más »</a></p>
-                </section>
-                <section class="ind-product">
-                    <h3 class="title pname h3-small">Orgánico</h3>
-                    <p><span class="pprice">$80-$100</span></p>
-                    <figure class="pimage"><img alt="Granos de café orgánico de Bats'il Maya"
-                                                src="images/productos/cafe/granos_de_cafe_organico_batsil_maya.jpg">
-                    </figure>
-                    <p class="pdescription">Un café de preparación americana con excelente calidad.<br> <a
-                                class="link" href="" target="_self">Ver más »</a></p>
-                </section>
-                <section class="ind-product">
-                    <h3 class="title pname h3-small">Descafeinado</h3>
-                    <p><span class="pprice">$80-$100</span></p>
-                    <figure class="pimage"><img alt="Granos de café descafeinado de Bats'il Maya"
-                                                src="images/productos/cafe/granos_de_cafe_descafeinado_batsil_maya.jpg">
-                    </figure>
-                    <p class="pdescription">Para aquellas personas que desean disfrutar un rico café libre de
-                        cafeína.<br>
-                        <a class="link" href="" target="_self">Ver más »</a></p>
-                </section>
+                <?php
+                $query = "select * from products";
+                $recordSet = execute($query);
+
+                $products = array();
+                $counter = 0;
+                while ($row = mysqli_fetch_array($recordSet) AND $counter < 4) {
+                    $products[$counter] = array();
+                    $products[$counter]["id_product"] = $row["id_product"];
+                    $products[$counter]["name_product"] = $row["name_product"];
+                    $products[$counter]["description"] = $row["description"];
+                    $products[$counter]["notes"] = $row["notes"];
+                    $products[$counter]["client_type"] = $row["client_type"];
+                    $counter++;
+                }
+
+                for ($i = 0; $i < count($products); $i++) {
+
+                    $q = "select image_path from images where images.id_product = " . $products[$i]['id_product'] . " limit 1";
+                    $recordSetImage = execute($q);
+                    $image_row = mysqli_fetch_array($recordSetImage);
+                    $image_path = $image_row['image_path'];
+
+                    echo "
+                    <section class='ind-product'>
+                        <h3 class='title pname h3-small'>" . $products[$i]['name_product'] . "</h3>
+                        <div style='height: 250px; background: transparent url(" . $image_path . ") 50% 50% / cover no-repeat;'></div>
+                        <p class='pdescription'>" . $products[$i]['description'] . "<br> <a
+                                class='link ' href='product_view.php?idproduct=" . $products[$i]['id_product'] . "' target='_self'>Ver más »</a></p>
+                    </section>";
+                }
+                ?>
             </div>
             <a class="h2-link right-aligned" href="products.php" target="_self">Todos los productos »</a>
         </aside>

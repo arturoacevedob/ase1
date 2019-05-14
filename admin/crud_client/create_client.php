@@ -138,7 +138,8 @@ function renderCreateClient()
         </div>
     </fieldset>
 </div>
-<div class='bottom-thing grid-1-1-1'>
+<div class=\"bottom-thing grid-1-1-1-1 give-me-gap\">
+    <a class= \"button red-outline limited-width-2 cancel\" href=''>Cancelar</a>
     <input class='button red limited-width-2 limited-height' type='submit' value='Guardar cliente'>
     </div>
 </form>";
