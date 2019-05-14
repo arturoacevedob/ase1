@@ -72,14 +72,29 @@ nav a:visited {
     margin-top: -24px;
     z-index: 1;
 }
-.tab3{
+.tab3 {
     max-width: 86%;
     position: relative;
-    left: 199%;
+    left: 233%;
     /* top: 0%; */
-    margin-top: -24px;
+    margin-top: 84px;
+    z-index: 2;
+}
+.tab4 {
+    max-width: 86%;
+    position: relative;
+    left: 197%;
+    /* top: 0%; */
+    margin-top: -21px;
     z-index: 1;
-
+}
+.tab5 {
+    max-width: 86%;
+    position: relative;
+    left: 242%;
+    /* top: 0%; */
+    margin-top: 84px;
+    z-index: 1;
 }
 .tab-active {
     padding: 10px 99px;
