@@ -111,7 +111,7 @@ nav a:visited {
     position: relative;
     left: 219%;
     /* top: 0%; */
-    margin-top: -15px;
+    margin-top: -19px;
     z-index: 1;
 }
 .tab8{
@@ -119,7 +119,7 @@ nav a:visited {
     position: relative;
     left: 254%;
     /* top: 0%; */
-    margin-top: -21px;
+    margin-top: -20px;
     z-index: 1;
 }
 .tab-active {
@@ -130,7 +130,7 @@ nav a:visited {
 }
 .tab-disactive {
     color: var(--dark) !important;
-    padding: 13px 71px;
+    padding: 10px 71px;
     background: url(../admin/images/strings/tab2.svg)52% 11%/72% no-repeat;
 }
 /* Colors */
