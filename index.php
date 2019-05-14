@@ -312,9 +312,7 @@ include 'contact_pending.php';
 <div class="green-bg">
     <section class="llamada container light">
         <div class="join">
-
             <?php renderContactForm(); ?>
-
         </div>
         <div id="form-ilustracion"></div>
     </section>
