@@ -1525,15 +1525,15 @@ and (max-width: 910px) {
 
     .batsil {
         position: absolute;
-        top: 49%;
-        left: 2%;
+        top: 54%;
+        left: 10%;
         font-size: 14px;
     }
 
     .japon {
         position: absolute;
-        top: 39%;
-        left: 82%;
+        top: 42%;
+        left: 84.5%;
         font-size: 14px;
 
     }
