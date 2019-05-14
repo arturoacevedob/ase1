@@ -238,6 +238,12 @@ nav a:visited {
 .pending-orders .bottom-thing input{
     grid-column: auto;
 }
+.botton-thing-sequel{
+    padding: 30px 10px;
+}
+.botton-thing-sequel .that-s-a-two{
+
+}
 /* Table Classes */
 caption {
     text-align: left;
@@ -465,7 +471,7 @@ ul {
 nav .active {
     color: var(--light);
     background-color: #4D310C;
-    border-left: solid 15px var(--a-active);
+    border-left: solid 15px var(--a-active) !important;
 }
 nav ul{
     display: grid;
@@ -478,8 +484,36 @@ nav ul li{
 nav ul a{
     display: block;
     padding: 10px 60px 10px 70px;
+    border-left: 15px solid var(--dark);
 }
 
+.cliente-active {
+    background: url(../admin/images/strings/backend_strings_amarillo.svg) 16% -12% / 10% no-repeat;
+}
+.pedidos-active {
+    background: url(../admin/images/strings/backend_strings_amarillo.svg) 16% 50% / 10% no-repeat;
+}
+.productos-active {
+    background: url(../admin/images/strings/backend_strings_amarillo.svg) 16% 115% / 10% no-repeat;
+}
+.ayuda-active {
+    background: url(../admin/images/strings/backend_strings_cerrar.svg) 16% 115% / 10% no-repeat;
+}
+.cliente-disactive {
+    background: url(../admin/images/strings/backend_strings.svg) 16% -12% / 10% no-repeat;
+}
+.pedidos-disactive {
+    background: url(../admin/images/strings/backend_strings.svg) 16% 50% / 10% no-repeat;
+}
+.productos-disactive {
+    background: url(../admin/images/strings/backend_strings.svg) 16% 115% / 10% no-repeat;
+}
+.ayuda-disactive {
+    background: url(../admin/images/strings/backend_strings_ayuda.svg) 16% 115% / 10% no-repeat;
+}
+.cerrar-disactive {
+    background: url(../admin/images/strings/backend_strings_ayuda.svg) 16% 115% / 10% no-repeat;
+}
 .big-margin{
     margin-left: 300px;
 }
@@ -546,14 +580,39 @@ nav ul a{
 }
 
 
-
-.pending-orders .margin-top-thing{
+.margin-top-thing{
     margin-top: 20px;
 }
 .pending-orders .header{
     font-weight: bold;
     border-bottom: 2px solid var(--light-80);
     padding-bottom: 5px;
-
     margin-bottom: 18px;
+}
+
+.pending-order-tables-thing table{
+    padding-left: 20px;
+    border-left: 2px solid var(--light-80);
+}
+.pending-order-tables-thing table caption{
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 11px;
+    padding-left: 20px;
+    border-left: 2px solid var(--light-80);
+}
+.pending-order-tables-thing table:first-of-type{
+    padding-left: 0;
+    border-left: none;
+}
+.kill-me{
+    border-left: transparent !important;
+    border-bottom: transparent !important;
+    padding-left:0 !important;
+}
+
+
+.lonely-ul{
+    grid-gap: 0 !important;
+    margin-top: 50% !important;
 }

@@ -31,13 +31,14 @@
     <h2 style="display: none">Menú</h2>
     <div><img alt="Logo de Bats'il Maya" src="../images/logos/batsil_maya_logo.svg"></div>
     <ul>
-        <li><a href="clients.php" target="_self">Clientes</a></li>
-        <li><a class="active bold" href="orders-pending-backend.php" target="_self">Pedidos</a></li>
-        <li><a href="products_coffee.php" target="_self">Productos</a></li>
-        <li><a href="blog.php" target="_self">Blog</a></li>
+        <li><a class="cliente-disactive"href="clients.php" target="_self">Clientes</a></li>
+        <li><a class="active bold pedidos-active" href="orders-pending-backend.php" target="_self">Pedidos</a></li>
+        <li><a class="productos-disactive"href="products_coffee.php" target="_self">Productos</a></li>
+        <!-- <li><a href="blog.php" target="_self">Blog</a></li> -->
     </ul>
-    <ul>
-        <li><a href='login.php?killsession=1'>Cerrar Sesión</a></li>
+    <ul class="lonely-ul">
+        <li><a class="ayuda-disactive" href="" target="_self">Ayuda</a></li>
+        <li><a class="cerrar-disactive"href='login.php?killsession=1'>Cerrar Sesión</a></li>
     </ul>
 </nav>
 
@@ -71,9 +72,9 @@
             <p>Hoy - 26/02/19</p>
             <p class="client">Capeltic <a href="">»</a></p>
         </div>
-        <div class="grid-2-1-1 give-me-gap">
+        <div class="grid-2-1-1 give-me-gap pending-order-tables-thing">
             <table class="order-table">
-                <caption>Orden</caption>
+                <caption class="kill-me">Orden</caption>
                 <thead>
                 <tr>
                     <th>Artículo</th>
@@ -129,7 +130,7 @@
                 </tfoot>
             </table>
             <table>
-                <caption>Dirección</caption>
+            <caption>Dirección</caption>
                 <thead>
                 <tr>
                     <th>Capeltic Santa Fe</th>
