@@ -241,8 +241,13 @@ nav a:visited {
 .botton-thing-sequel{
     padding: 30px 10px;
 }
+.botton-thing-sequel .that-s-a-one{
+    grid-column: 1 / 2;
+    max-width: 1000px !important;
+    color: var(--light-80);
+}
 .botton-thing-sequel .that-s-a-two{
-
+    grid-column: 3;
 }
 /* Table Classes */
 caption {
