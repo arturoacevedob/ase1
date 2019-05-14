@@ -179,6 +179,11 @@ nav a:visited {
 }
 
 /*  Grid Setups */
+.grid-ind-product{
+    display: grid;
+    grid-template-columns: 75% auto;
+    margin-bottom: 0;
+}
 .grid-1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -646,4 +651,12 @@ nav ul a{
     padding-top: 12px;
     color: var(--button-link) !important;
     padding-left: 72px;
+}
+
+.grid-ind-product h3{
+    margin-top: 2px;
+}
+
+.grid-ind-product p{
+    margin-top: -1px;
 }

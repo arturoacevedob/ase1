@@ -154,15 +154,16 @@ if (isset($_POST['update'])) {
         </tr>
         </tbody>
     </table>
-
+<div>
     <img src="<?php echo "../$image_path"; ?>" height="100px">
-</div>
-
     <label for="image_path">Carga una imagen</label>
-    <input class="button limited-width-2 limited-height" type='file' name='image_path' id="image_path">
-
+    <input class="button limited-height" type='file' name='image_path' id="image_path">
+</div>
+</div>
+<div class="bottom-thing grid-1-1-1">
+    <a class="exterminate" href='crud_product/delete_product.php?idproduct=" . $products[$i]["id_product"] . "'>Eliminar</a>
     <input class="button red limited-width-2 limited-height" type="submit" value="Guardar cambios">
-
+</div>
 </form>
 
 <script charset="UTF-8" src="../../js/jquery.js"></script>
