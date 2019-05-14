@@ -126,7 +126,8 @@ include 'contact_pending.php';
             <div class="grid-2-text-photo-2 light ">
                 <article class="humedo">
                     <h3>¿Cuál es el beneficio húmedo?</h3>
-                    <p>La técnica de secado al sol es minuciosa y requiere un control de tiempo para llegar al secado
+                    <p class="p-big">La técnica de secado al sol es minuciosa y requiere un control de tiempo para
+                        llegar al secado
                         perfecto de cada grano de café.</p>
                     <p>Una vez que es cortado el café cereza se procede a despulpar, lavar y secar al sol, para así
                         obtener
@@ -134,7 +135,8 @@ include 'contact_pending.php';
                 </article>
                 <article class="seco">
                     <h3>¿Cuál es el beneficio seco?</h3>
-                    <p>Es en nuestra planta donde al café pergamino se le despoja de su cascarilla y así surge el grano
+                    <p class="p-big">Es en nuestra planta donde al café pergamino se le despoja de su cascarilla y así
+                        surge el grano
                         de
                         color verde.</p>
                     <p>Al que se le denomina como café oro y será seleccionado cuidadosamente antes de pasar a la
