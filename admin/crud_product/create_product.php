@@ -17,13 +17,24 @@ if (isset($_POST['insert'])) {
     $name_product = $_POST['name_product'];
     $description = $_POST['description'];
     $notes = $_POST['notes'];
-    $client_type = $_POST['client_type'];
-    $weight1 = $_POST['weight1'];
-    $weight2 = $_POST['weight2'];
-    $weight3 = $_POST['weight3'];
-    $price1 = $_POST['price1'];
-    $price2 = $_POST['price2'];
-    $price3 = $_POST['price3'];
+    if (isset($_POST['client_type'])) {
+        $client_type = $_POST['client_type'];
+    }
+
+    if (isset($_POST['weight1']) AND isset($_POST['price1'])) {
+        $weight1 = $_POST['weight1'];
+        $price1 = $_POST['price1'];
+    }
+
+    if (isset($_POST['weight2']) AND isset($_POST['price2'])) {
+        $weight2 = $_POST['weight2'];
+        $price2 = $_POST['price2'];
+    }
+
+    if (isset($_POST['weight3']) AND isset($_POST['price3'])) {
+        $weight3 = $_POST['weight3'];
+        $price3 = $_POST['price3'];
+    }
 
     if ($_FILES['image_path']['name'] != "") {
         $fileName = strtolower($_FILES['image_path']['name']);
@@ -38,17 +49,35 @@ if (isset($_POST['insert'])) {
         }
     }
 
-    if ($uploadOk == 1) {
-        $q = "insert into products (name_product, description, notes, client_type) values ('$name_product','$description','$notes','$client_type')";
-        $id_product = execute($q);
+    $q = "insert into products (name_product, description, notes) values ('$name_product','$description','$notes')";
+    $id_product = execute($q);
 
-        $q = "insert into weight_price (weight1, weight2, weight3, price1, price2, price3, id_product) values ('$weight1', '$weight2', '$weight3', '$price1',  '$price2',  '$price3', '$id_product')";
+    if (isset($_POST['client_type'])) {
+        $q = "update products set client_type = '$client_type' where id_product = '$id_product'";
         execute($q);
+    }
 
+    if (isset($_POST['weight1']) AND isset($_POST['price1'])) {
+        $q = "insert into weight_price (weight1, price1, id_product) values ('$weight1', '$price1', '$id_product')";
+        execute($q);
+    }
+
+    if (isset($_POST['weight2']) AND isset($_POST['price2'])) {
+        $q = "insert into weight_price (weight2, price2, id_product) values ('$weight2', '$price2', '$id_product')";
+        execute($q);
+    }
+
+    if (isset($_POST['weight3']) AND isset($_POST['price3'])) {
+        $q = "insert into weight_price (weight3, price3, id_product) values ('$weight3', '$price3', '$id_product')";
+        execute($q);
+    }
+
+    if ($uploadOk == 1) {
         $q = "insert into images (image_path, id_product) values ('$relativePath', '$id_product')";
         execute($q);
-        header("Location: ../products_coffee.php");
     }
+    header("Location: ../products_coffee.php");
+
 }
 ?>
 
@@ -68,48 +97,49 @@ if (isset($_POST['insert'])) {
 <body class="padding-for-all">
 <h1>Producto nuevo</h1>
 <form class="round-red-border" action='create_product.php' method='post' enctype='multipart/form-data'>
-<div class="grid-1-1-1 padding-for-all-2">
- <fieldset>
-    <input type='hidden' name='insert' value='insert'>
+    <div class="grid-1-1-1 padding-for-all-2">
+        <fieldset>
+            <input type='hidden' name='insert' value='insert'>
 
-    <label for="name_product">Nombre</label>
-    <input id="name_product" type='text' name='name_product' max=""> <br>
-    <label for="description">Descripción</label>
-    <input id="description" type='text' name='description' max=""> <br>
-    <label for="notes">Notas</label>
-    <input id="notes" type='text' name='notes' max=""> <br>
-    <p class="radio-group">
-    <label for="mayoristas">¿Disponible para mayoristas?</label>
-    <input type='checkbox' name='client_type' id="mayoristas" value='1'>
-    </p>
-</fieldset>
+            <label for="name_product">Nombre</label>
+            <input id="name_product" type='text' name='name_product' max="" required> <br>
+            <label for="description">Descripción</label>
+            <input id="description" type='text' name='description' max="" required> <br>
+            <label for="notes">Notas</label>
+            <input id="notes" type='text' name='notes' max="" required> <br>
+            <p class="radio-group">
+                <label for="mayoristas">¿Disponible para mayoristas?</label>
+                <input type='checkbox' name='client_type' id="mayoristas" value='1'>
+            </p>
+        </fieldset>
 
-    <table>
-        <thead>
-        <tr>
-            <th>Peso</th>
-            <th>Precio</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td><label for="weight1">250gr<input id="weight1" class="checkbox" type="checkbox" name="weight1"
-                                                 value="250"></label></td>
-            <td><input id="price1" type="number" name="price1" maxlength="3" disabled="disabled"></td>
-        </tr>
-        <tr>
-            <td><label for="weight2">500gr</label><input id="weight2" class="checkbox" type="checkbox" name="weight2"
-                                                         value="500"></td>
-            <td><input id="price2" type="number" name="price2" maxlength="3" disabled="disabled"></td>
-        </tr>
-        <tr>
-            <td><label for="weight3">1kg</label><input id="weight3" class="checkbox" type="checkbox" name="weight3"
-                                                       value="1000"></td>
-            <td><input id="price3" type="number" name="price3" maxlength="3" disabled="disabled"></td>
-        </tr>
-        </tbody>
-    </table>
-</div>
+        <table>
+            <thead>
+            <tr>
+                <th>Peso</th>
+                <th>Precio</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><label for="weight1">250gr<input id="weight1" class="checkbox" type="checkbox" name="weight1"
+                                                     value="250"></label></td>
+                <td><input id="price1" type="number" name="price1" maxlength="3" disabled="disabled"></td>
+            </tr>
+            <tr>
+                <td><label for="weight2">500gr</label><input id="weight2" class="checkbox" type="checkbox"
+                                                             name="weight2"
+                                                             value="500"></td>
+                <td><input id="price2" type="number" name="price2" maxlength="3" disabled="disabled"></td>
+            </tr>
+            <tr>
+                <td><label for="weight3">1kg</label><input id="weight3" class="checkbox" type="checkbox" name="weight3"
+                                                           value="1000"></td>
+                <td><input id="price3" type="number" name="price3" maxlength="3" disabled="disabled"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
     <!--<input type="file" id="file-input" name="image_path" multiple/>
     <div id="thumb-output"></div>-->
     <input class="button limited-width-2 limited-height" type='file' name='image_path'>
