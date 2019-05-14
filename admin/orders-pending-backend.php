@@ -50,12 +50,12 @@
     </div>
 
     <ul class="grid-tabs">
-        <li><a class="active bold" href="orders-pending-backend.html" id="pending" target="_self">Pendiente <span
-                class="tab-counter">#</span></a></li>
-        <li><a href="orders-enroute-backend.html" id="enroute" target="_self">En Ruta <span class="tab-counter">#</span></a>
+        <li><a class="active bold tab-active" href="orders-pending-backend.html" id="pending" target="_self">Pendiente <span
+                class="tab-counter"></span></a></li>
+        <li><a class="tab-disactive" href="orders-enroute-backend.html" id="enroute" target="_self">En Ruta <span class="tab-counter"></span></a>
         </li>
-        <li><a href="orders-delivered-backend.html" id="delivered" target="_self">Entregado <span
-                class="tab-counter">#</span></a></li>
+        <li><a class="tab-disactive" href="orders-delivered-backend.html" id="delivered" target="_self">Entregado <span
+                class="tab-counter"></span></a></li>
     </ul>
 
     <div class="b-grey">
