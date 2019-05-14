@@ -123,10 +123,13 @@ nav a:visited {
     z-index: 1;
 }
 .tab-active {
+    font-weight: bold;
+    color: var(--red) !important;
     padding: 10px 99px;
     background: url(../admin/images/strings/tab1.svg)52% 11%/72% no-repeat;
 }
 .tab-disactive {
+    color: var(--dark) !important;
     padding: 13px 71px;
     background: url(../admin/images/strings/tab2.svg)52% 11%/72% no-repeat;
 }
@@ -721,7 +724,6 @@ nav ul a{
 }
 
 #search{
-    margin-left: 522px;
     max-width: 280px;
 }
 
@@ -737,7 +739,7 @@ nav ul a{
     height: 100%;
 }
 .width-80{
-    width: 865px;
+    width: 915px;
 }
 
 .exterminate{
