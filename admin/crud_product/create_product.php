@@ -140,38 +140,12 @@ if (isset($_POST['insert'])) {
             </tbody>
         </table>
     </div>
-    <table>
-        <thead>
-        <tr>
-            <th>Peso</th>
-            <th>Precio</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td><label for="weight1">250gr<input id="weight1" class="checkbox" type="checkbox" name="weight1"
-                                                 value="250"></label></td>
-            <td><input id="price1" type="number" name="price1" maxlength="3" disabled="disabled"></td>
-        </tr>
-        <tr>
-            <td><label for="weight2">500gr</label><input id="weight2" class="checkbox" type="checkbox" name="weight2"
-                                                         value="500"></td>
-            <td><input id="price2" type="number" name="price2" maxlength="3" disabled="disabled"></td>
-        </tr>
-        <tr>
-            <td><label for="weight3">1kg</label><input id="weight3" class="checkbox" type="checkbox" name="weight3"
-                                                       value="1000"></td>
-            <td><input id="price3" type="number" name="price3" maxlength="3" disabled="disabled"></td>
-        </tr>
-        </tbody>
-    </table>
-</div>
-<div class="botton-thing-sequel grid-1-1-1">
-    <!--<input type="file" id="file-input" name="image_path" multiple/>
-    <div id="thumb-output"></div>-->
-    <input class="button limited-width-2 limited-height that-s-a-one" type='file' name='image_path'>
+    <div class="botton-thing-sequel grid-1-1-1">
+        <!--<input type="file" id="file-input" name="image_path" multiple/>
+        <div id="thumb-output"></div>-->
+        <input class="button limited-width-2 limited-height that-s-a-one" type='file' name='image_path'>
 
-    <input class="button red limited-width-2 limited-height that-s-a-two" type="submit" value="Guardar producto">
+        <input class="button red limited-width-2 limited-height that-s-a-two" type="submit" value="Guardar producto">
     </div>
 </form>
 
