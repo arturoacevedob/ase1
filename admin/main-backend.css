@@ -254,11 +254,12 @@ nav a:visited {
     border-radius: 0 0 15px 15px;
 }
 .bottom-thing input{
-    grid-column: 2;
-    justify-self: center;
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: right;
 }
 .bottom-thing .cancel{
-    grid-column: 3;
+    grid-column: 4;
     justify-self: left;
 }
 .pending-orders .bottom-thing input{
