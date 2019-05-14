@@ -52,9 +52,9 @@
     <ul class="grid-tabs">
         <li class="tab3"><a class="active bold tab-active" href="orders-pending-backend.html" id="pending" target="_self">Pendiente <span
                 class="tab-counter"></span></a></li>
-        <li class="tab2"><a class="tab-disactive" href="orders-enroute-backend.html" id="enroute" target="_self">En Ruta <span class="tab-counter"></span></a>
+        <li class="tab4"><a class="tab-disactive" href="orders-enroute-backend.html" id="enroute" target="_self">En Ruta <span class="tab-counter"></span></a>
         </li>
-        <li><a class="tab-disactive" href="orders-delivered-backend.html" id="delivered" target="_self">Entregado <span
+        <li><a class="tab-disactive tab5" href="orders-delivered-backend.html" id="delivered" target="_self">Entregado <span
                 class="tab-counter"></span></a></li>
     </ul>
 
