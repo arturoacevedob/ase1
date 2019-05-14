@@ -505,6 +505,9 @@ nav ul a{
 .ayuda-disactive {
     background: url(../admin/images/strings/backend_strings_ayuda.svg) 16% 115% / 10% no-repeat;
 }
+.cerrar-disactive {
+    background: url(../admin/images/strings/backend_strings_ayuda.svg) 16% 115% / 10% no-repeat;
+}
 .big-margin{
     margin-left: 300px;
 }
