@@ -256,7 +256,12 @@ nav a:visited {
 }
 .bottom-thing input{
     grid-column: 3;
-    justify-self: center;
+    grid-row: 1;
+    justify-self: right;
+}
+.bottom-thing .cancel{
+    grid-column: 4;
+    justify-self: left;
 }
 .pending-orders .bottom-thing input{
     grid-column: auto;
