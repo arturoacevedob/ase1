@@ -34,7 +34,10 @@ h1, h2, h3, h4, h5, h6, p, td, th {
     padding: 0;
 }
 .b-grey{
+    margin-left: 251px;
     background-color: var(--grey);
+    padding: 30px;
+
 }
 ul {
     margin: 0;
