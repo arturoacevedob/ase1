@@ -38,8 +38,8 @@
 
     </ul>
     <ul class="lonely-ul">
-        <li><a href="ayuda.php" target="_self">Ayuda</a></li>
-        <li><a href='login.php?killsession=1'>Cerrar Sesión</a></li>
+        <li><a class="ayuda-disactive" href="ayuda.php" target="_self">Ayuda</a></li>
+        <li><a class="cerrar-disactive"href='login.php?killsession=1'>Cerrar Sesión</a></li>
     </ul>
 </nav>
 
