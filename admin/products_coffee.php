@@ -140,13 +140,14 @@ function createCoffeeListOptions()
     </div>
 
     <ul class="grid-tabs">
-        <li><a class="active" href="products_coffee.php" id="coffee" target="_self">Café</a></li>
-        <li><a href="products-honey-backend.html" id="honey" target="_self">Miel</a></li>
-        <li><a href="products-soap-backend.html" id="soap" target="_self">Jabón</a></li>
+        <li><a class="active tab-active" href="products_coffee.php" id="coffee" target="_self">Café</a></li>
+        <li><a class="tab-disactive"href="products-honey-backend.html" id="honey" target="_self">Miel</a></li>
+        <li><a class="tab-disactive"href="products-soap-backend.html" id="soap" target="_self">Jabón</a></li>
     </ul>
 
+    <div>
     <div class="grid-2-space-between give-me-gap">
-        <div>
+        <div class="b-grey">
             <label class="kill" for="search"></label>
             <input id="search" placeholder="Buscar" type="search">
         </div>
@@ -156,7 +157,7 @@ function createCoffeeListOptions()
         createCoffeeListOptions()
         ?>
     </div>
-
+    </div>
 </div>
 
 </body>

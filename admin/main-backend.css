@@ -9,6 +9,7 @@
     --yellow: rgb(235, 160, 12);
     --coral: rgba(194, 72, 25, .5);
     --light-grey: rgba(64, 41, 10, 0.05);
+    --grey:#F2F2F2;
 
     --a-link: var(--light);
     --a-visited: #cccbc6;
@@ -32,6 +33,9 @@ h1, h2, h3, h4, h5, h6, p, td, th {
     margin: 0;
     padding: 0;
 }
+.b-grey{
+    color: var(--grey);
+}
 ul {
     margin: 0;
     padding: 0;
@@ -47,6 +51,12 @@ nav a:visited {
     color: var(--light);
 }
 
+.tab-active{
+    background: url(../admin/images/strings/tab1.svg)0% 0%/contain no-repeat;
+}
+.tab-disactive{
+    background: url(../admin/images/strings/tab2.svg)0% 0%/contain no-repeat;
+}
 /* Colors */
 
 /* font */
@@ -114,7 +124,6 @@ nav a:visited {
     margin: 0;
     padding: 0;
     display: grid;
-    background-color: #F2F2F2;
 }
 
 /* Toolbar */
