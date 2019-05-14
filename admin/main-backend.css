@@ -449,11 +449,10 @@ nav{
     font-size: 1.3em;
     background-color: var(--dark);
 }
-nav img{
-    padding: 15px 35px;
-    width: 65%;
+nav img {
+    padding: 18px 66px;
+    width: 50%;
 }
-
 ul {
     margin: 0;
     padding: 0;
