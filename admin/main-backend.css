@@ -96,6 +96,30 @@ nav a:visited {
     margin-top: 84px;
     z-index: 1;
 }
+.tab6{
+    max-width: 86%;
+    position: relative;
+    left: 169%;
+    /* top: 0%; */
+    margin-top: 81px;
+    z-index: 1;
+}
+.tab7{
+    max-width: 86%;
+    position: relative;
+    left: 219%;
+    /* top: 0%; */
+    margin-top: -15px;
+    z-index: 1;
+}
+.tab8{
+    max-width: 86%;
+    position: relative;
+    left: 254%;
+    /* top: 0%; */
+    margin-top: -21px;
+    z-index: 1;
+}
 .tab-active {
     padding: 10px 99px;
     background: url(../admin/images/strings/tab1.svg)52% 11%/72% no-repeat;
