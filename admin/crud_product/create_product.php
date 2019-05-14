@@ -138,7 +138,8 @@ if (isset($_POST['insert'])) {
             </tbody>
         </table>
         <div>
-        <input class="button limited-width-2 limited-height" type='file' name='image_path'>
+            <h3>Imagen</h3>
+        <input class="button limited-height brown-font" type='file' name='image_path'>
 </div>
     </div>
     <div class="bottom-thing grid-1-1-1-1 give-me-gap">
