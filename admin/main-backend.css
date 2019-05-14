@@ -117,7 +117,7 @@ nav a:visited {
 .tab8{
     max-width: 86%;
     position: relative;
-    left: 259;
+    left: 259%;
     /* top: 0%; */
     margin-top: -21px;
     z-index: 1;
