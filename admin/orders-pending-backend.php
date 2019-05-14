@@ -173,7 +173,7 @@
             </table>
         </div>
 </div>
-        <div class="bottom-thing grid-end padding-for-all-2">
+        <div class="bottom-thing grid-end padding-for-all-2 give-me-gap">
             <label class="label-left" for="tracking-number">Número de rastreo</label>
             <input class="input-right" id="tracking-number" required type="text">
             <button class="button red limited-width-2 limited-height kill-that-border" type="submit">Enviar a <strong>En Ruta</strong></button>
