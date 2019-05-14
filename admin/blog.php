@@ -87,7 +87,7 @@ function createNoticia()
 
     </ul>
     <ul class="lonely-ul">
-        <li><a href="" target="_self">Ayuda</a></li>
+        <li><a href="ayuda.php" target="_self">Ayuda</a></li>
         <li><a href='login.php?killsession=1'>Cerrar Sesión</a></li>
     </ul>
 </nav>

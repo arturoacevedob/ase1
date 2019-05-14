@@ -241,8 +241,13 @@ nav a:visited {
 .botton-thing-sequel{
     padding: 30px 10px;
 }
+.botton-thing-sequel .that-s-a-one{
+    grid-column: 1 / 2;
+    max-width: 1000px !important;
+    color: var(--light-80);
+}
 .botton-thing-sequel .that-s-a-two{
-
+    grid-column: 3;
 }
 /* Table Classes */
 caption {
@@ -449,11 +454,10 @@ nav{
     font-size: 1.3em;
     background-color: var(--dark);
 }
-nav img{
-    padding: 15px 35px;
-    width: 65%;
+nav img {
+    padding: 18px 66px;
+    width: 50%;
 }
-
 ul {
     margin: 0;
     padding: 0;
@@ -483,7 +487,7 @@ nav ul li{
 }
 nav ul a{
     display: block;
-    padding: 10px 60px 10px 70px;
+    padding: 10px 10px 10px 70px;
     border-left: 15px solid var(--dark);
 }
 
@@ -509,10 +513,10 @@ nav ul a{
     background: url(../admin/images/strings/backend_strings.svg) 16% 115% / 10% no-repeat;
 }
 .ayuda-disactive {
-    background: url(../admin/images/strings/backend_strings_ayuda.svg) 16% 115% / 10% no-repeat;
+    background: url(../admin/images/strings/backend_strings_ayuda.svg) 16% -21% / 10% no-repeat;
 }
 .cerrar-disactive {
-    background: url(../admin/images/strings/backend_strings_ayuda.svg) 16% 115% / 10% no-repeat;
+    background: url(../admin/images/strings/backend_strings_ayuda.svg) 16% 127% / 10% no-repeat;
 }
 .big-margin{
     margin-left: 300px;
