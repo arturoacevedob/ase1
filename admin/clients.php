@@ -33,11 +33,13 @@ function createClientList()
         <table class='expandable-table client wrapper'>
         <tbody>
         <tr class='collapsed-view'>
-            <td class='padding-for-all radius-left'>" .
+            <td class='padding-for-all radius-left width-80'>" .
             $clients[$i]["name_alias"] . "<span class='tag'>" . $clients[$i]["client_type"] . "</span><br>" .
             $clients[$i]["giro"] .
             "</td>
-            <td><a href='crud_client/update_client.php?idclient=" . $clients[$i]["id_client"] . "'>Editar</a><a href='crud_client/delete_client.php?idclient=" . $clients[$i]["id_client"] . "'>Eliminar</a></td>
+            <td><p class='edit-pencil'><a href='crud_client/update_client.php?idclient=" . $clients[$i]["id_client"] . "' aria-label='Editar'></a></p>
+            
+            </td>
             <td class='radius-right'></td>
             </tr>
         <div class='padding-for-all-2'>
