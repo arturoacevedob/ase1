@@ -488,7 +488,7 @@ nav ul li{
 }
 nav ul a{
     display: block;
-    padding: 10px 60px 10px 70px;
+    padding: 10px 10px 10px 70px;
     border-left: 15px solid var(--dark);
 }
 
