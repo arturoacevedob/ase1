@@ -115,8 +115,9 @@ include 'agregar_producto.php';
                 <p>" . $description . "</p>
             </div>
 
-            <form class='product-form' action='product_view.php' class='grid-product-form'>
+            <form method='post' class='product-form' action='product_view.php?idproduct=" . $id_product . "' class='grid-product-form'>
             
+                <input type='hidden' name='insert' value='insert'>
                 <input type='hidden' name='id_product' value='" . $id_product . "'>
                 
                 <div class='grid-2-left-aligned'>
@@ -183,18 +184,17 @@ include 'agregar_producto.php';
                         </select>
                     </p>
                 </fieldset>
-            </form>
 
-            <div class='product-buy grid-2-space-between'>
-                <div class='grid-2-space-between align-center bold'>
-                    <span id='quantity'>Qt. x</span>
-                    <p id='calculated-total' class='currency'></p>
-                </div>";
-
-        compra();
+                <div class='product-buy grid-2-space-between'>
+                    <div class='grid-2-space-between align-center bold'>
+                        <span id='quantity'>Qt. x</span>
+                        <p id='calculated-total' class='currency'></p>
+                    </div>";
+                    compra();
 
         echo "
-            </div>
+                </div>
+            </form>
             <div class='center-aligned'>
                 <p>Pide 11KG para envío nacional gratis</p>
             </div>

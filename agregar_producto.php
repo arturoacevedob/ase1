@@ -8,7 +8,7 @@ function compra()
 
     $boton_disable = "
     <div class='add-cart-register-to-buy'>
-    <a class='button disable unavailable' target='_self'>Agregar al carrito</a>
+    <input type='submit' name='Agregar al carrito' class='button disable unavailable'>
     <a class='note button red fit-content' href='contactanos.php' target='_self'> Regístrate para comprar</a>
     </div>";
 

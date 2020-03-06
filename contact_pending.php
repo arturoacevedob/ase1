@@ -267,7 +267,7 @@ function renderContactForm()
                     </div>
                 </fieldset>
                 <fieldset>
-                    <legend><strong> ¿Cuándo te llamamos ?</strong></legend>
+                    <legend><strong> ¿Cuándo te llamamos?</strong></legend>
                     <div class='form-group'>
                         <label class='control-label' for='dtp_input1'> Día</label>
                         <div class='input-group date form_date' data - date='' data - date - format='dd MM yyyy'
