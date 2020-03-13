@@ -191,6 +191,7 @@ include 'agregar_producto.php';
                         <p id='calculated-total' class='currency'></p>
                     </div>";
                     compra();
+                    // test
 
         echo "
                 </div>
