@@ -24,7 +24,7 @@ include 'contact_pending.php';
     <script src="https://cdnjs.cloudflare.com/ajax/libs/php5shiv/3.7.3/php5shiv.js"></script><![endif]-->
     <!-- Escala de viewport -->
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <!-- Link a CSS -->
+    <!-- Link a CSS  -->
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/mapa.css" rel="stylesheet">
@@ -32,7 +32,7 @@ include 'contact_pending.php';
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <!-- Link a favicon -->
     <link href="images/logos/batsil_maya_logo.svg" rel="icon">
-
+    
     <title>Bats'il Maya</title>
 </head>
 <body id="homepage">
