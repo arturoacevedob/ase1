@@ -188,14 +188,14 @@ include 'contact_pending.php';
     </article>
     <div class="extra-articles">
         <article class="grid-image-first">
-            <h2 class="white">Envíos</h2>
+            <h2 class="white">Envíos Nacionales</h2>
             <div class="icono-envio image-top-first-round"></div>
-            <p class="white">Donec mauris tellus, tristique non tincidunt eu, consectetur eu diam.</p>
+            <p class="white">hacemos envíos a cualquier parte de la República Mexicana. Para volumen de 11 kg. o más, el envío es gratis. El costo por volumen menor a 11 kg. es de $200.00</p>
         </article>
         <article class="grid-image-first">
-            <h2 class="white">Envíos</h2>
+            <h2 class="white">Envíos Internacionales</h2>
             <div class="icono-envio image-top-first-round"></div>
-            <p class="white">Donec mauris tellus, tristique non tincidunt eu, consectetur eu diam.</p>
+            <p class="white">actualmente nuestro café es enviado a algunos Estados de Estados Unidos. Así como a Valladolid, España. Para procesos de exportación (mayor volumen) favor de contactar al equipo: contacto@batsilmaya.org</p>
         </article>
     </div>
 </section>
