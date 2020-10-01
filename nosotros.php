@@ -17,7 +17,7 @@ include 'contact_pending.php';
     <meta content="Sarah Raquel Quintana Cortés,Arturo Alejandro Acevedo Bravo, Mathias Thomsen Cuéllar" name="author">
     <meta content="La historia de Bats'il Maya, su misión, su visión, su historia, y su comunidad."
           name="description">
-    <meta content="Tseltal, Bats'il Maya, Chilón, Chiapas, historia, Mayas, Yomol A'tel, Ts'umbal Xilaha’, Xapontic, chabnichim,capeltic"
+    <meta content="Tseltal, Bats'il Maya, Chilón, Chiapas, historia, Mayas, Yomol A'tel, Ts'umbal Xilaha’, Xapontic, chabnichim,capeltic, coffee, cafe organico, organic coffee, capeltic, cafe capeltic, cafeteria capeltic, chiapas, cafe de chiapas, cafe mexicano, tsletales, tseltal, lo mejor de mexico, cafe responsable, sustentabilidad, cafe sustentale, cafe de comercio justo, comercio justo"
           name="keywords">
     <!-- Scripts de compatibilidad -->
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
