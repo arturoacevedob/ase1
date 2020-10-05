@@ -17,7 +17,7 @@ include 'contact_pending.php';
     <meta content="Sarah Raquel Quintana Cortés,Arturo Alejandro Acevedo Bravo, Mathias Thomsen Cuéllar" name="author">
     <meta content="El viaje del café desde la planta, cultivo, selección, tueste, y molido. Incluyendo los beneficios y valores agregados del café "
           name="description">
-    <meta content="Tseltal, Bats'il Maya, café, miel, jabón, jabones, Chiapas, Orgánico, proceso, cafetal, agricultura, beneficio, "
+    <meta content="Tseltal, Bats'il Maya, café, miel, jabón, jabones, Chiapas, Orgánico, proceso, cafetal, agricultura, beneficio, coffee, cafe organico, organic coffee, capeltic, cafe capeltic, cafeteria capeltic, chiapas, cafe de chiapas, cafe mexicano, tsletales, tseltal, lo mejor de mexico, cafe responsable, sustentabilidad, cafe sustentale, cafe de comercio justo, comercio justo"
           name="keywords">
     <!-- Scripts de compatibilidad -->
     <meta content="IE=edge" http-equiv="X-UA-Compatible">

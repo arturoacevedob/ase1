@@ -17,14 +17,14 @@ include 'contact_pending.php';
     <meta content="Sarah Raquel Quintana Cortés,Arturo Alejandro Acevedo Bravo, Mathias Thomsen Cuéllar" name="author">
     <meta content="Dándole el máximo valor agregado que nos permite la construcción de un precio justo y digno al trabajo de quienes los siembran."
           name="description">
-    <meta content="Tseltal, Bats'il Maya, café, miel, jabón, jabones, Chiapas, Orgánico" name="keywords">
+    <meta content="Tseltal, Bats'il Maya, café, miel, jabón, jabones, Chiapas, Orgánico, coffee, cafe organico, organic coffee, capeltic, cafe capeltic, cafeteria capeltic, chiapas, cafe de chiapas, cafe mexicano, tsletales, tseltal, lo mejor de mexico, cafe responsable, sustentabilidad, cafe sustentale, cafe de comercio justo, comercio justo" name="keywords">
     <!-- Scripts de compatibilidad -->
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/php5shiv/3.7.3/php5shiv.js"></script><![endif]-->
     <!-- Escala de viewport -->
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <!-- Link a CSS -->
+    <!-- Link a CSS  -->
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/mapa.css" rel="stylesheet">
@@ -32,7 +32,7 @@ include 'contact_pending.php';
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <!-- Link a favicon -->
     <link href="images/logos/batsil_maya_logo.svg" rel="icon">
-
+    
     <title>Bats'il Maya</title>
 </head>
 <body id="homepage">
@@ -188,14 +188,14 @@ include 'contact_pending.php';
     </article>
     <div class="extra-articles">
         <article class="grid-image-first">
-            <h2 class="white">Envíos</h2>
+            <h2 class="white">Envíos Nacionales</h2>
             <div class="icono-envio image-top-first-round"></div>
-            <p class="white">Donec mauris tellus, tristique non tincidunt eu, consectetur eu diam.</p>
+            <p class="white">hacemos envíos a cualquier parte de la República Mexicana. Para volumen de 11 kg. o más, el envío es gratis. El costo por volumen menor a 11 kg. es de $200.00</p>
         </article>
         <article class="grid-image-first">
-            <h2 class="white">Envíos</h2>
+            <h2 class="white">Envíos Internacionales</h2>
             <div class="icono-envio image-top-first-round"></div>
-            <p class="white">Donec mauris tellus, tristique non tincidunt eu, consectetur eu diam.</p>
+            <p class="white">actualmente nuestro café es enviado a algunos Estados de Estados Unidos. Así como a Valladolid, España. Para procesos de exportación (mayor volumen) favor de contactar al equipo: contacto@batsilmaya.org</p>
         </article>
     </div>
 </section>
