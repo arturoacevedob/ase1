@@ -38,9 +38,9 @@ CREATE TABLE `addresses` (
 --
 
 INSERT INTO `addresses` (`id_address`, `name_place`, `address1`, `address2`, `country`, `city`, `state`, `phone_address`, `cp`, `id_client`) VALUES
-(1, ''Capeltic Santa Fe'', ''Prolongacion Paseo de la Reforma 880'', ''Edificio K-PB'', ''México'', ''CDMX'', ''Ciudad de México'', ''2147483647'', 1219, 1),
+(1, ''Capeltic Santa Fe'', ''Prolongacion Paseo de la Reforma'', ''Edificio K-PB'', ''México'', ''CDMX'', ''Ciudad de México'', ''2147483647'', 1219, 1),
 (25, '''', '''', '''', '''', '''', '''', '''', 0, 39),
-(26, ''Capeltic Santa Fe'', ''Prolongacion Paseo de la Reforma 880'', ''Edificio K-PB'', ''México'', ''CDMX'', ''Ciudad de México'', ''5512341234'', 1219, 40),
+(26, ''Capeltic Santa Fe'', ''Prolongacion Paseo de la Reforma'', ''Edificio K-PB'', ''México'', ''CDMX'', ''Ciudad de México'', ''5512341234'', 1219, 40),
 (27, ''Nombre del lugar'', ''Calle y número'', ''15'', ''v'', ''Ciudad'', ''Estado'', ''Teléfono'', 12345, 42);
 
 -- --------------------------------------------------------
@@ -152,8 +152,8 @@ CREATE TABLE `clients_pending` (
 --
 
 INSERT INTO `clients_pending` (`id_client_pending`, `name_client_pending`, `email_client_pending`, `phone_client_pending`, `day_client_pending`, `from_client_pending`, `to_client_pending`) VALUES
-(2, ''Arturo Acevedo'', ''arturoacevedob@icloud.com'', ''(55) 2100-1101'', ''14 Mayo 2019'', ''15:30'', ''20:00''),
-(4, ''Maria BRavo'', ''arturoacevedob@icloud.com'', ''(55) 2100-0111'', ''2019-05-15 16:28'', ''2019-05-14 16:00'', ''2019-05-14 17:00'');
+(2, ''Arturo Acevedo'', ''arturoacevedob@icloud.com'', ''(55) 2100-1101 '', ''14 Mayo 2019 '', ''15:30 '', ''20:00 ''),
+(4, ''Maria BRavo'', ''arturoacevedob@icloud.com'', ''(55) 2100-0111 '', ''2019-05-15 16:28 '', ''2019-05-14 16:00 '', ''2019-05-14 17:00 '');
 
 -- --------------------------------------------------------
 
