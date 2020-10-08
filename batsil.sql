@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Oct 08, 2020 at 04:57 AM
+-- Generation Time: Oct 08, 2020 at 05:04 AM
 -- Server version: 5.7.26
 -- PHP Version: 7.4.2
 
@@ -123,7 +123,7 @@ CREATE TABLE `clients` (
 --
 
 INSERT INTO `clients` (`id_client`, `name_legal`, `name_alias`, `giro`, `client_type`, `user`, `pass`) VALUES
-(43, 'Grupo Yomol Atel', 'Capeltic', 'Cafetería', 1, NULL, NULL);
+(43, 'Grupo Yomol Atel', 'Capeltic', 'Cafetería', 1, 'capeltic@capeltic.org', '*00A51F3F48415C7D4E8908980D443C29C69B60C9');
 
 -- --------------------------------------------------------
 
