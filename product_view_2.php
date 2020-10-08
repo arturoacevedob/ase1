@@ -5,7 +5,14 @@ error_reporting(E_ALL);
 session_start();
 include 'connection.php';
 include 'header.php';
-include 'agregar_producto.php';
+include 'agregar_producto_2.php';
+
+if (isset($_SESSION['user'])) {
+        $user = true;
+    } else {
+        $user = false;
+    }
+
 ?>
 
 <!DOCTYPE html>
@@ -115,7 +122,7 @@ include 'agregar_producto.php';
                 <p>" . $description . "</p>
             </div>
 
-            <form method='post' class='product-form' action='product_view.php?idproduct=" . $id_product . "' class='grid-product-form'>
+            <form method='post' class='product-form' action='cart_action.php?action=addToCart&id=" . $id_product . "' enctype='multipart/form-data' class='grid-product-form'>
             
                 <input type='hidden' name='insert' value='insert'>
                 <input type='hidden' name='id_product' value='" . $id_product . "'>
@@ -163,14 +170,15 @@ include 'agregar_producto.php';
                         <p><input id='quantity' name='quantity' type='number' max='100' min='0' value='1' onchange='calculatePrice()'/></p>
                     </fieldset>
                 </div>
+                
                 <fieldset class='h3-small'>
                     <label>Molido del café</label>
                     <p class='radio-group'>
-                        <input id='molido-one' class='radio' name='molido-selector' type='radio'>
+                        <input id='molido-one' class='radio' name='molido_selector' type='radio'>
                         <label for='molido-one'>Americano</label>
-                        <input id='molido-two' class='radio' name='molido-selector' type='radio'>
+                        <input id='molido-two' class='radio' name='molido_selector' type='radio'>
                         <label for='molido-two'>Espresso</label>
-                        <input id='molido-custom-radio' type='radio' name='molido-selector'
+                        <input id='molido-custom-radio' type='radio' name='molido_selector'
                                class='radio other-input'>
                         <label for='molido-custom-radio'>Otro</label>
                         <select type='number' id='molido-custom-value' class='dependent-input' disabled>
@@ -190,8 +198,18 @@ include 'agregar_producto.php';
                         <span id='quantity'>Qt. x</span>
                         <p id='calculated-total' class='currency'></p>
                     </div>";
-                    compra();
-                    // test
+                    if ($user) {
+                        echo "
+                        <div>
+                            <input type='submit' name='Agregar al carrito' value='Agregar al carrito' class='button red'>
+                        </div>";
+                    } else {
+                        echo "
+                        <div class='add-cart-register-to-buy'>
+                            <input type='submit' name='Agregar al carrito' value='Agregar al carrito' class='button disable unavailable'>
+                            <a class='note button red fit-content' href='contactanos.php' target='_self'> Regístrate para comprar</a>
+                        </div>";
+                    }
 
         echo "
                 </div>
@@ -309,7 +327,7 @@ include 'agregar_producto.php';
                     <li><strong>Correo</strong><br>
                         contacto@batsilmaya.org
                     </li>
-                    <li class="logo-footer"><a href="index.php" target="_self"><img alt="Bats'il Maya Logo"
+                    <li class="logo-footer"><a href="index.php" target="_self"><img alt="Bats"il Maya Logo"
                                                                                     src="images/logos/batsil_maya_logo.svg"></a>
                     </li>
                     <li id="office1"><strong>Oficina</strong><br>
@@ -322,7 +340,7 @@ include 'agregar_producto.php';
             </footer>
         </div>
     </div>
-</div>
+</div>;
 
 <script charset="UTF-8" src="js/jquery.js"></script>
 

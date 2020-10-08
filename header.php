@@ -1,7 +1,14 @@
 <?php
 function renderHeader(){
+
+    // Initialize shopping cart class
+    include_once 'cart_class.php';
+    $cart = new Cart;
+
+    // Establish origin page
     $origin = basename($_SERVER['PHP_SELF']);
 
+    // Header for users
     $headerUser = "
     <ul class='user-head grid-nav-1'>
         <li class='cuenta'><a href='cuenta_informacion.php' target='_self' aria-label='cuenta'></a>
@@ -16,6 +23,7 @@ function renderHeader(){
         <li class='carrito'><a class='light' href='carrito.php' target='_self' aria-label='carrito'></a></li>
     </ul>";
 
+    // Header for the rest of us
     $header = "
     <ul class='grid-nav-1'>
         <li class='button outline fit-content'><a href='iniciar_sesion.php?origin=" . $origin . "' target='_self'>Iniciar sesión</a></li>

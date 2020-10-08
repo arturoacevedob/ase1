@@ -3,7 +3,7 @@ function compra()
 {
     $boton_active = "
     <div>
-    <a class='button red' href='carrito.php' target='_self'>Agregar al carrito</a>
+    <a class='button red' href='cart_action.php?action=addToCart&id=" . $id_product . " target='_self'>Agregar al carrito</a>
     </div>";
 
     $boton_disable = "
@@ -25,7 +25,7 @@ function compra()
             $item_array_id = array_column($_SESSION['cart'], "product_id");
 
             if(in_array($_POST['product_id'], $item_array_id)){
-                echo "<script>alert('Product is already added in the cart..!')</script>";
+                echo "<script>alert('Product is already added in the cart')</script>";
                 echo "<script>window.location = 'index.php'</script>";
             }else{
 
