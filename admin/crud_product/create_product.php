@@ -145,7 +145,7 @@ if (isset($_POST['insert'])) {
     <div class="bottom-thing grid-1-1-1-1 give-me-gap">
         <!--<input type="file" id="file-input" name="image_path" multiple/>
         <div id="thumb-output"></div>-->
-        <a class="button red-outline limited-width-2 cancel" href=''>Cancelar</a>
+        <a class="button red-outline limited-width-2 cancel" href='../products_coffee.php'>Cancelar</a>
         <input class="button red limited-width-2 limited-height" type="submit" value="Guardar producto">
     </div>
 </form>
