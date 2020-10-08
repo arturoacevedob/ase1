@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Oct 05, 2020 at 02:21 AM
+-- Generation Time: Oct 08, 2020 at 04:57 AM
 -- Server version: 5.7.26
 -- PHP Version: 7.4.2
 
@@ -24,24 +24,21 @@ CREATE TABLE `addresses` (
   `id_address` int(11) UNSIGNED NOT NULL,
   `name_place` varchar(25) NOT NULL DEFAULT '',
   `address1` varchar(200) NOT NULL DEFAULT '',
-  `address2` varchar(200) NOT NULL DEFAULT '',
+  `address2` varchar(200) DEFAULT '',
   `country` varchar(100) NOT NULL DEFAULT '',
   `city` varchar(100) NOT NULL DEFAULT '',
   `state` varchar(100) NOT NULL DEFAULT '',
   `phone_address` varchar(12) NOT NULL,
   `cp` int(5) NOT NULL,
   `id_client` int(11) UNSIGNED NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `addresses`
 --
 
 INSERT INTO `addresses` (`id_address`, `name_place`, `address1`, `address2`, `country`, `city`, `state`, `phone_address`, `cp`, `id_client`) VALUES
-(1, 'Capeltic Santa Fe', 'Prolongacion Paseo de la Reforma 880', 'Edificio K-PB', 'México', 'CDMX', 'Ciudad de México', '2147483647', 1219, 1),
-(25, '', '', '', '', '', '', '', 0, 39),
-(26, 'Capeltic Santa Fe', 'Prolongacion Paseo de la Reforma 880', 'Edificio K-PB', 'México', 'CDMX', 'Ciudad de México', '5512341234', 1219, 40),
-(27, 'Nombre del lugar', 'Calle y número', '15', 'v', 'Ciudad', 'Estado', 'Teléfono', 12345, 42);
+(2, 'Capeltic Ibero CDMX', 'Joaquín Gallo 258', '', 'México', 'CDMX', 'DF', '525563881082', 1219, 43);
 
 -- --------------------------------------------------------
 
@@ -50,9 +47,9 @@ INSERT INTO `addresses` (`id_address`, `name_place`, `address1`, `address2`, `co
 --
 
 CREATE TABLE `admin` (
-  `user` varchar(50) NOT NULL,
-  `pass` varchar(50) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+  `user` varchar(50) CHARACTER SET latin1 NOT NULL,
+  `pass` varchar(50) CHARACTER SET latin1 NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `admin`
@@ -76,17 +73,14 @@ CREATE TABLE `billing` (
   `payment_form` varchar(25) NOT NULL DEFAULT '',
   `payment_use` varchar(25) NOT NULL DEFAULT '',
   `id_client` int(10) UNSIGNED NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `billing`
 --
 
 INSERT INTO `billing` (`id_billing`, `payroll`, `fiscal_address`, `rfc`, `payment_method`, `payment_form`, `payment_use`, `id_client`) VALUES
-(1, 'Payroll', 'Fiscal Address', 'RFC', '0', '2', '0', 1),
-(24, '', '', '', '', '', '', 39),
-(25, 'Nómina', '', 'RFC', '1', '2', '1', 40),
-(26, 'Nómina', '', 'RFC', '1', '3', '1', 42);
+(28, 'TEST', '', 'TEST', '0', '3', '0', 43);
 
 -- --------------------------------------------------------
 
@@ -97,7 +91,7 @@ INSERT INTO `billing` (`id_billing`, `payroll`, `fiscal_address`, `rfc`, `paymen
 CREATE TABLE `categories` (
   `id_category` int(11) UNSIGNED NOT NULL,
   `category` varchar(50) NOT NULL DEFAULT ''
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `categories`
@@ -122,14 +116,14 @@ CREATE TABLE `clients` (
   `client_type` int(12) NOT NULL DEFAULT '0',
   `user` varchar(50) DEFAULT NULL,
   `pass` varchar(50) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `clients`
 --
 
 INSERT INTO `clients` (`id_client`, `name_legal`, `name_alias`, `giro`, `client_type`, `user`, `pass`) VALUES
-(40, 'Distribuidora Tseltal de Café', 'Capeltic', 'Cafetería con razón social', 1, 'capeltic@capeltic.org', '*00A51F3F48415C7D4E8908980D443C29C69B60C9');
+(43, 'Grupo Yomol Atel', 'Capeltic', 'Cafetería', 1, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -147,14 +141,6 @@ CREATE TABLE `clients_pending` (
   `to_client_pending` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `clients_pending`
---
-
-INSERT INTO `clients_pending` (`id_client_pending`, `name_client_pending`, `email_client_pending`, `phone_client_pending`, `day_client_pending`, `from_client_pending`, `to_client_pending`) VALUES
-(2, 'Arturo Acevedo', 'arturoacevedob@icloud.com', '(55) 2100-1101', '14 Mayo 2019', '15:30', '20:00'),
-(4, 'Maria BRavo', 'arturoacevedob@icloud.com', '(55) 2100-0111', '2019-05-15 16:28', '2019-05-14 16:00', '2019-05-14 17:00');
-
 -- --------------------------------------------------------
 
 --
@@ -167,19 +153,14 @@ CREATE TABLE `contacts` (
   `email` varchar(50) NOT NULL DEFAULT '',
   `phone_contact` varchar(20) NOT NULL DEFAULT '',
   `id_client` int(11) UNSIGNED NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `contacts`
 --
 
 INSERT INTO `contacts` (`id_contact`, `name_contact`, `email`, `phone_contact`, `id_client`) VALUES
-(1, 'Maria Bravo', 'mbravo@capeltic.org', '5521001101', 1),
-(3, 'Maria Bravo', 'mbravo@capeltic.org', '5521001101', 1),
-(26, '123', '123', '', 39),
-(27, 'Maria Bravo', 'mbravo@capeltic.org', '5521001011', 40),
-(28, 'Nombre', 'arturoacevedob@icloud.com', 'Número telefónico', 41),
-(29, 'Nombre', 'arturoacevedob@icloud.com', 'Número telefónico', 42);
+(32, 'Arturo Acevedo', 'arturoacevedob@gmail.com', '5549114493', 43);
 
 -- --------------------------------------------------------
 
@@ -190,7 +171,7 @@ INSERT INTO `contacts` (`id_contact`, `name_contact`, `email`, `phone_contact`, 
 CREATE TABLE `ground_type` (
   `id_ground_type` int(11) UNSIGNED NOT NULL,
   `ground_type` varchar(50) NOT NULL DEFAULT ''
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `ground_type`
@@ -217,16 +198,41 @@ CREATE TABLE `images` (
   `id_image` int(11) UNSIGNED NOT NULL,
   `id_product` int(11) UNSIGNED NOT NULL,
   `image_path` varchar(500) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `images`
 --
 
 INSERT INTO `images` (`id_image`, `id_product`, `image_path`) VALUES
-(1, 1, 'images/productos/cafe/granos_de_cafe_organico_batsil_maya.jpg'),
-(6, 10, 'images/productos/cafe/granos_de_cafe_organico_batsil_maya.jpg'),
-(17, 90, 'images/productos/cafe/images.jpeg');
+(18, 91, 'images/productos/cafe/capelticorgánico_1kg.jpg');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `orders`
+--
+
+CREATE TABLE `orders` (
+  `id_order` int(11) UNSIGNED NOT NULL,
+  `id_client` int(11) UNSIGNED NOT NULL,
+  `id_address` int(11) UNSIGNED NOT NULL,
+  `date` timestamp(6) NULL DEFAULT CURRENT_TIMESTAMP(6)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `orders_detail`
+--
+
+CREATE TABLE `orders_detail` (
+  `id_orders_detail` int(11) UNSIGNED NOT NULL,
+  `id_product` int(11) UNSIGNED NOT NULL,
+  `id_weight_price` int(11) UNSIGNED NOT NULL,
+  `id_ground_type` int(11) UNSIGNED NOT NULL,
+  `quantity` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -240,16 +246,14 @@ CREATE TABLE `products` (
   `description` varchar(1000) NOT NULL,
   `notes` varchar(1000) NOT NULL,
   `client_type` int(12) DEFAULT '0'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `products`
 --
 
 INSERT INTO `products` (`id_product`, `name_product`, `description`, `notes`, `client_type`) VALUES
-(1, 'Premium Orgánico', 'Únicamente los granos que cumplen los más altos estándares de calidad han sido cuidadosamente seleccionados para formar parte de esta mezcla, logrando así un café de calidad premium que logrará satisfacer incluso a los más conocedores.', 'Este café es rico en aromas dulces y florales, presentando una acidez fina y prolongada, un cuerpo medio-alto, aterciopelada al paladar. En su sabor se distinguen notas de avellana, caramelo, frutos rojos y cítricos.', 0),
-(10, 'Gourmet Orgánico', 'Un café cuyos granos con preparación europea son seleccionados cuidadosamente para obtener una mezcla única de calidad superior.', 'Este café presenta un aroma floral, una acidez cítrica moderada, un cuerpo cremoso balanceado y un sabor equilibrado con notas de chocolate, avellana, caramelo y frutos rojos.', 1),
-(90, 'Sarah', 'Quiere', 'Este SQL', 0);
+(91, 'Capeltic Orgánico', 'Un café de preparación americana con excelente calidad que pocos cafés en el mercado nacional logran ofrecer.', 'Este café presenta un aroma herbal, una acidez cítrica, un cuerpo medio y sabor con notas a madera y caramelo.', 1);
 
 -- --------------------------------------------------------
 
@@ -266,16 +270,14 @@ CREATE TABLE `weight_price` (
   `price1` int(3) DEFAULT NULL,
   `price2` int(3) DEFAULT NULL,
   `price3` int(3) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `weight_price`
 --
 
 INSERT INTO `weight_price` (`id_weight_price`, `id_product`, `weight1`, `weight2`, `weight3`, `price1`, `price2`, `price3`) VALUES
-(1, 1, NULL, 500, NULL, NULL, 654, NULL),
-(23, 10, 250, 500, 1000, 75, 135, 230),
-(36, 90, 250, NULL, NULL, 123, NULL, NULL);
+(39, 91, 250, 500, 1000, 65, 105, 190);
 
 --
 -- Indexes for dumped tables
@@ -285,13 +287,15 @@ INSERT INTO `weight_price` (`id_weight_price`, `id_product`, `weight1`, `weight2
 -- Indexes for table `addresses`
 --
 ALTER TABLE `addresses`
-  ADD PRIMARY KEY (`id_address`);
+  ADD PRIMARY KEY (`id_address`),
+  ADD KEY `id_client` (`id_client`);
 
 --
 -- Indexes for table `billing`
 --
 ALTER TABLE `billing`
-  ADD PRIMARY KEY (`id_billing`);
+  ADD PRIMARY KEY (`id_billing`),
+  ADD KEY `id_client` (`id_client`);
 
 --
 -- Indexes for table `categories`
@@ -315,7 +319,8 @@ ALTER TABLE `clients_pending`
 -- Indexes for table `contacts`
 --
 ALTER TABLE `contacts`
-  ADD PRIMARY KEY (`id_contact`);
+  ADD PRIMARY KEY (`id_contact`),
+  ADD KEY `id_client` (`id_client`);
 
 --
 -- Indexes for table `ground_type`
@@ -329,6 +334,23 @@ ALTER TABLE `ground_type`
 ALTER TABLE `images`
   ADD PRIMARY KEY (`id_image`),
   ADD KEY `id_product` (`id_product`);
+
+--
+-- Indexes for table `orders`
+--
+ALTER TABLE `orders`
+  ADD PRIMARY KEY (`id_order`),
+  ADD KEY `id_client` (`id_client`),
+  ADD KEY `id_address` (`id_address`);
+
+--
+-- Indexes for table `orders_detail`
+--
+ALTER TABLE `orders_detail`
+  ADD PRIMARY KEY (`id_orders_detail`),
+  ADD KEY `id_product` (`id_product`),
+  ADD KEY `id_weight_price` (`id_weight_price`),
+  ADD KEY `id_ground_type` (`id_ground_type`);
 
 --
 -- Indexes for table `products`
@@ -351,13 +373,13 @@ ALTER TABLE `weight_price`
 -- AUTO_INCREMENT for table `addresses`
 --
 ALTER TABLE `addresses`
-  MODIFY `id_address` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+  MODIFY `id_address` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `billing`
 --
 ALTER TABLE `billing`
-  MODIFY `id_billing` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+  MODIFY `id_billing` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT for table `categories`
@@ -369,7 +391,7 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT for table `clients`
 --
 ALTER TABLE `clients`
-  MODIFY `id_client` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
+  MODIFY `id_client` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 
 --
 -- AUTO_INCREMENT for table `clients_pending`
@@ -381,7 +403,7 @@ ALTER TABLE `clients_pending`
 -- AUTO_INCREMENT for table `contacts`
 --
 ALTER TABLE `contacts`
-  MODIFY `id_contact` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `id_contact` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
 -- AUTO_INCREMENT for table `ground_type`
@@ -393,16 +415,77 @@ ALTER TABLE `ground_type`
 -- AUTO_INCREMENT for table `images`
 --
 ALTER TABLE `images`
-  MODIFY `id_image` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id_image` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+
+--
+-- AUTO_INCREMENT for table `orders`
+--
+ALTER TABLE `orders`
+  MODIFY `id_order` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `orders_detail`
+--
+ALTER TABLE `orders_detail`
+  MODIFY `id_orders_detail` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id_product` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=91;
+  MODIFY `id_product` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=92;
 
 --
 -- AUTO_INCREMENT for table `weight_price`
 --
 ALTER TABLE `weight_price`
-  MODIFY `id_weight_price` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+  MODIFY `id_weight_price` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `addresses`
+--
+ALTER TABLE `addresses`
+  ADD CONSTRAINT `address_client` FOREIGN KEY (`id_client`) REFERENCES `clients` (`id_client`);
+
+--
+-- Constraints for table `billing`
+--
+ALTER TABLE `billing`
+  ADD CONSTRAINT `billing_client` FOREIGN KEY (`id_client`) REFERENCES `clients` (`id_client`);
+
+--
+-- Constraints for table `contacts`
+--
+ALTER TABLE `contacts`
+  ADD CONSTRAINT `contacts_clients` FOREIGN KEY (`id_client`) REFERENCES `clients` (`id_client`);
+
+--
+-- Constraints for table `images`
+--
+ALTER TABLE `images`
+  ADD CONSTRAINT `image_product` FOREIGN KEY (`id_product`) REFERENCES `products` (`id_product`);
+
+--
+-- Constraints for table `orders`
+--
+ALTER TABLE `orders`
+  ADD CONSTRAINT `order_address` FOREIGN KEY (`id_address`) REFERENCES `addresses` (`id_address`),
+  ADD CONSTRAINT `order_client` FOREIGN KEY (`id_client`) REFERENCES `clients` (`id_client`);
+
+--
+-- Constraints for table `orders_detail`
+--
+ALTER TABLE `orders_detail`
+  ADD CONSTRAINT `orders_detail_ground_type` FOREIGN KEY (`id_ground_type`) REFERENCES `ground_type` (`id_ground_type`),
+  ADD CONSTRAINT `orders_detail_product` FOREIGN KEY (`id_product`) REFERENCES `products` (`id_product`),
+  ADD CONSTRAINT `orders_detail_weight_price` FOREIGN KEY (`id_weight_price`) REFERENCES `weight_price` (`id_weight_price`);
+
+--
+-- Constraints for table `weight_price`
+--
+ALTER TABLE `weight_price`
+  ADD CONSTRAINT `weight_price_product` FOREIGN KEY (`id_product`) REFERENCES `products` (`id_product`);
