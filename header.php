@@ -2,7 +2,8 @@
 function renderHeader()
 {
   // Header for users
-  $header = "
+  $header =
+    "
     <div class='grid-header container'>
         <h1>Bats'il Maya: Inicio</h1>
         <div class='nav-wrapper desktop'>
@@ -12,13 +13,27 @@ function renderHeader()
             <nav id='menu-desktop'>
                 <h2>Menú</h2>
                 <ul class='menu-desktop-content'>
-                    <li><a class='active' href='' target='_self'>Inicio</a></li>
-                    <li><a href='nosotros.php' target='_self'>Nosotros</a></li>
-                    <li><a href='nuestro_cafe.php' target='_self'>Nuestro café</a></li>
-                    <li><a href='proceso.php' target='_self'>Proceso</a></li>
-                    <li><a href='products.php' target='_self'>Productos</a></li>
-                    <li><a href='noticias.php' target='_self'>Noticias</a></li>
-                    <li><a href='ayuda.php' target='_self'>Ayuda</a></li>
+                    <li><a class='" .
+    ($_SERVER["PHP_SELF"] == "/index.php" ? "active" : "") .
+    "' href='index.php' target='_self'>Inicio</a></li>
+                    <li><a class='" .
+    ($_SERVER["PHP_SELF"] == "/nosotros.php" ? "active" : "") .
+    "' href='nosotros.php' target='_self'>Nosotros</a></li>
+                    <li><a class='" .
+    ($_SERVER["PHP_SELF"] == "/nuestro_cafe.php" ? "active" : "") .
+    "' href='nuestro_cafe.php' target='_self'>Nuestro café</a></li>
+                    <li><a class='" .
+    ($_SERVER["PHP_SELF"] == "/proceso.php" ? "active" : "") .
+    "' href='proceso.php' target='_self'>Proceso</a></li>
+                    <li><a class='" .
+    ($_SERVER["PHP_SELF"] == "/products.php" ? "active" : "") .
+    "' href='products.php' target='_self'>Productos</a></li>
+                    <li><a class='" .
+    ($_SERVER["PHP_SELF"] == "/noticias.php" ? "active" : "") .
+    "' href='noticias.php' target='_self'>Noticias</a></li>
+                    <li><a class='" .
+    ($_SERVER["PHP_SELF"] == "/ayuda.php" ? "active" : "") .
+    "' href='ayuda.php' target='_self'>Ayuda</a></li>
                 </ul>
             </nav>
             <ul class='grid-nav-1'>
@@ -35,13 +50,27 @@ function renderHeader()
                 <label for='menu-mobile-toggle'><span id='menu-icon'></span></label>
                 <div id='overlay'></div>
                 <ul class='menu-mobile-content light-bg'>
-                    <li><a class='active' href='index.php' target='_self'>Inicio</a></li>
-                    <li><a href='nosotros.php' target='_self'>Nosotros</a></li>
-                    <li><a href='nuestro_cafe.php' target='_self'>Nuestro café</a></li>
-                    <li><a href='proceso.php' target='_self'>Proceso</a></li>
-                    <li><a href='products.php' target='_self'>Productos</a></li>
-                    <li><a href='noticias.php' target='_self'>Noticias</a></li>
-                    <li><a href='ayuda.php' target='_self'>Ayuda</a></li>
+                    <li><a class='" .
+    ($_SERVER["PHP_SELF"] == "/index.php" ? "active" : "") .
+    "' href='index.php' target='_self'>Inicio</a></li>
+                                    <li><a class='" .
+    ($_SERVER["PHP_SELF"] == "/nosotros.php" ? "active" : "") .
+    "' href='nosotros.php' target='_self'>Nosotros</a></li>
+                                    <li><a class='" .
+    ($_SERVER["PHP_SELF"] == "/nuestro_cafe.php" ? "active" : "") .
+    "' href='nuestro_cafe.php' target='_self'>Nuestro café</a></li>
+                                    <li><a class='" .
+    ($_SERVER["PHP_SELF"] == "/proceso.php" ? "active" : "") .
+    "' href='proceso.php' target='_self'>Proceso</a></li>
+                                    <li><a class='" .
+    ($_SERVER["PHP_SELF"] == "/products.php" ? "active" : "") .
+    "' href='products.php' target='_self'>Productos</a></li>
+                                    <li><a class='" .
+    ($_SERVER["PHP_SELF"] == "/noticias.php" ? "active" : "") .
+    "' href='noticias.php' target='_self'>Noticias</a></li>
+                                    <li><a class='" .
+    ($_SERVER["PHP_SELF"] == "/ayuda.php" ? "active" : "") .
+    "' href='ayuda.php' target='_self'>Ayuda</a></li>
                     <li class='button red fit-content'><a class='light' href='contactanos.php' target='_self'>Contáctanos</a></li>
                 </ul>
             </nav>
