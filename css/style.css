@@ -1,1802 +1,1844 @@
 @charset "UTF-8";
-article, aside, footer, header, hgroup, main, nav, section {
-    display: block;
+article,
+aside,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block;
 }
 
 /* —————— Variables —————— */
 
 :root {
-    --red: #C24819;
-    --yellow: rgb(235, 160, 12);
-    --green: #758A17;
-    --light: #FFFEF5;
-    --dark: #40290A;
-    --dark-35: #59390E;
-    --white: #ffffff;
-    --light-80: #CCCBC4;
-    --grey: #FAFAFA;
-    --grey-dark: #D9D9D9;
-    --disable: #D9876C;
+  --red: #c24819;
+  --yellow: rgb(235, 160, 12);
+  --green: #758a17;
+  --light: #fffef5;
+  --dark: #40290a;
+  --dark-35: #59390e;
+  --white: #ffffff;
+  --light-80: #cccbc4;
+  --grey: #fafafa;
+  --grey-dark: #d9d9d9;
+  --disable: #d9876c;
 
-    --a-link: var(--light);
-    --a-visited: #cccbc6;
-    --a-hover: #EA9A07;
-    --a-active: #ffb133;
+  --a-link: var(--light);
+  --a-visited: #cccbc6;
+  --a-hover: #ea9a07;
+  --a-active: #ffb133;
 
-    --button-link: var(--red);
-    --button-visited: #CC6A14;
-    --button-hover: #EBA00C;
-    --button-active: #FFAE0D;
+  --button-link: var(--red);
+  --button-visited: #cc6a14;
+  --button-hover: #eba00c;
+  --button-active: #ffae0d;
 
-    --button-disable: var(--disable);
-    --button-padding: 0.7rem;
-    --button-border-radius: 1.4rem;
-    --card-border-radius: 14px;
-    --time: 0.2s;
-    --ease: ease-out;
+  --button-disable: var(--disable);
+  --button-padding: 0.7rem;
+  --button-border-radius: 1.4rem;
+  --card-border-radius: 14px;
+  --time: 0.2s;
+  --ease: ease-out;
 }
 
 /* —————— Reset and constants —————— */
 
 ::placeholder {
-    color: #cccbc6;
+  color: #cccbc6;
 }
 
-body, select {
-    margin: 0;
-    padding: 0;
-    color: var(--dark);
-    font-family: Qualion, sans-serif;
-    font-weight: 400;
-    -webkit-font-smoothing: antialiased;
+body,
+select {
+  margin: 0;
+  padding: 0;
+  color: var(--dark);
+  font-family: Qualion, sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
 }
 
 ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 figure {
-    margin: 0;
-    width: 100%;
+  margin: 0;
+  width: 100%;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
-.logo > img, .logo-footer img {
-    height: 75px;
+.logo > img,
+.logo-footer img {
+  height: 75px;
 }
 
 .shadow {
-    -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, .7));
-    filter: drop-shadow(0 0 20px rgba(0, 0, 0, .7));
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.7));
 }
 
 .botones-h3 {
-    padding-bottom: 2%;
+  padding-bottom: 2%;
 }
 
 .botones-p {
-    padding-bottom: 3%;
+  padding-bottom: 3%;
 }
 
 .kill {
-    display: none;
+  display: none;
 }
 
 .gimme-padding {
-    padding: 1em 0 0.25em 0;
+  padding: 1em 0 0.25em 0;
 }
 
 .gimme-padding-2 {
-    padding: 33px 0 33px 0;
+  padding: 33px 0 33px 0;
 }
 
 /* Hides `Bats'il Maya` and `Menu Principal` */
-h1, nav > h2 {
-    display: none;
+h1,
+nav > h2 {
+  display: none;
 }
-
 
 /* —————— Color Classes —————— */
 
 .light {
-    color: var(--light);
+  color: var(--light);
 }
 
 .dark {
-    color: var(--dark);
+  color: var(--dark);
 }
 
 .yellow {
-    color: var(--yellow);
+  color: var(--yellow);
 }
 
 .red {
-    color: var(--red);
+  color: var(--red);
 }
 
 .green {
-    color: var(--green);
+  color: var(--green);
 }
 
 .white {
-    color: var(--white);
+  color: var(--white);
 }
 
 .white-bg {
-    background-color: var(--white);
+  background-color: var(--white);
 }
 
 .light-bg {
-    background-color: var(--light);
+  background-color: var(--light);
 }
 
 .dark-bg {
-    background-color: var(--dark);
+  background-color: var(--dark);
 }
 
 .green-bg {
-    background-color: var(--green);
+  background-color: var(--green);
 }
 
 .yellow-bg {
-    background-color: var(--yellow);
+  background-color: var(--yellow);
 }
 
 .active {
-    border-bottom: 3px solid var(--a-hover) !important;
+  border-bottom: 3px solid var(--a-hover) !important;
 }
 
 .border {
-    margin-bottom: 2%;
-    border: 3px solid var(--grey-dark);
-    background-color: var(--grey)
+  margin-bottom: 2%;
+  border: 3px solid var(--grey-dark);
+  background-color: var(--grey);
 }
-
 
 /* —————— Font Import—————— */
 
 @font-face {
-    font-family: 'Qualion';
-    src: url("../fonts/Qualion Bold/Qualion-Bold.eot");
-    src: url("../fonts/Qualion Bold/Qualion-Bold.woff") format('woff'),
-    url("../fonts/Qualion Bold/Qualion-Bold.ttf") format('truetype');
-    font-weight: 700;
-    font-style: normal;
+  font-family: "Qualion";
+  src: url("../fonts/Qualion Bold/Qualion-Bold.eot");
+  src: url("../fonts/Qualion Bold/Qualion-Bold.woff") format("woff"),
+    url("../fonts/Qualion Bold/Qualion-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Qualion';
-    src: url("../fonts/Qualion/Qualion-Regular.eot");
-    src: url("../fonts/Qualion/Qualion-Regular.woff") format('woff'),
-    url("../fonts/Qualion/Qualion-Regular.ttf") format('truetype');
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Qualion";
+  src: url("../fonts/Qualion/Qualion-Regular.eot");
+  src: url("../fonts/Qualion/Qualion-Regular.woff") format("woff"),
+    url("../fonts/Qualion/Qualion-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* —————— Typography —————— */
 
 .bold {
-    font-weight: 700;
+  font-weight: 700;
 }
 
-h2, h3, h4, .h3-big {
-    margin: 0;
-    padding: 0;
-    font-family: 'Qualion', sans-serif;
-    font-weight: 700;
+h2,
+h3,
+h4,
+.h3-big {
+  margin: 0;
+  padding: 0;
+  font-family: "Qualion", sans-serif;
+  font-weight: 700;
 }
 
-.h2-header, .h2-subtitle {
-    color: var(--light);
-    font-weight: 700;
+.h2-header,
+.h2-subtitle {
+  color: var(--light);
+  font-weight: 700;
 }
 
 .h2-small {
-    padding-bottom: 1em;
-    text-transform: uppercase;
+  padding-bottom: 1em;
+  text-transform: uppercase;
 }
 
 .h2-small .product-title {
-    padding: 0;
+  padding: 0;
 }
 
 p {
-    margin: 0;
-    font-size: 15px;
-    line-height: 1.4em;
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.4em;
 }
 
 .h2-link {
-    color: var(--red);
-    font-weight: 700;
+  color: var(--red);
+  font-weight: 700;
 }
 
 .right-aligned {
-    text-align: right;
+  text-align: right;
 }
 
 .left-aligned {
-    text-align: left;
+  text-align: left;
 }
 
 .center-aligned {
-    text-align: center;
+  text-align: center;
 }
 
 .link:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* —————— General Links —————— */
 
 a.light:link {
-    color: var(--light);
-    text-decoration: none;
+  color: var(--light);
+  text-decoration: none;
 }
 
 a:link {
-    color: var(--red);
-    text-decoration: none;
+  color: var(--red);
+  text-decoration: none;
 }
 
 a:hover {
-    color: var(--a-hover);
-    text-decoration: underline;
-    text-decoration-color: var(--a-hover);
+  color: var(--a-hover);
+  text-decoration: underline;
+  text-decoration-color: var(--a-hover);
 }
 
 a:active {
-    color: var(--a-active);
-    text-decoration-color: var(--a-active);
+  color: var(--a-active);
+  text-decoration-color: var(--a-active);
 }
 
 a:visited {
-    color: var(--red);
+  color: var(--red);
 }
 
 a.light:visited {
-    color: var(--light);
+  color: var(--light);
 }
 
 a.dark:visited {
-    color: var(--dark);
+  color: var(--dark);
 }
 
 .sidebar-nav-responsive a:visited {
-    color: var(--dark);
+  color: var(--dark);
 }
 
 a.unavailable:hover {
-    color: var(--dark);
-    text-decoration: none;
-    text-decoration-color: var(--dark);
+  color: var(--dark);
+  text-decoration: none;
+  text-decoration-color: var(--dark);
 }
 
 /* —————— Nav Links —————— */
 
-#menu-desktop a, .footer-nav a, .menu-mobile-content a, .sidebar-nav-responsive a {
-    color: var(--a-link);
-    border-bottom: 0 solid var(--a-hover);
-    transition: border-bottom-width var(--time) var(--ease);
+#menu-desktop a,
+.footer-nav a,
+.menu-mobile-content a,
+.sidebar-nav-responsive a {
+  color: var(--a-link);
+  border-bottom: 0 solid var(--a-hover);
+  transition: border-bottom-width var(--time) var(--ease);
 }
 
-#menu-desktop a:hover, .footer-nav a:hover, .menu-mobile-content a:hover, .sidebar-nav-responsive a:hover {
-    text-decoration: none;
-    border-bottom: 3px solid var(--a-hover);
-    transition: border-bottom-width var(--time) var(--ease);
+#menu-desktop a:hover,
+.footer-nav a:hover,
+.menu-mobile-content a:hover,
+.sidebar-nav-responsive a:hover {
+  text-decoration: none;
+  border-bottom: 3px solid var(--a-hover);
+  transition: border-bottom-width var(--time) var(--ease);
 }
 
-#menu-desktop a:active, .footer-nav a:active, .menu-mobile-content a:active {
-    color: var(--a-hover);
+#menu-desktop a:active,
+.footer-nav a:active,
+.menu-mobile-content a:active {
+  color: var(--a-hover);
 }
 
 /* —————— Botones —————— */
 
 .fit-content {
-    width: max-content !important;
-    margin: 0 auto;
+  width: max-content !important;
+  margin: 0 auto;
 }
 
 .full-width {
-    width: 100% !important;
-    box-sizing: border-box;
+  width: 100% !important;
+  box-sizing: border-box;
 }
 
 .button {
-    padding: var(--button-padding);
-    display: inline-block;
-    color: var(--light);
-    text-align: center;
-    font-weight: 700;
-    border-radius: var(--button-border-radius);
-    cursor: pointer;
+  padding: var(--button-padding);
+  display: inline-block;
+  color: var(--light);
+  text-align: center;
+  font-weight: 700;
+  border-radius: var(--button-border-radius);
+  cursor: pointer;
 }
 
 .button:hover > a {
-    color: var(--a-link);
-    text-decoration: none;
-    border-bottom: none;
+  color: var(--a-link);
+  text-decoration: none;
+  border-bottom: none;
 }
 
 .button:active > a {
-    color: var(--a-link);
+  color: var(--a-link);
 }
 
 .button.outline {
-    padding: calc(var(--button-padding) - 0.20rem);
-    background-color: transparent;
-    border: 3px solid var(--a-link);
-    transition: border var(--time) var(--ease);
+  padding: calc(var(--button-padding) - 0.2rem);
+  background-color: transparent;
+  border: 3px solid var(--a-link);
+  transition: border var(--time) var(--ease);
 }
 
 .mobile .button.outline {
-    padding: calc(var(--button-padding) - 0.20rem);
-    background-color: transparent;
-    border: 3px solid var(--red);
-    transition: border var(--time) var(--ease);
+  padding: calc(var(--button-padding) - 0.2rem);
+  background-color: transparent;
+  border: 3px solid var(--red);
+  transition: border var(--time) var(--ease);
 }
 
 .button.outline a {
-    color: var(--a-link);
-    transition: color var(--time) var(--ease);
+  color: var(--a-link);
+  transition: color var(--time) var(--ease);
 }
 
 .mobile .button.outline a {
-    color: var(--red);
-    transition: color var(--time) var(--ease);
+  color: var(--red);
+  transition: color var(--time) var(--ease);
 }
 
 .button.outline:hover {
-    color: var(--button-hover);
-    border-color: var(--button-hover);
-    transition: border var(--time) var(--ease);
+  color: var(--button-hover);
+  border-color: var(--button-hover);
+  transition: border var(--time) var(--ease);
 }
 
 .button.outline:hover > a {
-    color: var(--button-hover);
-    border-bottom: none;
-    transition: color var(--time) var(--ease);
+  color: var(--button-hover);
+  border-bottom: none;
+  transition: color var(--time) var(--ease);
 }
 
 .button.outline:active {
-    color: var(--button-active);
-    border-color: var(--button-active);
+  color: var(--button-active);
+  border-color: var(--button-active);
 }
 
 .button.outline:active > a {
-    color: var(--button-active);
-    border-bottom: none;
+  color: var(--button-active);
+  border-bottom: none;
 }
 
 .button.red {
-    color: var(--a-link);
-    background-color: var(--button-link);
-    transition: background-color var(--time) var(--ease);
+  color: var(--a-link);
+  background-color: var(--button-link);
+  transition: background-color var(--time) var(--ease);
 }
 
 .button.green {
-    color: var(--a-link);
-    background-color: var(--green);
-    transition: background-color var(--time) var(--ease);
+  color: var(--a-link);
+  background-color: var(--green);
+  transition: background-color var(--time) var(--ease);
 }
 
 .button.dark {
-    width: 100%;
-    color: var(--light);
-    background-color: var(--dark);
-    transition: background-color var(--time) var(--ease);
+  width: 100%;
+  color: var(--light);
+  background-color: var(--dark);
+  transition: background-color var(--time) var(--ease);
 }
 
 .bnuestrocafe {
-    padding: 10% 0;
-    box-sizing: border-box;
-    background: url(../images/botones/boton_nuestro_cafe_desde_el_cafetal_a_la_taza_batsil_maya.jpg) 70% 0 / cover no-repeat;
+  padding: 10% 0;
+  box-sizing: border-box;
+  background: url(../images/botones/boton_nuestro_cafe_desde_el_cafetal_a_la_taza_batsil_maya.jpg)
+    70% 0 / cover no-repeat;
 }
 
 .bnosotros {
-    padding: 10% 0;
-    box-sizing: border-box;
-    background: url(../images/botones/boton_nosotros_somos_la_planta_transformadora_de_cafe_batsil_maya.jpg) 70% 0 / cover no-repeat;
+  padding: 10% 0;
+  box-sizing: border-box;
+  background: url(../images/botones/boton_nosotros_somos_la_planta_transformadora_de_cafe_batsil_maya.jpg)
+    70% 0 / cover no-repeat;
 }
 
 .bproductos {
-    padding: 10% 0;
-    box-sizing: border-box;
-    background: url(../images/botones/boton_productos_cafe_tseltal_miel_organica_jabones_artesanales_batsil_maya.jpg) 70% 0 / cover no-repeat;
+  padding: 10% 0;
+  box-sizing: border-box;
+  background: url(../images/botones/boton_productos_cafe_tseltal_miel_organica_jabones_artesanales_batsil_maya.jpg)
+    70% 0 / cover no-repeat;
 }
 
 .bproceso {
-    padding: 10% 0;
-    box-sizing: border-box;
-    background: url(../images/botones/boton_proceso_batsil_maya.jpg) 70% 0 / cover no-repeat;
+  padding: 10% 0;
+  box-sizing: border-box;
+  background: url(../images/botones/boton_proceso_batsil_maya.jpg) 70% 0 / cover
+    no-repeat;
 }
 
 .button.red:hover {
-    text-decoration: none;
-    background-color: var(--button-hover);
-    border-bottom: none;
-    transition: background-color var(--time) var(--ease);
+  text-decoration: none;
+  background-color: var(--button-hover);
+  border-bottom: none;
+  transition: background-color var(--time) var(--ease);
 }
 
 .button.green:hover {
-    text-decoration: none;
-    background-color: var(--button-hover);
-    border-bottom: none;
-    transition: background-color var(--time) var(--ease);
+  text-decoration: none;
+  background-color: var(--button-hover);
+  border-bottom: none;
+  transition: background-color var(--time) var(--ease);
 }
 
 .button.red:active {
-    background-color: var(--button-active);
+  background-color: var(--button-active);
 }
 
 .user-head {
-    max-width: 170px;
-    height: 100%;
-    display: grid;
-    grid-auto-flow: column;
-    align-items: center;
+  max-width: 170px;
+  height: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
 }
 
 .cuenta {
-    width: 36px;
-    height: 36px;
-    background: url(../images/nav/cuenta-icon.svg) 0 0 / 100% no-repeat;
+  width: 36px;
+  height: 36px;
+  background: url(../images/nav/cuenta-icon.svg) 0 0 / 100% no-repeat;
 }
 
 .cuenta a {
-    display: block;
-    width: 100%;
-    height: 100%;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .carrito {
-    width: 37px;
-    height: 37px;
-    background: url(../images/nav/shopping-cart.svg) 0 0 / 100% no-repeat;
+  width: 37px;
+  height: 37px;
+  background: url(../images/nav/shopping-cart.svg) 0 0 / 100% no-repeat;
 }
 
 .carrito a {
-    display: block;
-    width: 100%;
-    height: 100%;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .disable {
-    background-color: var(--disable);
+  background-color: var(--disable);
 }
 
 .unavailable {
-    color: var(--a-link);
-    background-color: var(--light-80);
+  color: var(--a-link);
+  background-color: var(--light-80);
 }
 
 .note {
-    display: block;
-    font-size: 15px !important;
-    color: var(--red);
-    margin-top: 3px;
-    cursor: pointer;
+  display: block;
+  font-size: 15px !important;
+  color: var(--red);
+  margin-top: 3px;
+  cursor: pointer;
 }
 
 .padding-top-bottom {
-    padding: 25px 0;
+  padding: 25px 0;
 }
 
 .padding-bottom-25 {
-    padding-bottom: 25px;
+  padding-bottom: 25px;
 }
 
 .max-width-111 {
-    max-width: 111px;
+  max-width: 111px;
 }
 
 .max-width-909 {
-    max-width: 909px;
+  max-width: 909px;
 }
 
 /* —————— SUBMENU —————— */
 
-
 .submenu {
-    border-radius: 9px;
-    padding: 9px;
-    border: 3px solid var(--red);
-    width: auto;
-    display: none;
-    flex-flow: column wrap;
-    justify-content: space-around;
-    position: absolute;
-    top: 70px;
-    list-style: none;
-    background-color: var(--light);
+  border-radius: 9px;
+  padding: 9px;
+  border: 3px solid var(--red);
+  width: auto;
+  display: none;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  position: absolute;
+  top: 70px;
+  list-style: none;
+  background-color: var(--light);
 }
 
 .submenu li {
-    padding: 3px 0;
-    flex-basis: 50%;
+  padding: 3px 0;
+  flex-basis: 50%;
 }
 
 /*Declarar selector para aparecer la lista anidada #submenu cuando el usuario pasa por encima del li*/
 li:hover .submenu {
-    display: flex;
+  display: flex;
 }
 
 /* Estilos para los <a> del #submenu asignar otro color y cambiando el text-shadow */
 .submenu a:link {
-    width: 100%;
-    height: 100%;
-    display: block;
-    padding: 2%;
-    color: var(--red);
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 2%;
+  color: var(--red);
 }
-
 
 /* —————— Header —————— */
 
 header {
-    padding-bottom: 7vmax;
+  padding-bottom: 7vmax;
 }
 
 header a {
-    color: var(--light);
+  color: var(--light);
 }
 
 header a {
-    color: var(--light);
-    text-decoration: none;
+  color: var(--light);
+  text-decoration: none;
 }
 
 #homepage header {
-    background: url("../images/fade/header_fade_light_batsil_maya.png") 0 100% / contain repeat-x,
-    url("../images/inicio/header_cafe_tseltal_solidario_trabajo_digno_batsil_maya.jpg") 70% 0 / cover no-repeat;
+  background: url("../images/fade/header_fade_light_batsil_maya.png") 0 100% /
+      contain repeat-x,
+    url("../images/inicio/header_cafe_tseltal_solidario_trabajo_digno_batsil_maya.jpg")
+      70% 0 / cover no-repeat;
 }
 
 #Contáctanos header {
-    padding-bottom: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 /* —————— Dónde estamos y a dónde llegamos —————— */
 
 .map article {
-    display: grid;
+  display: grid;
 }
 
 .extra-articles p {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .map .world-map p {
-    max-width: 700px;
-    margin: 0 auto;
-    grid-row: 1;
-    font-family: 'Qualion', sans-serif;
+  max-width: 700px;
+  margin: 0 auto;
+  grid-row: 1;
+  font-family: "Qualion", sans-serif;
 }
 
 .map .world-map .h2-small {
-    margin: 2em 0;
+  margin: 2em 0;
 }
 
 .map .extra-articles {
-    padding: 0 88px 3em 88px;
+  padding: 0 88px 3em 88px;
 }
 
 .map span {
-    color: var(--yellow);
+  color: var(--yellow);
 }
 
 .icono-envio {
-    margin: auto;
-    padding: 7%;
-    box-sizing: border-box;
-    background: url(../images/inicio/icono_inicio_envios_batsil_maya.svg) 0 57% / contain no-repeat;
+  margin: auto;
+  padding: 7%;
+  box-sizing: border-box;
+  background: url(../images/inicio/icono_inicio_envios_batsil_maya.svg) 0 57% /
+    contain no-repeat;
 }
 
-
 .visa {
-    margin: auto;
-    padding: 20%;
-    box-sizing: border-box;
-    background: url(../images/logos/visa.svg) 0 50% / auto no-repeat;
+  margin: auto;
+  padding: 20%;
+  box-sizing: border-box;
+  background: url(../images/logos/visa.svg) 0 50% / auto no-repeat;
 }
 
 .mastercard {
-    margin: auto;
-    padding: 20%;
-    box-sizing: border-box;
-    background: url(../images/logos/mastercard.svg) 0 50% / auto no-repeat;
+  margin: auto;
+  padding: 20%;
+  box-sizing: border-box;
+  background: url(../images/logos/mastercard.svg) 0 50% / auto no-repeat;
 }
 
 .americanexpress {
-    box-align: right;
-    margin: auto;
-    padding: 20%;
-    box-sizing: border-box;
-    background: url(../images/logos/americanexpress.svg) 0 0 / auto no-repeat;
+  box-align: right;
+  margin: auto;
+  padding: 20%;
+  box-sizing: border-box;
+  background: url(../images/logos/americanexpress.svg) 0 0 / auto no-repeat;
 }
 
 .grid-image-first h2 {
-    display: none;
+  display: none;
 }
 
 #homepage .grid-image-first p:nth-child(3) {
-    width: 60%;
-
+  width: 60%;
 }
 
 #homepage .map .grid-image-first p:last-child {
-    width: 100%;
-    margin: 0 auto 2em;
-
+  width: 100%;
+  margin: 0 auto 2em;
 }
 
 /* —————— Nuestros clientes —————— */
 .clients article h3 {
-    display: none;
+  display: none;
 }
 
 /* —————— certificados —————— */
 .certificate article img {
-    max-width: 150px;
-    margin: auto;
+  max-width: 150px;
+  margin: auto;
 }
-
 
 /* —————— Noticias —————— */
 .gridnews article h3 {
-    padding-left: 3%;
-    color: var(--light);
+  padding-left: 3%;
+  color: var(--light);
 }
 
 .gridnews p {
-    padding: 0 0 3% 3%;
-    color: var(--light);
+  padding: 0 0 3% 3%;
+  color: var(--light);
 }
 
 .one {
-    background: url(../images/noticias/conoce_nuevo_capeltic_universidad_iberoamericana_cdmx_batsil_maya.jpg) 0 57% / cover no-repeat;
+  background: url(../images/noticias/conoce_nuevo_capeltic_universidad_iberoamericana_cdmx_batsil_maya.jpg)
+    0 57% / cover no-repeat;
 }
 
 .two {
-    background: url(../images/noticias/noticia2.jpg) 52% 60% / cover no-repeat;
+  background: url(../images/noticias/noticia2.jpg) 52% 60% / cover no-repeat;
 }
 
 .three {
-    background: url(../images/noticias/noticia3.jpg) 0 39% / cover no-repeat;
+  background: url(../images/noticias/noticia3.jpg) 0 39% / cover no-repeat;
 }
 
 .four {
-    background: url(../images/noticias/noticia4.jpg) 0 38% / cover no-repeat;
+  background: url(../images/noticias/noticia4.jpg) 0 38% / cover no-repeat;
 }
-
 
 /* —————— gridthree2 —————— */
 
 .gridthree2 {
-    align-content: center;
-    text-align: center;
+  align-content: center;
+  text-align: center;
 }
 
 .gridthree2 a {
-    color: var(--light);
-    text-decoration: none;
+  color: var(--light);
+  text-decoration: none;
 }
 
 /* —————— form —————— */
 
 .form a {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .form span {
-    color: gray;
+  color: gray;
 }
 
 fieldset {
-    padding: 0;
-    margin: 0;
-    border: none;
+  padding: 0;
+  margin: 0;
+  border: none;
 }
 
 fieldset > label {
-    font-weight: 700;
+  font-weight: 700;
 }
 
-input, textarea {
-    width: 100%;
-    padding: 7px 12px;
-    display: block;
-    color: var(--dark);
-    font-family: inherit;
-    font-size: 1em;
-    border: 1px solid var(--light-80);
-    border-radius: 33px;
-    box-sizing: border-box;
-    box-shadow: 0 0 0 rgba(235, 160, 12, 0.1),
-    inset 0 0 10px 0 rgba(0, 0, 0, 0);
-    transition: border-color var(--time) var(--ease), box-shadow var(--time) var(--ease);
+input,
+textarea {
+  width: 100%;
+  padding: 7px 12px;
+  display: block;
+  color: var(--dark);
+  font-family: inherit;
+  font-size: 1em;
+  border: 1px solid var(--light-80);
+  border-radius: 33px;
+  box-sizing: border-box;
+  box-shadow: 0 0 0 rgba(235, 160, 12, 0.1), inset 0 0 10px 0 rgba(0, 0, 0, 0);
+  transition: border-color var(--time) var(--ease),
+    box-shadow var(--time) var(--ease);
 }
 
-input:focus, select:focus {
-    outline: none;
-    border: 1px solid var(--yellow);
-    border-radius: 33px;
-    box-shadow: 0 5px 10px rgba(235, 160, 12, 0.1);
-    transition: border-color var(--time) var(--ease), box-shadow var(--time) var(--ease);
+input:focus,
+select:focus {
+  outline: none;
+  border: 1px solid var(--yellow);
+  border-radius: 33px;
+  box-shadow: 0 5px 10px rgba(235, 160, 12, 0.1);
+  transition: border-color var(--time) var(--ease),
+    box-shadow var(--time) var(--ease);
 }
 
 textarea:focus {
-    outline: none;
-    border: 1px solid var(--yellow);
-    border-radius: 15px;
-    box-shadow: 0 5px 10px rgba(235, 160, 12, 0.1);
-    transition: border-color var(--time) var(--ease), box-shadow var(--time) var(--ease);
+  outline: none;
+  border: 1px solid var(--yellow);
+  border-radius: 15px;
+  box-shadow: 0 5px 10px rgba(235, 160, 12, 0.1);
+  transition: border-color var(--time) var(--ease),
+    box-shadow var(--time) var(--ease);
 }
 
 input[type="submit"]:focus {
-    outline: none;
-    border: none;
-    box-shadow: none;
+  outline: none;
+  border: none;
+  box-shadow: none;
 }
 
 input.button {
-    border: none;
+  border: none;
 }
 
 .tel-wrapper {
-    display: flex;
+  display: flex;
 }
 
 .tel-wrapper > .form-group {
-    width: 100%;
+  width: 100%;
 }
 
 .tel-wrapper > span {
-    padding: 2.4em 0.5em 0;
+  padding: 2.4em 0.5em 0;
 }
 
 .eac-input-wrap {
-    color: var(--light-80);
+  color: var(--light-80);
 }
 
 select {
-    width: 100%;
-    height: 35px;
-    padding-left: 10px;
-    font-size: 15px;
-    border-radius: 33px;
-    border: solid 1px var(--dark);
-    background-image: url(data:image/png;base64,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czp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOCAoTWFjaW50b3NoKSIgeG1wOkNyZWF0ZURhdGU9IjIwMTgtMDctMjdUMDc6NTY6NDctMDc6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDE4LTA3LTI3VDA3OjU5OjA4LTA3OjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDE4LTA3LTI3VDA3OjU5OjA4LTA3OjAwIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIgcGhvdG9zaG9wOklDQ1Byb2ZpbGU9IkRpc3BsYXkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OWVmMTg3ZTUtMWVmNy00NzlhLWE1Y2QtMmVkMTE5NjQ2Y2ZmIiB4bXBNTTpEb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6MTRmNTk5YTMtYTc1Zi05NDQxLTk3ZDQtMmY3OTNjNWQ3NTI3IiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6M2FmYmY3ZWYtNWFiOS00MTk4LWFjODUtNzY2NzE2NDk2ODM1Ij4gPHhtcE1NOkhpc3Rvcnk+IDxyZGY6U2VxPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY3JlYXRlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDozYWZiZjdlZi01YWI5LTQxOTgtYWM4NS03NjY3MTY0OTY4MzUiIHN0RXZ0OndoZW49IjIwMTgtMDctMjdUMDc6NTY6NDctMDc6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE4IChNYWNpbnRvc2gpIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDo5ZWYxODdlNS0xZWY3LTQ3OWEtYTVjZC0yZWQxMTk2NDZjZmYiIHN0RXZ0OndoZW49IjIwMTgtMDctMjdUMDc6NTk6MDgtMDc6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE4IChNYWNpbnRvc2gpIiBzdEV2dDpjaGFuZ2VkPSIvIi8+IDwvcmRmOlNlcT4gPC94bXBNTTpIaXN0b3J5PiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pr46tjAAAACBSURBVCjPY/j//z8DOgaCVVjFsSgMB2IQIxuvYiBgBuJHUMXfgVgCn+I+qEIYXoxVMRBYoymEYX9sio/hUHz79+/fCMVAUIxDIQy3Q9UxyAPxPwKKQdgEHKZAfI4IvJ8BW+DjwoNFMUkeJCnoSIoUkqOb5IREUhIlOfGTlK0IZVgAkODRpD7i30MAAAAASUVORK5CYII=);
-    background-position: calc(100% - 10px) 50%;
-    background-repeat: no-repeat;
-    background-size: 5px 11px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+  width: 100%;
+  height: 35px;
+  padding-left: 10px;
+  font-size: 15px;
+  border-radius: 33px;
+  border: solid 1px var(--dark);
+  background-image: url(data:image/png;base64,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czp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOCAoTWFjaW50b3NoKSIgeG1wOkNyZWF0ZURhdGU9IjIwMTgtMDctMjdUMDc6NTY6NDctMDc6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDE4LTA3LTI3VDA3OjU5OjA4LTA3OjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDE4LTA3LTI3VDA3OjU5OjA4LTA3OjAwIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIgcGhvdG9zaG9wOklDQ1Byb2ZpbGU9IkRpc3BsYXkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OWVmMTg3ZTUtMWVmNy00NzlhLWE1Y2QtMmVkMTE5NjQ2Y2ZmIiB4bXBNTTpEb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6MTRmNTk5YTMtYTc1Zi05NDQxLTk3ZDQtMmY3OTNjNWQ3NTI3IiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6M2FmYmY3ZWYtNWFiOS00MTk4LWFjODUtNzY2NzE2NDk2ODM1Ij4gPHhtcE1NOkhpc3Rvcnk+IDxyZGY6U2VxPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY3JlYXRlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDozYWZiZjdlZi01YWI5LTQxOTgtYWM4NS03NjY3MTY0OTY4MzUiIHN0RXZ0OndoZW49IjIwMTgtMDctMjdUMDc6NTY6NDctMDc6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE4IChNYWNpbnRvc2gpIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDo5ZWYxODdlNS0xZWY3LTQ3OWEtYTVjZC0yZWQxMTk2NDZjZmYiIHN0RXZ0OndoZW49IjIwMTgtMDctMjdUMDc6NTk6MDgtMDc6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE4IChNYWNpbnRvc2gpIiBzdEV2dDpjaGFuZ2VkPSIvIi8+IDwvcmRmOlNlcT4gPC94bXBNTTpIaXN0b3J5PiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pr46tjAAAACBSURBVCjPY/j//z8DOgaCVVjFsSgMB2IQIxuvYiBgBuJHUMXfgVgCn+I+qEIYXoxVMRBYoymEYX9sio/hUHz79+/fCMVAUIxDIQy3Q9UxyAPxPwKKQdgEHKZAfI4IvJ8BW+DjwoNFMUkeJCnoSIoUkqOb5IREUhIlOfGTlK0IZVgAkODRpD7i30MAAAAASUVORK5CYII=);
+  background-position: calc(100% - 10px) 50%;
+  background-repeat: no-repeat;
+  background-size: 5px 11px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 .num-list {
-    width: auto;
-    height: auto;
-    border-radius: 33px 0 0 33px;
-    border: 1px solid var(--light-80);
+  width: auto;
+  height: auto;
+  border-radius: 33px 0 0 33px;
+  border: 1px solid var(--light-80);
 }
 
 .num-list:focus {
-    border-radius: 33px 0 0 33px;
-    box-shadow: 0 10px 20px rgba(235, 160, 12, 0.1);
-    transition: border-color var(--time) var(--ease), box-shadow var(--time) var(--ease);
+  border-radius: 33px 0 0 33px;
+  box-shadow: 0 10px 20px rgba(235, 160, 12, 0.1);
+  transition: border-color var(--time) var(--ease),
+    box-shadow var(--time) var(--ease);
 }
 
-.dependent-input, .dependent-input:focus {
-    border-radius: 0 33px 33px 0;
+.dependent-input,
+.dependent-input:focus {
+  border-radius: 0 33px 33px 0;
 }
 
 #molido-custom-value {
-    width: 50px;
-    height: auto;
-    border: none;
+  width: 50px;
+  height: auto;
+  border: none;
 }
 
 #molido-custom-value:enabled {
-    color: var(--light);
-    background-color: var(--dark-35);
+  color: var(--light);
+  background-color: var(--dark-35);
 }
 
 #molido-custom-value:disabled {
-    color: var(--light-80);
+  color: var(--light-80);
 }
 
 input[name="tel"]:focus {
-    border-radius: 0 33px 33px 0;
-    box-shadow: 0 10px 20px rgba(235, 160, 12, 0.1);
-    transition: border-color var(--time) var(--ease), box-shadow var(--time) var(--ease);
+  border-radius: 0 33px 33px 0;
+  box-shadow: 0 10px 20px rgba(235, 160, 12, 0.1);
+  transition: border-color var(--time) var(--ease),
+    box-shadow var(--time) var(--ease);
 }
 
 .radio-group {
-    width: fit-content;
-    display: grid;
-    grid-auto-flow: column;
-    border-radius: 33px;
-    border: solid 1px var(--dark);
-    overflow: hidden;
+  width: fit-content;
+  display: grid;
+  grid-auto-flow: column;
+  border-radius: 33px;
+  border: solid 1px var(--dark);
+  overflow: hidden;
 }
 
 input[type="radio"] {
-    position: absolute;
-    visibility: hidden;
-    display: none;
+  position: absolute;
+  visibility: hidden;
+  display: none;
 }
 
 .radio-group label {
-    padding: 5px 10px;
-    display: inline-block;
-    color: var(--dark);
-    text-align: center;
-    box-sizing: border-box;
-    cursor: pointer;
+  padding: 5px 10px;
+  display: inline-block;
+  color: var(--dark);
+  text-align: center;
+  box-sizing: border-box;
+  cursor: pointer;
 }
 
 .radio-group input[type="radio"]:checked + label {
-    color: var(--light);
-    font-weight: bold;
-    background: var(--dark);
+  color: var(--light);
+  font-weight: bold;
+  background: var(--dark);
 }
 
 label + input[type="radio"] + label {
-    border-left: solid 1px var(--dark);
+  border-left: solid 1px var(--dark);
 }
 
 .align-end {
-    height: 100%;
-    align-items: end;
+  height: 100%;
+  align-items: end;
 }
 
 .align-center {
-    height: 100%;
-    align-items: center;
+  height: 100%;
+  align-items: center;
 }
 
 .curvita {
-    width: 100%;
-    height: 40px;
-    border-radius: 0 0 25% 25% / 50%;
+  width: 100%;
+  height: 40px;
+  border-radius: 0 0 25% 25% / 50%;
 }
 
 /* —————— footer —————— */
 .bigfoot {
-    color: #ffffff;
-    font-size: 16px;
-    background: url(../images/footer/footer_mobile_granos_de_cafe_batsil_maya.jpg) 50% 50% / cover no-repeat;
+  color: #ffffff;
+  font-size: 16px;
+  background: url(../images/footer/footer_mobile_granos_de_cafe_batsil_maya.jpg)
+    50% 50% / cover no-repeat;
 }
 
 .footer li {
-    padding: 6px;
-    display: inline-block;
+  padding: 6px;
+  display: inline-block;
 }
 
 /* —————— NOSOTROS —————— */
 #nosotros .m-and-v .extra-articles {
-    padding-left: 44px;
-    padding-right: 44px;
+  padding-left: 44px;
+  padding-right: 44px;
 }
 
 /* —————— AQUÍ EMPIEZAN ESTILOS DE PROCESO—————— */
 #proceso header {
-    background: url(../images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
-    url(../images/proceso/header_proceso_desde_el_cafetal_a_la_taza_batsil_maya.jpg) 70% 0 / cover no-repeat;
+  background: url(../images/fade/header_fade_blanco_batsil_maya.png) 0 100% /
+      contain repeat-x,
+    url(../images/proceso/header_proceso_desde_el_cafetal_a_la_taza_batsil_maya.jpg)
+      70% 0 / cover no-repeat;
 }
 
 #proceso .tipo-tueste {
-    position: relative;
+  position: relative;
 }
 
 #proceso .tipo-tueste h2 {
-    margin-bottom: 7%;
+  margin-bottom: 7%;
 }
 
 #proceso .tipo-tueste p:nth-child(8) {
-    position: absolute;
-    top: 77%;
-    left: -4%;
-    -ms-transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg);
-    transform: rotate(-90deg);
+  position: absolute;
+  top: 77%;
+  left: -4%;
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 #proceso .tueste-claro {
-    position: absolute;
-    top: 42%;
-    left: 12.5%;
+  position: absolute;
+  top: 42%;
+  left: 12.5%;
 }
 
 #proceso .tueste-medio {
-    position: absolute;
-    top: 72%;
-    left: 25.5%;
+  position: absolute;
+  top: 72%;
+  left: 25.5%;
 }
 
 #proceso .tueste-vienes {
-    position: absolute;
-    top: 38%;
-    left: 43%;
-
+  position: absolute;
+  top: 38%;
+  left: 43%;
 }
 
 #proceso .tueste-oscuro {
-    position: absolute;
-    top: 68%;
-    left: 56.5%;
+  position: absolute;
+  top: 68%;
+  left: 56.5%;
 }
 
 #proceso .tueste-italiano {
-    position: absolute;
-    top: 36%;
-    left: 79.5%;
+  position: absolute;
+  top: 36%;
+  left: 79.5%;
 }
 
 #proceso .image-agroecologicas {
-    background: url(../images/proceso/practicas_agroecologicas_batsil_maya.jpg) 0% 0 / cover no-repeat;
+  background: url(../images/proceso/practicas_agroecologicas_batsil_maya.jpg) 0%
+    0 / cover no-repeat;
 }
 
 progress {
-    height: 5px;
-    width: 100%;
-    -webkit-appearance: none;
-    appearance: none;
+  height: 5px;
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 progress::-webkit-progress-bar {
-    background-color: var(--dark);
-    border-radius: 2px;
+  background-color: var(--dark);
+  border-radius: 2px;
 }
 
 progress::-webkit-progress-value {
-    background-color: var(--yellow);
-    border-radius: 2px;
+  background-color: var(--yellow);
+  border-radius: 2px;
 }
 
 @media screen and (min-width: 1024px) {
-    h2 {
-        font-size: 40px;
-    }
+  h2 {
+    font-size: 40px;
+  }
 
-    .h2-header {
-        font-size: 65px;
-    }
+  .h2-header {
+    font-size: 65px;
+  }
 
-    .h2-subtitle {
-        padding: 1em 0;
-        font-size: 25px;
-    }
+  .h2-subtitle {
+    padding: 1em 0;
+    font-size: 25px;
+  }
 
-    #productos .product-title {
-        font-size: 25px;
-    }
+  #productos .product-title {
+    font-size: 25px;
+  }
 
-    .h2-small {
-        font-size: 16px;
-    }
+  .h2-small {
+    font-size: 16px;
+  }
 
-    h3, .h3-big {
-        font-size: 35px;
-        line-height: 1.2em;
-    }
+  h3,
+  .h3-big {
+    font-size: 35px;
+    line-height: 1.2em;
+  }
 
-    .h3-small {
-        font-size: 20px;
-    }
+  .h3-small {
+    font-size: 20px;
+  }
 
-    h4 {
-        font-size: 20px;
-    }
+  h4 {
+    font-size: 20px;
+  }
 
-    .p-big {
-        font-size: 22px;
-    }
+  .p-big {
+    font-size: 22px;
+  }
 
-    .p-small {
-        font-size: 13px;
-    }
+  .p-small {
+    font-size: 13px;
+  }
 
-    #homepage .grid-image-first p:nth-child(3) {
-        width: 100%;
-    }
+  #homepage .grid-image-first p:nth-child(3) {
+    width: 100%;
+  }
 
-    #homepage .grid-image-first p:last-child {
-        width: 45%;
-    }
+  #homepage .grid-image-first p:last-child {
+    width: 45%;
+  }
 
-    #proceso .tipo-tueste p:nth-child(8) {
-        left: -3%;
-    }
+  #proceso .tipo-tueste p:nth-child(8) {
+    left: -3%;
+  }
 
-    .mapa-desktop {
-        display: block !important;
-    }
+  .mapa-desktop {
+    display: block !important;
+  }
 
-    .mapa-mobil {
-        display: none;
-    }
+  .mapa-mobil {
+    display: none;
+  }
 
-    #proceso .tipo-tueste p:nth-child(8) {
-        top: 79% !important;
-        left: 0% !important;
-    }
+  #proceso .tipo-tueste p:nth-child(8) {
+    top: 79% !important;
+    left: 0% !important;
+  }
 
-    #proceso .tueste-claro {
-        top: 44% !important;
-        left: 14% !important;
-    }
+  #proceso .tueste-claro {
+    top: 44% !important;
+    left: 14% !important;
+  }
 
-    #proceso .tueste-medio {
-        top: 71% !important;
-        left: 27% !important;
-    }
+  #proceso .tueste-medio {
+    top: 71% !important;
+    left: 27% !important;
+  }
 
-    #proceso .tueste-vienes {
-        top: 40% !important;
-        left: 43% !important;
-    }
+  #proceso .tueste-vienes {
+    top: 40% !important;
+    left: 43% !important;
+  }
 
-    #proceso .tueste-oscuro {
-        top: 67% !important;
-        left: 60% !important;
-    }
+  #proceso .tueste-oscuro {
+    top: 67% !important;
+    left: 60% !important;
+  }
 
-    #proceso .tueste-italiano {
-        top: 39% !important;
-        left: 75% !important;
-    }
+  #proceso .tueste-italiano {
+    top: 39% !important;
+    left: 75% !important;
+  }
 
-    .mapa-mobil-cafe {
-        grid-template-rows: 1fr 0fr !important;
-    }
+  .mapa-mobil-cafe {
+    grid-template-rows: 1fr 0fr !important;
+  }
 
-    .taza-cafe {
-        grid-template-rows: 1fr 0fr !important;
-    }
-
+  .taza-cafe {
+    grid-template-rows: 1fr 0fr !important;
+  }
 }
 
 @media screen and (max-width: 1023px) {
-    .logo > img {
-        height: 50px;
-    }
+  .logo > img {
+    height: 50px;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .yomol h3 {
-        font-size: 16px;
-    }
+  .yomol h3 {
+    font-size: 16px;
+  }
 
-    #nosotros .yomol img {
-        width: 12%;
-    }
+  #nosotros .yomol img {
+    width: 12%;
+  }
 
-    .padding-text-center {
-        margin: 0 auto;
-        width: 40%;
-    }
-
+  .padding-text-center {
+    margin: 0 auto;
+    width: 40%;
+  }
 }
 
 @media screen and (max-width: 767px) {
-    #nosotros .yomol img {
-        width: 80%;
-    }
+  #nosotros .yomol img {
+    width: 80%;
+  }
 
-    .grid-image-first p:nth-child(3) {
-        width: 90%;
-    }
+  .grid-image-first p:nth-child(3) {
+    width: 90%;
+  }
 
-    .grid-image-first p:last-child {
-        width: 90%;
-        margin: auto;
+  .grid-image-first p:last-child {
+    width: 90%;
+    margin: auto;
+  }
 
-    }
-
-    .padding-text-center {
-        margin: 0 auto;
-        width: 77%;
-    }
+  .padding-text-center {
+    margin: 0 auto;
+    width: 77%;
+  }
 }
 
-@media screen
-and (min-width: 639px)
-and (max-width: 900px) {
-    .set-height-us {
-        height: 130px;
-    }
+@media screen and (min-width: 639px) and (max-width: 900px) {
+  .set-height-us {
+    height: 130px;
+  }
 }
 
-@media screen
-and (min-width: 639px)
-and (max-width: 800px) {
-    .tsumbal {
-        max-height: 180px;
-    }
+@media screen and (min-width: 639px) and (max-width: 800px) {
+  .tsumbal {
+    max-height: 180px;
+  }
 
-    .batsil-maya {
-        max-height: 150px;
-    }
+  .batsil-maya {
+    max-height: 150px;
+  }
 
-    #proceso .tueste-claro {
-        top: 43%;
-        left: 12%;
-    }
+  #proceso .tueste-claro {
+    top: 43%;
+    left: 12%;
+  }
 
-    #proceso .tueste-vienes {
-        top: 40%;
-        left: 40%;
-    }
+  #proceso .tueste-vienes {
+    top: 40%;
+    left: 40%;
+  }
 
-    #proceso .tueste-italiano {
-        top: 39%;
-        left: 73%;
-    }
+  #proceso .tueste-italiano {
+    top: 39%;
+    left: 73%;
+  }
 }
 
-@media screen
-and (min-width: 320px)
-and (max-width: 639px) {
-    .chat h2 {
-        background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% -8% / 7% no-repeat;
-    }
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .chat h2 {
+    background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% -8% / 7% no-repeat;
+  }
 
-    .help-mail h2 {
-        background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% 123% / 7% no-repeat;
-    }
+  .help-mail h2 {
+    background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% 123% / 7%
+      no-repeat;
+  }
 
-    .call h2 {
-        background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% 61% / 7% no-repeat;
-    }
+  .call h2 {
+    background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% 61% / 7%
+      no-repeat;
+  }
 
-    #proceso .tipo-tueste p:nth-child(8) {
-        top: 66% !important;
-        left: -5% !important;
-    }
+  #proceso .tipo-tueste p:nth-child(8) {
+    top: 66% !important;
+    left: -5% !important;
+  }
 
-    #proceso .tueste-claro {
-        top: 46%;
-        left: 11%;
-    }
+  #proceso .tueste-claro {
+    top: 46%;
+    left: 11%;
+  }
 
-    #proceso .tueste-medio {
-        top: 70%;
-        left: 25%;
-    }
+  #proceso .tueste-medio {
+    top: 70%;
+    left: 25%;
+  }
 
-    #proceso .tueste-vienes {
-        top: 43%;
-        left: 39%;
-    }
+  #proceso .tueste-vienes {
+    top: 43%;
+    left: 39%;
+  }
 
-    #proceso .tueste-oscuro {
-        top: 67%;
-        left: 56%;
-    }
+  #proceso .tueste-oscuro {
+    top: 67%;
+    left: 56%;
+  }
 
-    #proceso .tueste-italiano {
-        top: 42%;
-        left: 71%;
-    }
+  #proceso .tueste-italiano {
+    top: 42%;
+    left: 71%;
+  }
 }
 
-@media screen
-and (min-width: 700px)
-and (max-width: 800px) {
-    #nosotros #image-nuestra-historia {
-        background: url(../images/nosotros/mexico_2.svg) 0 50% / contain no-repeat !important;
-    }
+@media screen and (min-width: 700px) and (max-width: 800px) {
+  #nosotros #image-nuestra-historia {
+    background: url(../images/nosotros/mexico_2.svg) 0 50% / contain no-repeat !important;
+  }
 
-    .mapa-mobil-cafe {
-        grid-template-rows: 1fr !important;
-    }
+  .mapa-mobil-cafe {
+    grid-template-rows: 1fr !important;
+  }
 
-    .kill-padding-bottom {
-        padding-bottom: 0 !important;
-    }
+  .kill-padding-bottom {
+    padding-bottom: 0 !important;
+  }
 
-    #nuestrocafe #caracteristicas-taza {
-        background: url(../images/nuestro_cafe/caracteristicas_del_cafe_batsil_maya.svg) 46% 44% / 170% no-repeat !important;
-    }
+  #nuestrocafe #caracteristicas-taza {
+    background: url(../images/nuestro_cafe/caracteristicas_del_cafe_batsil_maya.svg)
+      46% 44% / 170% no-repeat !important;
+  }
 
-    .chat h2 {
-        background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% -6% / 15% no-repeat !important;
-    }
+  .chat h2 {
+    background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% -6% / 15% no-repeat !important;
+  }
 
-    .call h2 {
-        background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% 50% / 15% no-repeat !important;
-    }
+  .call h2 {
+    background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% 50% / 15%
+      no-repeat !important;
+  }
 
-    .help-mail h2 {
-        background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% 118% / 15% no-repeat !important;
-    }
+  .help-mail h2 {
+    background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% 118% / 15%
+      no-repeat !important;
+  }
 
-    .help-margin-top-button {
-        margin-top: 8px;
-    }
+  .help-margin-top-button {
+    margin-top: 8px;
+  }
 }
 
-@media screen
-and (min-width: 640px)
-and (max-width: 700px) {
-    #nuestrocafe #caracteristicas-taza {
-        background: url(../images/nuestro_cafe/caracteristicas_del_cafe_batsil_maya.svg) 49% 0 / contain no-repeat !important;
-    }
+@media screen and (min-width: 640px) and (max-width: 700px) {
+  #nuestrocafe #caracteristicas-taza {
+    background: url(../images/nuestro_cafe/caracteristicas_del_cafe_batsil_maya.svg)
+      49% 0 / contain no-repeat !important;
+  }
 }
 
-@media screen
-and (min-width: 768px)
-and (max-width: 910px) {
-    .help-mail h2 {
-        background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% 118% / 5% no-repeat;
-    }
+@media screen and (min-width: 768px) and (max-width: 910px) {
+  .help-mail h2 {
+    background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% 118% / 5%
+      no-repeat;
+  }
 }
 
 @media screen and (min-width: 640px) {
-    h2 {
-        font-size: 40px;
-    }
+  h2 {
+    font-size: 40px;
+  }
 
-    .h2-header {
-        font-size: 50px;
-    }
+  .h2-header {
+    font-size: 50px;
+  }
 
-    .h2-subtitle {
-        padding: 1em 0;
-        font-size: 25px;
-    }
+  .h2-subtitle {
+    padding: 1em 0;
+    font-size: 25px;
+  }
 
-    .h2-small {
-        font-size: 16px;
-    }
+  .h2-small {
+    font-size: 16px;
+  }
 
-    #productos .product-title {
-        font-size: 25px;
-    }
+  #productos .product-title {
+    font-size: 25px;
+  }
 
-    h3, .h3-big {
-        font-size: 35px;
-        line-height: 1.2em;
-    }
+  h3,
+  .h3-big {
+    font-size: 35px;
+    line-height: 1.2em;
+  }
 
-    .h3-small {
-        font-size: 20px;
-    }
+  .h3-small {
+    font-size: 20px;
+  }
 
-    h4 {
-        font-size: 20px;
-    }
+  h4 {
+    font-size: 20px;
+  }
 
-    .p-big {
-        font-size: 22px;
-    }
+  .p-big {
+    font-size: 22px;
+  }
 
-    .p-small {
-        font-size: 13px;
-    }
+  .p-small {
+    font-size: 13px;
+  }
 
-    .bigfoot {
-        font-size: 18px;
-        background: url(../images/footer/footer_granos_de_cafe_batsil_maya.jpg
-        ) 0 0 / cover no-repeat;
-    }
+  .bigfoot {
+    font-size: 18px;
+    background: url(../images/footer/footer_granos_de_cafe_batsil_maya.jpg) 0 0 /
+      cover no-repeat;
+  }
 
-    .batsil {
-        top: 52%;
-        left: 10%;
-    }
+  .batsil {
+    top: 52%;
+    left: 10%;
+  }
 
-    .japon {
-        top: 40%;
-        left: 84%;
-    }
+  .japon {
+    top: 40%;
+    left: 84%;
+  }
 
+  /* —————— AQUÍ EMPIEZAN ESTILOS DE NOSOTROS—————— */
+  #nosotros .mision {
+    border-right: 2px solid var(--yellow);
+    padding-right: 14%;
+  }
 
-    /* —————— AQUÍ EMPIEZAN ESTILOS DE NOSOTROS—————— */
-    #nosotros .mision {
-        border-right: 2px solid var(--yellow);
-        padding-right: 14%;
-    }
+  #nosotros .vision {
+    padding-left: 14%;
+  }
 
-    #nosotros .vision {
-        padding-left: 14%;
-    }
+  .mapa-mobil-cafe {
+    grid-template-rows: 1fr 1fr;
+  }
 
-    .mapa-mobil-cafe {
-        grid-template-rows: 1fr 1fr;
-    }
+  .tsumbal {
+    max-width: 50%;
+  }
 
-    .tsumbal {
-        max-width: 50%;
-    }
+  /* —————— AQUÍ EMPIEZAN ESTILOS DE PROCESO—————— */
+  #proceso .tipo-tueste p:nth-child(8) {
+    top: 75% !important;
+    left: -1% !important;
+  }
 
-    /* —————— AQUÍ EMPIEZAN ESTILOS DE PROCESO—————— */
-    #proceso .tipo-tueste p:nth-child(8) {
-        top: 75% !important;
-        left: -1% !important;
-    }
+  .taza-cafe {
+    grid-template-rows: 1fr 1fr;
+  }
 
+  .molidos img {
+    width: 30% !important;
+  }
 
-    .taza-cafe {
-        grid-template-rows: 1fr 1fr;
-    }
+  .help-mail h2 {
+    background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% 110% / 5%
+      no-repeat;
+  }
 
-    .molidos img {
-        width: 30% !important;
-    }
+  .call h2 {
+    background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% 50% / 7%
+      no-repeat;
+  }
 
-    .help-mail h2 {
-        background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% 110% / 5% no-repeat;
-    }
-
-    .call h2 {
-        background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% 50% / 7% no-repeat;
-    }
-
-    .chat h2 {
-        background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% 0% / 7% no-repeat;
-    }
+  .chat h2 {
+    background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% 0% / 7%
+      no-repeat;
+  }
 }
 
-
 @media screen and (max-width: 639px) {
-    .little-font {
-        font-size: 13px;
-    }
+  .little-font {
+    font-size: 13px;
+  }
 
-    h2 {
-        font-size: 40px;
-    }
+  h2 {
+    font-size: 40px;
+  }
 
-    .h2-header {
-        font-size: 40px;
-    }
+  .h2-header {
+    font-size: 40px;
+  }
 
-    .h2-subtitle {
-        padding: 1em 0;
-        font-size: 25px;
-    }
+  .h2-subtitle {
+    padding: 1em 0;
+    font-size: 25px;
+  }
 
-    .h2-small {
-        font-size: 16px;
-    }
+  .h2-small {
+    font-size: 16px;
+  }
 
-    #productos .product-title {
-        font-size: 25px;
-    }
+  #productos .product-title {
+    font-size: 25px;
+  }
 
-    h3, .h3-big {
-        font-size: 35px;
-        line-height: 1.2em;
-    }
+  h3,
+  .h3-big {
+    font-size: 35px;
+    line-height: 1.2em;
+  }
 
-    .h3-small {
-        font-size: 20px;
-    }
+  .h3-small {
+    font-size: 20px;
+  }
 
-    h4 {
-        font-size: 20px;
-    }
+  h4 {
+    font-size: 20px;
+  }
 
-    .p-big {
-        font-size: 22px;
-    }
+  .p-big {
+    font-size: 22px;
+  }
 
-    .p-small {
-        font-size: 13px;
-    }
+  .p-small {
+    font-size: 13px;
+  }
 
-    .grid-image-first p:last-child {
-        width: 57%;
-    }
+  .grid-image-first p:last-child {
+    width: 57%;
+  }
 
-    .grid-image-first p:last-child {
-        width: 100%;
-        margin: 0 auto 11%;
-    }
+  .grid-image-first p:last-child {
+    width: 100%;
+    margin: 0 auto 11%;
+  }
 
-    /* —————— certificados —————— */
-    .one {
-        background: url(../images/noticias/conoce_nuevo_capeltic_universidad_iberoamericana_cdmx_batsil_maya.jpg) 0 73% / cover no-repeat;
-    }
+  /* —————— certificados —————— */
+  .one {
+    background: url(../images/noticias/conoce_nuevo_capeltic_universidad_iberoamericana_cdmx_batsil_maya.jpg)
+      0 73% / cover no-repeat;
+  }
 
-    .two {
-        background: url(../images/noticias/noticia2.jpg) 52% 7% / cover no-repeat;
-    }
+  .two {
+    background: url(../images/noticias/noticia2.jpg) 52% 7% / cover no-repeat;
+  }
 
-    .three {
-        background: url(../images/noticias/noticia3.jpg) 0 29% / cover no-repeat;
-    }
+  .three {
+    background: url(../images/noticias/noticia3.jpg) 0 29% / cover no-repeat;
+  }
 
-    .four {
-        background: url(../images/noticias/noticia4.jpg) 0 38% / cover no-repeat;
-    }
+  .four {
+    background: url(../images/noticias/noticia4.jpg) 0 38% / cover no-repeat;
+  }
 
-    /* —————— AQUÍ EMPIEZAN ESTILOS DE NOSOTROS—————— */
-    .wrapper-text {
-        padding: 4% 8% 4% 3%;
-    }
+  /* —————— AQUÍ EMPIEZAN ESTILOS DE NOSOTROS—————— */
+  .wrapper-text {
+    padding: 4% 8% 4% 3%;
+  }
 
-    #nosotros .mision-vision {
-        border-bottom: 2px solid var(--yellow);
-        padding-bottom: var(--padding-top-bottom);
-    }
+  #nosotros .mision-vision {
+    border-bottom: 2px solid var(--yellow);
+    padding-bottom: var(--padding-top-bottom);
+  }
 
-    #nosotros .mision {
-        border-bottom: 2px solid var(--yellow);
-        padding-bottom: var(--padding-top-bottom);
-    }
+  #nosotros .mision {
+    border-bottom: 2px solid var(--yellow);
+    padding-bottom: var(--padding-top-bottom);
+  }
 
-    #nosotros .vision {
-        padding-top: var(--padding-top-bottom);
-    }
+  #nosotros .vision {
+    padding-top: var(--padding-top-bottom);
+  }
 
-    #nosotros .yomol img {
-        width: 80%;
-    }
+  #nosotros .yomol img {
+    width: 80%;
+  }
 
-    /* —————— AQUÍ EMPIEZAN ESTILOS DE PROCESO—————— */
-    #proceso .tipo-tueste p:nth-child(8) {
-        top: 59%;
-        left: -9%;
-        font-size: 13px;
-    }
+  /* —————— AQUÍ EMPIEZAN ESTILOS DE PROCESO—————— */
+  #proceso .tipo-tueste p:nth-child(8) {
+    top: 59%;
+    left: -9%;
+    font-size: 13px;
+  }
 
+  #proceso .tipo-tueste p:last-child {
+    font-size: 13px;
+  }
 
-    #proceso .tipo-tueste p:last-child {
-        font-size: 13px;
-    }
+  #proceso .tueste-claro h3 {
+    font-size: 13px;
+  }
 
+  #proceso .tueste-medio h3 {
+    font-size: 13px;
+  }
 
-    #proceso .tueste-claro h3 {
-        font-size: 13px;
-    }
+  #proceso .tueste-vienes h3 {
+    font-size: 13px;
+  }
 
+  #proceso .tueste-oscuro h3 {
+    font-size: 13px;
+  }
 
-    #proceso .tueste-medio h3 {
-        font-size: 13px;
-    }
-
-
-    #proceso .tueste-vienes h3 {
-        font-size: 13px;
-    }
-
-
-    #proceso .tueste-oscuro h3 {
-        font-size: 13px;
-    }
-
-
-    #proceso .tueste-italiano h3 {
-        font-size: 13px;
-    }
-
+  #proceso .tueste-italiano h3 {
+    font-size: 13px;
+  }
 }
 
 @media screen and (max-width: 917px) {
-    .humedo {
-        padding-right: 5%;
-        padding-left: 5%;
-        border-bottom: 2px solid var(--white);
-        padding-bottom: var(--padding-top-bottom);
-    }
+  .humedo {
+    padding-right: 5%;
+    padding-left: 5%;
+    border-bottom: 2px solid var(--white);
+    padding-bottom: var(--padding-top-bottom);
+  }
 
-    .seco {
-        padding-right: 5%;
-        padding-left: 5%;
-        padding-top: var(--padding-top-bottom);
-    }
+  .seco {
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: var(--padding-top-bottom);
+  }
 }
 
 @media screen and (min-width: 918px) {
-    .humedo {
-        border-right: 2px solid var(--white);
-        padding-right: 16%;
-    }
+  .humedo {
+    border-right: 2px solid var(--white);
+    padding-right: 16%;
+  }
 
-    .seco {
-        padding-left: 13%;
-    }
+  .seco {
+    padding-left: 13%;
+  }
 
-    .help-margin-top-button {
-        margin-top: 10px;
-    }
+  .help-margin-top-button {
+    margin-top: 10px;
+  }
 }
 
 @media screen and (min-width: 320px) {
-    .mapa-desktop {
-        display: none;
-    }
+  .mapa-desktop {
+    display: none;
+  }
 
-    .mapa-mobil {
-        padding: 20px;
-        position: relative;
-        width: 100%;
-        box-sizing: border-box;
-        margin: 0 auto;
-    }
+  .mapa-mobil {
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
 
-    .batsil {
-        position: absolute;
-        top: 54%;
-        left: 10%;
-        font-size: 14px;
-    }
+  .batsil {
+    position: absolute;
+    top: 54%;
+    left: 10%;
+    font-size: 14px;
+  }
 
-    .japon {
-        position: absolute;
-        top: 42%;
-        left: 84.5%;
-        font-size: 14px;
+  .japon {
+    position: absolute;
+    top: 42%;
+    left: 84.5%;
+    font-size: 14px;
+  }
 
-    }
+  .mapa-mobil-cafe {
+    grid-template-rows: 1fr 2fr;
+  }
 
-    .mapa-mobil-cafe {
-        grid-template-rows: 1fr 2fr;
-    }
+  .taza-cafe {
+    grid-template-rows: 2fr 1fr;
+  }
 
-    .taza-cafe {
-        grid-template-rows: 2fr 1fr;
-    }
+  .molidos img {
+    width: 30% !important;
+  }
 
-    .molidos img {
-        width: 30% !important;
-    }
+  .tipos-tueste {
+    margin: auto !important;
+    width: 90% !important;
+  }
 
-    .tipos-tueste {
-
-        margin: auto !important;
-        width: 90% !important;
-
-    }
-
-
-    #proceso .tipo-tueste p:last-child {
-        left: 5% !important;
-        position: relative !important;
-    }
-
-
+  #proceso .tipo-tueste p:last-child {
+    left: 5% !important;
+    position: relative !important;
+  }
 }
 
 #proceso #image-restauracion {
-    background: url(../images/proceso/restauracion_de_los_cafetales_batsil_maya.jpg) 0% 0 / cover no-repeat;
+  background: url(../images/proceso/restauracion_de_los_cafetales_batsil_maya.jpg)
+    0% 0 / cover no-repeat;
 }
 
 /* —————— AQUÍ EMPIEZAN ESTILOS DE NOSOTROS—————— */
 #nosotros header {
-    background: url(../images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
-    url(../images/nosotros/header_nosotros_somos_la_planta_transformadora_de_cafe_batsil_maya.jpg) 70% 0 / cover no-repeat;
+  background: url(../images/fade/header_fade_blanco_batsil_maya.png) 0 100% /
+      contain repeat-x,
+    url(../images/nosotros/header_nosotros_somos_la_planta_transformadora_de_cafe_batsil_maya.jpg)
+      70% 0 / cover no-repeat;
 }
 
 #nosotros #image-nuestra-historia {
-    position: relative;
-    background: url(../images/nosotros/mexico_2.svg) 0 100% / contain no-repeat;
+  position: relative;
+  background: url(../images/nosotros/mexico_2.svg) 0 100% / contain no-repeat;
 }
 
 #nosotros #image-nuestra-historia p {
-    max-width: 200px;
-    margin: 0;
-    position: relative;
-    top: 61%;
-    left: 42%;
+  max-width: 200px;
+  margin: 0;
+  position: relative;
+  top: 61%;
+  left: 42%;
 }
 
 #nosotros #image-el-pueblo-tseltal {
-    background: url(../images/nosotros/el_pueblo_tseltal_batsil_maya.jpg) 70% 20% / cover no-repeat;
+  background: url(../images/nosotros/el_pueblo_tseltal_batsil_maya.jpg) 70% 20% /
+    cover no-repeat;
 }
 
 #nosotros #image-corazon-tseltal {
-    background: url(../images/nosotros/corazon_tseltal_batsil_maya.jpg) 70% 0 / cover no-repeat;
+  background: url(../images/nosotros/corazon_tseltal_batsil_maya.jpg) 70% 0 /
+    cover no-repeat;
 }
 
 #nosotros #image-la-actividad-mas-importante {
-    background: url(../images/nosotros/la_actividad_mas_importante_del_pueblo_tsental_batsil_maya.jpg) 70% 0 / cover no-repeat;
+  background: url(../images/nosotros/la_actividad_mas_importante_del_pueblo_tsental_batsil_maya.jpg)
+    70% 0 / cover no-repeat;
 }
 
 #nosotros .mision-vision {
-    border-bottom: 2px solid var(--yellow);
-    padding-bottom: 9%;
+  border-bottom: 2px solid var(--yellow);
+  padding-bottom: 9%;
 }
 
-#nosotros .mision p, #nosotros .vision p {
-    padding-left: 1.5%;
-    text-align: left;
+#nosotros .mision p,
+#nosotros .vision p {
+  padding-left: 1.5%;
+  text-align: left;
 }
 
 .desktop-family h3 {
-    display: none;
+  display: none;
 }
 
 .mobile-family h3 {
-    display: none;
+  display: none;
 }
 
 #nosotros .yomol {
-    margin: auto;
-    max-width: 100%;
+  margin: auto;
+  max-width: 100%;
 }
 
 #nosotros .tsumbal {
-    margin: auto;
-    max-width: 100%;
+  margin: auto;
+  max-width: 100%;
 }
 
 #nosotros .tsumbal img {
-    width: 24%;
+  width: 24%;
 }
 
 #nosotros .batsil-maya {
-    margin: auto;
-    max-width: 100%;
+  margin: auto;
+  max-width: 100%;
 }
 
 #nosotros .batsil-maya img {
-    width: 40%;
+  width: 40%;
 }
 
 #nosotros .capeltic {
-    margin: auto;
-    max-width: 70%;
+  margin: auto;
+  max-width: 70%;
 }
 
 #nosotros .capeltic img {
-    width: 80%;
+  width: 80%;
 }
 
 #nosotros .chabnichim {
-    margin: auto;
-    max-width: 100%;
+  margin: auto;
+  max-width: 100%;
 }
 
 #nosotros .chabnichim img {
-    width: 70%;
+  width: 70%;
 }
 
 #nosotros .xapontic img {
-    margin: auto;
-    max-width: 70%;
+  margin: auto;
+  max-width: 70%;
 }
 
 #nosotros .xampotic img {
-    width: 60%;
+  width: 60%;
 }
 
 #nosotros .bnosotros {
-    background: url(../images/botones/boton_nosotros_somos_la_planta_transformadora_de_cafe_batsil_maya.jpg) 70% 0 / cover no-repeat;
+  background: url(../images/botones/boton_nosotros_somos_la_planta_transformadora_de_cafe_batsil_maya.jpg)
+    70% 0 / cover no-repeat;
 }
 
 #nosotros .bproductos {
-    background: url(../images/botones/boton_productos_cafe_tseltal_miel_organica_jabones_artesanales_batsil_maya.jpg) 70% 0 / cover no-repeat;
+  background: url(../images/botones/boton_productos_cafe_tseltal_miel_organica_jabones_artesanales_batsil_maya.jpg)
+    70% 0 / cover no-repeat;
 }
 
 #nosotros .gridthree2 h3 {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 /* —————— AQUÍ EMPIEZAN ESTILOS DE NUESTRO CAFÉ—————— */
 #nuestrocafe header {
-    background: url(../images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
-    url(../images/nuestro_cafe/header_nuestro_cafe_desde_el_cafetal_hasta_la_taza_batsil_maya.jpg) 59% 5% / cover no-repeat;
+  background: url(../images/fade/header_fade_blanco_batsil_maya.png) 0 100% /
+      contain repeat-x,
+    url(../images/nuestro_cafe/header_nuestro_cafe_desde_el_cafetal_hasta_la_taza_batsil_maya.jpg)
+      59% 5% / cover no-repeat;
 }
 
 #nuestrocafe #image-ubicacion {
-    background: url(../images/nuestro_cafe/ubicacion_chiapas_batsil_maya.jpg) 0 0 / cover no-repeat;
+  background: url(../images/nuestro_cafe/ubicacion_chiapas_batsil_maya.jpg) 0 0 /
+    cover no-repeat;
 }
 
 #nuestrocafe #caracteristicas-taza {
-    background: url(../images/nuestro_cafe/caracteristicas_del_cafe_batsil_maya.svg) 0 0 / contain no-repeat;
-    margin-left: 2em;
+  background: url(../images/nuestro_cafe/caracteristicas_del_cafe_batsil_maya.svg)
+    0 0 / contain no-repeat;
+  margin-left: 2em;
 }
 
 .organic-height {
-    margin: 11px;
-    height: 44px;
+  margin: 11px;
+  height: 44px;
 }
 
 .altura {
-    padding-top: 15%;
-    background: url(../images/nuestro_cafe/altura_900_1400_msnm_batsil_maya.svg) 50% 100% / contain no-repeat;
+  padding-top: 15%;
+  background: url(../images/nuestro_cafe/altura_900_1400_msnm_batsil_maya.svg)
+    50% 100% / contain no-repeat;
 }
 
 .temperatura {
-    padding-top: 15%;
-    background: url(../images/nuestro_cafe/temperatura_batsil_maya.svg) 50% 100% / contain no-repeat;
+  padding-top: 15%;
+  background: url(../images/nuestro_cafe/temperatura_batsil_maya.svg) 50% 100% /
+    contain no-repeat;
 }
 
 .suelo {
-    padding-top: 15%;
-    background: url(../images/nuestro_cafe/suelo_con_abundante_materia_orgánica_batsil_maya.svg) 50% 100% / contain no-repeat;
+  padding-top: 15%;
+  background: url(../images/nuestro_cafe/suelo_con_abundante_materia_orgánica_batsil_maya.svg)
+    50% 100% / contain no-repeat;
 }
 
 #nuestrocafe .variedad {
-    padding-top: 15%;
-    background: url(../images/nuestro_cafe/gran_variedad_de_arboles_de_sombra_batsil_maya.svg) 50% 100% / contain no-repeat;
+  padding-top: 15%;
+  background: url(../images/nuestro_cafe/gran_variedad_de_arboles_de_sombra_batsil_maya.svg)
+    50% 100% / contain no-repeat;
 }
 
 .grid-conditions h3 {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .molidos img {
-    width: 50%;
+  width: 50%;
 }
-
 
 /* —————— AQUÍ EMPIEZAN ESTILOS DE PRODUCTOS—————— */
 #productos header {
-    background: url(../images/fade/header_fade_cafe_batsil_maya.png) 0 100% / contain repeat-x,
-    url(../images/product/header_productos_batsil_maya.jpg) 70% 0 / cover no-repeat;
+  background: url(../images/fade/header_fade_cafe_batsil_maya.png) 0 100% /
+      contain repeat-x,
+    url(../images/product/header_productos_batsil_maya.jpg) 70% 0 / cover
+      no-repeat;
 }
 
 #productos .product {
-    border-radius: 0;
+  border-radius: 0;
 }
 
 .circle img {
-    border-radius: 100px;
+  border-radius: 100px;
 }
 
 #jabon a {
-    color: var(--dark);
+  color: var(--dark);
 }
-
 
 /* —————— AQUÍ EMPIEZAN ESTILOS DE PRODUCTOS ORGANICOS—————— */
 #productoorganico header {
-    background: url(../images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
-    url(../images/productos/header_productos_batsil_maya.jpg) 70% 71% / cover no-repeat;
-
+  background: url(../images/fade/header_fade_blanco_batsil_maya.png) 0 100% /
+      contain repeat-x,
+    url(../images/productos/header_productos_batsil_maya.jpg) 70% 71% / cover
+      no-repeat;
 }
 
 /* —————— AQUÍ EMPIEZAN ESTILOS DE NOTICIAS—————— */
 #noticias header {
-    background: url(../images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
-    url(../images/noticias/header_noticias_batsil_maya.jpg) 70% 71% / cover no-repeat;
+  background: url(../images/fade/header_fade_blanco_batsil_maya.png) 0 100% /
+      contain repeat-x,
+    url(../images/noticias/header_noticias_batsil_maya.jpg) 70% 71% / cover
+      no-repeat;
 }
 
 .news-text h3 {
-    padding-left: 3%;
-    color: var(--light);
+  padding-left: 3%;
+  color: var(--light);
 }
 
 .news-text p {
-    padding: 0 0 3% 3%;
-    color: var(--light);
+  padding: 0 0 3% 3%;
+  color: var(--light);
 }
 
 /* —————— AQUÍ EMPIEZAN ESTILOS DE AYUDA—————— */
 #ayuda header {
-    background: url(../images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
+  background: url(../images/fade/header_fade_blanco_batsil_maya.png) 0 100% /
+      contain repeat-x,
     url(../images/ayuda/header_ayuda_batsil_maya.jpg) 70% 71% / cover no-repeat;
 }
 
 /* —————— AQUÍ EMPIEZAN ESTILOS DE CUENTA—————— */
 #cuenta header {
-    background: url(../images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
-    url(../images/cuenta/header_cuenta_batsil_maya.jpg) 70% 71% / cover no-repeat;
+  background: url(../images/fade/header_fade_blanco_batsil_maya.png) 0 100% /
+      contain repeat-x,
+    url(../images/cuenta/header_cuenta_batsil_maya.jpg) 70% 71% / cover
+      no-repeat;
 }
 
 /* —————— AQUÍ EMPIEZAN ESTILOS DE INICIO DE SESIÓN—————— */
 #iniciar_sesion header {
-    background: url(../images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
-    url(../images/login/header_iniciar_sesión_batsil_maya.jpg) 70% 71% / cover no-repeat;;
+  background: url(../images/fade/header_fade_blanco_batsil_maya.png) 0 100% /
+      contain repeat-x,
+    url(../images/login/header_iniciar_sesión_batsil_maya.jpg) 70% 71% / cover
+      no-repeat;
 }
 
 /* —————— AQUÍ EMPIEZAN ESTILOS DE PRODUCTOS ORGANICOS—————— */
 
 #confirmardireccion header {
-    background: url(../images/fade/header_fade_blanco_batsil_maya.png) 0 100% / contain repeat-x,
-    url(../images/confirmacion_de_direccion/header_proceso_de_compra_batsil_maya.png) 70% 71% / cover no-repeat;;
+  background: url(../images/fade/header_fade_blanco_batsil_maya.png) 0 100% /
+      contain repeat-x,
+    url(../images/confirmacion_de_direccion/header_proceso_de_compra_batsil_maya.png)
+      70% 71% / cover no-repeat;
 }
 
 #form-ilustracion {
-    background: url(../images/form/hombre_restaurando_cafetal_batsil_maya.svg) 90% 50% / 60% no-repeat;
+  background: url(../images/form/hombre_restaurando_cafetal_batsil_maya.svg) 90%
+    50% / 60% no-repeat;
 }
