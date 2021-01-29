@@ -92,15 +92,15 @@ include "header.php";
             </article>
         </section>
         <div class="grid-contactanos">
-        <aside class="chat border-padding margin-thingy">
+        <!--<aside class="chat border-padding margin-thingy">
             <h2 class="h2-small crazy-icon-padding">Chatea con Nosotros</h2>
             <p>Inicia una sesión de chat ahora. <br>Espera estimada: 5 minutos o menos.</p>
             <a class="button red full-width help-margin-top-button">Chat</a>
-        </aside>
+        </aside>-->
         <aside class="call border-padding margin-thingy">
             <h2 class="h2-small crazy-icon-padding">Agenda una llamada</h2>
             <p>Agenda una llamada con Bats’il Maya para que te llamemos cuando te convenga.</p>
-            <a class="button red full-width help-margin-top-button">Agenda una llamada</a>
+            <a class="button red full-width help-margin-top-button"href="contactanos.php" target="_self">Agenda una llamada</a>
         </aside>
         <aside class="help-mail border-padding margin-thingy">
             <h2 class="h2-small crazy-icon-padding help-margin-top-button">Envíanos un correo</h2>

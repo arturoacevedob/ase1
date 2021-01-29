@@ -25,7 +25,6 @@ function createCoffeeListOptions()
         $products[$counter]["id_product"] = $row["id_product"];
         $products[$counter]["name_product"] = $row["name_product"];
         $products[$counter]["description"] = $row["description"];
-        $products[$counter]["notes"] = $row["notes"];
         $products[$counter]["client_type"] = $row["client_type"];
         $counter++;
     }
@@ -156,7 +155,7 @@ function createCoffeeListOptions()
             <label class="kill" for="search"></label>
             <input id="search" placeholder="Buscar" type="search">
         </div>
-        <a class="button red limited-width" href='crud_product/create_product.php'>Agregar productos</a></div>
+        <a class="button red limited-width" href='crud_product/create_product_soap.php'>Agregar productos</a></div>
     <div class="grid-1-1 give-me-gap margin-top-thing">
         <?php
         createCoffeeListOptions()
