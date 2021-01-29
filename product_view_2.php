@@ -122,7 +122,7 @@ if (isset($_SESSION['user'])) {
                 <p>" . $description . "</p>
             </div>
 
-            <form method='post' class='product-form' action='cart_action.php?action=addToCart&id=" . $id_product . "' enctype='multipart/form-data' class='grid-product-form'>
+            <form method='post' class='product-form' action='cart_action.php?action=addToCart' enctype='multipart/form-data' class='grid-product-form'>
             
                 <input type='hidden' name='insert' value='insert'>
                 <input type='hidden' name='id_product' value='" . $id_product . "'>

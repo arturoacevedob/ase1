@@ -1,10 +1,10 @@
 <?php
-ini_set('display_errors', 1);
+ini_set("display_errors", 1);
 error_reporting(E_ALL);
 
 session_start();
-include 'header.php';
-include 'contact_pending.php';
+include "header.php";
+include "contact_pending.php";
 ?>
 
 <!DOCTYPE html>
@@ -37,53 +37,7 @@ include 'contact_pending.php';
 <div id="productos">
     <div>
         <header>
-            <div class="grid-header container">
-                <h1>Bats'il Maya: Inicio</h1>
-                <div class="nav-wrapper desktop">
-                    <a class="logo" href="index.php" target="_self">
-                        <img alt="Bats'il Maya Logo" class="shadow" src="images/logos/batsil_maya_logo.svg">
-                    </a>
-                    <nav id="menu-desktop">
-                        <h2>Menú</h2>
-                        <ul class="menu-desktop-content">
-                            <li><a href="index.php" target="_self">Inicio</a></li>
-                            <li><a href="nosotros.php" target="_self">Nosotros</a></li>
-                            <li><a href="nuestro_cafe.php" target="_self">Nuestro café</a></li>
-                            <li><a href="proceso.php" target="_self">Proceso</a></li>
-                            <li><a class="active" href="products.php" target="_self">Productos</a></li>
-                            <li><a href="noticias.php" target="_self">Noticias</a></li>
-                            <li><a href="ayuda.php" target="_self">Ayuda</a></li>
-                        </ul>
-                    </nav>
-                    <?php
-                    renderHeader()
-                    ?>
-                </div>
-
-                <div class="nav-wrapper mobile">
-                    <a class="logo" href="index.php" target="_self">
-                        <img alt="Bats'il Maya Logo" class="shadow" src="images/logos/batsil_maya_logo.svg">
-                    </a>
-                    <nav id="menu-mobile">
-                        <input id="menu-mobile-toggle" type="checkbox">
-                        <label for="menu-mobile-toggle"><span id="menu-icon"></span></label>
-                        <div id="overlay"></div>
-                        <ul class="menu-mobile-content light-bg">
-                            <li><a href="index.php" target="_self">Inicio</a></li>
-                            <li><a href="nosotros.php" target="_self">Nosotros</a></li>
-                            <li><a href="nuestro_cafe.php" target="_self">Nuestro café</a></li>
-                            <li><a href="proceso.php" target="_self">Proceso</a></li>
-                            <li><a class="active" href="products.php" target="_self">Productos</a></li>
-                            <li><a href="noticias.php" target="_self">Noticias</a></li>
-                            <li><a href="ayuda.php" target="_self">Ayuda</a></li>
-                            <?php
-                            renderHeader()
-                            ?>
-                        </ul>
-                    </nav>
-                </div>
-                <h2 class="h2-header">Productos</h2>
-            </div>
+            <?php renderHeader(); ?>
         </header>
     </div>
     <aside class="product dark-bg light">
@@ -101,31 +55,41 @@ include 'contact_pending.php';
                 $query = "select * from products";
                 $recordSet = execute($query);
 
-                $products = array();
+                $products = [];
                 $counter = 0;
                 while ($row = mysqli_fetch_array($recordSet)) {
-                    $products[$counter] = array();
-                    $products[$counter]["id_product"] = $row["id_product"];
-                    $products[$counter]["name_product"] = $row["name_product"];
-                    $products[$counter]["description"] = $row["description"];
-                    $products[$counter]["notes"] = $row["notes"];
-                    $products[$counter]["client_type"] = $row["client_type"];
-                    $counter++;
+                  $products[$counter] = [];
+                  $products[$counter]["id_product"] = $row["id_product"];
+                  $products[$counter]["name_product"] = $row["name_product"];
+                  $products[$counter]["description"] = $row["description"];
+                  $products[$counter]["notes"] = $row["notes"];
+                  $products[$counter]["client_type"] = $row["client_type"];
+                  $counter++;
                 }
 
                 for ($i = 0; $i < count($products); $i++) {
+                  $q =
+                    "select image_path from images where images.id_product = " .
+                    $products[$i]["id_product"] .
+                    " limit 1";
+                  $recordSetImage = execute($q);
+                  $image_row = mysqli_fetch_array($recordSetImage);
+                  $image_path = $image_row["image_path"];
 
-                    $q = "select image_path from images where images.id_product = " . $products[$i]['id_product'] . " limit 1";
-                    $recordSetImage = execute($q);
-                    $image_row = mysqli_fetch_array($recordSetImage);
-                    $image_path = $image_row['image_path'];
-
-                    echo "
+                  echo "
                     <section class='ind-product'>
-                        <h3 class='title pname h3-small'>" . $products[$i]['name_product'] . "</h3>
-                        <div style='height: 250px; background: transparent url(" . $image_path . ") 50% 50% / cover no-repeat;'></div>
-                        <p class='pdescription'>" . $products[$i]['description'] . "<br> <a
-                                class='link ' href='product_view.php?idproduct=" . $products[$i]['id_product'] . "' target='_self'>Ver más »</a></p>
+                        <h3 class='title pname h3-small'>" .
+                    $products[$i]["name_product"] .
+                    "</h3>
+                        <div style='height: 250px; background: transparent url(" .
+                    $image_path .
+                    ") 50% 50% / cover no-repeat;'></div>
+                        <p class='pdescription'>" .
+                    $products[$i]["description"] .
+                    "<br> <a
+                                class='link ' href='product_view.php?idproduct=" .
+                    $products[$i]["id_product"] .
+                    "' target='_self'>Ver más »</a></p>
                     </section>";
                 }
                 ?>

@@ -1,39 +1,59 @@
 <?php
-function renderHeader(){
+function renderHeader()
+{
+  // Header for users
+  $header = "
+    <div class='grid-header container'>
+        <h1>Bats'il Maya: Inicio</h1>
+        <div class='nav-wrapper desktop'>
+            <a class='logo' href='index.php' target='_self'>
+                <img alt='Bats'il Maya Logo' class='shadow' src='images/logos/batsil_maya_logo.svg'>
+            </a>
+            <nav id='menu-desktop'>
+                <h2>Menú</h2>
+                <ul class='menu-desktop-content'>
+                    <li><a class='active' href='' target='_self'>Inicio</a></li>
+                    <li><a href='nosotros.php' target='_self'>Nosotros</a></li>
+                    <li><a href='nuestro_cafe.php' target='_self'>Nuestro café</a></li>
+                    <li><a href='proceso.php' target='_self'>Proceso</a></li>
+                    <li><a href='products.php' target='_self'>Productos</a></li>
+                    <li><a href='noticias.php' target='_self'>Noticias</a></li>
+                    <li><a href='ayuda.php' target='_self'>Ayuda</a></li>
+                </ul>
+            </nav>
+            <ul class='grid-nav-1'>
+                <li class='button red fit-content'><a class='light' href='contactanos.php' target='_self'>Contáctanos</a></li>
+            </ul>
+        </div>
+    
+        <div class='nav-wrapper mobile'>
+            <a class='logo' href='index.php' target='_self'>
+                <img alt='Bats'il Maya Logo' class='shadow' src='images/logos/batsil_maya_logo.svg'>
+            </a>
+            <nav id='menu-mobile'>
+                <input id='menu-mobile-toggle' type='checkbox'>
+                <label for='menu-mobile-toggle'><span id='menu-icon'></span></label>
+                <div id='overlay'></div>
+                <ul class='menu-mobile-content light-bg'>
+                    <li><a class='active' href='index.php' target='_self'>Inicio</a></li>
+                    <li><a href='nosotros.php' target='_self'>Nosotros</a></li>
+                    <li><a href='nuestro_cafe.php' target='_self'>Nuestro café</a></li>
+                    <li><a href='proceso.php' target='_self'>Proceso</a></li>
+                    <li><a href='products.php' target='_self'>Productos</a></li>
+                    <li><a href='noticias.php' target='_self'>Noticias</a></li>
+                    <li><a href='ayuda.php' target='_self'>Ayuda</a></li>
+                    <li class='button red fit-content'><a class='light' href='contactanos.php' target='_self'>Contáctanos</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h2 class='h2-header'>Café tseltal:<br>Producto de un trabajo solidario y digno</h2>
+        <p class='h2-subtitle'>Una cooperativa que tuesta, muele, y comercializa
+            <wbr>
+            un producto de calidad a precio justo.
+        </p>
+        <a class='button red fit-content' href='nosotros.php' target='_self'>Sobre nosotros</a>
+    </div>";
 
-    // Initialize shopping cart class
-    include_once 'cart_class.php';
-    $cart = new Cart;
-
-    // Establish origin page
-    $origin = basename($_SERVER['PHP_SELF']);
-
-    // Header for users
-    $headerUser = "
-    <ul class='user-head grid-nav-1'>
-        <li class='cuenta'><a href='cuenta_informacion.php' target='_self' aria-label='cuenta'></a>
-        <ul class='submenu'>
-                      <li><a href='cuenta_informacion.php' target='_self'>Información</a></li>
-                      <li><a href='direccion-envio.php target='_self'>Dirección de envío</a></li>
-                      <li><a href='metodos-de-contacto.php' target='_self'>Métodos de pago</a></li>
-                      <li><a href='pedidos.php' target='_self'>Pedidos</a></li>
-					  <li><a href='iniciar_sesion.php?killsession=" . $origin . "' target='_self'>Cerrar sesión</a></li>
-				  </ul>
-        </li>
-        <li class='carrito'><a class='light' href='carrito.php' target='_self' aria-label='carrito'></a></li>
-    </ul>";
-
-    // Header for the rest of us
-    $header = "
-    <ul class='grid-nav-1'>
-        <li class='button outline fit-content'><a href='iniciar_sesion.php?origin=" . $origin . "' target='_self'>Iniciar sesión</a></li>
-        <li class='button red fit-content'><a class='light' href='contactanos.php' target='_self'>Contáctanos</a></li>
-    </ul>";
-
-    if (isset($_SESSION['user'])) {
-        echo $headerUser;
-    } else {
-        echo $header;
-    }
+  echo $header;
 }
 ?>

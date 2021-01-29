@@ -1,10 +1,10 @@
 <?php
-ini_set('display_errors', 1);
+ini_set("display_errors", 1);
 error_reporting(E_ALL);
 
 session_start();
-include 'header.php';
-include 'contact_pending.php';
+include "header.php";
+include "contact_pending.php";
 ?>
 
 <!DOCTYPE html>
@@ -38,53 +38,7 @@ include 'contact_pending.php';
 <div id="proceso">
     <div>
         <header>
-            <div class="grid-header container">
-                <h1>Bats'il Maya: Proceso</h1>
-                <div class="nav-wrapper desktop">
-                    <div class="logo">
-                        <img alt="Bats'il Maya Logo" class="shadow" src="images/logos/batsil_maya_logo.svg">
-                    </div>
-                    <nav id="menu-desktop">
-                        <h2>Menú</h2>
-                        <ul class="menu-desktop-content">
-                            <li><a href="index.php" target="_self">Inicio</a></li>
-                            <li><a href="nosotros.php" target="_self">Nosotros</a></li>
-                            <li><a href="nuestro_cafe.php" target="_self">Nuestro café</a></li>
-                            <li><a class="active" href="proceso.php" target="_self">Proceso</a></li>
-                            <li><a href="products.php" target="_self">Productos</a></li>
-                            <li><a href="noticias.php" target="_self">Noticias</a></li>
-                            <li><a href="ayuda.php" target="_self">Ayuda</a></li>
-                        </ul>
-                    </nav>
-                    <?php
-                    renderHeader()
-                    ?>
-                </div>
-
-                <div class="nav-wrapper mobile">
-                    <a class="logo" href="index.php" target="_self">
-                        <img alt="Bats'il Maya Logo" class="shadow" src="images/logos/batsil_maya_logo.svg">
-                    </a>
-                    <nav id="menu-mobile">
-                        <input id="menu-mobile-toggle" type="checkbox">
-                        <label for="menu-mobile-toggle"><span id="menu-icon"></span></label>
-                        <div id="overlay"></div>
-                        <ul class="menu-mobile-content light-bg">
-                            <li><a href="index.php" target="_self">Inicio</a></li>
-                            <li><a href="nosotros.php" target="_self">Nosotros</a></li>
-                            <li><a href="nuestro_cafe.php" target="_self">Nuestro café</a></li>
-                            <li><a class="active" href="proceso.php" target="_self">Proceso</a></li>
-                            <li><a href="products.php" target="_self">Productos</a></li>
-                            <li><a href="noticias.php" target="_self">Noticias</a></li>
-                            <li><a href="ayuda.php" target="_self">Ayuda</a></li>
-                            <?php
-                            renderHeader()
-                            ?>
-                        </ul>
-                    </nav>
-                </div>
-                <h2 class="h2-header">Proceso desde el cafetal</h2>
-            </div>
+            <?php renderHeader(); ?>
         </header>
     </div>
     <section>

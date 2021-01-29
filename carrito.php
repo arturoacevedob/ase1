@@ -25,6 +25,19 @@ $cart = new Cart;
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+    <!-- jQuery library -->
+    <script src="js/jquery.min.js"></script>
+    <script>
+        function updateCartItem(obj, id) {
+            $.get("cartAction.php", {action: "updateCartItem", id: id, qty: obj.value}, function (data) {
+                if (data == 'ok') {
+                    location.reload();
+                } else {
+                    alert('Cart update failed, please try again.');
+                }
+            });
+        }
+    </script>
     <!-- Escala de viewport -->
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <!-- Link a CSS -->
@@ -38,102 +51,102 @@ $cart = new Cart;
 <body>
 <div id="carrito">
     <header style="background-color: grey;">
-            <div class="grid-header container">
-                <h1>Bats'il Maya: Carrito</h1>
-                <div class="nav-wrapper desktop">
-                    <a class="logo" href="index.php" target="_self">
-                        <img alt="Bats'il Maya Logo" class="shadow" src="images/logos/batsil_maya_logo.svg">
-                    </a>
-                    <nav id="menu-desktop">
-                        <h2>Menú</h2>
-                        <ul class="menu-desktop-content">
-                            <li><a href="index.php" target="_self">Inicio</a></li>
-                            <li><a href="nosotros.php" target="_self">Nosotros</a></li>
-                            <li><a href="nuestro_cafe.php" target="_self">Nuestro café</a></li>
-                            <li><a href="proceso.php" target="_self">Proceso</a></li>
-                            <li><a href="products.php" target="_self">Productos</a></li>
-                            <li><a href="noticias.php" target="_self">Noticias</a></li>
-                            <li><a class="active" href="noticias.php" target="_self">Ayuda</a></li>
-                        </ul>
-                    </nav>
+        <div class="grid-header container">
+            <h1>Bats'il Maya: Carrito</h1>
+            <div class="nav-wrapper desktop">
+                <a class="logo" href="index.php" target="_self">
+                    <img alt="Bats'il Maya Logo" class="shadow" src="images/logos/batsil_maya_logo.svg">
+                </a>
+                <nav id="menu-desktop">
+                    <h2>Menú</h2>
+                    <ul class="menu-desktop-content">
+                        <li><a href="index.php" target="_self">Inicio</a></li>
+                        <li><a href="nosotros.php" target="_self">Nosotros</a></li>
+                        <li><a href="nuestro_cafe.php" target="_self">Nuestro café</a></li>
+                        <li><a href="proceso.php" target="_self">Proceso</a></li>
+                        <li><a href="products.php" target="_self">Productos</a></li>
+                        <li><a href="noticias.php" target="_self">Noticias</a></li>
+                        <li><a class="active" href="noticias.php" target="_self">Ayuda</a></li>
+                    </ul>
+                </nav>
+                <?php
+                renderHeader()
+                ?>
+            </div>
+
+            <div class="nav-wrapper mobile">
+                <a class="logo" href="index.php" target="_self">
+                    <img alt="Bats'il Maya Logo" class="shadow" src="images/logos/batsil_maya_logo.svg">
+                </a>
+                <nav id="menu-mobile">
+                    <input id="menu-mobile-toggle" type="checkbox">
+                    <label for="menu-mobile-toggle"><span id="menu-icon"></span></label>
+                    <div id="overlay"></div>
+                    <ul class="menu-mobile-content light-bg">
+                        <li><a href="index.php" target="_self">Inicio</a></li>
+                        <li><a href="nosotros.php" target="_self">Nosotros</a></li>
+                        <li><a href="nuestro_cafe.php" target="_self">Nuestro café</a></li>
+                        <li><a href="proceso.php" target="_self">Proceso</a></li>
+                        <li><a href="products.php" target="_self">Productos</a></li>
+                        <li><a href="noticias.php" target="_self">Noticias</a></li>
+                        <li><a href="ayuda.php" target="_self">Ayuda</a></li>
                         <?php
                         renderHeader()
                         ?>
-                </div>
-
-                <div class="nav-wrapper mobile">
-                    <a class="logo" href="index.php" target="_self">
-                        <img alt="Bats'il Maya Logo" class="shadow" src="images/logos/batsil_maya_logo.svg">
-                    </a>
-                    <nav id="menu-mobile">
-                        <input id="menu-mobile-toggle" type="checkbox">
-                        <label for="menu-mobile-toggle"><span id="menu-icon"></span></label>
-                        <div id="overlay"></div>
-                        <ul class="menu-mobile-content light-bg">
-                            <li><a href="index.php" target="_self">Inicio</a></li>
-                            <li><a href="nosotros.php" target="_self">Nosotros</a></li>
-                            <li><a href="nuestro_cafe.php" target="_self">Nuestro café</a></li>
-                            <li><a href="proceso.php" target="_self">Proceso</a></li>
-                            <li><a href="products.php" target="_self">Productos</a></li>
-                            <li><a href="noticias.php" target="_self">Noticias</a></li>
-                            <li><a href="ayuda.php" target="_self">Ayuda</a></li>
-                            <?php
-                            renderHeader()
-                            ?>
-                        </ul>
-                    </nav>
-                </div>
-                <h2 class="h2-header">Carrito</h2>
+                    </ul>
+                </nav>
             </div>
-        </header>
-<div class="container">
-    <section class="grid-cart-list card">
-        <article class="grid-cart-item">
-                <div>
-                    <h3 class="h3-small"> Cafe Orgánico</h3>
-                    <p> Peso y molido</p>
-                </div>
-                    <div class="premium_organico premium_position">
-                        </div>
-                        <p><input id="cantidad" name="cantidad" type="number" max="100" min="0"/></p>
-                    <span class="right-text">$351</span>
-                    <button class="i-be-four-too">Quitar</button>
+            <h2 class="h2-header">Carrito</h2>
+        </div>
+    </header>
+    <div class="container">
+        <section class="grid-cart-list card">
+        <?php
 
-        </article>
-        <article class="grid-cart-item">
-            <div>
-                <h3 class="h3-small">Café Premium</h3>
-                <p> Peso y molido</p>
-            </div>
-                <div class="premium_organico premium_position">
+        if ($cart->total_items() > 0) {
+            // Get cart items from session
+            $cartItems = $cart->contents();
+            foreach ($cartItems as $item) {
+
+                echo "
+            <article class='grid-cart-item'>
+                    <div>
+                        <h3 class='h3-small'>" . $item["name_product"] . "</h3>
+                        <p>" . $item["weight_selector"] . " • " . $item["molido_selector"] . "</p>
                     </div>
-                    <p><input id="cantidad" name="cantidad" type="number" max="100" min="0"/></p>
-                <span class="right-text">$311</span>
-                <button class="i-be-four-too">Quitar</button>
+                        <div class='premium_organico premium_position'>
+                            </div>
+                            <p><input id='" . $item["quantity"] . "' name='" . $item["quantity"] . "' type='number' max='100' min='0'/></p>
+                        <span class='right-text'>$351</span>
+                        <button class='i-be-four-too'>Quitar</button>   
+    
+            </article>";
+            }
+        }
 
-        </article>
-
-    </section>
-
-    <section class="grid-2-space-between crazy-margin">
+        echo "
+        </section>
+    
+        <section class='grid-2-space-between crazy-margin'>
+            <div>
+            <p>Subtotal</p>
+            <p>Envio</p>
+        </div>
         <div>
-        <p>Subtotal</p>
-        <p>Envio</p>
+            <span>$34343</span><br>
+            <span>$34043</span>
+        </div>
+    
+        </section>
+        <section  class='grid-2-space-between crazy-margin'>
+            <p>Total</p>
+            <span>$64043</span>
+        </section>
+        <aside class='right-text'>
+            <p class='button red fit-content'><a class='light' href='confirmardireccion.php' target='_self'>Checkout</a></p>
+        </aside>";
+        ?>
     </div>
-    <div>
-        <span>$34343</span><br>
-        <span>$34043</span>
-    </div>
-
-    </section>
-    <section  class="grid-2-space-between crazy-margin">
-        <p>Total</p>
-        <span>$64043</span>
-    </section>
-    <aside class="right-text">
-        <p class="button red fit-content"><a class="light" href="confirmardireccion.php" target="_self">Checkout</a></p>
-</aside>
-</div>
 
     <div class="bigfoot">
         <div class="curvita white-bg"></div>
@@ -158,7 +171,7 @@ $cart = new Cart;
                         contacto@batsilmaya.org
                     </li>
                     <li class="logo-footer"><a href="index.php" target="_self"><img
-                            alt="Bats'il Maya Logo" src="images/logos/batsil_maya_logo.svg"></a></li>
+                                    alt="Bats'il Maya Logo" src="images/logos/batsil_maya_logo.svg"></a></li>
                     <li id="office1"><strong>Oficina</strong><br>
                         lugar ###<br> Chilón, Chiapas
                     </li>
@@ -168,7 +181,7 @@ $cart = new Cart;
                 </ul>
             </footer>
         </div>
-</div>
+    </div>
 </div>
 </body>
 </html>
