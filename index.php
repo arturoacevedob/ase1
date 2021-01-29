@@ -150,7 +150,7 @@ include 'contact_pending.php';
         <div class="distribution-map mapa mapa-desktop">
             <figure><img alt="Mapa mundi de Bats'il Maya para concocer Dónde están y a Dónde llegan" class="mapa-mundi"
                          src="images/inicio/mapa_mundi_donde_estamos_donde_llegamos_batsil_maya.svg">
-                <button class="map-point boton1 fa fa-map-marker contentm centered-y" aria-hidden="true">
+                <!-- <button class="map-point boton1 fa fa-map-marker contentm centered-y" aria-hidden="true">
                     <div class="contentm">
                         <div class="centered-y">
                             <h2 class="yellow">Bats'il Maya</h2>
@@ -166,7 +166,7 @@ include 'contact_pending.php';
                             <p class="yellow">Primeros compradores desde 1999</p>
                         </div>
                     </div>
-                </button>
+                </button> -->
             </figure>
         </div>
 
