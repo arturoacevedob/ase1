@@ -105,8 +105,6 @@ if (isset($_POST['insert'])) {
             <input id="name_product" type='text' name='name_product' max="" required> <br>
             <label for="description">Descripción</label>
             <input id="description" type='text' name='description' max="" required> <br>
-            <label for="notes">Notas</label>
-            <input id="notes" type='text' name='notes' max="" required> <br>
                 <label for="mayoristas">¿Disponible para mayoristas?</label>
                 <input type='checkbox' name='client_type' id="mayoristas" value='1'>
         </fieldset>
@@ -114,26 +112,14 @@ if (isset($_POST['insert'])) {
         <table>
             <thead>
             <tr>
-                <th>Peso</th>
+                <th></th>
                 <th>Precio</th>
             </tr>
             </thead>
             <tbody>
             <tr>
-                <td><label for="weight1">250gr<input id="weight1" class="checkbox" type="checkbox" name="weight1"
-                                                     value="250"></label></td>
-                <td><input id="price1" type="number" name="price1" maxlength="3" disabled="disabled"></td>
-            </tr>
-            <tr>
-                <td><label for="weight2">500gr</label><input id="weight2" class="checkbox" type="checkbox"
-                                                             name="weight2"
-                                                             value="500"></td>
-                <td><input id="price2" type="number" name="price2" maxlength="3" disabled="disabled"></td>
-            </tr>
-            <tr>
-                <td><label for="weight3">1kg</label><input id="weight3" class="checkbox" type="checkbox" name="weight3"
-                                                           value="1000"></td>
-                <td><input id="price3" type="number" name="price3" maxlength="3" disabled="disabled"></td>
+            <td><label></label></td>
+                <td><input id="price1" type="number" name="price1" maxlength="3"></td>
             </tr>
             </tbody>
         </table>

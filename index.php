@@ -1,10 +1,10 @@
 <?php
-ini_set('display_errors', 1);
+ini_set("display_errors", 1);
 error_reporting(E_ALL);
 
 session_start();
-include 'header.php';
-include 'contact_pending.php';
+include "header.php";
+include "contact_pending.php";
 ?>
 
 <!DOCTYPE html>
@@ -56,9 +56,7 @@ include 'contact_pending.php';
                     <li><a href="ayuda.php" target="_self">Ayuda</a></li>
                 </ul>
             </nav>
-            <?php
-            renderHeader()
-            ?>
+            <?php renderHeader(); ?>
         </div>
 
         <div class="nav-wrapper mobile">
@@ -77,9 +75,7 @@ include 'contact_pending.php';
                     <li><a href="products.php" target="_self">Productos</a></li>
                     <li><a href="noticias.php" target="_self">Noticias</a></li>
                     <li><a href="ayuda.php" target="_self">Ayuda</a></li>
-                    <?php
-                    renderHeader()
-                    ?>
+                    <?php renderHeader(); ?>
                 </ul>
             </nav>
         </div>
@@ -102,31 +98,44 @@ include 'contact_pending.php';
                 $query = "select * from products";
                 $recordSet = execute($query);
 
-                $products = array();
+                $products = [];
                 $counter = 0;
-                while ($row = mysqli_fetch_array($recordSet) AND $counter < 4) {
-                    $products[$counter] = array();
-                    $products[$counter]["id_product"] = $row["id_product"];
-                    $products[$counter]["name_product"] = $row["name_product"];
-                    $products[$counter]["description"] = $row["description"];
-                    $products[$counter]["notes"] = $row["notes"];
-                    $products[$counter]["client_type"] = $row["client_type"];
-                    $counter++;
+                while (
+                  ($row = mysqli_fetch_array($recordSet)) and
+                  $counter < 4
+                ) {
+                  $products[$counter] = [];
+                  $products[$counter]["id_product"] = $row["id_product"];
+                  $products[$counter]["name_product"] = $row["name_product"];
+                  $products[$counter]["description"] = $row["description"];
+                  $products[$counter]["notes"] = $row["notes"];
+                  $products[$counter]["client_type"] = $row["client_type"];
+                  $counter++;
                 }
 
                 for ($i = 0; $i < count($products); $i++) {
+                  $q =
+                    "select image_path from images where images.id_product = " .
+                    $products[$i]["id_product"] .
+                    " limit 1";
+                  $recordSetImage = execute($q);
+                  $image_row = mysqli_fetch_array($recordSetImage);
+                  $image_path = $image_row["image_path"];
 
-                    $q = "select image_path from images where images.id_product = " . $products[$i]['id_product'] . " limit 1";
-                    $recordSetImage = execute($q);
-                    $image_row = mysqli_fetch_array($recordSetImage);
-                    $image_path = $image_row['image_path'];
-
-                    echo "
+                  echo "
                     <section class='ind-product'>
-                        <h3 class='title pname h3-small'>" . $products[$i]['name_product'] . "</h3>
-                        <div style='height: 250px; background: transparent url(" . $image_path . ") 50% 50% / cover no-repeat;'></div>
-                        <p class='pdescription'>" . $products[$i]['description'] . "<br> <a
-                                class='link ' href='product_view.php?idproduct=" . $products[$i]['id_product'] . "' target='_self'>Ver más »</a></p>
+                        <h3 class='title pname h3-small'>" .
+                    $products[$i]["name_product"] .
+                    "</h3>
+                        <div style='height: 250px; background: transparent url(" .
+                    $image_path .
+                    ") 50% 50% / cover no-repeat;'></div>
+                        <p class='pdescription'>" .
+                    $products[$i]["description"] .
+                    "<br> <a
+                                class='link ' href='product_view.php?idproduct=" .
+                    $products[$i]["id_product"] .
+                    "' target='_self'>Ver más »</a></p>
                     </section>";
                 }
                 ?>
