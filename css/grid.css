@@ -1170,7 +1170,7 @@ form textarea {
 
     .llamada {
         display: grid;
-        grid-template-columns: 40% auto;
+        grid-template-columns: 50% auto;
         grid-auto-rows: auto;
         grid-gap: 22px;
     }

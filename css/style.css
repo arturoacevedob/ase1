@@ -1226,7 +1226,7 @@ progress::-webkit-progress-value {
 
   #nuestrocafe #caracteristicas-taza {
     background: url(../images/nuestro_cafe/caracteristicas_del_cafe_batsil_maya.svg)
-      46% 44% / 170% no-repeat !important;
+      46% 44% / 100% no-repeat !important;
   }
 
   .chat h2 {
@@ -1720,7 +1720,7 @@ progress::-webkit-progress-value {
 #nuestrocafe #caracteristicas-taza {
   background: url(../images/nuestro_cafe/caracteristicas_del_cafe_batsil_maya.svg)
     0 0 / contain no-repeat;
-  margin-left: 2em;
+  margin-left: 5em;
 }
 
 .organic-height {
@@ -1839,6 +1839,6 @@ progress::-webkit-progress-value {
 }
 
 #form-ilustracion {
-  background: url(../images/form/hombre_restaurando_cafetal_batsil_maya.svg) 90%
+  background: url(../images/form/hombre_restaurando_cafetal_batsil_maya.svg) 60%
     50% / 60% no-repeat;
 }
