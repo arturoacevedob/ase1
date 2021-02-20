@@ -165,15 +165,15 @@ include "contact_pending.php";
     <h2 class="h2-small">Nuestros Clientes</h2>
     <div class="grid-scroll-x">
         <article>
-            <h3>Benetton</h3>
-            <figure><img alt="Logo de Benetton" src="images/inicio/clients/logo_cliente_benetton_batsil_maya.png">
+            <h3>Universidad Iberoamericana</h3>
+            <figure><img alt="Logo de Universidad Iberoamericana" src="images/inicio/clients/logo_clienta_universidad_iberoamerica_batsil_maya.jpg">
             </figure>
         </article>
         <article>
-            <h3>A&W</h3>
-            <figure><img alt="Logo de A&W" src="images/inicio/clients/logo_cliente_a&w_batsil_maya.png"></figure>
+            <h3>Homework The Future of Work</h3>
+            <figure><img alt="Homework The Future of Work" src="images/inicio/clients/logo_clienta_homework_the_future_of_work_batsil_maya.png"></figure>
         </article>
-        <article>
+        <!--<article>
             <h3>W hotels</h3>
             <figure><img alt="Logo de W hotels" src="images/inicio/clients/logo_cliente_w_hotels_batsil_maya.png">
             </figure>
@@ -186,7 +186,7 @@ include "contact_pending.php";
             <h3>Capeltic</h3>
             <figure><img alt="Logo de Capeltic" src="images/inicio/clients/logo_cliente_capeltic_batsil_maya.png.png">
             </figure>
-        </article>
+        </article>-->
 
     </div>
 </section>
