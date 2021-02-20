@@ -1131,7 +1131,7 @@ form textarea {
     }
 
     .clients .grid-scroll-x {
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .clients .grid-scroll-x img {

@@ -112,6 +112,21 @@ include "contact_pending.php";
         <div class="distribution-map mapa mapa-desktop">
             <figure><img alt="Mapa mundi de Bats'il Maya para concocer Dónde están y a Dónde llegan" class="mapa-mundi"
                          src="images/inicio/mapa_mundi_donde_estamos_donde_llegamos_batsil_maya.svg">
+                <div>
+                    <div>
+                        <h2 class="yellow batsilweb">Bats'il Maya</h2>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h2 class="yellow españaweb">España</h2>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h2 class="yellow usaweb">Estados Unidos</h2>
+                    </div>
+                </div>         
                 
                 
             </figure>
@@ -127,7 +142,12 @@ include "contact_pending.php";
                 </div>
                 <div>
                     <div>
-                        <h2 class="yellow japon">Japón</h2>
+                        <h2 class="yellow españa">España</h2>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h2 class="yellow usa">Estados Unidos</h2>
                     </div>
                 </div>
             </figure>

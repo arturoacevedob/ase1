@@ -1542,20 +1542,23 @@ progress::-webkit-progress-value {
     box-sizing: border-box;
     margin: 0 auto;
   }
-
   .batsil {
     position: absolute;
-    top: 54%;
-    left: 10%;
+    top: 53%;
     font-size: 14px;
-  }
-
-  .japon {
-    position: absolute;
-    top: 42%;
-    left: 84.5%;
-    font-size: 14px;
-  }
+}
+  .españa {
+  position: absolute;
+  top: 35%;
+  left: 47%;
+  font-size: 14px;
+}
+  .usa {
+  position: absolute;
+  top: 34%;
+  left: 0;
+  font-size: 14px;
+}
 
   .mapa-mobil-cafe {
     grid-template-rows: 1fr 2fr;
