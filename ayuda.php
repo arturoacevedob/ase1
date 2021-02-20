@@ -43,52 +43,35 @@ include "header.php";
         <section class="faq">
             <h2 class="h2-small">FAQ</h2>
             <article class="margin-bottom">
-                <h3 class="h3-small">¿Donec mauris tellus, eu, consectetur eu?</h3>
-                <p>Mauris. Pellentesque id nisi vel nulla dignissim posuere. Pellentesque tempor vestibulum ex vel
-                    tempus. Cras fermentum leo eu massa sollicitudin sagittis. Integer ultrices urna turpis, ac varius
-                    lorem aliquet a. Vivamus pellentesque ac purus vel imperdiet.</p>
+                <h3 class="h3-small">¿Qué especie y variedad es nuestro café?</h3>
+                <p>Especie arábiga. Variedades: Typica, Borbon, Caturra, Oro Azteca</p>
             </article>
             <article class="margin-bottom">
-                <h3 class="h3-small">¿Donec mauris tellus, eu, consectetur eu?</h3>
-                <p>Mauris. Pellentesque id nisi vel nulla dignissim posuere. Pellentesque tempor vestibulum ex vel
-                    tempus. Cras fermentum leo eu massa sollicitudin sagittis. Integer ultrices urna turpis, ac varius
-                    lorem aliquet a. Vivamus pellentesque ac purus vel imperdiet.</p>
+                <h3 class="h3-small">¿El café es orgánico?</h3>
+                <p>El café es 100% orgánico como se menciona en el empaque. Para el caso del café Nuestra Mezcla no es 100% orgánico</p>
             </article>
             <article class="margin-bottom">
-                <h3 class="h3-small">¿Donec mauris tellus, eu, consectetur eu?</h3>
-                <p>Mauris. Pellentesque id nisi vel nulla dignissim posuere. Pellentesque tempor vestibulum ex vel
-                    tempus. Cras fermentum leo eu massa sollicitudin sagittis. Integer ultrices urna turpis, ac varius
-                    lorem aliquet a. Vivamus pellentesque ac purus vel imperdiet.</p>
+                <h3 class="h3-small">¿En qué presentación o gramaje se vende el café?</h3>
+                <p>Bolsas de 1 kg. y 454 g. (1 lb).</p>
             </article>
             <article class="margin-bottom">
-                <h3 class="h3-small">¿Donec mauris tellus, eu, consectetur eu?</h3>
-                <p>Mauris. Pellentesque id nisi vel nulla dignissim posuere. Pellentesque tempor vestibulum ex vel
-                    tempus. Cras fermentum leo eu massa sollicitudin sagittis. Integer ultrices urna turpis, ac varius
-                    lorem aliquet a. Vivamus pellentesque ac purus vel imperdiet.</p>
+                <h3 class="h3-small">¿Venden café soluble?</h3>
+                <p>No</p>
             </article>
             <article class="margin-bottom">
-                <h3 class="h3-small">¿Donec mauris tellus, eu, consectetur eu?</h3>
-                <p>Mauris. Pellentesque id nisi vel nulla dignissim posuere. Pellentesque tempor vestibulum ex vel
-                    tempus. Cras fermentum leo eu massa sollicitudin sagittis. Integer ultrices urna turpis, ac varius
-                    lorem aliquet a. Vivamus pellentesque ac purus vel imperdiet.</p>
+                <h3 class="h3-small">¿Cuál es la diferencia entre el café Orgánico Gourmet y el Orgánico?</h3>
+                <p>Hay una parte del procesamiento, llamada "beneficio seco",
+                donde se separan los granos de café por tamaño y peso. Una vez separados, 
+                los granos que mantienen un mayor tamaño y mejor cuerpo, son los utilizados para el Café Capeltic Gourmet, 
+                mientras que los granos de menor tamaño son para el Café Capeltic Orgánico. </p>
             </article>
             <article class="margin-bottom">
-                <h3 class="h3-small">¿Donec mauris tellus, eu, consectetur eu?</h3>
-                <p>Mauris. Pellentesque id nisi vel nulla dignissim posuere. Pellentesque tempor vestibulum ex vel
-                    tempus. Cras fermentum leo eu massa sollicitudin sagittis. Integer ultrices urna turpis, ac varius
-                    lorem aliquet a. Vivamus pellentesque ac purus vel imperdiet.</p>
+                <h3 class="h3-small">¿Qué sabor o calidad es el café Nuestra Mezcla?</h3>
+                <p>Es una mezcla que une diferentes tipos de granos y presenta un sabor afrutado y acidez cítrica ligera</p>
             </article>
             <article class="margin-bottom">
-                <h3 class="h3-small">¿Donec mauris tellus, eu, consectetur eu?</h3>
-                <p>Mauris. Pellentesque id nisi vel nulla dignissim posuere. Pellentesque tempor vestibulum ex vel
-                    tempus. Cras fermentum leo eu massa sollicitudin sagittis. Integer ultrices urna turpis, ac varius
-                    lorem aliquet a. Vivamus pellentesque ac purus vel imperdiet.</p>
-            </article>
-            <article class="margin-bottom">
-                <h3 class="h3-small">¿Donec mauris tellus, eu, consectetur eu?</h3>
-                <p>Mauris. Pellentesque id nisi vel nulla dignissim posuere. Pellentesque tempor vestibulum ex vel
-                    tempus. Cras fermentum leo eu massa sollicitudin sagittis. Integer ultrices urna turpis, ac varius
-                    lorem aliquet a. Vivamus pellentesque ac purus vel imperdiet.</p>
+                <h3 class="h3-small">¿Hacen envíos a cualquier parte de México?</h3>
+                <p>Contamos con el servicio de envío a cualquier área dentro del país (México).</p>
             </article>
         </section>
         <div class="grid-contactanos">
