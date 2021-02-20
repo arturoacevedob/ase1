@@ -39,15 +39,15 @@ function renderContactForm()
                     <label for='phone_client_pending'> Número telefónico </label>
                     <div class='tel-wrapper'>
 
-                        <select class='num-list' name='country-codes'>
+                        <!--<select class='num-list' name='country-codes'>
                             <option data - countryCode='MX' selected value='52'> MX(+52)</option>
                             <optgroup label='Otros paises'>
                                 <option data - countryCode='ES' value='34'> Spain(+34)</option>
                                 <option data - countryCode='GB' value='44'> UK(+44)</option>
                                 <option data - countryCode='US' value='1'> USA(+1)</option>
                             </optgroup>
-                        </select>
-                        <input class='phone_with_ddd dependent-input' id='phone_client_pending'
+                        </select>-->
+                        <input class='phone_with_ddd <!--dependent-input-->' id='phone_client_pending'
                                name='phone_client_pending' placeholder='(55) 1234-5678'
                                required
                                type='tel'>
