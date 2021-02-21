@@ -114,17 +114,17 @@ include "contact_pending.php";
                          src="images/inicio/mapa_mundi_donde_estamos_donde_llegamos_batsil_maya.svg">
                 <div>
                     <div>
-                        <h2 class="yellow batsilweb">Bats'il Maya</h2>
+                        <h2 class="yellow batsilweb1">Bats'il Maya</h2>
                     </div>
                 </div>
                 <div>
                     <div>
-                        <h2 class="yellow españaweb">España</h2>
+                        <h2 class="yellow españaweb1">España</h2>
                     </div>
                 </div>
                 <div>
                     <div>
-                        <h2 class="yellow usaweb">Estados Unidos</h2>
+                        <h2 class="yellow usaweb1">Estados Unidos</h2>
                     </div>
                 </div>         
                 

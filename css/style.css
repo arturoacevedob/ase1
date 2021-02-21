@@ -1528,6 +1528,24 @@ progress::-webkit-progress-value {
   .help-margin-top-button {
     margin-top: 10px;
   }
+  .batsilweb1 {
+    position: absolute;
+    top: 56%;
+    left: 13%;
+    font-size: 16px;
+  }
+  .españaweb1 {
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  font-size: 16px;
+  }
+  .usaweb1 {
+  position: absolute;
+  top: 41%;
+  left: 1%;
+  font-size: 16px;
+  }
 }
 
 @media screen and (min-width: 320px) {
@@ -1544,18 +1562,19 @@ progress::-webkit-progress-value {
   }
   .batsil {
     position: absolute;
-    top: 53%;
+    top: 55%;
+    left: 11%;
     font-size: 14px;
 }
   .españa {
   position: absolute;
-  top: 35%;
-  left: 47%;
+  top: 34%;
+  left: 38%;
   font-size: 14px;
 }
   .usa {
   position: absolute;
-  top: 34%;
+  top: 41%;
   left: 0;
   font-size: 14px;
 }
