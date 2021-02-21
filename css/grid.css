@@ -1562,8 +1562,8 @@ form textarea {
     .mobile-family {
         display: none;
     }
-    .faq article p {
-        margin-top: 10px;
-    }
-
+  
+}
+.faq article p {
+    margin-top: 10px;
 }
