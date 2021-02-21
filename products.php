@@ -130,7 +130,7 @@ include "contact_pending.php";
         </div>
     </aside>
 
-    <aside class="product dark-bg light">
+    <!--<aside class="product dark-bg light">
         <div class="container-sequel">
             <h2 class="product-title">Extras</h2>
         </div>
@@ -162,7 +162,7 @@ include "contact_pending.php";
                 </section>
             </div>
         </div>
-    </aside>
+    </aside>--->
 
     <!--    Considerar oolocar un 3er producto para demostrar scroll-X-->
     <aside class="product yellow-bg dark padding-top">
