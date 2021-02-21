@@ -11,7 +11,7 @@ if (!isset($_SESSION['user'])) {
     die();
 }
 
-function createCoffeeListOptions()
+function createHoneyListOptions()
 {
     /*$query = "select products.id_product, images.image_path from images inner join products on products.id_product = images.id_product;";
     execute($query);*/
@@ -25,7 +25,6 @@ function createCoffeeListOptions()
         $products[$counter]["id_product"] = $row["id_product"];
         $products[$counter]["name_product"] = $row["name_product"];
         $products[$counter]["description"] = $row["description"];
-        $products[$counter]["notes"] = $row["notes"];
         $products[$counter]["client_type"] = $row["client_type"];
         $counter++;
     }
@@ -152,10 +151,10 @@ function createCoffeeListOptions()
 
     <div class="b-grey">
     <div class="grid-2-space-between give-me-gap">
-        <div>
+       <!-- <div>
             <label class="kill" for="search"></label>
             <input id="search" placeholder="Buscar" type="search">
-        </div>
+        </div>-->
         <a class="button red limited-width" href='crud_product/create_product_honey.php'>Agregar productos</a></div>
     <div class="grid-1-1 give-me-gap margin-top-thing">
         <?php

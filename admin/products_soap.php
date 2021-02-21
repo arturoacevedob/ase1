@@ -151,10 +151,10 @@ function createCoffeeListOptions()
 
     <div class="b-grey">
     <div class="grid-2-space-between give-me-gap">
-        <div>
+      <!--  <div>
             <label class="kill" for="search"></label>
             <input id="search" placeholder="Buscar" type="search">
-        </div>
+        </div>-->
         <a class="button red limited-width" href='crud_product/create_product_soap.php'>Agregar productos</a></div>
     <div class="grid-1-1 give-me-gap margin-top-thing">
         <?php
