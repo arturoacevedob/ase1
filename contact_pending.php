@@ -16,6 +16,9 @@ if (isset($_POST["insert"])) {
   execute($query);
 
   $content = nl2br($name_client_pending . "\n" . $email_client_pending . "\n" . $phone_client_pending . "\nEl cliente quiere ser contactado el día " . $day_client_pending . ", entre las " . $from_client_pending . " y " . $to_client_pending . " horas.");
+  
+  $receiver = ""
+  
   mail($email_client_pending, "Bats'il Maya — Nueva solicitud de contacto", $content);
 
   header("Location: index.php");
