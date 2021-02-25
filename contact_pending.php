@@ -15,6 +15,9 @@ if (isset($_POST["insert"])) {
   $query = "insert into clients_pending (name_client_pending, email_client_pending, phone_client_pending, day_client_pending, from_client_pending, to_client_pending) values ('$name_client_pending', '$email_client_pending', '$phone_client_pending', '$day_client_pending', '$from_client_pending', '$to_client_pending')";
   execute($query);
 
+  $email = $_POST["email"];
+  mail($email_client_pending, "Test Batsil email", $email);
+
   header("Location: index.php");
 }
 

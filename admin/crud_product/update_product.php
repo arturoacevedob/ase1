@@ -169,7 +169,7 @@ if (isset($_POST['update'])) {
     </div>
     <div class="bottom-thing grid-1-1-1-1 give-me-gap">
         <a class="exterminate" href='delete_product.php?idproduct=<?php echo $id_product; ?>'>Eliminar</a>
-        <a class="button red-outline limited-width-2 cancel" href=''>Cancelar</a>
+        <a class="button red-outline limited-width-2 cancel" href='../products_coffee.php'>Cancelar</a>
         <input class="button red limited-width-2 limited-height" type="submit" value="Guardar cambios">
     </div>
 </form>
