@@ -15,8 +15,8 @@ if (isset($_POST["insert"])) {
   $query = "insert into clients_pending (name_client_pending, email_client_pending, phone_client_pending, day_client_pending, from_client_pending, to_client_pending) values ('$name_client_pending', '$email_client_pending', '$phone_client_pending', '$day_client_pending', '$from_client_pending', '$to_client_pending')";
   execute($query);
 
-  $email = $_POST["email"];
-  mail($email_client_pending, "Test Batsil email", $email);
+  $content = nl2br($name_client_pending . "\n" . $email_client_pending . "\n" . $phone_client_pending . "\nEl cliente quiere ser contactado el día " . $day_client_pending . ", entre las " . $from_client_pending . " y " . $to_client_pending . " horas.");
+  mail($email_client_pending, "Bats'il Maya — Nueva solicitud de contacto", $content);
 
   header("Location: index.php");
 }
