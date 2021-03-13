@@ -216,6 +216,7 @@ nav a:visited {
 
 /* Toolbar */
 .grid-2-space-between {
+    padding: 8px 2px;
     display: grid;
     grid-auto-flow: column;
     justify-content: space-between;
