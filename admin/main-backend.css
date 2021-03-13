@@ -231,6 +231,7 @@ nav a:visited {
 
 /* Wrappers */
 .wrapper {
+    margin: 2vw 25vw 0vw 40vh;
     background-color: white;
     border-radius: 15px;
     border: 1px solid black;
@@ -359,8 +360,10 @@ caption {
 }
 
 table {
-    width: 100%;
+    width: 65%;
+    padding: 12px 12px;
     border-spacing: 0;
+    
 }
 
 th {
@@ -728,7 +731,9 @@ nav ul a{
 }
 
 #search{
-    max-width: 280px;
+    max-width: 580px;
+    margin: 72px 622px 5px 0px;
+    background-color: #f2f2f2;
 }
 
 .edit-pencil{
