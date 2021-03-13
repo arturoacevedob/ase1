@@ -15,6 +15,7 @@
     --a-visited: #cccbc6;
     --a-hover: #EA9A07;
     --a-active: #ffb133;
+    background-color: black;
 
     --button-link: var(--red);
     --button-visited: #CC6A14;
