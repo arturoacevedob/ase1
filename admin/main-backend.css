@@ -731,8 +731,12 @@ nav ul a{
 
 #search{
     max-width: 580px;
-    margin: 72px 622px 5px 0px;
+    margin: 72px 422px 5px 0px;
     background-color: #f2f2f2;
+}
+
+body > div > div > div > button {
+    margin: 2px 234px 12px 5px;
 }
 
 .edit-pencil{
