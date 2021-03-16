@@ -25,6 +25,7 @@ function createCoffeeListOptions()
         $products[$counter]["id_product"] = $row["id_product"];
         $products[$counter]["name_product"] = $row["name_product"];
         $products[$counter]["description"] = $row["description"];
+        $products[$counter]["notes"] = $row["notes"];
         $products[$counter]["client_type"] = $row["client_type"];
         $counter++;
     }
