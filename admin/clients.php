@@ -388,9 +388,7 @@ function createClientList()
         <li><a class="active bold cliente-active"  href="clients.php" target="_self">Clientes</a></li>
         <li><a class="pedidos-disactive"href="orders-pending-backend.php " target="_self">Pedidos</a></li>
         <li><a class="productos-disactive" href="products_coffee.php " target="_self">Productos</a></li>
-       <!--  <li><a href="blog.php" target="_self">Blog</a></li> -->
-
-    </ul>
+        <li><a class="blog-disactive" href="blog.php" target="_self">Blog</a></li></ul>
     <ul class="lonely-ul">
         <li><a class="ayuda-disactive" href="user_manual.pdf" target="_black" download="">Manual de uso</a></li>
         <li><a class="cerrar-disactive"href='login.php?killsession=1'>Cerrar Sesión</a></li>
