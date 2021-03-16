@@ -189,7 +189,7 @@ include "agregar_producto.php";
             <div style='background: url($image_path) 50% 50% / cover no-repeat;' class='premium_organico'>
             </div>
         </article>";
-        ?>
+        ?z>
 
     </section>
     <section class="container">

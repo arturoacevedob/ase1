@@ -50,9 +50,8 @@ include "contact_pending.php";
         </div>
         <div class="gridbigproduct container">
             <div class="grid-scroll-x">
-
                 <?php
-                $query = "select * from products";
+                $query = "select * from products where id_category = 1";
                 $recordSet = execute($query);
 
                 $products = [];
@@ -93,39 +92,6 @@ include "contact_pending.php";
                     </section>";
                 }
                 ?>
-
-                <!--<section class="ind-product">
-                    <h3 class="title pname h3-small">Premium Orgánico</h3>
-                    <figure class="pimage"><img
-                                alt="Granos de café premium orgánico de Bats'il Maya"
-                                src="images/productos/cafe/granos_de_cafe_premium_organico_batsil_maya.jpg"></figure>
-                    <p class="pdescription">Únicamente granos que cumplen los más altos estándares de calidad.<br> <a
-                                class="link " href="product-view.php" target="_self">Ver más »</a></p>
-                </section>
-                <section class="ind-product">
-                    <h3 class="title pname h3-small">Gourmet Orgánico</h3>
-                    <figure class="pimage"><img
-                                alt="Granos de café gourmet orgánico de Bats'il Maya"
-                                src="images/productos/cafe/granos_de_cafe_gourmet_organico_batsil_maya.jpg"></figure>
-                    <p class="pdescription">Granos con preparación europea son seleccionados cuidadosamente.<br> <a
-                                class="link" href="" target="_self">Ver más »</a></p>
-                </section>
-                <section class="ind-product">
-                    <h3 class="title pname h3-small">Orgánico</h3>
-                    <figure class="pimage"><img alt="Granos de café orgánico de Bats'il Maya"
-                                                src="images/productos/cafe/granos_de_cafe_organico_batsil_maya.jpg">
-                    </figure>
-                    <p class="pdescription">Un café de preparación americana con excelente calidad.<br> <a
-                                class="link" href="" target="_self">Ver más »</a></p>
-                </section>
-                <section class="ind-product">
-                    <h3 class="title pname h3-small">Descafeinado</h3>
-                    <figure class="pimage"><img alt="Granos de café descafeinado de Bats'il Maya"
-                                                src="images/productos/cafe/granos_de_cafe_descafeinado_batsil_maya.jpg">
-                    </figure>
-                    <p class="pdescription">Para aquellas personas que desean disfrutar un rico café libre de cafeína.<br>
-                        <a class="link" href="" target="_self">Ver más »</a></p>
-                </section>-->
             </div>
         </div>
     </aside>
