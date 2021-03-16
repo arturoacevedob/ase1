@@ -15,7 +15,7 @@ function createHoneyListOptions()
 {
     /*$query = "select products.id_product, images.image_path from images inner join products on products.id_product = images.id_product;";
     execute($query);*/
-    $query = "select * from products;";
+    $query = "select * from products where id_category = 2";
     $recordSet = execute($query);
 
     $products = array();

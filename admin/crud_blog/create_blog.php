@@ -14,7 +14,7 @@ if (!isset($_SESSION['user'])) {
 
 if (isset($_POST['insert'])) {
     $uploadOk = 0;
-    $name_blog = $_POST['name_blog'];
+    $title_blog = $_POST['title_blog'];
     $date_blog = $_POST['date_blog'];
     
 
@@ -31,7 +31,7 @@ if (isset($_POST['insert'])) {
     }
 
     if ($uploadOk == 1) {
-        $q = "insert into blogs (name_blog, date_blog,image_path,id_blog) values ('$name_blog','$date_blog','$relativePath', '$id_blog')";
+        $q = "insert into blogs (title_blog, date_blog,image_path,id_blog) values ('$title_blog','$date_blog','$relativePath', '$id_blog')";
         $id_blog = execute($q);
 
         
@@ -60,10 +60,10 @@ if (isset($_POST['insert'])) {
 
     <input type='hidden' name='insert' value='insert'>
 
-    <label for="name_blog">Nombre de la Noticia</label>
-    <input id="name_blog" type='text' name='name_blog' max=""> <br>
-    <label for="date_blog">Fecha</label>
-    <input id="date_blog" type='date' name='date_blog' max=""> <br>
+    <label for="title_blog">Título de la Noticia</label>
+    <input id="title_blog" type='text' name='title_blog' max="100"> <br>
+    <label for="image_path_blog">Imagen</label>
+    <input id="image_path_blog" type='date' name='image_path_blog'> <br>
 
 
     <!--<input type="file" id="file-input" name="image_path" multiple/>
