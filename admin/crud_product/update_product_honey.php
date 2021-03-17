@@ -96,7 +96,7 @@ if (isset($_POST['update'])) {
         execute($q);
     }
 
-    header("Location: ../products_coffee.php");
+    header("Location: ../products_honey.php");
 }
 ?>
 
@@ -109,7 +109,7 @@ if (isset($_POST['update'])) {
 <body class="padding-for-all">
 <h1>Productos</h1>
 
-<form class="round-red-border" action='update_product.php' method='post' enctype='multipart/form-data'>
+<form class="round-red-border" action='update_product_honey.php' method='post' enctype='multipart/form-data'>
     <div class="grid-1-1-1 padding-for-all-2 give-me-gap">
         <fieldset>
             <input type='hidden' name='update' value='update'>
@@ -168,7 +168,7 @@ if (isset($_POST['update'])) {
     </div>
     <div class="bottom-thing grid-1-1-1-1 give-me-gap">
         <a class="exterminate" href='delete_product.php?idproduct=<?php echo $id_product; ?>'>Eliminar</a>
-        <a class="button red-outline limited-width-2 cancel" href='../products_coffee.php'>Cancelar</a>
+        <a class="button red-outline limited-width-2 cancel" href='../products_honey.php'>Cancelar</a>
         <input class="button red limited-width-2 limited-height" type="submit" value="Guardar cambios">
     </div>
 </form>
