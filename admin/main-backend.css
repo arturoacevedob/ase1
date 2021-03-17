@@ -234,7 +234,6 @@ nav a:visited {
 
 /* Wrappers */
 .wrapper {
-    margin: 2vw 25vw 0vw 45vh;
     background-color: white;
     border-radius: 15px;
     border: 1px solid black;
@@ -339,6 +338,11 @@ nav a:visited {
     grid-row: 1;
     justify-self: right;
 }
+
+#tracking-number{
+    height: 40px;
+}
+
 .bottom-thing .cancel{
     grid-column: 4;
     justify-self: left;
@@ -449,6 +453,16 @@ table.expandable-table > tbody > tr.expanded-view.open {
     transition: background-color var(--time) var(--ease);
     cursor: pointer;
 }
+
+#tracking-number{
+    height: 40px;
+    width: 330px;
+}
+
+button.button.red.limited-width-2.limited-height.kill-that-border {
+    margin: 0px 39px 0px 46px;
+}
+
 .formbutton{
     padding: 25px 0 0 0;
 }
@@ -463,8 +477,8 @@ input.button {
 }
 .button.red-outline {
     padding: calc(var(--button-padding) - 0.20rem);
-    background-color: transparent;
-    color: var(--red);
+    background-color: var(--red);
+    color: var(--light);
     border: 3px solid var(--red);
     transition: border var(--time) var(--ease);
 }
@@ -644,6 +658,11 @@ nav ul a{
     border-top: 2px solid var(--coral);
     border-bottom: 2px solid var(--coral);
 }
+
+form > input[type=submit] {
+    margin: 12px 0px;
+}
+
 .border-thing table, .border-thing caption{
     padding-left: 20px;
     border-left: 2px solid var(--coral);
@@ -731,14 +750,11 @@ nav ul a{
     margin-top: 50% !important;
 }
 
-body > div > div > h1 {
-    margin: 75px -1px 0px 323px;
-}
 
 #search{
-    max-width: 400px;
-    margin: 79px 248px 4px 48px;
-    background-color: #f2f2f2;
+    max-width: 589px;
+    margin: 0px 200px -0px 4px;
+    background-color: white;
 }
 
 body > div > div > div > button {
