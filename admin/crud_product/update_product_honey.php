@@ -121,7 +121,7 @@ if (isset($_POST['update'])) {
             <label for="description">Descripción</label>
             <input id="description" type='text' name='description' value="<?php echo $description; ?>" maxlength="">
             <br>
-            <label for="notes">Notas</label>
+            <label for="notes">Sabores</label>
             <input id="notes" type='text' name='notes' value="<?php echo $notes; ?>" maxlength=""> <br>
             <label for="client_type">¿Disponible para mayoristas?</label>
             <input type='hidden' name='client_type' value='0'>
@@ -137,23 +137,17 @@ if (isset($_POST['update'])) {
             </thead>
             <tbody>
             <tr>
-                <td><label for="weight1">250gr<input id="weight1" class="checkbox" type="checkbox" name="weight1"
-                                                     value="250" <?php if ($weight1 == '250') echo 'checked="checked"'; ?>></label>
+                <td><label for="weight1">290gr<input id="weight1" class="checkbox" type="checkbox" name="weight1"
+                                                     value="290" <?php if ($weight1 == '290') echo 'checked="checked"'; ?>></label>
                 </td>
                 <td><input id="price1" type="number" name="price1" maxlength="3" value="<?php echo $price1; ?>"></td>
             </tr>
             <tr>
-                <td><label for="weight2">500gr</label><input id="weight2" class="checkbox" type="checkbox"
+                <td><label for="weight2">600gr</label><input id="weight2" class="checkbox" type="checkbox"
                                                              name="weight2"
-                                                             value="500" <?php if ($weight2 == '500') echo 'checked="checked"'; ?>>
+                                                             value="600" <?php if ($weight2 == '600') echo 'checked="checked"'; ?>>
                 </td>
                 <td><input id="price2" type="number" name="price2" maxlength="3" value="<?php echo $price2; ?>"></td>
-            </tr>
-            <tr>
-                <td><label for="weight3">1kg</label><input id="weight3" class="checkbox" type="checkbox" name="weight3"
-                                                           value="1000" <?php if ($weight3 == '1000') echo 'checked="checked"'; ?>>
-                </td>
-                <td><input id="price3" type="number" name="price3" maxlength="3" value="<?php echo $price3; ?>"></td>
             </tr>
             </tbody>
         </table>

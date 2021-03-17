@@ -44,7 +44,7 @@ function createHoneyListOptions()
             <div class='grid-ind-product'>
                 <h3>" . $products[$i]["name_product"] . "<span>" . $products[$i]["client_type"] . "</span><h3>
                 <span>
-                <p class='edit-pencil'><a href='crud_product/update_product.php?idproduct=" . $products[$i]["id_product"] . "' aria-label='Editar'></a></p>
+                <p class='edit-pencil'><a href='crud_product/update_product_honey.php?idproduct=" . $products[$i]["id_product"] . "' aria-label='Editar'></a></p>
                 </span>
                 </div>
                 <p>" . $products[$i]["description"] . "</p>
