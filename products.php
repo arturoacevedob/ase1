@@ -230,7 +230,49 @@ include "contact_pending.php";
         </div>
         <div class="gridbigproduct container">
             <div class="grid-scroll-x">
-                <section class="ind-product">
+            <?php
+                $query = "select * from products where id_category = 3";
+                $recordSet = execute($query);
+
+                $products = [];
+                $counter = 0;
+                while ($row = mysqli_fetch_array($recordSet)) {
+                  $products[$counter] = [];
+                  $products[$counter]["id_product"] = $row["id_product"];
+                  $products[$counter]["name_product"] = $row["name_product"];
+                  $products[$counter]["description"] = $row["description"];
+                  $products[$counter]["notes"] = $row["notes"];
+                  $products[$counter]["client_type"] = $row["client_type"];
+                  $counter++;
+                }
+
+                for ($i = 0; $i < count($products); $i++) {
+                  $q =
+                    "select image_path from images where images.id_product = " .
+                    $products[$i]["id_product"] .
+                    " limit 1";
+                  $recordSetImage = execute($q);
+                  $image_row = mysqli_fetch_array($recordSetImage);
+                  $image_path = $image_row["image_path"];
+
+                  echo "
+                    <section class='ind-product'>
+                        <h3 class='title pname h3-small'>" .
+                    $products[$i]["name_product"] .
+                    "</h3>
+                        <div style='height: 250px; background: transparent url(" .
+                    $image_path .
+                    ") 50% 50% / cover no-repeat;'></div>
+                        <p class='pdescription'>" .
+                    $products[$i]["description"] .
+                    "<br> <a
+                                class='link ' href='product_view.php?idproduct=" .
+                    $products[$i]["id_product"] .
+                    "' target='_self'>Ver más »</a></p>
+                    </section>";
+                }
+                ?>
+                <!--<section class="ind-product">
                     <h3 class="title pname h3-small">Jabón hotelero</h3>
                     <figure class="pimage"><img
                                 alt="Jabón hotelero de Bats'il Maya"
@@ -261,7 +303,7 @@ include "contact_pending.php";
                     </figure>
                     <p class="pdescription">Para aquellas personas que desean disfrutar un rico café libre de cafeína.<br>
                         <a class="link" href="" target="_self">Ver más »</a></p>
-                </section>
+                </section>-->
             </div>
         </div>
         <div class="center-aligned container-sequel">
