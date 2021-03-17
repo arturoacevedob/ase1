@@ -69,10 +69,7 @@ if (isset($_POST['insert'])) {
         execute($q);
     }
 
-    if (isset($_POST['weight3']) AND isset($_POST['price3'])) {
-        $q = "insert into weight_price (weight3, price3, id_product) values ('$weight3', '$price3', '$id_product')";
-        execute($q);
-    }
+    
 
     if ($uploadOk == 1) {
         $q = "insert into images (image_path, id_product) values ('$relativePath', '$id_product')";
