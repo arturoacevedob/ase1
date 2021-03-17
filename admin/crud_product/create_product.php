@@ -49,7 +49,7 @@ if (isset($_POST['insert'])) {
         }
     }
 
-    $q = "insert into products (name_product, description, notes) values ('$name_product','$description','$notes')";
+    $q = "insert into products (name_product, description, notes) values ('$name_product','$description','$notes', 3)";
     $id_product = execute($q);
 
     if (isset($_POST['client_type'])) {
