@@ -5,49 +5,8 @@ error_reporting(E_ALL);
 session_start();
 include "header.php";
 include "contact_pending.php";
+include "createBlogList.php"
 
-function createBlogList() {
-    $query = "select * from blog ORDER BY date DESC;";
-    $recordSet = execute($query);
-
-    $blogs = array();
-    $counter = 0;
-    while ($row = mysqli_fetch_array($recordSet)) {
-        $blogs[$counter] = array();
-        $blogs[$counter]["id"] = $row["id"];
-        $blogs[$counter]["title"] = $row["title"];
-        $blogs[$counter]["date"] = $row["date"];
-        $blogs[$counter]["image_path"] = $row["image_path"];
-        $counter++;
-    }
-
-    echo "
-    <section class='container'>
-        <h2 class='red h2-small'>Última noticia</h2>
-        <article class='latest-news news-item news-text' style='background: linear-gradient(to top, rgba(61, 40, 10, 1), rgba(255, 255, 255, 0) 50%), url(../" . $blogs[0]["image_path"] . ") 50% 50% / cover no-repeat;'>
-            <h3 class='light'>" . $blogs[0]["title"] . "</h3>
-            <p class='light'>" . $blogs[0]["date"] . "</p>
-        </article>
-    </section>
-    <section class='container-sequel'>
-        <h2 class='h2-small red'>Más noticias</h2>
-        <div class='grid-news-page light'>
-    ";
-
-    for ($i = 1; $i < count($blogs); $i++) {
-        echo "
-        <article class='news-item news-text' style='background: linear-gradient(to top, rgba(61, 40, 10, 1), rgba(255, 255, 255, 0) 50%), url(../" . $blogs[$i]["image_path"] . ") 50% 50% / cover no-repeat;'>
-            <h3>" . $blogs[$i]["title"] . "</h3>
-            <p>" . substr($blogs[$i]["date"], 0, 10) . "</p>
-        </article>
-        ";
-    }
-    
-    echo "
-        </div>
-    </section>
-    ";
-}
 ?>
 
 <!DOCTYPE html>
@@ -82,12 +41,13 @@ function createBlogList() {
     <div>
         <header>
             <?php renderHeader(); ?>
+            <h2 class='h2-header'>Noticias</h2>
+    </div>
+    </header>
         </header>
     </div>
 
-    <?php
-    createBlogList()
-    ?>
+    <?php createBlogList(); ?>
 
     <aside>
         <div class="extra-articles">
@@ -108,7 +68,7 @@ function createBlogList() {
             <div class="join">
                 <?php renderContactForm(); ?>
             </div>
-        <div id="form-ilustracion"></div>
+            <div id="form-ilustracion"></div>
         </section>
     </div>
     <div class="bigfoot">

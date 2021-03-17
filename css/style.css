@@ -667,34 +667,6 @@ header a {
   margin: auto;
 }
 
-/* —————— Noticias —————— */
-.gridnews article h3 {
-  padding-left: 3%;
-  color: var(--light);
-}
-
-.gridnews p {
-  padding: 0 0 3% 3%;
-  color: var(--light);
-}
-
-.one {
-  background: url(../images/noticias/conoce_nuevo_capeltic_universidad_iberoamericana_cdmx_batsil_maya.jpg)
-    0 57% / cover no-repeat;
-}
-
-.two {
-  background: url(../images/noticias/noticia2.jpg) 52% 60% / cover no-repeat;
-}
-
-.three {
-  background: url(../images/noticias/noticia3.jpg) 0 39% / cover no-repeat;
-}
-
-.four {
-  background: url(../images/noticias/noticia4.jpg) 0 38% / cover no-repeat;
-}
-
 /* —————— gridthree2 —————— */
 
 .gridthree2 {
@@ -1427,24 +1399,6 @@ progress::-webkit-progress-value {
     margin: 0 auto 11%;
   }
 
-  /* —————— certificados —————— */
-  .one {
-    background: url(../images/noticias/conoce_nuevo_capeltic_universidad_iberoamericana_cdmx_batsil_maya.jpg)
-      0 73% / cover no-repeat;
-  }
-
-  .two {
-    background: url(../images/noticias/noticia2.jpg) 52% 7% / cover no-repeat;
-  }
-
-  .three {
-    background: url(../images/noticias/noticia3.jpg) 0 29% / cover no-repeat;
-  }
-
-  .four {
-    background: url(../images/noticias/noticia4.jpg) 0 38% / cover no-repeat;
-  }
-
   /* —————— AQUÍ EMPIEZAN ESTILOS DE NOSOTROS—————— */
   .wrapper-text {
     padding: 4% 8% 4% 3%;
@@ -1818,12 +1772,21 @@ progress::-webkit-progress-value {
       no-repeat;
 }
 
-.news-text h3 {
+.blog-view img {
+  width: 100%;
+  padding-bottom: 2em;
+}
+
+.blog-view h2 {
+  padding-bottom: .25em;
+}
+
+.blog-item h3 {
   padding: 0 20px;
   color: var(--light);
 }
 
-.news-text p {
+.blog-item p {
   padding: 0 20px 20px 20px;
   color: var(--light);
 }

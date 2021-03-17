@@ -1,0 +1,12 @@
+{
+  "name": "batsil-maya",
+  "version": "1.0.0",
+  "dependencies": {},
+  "scripts": {
+    "prettier": "prettier"
+  },
+  "devDependencies": {
+    "@prettier/plugin-php": "^0.16.1",
+    "prettier": "^2.2.1"
+  }
+}
