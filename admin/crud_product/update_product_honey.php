@@ -7,7 +7,7 @@ include '../connection.php';
 // Entra aquí si se manda por URL (GET) el ID de producto.
 if (isset($_GET['idproduct'])) {
     $id_product = $_GET['idproduct'];
-    $query = "select * from products, weight_price, images where products.id_product = $id_product AND weight_price.id_product = $id_product AND images.id_product = $id_product";
+    $query = "select * from products, weight_price, images where products.id_product = $id_product AND weight_price.id_product = $id_product AND images.id_product = $id_product AND products.id_category = 2";
     $recordSet = execute($query);
     if ($row = mysqli_fetch_array($recordSet)) {
         $name_product = $row['name_product'];
@@ -51,8 +51,8 @@ if (isset($_POST['update'])) {
         $fileName = strtolower($_FILES['image_path']['name']);
         $fileName = preg_replace('/\s*/', '', $fileName);
         $tempFile = $_FILES['image_path']['tmp_name'];
-        $fileNamePath = '../../images/productos/cafe/' . $fileName;
-        $relativePath = 'images/productos/cafe/' . $fileName;
+        $fileNamePath = '../../images/productos/miel/' . $fileName;
+        $relativePath = 'images/productos/miel/' . $fileName;
 
         if (!move_uploaded_file($tempFile, $fileNamePath)) {
             echo "Error al cargar el archivo.";

@@ -51,8 +51,8 @@ if (isset($_POST['update'])) {
         $fileName = strtolower($_FILES['image_path']['name']);
         $fileName = preg_replace('/\s*/', '', $fileName);
         $tempFile = $_FILES['image_path']['tmp_name'];
-        $fileNamePath = '../../images/productos/cafe/' . $fileName;
-        $relativePath = 'images/productos/cafe/' . $fileName;
+        $fileNamePath = '../../images/productos/jabones/' . $fileName;
+        $relativePath = 'images/productos/jabones/' . $fileName;
 
         if (!move_uploaded_file($tempFile, $fileNamePath)) {
             echo "Error al cargar el archivo.";
