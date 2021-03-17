@@ -5,6 +5,8 @@ error_reporting(E_ALL);
 session_start();
 include "header.php";
 include "contact_pending.php";
+include "createBlogList.php"
+
 ?>
 
 <!DOCTYPE html>
@@ -39,53 +41,13 @@ include "contact_pending.php";
     <div>
         <header>
             <?php renderHeader(); ?>
+            <h2 class='h2-header'>Noticias</h2>
+    </div>
+    </header>
         </header>
     </div>
-    <section class="container">
-        <h2 class="red h2-small">Ultima noticia</h2>
-        <article class="ultima-noticia-1 news-item news-text">
-            <h3 class="light">Noticia 1</h3>
-            <p class="light">fecha</p>
-        </article>
-    </section>
 
-    <section class="container-sequel">
-        <h2 class="h2-small red">Más noticias</h2>
-        <div class="grid-news-page light">
-            <article id="news1" class="news-item news-text">
-                <h3>Noticia 1</h3>
-                <p>fecha</p>
-            </article>
-            <article id="news2" class="news-item news-text">
-                <h3>Conoce Nuevo Capeltic</h3>
-                <p>fecha</p>
-            </article>
-            <article id="news3" class="news-item news-text">
-                <h3>Noticia 3</h3>
-                <p>fecha</p>
-            </article>
-            <article id="news4" class="news-item news-text">
-                <h3>Noticia 4</h3>
-                <p>fecha</p>
-            </article>
-            <article id="news5" class="news-item news-text">
-                <h3>Noticia 5</h3>
-                <p>fecha</p>
-            </article>
-            <article id="news6" class="news-item news-text">
-                <h3>Noticia 6</h3>
-                <p>fecha</p>
-            </article>
-            <article id="news7" class="news-item news-text">
-                <h3>Noticia 7</h3>
-                <p>fecha</p>
-            </article>
-            <article id="news8" class="news-item news-text">
-                <h3>Noticia 8</h3>
-                <p>fecha</p>
-            </article>
-        </div>
-    </section>
+    <?php createBlogList(); ?>
 
     <aside>
         <div class="extra-articles">
@@ -106,7 +68,7 @@ include "contact_pending.php";
             <div class="join">
                 <?php renderContactForm(); ?>
             </div>
-        <div id="form-ilustracion"></div>
+            <div id="form-ilustracion"></div>
         </section>
     </div>
     <div class="bigfoot">

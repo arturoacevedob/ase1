@@ -39,6 +39,9 @@ include "contact_pending.php";
     <div>
         <header>
             <?php renderHeader(); ?>
+            <h2 class='h2-header'>Desde el cafetal a la taza</h2>
+    </div>
+    </header>
         </header>
     </div>
     <div>

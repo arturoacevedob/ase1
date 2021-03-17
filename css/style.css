@@ -621,27 +621,27 @@ header a {
     contain no-repeat;
 }
 
-.visa {
-  margin: auto;
-  padding: 20%;
-  box-sizing: border-box;
-  background: url(../images/logos/visa.svg) 0 50% / auto no-repeat;
-}
+/*.visa {*/
+/*  margin: auto;*/
+/*  padding: 20%;*/
+/*  box-sizing: border-box;*/
+/*  background: url(../images/logos/visa.svg) 0 50% / auto no-repeat;*/
+/*}*/
 
-.mastercard {
-  margin: auto;
-  padding: 20%;
-  box-sizing: border-box;
-  background: url(../images/logos/mastercard.svg) 0 50% / auto no-repeat;
-}
+/*.mastercard {*/
+/*  margin: auto;*/
+/*  padding: 20%;*/
+/*  box-sizing: border-box;*/
+/*  background: url(../images/logos/mastercard.svg) 0 50% / auto no-repeat;*/
+/*}*/
 
-.americanexpress {
-  box-align: right;
-  margin: auto;
-  padding: 20%;
-  box-sizing: border-box;
-  background: url(../images/logos/americanexpress.svg) 0 0 / auto no-repeat;
-}
+/*.americanexpress {*/
+/*  box-align: right;*/
+/*  margin: auto;*/
+/*  padding: 20%;*/
+/*  box-sizing: border-box;*/
+/*  background: url(../images/logos/americanexpress.svg) 0 0 / auto no-repeat;*/
+/*}*/
 
 .grid-image-first h2 {
   display: none;
@@ -665,34 +665,6 @@ header a {
 .certificate article img {
   max-width: 150px;
   margin: auto;
-}
-
-/* —————— Noticias —————— */
-.gridnews article h3 {
-  padding-left: 3%;
-  color: var(--light);
-}
-
-.gridnews p {
-  padding: 0 0 3% 3%;
-  color: var(--light);
-}
-
-.one {
-  background: url(../images/noticias/conoce_nuevo_capeltic_universidad_iberoamericana_cdmx_batsil_maya.jpg)
-    0 57% / cover no-repeat;
-}
-
-.two {
-  background: url(../images/noticias/noticia2.jpg) 52% 60% / cover no-repeat;
-}
-
-.three {
-  background: url(../images/noticias/noticia3.jpg) 0 39% / cover no-repeat;
-}
-
-.four {
-  background: url(../images/noticias/noticia4.jpg) 0 38% / cover no-repeat;
 }
 
 /* —————— gridthree2 —————— */
@@ -969,7 +941,7 @@ label + input[type="radio"] + label {
 }
 
 #proceso .image-agroecologicas {
-  background: url(../images/proceso/practicas_agroecologicas_batsil_maya.jpg) 0%
+  background: url(../images/proceso/practicas_agroecologicas_batsil_maya.jpg) 0
     0 / cover no-repeat;
 }
 
@@ -1056,7 +1028,7 @@ progress::-webkit-progress-value {
 
   #proceso .tipo-tueste p:nth-child(8) {
     top: 79% !important;
-    left: 0% !important;
+    left: 0 !important;
   }
 
   #proceso .tueste-claro {
@@ -1085,11 +1057,11 @@ progress::-webkit-progress-value {
   }
 
   .mapa-mobil-cafe {
-    grid-template-rows: 1fr 0fr !important;
+    grid-template-rows: 1fr 0 !important;
   }
 
   .taza-cafe {
-    grid-template-rows: 1fr 0fr !important;
+    grid-template-rows: 1fr 0 !important;
   }
 }
 
@@ -1365,7 +1337,7 @@ progress::-webkit-progress-value {
   }
 
   .chat h2 {
-    background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% 0% / 7%
+    background: url(../images/ayuda/sprites_ayuda_iconos.svg) 2% 0 / 7%
       no-repeat;
   }
 }
@@ -1425,24 +1397,6 @@ progress::-webkit-progress-value {
   .grid-image-first p:last-child {
     width: 100%;
     margin: 0 auto 11%;
-  }
-
-  /* —————— certificados —————— */
-  .one {
-    background: url(../images/noticias/conoce_nuevo_capeltic_universidad_iberoamericana_cdmx_batsil_maya.jpg)
-      0 73% / cover no-repeat;
-  }
-
-  .two {
-    background: url(../images/noticias/noticia2.jpg) 52% 7% / cover no-repeat;
-  }
-
-  .three {
-    background: url(../images/noticias/noticia3.jpg) 0 29% / cover no-repeat;
-  }
-
-  .four {
-    background: url(../images/noticias/noticia4.jpg) 0 38% / cover no-repeat;
   }
 
   /* —————— AQUÍ EMPIEZAN ESTILOS DE NOSOTROS—————— */
@@ -1604,7 +1558,7 @@ progress::-webkit-progress-value {
 
 #proceso #image-restauracion {
   background: url(../images/proceso/restauracion_de_los_cafetales_batsil_maya.jpg)
-    0% 0 / cover no-repeat;
+    0 0 / cover no-repeat;
 }
 
 /* —————— AQUÍ EMPIEZAN ESTILOS DE NOSOTROS—————— */
@@ -1818,13 +1772,22 @@ progress::-webkit-progress-value {
       no-repeat;
 }
 
-.news-text h3 {
-  padding-left: 3%;
+.blog-view img {
+  width: 100%;
+  padding-bottom: 2em;
+}
+
+.blog-view h2 {
+  padding-bottom: .25em;
+}
+
+.blog-item h3 {
+  padding: 0 20px;
   color: var(--light);
 }
 
-.news-text p {
-  padding: 0 0 3% 3%;
+.blog-item p {
+  padding: 0 20px 20px 20px;
   color: var(--light);
 }
 

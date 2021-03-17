@@ -171,27 +171,7 @@ if (isset($_SESSION['user'])) {
                     </fieldset>
                 </div>
                 
-                <fieldset class='h3-small'>
-                    <label>Molido del café</label>
-                    <p class='radio-group'>
-                        <input id='molido-one' class='radio' name='molido_selector' type='radio'>
-                        <label for='molido-one'>Americano</label>
-                        <input id='molido-two' class='radio' name='molido_selector' type='radio'>
-                        <label for='molido-two'>Espresso</label>
-                        <input id='molido-custom-radio' type='radio' name='molido_selector'
-                               class='radio other-input'>
-                        <label for='molido-custom-radio'>Otro</label>
-                        <select type='number' id='molido-custom-value' class='dependent-input' disabled>
-                            <option value=''>#1</option>
-                            <option value=''>#2</option>
-                            <option value=''>#3</option>
-                            <option value=''>#4</option>
-                            <option value=''>#5</option>
-                            <option value=''>#6</option>
-                            <option value=''>#7</option>
-                        </select>
-                    </p>
-                </fieldset>
+                
 
                 <div class='product-buy grid-2-space-between'>
                     <div class='grid-2-space-between align-center bold'>

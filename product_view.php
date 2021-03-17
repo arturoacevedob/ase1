@@ -6,6 +6,26 @@ session_start();
 include "connection.php";
 include "header.php";
 include "agregar_producto.php";
+
+if (isset($_GET["idproduct"])) {
+    $id_product = $_GET["idproduct"];
+    $query = "select * from products, weight_price, images where products.id_product = $id_product AND weight_price.id_product = $id_product AND images.id_product = $id_product";
+    $recordSet = execute($query);
+    if ($row = mysqli_fetch_array($recordSet)) {
+        $name_product = $row["name_product"];
+        $description = $row["description"];
+        $notes = $row["notes"];
+        $client_type = $row["client_type"];
+        $weight1 = $row["weight1"];
+        $weight2 = $row["weight2"];
+        $weight3 = $row["weight3"];
+        $price1 = $row["price1"];
+        $price2 = $row["price2"];
+        $price3 = $row["price3"];
+        $image_path = $row["image_path"];
+    }
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +38,8 @@ include "agregar_producto.php";
     <meta content="Sarah Raquel Quintana Cortés,Arturo Alejandro Acevedo Bravo, Mathias Thomsen Cuéllar" name="author">
     <meta content="Únicamente granos que cumplen los más altos estándares de calidad."
           name="description">
-    <meta content="Tseltal, Bats'il Maya, café, miel, jabón, jabones, Chiapas, Orgánico, coffee, cafe organico, organic coffee, capeltic, cafe capeltic, cafeteria capeltic, chiapas, cafe de chiapas, cafe mexicano, tsletales, tseltal, lo mejor de mexico, cafe responsable, sustentabilidad, cafe sustentale, cafe de comercio justo, comercio justo" name="keywords">
+    <meta content="Tseltal, Bats'il Maya, café, miel, jabón, jabones, Chiapas, Orgánico, coffee, cafe organico, organic coffee, capeltic, cafe capeltic, cafeteria capeltic, chiapas, cafe de chiapas, cafe mexicano, tsletales, tseltal, lo mejor de mexico, cafe responsable, sustentabilidad, cafe sustentale, cafe de comercio justo, comercio justo"
+          name="keywords">
     <!-- Scripts de compatibilidad -->
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <!--[if lt IE 9]>
@@ -31,7 +52,7 @@ include "agregar_producto.php";
     <!-- Link a favicon -->
     <link href="images/logos/batsil_maya_logo.svg" rel="icon">
 
-    <title>Productos</title>
+    <title><?php echo "BM - $name_product"; ?></title>
 </head>
 <body>
 <div id="productoorganico">
@@ -44,48 +65,18 @@ include "agregar_producto.php";
         <h2 class="kill">producto</h2>
 
         <?php
-        if (isset($_GET["idproduct"])) {
-          $id_product = $_GET["idproduct"];
-          $query = "select * from products, weight_price, images where products.id_product = $id_product AND weight_price.id_product = $id_product AND images.id_product = $id_product";
-          $recordSet = execute($query);
-          if ($row = mysqli_fetch_array($recordSet)) {
-            $name_product = $row["name_product"];
-            $description = $row["description"];
-            $notes = $row["notes"];
-            $client_type = $row["client_type"];
-            $weight1 = $row["weight1"];
-            $weight2 = $row["weight2"];
-            $weight3 = $row["weight3"];
-            $price1 = $row["price1"];
-            $price2 = $row["price2"];
-            $price3 = $row["price3"];
-            $image_path = $row["image_path"];
-          }
-        }
-
         echo "
         <article class='grid-product-view container no-padding-top-bottom'>
             <div class='product-description order-0'>
-                <h2>" .
-          $name_product .
-          "</h2>
-          <p>" .
-          $description .
-          "</p>
+                <h2>$name_product</h2>
+          <p>$description</p>
           <h4>Notas</h4>
-          <p>" .
-          $notes .
-          "</p>
+          <p>$notes</p>
             </div>
-
-            <form method='post' class='product-form' action='product_view.php?idproduct=" .
-          $id_product .
-          "' class='grid-product-form'>
+            <form method='post' class='product-form' action='product_view.php?idproduct=$id_product' class='grid-product-form'>
             
                 <input type='hidden' name='insert' value='insert'>
-                <input type='hidden' name='id_product' value='" .
-          $id_product .
-          "'>
+                <input type='hidden' name='id_product' value='$id_product'>
                 
                 <div class='grid-2-left-aligned'>
                     <fieldset class='h3-small'>
@@ -93,57 +84,33 @@ include "agregar_producto.php";
                         <p class='radio-group'>";
 
         if (!is_null($weight1)) {
-          echo "
-                            <input id='" .
-            $weight1 .
-            "' name='weight_selector' type='radio' value='250' onclick='calculatePrice()'>
-                            <label for='" .
-            $weight1 .
-            "'>250gr</label>";
+            echo "
+            <input id='$weight1' name='weight_selector' type='radio' value='250' onclick='calculatePrice()'>
+            <label for='$weight1'>250gr</label>";
         } else {
-          echo "
-                            <input id='" .
-            $weight1 .
-            "' name='weight_selector' type='radio' value='250' disabled>
-                            <label for='" .
-            $weight1 .
-            "' class='unavailable'>250gr</label>";
+            echo "
+            <input id='$weight1' name='weight_selector' type='radio' value='250' disabled>
+            <label for='$weight1' class='unavailable'>250gr</label>";
         }
 
         if (!is_null($weight2)) {
-          echo "
-                            <input id='" .
-            $weight2 .
-            "' name='weight_selector' type='radio' value='500' onclick='calculatePrice()'>
-                            <label for='" .
-            $weight2 .
-            "'>500gr</label>";
+            echo "
+          <input id='$weight2' name='weight_selector' type='radio' value='500' onclick='calculatePrice()'>
+          <label for='$weight2'>500gr</label>";
         } else {
-          echo "
-                            <input id='" .
-            $weight2 .
-            "' name='weight_selector' type='radio' value='500' disabled>
-                            <label for='" .
-            $weight2 .
-            "' class='unavailable'>500gr</label>";
+            echo "
+          <input id='$weight2' name='weight_selector' type='radio' value='500' disabled>
+          <label for='$weight2' class='unavailable'>500gr</label>";
         }
 
         if (!is_null($weight3)) {
-          echo "
-                            <input id='" .
-            $weight3 .
-            "' name='weight_selector' type='radio' value='1000' onclick='calculatePrice()'>
-                            <label for='" .
-            $weight3 .
-            "'>1kg</label>";
+            echo "
+            <input id='$weight3' name='weight_selector' type='radio' value='1000' onclick='calculatePrice()'>
+            <label for='$weight3'>1kg</label>";
         } else {
-          echo "
-                            <input id='" .
-            $weight3 .
-            "' name='weight_selector' type='radio' value='1000' disabled>
-                            <label for='" .
-            $weight3 .
-            "' class='unavailable'>1kg</label>";
+            echo "
+            <input id='$weight3' name='weight_selector' type='radio' value='1000' disabled>
+            <label for='$weight3' class='unavailable'>1kg</label>";
         }
 
         echo "
@@ -247,41 +214,41 @@ include "agregar_producto.php";
                 $products = [];
                 $counter = 0;
                 while (
-                  ($row = mysqli_fetch_array($recordSet)) and
-                  $counter < 4
+                    ($row = mysqli_fetch_array($recordSet)) and
+                    $counter < 4
                 ) {
-                  $products[$counter] = [];
-                  $products[$counter]["id_product"] = $row["id_product"];
-                  $products[$counter]["name_product"] = $row["name_product"];
-                  $products[$counter]["description"] = $row["description"];
-                  $products[$counter]["notes"] = $row["notes"];
-                  $products[$counter]["client_type"] = $row["client_type"];
-                  $counter++;
+                    $products[$counter] = [];
+                    $products[$counter]["id_product"] = $row["id_product"];
+                    $products[$counter]["name_product"] = $row["name_product"];
+                    $products[$counter]["description"] = $row["description"];
+                    $products[$counter]["notes"] = $row["notes"];
+                    $products[$counter]["client_type"] = $row["client_type"];
+                    $counter++;
                 }
 
                 for ($i = 0; $i < count($products); $i++) {
-                  $q =
-                    "select image_path from images where images.id_product = " .
-                    $products[$i]["id_product"] .
-                    " limit 1";
-                  $recordSetImage = execute($q);
-                  $image_row = mysqli_fetch_array($recordSetImage);
-                  $image_path = $image_row["image_path"];
+                    $q =
+                        "select image_path from images where images.id_product = " .
+                        $products[$i]["id_product"] .
+                        " limit 1";
+                    $recordSetImage = execute($q);
+                    $image_row = mysqli_fetch_array($recordSetImage);
+                    $image_path = $image_row["image_path"];
 
-                  echo "
+                    echo "
                     <section class='ind-product'>
                         <h3 class='title pname h3-small'>" .
-                    $products[$i]["name_product"] .
-                    "</h3>
+                        $products[$i]["name_product"] .
+                        "</h3>
                         <div style='height: 250px; background: transparent url(" .
-                    $image_path .
-                    ") 50% 50% / cover no-repeat;'></div>
+                        $image_path .
+                        ") 50% 50% / cover no-repeat;'></div>
                         <p class='pdescription'>" .
-                    $products[$i]["description"] .
-                    "<br> <a
+                        $products[$i]["description"] .
+                        "<br> <a
                                 class='link ' href='product_view.php?idproduct=" .
-                    $products[$i]["id_product"] .
-                    "' target='_self'>Ver más »</a></p>
+                        $products[$i]["id_product"] .
+                        "' target='_self'>Ver más »</a></p>
                     </section>";
                 }
                 ?>
@@ -327,27 +294,6 @@ include "agregar_producto.php";
         </div>
     </div>
 </div>
-
-<script charset="UTF-8" src="js/jquery.js"></script>
-
-<script>
-    $('.radio').change(function () {
-        $('#molido-custom-value').prop('disabled', !$(this).is('.other-input'));
-    });
-</script>
-
-<script>
-    function calculatePrice() {
-        $.ajax({
-            type: 'GET',
-            url: 'price_calculation.php',
-            data: $('.product-form').serialize(),
-            success: function (response) {
-                $('#calculated-total').html(response);
-            }
-        });
-    }
-</script>
 
 </body>
 </html>

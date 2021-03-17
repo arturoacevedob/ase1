@@ -5,28 +5,45 @@ error_reporting(E_ALL);
 include "connection.php";
 
 if (isset($_POST["insert"])) {
-  $name_client_pending = $_POST["name_client_pending"];
-  $email_client_pending = $_POST["email_client_pending"];
-  $phone_client_pending = $_POST["phone_client_pending"];
-  $day_client_pending = $_POST["day_client_pending"];
-  $from_client_pending = $_POST["from_client_pending"];
-  $to_client_pending = $_POST["to_client_pending"];
+    $name_client_pending = $_POST["name_client_pending"];
+    $email_client_pending = $_POST["email_client_pending"];
+    $phone_client_pending = $_POST["phone_client_pending"];
+    $day_client_pending = $_POST["day_client_pending"];
+    $from_client_pending = $_POST["from_client_pending"];
+    $to_client_pending = $_POST["to_client_pending"];
 
-  $query = "insert into clients_pending (name_client_pending, email_client_pending, phone_client_pending, day_client_pending, from_client_pending, to_client_pending) values ('$name_client_pending', '$email_client_pending', '$phone_client_pending', '$day_client_pending', '$from_client_pending', '$to_client_pending')";
-  execute($query);
+    $query = "insert into clients_pending (name_client_pending, email_client_pending, phone_client_pending, day_client_pending, from_client_pending, to_client_pending) values ('$name_client_pending', '$email_client_pending', '$phone_client_pending', '$day_client_pending', '$from_client_pending', '$to_client_pending')";
+    execute($query);
 
-  $content = nl2br($name_client_pending . "\n" . $email_client_pending . "\n" . $phone_client_pending . "\nEl cliente quiere ser contactado el día " . $day_client_pending . ", entre las " . $from_client_pending . " y " . $to_client_pending . " horas.");
-  
-  $receiver = "";
-  
-  mail($email_client_pending, "Bats'il Maya — Nueva solicitud de contacto", $content);
+    $content = nl2br(
+        $name_client_pending .
+            "\n" .
+            $email_client_pending .
+            "\n" .
+            $phone_client_pending .
+            "\nEl cliente quiere ser contactado el día " .
+            $day_client_pending .
+            ", entre las " .
+            $from_client_pending .
+            " y " .
+            $to_client_pending .
+            " horas."
+    );
 
-  header("Location: index.php");
+    $receiver = "";
+
+    mail(
+        $email_client_pending,
+        "Bats'il Maya — Nueva solicitud de contacto",
+        $content
+    );
+
+    header("Location: index.php");
 }
 
 function renderContactForm()
 {
-  echo "
+    echo "
     <form action='contact_pending.php' method='post' enctype='multipart/form-data'>
 
                 <input type='hidden' name='insert' value='insert'>

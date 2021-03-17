@@ -5,6 +5,7 @@ error_reporting(E_ALL);
 session_start();
 include "header.php";
 include "contact_pending.php";
+include "createBlogListForIndex.php"
 ?>
 
 <!DOCTYPE html>
@@ -17,7 +18,8 @@ include "contact_pending.php";
     <meta content="Sarah Raquel Quintana Cortés,Arturo Alejandro Acevedo Bravo, Mathias Thomsen Cuéllar" name="author">
     <meta content="Dándole el máximo valor agregado que nos permite la construcción de un precio justo y digno al trabajo de quienes los siembran."
           name="description">
-    <meta content="Tseltal, Bats'il Maya, café, miel, jabón, jabones, Chiapas, Orgánico, coffee, cafe organico, organic coffee, capeltic, cafe capeltic, cafeteria capeltic, chiapas, cafe de chiapas, cafe mexicano, tsletales, tseltal, lo mejor de mexico, cafe responsable, sustentabilidad, cafe sustentale, cafe de comercio justo, comercio justo" name="keywords">
+    <meta content="Tseltal, Bats'il Maya, café, miel, jabón, jabones, Chiapas, Orgánico, coffee, cafe organico, organic coffee, capeltic, cafe capeltic, cafeteria capeltic, chiapas, cafe de chiapas, cafe mexicano, tsletales, tseltal, lo mejor de mexico, cafe responsable, sustentabilidad, cafe sustentale, cafe de comercio justo, comercio justo"
+          name="keywords">
     <!-- Scripts de compatibilidad -->
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <!--[if lt IE 9]>
@@ -32,13 +34,20 @@ include "contact_pending.php";
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <!-- Link a favicon -->
     <link href="images/logos/batsil_maya_logo.svg" rel="icon">
-    
+
     <title>Bats'il Maya</title>
 </head>
 <body id="homepage">
 
 <header>
     <?php renderHeader(); ?>
+        <h2 class='h2-header'>Café tseltal:<br>Producto de un trabajo solidario y digno</h2>
+        <p class='h2-subtitle'>Una cooperativa que tuesta, muele, y comercializa
+            <wbr>
+            un producto de calidad a precio justo.
+        </p>
+        <a class='button red fit-content' href='nosotros.php' target='_self'>Sobre nosotros</a>
+    </div>
 </header>
 
 <div class="dark-bg">
@@ -48,47 +57,47 @@ include "contact_pending.php";
             <div class="grid-scroll-x">
 
                 <?php
-                $query = "select * from products";
+                $query = "select * from products limit 4";
                 $recordSet = execute($query);
 
                 $products = [];
                 $counter = 0;
                 while (
-                  ($row = mysqli_fetch_array($recordSet)) and
-                  $counter < 4
+                    ($row = mysqli_fetch_array($recordSet)) and
+                    $counter < 4
                 ) {
-                  $products[$counter] = [];
-                  $products[$counter]["id_product"] = $row["id_product"];
-                  $products[$counter]["name_product"] = $row["name_product"];
-                  $products[$counter]["description"] = $row["description"];
-                  $products[$counter]["notes"] = $row["notes"];
-                  $products[$counter]["client_type"] = $row["client_type"];
-                  $counter++;
+                    $products[$counter] = [];
+                    $products[$counter]["id_product"] = $row["id_product"];
+                    $products[$counter]["name_product"] = $row["name_product"];
+                    $products[$counter]["description"] = $row["description"];
+                    $products[$counter]["notes"] = $row["notes"];
+                    $products[$counter]["client_type"] = $row["client_type"];
+                    $counter++;
                 }
 
                 for ($i = 0; $i < count($products); $i++) {
-                  $q =
-                    "select image_path from images where images.id_product = " .
-                    $products[$i]["id_product"] .
-                    " limit 1";
-                  $recordSetImage = execute($q);
-                  $image_row = mysqli_fetch_array($recordSetImage);
-                  $image_path = $image_row["image_path"];
+                    $q =
+                        "select image_path from images where images.id_product = " .
+                        $products[$i]["id_product"] .
+                        " limit 1";
+                    $recordSetImage = execute($q);
+                    $image_row = mysqli_fetch_array($recordSetImage);
+                    $image_path = $image_row["image_path"];
 
-                  echo "
+                    echo "
                     <section class='ind-product'>
                         <h3 class='title pname h3-small'>" .
-                    $products[$i]["name_product"] .
-                    "</h3>
+                        $products[$i]["name_product"] .
+                        "</h3>
                         <div style='height: 250px; background: transparent url(" .
-                    $image_path .
-                    ") 50% 50% / cover no-repeat;'></div>
+                        $image_path .
+                        ") 50% 50% / cover no-repeat;'></div>
                         <p class='pdescription'>" .
-                    $products[$i]["description"] .
-                    "<br> <a
+                        $products[$i]["description"] .
+                        "<br> <a
                                 class='link ' href='product_view.php?idproduct=" .
-                    $products[$i]["id_product"] .
-                    "' target='_self'>Ver más »</a></p>
+                        $products[$i]["id_product"] .
+                        "' target='_self'>Ver más »</a></p>
                     </section>";
                 }
                 ?>
@@ -126,9 +135,9 @@ include "contact_pending.php";
                     <div>
                         <h2 class="yellow usaweb1">Estados Unidos</h2>
                     </div>
-                </div>         
-                
-                
+                </div>
+
+
             </figure>
         </div>
 
@@ -157,12 +166,15 @@ include "contact_pending.php";
         <article class="grid-image-first">
             <h2 class="white">Envíos Nacionales</h2>
             <div class="icono-envio image-top-first-round"></div>
-            <p class="white">Hacemos envíos a cualquier parte de la República Mexicana. Para volumen de 11 kg. o más, el envío es gratis. El costo por volumen menor a 11 kg. es de $200.00</p>
+            <p class="white">Hacemos envíos a cualquier parte de la República Mexicana. Para volumen de 11 kg. o más, el
+                envío es gratis. El costo por volumen menor a 11 kg. es de $200.00</p>
         </article>
         <article class="grid-image-first">
             <h2 class="white">Envíos Internacionales</h2>
             <div class="icono-envio image-top-first-round"></div>
-            <p class="white">Actualmente nuestro café es enviado a algunos Estados de Estados Unidos. Así como a Valladolid, España. Para procesos de exportación (mayor volumen) favor de contactar al equipo: contacto@batsilmaya.org</p>
+            <p class="white">Actualmente nuestro café es enviado a algunos Estados de Estados Unidos. Así como a
+                Valladolid, España. Para procesos de exportación (mayor volumen) favor de contactar al equipo:
+                contacto@batsilmaya.org</p>
         </article>
     </div>
 </section>
@@ -171,12 +183,14 @@ include "contact_pending.php";
     <div class="grid-scroll-x">
         <article>
             <h3>Universidad Iberoamericana</h3>
-            <figure><img alt="Logo de Universidad Iberoamericana" src="images/inicio/clients/logo_clienta_universidad_iberoamerica_batsil_maya.jpg">
+            <figure><img alt="Logo de Universidad Iberoamericana"
+                         src="images/inicio/clients/logo_clienta_universidad_iberoamerica_batsil_maya.jpg">
             </figure>
         </article>
         <article>
             <h3>Homework The Future of Work</h3>
-            <figure><img alt="Homework The Future of Work" src="images/inicio/clients/logo_clienta_homework_the_future_of_work_batsil_maya.png"></figure>
+            <figure><img alt="Homework The Future of Work"
+                         src="images/inicio/clients/logo_clienta_homework_the_future_of_work_batsil_maya.png"></figure>
         </article>
         <!--<article>
             <h3>W hotels</h3>
@@ -223,23 +237,10 @@ include "contact_pending.php";
 </div>
 <section class="news container">
     <h2 class="h2-small">Noticias</h2>
-    <div class="gridnews">
-        <article class="one news-item">
-            <h3>Noticia 1</h3>
-            <p>fecha</p>
-        </article>
-        <article class="two news-item">
-            <h3>Conoce Nuevo Capeltic</h3>
-            <p>fecha</p>
-        </article>
-        <article class="three news-item">
-            <h3>Noticia 3</h3>
-            <p>fecha</p>
-        </article>
-        <article class="four news-item">
-            <h3>Noticia 4</h3>
-            <p>fecha</p>
-        </article>
+    <div class="grid-news">
+        <?php
+        createBlogList()
+        ?>
     </div>
 </section>
 <div class="light-bg">
