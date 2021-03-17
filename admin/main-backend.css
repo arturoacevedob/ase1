@@ -730,17 +730,18 @@ nav ul a{
 }
 
 body > div > div > h1 {
-    margin: 75px -1px 0px 295px;
+    margin: 75px -1px 0px 323px;
 }
 
 #search{
     max-width: 400px;
-    margin: 82px 250px 5px 0px;
+    margin: 79px 248px 4px 48px;
     background-color: #f2f2f2;
 }
 
 body > div > div > div > button {
-    margin: 77px 312px 7px -35px;
+    margin: 80px 177px 4px -27px;
+    padding: 7px 42px;
 }
 
 .edit-pencil{
