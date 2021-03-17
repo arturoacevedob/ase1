@@ -14,15 +14,14 @@ if (!isset($_SESSION['user'])) {
 
 if (isset($_POST['insert'])) {
     $uploadOk = 0;
-    $title_blog = $_POST['title_blog'];
-    $date_blog = $_POST['date_blog'];
-    
+    $title = $_POST['title'];
+    $body = $_POST['body'];
 
     if ($_FILES['image_path']['name'] != "") {
         $fileName = strtolower($_FILES['image_path']['name']);
         $tempFile = $_FILES['image_path']['tmp_name'];
-        $fileNamePath = '../images/' . $fileName;
-        $relativePath = 'images/' . $fileName;
+        $fileNamePath = '../../images/blog/' . $fileName;
+        $relativePath = 'images/blog/' . $fileName;
         if (move_uploaded_file($tempFile, $fileNamePath)) {
             $uploadOk = 1;
         } else {
@@ -31,14 +30,11 @@ if (isset($_POST['insert'])) {
     }
 
     if ($uploadOk == 1) {
-        $q = "insert into blogs (title_blog, date_blog,image_path,id_blog) values ('$title_blog','$date_blog','$relativePath', '$id_blog')";
-        $id_blog = execute($q);
-
-        
-/*         $q = "insert into blogs (image_path, id_blog) values ('$relativePath', '$id_blog')";
-        execute($q);
- */        header("Location: ../blog.php");
+        $q = "insert into blog (title, body, image_path) values ('$title', '$body', '$relativePath')";
+        $id = execute($q);
     }
+
+    header("Location: ../blog.php");
 }
 ?>
 
@@ -52,28 +48,59 @@ if (isset($_POST['insert'])) {
             width: 100px;
         }
     </style>
+    <link href="../main-backend.css" rel="stylesheet">
 </head>
 
-<body>
-<h1>Nueva Noticia</h1>
-<form action='create_blog.php' method='post' enctype='multipart/form-data'>
+<body class="padding-for-all">
+<h1>Nueva publicación</h1>
+<form class="round-red-border" action='create_blog.php' method='post' enctype='multipart/form-data'>
+    <div class="padding-for-all-2">
+        <fieldset>
+            <input type='hidden' name='insert' value='insert'>
 
-    <input type='hidden' name='insert' value='insert'>
-
-    <label for="title_blog">Título de la Noticia</label>
-    <input id="title_blog" type='text' name='title_blog' max="100"> <br>
-    <label for="image_path_blog">Imagen</label>
-    <input id="image_path_blog" type='date' name='image_path_blog'> <br>
-
-
-    <!--<input type="file" id="file-input" name="image_path" multiple/>
-    <div id="thumb-output"></div>-->
-    <input type='file' name='image_path'>
-
-    <input type="submit" value="Guardar noticias">
-
+            <label for="title">Título</label>
+            <input id="title" type='text' name='title' max="100" required> <br>
+            <label for="body">Cuerpo</label>
+            <textarea id="body" name='body' rows="25" required></textarea> <br>
+            <label class="padding-left">Imagen</label>
+            <input class="button limited-height grey-font" type='file' name='image_path' id="image_path" required>
+        </fieldset>
+    </div>
+    <div class="bottom-thing grid-1-1-1-1 give-me-gap">
+        <!--<input type="file" id="file-input" name="image_path" multiple/>
+        <div id="thumb-output"></div>-->
+        <a class="button red-outline limited-width-2 cancel" href='../blog.php'>Cancelar</a>
+        <input class="button red limited-width-2 limited-height" type="submit" value="Guardar producto">
+    </div>
 </form>
 
+<!--<script>
+    $(document).ready(function () {
+        $('#file-input').on('change', function () { //on file input change
+            if (window.File && window.FileReader && window.FileList && window.Blob) //check File API supported browser
+            {
+
+                var data = $(this)[0].files; //this file data
+
+                $.each(data, function (index, file) { //loop though each file
+                    if (/(\.|\/)(gif|jpe?g|png)$/i.test(file.type)) { //check supported file type
+                        var fRead = new FileReader(); //new filereader
+                        fRead.onload = (function (file) { //trigger function on successful read
+                            return function (e) {
+                                var img = $('<img/>').addClass('thumb').attr('src', e.target.result); //create image element
+                                $('#thumb-output').append(img); //append image to output element
+                            };
+                        })(file);
+                        fRead.readAsDataURL(file); //URL representing the file's data.
+                    }
+                });
+
+            } else {
+                alert("Your browser doesn't support File API!"); //if File API is absent
+            }
+        });
+    });
+</script>-->
 
 </body>
 </html>

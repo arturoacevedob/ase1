@@ -11,39 +11,40 @@ if (!isset($_SESSION['user'])) {
     die();
 }
 
-function createNoticia()
+function createBlogList()
 {
     /*$query = "select products.id_product, images.image_path from images inner join products on products.id_product = images.id_product;";
     execute($query);*/
-    $query = "select * from blogs;";
+    $query = "select * from blog";
     $recordSet = execute($query);
 
     $blogs = array();
     $counter = 0;
     while ($row = mysqli_fetch_array($recordSet)) {
         $blogs[$counter] = array();
-        $blogs[$counter]["id_blog"] = $row["id_blog"];
-        $blogs[$counter]["name_blog"] = $row["name_blog"];
-        $blogs[$counter]["date_blog"] = $row["date_blog"];
-
+        $blogs[$counter]["id"] = $row["id"];
+        $blogs[$counter]["title"] = $row["title"];
+        $blogs[$counter]["date"] = $row["date"];
+        $blogs[$counter]["image_path"] = $row["image_path"];
         $counter++;
     }
 
     for ($i = 0; $i < count($blogs); $i++) {
 
-        $q = "select image_path from blogs where blogs.id_blog  = " . $blogs[$i]['id_blog'] . " limit 1";
-        $rs_image = execute($q);
-        $image_row = mysqli_fetch_array($rs_image);
-        $image_path = $image_row['image_path'];
-
         echo "
         <div class='product-item grid-1-1'>
-            <div class='radius-left' style='background: transparent url(\"$image_path\") 50% 50% / cover no-repeat;'></div>
+            <div class='radius-left' style='background: transparent url(../" . $blogs[$i]["image_path"] . ") 50% 50% / cover no-repeat;'></div>
             <div class='product-info radius-right'>
-                <h3>" . $blogs[$i]["name_blog"] . "<span><a href='crud_blog/update_blog.php?idblog=" . $blogs[$i]["id_blog"] . "'>Editar</a></span><span><a href='crud_blog/delete_blog.php?idblog=" . $blogs[$i]["id_blog"] . "'>Eliminar</a></span></h3>
-                <p>" . $blogs[$i]["date_blog"] . "</p>";
+            <div class='grid-ind-product'>
+                <h3>" . $blogs[$i]["title"] . "<h3>
+                <span>
+                <p class='edit-pencil'><a href='crud_blog/update_blog.php?id=" . $blogs[$i]["id"] . "' aria-label='Editar'></a></p>
+                </span>
+                </div>
+                <p>" . $blogs[$i]["date"] . "</p>
+                </div>
+        </div>";
     }
-
 }
 ?>
 
@@ -71,7 +72,7 @@ function createNoticia()
 
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
-    <title>Noticias</title>
+    <title>Productos</title>
 </head>
 
 <body class="main-grid">
@@ -80,30 +81,35 @@ function createNoticia()
     <h2 style="display: none">Menú</h2>
     <div><img alt="Logo de Bats'il Maya" src="../images/logos/batsil_maya_logo.svg"></div>
     <ul>
-        <li><a href="clients.php" target="_self">Clientes</a></li>
-        <li><a href="orders-pending-backend.php" target="_self">Pedidos</a></li>
-        <li><a href="products_coffee.php" target="_self">Productos</a></li>
-        <li><a class="active pro bold" href="blog.php" target="_self">Blog</a></li>
-
-    </ul>
+        <li><a class="cliente-disactive"href="clients.php" target="_self">Clientes</a></li>
+        <li><a class="pedidos-disactive"href="orders-pending-backend.php" target="_self">Pedidos</a></li>
+        <li><a class="active bold productos-active" href="products_coffee.php" target="_self">Productos</a></li>
+        <li><a class="blog-disactive" href="blog.php" target="_self">Blog</a></li>
     <ul class="lonely-ul">
-        <li><a href="ayuda.php" target="_self">Ayuda</a></li>
-        <li><a href='login.php?killsession=1'>Cerrar Sesión</a></li>
+        <li><a class="ayuda-disactive" href="user_manual.pdf" target="_black" download="">Manual de uso</a></li>
+        <li><a class="cerrar-disactive"href='login.php?killsession=1'>Cerrar Sesión</a></li>
     </ul>
 </nav>
 
 <div class="padding-thing big-margin">
 
     <div class="global-toolbar">
-        <h1>Noticias</h1>
+        <h1>Blog</h1>
     </div>
-    <a class="button red limited-width" href='crud_blog/create_blog.php'>Nueva noticia</a>
-    <div class="grid-1-1 give-me-gap">
+</div>
+
+<div class="b-grey">
+    <div class="grid-2-space-between give-me-gap">
+        <!--<div>
+            <label class="kill" for="search"></label>
+            <input id="search" placeholder="Buscar" type="search">
+        </div>-->
+        <a class="button red limited-width" href='crud_blog/create_blog.php'>Agregar publicación</a></div>
+    <div class="grid-1-1 give-me-gap margin-top-thing">
         <?php
-        createNoticia()
+        createBlogList()
         ?>
     </div>
-
 </div>
 
 </body>
