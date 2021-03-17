@@ -96,7 +96,7 @@ if (isset($_POST['update'])) {
         execute($q);
     }
 
-    header("Location: ../products_coffee.php");
+    header("Location: ../products_soap.php");
 }
 ?>
 
@@ -109,7 +109,7 @@ if (isset($_POST['update'])) {
 <body class="padding-for-all">
 <h1>Productos</h1>
 
-<form class="round-red-border" action='update_product.php' method='post' enctype='multipart/form-data'>
+<form class="round-red-border" action='update_product_soap.php' method='post' enctype='multipart/form-data'>
     <div class="grid-1-1-1 padding-for-all-2 give-me-gap">
         <fieldset>
             <input type='hidden' name='update' value='update'>
@@ -121,7 +121,7 @@ if (isset($_POST['update'])) {
             <label for="description">Descripción</label>
             <input id="description" type='text' name='description' value="<?php echo $description; ?>" maxlength="">
             <br>
-            <label for="notes">Notas</label>
+            <label for="notes">Olores</label>
             <input id="notes" type='text' name='notes' value="<?php echo $notes; ?>" maxlength=""> <br>
             <label for="client_type">¿Disponible para mayoristas?</label>
             <input type='hidden' name='client_type' value='0'>
@@ -131,44 +131,29 @@ if (isset($_POST['update'])) {
         <table>
             <thead>
             <tr>
-                <th>Peso</th>
+                <th></th>
                 <th>Precio</th>
             </tr>
             </thead>
             <tbody>
             <tr>
-                <td><label for="weight1">250gr<input id="weight1" class="checkbox" type="checkbox" name="weight1"
-                                                     value="250" <?php if ($weight1 == '250') echo 'checked="checked"'; ?>></label>
-                </td>
-                <td><input id="price1" type="number" name="price1" maxlength="3" value="<?php echo $price1; ?>"></td>
-            </tr>
-            <tr>
-                <td><label for="weight2">500gr</label><input id="weight2" class="checkbox" type="checkbox"
-                                                             name="weight2"
-                                                             value="500" <?php if ($weight2 == '500') echo 'checked="checked"'; ?>>
-                </td>
-                <td><input id="price2" type="number" name="price2" maxlength="3" value="<?php echo $price2; ?>"></td>
-            </tr>
-            <tr>
-                <td><label for="weight3">1kg</label><input id="weight3" class="checkbox" type="checkbox" name="weight3"
-                                                           value="1000" <?php if ($weight3 == '1000') echo 'checked="checked"'; ?>>
-                </td>
-                <td><input id="price3" type="number" name="price3" maxlength="3" value="<?php echo $price3; ?>"></td>
+            <td><label></label></td>
+                <td><input id="price1" type="number" name="price1" maxlength="3"></td>
             </tr>
             </tbody>
         </table>
-
+       
 
     <div>
         <h3 class="padding-left">Imagen</h3>
         <img src="<?php echo "../../$image_path"; ?>" height="100px">
         <label for="image_path">Carga una imagen</label>
-        <input class="button limited-height grey-font" type='file' name='image_path' id="image_path" required>
+        <input class="button limited-height grey-font" type='file' name='image_path' id="image_path"required>
     </div>
     </div>
     <div class="bottom-thing grid-1-1-1-1 give-me-gap">
         <a class="exterminate" href='delete_product.php?idproduct=<?php echo $id_product; ?>'>Eliminar</a>
-        <a class="button red-outline limited-width-2 cancel" href='../products_coffee.php'>Cancelar</a>
+        <a class="button red-outline limited-width-2 cancel" href='../products_soap.php'>Cancelar</a>
         <input class="button red limited-width-2 limited-height" type="submit" value="Guardar cambios">
     </div>
 </form>
