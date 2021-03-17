@@ -159,7 +159,7 @@ function createHoneyListOptions()
         <a class="button red limited-width" href='crud_product/create_product_honey.php'>Agregar productos</a></div>
     <div class="grid-1-1 give-me-gap margin-top-thing">
         <?php
-        createCoffeeListOptions()
+        createHoneyListOptions()
         ?>
     </div>
     </div>

@@ -49,7 +49,7 @@ if (isset($_POST['insert'])) {
         }
     }
 
-    $q = "insert into products (name_product, description, notes) values ('$name_product','$description','$notes')";
+    $q = "insert into products (name_product, description, notes, id_category) values ('$name_product','$description','$notes','3')";
     $id_product = execute($q);
 
     if (isset($_POST['client_type'])) {
@@ -96,7 +96,7 @@ if (isset($_POST['insert'])) {
 
 <body class="padding-for-all">
 <h1>Producto nuevo</h1>
-<form class="round-red-border" action='create_product.php' method='post' enctype='multipart/form-data'>
+<form class="round-red-border" action='create_product_soap.php' method='post' enctype='multipart/form-data'>
     <div class="grid-1-1-1 padding-for-all-2">
         <fieldset>
             <input type='hidden' name='insert' value='insert'>
@@ -107,6 +107,8 @@ if (isset($_POST['insert'])) {
             <input id="description" type='text' name='description' max="" required> <br>
                 <label for="mayoristas">¿Disponible para mayoristas?</label>
                 <input type='checkbox' name='client_type' id="mayoristas" value='1'>
+                <label for="notes">Olores</label>
+                <input id="notes" type='text' name='notes' max="" required> <br>
         </fieldset>
 
         <table>
@@ -131,7 +133,7 @@ if (isset($_POST['insert'])) {
     <div class="bottom-thing grid-1-1-1-1 give-me-gap">
         <!--<input type="file" id="file-input" name="image_path" multiple/>
         <div id="thumb-output"></div>-->
-        <a class="button red-outline limited-width-2 cancel" href='../products_coffee.php'>Cancelar</a>
+        <a class="button red-outline limited-width-2 cancel" href='../products_soap.php'>Cancelar</a>
         <input class="button red limited-width-2 limited-height" type="submit" value="Guardar producto">
     </div>
 </form>

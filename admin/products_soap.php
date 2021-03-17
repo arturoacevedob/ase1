@@ -11,7 +11,7 @@ if (!isset($_SESSION['user'])) {
     die();
 }
 
-function createCoffeeListOptions()
+function createSoapListOptions()
 {
     /*$query = "select products.id_product, images.image_path from images inner join products on products.id_product = images.id_product;";
     execute($query);*/
@@ -159,7 +159,7 @@ function createCoffeeListOptions()
         <a class="button red limited-width" href='crud_product/create_product_soap.php'>Agregar productos</a></div>
     <div class="grid-1-1 give-me-gap margin-top-thing">
         <?php
-        createCoffeeListOptions()
+        createSoapListOptions()
         ?>
     </div>
     </div>
