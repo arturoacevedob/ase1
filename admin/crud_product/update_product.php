@@ -163,7 +163,7 @@ if (isset($_POST['update'])) {
         <h3 class="padding-left">Imagen</h3>
         <img src="<?php echo "../../$image_path"; ?>" height="100px">
         <label for="image_path">Carga una imagen</label>
-        <input class="button limited-height grey-font" type='file' name='image_path' id="image_path">
+        <input class="button limited-height grey-font" type='file' name='image_path' id="image_path" required>
     </div>
     </div>
     <div class="bottom-thing grid-1-1-1-1 give-me-gap">

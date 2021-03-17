@@ -6,6 +6,7 @@ include '../connection.php';
 define('SITE_ROOT', realpath(dirname(__FILE__)));
 session_start();
 
+
 if (!isset($_SESSION['user'])) {
     http_response_code(401);
     header("Location: ../login.php");
@@ -17,6 +18,7 @@ if (isset($_POST['insert'])) {
     $name_product = $_POST['name_product'];
     $description = $_POST['description'];
     $notes = $_POST['notes'];
+    
     if (isset($_POST['client_type'])) {
         $client_type = $_POST['client_type'];
     }
@@ -40,8 +42,8 @@ if (isset($_POST['insert'])) {
         $fileName = strtolower($_FILES['image_path']['name']);
         $fileName = preg_replace('/\s*/', '', $fileName);
         $tempFile = $_FILES['image_path']['tmp_name'];
-        $fileNamePath = '../../images/productos/cafe/' . $fileName;
-        $relativePath = 'images/productos/cafe/' . $fileName;
+        $fileNamePath = '../../images/productos/miel/' . $fileName;
+        $relativePath = 'images/productos/miel/' . $fileName;
         if (move_uploaded_file($tempFile, $fileNamePath)) {
             $uploadOk = 1;
         } else {
@@ -49,7 +51,7 @@ if (isset($_POST['insert'])) {
         }
     }
 
-    $q = "insert into products (name_product, description, notes) values ('$name_product','$description','$notes')";
+    $q = "insert into products (name_product, description, notes, id_category) values ('$name_product','$description','$notes', '2')";
     $id_product = execute($q);
 
     if (isset($_POST['client_type'])) {
@@ -67,16 +69,13 @@ if (isset($_POST['insert'])) {
         execute($q);
     }
 
-    if (isset($_POST['weight3']) AND isset($_POST['price3'])) {
-        $q = "insert into weight_price (weight3, price3, id_product) values ('$weight3', '$price3', '$id_product')";
-        execute($q);
-    }
+    
 
     if ($uploadOk == 1) {
         $q = "insert into images (image_path, id_product) values ('$relativePath', '$id_product')";
         execute($q);
     }
-    header("Location: ../products_coffee.php");
+    header("Location: ../products_honey.php");
 
 }
 ?>
@@ -96,7 +95,7 @@ if (isset($_POST['insert'])) {
 
 <body class="padding-for-all">
 <h1>Producto nuevo</h1>
-<form class="round-red-border" action='create_product.php' method='post' enctype='multipart/form-data'>
+<form class="round-red-border" action='create_product_honey.php' method='post' enctype='multipart/form-data'>
     <div class="grid-1-1-1 padding-for-all-2">
         <fieldset>
             <input type='hidden' name='insert' value='insert'>
@@ -107,31 +106,41 @@ if (isset($_POST['insert'])) {
             <input id="description" type='text' name='description' max="" required> <br>
                 <label for="mayoristas">¿Disponible para mayoristas?</label>
                 <input type='checkbox' name='client_type' id="mayoristas" value='1'>
+                <label for="notes">Sabores</label>
+                <input id="notes" type='text' name='notes' max="" required> <br>
+
         </fieldset>
 
         <table>
             <thead>
             <tr>
-                <th></th>
+                <th>Peso</th>
                 <th>Precio</th>
             </tr>
             </thead>
             <tbody>
             <tr>
-            <td><label></label></td>
-                <td><input id="price1" type="number" name="price1" maxlength="3"></td>
+                <td><label for="weight1">290gr<input id="weight1" class="checkbox" type="checkbox" name="weight1"
+                                                     value="290"></label></td>
+                <td><input id="price1" type="number" name="price1" maxlength="3" disabled="disabled"></td>
+            </tr>
+            <tr>
+                <td><label for="weight2">600gr</label><input id="weight2" class="checkbox" type="checkbox"
+                                                             name="weight2"
+                                                             value="600"></td>
+                <td><input id="price2" type="number" name="price2" maxlength="3" disabled="disabled"></td>
             </tr>
             </tbody>
         </table>
         <div>
             <h3 class="padding-left">Imagen</h3>
-        <input class="button limited-height grey-font" type='file' name='image_path'>
+        <input class="button limited-height grey-font" type='file' name='image_path' required>
 </div>
     </div>
     <div class="bottom-thing grid-1-1-1-1 give-me-gap">
         <!--<input type="file" id="file-input" name="image_path" multiple/>
         <div id="thumb-output"></div>-->
-        <a class="button red-outline limited-width-2 cancel" href='../products_coffee.php'>Cancelar</a>
+        <a class="button red-outline limited-width-2 cancel" href='../products_honey.php'>Cancelar</a>
         <input class="button red limited-width-2 limited-height" type="submit" value="Guardar producto">
     </div>
 </form>
