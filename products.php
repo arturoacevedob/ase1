@@ -178,7 +178,7 @@ include "contact_pending.php";
                         <p class='pdescription'>" .
                     $products[$i]["description"] .
                     "<br> <a
-                                class='link ' href='product_view.php?idproduct=" .
+                                class='link ' href='product_view_2.php?idproduct=" .
                     $products[$i]["id_product"] .
                     "' target='_self'>Ver más »</a></p>
                     </section>";
