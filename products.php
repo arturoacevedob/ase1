@@ -17,7 +17,8 @@ include "contact_pending.php";
     <meta content="Sarah Raquel Quintana Cortés,Arturo Alejandro Acevedo Bravo, Mathias Thomsen Cuéllar" name="author">
     <meta content="Dándole el máximo valor agregado que nos permite la construcción de un precio justo y digno al trabajo de quienes los siembran."
           name="description">
-    <meta content="Tseltal, Bats'il Maya, café, miel, jabón, jabones, Chiapas, Chilón, Orgánico, coffee, cafe organico, organic coffee, capeltic, cafe capeltic, cafeteria capeltic, chiapas, cafe de chiapas, cafe mexicano, tsletales, tseltal, lo mejor de mexico, cafe responsable, sustentabilidad, cafe sustentale, cafe de comercio justo, comercio justo" name="keywords">
+    <meta content="Tseltal, Bats'il Maya, café, miel, jabón, jabones, Chiapas, Chilón, Orgánico, coffee, cafe organico, organic coffee, capeltic, cafe capeltic, cafeteria capeltic, chiapas, cafe de chiapas, cafe mexicano, tsletales, tseltal, lo mejor de mexico, cafe responsable, sustentabilidad, cafe sustentale, cafe de comercio justo, comercio justo"
+          name="keywords">
     <!-- Scripts de compatibilidad -->
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <!--[if lt IE 9]>
@@ -38,6 +39,9 @@ include "contact_pending.php";
     <div>
         <header>
             <?php renderHeader(); ?>
+            <h2 class='h2-header'>Productos</h2>
+    </div>
+    </header>
         </header>
     </div>
     <aside class="product dark-bg light">
@@ -57,38 +61,30 @@ include "contact_pending.php";
                 $products = [];
                 $counter = 0;
                 while ($row = mysqli_fetch_array($recordSet)) {
-                  $products[$counter] = [];
-                  $products[$counter]["id_product"] = $row["id_product"];
-                  $products[$counter]["name_product"] = $row["name_product"];
-                  $products[$counter]["description"] = $row["description"];
-                  $products[$counter]["notes"] = $row["notes"];
-                  $products[$counter]["client_type"] = $row["client_type"];
-                  $counter++;
+                    $products[$counter] = [];
+                    $products[$counter]["id_product"] = $row["id_product"];
+                    $products[$counter]["name_product"] = $row["name_product"];
+                    $products[$counter]["description"] = $row["description"];
+                    $products[$counter]["notes"] = $row["notes"];
+                    $products[$counter]["client_type"] = $row["client_type"];
+                    $counter++;
                 }
 
                 for ($i = 0; $i < count($products); $i++) {
-                  $q =
-                    "select image_path from images where images.id_product = " .
-                    $products[$i]["id_product"] .
-                    " limit 1";
-                  $recordSetImage = execute($q);
-                  $image_row = mysqli_fetch_array($recordSetImage);
-                  $image_path = $image_row["image_path"];
+                    $q = "select image_path from images where images.id_product = " . $products[$i]["id_product"] . " limit 1";
+                    $recordSetImage = execute($q);
+                    $image_row = mysqli_fetch_array($recordSetImage);
+                    $image_path = $image_row["image_path"];
 
-                  echo "
+                    echo "
                     <section class='ind-product'>
-                        <h3 class='title pname h3-small'>" .
-                    $products[$i]["name_product"] .
-                    "</h3>
+                        <h3 class='title pname h3-small'>" . $products[$i]["name_product"] . "</h3>
                         <div style='height: 250px; background: transparent url(" .
-                    $image_path .
-                    ") 50% 50% / cover no-repeat;'></div>
-                        <p class='pdescription'>" .
-                    $products[$i]["description"] .
-                    "<br> <a
-                                class='link ' href='product_view.php?idproduct=" .
-                    $products[$i]["id_product"] .
-                    "' target='_self'>Ver más »</a></p>
+                        $image_path .
+                        ") 50% 50% / cover no-repeat;'></div>
+                        <p class='pdescription'>" . $products[$i]["description"] . "<br>
+                            <a class='link ' href='product_view.php?idproduct=" . $products[$i]["id_product"] . "' target='_self'>Ver más »</a>
+                        </p>
                     </section>";
                 }
                 ?>
@@ -134,14 +130,16 @@ include "contact_pending.php";
     <aside class="product yellow-bg dark padding-top">
         <div class="container-sequel">
             <h2 class="product-title">Miel orgánica</h2>
-            <p>La miel orgánica Chabtic es producto del trabajo de la Cooperativa Ts’umbal Xitalha’, conformada por
+            <p>
+                La miel orgánica Chabtic es producto del trabajo de la Cooperativa Ts’umbal Xitalha’, conformada por
                 familias
                 tseltales de la Selva Norte de Chiapas. Nuestra miel es orgánica certificada, cultivada entre la
                 diversidad de
-                la flora local y en armonía con la Madre Tierra.</p>
+                la flora local y en armonía con la Madre Tierra.
+            </p>
         </div>
         <div class="gridbigproduct container">
-        <div class="grid-scroll-x">
+            <div class="grid-scroll-x">
                 <?php
                 $query = "select * from products where id_category = 2";
                 $recordSet = execute($query);
@@ -149,30 +147,26 @@ include "contact_pending.php";
                 $products = [];
                 $counter = 0;
                 while ($row = mysqli_fetch_array($recordSet)) {
-                  $products[$counter] = [];
-                  $products[$counter]["id_product"] = $row["id_product"];
-                  $products[$counter]["name_product"] = $row["name_product"];
-                  $products[$counter]["description"] = $row["description"];
-                  $products[$counter]["notes"] = $row["notes"];
-                  $products[$counter]["client_type"] = $row["client_type"];
-                  $counter++;
+                    $products[$counter] = [];
+                    $products[$counter]["id_product"] = $row["id_product"];
+                    $products[$counter]["name_product"] = $row["name_product"];
+                    $products[$counter]["description"] = $row["description"];
+                    $products[$counter]["notes"] = $row["notes"];
+                    $products[$counter]["client_type"] = $row["client_type"];
+                    $counter++;
                 }
 
                 for ($i = 0; $i < count($products); $i++) {
-                  $q =
-                    "select image_path from images where images.id_product = " .
-                    $products[$i]["id_product"] .
-                    " limit 1";
-                  $recordSetImage = execute($q);
-                  $image_row = mysqli_fetch_array($recordSetImage);
-                  $image_path = $image_row["image_path"];
+                    $q = "select image_path from images where images.id_product = " . $products[$i]["id_product"] . " limit 1";
+                    $recordSetImage = execute($q);
+                    $image_row = mysqli_fetch_array($recordSetImage);
+                    $image_path = $image_row["image_path"];
 
-                  echo "
+                    echo "
                     <section class='ind-product'>
-                        <h3 class='title pname h3-small'>" .
-                    $products[$i]["name_product"] .
-                    "</h3>
+                        <h3 class='title pname h3-small'>" . $products[$i]["name_product"] . "</h3>
                         <div style='height: 250px; background: transparent url(" .
+<<<<<<< HEAD
                     $image_path .
                     ") 50% 50% / cover no-repeat;'></div>
                         <p class='pdescription'>" .
@@ -181,6 +175,13 @@ include "contact_pending.php";
                                 class='link ' href='product_view_2.php?idproduct=" .
                     $products[$i]["id_product"] .
                     "' target='_self'>Ver más »</a></p>
+=======
+                        $image_path .
+                        ") 50% 50% / cover no-repeat;'></div>
+                        <p class='pdescription'>" . $products[$i]["description"] . "<br>
+                            <a class='link' href='product_view.php?idproduct=" . $products[$i]["id_product"] . "' target='_self'>Ver más »</a>
+                        </p>
+>>>>>>> e054badb110386ae34910a42f0f06064f8e0e1ec
                     </section>";
                 }
                 ?>
@@ -230,45 +231,45 @@ include "contact_pending.php";
         </div>
         <div class="gridbigproduct container">
             <div class="grid-scroll-x">
-            <?php
+                <?php
                 $query = "select * from products where id_category = 3";
                 $recordSet = execute($query);
 
                 $products = [];
                 $counter = 0;
                 while ($row = mysqli_fetch_array($recordSet)) {
-                  $products[$counter] = [];
-                  $products[$counter]["id_product"] = $row["id_product"];
-                  $products[$counter]["name_product"] = $row["name_product"];
-                  $products[$counter]["description"] = $row["description"];
-                  $products[$counter]["notes"] = $row["notes"];
-                  $products[$counter]["client_type"] = $row["client_type"];
-                  $counter++;
+                    $products[$counter] = [];
+                    $products[$counter]["id_product"] = $row["id_product"];
+                    $products[$counter]["name_product"] = $row["name_product"];
+                    $products[$counter]["description"] = $row["description"];
+                    $products[$counter]["notes"] = $row["notes"];
+                    $products[$counter]["client_type"] = $row["client_type"];
+                    $counter++;
                 }
 
                 for ($i = 0; $i < count($products); $i++) {
-                  $q =
-                    "select image_path from images where images.id_product = " .
-                    $products[$i]["id_product"] .
-                    " limit 1";
-                  $recordSetImage = execute($q);
-                  $image_row = mysqli_fetch_array($recordSetImage);
-                  $image_path = $image_row["image_path"];
+                    $q =
+                        "select image_path from images where images.id_product = " .
+                        $products[$i]["id_product"] .
+                        " limit 1";
+                    $recordSetImage = execute($q);
+                    $image_row = mysqli_fetch_array($recordSetImage);
+                    $image_path = $image_row["image_path"];
 
-                  echo "
+                    echo "
                     <section class='ind-product'>
                         <h3 class='title pname h3-small'>" .
-                    $products[$i]["name_product"] .
-                    "</h3>
+                        $products[$i]["name_product"] .
+                        "</h3>
                         <div style='height: 250px; background: transparent url(" .
-                    $image_path .
-                    ") 50% 50% / cover no-repeat;'></div>
+                        $image_path .
+                        ") 50% 50% / cover no-repeat;'></div>
                         <p class='pdescription'>" .
-                    $products[$i]["description"] .
-                    "<br> <a
+                        $products[$i]["description"] .
+                        "<br> <a
                                 class='link ' href='product_view.php?idproduct=" .
-                    $products[$i]["id_product"] .
-                    "' target='_self'>Ver más »</a></p>
+                        $products[$i]["id_product"] .
+                        "' target='_self'>Ver más »</a></p>
                     </section>";
                 }
                 ?>

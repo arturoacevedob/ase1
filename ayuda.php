@@ -37,6 +37,9 @@ include "header.php";
     <div>
         <header>
             <?php renderHeader(); ?>
+            <h2 class='h2-header'>Ayuda</h2>
+    </div>
+    </header>
         </header>
     </div>
     <div class="container grid-ayuda">
