@@ -166,22 +166,11 @@ include "contact_pending.php";
                     <section class='ind-product'>
                         <h3 class='title pname h3-small'>" . $products[$i]["name_product"] . "</h3>
                         <div style='height: 250px; background: transparent url(" .
-<<<<<<< HEAD
-                    $image_path .
-                    ") 50% 50% / cover no-repeat;'></div>
-                        <p class='pdescription'>" .
-                    $products[$i]["description"] .
-                    "<br> <a
-                                class='link ' href='product_view_2.php?idproduct=" .
-                    $products[$i]["id_product"] .
-                    "' target='_self'>Ver más »</a></p>
-=======
                         $image_path .
                         ") 50% 50% / cover no-repeat;'></div>
                         <p class='pdescription'>" . $products[$i]["description"] . "<br>
-                            <a class='link' href='product_view.php?idproduct=" . $products[$i]["id_product"] . "' target='_self'>Ver más »</a>
+                            <a class='link' href='product_view_2.php?idproduct=" . $products[$i]["id_product"] . "' target='_self'>Ver más »</a>
                         </p>
->>>>>>> e054badb110386ae34910a42f0f06064f8e0e1ec
                     </section>";
                 }
                 ?>
