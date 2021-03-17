@@ -16,6 +16,7 @@
     --a-hover: #EA9A07;
     --a-active: #ffb133;
 
+
     --button-link: var(--red);
     --button-visited: #CC6A14;
     --button-hover: #EBA00C;
@@ -217,6 +218,7 @@ nav a:visited {
 
 /* Toolbar */
 .grid-2-space-between {
+    padding: 8px 2px;
     display: grid;
     grid-auto-flow: column;
     justify-content: space-between;
@@ -232,6 +234,7 @@ nav a:visited {
 
 /* Wrappers */
 .wrapper {
+    margin: 2vw 25vw 0vw 45vh;
     background-color: white;
     border-radius: 15px;
     border: 1px solid black;
@@ -360,8 +363,10 @@ caption {
 }
 
 table {
-    width: 100%;
+   
+    padding: 12px 12px;
     border-spacing: 0;
+    
 }
 
 th {
@@ -408,6 +413,7 @@ th {
 /*      Table Classes > Expandable Table */
 table.expandable-table > tbody > tr.collapsed-view td {
     cursor: pointer;
+    font-weight: bold;
 }
 
 table.expandable-table > tbody > tr.collapsed-view td:last-child {
@@ -417,9 +423,6 @@ table.expandable-table > tbody > tr.collapsed-view td:last-child {
     transition: all var(--time) var(--ease);
 }
 
-table.expandable-table > tbody > tr.collapsed-view:hover {
-    background: lightgrey;
-}
 
 table.expandable-table > tbody > tr.collapsed-view.open td:last-child {
     transform: rotate3d(1, 0, 0, 180deg);
@@ -729,7 +732,13 @@ nav ul a{
 }
 
 #search{
-    max-width: 280px;
+    max-width: 580px;
+    margin: 72px 422px 5px 0px;
+    background-color: #f2f2f2;
+}
+
+body > div > div > div > button {
+    margin: 2px 234px 12px 5px;
 }
 
 .edit-pencil{

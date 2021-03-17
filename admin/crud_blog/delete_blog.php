@@ -11,10 +11,10 @@ if(!isset($_SESSION['user'])) {
     die();
 }
 
-if(isset($_GET['idblog'])) {
-    $id_blog = $_GET['idblog'];
-    $q = "delete from blogs where id_blog = " . $id_blog . "";
-    $recordSet = execute($q);
+if(isset($_GET['id'])) {
+    $id = $_GET['id'];
+    $q = "delete from blog where id = " . $id . "";
+    execute($q);
     header("Location: ../blog.php");
     die();
 }

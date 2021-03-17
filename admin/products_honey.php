@@ -15,7 +15,7 @@ function createHoneyListOptions()
 {
     /*$query = "select products.id_product, images.image_path from images inner join products on products.id_product = images.id_product;";
     execute($query);*/
-    $query = "select * from products;";
+    $query = "select * from products where id_category = 2";
     $recordSet = execute($query);
 
     $products = array();
@@ -25,6 +25,7 @@ function createHoneyListOptions()
         $products[$counter]["id_product"] = $row["id_product"];
         $products[$counter]["name_product"] = $row["name_product"];
         $products[$counter]["description"] = $row["description"];
+        $products[$counter]["notes"] = $row["notes"];
         $products[$counter]["client_type"] = $row["client_type"];
         $counter++;
     }
@@ -129,7 +130,7 @@ function createHoneyListOptions()
         <li><a class="cliente-disactive"href="clients.php" target="_self">Clientes</a></li>
         <li><a class="pedidos-disactive"href="orders-pending-backend.php" target="_self">Pedidos</a></li>
         <li><a class="active bold productos-active" href="products_coffee.php" target="_self">Productos</a></li>
-        <!-- <li><a href="blog.php" target="_self">Blog</a></li> -->
+        <li><a class="blog-disactive" href="blog.php" target="_self">Blog</a></li>
     </ul>
     <ul class="lonely-ul">
         <li><a class="ayuda-disactive" href="user_manual.pdf" target="_black" download="">Manual de uso</a></li>
