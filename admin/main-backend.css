@@ -61,7 +61,7 @@ nav a:visited {
 }
 
 .tab1 {
-    max-width: 34%;
+    max-width: 86%;
     position: relative;
     left: 166%;
     top: 187%;
@@ -129,7 +129,8 @@ nav a:visited {
 .tab-active {
     font-weight: bold;
     color: var(--red) !important;
-    background: url(../admin/images/strings/tab1.svg)52% 11%/72% no-repeat;
+    padding: 10%;
+    background: url(../admin/images/strings/tab1.svg)52% 48%/100% no-repeat;
 }
 .tab-disactive {
     color: var(--dark) !important;
