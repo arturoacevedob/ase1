@@ -83,20 +83,20 @@ if (isset($_GET["idproduct"])) {
                         <label>Peso</label>
                        <!-- <p class='radio-group'>-->
                         
-                       < 
-                       <article class='grid-products-price'> 
-                       ";
-                       if (!is_null($price1)) {
-                           echo"<label>250gr</label>
-                           <label>$price1</label>";
-                       }
-                       if (!is_null($price1)) {
-                           echo"<label>500gr</label>
-                           <label>$price1</label>";
-                       }
-                       echo "
-                       <label value='$price3'>$$price3.00</label>
-                       </article> ";
+                        
+<article class='grid-products-price'> 
+";
+if (!is_null($price1)) {
+    echo"<label>250gr</label>
+    <label>$price1</label>";
+}
+if (!is_null($price1)) {
+    echo"<label>500gr</label>
+    <label>$price1</label>";
+}
+echo "
+<label value='$price3'>$$price3.00</label>
+</article> ";
 
 
        /* if (!is_null($weight1)) {
@@ -170,10 +170,10 @@ if (isset($_GET["idproduct"])) {
         echo "
                 </div>
             </form>
-            <div class='center-aligned'>
+            <div class='center-aligned columna-dos-gratis'>
                 <p>Pide 11KG para envío nacional gratis</p>
             </div>
-            <div style='background: url($image_path) 50% 50% / cover no-repeat;' class='premium_organico'>
+            <div style='background: url($image_path) 50% 50% / cover no-repeat;' class='premium_position'>
             </div>
         </article>";
         ?>

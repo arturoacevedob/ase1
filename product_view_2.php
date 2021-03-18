@@ -81,17 +81,15 @@ if (isset($_GET["idproduct"])) {
                 <div class='grid-2-left-aligned'>
                     <fieldset class='h3-small'>
                         <label>Peso</label>
-                        <!-- <p class='radio-group'>-->
-                        
-                        
+                        <!--<p class='radio-group'>-->
+
+
 <article class='grid-products-price'> 
-<label for='$weight1'>290gr</label>
-<label value='$price1'>$$price1.00</label>
-<label for='$weight2'>600gr</label>
-<label value='$price2'>$$price2.00</label>
-<label for='$weight3'>1kg</label>
-<label value='$price3'>$$price3.00</label>
-</article> ";
+                        <label for='$weight1'>290gr</label>
+                        <label value='$price1'>$$price1.00</label>
+                        <label for='$weight2'>600gr</label>
+                        <label value='$price2'>$$price2.00</label>
+                        </article>";
 
         /*if (!is_null($weight1)) {
             echo "
@@ -99,7 +97,7 @@ if (isset($_GET["idproduct"])) {
             <label for='$weight1'>290gr</label>";
         } else {
             echo "
-            <input id='$weight1' name='weight_selector' type='radio' value='290' disabled>
+            <input id='$weight1' name='weight_selector' type='radio' value='250' disabled>
             <label for='$weight1' class='unavailable'>290gr</label>";
         }
 
@@ -133,17 +131,17 @@ if (isset($_GET["idproduct"])) {
         echo "
                 </div>
             </form>
-            <div class='center-aligned'>
+            <div class='center-aligned columna-dos-gratis'>
                 <p>Pide 11KG para envío nacional gratis</p>
             </div>
-            <div style='background: url($image_path) 50% 50% / cover no-repeat;' class='premium_organico'>
+            <div style='background: url($image_path) 50% 50% / cover no-repeat;' class='premium_position'>
             </div>
         </article>";
         ?>
 
     </section>
     <section class="container">
-        <h3>Detalles de la miel</h3> <br>
+        <h3>Detalles del café</h3> <br>
         <div class="grid-4">
             <article>
                 <h3>Variedad</h3> <br>

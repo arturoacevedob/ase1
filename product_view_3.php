@@ -133,10 +133,10 @@ if (isset($_GET["idproduct"])) {
         echo "
                 </div>
             </form>
-            <div class='center-aligned'>
+            <div class='center-aligned columna-dos-gratis'>
                 <p>Pide 11KG para envío nacional gratis</p>
             </div>
-            <div style='background: url($image_path) 50% 50% / cover no-repeat;' class='premium_organico'>
+            <div style='background: url($image_path) 50% 50% / cover no-repeat;' class='premium_position'>
             </div>
         </article>";
         ?>
