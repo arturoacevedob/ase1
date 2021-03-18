@@ -1,17 +1,30 @@
 <?php
-ini_set('display_errors', 1);
+ini_set("display_errors", 1);
 error_reporting(E_ALL);
 
 session_start();
-include 'connection.php';
-include 'header.php';
-include 'agregar_producto_2.php';
+include "connection.php";
+include "header.php";
+include "agregar_producto.php";
 
-if (isset($_SESSION['user'])) {
-        $user = true;
-    } else {
-        $user = false;
+if (isset($_GET["idproduct"])) {
+    $id_product = $_GET["idproduct"];
+    $query = "select * from products, weight_price, images where products.id_product = $id_product AND weight_price.id_product = $id_product AND images.id_product = $id_product";
+    $recordSet = execute($query);
+    if ($row = mysqli_fetch_array($recordSet)) {
+        $name_product = $row["name_product"];
+        $description = $row["description"];
+        $notes = $row["notes"];
+        $client_type = $row["client_type"];
+        $weight1 = $row["weight1"];
+        $weight2 = $row["weight2"];
+        $weight3 = $row["weight3"];
+        $price1 = $row["price1"];
+        $price2 = $row["price2"];
+        $price3 = $row["price3"];
+        $image_path = $row["image_path"];
     }
+}
 
 ?>
 
@@ -25,7 +38,8 @@ if (isset($_SESSION['user'])) {
     <meta content="Sarah Raquel Quintana Cortés,Arturo Alejandro Acevedo Bravo, Mathias Thomsen Cuéllar" name="author">
     <meta content="Únicamente granos que cumplen los más altos estándares de calidad."
           name="description">
-    <meta content="Tseltal, Bats'il Maya, café, miel, jabón, jabones, Chiapas, Orgánico, coffee, cafe organico, organic coffee, capeltic, cafe capeltic, cafeteria capeltic, chiapas, cafe de chiapas, cafe mexicano, tsletales, tseltal, lo mejor de mexico, cafe responsable, sustentabilidad, cafe sustentale, cafe de comercio justo, comercio justo" name="keywords">
+    <meta content="Tseltal, Bats'il Maya, café, miel, jabón, jabones, Chiapas, Orgánico, coffee, cafe organico, organic coffee, capeltic, cafe capeltic, cafeteria capeltic, chiapas, cafe de chiapas, cafe mexicano, tsletales, tseltal, lo mejor de mexico, cafe responsable, sustentabilidad, cafe sustentale, cafe de comercio justo, comercio justo"
+          name="keywords">
     <!-- Scripts de compatibilidad -->
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <!--[if lt IE 9]>
@@ -38,94 +52,31 @@ if (isset($_SESSION['user'])) {
     <!-- Link a favicon -->
     <link href="images/logos/batsil_maya_logo.svg" rel="icon">
 
-    <title>Productos</title>
+    <title><?php echo "BM - $name_product"; ?></title>
 </head>
 <body>
 <div id="productoorganico">
     <div>
         <header>
-            <div class="grid-header container">
-                <h1>Bats'il Maya: Inicio</h1>
-                <div class="nav-wrapper desktop">
-                    <a class="logo" href="index.php" target="_self">
-                        <img alt="Bats'il Maya Logo" class="shadow" src="images/logos/batsil_maya_logo.svg">
-                    </a>
-                    <nav id="menu-desktop">
-                        <h2>Menú</h2>
-                        <ul class="menu-desktop-content">
-                            <li><a href="index.php" target="_self">Inicio</a></li>
-                            <li><a href="nosotros.php" target="_self">Nosotros</a></li>
-                            <li><a href="nuestro_cafe.php" target="_self">Nuestro café</a></li>
-                            <li><a href="proceso.php" target="_self">Proceso</a></li>
-                            <li><a class="active" href="products.php" target="_self">Productos</a></li>
-                            <li><a href="noticias.php" target="_self">Noticias</a></li>
-                            <li><a href="ayuda.php" target="_self">Ayuda</a></li>
-                        </ul>
-                    </nav>
-                    <?php
-                    renderHeader()
-                    ?>
-                </div>
-
-                <div class="nav-wrapper mobile">
-                    <a class="logo" href="index.php" target="_self">
-                        <img alt="Bats'il Maya Logo" class="shadow" src="images/logos/batsil_maya_logo.svg">
-                    </a>
-                    <nav id="menu-mobile">
-                        <input id="menu-mobile-toggle" type="checkbox">
-                        <label for="menu-mobile-toggle"><span id="menu-icon"></span></label>
-                        <div id="overlay"></div>
-                        <ul class="menu-mobile-content light-bg">
-                            <li><a href="index.php" target="_self">Inicio</a></li>
-                            <li><a href="nosotros.php" target="_self">Nosotros</a></li>
-                            <li><a href="nuestro_cafe.php" target="_self">Nuestro café</a></li>
-                            <li><a href="proceso.php" target="_self">Proceso</a></li>
-                            <li><a class="active" href="products.php" target="_self">Productos</a></li>
-                            <li><a href="noticias.php" target="_self">Noticias</a></li>
-                            <li><a href="ayuda.php" target="_self">Ayuda</a></li>
-                            <?php
-                            renderHeader()
-                            ?>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+            <?php renderHeader(); ?>
         </header>
     </div>
     <section>
         <h2 class="kill">producto</h2>
 
         <?php
-        if (isset($_GET['idproduct'])) {
-            $id_product = $_GET['idproduct'];
-            $query = "select * from products, weight_price, images where products.id_product = $id_product AND weight_price.id_product = $id_product AND images.id_product = $id_product";
-            $recordSet = execute($query);
-            if ($row = mysqli_fetch_array($recordSet)) {
-                $name_product = $row['name_product'];
-                $description = $row['description'];
-                $notes = $row['notes'];
-                $client_type = $row['client_type'];
-                $weight1 = $row['weight1'];
-                $weight2 = $row['weight2'];
-                $weight3 = $row['weight3'];
-                $price1 = $row['price1'];
-                $price2 = $row['price2'];
-                $price3 = $row['price3'];
-                $image_path = $row['image_path'];
-            }
-        }
-
         echo "
         <article class='grid-product-view container no-padding-top-bottom'>
             <div class='product-description order-0'>
-                <h2>" . $name_product . "</h2>
-                <p>" . $description . "</p>
+                <h2>$name_product</h2>
+          <p>$description</p>
+          <h4>Sabores</h4>
+          <p>$notes</p>
             </div>
-
-            <form method='post' class='product-form' action='cart_action.php?action=addToCart' enctype='multipart/form-data' class='grid-product-form'>
+            <form method='post' class='product-form' action='product_view.php?idproduct=$id_product' class='grid-product-form'>
             
                 <input type='hidden' name='insert' value='insert'>
-                <input type='hidden' name='id_product' value='" . $id_product . "'>
+                <input type='hidden' name='id_product' value='$id_product'>
                 
                 <div class='grid-2-left-aligned'>
                     <fieldset class='h3-small'>
@@ -134,32 +85,22 @@ if (isset($_SESSION['user'])) {
 
         if (!is_null($weight1)) {
             echo "
-                            <input id='" . $weight1 . "' name='weight_selector' type='radio' value='250' onclick='calculatePrice()'>
-                            <label for='" . $weight1 . "'>250gr</label>";
+            <input id='$weight1' name='weight_selector' type='radio' value='290' onclick='calculatePrice()'>
+            <label for='$weight1'>290gr</label>";
         } else {
             echo "
-                            <input id='" . $weight1 . "' name='weight_selector' type='radio' value='250' disabled>
-                            <label for='" . $weight1 . "' class='unavailable'>250gr</label>";
+            <input id='$weight1' name='weight_selector' type='radio' value='290' disabled>
+            <label for='$weight1' class='unavailable'>290gr</label>";
         }
 
         if (!is_null($weight2)) {
             echo "
-                            <input id='" . $weight2 . "' name='weight_selector' type='radio' value='500' onclick='calculatePrice()'>
-                            <label for='" . $weight2 . "'>500gr</label>";
+          <input id='$weight2' name='weight_selector' type='radio' value='600' onclick='calculatePrice()'>
+          <label for='$weight2'>600gr</label>";
         } else {
             echo "
-                            <input id='" . $weight2 . "' name='weight_selector' type='radio' value='500' disabled>
-                            <label for='" . $weight2 . "' class='unavailable'>500gr</label>";
-        }
-
-        if (!is_null($weight3)) {
-            echo "
-                            <input id='" . $weight3 . "' name='weight_selector' type='radio' value='1000' onclick='calculatePrice()'>
-                            <label for='" . $weight3 . "'>1kg</label>";
-        } else {
-            echo "
-                            <input id='" . $weight3 . "' name='weight_selector' type='radio' value='1000' disabled>
-                            <label for='" . $weight3 . "' class='unavailable'>1kg</label>";
+          <input id='$weight2' name='weight_selector' type='radio' value='600' disabled>
+          <label for='$weight2' class='unavailable'>600gr</label>";
         }
 
         echo "
@@ -170,28 +111,14 @@ if (isset($_SESSION['user'])) {
                         <p><input id='quantity' name='quantity' type='number' max='100' min='0' value='1' onchange='calculatePrice()'/></p>
                     </fieldset>
                 </div>
-                
-                
 
                 <div class='product-buy grid-2-space-between'>
                     <div class='grid-2-space-between align-center bold'>
                         <span id='quantity'>Qt. x</span>
                         <p id='calculated-total' class='currency'></p>
                     </div>";
-                    if ($user) {
-                        echo "
-                        <div>
-                            <input type='submit' name='Agregar al carrito' value='Agregar al carrito' class='button red'>
-                        </div>";
-                    } else {
-                        echo "
-                        <div class='add-cart-register-to-buy'>
-                            <input type='submit' name='Agregar al carrito' value='Agregar al carrito' class='button disable unavailable'>
-                            /*<a class='note button red fit-content' href='contactanos.php' target='_self'> Regístrate para comprar</a>*/
-                            <a class='note button red fit-content' href='https://www.amazon.com.mx/stores/page/458A7D6B-042B-46E6-AC15-6380E77F8CE0?ingress=2&visitId=65120477-d895-47a2-8a43-ebd0503e16b5&ref_=ast_bln' target='_self'> Compra en Amazon</a>
-                            </div>";
-                        
-                    }
+        compra();
+        // test
 
         echo "
                 </div>
@@ -253,10 +180,13 @@ if (isset($_SESSION['user'])) {
                 $query = "select * from products";
                 $recordSet = execute($query);
 
-                $products = array();
+                $products = [];
                 $counter = 0;
-                while ($row = mysqli_fetch_array($recordSet) AND $counter < 4) {
-                    $products[$counter] = array();
+                while (
+                    ($row = mysqli_fetch_array($recordSet)) and
+                    $counter < 4
+                ) {
+                    $products[$counter] = [];
                     $products[$counter]["id_product"] = $row["id_product"];
                     $products[$counter]["name_product"] = $row["name_product"];
                     $products[$counter]["description"] = $row["description"];
@@ -266,18 +196,28 @@ if (isset($_SESSION['user'])) {
                 }
 
                 for ($i = 0; $i < count($products); $i++) {
-
-                    $q = "select image_path from images where images.id_product = " . $products[$i]['id_product'] . " limit 1";
+                    $q =
+                        "select image_path from images where images.id_product = " .
+                        $products[$i]["id_product"] .
+                        " limit 1";
                     $recordSetImage = execute($q);
                     $image_row = mysqli_fetch_array($recordSetImage);
-                    $image_path = $image_row['image_path'];
+                    $image_path = $image_row["image_path"];
 
                     echo "
                     <section class='ind-product'>
-                        <h3 class='title pname h3-small'>" . $products[$i]['name_product'] . "</h3>
-                        <div style='height: 250px; background: transparent url(" . $image_path . ") 50% 50% / cover no-repeat;'></div>
-                        <p class='pdescription'>" . $products[$i]['description'] . "<br> <a
-                                class='link ' href='product_view.php?idproduct=" . $products[$i]['id_product'] . "' target='_self'>Ver más »</a></p>
+                        <h3 class='title pname h3-small'>" .
+                        $products[$i]["name_product"] .
+                        "</h3>
+                        <div style='height: 250px; background: transparent url(" .
+                        $image_path .
+                        ") 50% 50% / cover no-repeat;'></div>
+                        <p class='pdescription'>" .
+                        $products[$i]["description"] .
+                        "<br> <a
+                                class='link ' href='product_view.php?idproduct=" .
+                        $products[$i]["id_product"] .
+                        "' target='_self'>Ver más »</a></p>
                     </section>";
                 }
                 ?>
@@ -309,7 +249,7 @@ if (isset($_SESSION['user'])) {
                     <li><strong>Correo</strong><br>
                         contacto@batsilmaya.org
                     </li>
-                    <li class="logo-footer"><a href="index.php" target="_self"><img alt="Bats"il Maya Logo"
+                    <li class="logo-footer"><a href="index.php" target="_self"><img alt="Bats'il Maya Logo"
                                                                                     src="images/logos/batsil_maya_logo.svg"></a>
                     </li>
                     <li id="office1"><strong>Oficina</strong><br>
@@ -322,28 +262,7 @@ if (isset($_SESSION['user'])) {
             </footer>
         </div>
     </div>
-</div>;
-
-<script charset="UTF-8" src="js/jquery.js"></script>
-
-<script>
-    $('.radio').change(function () {
-        $('#molido-custom-value').prop('disabled', !$(this).is('.other-input'));
-    });
-</script>
-
-<script>
-    function calculatePrice() {
-        $.ajax({
-            type: 'GET',
-            url: 'price_calculation.php',
-            data: $('.product-form').serialize(),
-            success: function (response) {
-                $('#calculated-total').html(response);
-            }
-        });
-    }
-</script>
+</div>
 
 </body>
 </html>
