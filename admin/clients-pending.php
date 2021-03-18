@@ -236,15 +236,13 @@ function createPendingClientList()
     <h2 style="display: none">Menú</h2>
     <div><img alt="Logo de Bats'il Maya" src="../images/logos/batsil_maya_logo.svg"></div>
     <ul>
-        <li><a class="active" href="clients.php" target="_self">Clientes</a></li>
-        <li><a href="orders-pending-backend.php" target="_self">Pedidos</a></li>
-        <li><a href="products_coffee.php" target="_self">Productos</a></li>
-        <li><a href="blog.php" target="_self">Blog</a></li>
-
-    </ul>
+    <li><a class="active bold cliente-active"  href="clients.php" target="_self">Clientes</a></li>
+        <li><a class="pedidos-disactive"href="orders-pending-backend.php " target="_self">Pedidos</a></li>
+        <li><a class="productos-disactive" href="products_coffee.php " target="_self">Productos</a></li>
+        <li><a class="blog-disactive" href="blog.php" target="_self">Blog</a></li></ul>
     <ul class="lonely-ul">
-        <li><a href="ayuda.php" target="_self">Ayuda</a></li>
-        <li><a href='login.php?killsession=1'>Cerrar Sesión</a></li>
+        <li><a class="ayuda-disactive" href="user_manual.pdf" target="_black" download="">Manual de uso</a></li>
+        <li><a class="cerrar-disactive"href='login.php?killsession=1'>Cerrar Sesión</a></li>
     </ul>
 </nav>
 
