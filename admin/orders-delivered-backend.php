@@ -53,9 +53,9 @@
     </div>
 
     <ul class="grid-tabs">
-        <li><a href="orders-pending-backend.php" id="pending" target="_self">Pendiente</a></li>
-        <li><a href="orders-enroute-backend.php" id="enroute" target="_self">En Ruta</a></li>
-        <li><a class="active" href="orders-delivered-backend.php" id="delivered" target="_self">Entregado</a></li>
+        <li class="tab3 pending-tab"><a class="tab-disactive" a href="orders-pending-backend.php" id="pending" target="_self">Pendiente</a></li>
+        <li class="tab4"><a class="tab-disactive" a href="orders-enroute-backend.php" id="enroute" target="_self">En Ruta</a></li>
+        <li class="tab5"><a class="active bold tab-active" a class="active" href="orders-delivered-backend.php" id="delivered" target="_self">Entregado</a></li>
     </ul>
 
     <div>
