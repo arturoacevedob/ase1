@@ -80,11 +80,13 @@ if (isset($_GET["idproduct"])) {
                 
                 <div class='grid-2-left-aligned'>
                     <fieldset class='h3-small'>
-                        <label>Peso</label>
+                       
                        <!-- <p class='radio-group'>-->
                         
                         
 <article class='grid-products-price'> 
+<label>Peso</label>
+<label>Precio</label>
 <label for='$weight1'>250gr</label>
 <label value='$price1'>$$price1.00</label>
 <label for='$weight2'>500gr</label>

@@ -976,8 +976,9 @@ form textarea {
     justify-content: space-between;
     }
     .add-cart-register-to-buy{
+        margin-top: 10%;
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto;
         grid-gap: 5px;
     }
 }
