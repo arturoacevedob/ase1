@@ -83,7 +83,7 @@ if (isset($_GET["idproduct"])) {
                         <label>Peso</label>
                        <!-- <p class='radio-group'>-->
                         
-                        
+                       < 
                        <article class='grid-products-price'> 
                        ";
                        if (!is_null($price1)) {
