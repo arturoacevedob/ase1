@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6, p, td, th {
     padding: 0;
 }
 .b-grey{
-    height: 220%;
+    height: 549%;
     margin-left: 251px;
     background-color: var(--grey);
     padding: 30px;
@@ -306,7 +306,7 @@ nav a:visited {
 }
 .grid-1-1-1-1 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 7fr 1fr;
 }
 
 .grid-column {
@@ -790,4 +790,9 @@ body > div > div > div > button {
 
 .grid-ind-product p{
     margin-top: -1px;
+}
+
+/* Nueva publicacion */
+body > h1{
+    margin: 10px 8px;
 }
