@@ -46,19 +46,20 @@
     </ul>
 </nav>
 
-<div class="deliveredCuerpo">
+<div class="big-margin padding-thing">
 
     <div class="global-toolbar">
         <h1>Pedidos</h1>
     </div>
-
+</div>
     <ul class="grid-tabs">
-        <li class="tab3 pending-tab"><a class="tab-disactive" a href="orders-pending-backend.php" id="pending" target="_self">Pendiente</a></li>
-        <li class="tab4"><a class="tab-disactive" a href="orders-enroute-backend.php" id="enroute" target="_self">En Ruta</a></li>
-        <li class="tab5"><a class="active bold tab-active" a class="active" href="orders-delivered-backend.php" id="delivered" target="_self">Entregado</a></li>
+        <li class="tab3 pending-tab"><a class="tab-disactive" a href="orders-pending-backend.php" id="pending" target="_self">Pendiente<span class="tab-counter"></span></a></li>
+        <li class="tab4"><a class="tab-disactive" a href="orders-enroute-backend.php" id="enroute" target="_self">En Ruta<span class="tab-counter"></span></a></li>
+        <li class="tab5"><a class="active bold tab-active" a class="active" href="orders-delivered-backend.php" id="delivered" target="_self">Entregado<span class="tab-counter"></span></a></li>
     </ul>
 
-    <div>
+    <div class="b-grey">
+    <div class="grid-2-space-between give-me-gap">
         <div>
             <label class="kill" for="search">Buscar</label>
             <input id="search" placeholder="Buscar" type="search">
