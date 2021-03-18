@@ -692,7 +692,7 @@ body > div.deliveredCuerpo > table {
     box-shadow: 0 5px 10px rgb(0 0 0 / 2%);
 }
 
-body > div.deliveredCuerpo > div:nth-child(3) > div.grid-column > div.grid-column > button {
+.exportarButton {
     margin-left: 203px;
     margin-right: 29px;
     font-size: 14px;
