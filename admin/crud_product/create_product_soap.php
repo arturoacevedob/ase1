@@ -14,6 +14,9 @@ if (!isset($_SESSION['user'])) {
 
 if (isset($_POST['insert'])) {
     $uploadOk = 0;
+    $weight1 = 1;
+    $weight2 = 1;
+    $weight3 = 1;
     $name_product = $_POST['name_product'];
     $description = $_POST['description'];
     $notes = $_POST['notes'];
@@ -22,17 +25,17 @@ if (isset($_POST['insert'])) {
     }
 
     if (isset($_POST['weight1']) AND isset($_POST['price1'])) {
-        $weight1 = $_POST['weight1'];
+        $weight1 = 1;
         $price1 = $_POST['price1'];
     }
 
     if (isset($_POST['weight2']) AND isset($_POST['price2'])) {
-        $weight2 = $_POST['weight2'];
+        $weight2 = 1;
         $price2 = $_POST['price2'];
     }
 
     if (isset($_POST['weight3']) AND isset($_POST['price3'])) {
-        $weight3 = $_POST['weight3'];
+        $weight3 = 1;
         $price3 = $_POST['price3'];
     }
 
@@ -114,14 +117,26 @@ if (isset($_POST['insert'])) {
         <table>
             <thead>
             <tr>
-                <th></th>
+                <th>No. de Jabones</th>
                 <th>Precio</th>
             </tr>
             </thead>
             <tbody>
             <tr>
-            <td><label></label></td>
-                <td><input id="price1" type="number" name="price1" maxlength="3"></td>
+                <td><label for="weight1">1<input id="weight1" class="checkbox" type="checkbox" name="weight1"
+                                                     value="1"></label></td>
+                <td><input id="price1" type="number" name="price1" maxlength="3" disabled="disabled"></td>
+            </tr>
+            <tr>
+                <td><label for="weight2">2</label><input id="weight2" class="checkbox" type="checkbox"
+                                                             name="weight2"
+                                                             value="2"></td>
+                <td><input id="price2" type="number" name="price2" maxlength="3" disabled="disabled"></td>
+            </tr>
+            <tr>
+                <td><label for="weight3">3</label><input id="weight3" class="checkbox" type="checkbox" name="weight3"
+                                                           value="3"></td>
+                <td><input id="price3" type="number" name="price3" maxlength="3" disabled="disabled"></td>
             </tr>
             </tbody>
         </table>
