@@ -694,6 +694,18 @@ form > input[type=submit] {
     z-index: 2;
 }
 
+.expandable-table-route {
+    width: 937px;
+    padding: 12px 12px;
+    margin: 0px 0px 0px 305px;
+    border-spacing: 0;
+    background-color: white;
+    border: 2px solid var(--coral);
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 2%);
+    z-index: 2;
+}
+
 .exportarButton {
     margin-left: 203px;
     margin-right: 29px;
