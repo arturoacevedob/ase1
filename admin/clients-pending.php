@@ -253,13 +253,14 @@ function createPendingClientList()
     <div class="global-toolbar">
         <h1>Clientes</h1>
     </div>
-
+    </div>
     <ul class="grid-tabs">
-        <li><a class="active" href="clients-pending.php" id="clients-pending" target="_self">Pendientes</a></li>
-        <li><a href="clients.php" id="clients" target="_self">Todos los clientes</a></li>
+        <li class="tab1"><a class="active tab-active" href="clients-pending.php" id="clients-pending" target="_self">Pendientes</a></li>
+        <li class="tab2"><a href="clients.php" id="clients" target="_self">Todos los clientes</a></li>
     </ul>
 
     <div class="grid-2-space-between give-me-gap">
+    <div class="b-grey">
         <div>
             <label class="kill" for="search"></label>
             <input id="search" placeholder="Buscar" type="search">
