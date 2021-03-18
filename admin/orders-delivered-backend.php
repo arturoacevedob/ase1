@@ -46,7 +46,7 @@
     </ul>
 </nav>
 
-<div>
+<div class="deliveredCuerpo">
 
     <div class="global-toolbar">
         <h1>Pedidos</h1>
