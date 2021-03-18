@@ -72,7 +72,7 @@
                 <div id="reportrange">
                     <span></span>
                 </div>
-                <button>Exportar Excel<span class="save-icon"></span></button>
+                <button class="exportarButton">Exportar Excel<span class="save-icon"></span></button>
             </div>
         </div>
     </div>
