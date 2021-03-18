@@ -144,7 +144,7 @@ nav a:visited {
 }
 
 .pendientebody {
-    margin-left: 262px;
+    margin-left: 400px;
 }
 
 /* Colors */
@@ -651,7 +651,7 @@ nav ul a{
     background: url(../admin/images/strings/backend_strings_ayuda.svg) 16% 127% / 10% no-repeat;
 }
 .big-margin{
-    margin-left: 300px;
+    margin-left: 0px;
 }
 
 .radius-left {
