@@ -80,22 +80,27 @@ if (isset($_GET["idproduct"])) {
                 
                 <div class='grid-2-left-aligned'>
                     <fieldset class='h3-small'>
-                        <label>Peso</label>
+                        
                        <!-- <p class='radio-group'>-->
                         
-                       < 
-                       <article class='grid-products-price'> 
+                       <article class='grid-products-price '> 
+                       <h4>Peso</h4>
+                        <h4>Precio</h4>
                        ";
                        if (!is_null($price1)) {
                            echo"<label>250gr</label>
-                           <label>$price1</label>";
+                           <label>$$price1.00</label>";
                        }
-                       if (!is_null($price1)) {
+                       if (!is_null($price2)) {
                            echo"<label>500gr</label>
-                           <label>$price1</label>";
+                           <label>$$price2.00</label>";
                        }
+                       if (!is_null($price3)) {
+                        echo"<label>1kg</label>
+                        <label>$$price3.00</label>";
+                    }
                        echo "
-                       <label value='$price3'>$$price3.00</label>
+
                        </article> ";
 
 
