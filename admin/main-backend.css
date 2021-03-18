@@ -129,12 +129,13 @@ nav a:visited {
 .tab-active {
     font-weight: bold;
     color: var(--red) !important;
-    padding: 10%;
+    padding: 10px 99px;
     background: url(../admin/images/strings/tab1.svg)52% 48%/100% no-repeat;
 }
 .tab-disactive {
     color: var(--dark) !important;
     background: url(../admin/images/strings/tab2.svg)55% 0%/86% no-repeat;
+    padding: 17px 71px;
 }
 .pending-tab{
     width: 285px;
