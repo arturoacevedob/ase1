@@ -79,17 +79,29 @@ if (isset($_GET["idproduct"])) {
                 <input type='hidden' name='id_product' value='$id_product'>
                 
                 <div class='grid-2-left-aligned'>
-                    <fieldset class='h3-small'>
-                        <label>Peso</label>
-                        <!--<p class='radio-group'>-->
+                <fieldset class='h3-small'>
+                    
+                   <!-- <p class='radio-group'>-->
+                    
+                   <article class='grid-products-price '> 
+                   <h4>Peso</h4>
+                    <h4>Precio</h4>
+                   ";
+                   if (!is_null($price1)) {
+                       echo"<label>290gr</label>
+                       <label>$$price1.00</label>";
+                   }
+                   if (!is_null($price2)) {
+                       echo"<label>600gr</label>
+                       <label>$$price2.00</label>";
+                   }
+                   if (!is_null($price3)) {
+                    echo"<label>1kg</label>
+                    <label>$$price3.00</label>";
+                }
+                   echo "
 
-
-<article class='grid-products-price'> 
-                        <label for='$weight1'>290gr</label>
-                        <label value='$price1'>$$price1.00</label>
-                        <label for='$weight2'>600gr</label>
-                        <label value='$price2'>$$price2.00</label>
-                        </article>";
+                   </article> ";
 
         /*if (!is_null($weight1)) {
             echo "

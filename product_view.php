@@ -80,23 +80,28 @@ if (isset($_GET["idproduct"])) {
                 
                 <div class='grid-2-left-aligned'>
                     <fieldset class='h3-small'>
-                        <label>Peso</label>
+                        
                        <!-- <p class='radio-group'>-->
                         
-                        
-<article class='grid-products-price'> 
-";
-if (!is_null($price1)) {
-    echo"<label>250gr</label>
-    <label>$price1</label>";
-}
-if (!is_null($price1)) {
-    echo"<label>500gr</label>
-    <label>$price1</label>";
-}
-echo "
-<label value='$price3'>$$price3.00</label>
-</article> ";
+                       <article class='grid-products-price '> 
+                       <h4>Peso</h4>
+                        <h4>Precio</h4>
+                       ";
+                       if (!is_null($price1)) {
+                           echo"<label>250gr</label>
+                           <label>$$price1.00</label>";
+                       }
+                       if (!is_null($price2)) {
+                           echo"<label>500gr</label>
+                           <label>$$price2.00</label>";
+                       }
+                       if (!is_null($price3)) {
+                        echo"<label>1kg</label>
+                        <label>$$price3.00</label>";
+                    }
+                       echo "
+
+                       </article> ";
 
 
        /* if (!is_null($weight1)) {
@@ -194,10 +199,10 @@ echo "
             <article>
                 <h3>Proceso</h3> <br>
             </article>
-            <article>
+           <!-- <article>
                 <h3>Notas</h3> <br>
                 <p>En su sabor se distinguen notas de avellana, caramelo, frutos rojos y cítricos.</p>
-            </article>
+            </article>-->
             <article>
                 <h3>Ubicación</h3> <br>
                 <p>Chilón, Chiapas.</p>
