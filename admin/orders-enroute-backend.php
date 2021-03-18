@@ -32,8 +32,8 @@
     <div><img alt="Logo de Bats'il Maya" src="../images/logos/batsil_maya_logo.svg"></div>
     <ul>
         <li><a class="cliente-disactive"href="clients.php" target="_self">Clientes</a></li>
-        <li><a class="active bold pedidos-active" href="orders-pending-backend.html" target="_self">Pedidos</a></li>
-        <li><a class="producto-disactive"href="products-backend.html" target="_self">Productos</a></li>
+        <li><a class="active bold pedidos-active" href="orders-pending-backend.php" target="_self">Pedidos</a></li>
+        <li><a class="producto-disactive"href="products-backend.php" target="_self">Productos</a></li>
         <li><a href="blog.php" target="_self">Blog</a></li>
 
     </ul>
@@ -50,9 +50,9 @@
     </div>
 
     <ul class="grid-tabs">
-        <li><a href="orders-pending-backend.html" id="pending" target="_self">Pendiente</a></li>
-        <li><a class="active" href="orders-enroute-backend.html" id="enroute" target="_self">En Ruta</a></li>
-        <li><a href="orders-delivered-backend.html" id="delivered" target="_self">Entregado</a></li>
+        <li><a href="orders-pending-backend.php" id="pending" target="_self">Pendiente</a></li>
+        <li><a class="active" href="orders-enroute-backend.php" id="enroute" target="_self">En Ruta</a></li>
+        <li><a href="orders-delivered-backend.php" id="delivered" target="_self">Entregado</a></li>
     </ul>
 
     <div>
