@@ -36,13 +36,13 @@ function createPendingClientList()
         <table class='expandable-table wrapper'>
         <tbody>
         <tr class='collapsed-view'>
-            <td><span>Nombre</span><br>" . $clients_pending[$i][name_client_pending] . "</td>
-            <td><span>Correo</span><br>" . $clients_pending[$i][email_client_pending] . "</td>
-            <td><span>Teléfono</span><br>" . $clients_pending[$i][phone_client_pending] . "</td>
-            <td><span>Día</span><br>" . $clients_pending[$i][day_client_pending] . "</td>
-            <td><span>Desde</span><br>" . $clients_pending[$i][from_client_pending] . "</td>
-            <td><span>Hasta</span><br>" . $clients_pending[$i][to_client_pending] . "</td>
-            <td><a href='crud_client/delete_client_pending.php?idclient=" . $clients_pending[$i]["id_client_pending"] . "'>Eliminar</a></td>
+            <td><span>Nombre</span><br>" . $clients_pending[$i]['name_client_pending'] . "</td>
+            <td><span>Correo</span><br>" . $clients_pending[$i]['email_client_pending'] . "</td>
+            <td><span>Teléfono</span><br>" . $clients_pending[$i]['phone_client_pending'] . "</td>
+            <td><span>Día</span><br>" . $clients_pending[$i]['day_client_pending'] . "</td>
+            <td><span>Desde</span><br>" . $clients_pending[$i]['from_client_pending'] . "</td>
+            <td><span>Hasta</span><br>" . $clients_pending[$i]['to_client_pending'] . "</td>
+            <td><a href='crud_client/delete_client_pending.php?idclient=" . $clients_pending[$i]['id_client_pending'] . "'>Eliminar</a></td>
             <td class='radius-right'></td>
         </tr>
         <div class='padding-for-all-2'>
