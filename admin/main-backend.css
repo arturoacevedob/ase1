@@ -681,6 +681,16 @@ form > input[type=submit] {
     margin: 12px 0px;
 }
 
+body > div.deliveredCuerpo > table {
+    width: 937px;
+    padding: 12px 12px;
+    margin: 23px;
+    border-spacing: 0;
+    border: 1px solid var(--light-80);
+    border-radius: 39px;
+    box-sizing: border-box;
+}
+
 .border-thing table, .border-thing caption{
     padding-left: 20px;
     border-left: 2px solid var(--coral);
