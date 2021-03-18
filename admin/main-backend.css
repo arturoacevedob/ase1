@@ -37,8 +37,8 @@ h1, h2, h3, h4, h5, h6, p, td, th {
     padding: 0;
 }
 .b-grey{
-    height: 549%;
-    width: 139%;
+    height: 452%;
+    width: 77%;
     margin-left: 251px;
     background-color: var(--grey);
     padding: 30px;
@@ -134,7 +134,7 @@ nav a:visited {
 }
 .tab-disactive {
     color: var(--dark) !important;
-    padding: 10px 71px;
+    padding: 17px 71px;
     background: url(../admin/images/strings/tab2.svg)55% 0%/86% no-repeat;
 }
 .pending-tab{
@@ -801,4 +801,8 @@ body > div > div > div > button {
 /* Nueva publicacion */
 body > h1{
     margin: 10px 8px;
+}
+
+body > div.grid-2-space-between.give-me-gap > div > a {
+    margin: -40px 6px 0px 821px;
 }
