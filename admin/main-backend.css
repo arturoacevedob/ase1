@@ -692,6 +692,16 @@ body > div.deliveredCuerpo > table {
     box-shadow: 0 5px 10px rgb(0 0 0 / 2%);
 }
 
+body > div.deliveredCuerpo > div:nth-child(3) > div.grid-column > div.grid-column > button {
+    font-size: 14px;
+    padding: calc(var(--button-padding) - 7.2rem);
+    color: var(--red);
+    border: 2px solid var(--red);
+    border-radius: 28px;
+    transition: border var(--time) var(--ease);
+}
+
+
 .border-thing table, .border-thing caption{
     padding-left: 20px;
     border-left: 2px solid var(--coral);
