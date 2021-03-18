@@ -10,7 +10,7 @@ function connect() {
     $usr = "root";
     $pwd = "root";
 
-    $connection = mysqli_connect($host, $usr, $pwd, $db) or die("Hola. No se pudo conectar al servidor MySQL.");
+    $connection = mysqli_connect($host, $usr, $pwd, $db) or die("No se pudo conectar al servidor MySQL.");
     // Permite visualizar los acentos y caracteres especiales.
     mysqli_set_charset($connection, "utf8");
 }
