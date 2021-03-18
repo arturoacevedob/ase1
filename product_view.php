@@ -86,11 +86,11 @@ if (isset($_GET["idproduct"])) {
                         
 <article class='grid-products-price'> 
 <label for='$weight1'>250gr</label>
-<label value='$price1'>$price1</label>
+<label value='$price1'>$$price1.00</label>
 <label for='$weight2'>500gr</label>
-<label value='$price2'>$ $price2 .00</label>
+<label value='$price2'>$$price2.00</label>
 <label for='$weight3'>1kg</label>
-<label value='$price3'>$ $price3 .00</label>
+<label value='$price3'>$$price3.00</label>
 
 </article>
                         ";
