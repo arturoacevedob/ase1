@@ -686,9 +686,10 @@ body > div.deliveredCuerpo > table {
     padding: 12px 12px;
     margin: 23px;
     border-spacing: 0;
-    border: 1px solid var(--light-80);
-    border-radius: 39px;
-    box-sizing: border-box;
+    background-color: white;
+    border: 2px solid var(--coral);
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 2%);
 }
 
 .border-thing table, .border-thing caption{
