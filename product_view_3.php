@@ -88,15 +88,15 @@ if (isset($_GET["idproduct"])) {
                     <h4>Precio</h4>
                    ";
                    if (!is_null($price1)) {
-                       echo"<label>1 pieza</label>
+                       echo"<label>1</label>
                        <label>$$price1.00</label>";
                    }
                    if (!is_null($price2)) {
-                       echo"<label>2 piezas</label>
+                       echo"<label>2</label>
                        <label>$$price2.00</label>";
                    }
                    if (!is_null($price3)) {
-                    echo"<label>3 Piezas</label>
+                    echo"<label>3</label>
                     <label>$$price3.00</label>";
                 }
                    echo "
