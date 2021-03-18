@@ -401,11 +401,13 @@ function createClientList()
         <h1>Clientes</h1>
     </div>
     </div>
+
+
     <ul class="grid-tabs">
         <li class="tab1"><a class="tab-disactive"href="clients-pending.php" id="clients-pending" target="_self">Pendientes</a></li>
         <li class="tab2"><a class="active tab-active" href="clients.php" id="clients" target="_self">Todos los clientes</a></li>
     </ul>
-    
+
     
     <div class="b-grey">
     <div class="grid-2-space-between give-me-gap">
