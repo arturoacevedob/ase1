@@ -199,10 +199,10 @@ if (isset($_GET["idproduct"])) {
             <article>
                 <h3>Proceso</h3> <br>
             </article>
-            <article>
+           <!-- <article>
                 <h3>Notas</h3> <br>
                 <p>En su sabor se distinguen notas de avellana, caramelo, frutos rojos y cítricos.</p>
-            </article>
+            </article>-->
             <article>
                 <h3>Ubicación</h3> <br>
                 <p>Chilón, Chiapas.</p>
