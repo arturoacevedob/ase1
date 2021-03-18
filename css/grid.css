@@ -422,6 +422,12 @@ input {
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
 }
+.grid-products-price{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 5%;
+}
 
 .grid-product-view .product-description {
     grid-column: 2 / 3;
@@ -607,6 +613,7 @@ form textarea {
     grid-auto-rows: auto;
     grid-gap: 20px;
 }
+
 
 @media screen and (max-width: 639px) {
 
@@ -1298,6 +1305,12 @@ form textarea {
     .crazy-margin{
         margin-left: 25%;
     }
+    .grid-products-price{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 5%;
+}
 }
 
 @media screen and (min-width: 918px) {
@@ -1400,3 +1413,4 @@ form textarea {
 .faq article p {
     margin-top: 10px;
 }
+
