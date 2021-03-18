@@ -81,9 +81,19 @@ if (isset($_GET["idproduct"])) {
                 <div class='grid-2-left-aligned'>
                     <fieldset class='h3-small'>
                         <label>Peso</label>
-                        <p class='radio-group'>";
+                       <!-- <p class='radio-group'>-->
+                        
+                        
+<article> 
+<label for='$weight1'>250gr</label>
+<label for='$weight2'>500gr</label>
+<label for='$weight3'>1kg</label>
+<label value='$price1'>$price1</label>
 
-        if (!is_null($weight1)) {
+</article>
+                        ";
+
+       /* if (!is_null($weight1)) {
             echo "
             <input id='$weight1' name='weight_selector' type='radio' value='250' onclick='calculatePrice()'>
             <label for='$weight1'>250gr</label>";
@@ -147,7 +157,7 @@ if (isset($_GET["idproduct"])) {
                     <div class='grid-2-space-between align-center bold'>
                         <span id='quantity'>Qt. x</span>
                         <p id='calculated-total' class='currency'></p>
-                    </div>";
+                    </div>";*/
         compra();
         // test
 
