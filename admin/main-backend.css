@@ -231,7 +231,7 @@ nav a:visited {
 }
 
 .grid-tabs {
-    position:absolute;
+        position:absolute;
 }
 
 .grid-tabs > * {
