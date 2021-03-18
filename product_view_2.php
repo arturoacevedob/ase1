@@ -70,7 +70,7 @@ if (isset($_GET["idproduct"])) {
             <div class='product-description order-0'>
                 <h2>$name_product</h2>
           <p>$description</p>
-          <h4>Notas</h4>
+          <h4>Sabores</h4>
           <p>$notes</p>
             </div>
             <form method='post' class='product-form' action='product_view.php?idproduct=$id_product' class='grid-product-form'>
@@ -152,7 +152,7 @@ if (isset($_GET["idproduct"])) {
         ?>
 
     </section>
-    <section class="container">
+    <!--<section class="container">
         <h3>Detalles del café</h3> <br>
         <div class="grid-4">
             <article>
@@ -189,7 +189,7 @@ if (isset($_GET["idproduct"])) {
                     teniendo variación en tipos de suelo.</p>
             </article>
         </div>
-    </section>
+    </section>-->
 
 
     <div class="light-bg">
