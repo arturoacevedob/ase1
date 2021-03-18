@@ -693,6 +693,8 @@ body > div.deliveredCuerpo > table {
 }
 
 body > div.deliveredCuerpo > div:nth-child(3) > div.grid-column > div.grid-column > button {
+    margin-left: 203px;
+    margin-right: 29px;
     font-size: 14px;
     padding: calc(var(--button-padding) - 7.2rem);
     color: var(--red);
