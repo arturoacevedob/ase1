@@ -91,9 +91,8 @@ if (isset($_GET["idproduct"])) {
 <label value='$price2'>$$price2.00</label>
 <label for='$weight3'>1kg</label>
 <label value='$price3'>$$price3.00</label>
+</article> ";
 
-</article>
-                        ";
 
        /* if (!is_null($weight1)) {
             echo "
