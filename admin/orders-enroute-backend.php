@@ -676,7 +676,7 @@
 
 <script>
     $(function () {
-        $(".expandable-table tr.collapsed-view").on("click", function () {
+        $(".expandable-table-route tr.collapsed-view").on("click", function () {
             $(this).toggleClass("open").next(".expanded-view").toggleClass("open");
         });
     });
