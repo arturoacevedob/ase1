@@ -673,6 +673,10 @@ body > div > div.big-margin.padding-thing > div > h1 {
     margin-left: -269px;
 }
 
+body > div.deliveredCuerpo {
+    margin: 33px 31px 30px 275px;
+}
+
 form > input[type=submit] {
     margin: 12px 0px;
 }
