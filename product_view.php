@@ -187,7 +187,7 @@ if (isset($_GET["idproduct"])) {
     <section class="container">
         <h3>Detalles del café</h3> <br>
         <div class="grid-4">
-            <article>
+            <!--<article>
                 <h3>Variedad</h3> <br>
                 <p class="p-big">Typica</p>
                 <p>Uno de los cafés más importantes cultural y genéticamente en el mundo, con alta calidad en
@@ -199,7 +199,7 @@ if (isset($_GET["idproduct"])) {
             <article>
                 <h3>Proceso</h3> <br>
             </article>
-           <!-- <article>
+            <article>
                 <h3>Notas</h3> <br>
                 <p>En su sabor se distinguen notas de avellana, caramelo, frutos rojos y cítricos.</p>
             </article>-->

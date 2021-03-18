@@ -152,7 +152,7 @@ if (isset($_GET["idproduct"])) {
         ?>
 
     </section>
-    <section class="container">
+    <!--<section class="container">
         <h3>Detalles del Jabón</h3> <br>
         <div class="grid-4">
             <article>
@@ -189,7 +189,7 @@ if (isset($_GET["idproduct"])) {
                     teniendo variación en tipos de suelo.</p>
             </article>
         </div>
-    </section>
+    </section>-->
 
 
     <div class="light-bg">
