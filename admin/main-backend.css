@@ -681,7 +681,7 @@ form > input[type=submit] {
     margin: 12px 0px;
 }
 
-body > div.deliveredCuerpo > table {
+.expandable-table {
     width: 937px;
     padding: 12px 12px;
     margin: 23px;
