@@ -43,7 +43,7 @@
     </ul>
 </nav>
 
-<div>
+<div class="pendientebody">
 
 <div class="big-margin padding-thing">
 <div class="global-toolbar">
