@@ -131,14 +131,29 @@ if (isset($_POST['update'])) {
         <table>
             <thead>
             <tr>
-                <th></th>
+                <th>No. de Jabones</th>
                 <th>Precio</th>
             </tr>
             </thead>
             <tbody>
             <tr>
-            <td><label></label></td>
-                <td><input id="price1" type="number" name="price1" maxlength="3"></td>
+                <td><label for="weight1">1<input id="weight1" class="checkbox" type="checkbox" name="weight1"
+                                                     value="1" <?php if ($weight1 == '1') echo 'checked="checked"'; ?>></label>
+                </td>
+                <td><input id="price1" type="number" name="price1" maxlength="3" value="<?php echo $price1; ?>"></td>
+            </tr>
+            <tr>
+                <td><label for="weight2">2</label><input id="weight2" class="checkbox" type="checkbox"
+                                                             name="weight2"
+                                                             value="2" <?php if ($weight2 == '2') echo 'checked="checked"'; ?>>
+                </td>
+                <td><input id="price2" type="number" name="price2" maxlength="3" value="<?php echo $price2; ?>"></td>
+            </tr>
+            <tr>
+                <td><label for="weight3">3</label><input id="weight3" class="checkbox" type="checkbox" name="weight3"
+                                                           value="3" <?php if ($weight3 == '3') echo 'checked="checked"'; ?>>
+                </td>
+                <td><input id="price3" type="number" name="price3" maxlength="3" value="<?php echo $price3; ?>"></td>
             </tr>
             </tbody>
         </table>

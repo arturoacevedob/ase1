@@ -70,7 +70,7 @@ if (isset($_GET["idproduct"])) {
             <div class='product-description order-0'>
                 <h2>$name_product</h2>
           <p>$description</p>
-          <h4>Sabores</h4>
+          <h4>Notas</h4>
           <p>$notes</p>
             </div>
             <form method='post' class='product-form' action='product_view.php?idproduct=$id_product' class='grid-product-form'>
@@ -81,9 +81,19 @@ if (isset($_GET["idproduct"])) {
                 <div class='grid-2-left-aligned'>
                     <fieldset class='h3-small'>
                         <label>Peso</label>
-                        <p class='radio-group'>";
+                        <!-- <p class='radio-group'>-->
+                        
+                        
+<article class='grid-products-price'> 
+<label for='$weight1'>290gr</label>
+<label value='$price1'>$$price1.00</label>
+<label for='$weight2'>600gr</label>
+<label value='$price2'>$$price2.00</label>
+<label for='$weight3'>1kg</label>
+<label value='$price3'>$$price3.00</label>
+</article> ";
 
-        if (!is_null($weight1)) {
+        /*if (!is_null($weight1)) {
             echo "
             <input id='$weight1' name='weight_selector' type='radio' value='290' onclick='calculatePrice()'>
             <label for='$weight1'>290gr</label>";
@@ -116,7 +126,7 @@ if (isset($_GET["idproduct"])) {
                     <div class='grid-2-space-between align-center bold'>
                         <span id='quantity'>Qt. x</span>
                         <p id='calculated-total' class='currency'></p>
-                    </div>";
+                    </div>";*/
         compra();
         // test
 
@@ -133,7 +143,7 @@ if (isset($_GET["idproduct"])) {
 
     </section>
     <section class="container">
-        <h3>Detalles del café</h3> <br>
+        <h3>Detalles de la miel</h3> <br>
         <div class="grid-4">
             <article>
                 <h3>Variedad</h3> <br>

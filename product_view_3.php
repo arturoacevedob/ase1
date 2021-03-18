@@ -70,7 +70,7 @@ if (isset($_GET["idproduct"])) {
             <div class='product-description order-0'>
                 <h2>$name_product</h2>
           <p>$description</p>
-          <h4>Notas</h4>
+          <h4>Olores</h4>
           <p>$notes</p>
             </div>
             <form method='post' class='product-form' action='product_view.php?idproduct=$id_product' class='grid-product-form'>
@@ -81,47 +81,36 @@ if (isset($_GET["idproduct"])) {
                 <div class='grid-2-left-aligned'>
                     <fieldset class='h3-small'>
                         <label>Peso</label>
-                       <!-- <p class='radio-group'>-->
+                        <p class='radio-group'>
                         
                         
-<article class='grid-products-price'> 
-<label for='$weight1'>250gr</label>
-<label value='$price1'>$$price1.00</label>
-<label for='$weight2'>500gr</label>
-<label value='$price2'>$$price2.00</label>
-<label for='$weight3'>1kg</label>
-<label value='$price3'>$$price3.00</label>
-</article> ";
+                        <article class='grid-products-price'> 
+                        <label for='$weight1'>290gr</label>
+                        <label value='$price1'>$$price1.00</label>
+                        <label for='$weight2'>500gr</label>
+                        <label value='$price2'>$$price2.00</label>
+                        <label for='$weight3'>1kg</label>
+                        <label value='$price3'>$$price3.00</label>
+                        </article> ";
 
-
-       /* if (!is_null($weight1)) {
+      /*  if (!is_null($weight1)) {
             echo "
-            <input id='$weight1' name='weight_selector' type='radio' value='250' onclick='calculatePrice()'>
-            <label for='$weight1'>250gr</label>";
+            <input id='$weight1' name='weight_selector' type='radio' value='290' onclick='calculatePrice()'>
+            <label for='$weight1'>290gr</label>";
         } else {
             echo "
-            <input id='$weight1' name='weight_selector' type='radio' value='250' disabled>
-            <label for='$weight1' class='unavailable'>250gr</label>";
+            <input id='$weight1' name='weight_selector' type='radio' value='290' disabled>
+            <label for='$weight1' class='unavailable'>290gr</label>";
         }
 
         if (!is_null($weight2)) {
             echo "
-          <input id='$weight2' name='weight_selector' type='radio' value='500' onclick='calculatePrice()'>
-          <label for='$weight2'>500gr</label>";
+          <input id='$weight2' name='weight_selector' type='radio' value='600' onclick='calculatePrice()'>
+          <label for='$weight2'>600gr</label>";
         } else {
             echo "
-          <input id='$weight2' name='weight_selector' type='radio' value='500' disabled>
-          <label for='$weight2' class='unavailable'>500gr</label>";
-        }
-
-        if (!is_null($weight3)) {
-            echo "
-            <input id='$weight3' name='weight_selector' type='radio' value='1000' onclick='calculatePrice()'>
-            <label for='$weight3'>1kg</label>";
-        } else {
-            echo "
-            <input id='$weight3' name='weight_selector' type='radio' value='1000' disabled>
-            <label for='$weight3' class='unavailable'>1kg</label>";
+          <input id='$weight2' name='weight_selector' type='radio' value='600' disabled>
+          <label for='$weight2' class='unavailable'>600gr</label>";
         }
 
         echo "
@@ -132,27 +121,6 @@ if (isset($_GET["idproduct"])) {
                         <p><input id='quantity' name='quantity' type='number' max='100' min='0' value='1' onchange='calculatePrice()'/></p>
                     </fieldset>
                 </div>
-                <fieldset class='h3-small'>
-                    <label>Molido del café</label>
-                    <p class='radio-group'>
-                        <input id='molido-one' class='radio' name='molido_selector' type='radio'>
-                        <label for='molido-one'>Americano</label>
-                        <input id='molido-two' class='radio' name='molido_selector' type='radio'>
-                        <label for='molido-two'>Espresso</label>
-                        <input id='molido-custom-radio' type='radio' name='molido_selector'
-                               class='radio other-input'>
-                        <label for='molido-custom-radio'>Otro</label>
-                        <select type='number' id='molido-custom-value' class='dependent-input' disabled>
-                            <option value=''>#1</option>
-                            <option value=''>#2</option>
-                            <option value=''>#3</option>
-                            <option value=''>#4</option>
-                            <option value=''>#5</option>
-                            <option value=''>#6</option>
-                            <option value=''>#7</option>
-                        </select>
-                    </p>
-                </fieldset>
 
                 <div class='product-buy grid-2-space-between'>
                     <div class='grid-2-space-between align-center bold'>
@@ -175,7 +143,7 @@ if (isset($_GET["idproduct"])) {
 
     </section>
     <section class="container">
-        <h3>Detalles del café</h3> <br>
+        <h3>Detalles del Jabón</h3> <br>
         <div class="grid-4">
             <article>
                 <h3>Variedad</h3> <br>

@@ -63,7 +63,7 @@ function createSoapListOptions()
             if (!is_null($weight_price["weight1"])) {
                 echo "
                     <tr>
-                        <td class='weight-gr'>" . $weight_price["weight1"] . "</td>
+                        <td class='weight'> 1</td>
                         <td class='currency'>" . $weight_price["price1"] . "</td>
                     </tr>";
             }
@@ -71,7 +71,7 @@ function createSoapListOptions()
             if (!is_null($weight_price["weight2"])) {
                 echo "
                     <tr>
-                        <td class='weight-gr'>" . $weight_price["weight2"] . "</td>
+                        <td class='weight'>2</td>
                         <td class='currency'>" . $weight_price["price2"] . "</td>
                     </tr>";
             }
@@ -79,7 +79,7 @@ function createSoapListOptions()
             if (!is_null($weight_price["weight3"])) {
                 echo "
                     <tr>
-                        <td class='weight-gr'>" . $weight_price["weight3"] . "</td>
+                        <td class='weight'>3</td>
                         <td class='currency'>" . $weight_price["price3"] . "</td>
                     </tr>";
             }
