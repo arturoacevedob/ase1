@@ -134,7 +134,6 @@ nav a:visited {
 }
 .tab-disactive {
     color: var(--dark) !important;
-    padding: 17px 71px;
     background: url(../admin/images/strings/tab2.svg)55% 0%/86% no-repeat;
 }
 .pending-tab{
