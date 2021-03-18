@@ -433,11 +433,7 @@ input {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
 }
-.premium_position{
-    min-height: 100px;
-    grid-column: 1 / 2;
-    grid-row: 1 / 3;
-}
+
 
 .grid-product-view form {
     grid-column: 2 / 3;
@@ -785,7 +781,9 @@ form textarea {
     .gridbigproduct > * {
         grid-column: 2 / -2;
     }
-
+    .premium_position{
+        grid-row: 2;
+    }
 
     .product-title{
         grid-row: 1;
@@ -994,7 +992,11 @@ form textarea {
         grid-column: 2;
     }
 
-
+    .premium_position{
+        min-height: 100px;
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+    }
     .grid-auto-flow{
     display: grid;
     grid-auto-flow: column;
