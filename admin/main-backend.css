@@ -907,3 +907,10 @@ body > h1{
 body > div.grid-2-space-between.give-me-gap > div > a {
     margin: -40px 6px 0px 821px;
 }
+
+.blog-disactive{
+    background: url(../admin/images/strings/blog.svg) 16% 114% / 10% no-repeat;
+}
+.blog-active{
+    background: url(../admin/images/strings/blogAmarillo.svg) 16% 114% / 10% no-repeat;
+}
