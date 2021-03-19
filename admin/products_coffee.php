@@ -143,10 +143,10 @@ function createCoffeeListOptions()
         <h1>Productos</h1>
     </div>
     </div>
-    <ul class="grid-tabs">
-        <li class="tab6"><a class="active tab-active" href="products_coffee.php" id="coffee" target="_self">Café</a></li>
-        <li class="tab7"><a class="tab-disactive"href="products_honey.php" id="honey" target="_self">Miel</a></li>
-        <li class="tab8"><a class="tab-disactive"href="products_soap.php" id="soap" target="_self">Jabón</a></li>
+    <ul class="grid-tabs-42">
+        <li class="tab62"><a class="active tab-active2" href="products_coffee.php" id="coffee" target="_self">Café</a></li>
+        <li class="tab72"><a class="tab-disactive2"href="products_honey.php" id="honey" target="_self">Miel</a></li>
+        <li class="tab82"><a class="tab-disactive2"href="products_soap.php" id="soap" target="_self">Jabón</a></li>
     </ul>
 
     <div class="b-grey">
