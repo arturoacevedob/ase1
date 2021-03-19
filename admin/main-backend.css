@@ -147,7 +147,7 @@ nav a:visited {
 }
 
 .pendientebody {
-    margin-left: 400px;
+    margin-left: 230px;
 }
 
 /* Colors */
@@ -812,7 +812,7 @@ form > input[type=submit] {
 
 #search{
     max-width: 589px;
-    margin: 0px 200px -0px 4px;
+    margin: 0px 191px 0px 43px;
     background-color: white;
 }
 
