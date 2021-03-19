@@ -63,7 +63,7 @@ nav a:visited {
 .tab1 {
     max-width: 86%;
     position: relative;
-    left: 166%;
+    left: 150%;
     top: 187%;
     margin-top: 81px;
     z-index: 1;
@@ -79,7 +79,7 @@ nav a:visited {
 .tab3 {
     max-width: 86%;
     position: relative;
-    left: 176%;
+    left: 155%;
     /* top: 0%; */
     margin-top: 79px;
     z-index: 2;
@@ -103,10 +103,11 @@ nav a:visited {
     z-index: 1;
   
 }
+
 .tab6 {
     max-width: 86%;
     position: relative;
-    /*left: 203%;*/
+    left: 203%;
     /* top: 0%; */
     margin-top: 81px;
     z-index: 1;
@@ -114,12 +115,36 @@ nav a:visited {
 .tab7{
     max-width: 86%;
     position: relative;
+    left: 253%;
+    /* top: 0%; */
+    margin-top: -19px;
+    z-index: 1;
+}
+.tab8{
+    max-width: 86%;
+    position: relative;
+    left: 286%;
+    /* top: 0%; */
+    margin-top: -20px;
+    z-index: 1;
+}
+.tab62 {
+    max-width: 86%;
+    position: relative;
+    /*left: 203%;*/
+    /* top: 0%; */
+    margin-top: 81px;
+    z-index: 1;
+}
+.tab72{
+    max-width: 86%;
+    position: relative;
     /*left: 253%;*/
     /* top: 0%; */
     margin-top: 81px;
     z-index: 1;
 }
-.tab8{
+.tab82{
     max-width: 86%;
     position: relative;
     /*left: 286%;*/
@@ -127,13 +152,25 @@ nav a:visited {
     margin-top: 81px;
     z-index: 1;
 }
+
 .tab-active {
+    font-weight: bold;
+    color: var(--red) !important;
+    padding: 10px 99px;
+    background: url(../admin/images/strings/tab1.svg)52% 48%/100% no-repeat;
+}
+.tab-disactive {
+    color: var(--dark) !important;
+    background: url(../admin/images/strings/tab2.svg)55% 0%/86% no-repeat;
+    padding: 17px 71px;
+}
+.tab-active2 {
     font-weight: bold;
     color: var(--red) !important;
     padding: 10px 80px;
     background: url(../admin/images/strings/tab1.svg)52% 48%/100% no-repeat;
 }
-.tab-disactive {
+.tab-disactive2 {
     color: var(--dark) !important;
     background: url(../admin/images/strings/tab2.svg)55% 55%/92% no-repeat;
     padding: 17px 71px;
@@ -236,12 +273,20 @@ nav a:visited {
 }
 
 .grid-tabs {
+    position:absolute;
+}
+
+.grid-tabs > * {
+padding: 0 2em 0;
+}
+
+.grid-tabs-42 {
     display: grid;
     grid-template-columns: 160px 160px 160px;
     margin-left: 35%;
 }
 
-.grid-tabs > * {
+.grid-tabs-42 > * {
     padding: 0 2em 0;
 }
 
