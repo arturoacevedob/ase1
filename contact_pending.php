@@ -49,8 +49,7 @@ function renderContactForm()
                 <input type='hidden' name='insert' value='insert'>
 
                 <h2> ¡Agenda una llamada!</h2>
-                <p> Integer et arcu id nisl mollis lacinia. Sed accumsan ornare metus a tristique. Donec gravida odio
-                    lorem, ac aliquet nibh sodales eu.</p>
+                <p> Nuestro equipo te contactará para ofrecerte atención personalizada.</p>
                 <fieldset>
                     <label for='name_client_pending'> Nombre</label>
                     <input id='name_client_pending' name='name_client_pending' placeholder='Maria Bravo' required
