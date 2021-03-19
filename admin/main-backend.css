@@ -712,6 +712,7 @@ form > input[type=submit] {
 
 .exportarButton {
     margin-right: 46px;
+    margin-top: 15px;
     font-size: 15px;
     padding: calc(var(--button-padding) - 0.2rem);
     color: var(--light);
