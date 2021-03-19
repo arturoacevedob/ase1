@@ -32,7 +32,7 @@
     <div><img alt="Logo de Bats'il Maya" src="../images/logos/batsil_maya_logo.svg"></div>
     <ul>
         <li><a class="cliente-disactive"href="clients.php" target="_self">Clientes</a></li>
-        <li><a class="active bold pedidos-active" href="orders-pending-backend.php" target="_self">Pedidos</a></li>
+        <!--<li><a class="active bold pedidos-active" href="orders-pending-backend.php" target="_self">Pedidos</a></li>-->
         <li><a class="producto-disactive" href="products_coffee.php "target="_self">Productos</a></li>
         <li><a class="blog-disactive" href="blog.php" target="_self">Blog</a></li>
 
