@@ -61,7 +61,7 @@
         <label for="search"></label>
         <input id="search" placeholder="Buscar" type="search">
     </div>
-
+<div class="tabla-route">
     <table class="expandable-table">
         <thead>
         <tr>
@@ -267,6 +267,7 @@
                         </tr>
                         </tfoot>
                     </table>
+                    
                     <table>
                         <caption>Dirección</caption>
                         <thead>
@@ -671,6 +672,7 @@
         </tr>
         </tbody>
     </table>
+</div>
 
 </div>
 
