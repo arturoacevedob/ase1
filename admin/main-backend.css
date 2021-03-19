@@ -711,13 +711,13 @@ form > input[type=submit] {
 }
 
 .exportarButton {
-    margin-left: 203px;
-    margin-right: 29px;
-    font-size: 14px;
-    padding: calc(var(--button-padding) - 7.2rem);
-    color: var(--red);
+    margin-right: 46px;
+    font-size: 15px;
+    padding: calc(var(--button-padding) - 0.2rem);
+    color: var(--light);
     border: 2px solid var(--red);
-    border-radius: 28px;
+    background: var(--red);
+    border-radius: 30px;
     transition: border var(--time) var(--ease);
 }
 
