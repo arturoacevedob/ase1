@@ -706,6 +706,10 @@ form > input[type=submit] {
     z-index: 2;
 }
 
+.tabla-route {
+    margin: 68px 196px;
+}
+
 .exportarButton {
     margin-left: 203px;
     margin-right: 29px;

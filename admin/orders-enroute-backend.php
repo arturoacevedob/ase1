@@ -61,8 +61,8 @@
         <label for="search"></label>
         <input id="search" placeholder="Buscar" type="search">
     </div>
-
-    <table class="expandable-table-route">
+<div class="tabla-route">
+    <table class="expandable-table">
         <thead>
         <tr>
             <th>Pedido</th>
@@ -267,6 +267,7 @@
                         </tr>
                         </tfoot>
                     </table>
+                    
                     <table>
                         <caption>Dirección</caption>
                         <thead>
@@ -671,12 +672,13 @@
         </tr>
         </tbody>
     </table>
+</div>
 
 </div>
 
 <script>
     $(function () {
-        $(".expandable-table-route tr.collapsed-view").on("click", function () {
+        $(".expandable-table tr.collapsed-view").on("click", function () {
             $(this).toggleClass("open").next(".expanded-view").toggleClass("open");
         });
     });
