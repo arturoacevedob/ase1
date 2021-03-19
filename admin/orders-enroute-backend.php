@@ -62,7 +62,7 @@
         <input id="search" placeholder="Buscar" type="search">
     </div>
 
-    <table class="expandable-table-route">
+    <table class="expandable-table">
         <thead>
         <tr>
             <th>Pedido</th>
@@ -676,7 +676,7 @@
 
 <script>
     $(function () {
-        $(".expandable-table-route tr.collapsed-view").on("click", function () {
+        $(".expandable-table tr.collapsed-view").on("click", function () {
             $(this).toggleClass("open").next(".expanded-view").toggleClass("open");
         });
     });
