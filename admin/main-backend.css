@@ -864,8 +864,8 @@ body > div.grid-2-space-between.give-me-gap > div > a {
 }
 
 .blog-disactive{
-    background: url(../admin/images/strings/blog.svg) 16% 114% / 10% no-repeat;
+    background: url(../admin/images/strings/blog.svg) 16% 58% / 10% no-repeat;
 }
 .blog-active{
-    background: url(../admin/images/strings/blogAmarillo.svg) 16% 114% / 10% no-repeat;
+    background: url(../admin/images/strings/blogAmarillo.svg) 16% 58% / 10% no-repeat;
 }
