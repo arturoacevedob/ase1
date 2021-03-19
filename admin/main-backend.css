@@ -106,7 +106,7 @@ nav a:visited {
 .tab6 {
     max-width: 86%;
     position: relative;
-    left: 203%;
+    /*left: 203%;*/
     /* top: 0%; */
     margin-top: 81px;
     z-index: 1;
@@ -114,28 +114,28 @@ nav a:visited {
 .tab7{
     max-width: 86%;
     position: relative;
-    left: 253%;
+    /*left: 253%;*/
     /* top: 0%; */
-    margin-top: -19px;
+    margin-top: 81px;
     z-index: 1;
 }
 .tab8{
     max-width: 86%;
     position: relative;
-    left: 286%;
+    /*left: 286%;*/
     /* top: 0%; */
-    margin-top: -20px;
+    margin-top: 81px;
     z-index: 1;
 }
 .tab-active {
     font-weight: bold;
     color: var(--red) !important;
-    padding: 10px 99px;
+    padding: 10px 80px;
     background: url(../admin/images/strings/tab1.svg)52% 48%/100% no-repeat;
 }
 .tab-disactive {
     color: var(--dark) !important;
-    background: url(../admin/images/strings/tab2.svg)55% 0%/86% no-repeat;
+    background: url(../admin/images/strings/tab2.svg)55% 55%/92% no-repeat;
     padding: 17px 71px;
 }
 .pending-tab{
@@ -236,7 +236,9 @@ nav a:visited {
 }
 
 .grid-tabs {
-        position:absolute;
+    display: grid;
+    grid-template-columns: 160px 160px 160px;
+    margin-left: 35%;
 }
 
 .grid-tabs > * {

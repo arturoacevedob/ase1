@@ -101,7 +101,7 @@ if (isset($_GET["idproduct"])) {
                     }
                        echo "
 
-                       </article> ";
+                       </article> </fieldset>";
 
 
        /* if (!is_null($weight1)) {
