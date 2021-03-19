@@ -96,11 +96,11 @@ include "createBlogList.php"
                     <li class="logo-footer"><a href="index.php" target="_self"><img alt="Bats'il Maya Logo"
                                                                                     src="images/logos/batsil_maya_logo.svg"></a>
                     </li>
-                    <li id="office1"><strong>Oficina</strong><br>
-                        lugar ###<br> Chilón, Chiapas
+                    <li id="office1"><strong>Oficina</strong><!--<br>
+                        lugar ###--><br> Chilón, Chiapas
                     </li>
-                    <li id="office2"><strong>Oficina</strong><br>
-                        lugar ###<br> Chilón, Chiapas
+                    <li id="office2"><strong>Oficina</strong><!--<br>
+                        lugar ###--><br> Ciudad de México
                     </li>
                 </ul>
             </footer>
