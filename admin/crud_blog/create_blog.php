@@ -16,6 +16,7 @@ if (isset($_POST['insert'])) {
     $uploadOk = 0;
     $title = $_POST['title'];
     $body = $_POST['body'];
+    $bodySanitized = filter_var($body, FILTER_SANITIZE_STRING);
 
     if ($_FILES['image_path']['name'] != "") {
         $fileName = strtolower($_FILES['image_path']['name']);
@@ -30,7 +31,7 @@ if (isset($_POST['insert'])) {
     }
 
     if ($uploadOk == 1) {
-        $q = "insert into blog (title, body, image_path) values ('$title', '$body', '$relativePath')";
+        $q = "insert into blog (title, body, image_path) values ('$title', '$bodySanitized', '$relativePath')";
         $id = execute($q);
     }
 
