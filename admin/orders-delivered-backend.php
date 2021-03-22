@@ -35,8 +35,8 @@
     <div><img alt="Logo de Bats'il Maya" src="../images/logos/batsil_maya_logo.svg"></div>
     <ul>
         <li><a class=" cliente-disactive"href="clients.php" target="_self">Clientes</a></li>
-        <li><a class="active bold pedidos-active" href="orders-pending-backend.html" target="_self">Pedidos</a></li>
-        <li><a class="productos-disactive"href="products-backend.html " target="_self">Productos</a></li>
+        <!--<li><a class="active bold pedidos-active" href="orders-pending-backend.php" target="_self">Pedidos</a></li>-->
+        <li><a class="productos-disactive"href="products-backend.php" target="_self">Productos</a></li>
         <li><a  href="blog.php" target="_self">Blog</a></li>
 
     </ul>
@@ -46,19 +46,20 @@
     </ul>
 </nav>
 
-<div>
+<div class="big-margin padding-thing">
 
     <div class="global-toolbar">
         <h1>Pedidos</h1>
     </div>
-
+</div>
     <ul class="grid-tabs">
-        <li><a href="orders-pending-backend.html" id="pending" target="_self">Pendiente</a></li>
-        <li><a href="orders-enroute-backend.html" id="enroute" target="_self">En Ruta</a></li>
-        <li><a class="active" href="orders-delivered-backend.html" id="delivered" target="_self">Entregado</a></li>
+        <li class="tab3 pending-tab"><a class="tab-disactive" a href="orders-pending-backend.php" id="pending" target="_self">Pendiente<span class="tab-counter"></span></a></li>
+        <li class="tab4"><a class="tab-disactive" a href="orders-enroute-backend.php" id="enroute" target="_self">En Ruta<span class="tab-counter"></span></a></li>
+        <li class="tab5"><a class="active bold tab-active" a class="active" href="orders-delivered-backend.php" id="delivered" target="_self">Entregado<span class="tab-counter"></span></a></li>
     </ul>
 
-    <div>
+    <div class="b-grey">
+    <div class="grid-2-space-between give-me-gap">
         <div>
             <label class="kill" for="search">Buscar</label>
             <input id="search" placeholder="Buscar" type="search">
@@ -72,7 +73,7 @@
                 <div id="reportrange">
                     <span></span>
                 </div>
-                <button>Exportar Excel<span class="save-icon"></span></button>
+                <button class="exportarButton">Exportar Excel<span class="save-icon"></span></button>
             </div>
         </div>
     </div>

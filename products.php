@@ -169,7 +169,7 @@ include "contact_pending.php";
                         $image_path .
                         ") 50% 50% / cover no-repeat;'></div>
                         <p class='pdescription'>" . $products[$i]["description"] . "<br>
-                            <a class='link' href='product_view.php?idproduct=" . $products[$i]["id_product"] . "' target='_self'>Ver más »</a>
+                            <a class='link' href='product_view_2.php?idproduct=" . $products[$i]["id_product"] . "' target='_self'>Ver más »</a>
                         </p>
                     </section>";
                 }
@@ -256,7 +256,7 @@ include "contact_pending.php";
                         <p class='pdescription'>" .
                         $products[$i]["description"] .
                         "<br> <a
-                                class='link ' href='product_view.php?idproduct=" .
+                                class='link ' href='product_view_3.php?idproduct=" .
                         $products[$i]["id_product"] .
                         "' target='_self'>Ver más »</a></p>
                     </section>";
@@ -353,11 +353,11 @@ include "contact_pending.php";
                             <img alt="Bats'il Maya Logo" src="images/logos/batsil_maya_logo.svg">
                         </a>
                     </li>
-                    <li id="office1"><strong>Oficina</strong><br>
-                        lugar ###<br> Chilón, Chiapas
+                    <li id="office1"><strong>Oficina</strong><!--<br>
+                        lugar ###--><br> Chilón, Chiapas
                     </li>
-                    <li id="office2"><strong>Oficina</strong><br>
-                        lugar ###<br> Chilón, Chiapas
+                    <li id="office2"><strong>Oficina</strong><!--<br>
+                        lugar ###--><br> Ciudad de México
                     </li>
                 </ul>
             </footer>

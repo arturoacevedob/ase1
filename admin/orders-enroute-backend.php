@@ -32,9 +32,9 @@
     <div><img alt="Logo de Bats'il Maya" src="../images/logos/batsil_maya_logo.svg"></div>
     <ul>
         <li><a class="cliente-disactive"href="clients.php" target="_self">Clientes</a></li>
-        <li><a class="active bold pedidos-active" href="orders-pending-backend.html" target="_self">Pedidos</a></li>
-        <li><a class="producto-disactive"href="products-backend.html" target="_self">Productos</a></li>
-        <li><a href="blog.php" target="_self">Blog</a></li>
+        <!--<li><a class="active bold pedidos-active" href="orders-pending-backend.php" target="_self">Pedidos</a></li>-->
+        <li><a class="producto-disactive" href="products_coffee.php "target="_self">Productos</a></li>
+        <li><a class="blog-disactive" href="blog.php" target="_self">Blog</a></li>
 
     </ul>
     <ul class="lonely-ul">
@@ -43,23 +43,25 @@
     </ul>
 </nav>
 
-<div>
+<div class="pendientebody">
 
-    <div class="global-toolbar">
+<div class="big-margin padding-thing">
+<div class="global-toolbar">
         <h1>Pedidos</h1>
     </div>
-
+    </div>
     <ul class="grid-tabs">
-        <li><a href="orders-pending-backend.html" id="pending" target="_self">Pendiente</a></li>
-        <li><a class="active" href="orders-enroute-backend.html" id="enroute" target="_self">En Ruta</a></li>
-        <li><a href="orders-delivered-backend.html" id="delivered" target="_self">Entregado</a></li>
+        <li class="tab3 pending-tab"><a class="tab-disactive" href="orders-pending-backend.php" id="pending" target="_self">Pendiente<span
+                class="tab-counter"></span></a></li>
+        <li class="tab4"><a class="active bold tab-active" href="orders-enroute-backend.php" id="enroute" target="_self">En Ruta</a></li>
+        <li class="tab5"><a class="tab-disactive" href="orders-delivered-backend.php" id="delivered" target="_self">Entregado <span
+                class="tab-counter"></span></a></li>
     </ul>
-
     <div>
         <label for="search"></label>
         <input id="search" placeholder="Buscar" type="search">
     </div>
-
+<div class="tabla-route">
     <table class="expandable-table">
         <thead>
         <tr>
@@ -265,6 +267,7 @@
                         </tr>
                         </tfoot>
                     </table>
+                    
                     <table>
                         <caption>Dirección</caption>
                         <thead>
@@ -669,6 +672,7 @@
         </tr>
         </tbody>
     </table>
+</div>
 
 </div>
 

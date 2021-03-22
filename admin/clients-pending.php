@@ -36,13 +36,13 @@ function createPendingClientList()
         <table class='expandable-table wrapper'>
         <tbody>
         <tr class='collapsed-view'>
-            <td><span>Nombre</span><br>" . $clients_pending[$i][name_client_pending] . "</td>
-            <td><span>Correo</span><br>" . $clients_pending[$i][email_client_pending] . "</td>
-            <td><span>Teléfono</span><br>" . $clients_pending[$i][phone_client_pending] . "</td>
-            <td><span>Día</span><br>" . $clients_pending[$i][day_client_pending] . "</td>
-            <td><span>Desde</span><br>" . $clients_pending[$i][from_client_pending] . "</td>
-            <td><span>Hasta</span><br>" . $clients_pending[$i][to_client_pending] . "</td>
-            <td><a href='crud_client/delete_client_pending.php?idclient=" . $clients_pending[$i]["id_client_pending"] . "'>Eliminar</a></td>
+            <td><span>Nombre</span><br>" . $clients_pending[$i]['name_client_pending'] . "</td>
+            <td><span>Correo</span><br>" . $clients_pending[$i]['email_client_pending'] . "</td>
+            <td><span>Teléfono</span><br>" . $clients_pending[$i]['phone_client_pending'] . "</td>
+            <td><span>Día</span><br>" . $clients_pending[$i]['day_client_pending'] . "</td>
+            <td><span>Desde</span><br>" . $clients_pending[$i]['from_client_pending'] . "</td>
+            <td><span>Hasta</span><br>" . $clients_pending[$i]['to_client_pending'] . "</td>
+            <td><a href='crud_client/delete_client_pending.php?idclient=" . $clients_pending[$i]['id_client_pending'] . "'>Eliminar</a></td>
             <td class='radius-right'></td>
         </tr>
         <div class='padding-for-all-2'>
@@ -236,15 +236,13 @@ function createPendingClientList()
     <h2 style="display: none">Menú</h2>
     <div><img alt="Logo de Bats'il Maya" src="../images/logos/batsil_maya_logo.svg"></div>
     <ul>
-        <li><a class="active" href="clients.php" target="_self">Clientes</a></li>
-        <li><a href="orders-pending-backend.php" target="_self">Pedidos</a></li>
-        <li><a href="products_coffee.php" target="_self">Productos</a></li>
-        <li><a href="blog.php" target="_self">Blog</a></li>
-
-    </ul>
+    <li><a class="active bold cliente-active"  href="clients.php" target="_self">Clientes</a></li>
+       <!-- <li><a class="pedidos-disactive"href="orders-pending-backend.php " target="_self">Pedidos</a></li>-->
+        <li><a class="productos-disactive" href="products_coffee.php " target="_self">Productos</a></li>
+        <li><a class="blog-disactive" href="blog.php" target="_self">Blog</a></li></ul>
     <ul class="lonely-ul">
-        <li><a href="ayuda.php" target="_self">Ayuda</a></li>
-        <li><a href='login.php?killsession=1'>Cerrar Sesión</a></li>
+        <li><a class="ayuda-disactive" href="user_manual.pdf" target="_black" download="">Manual de uso</a></li>
+        <li><a class="cerrar-disactive"href='login.php?killsession=1'>Cerrar Sesión</a></li>
     </ul>
 </nav>
 
@@ -253,12 +251,15 @@ function createPendingClientList()
     <div class="global-toolbar">
         <h1>Clientes</h1>
     </div>
-
+    </div>
+    
     <ul class="grid-tabs">
-        <li><a class="active" href="clients-pending.php" id="clients-pending" target="_self">Pendientes</a></li>
-        <li><a href="clients.php" id="clients" target="_self">Todos los clientes</a></li>
+        <li class="tab3"><a class="active tab-active" href="clients-pending.php" id="clients-pending" target="_self">Pendientes</a></li>
+        <li class="tab4"><a class="tab-disactive" href="clients.php" id="clients" target="_self">Todos los clientes</a></li>
     </ul>
 
+    
+    <div class="b-grey">
     <div class="grid-2-space-between give-me-gap">
         <div>
             <label class="kill" for="search"></label>

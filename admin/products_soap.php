@@ -63,7 +63,7 @@ function createSoapListOptions()
             if (!is_null($weight_price["weight1"])) {
                 echo "
                     <tr>
-                        <td class='weight-gr'>" . $weight_price["weight1"] . "</td>
+                        <td class='weight'> 1</td>
                         <td class='currency'>" . $weight_price["price1"] . "</td>
                     </tr>";
             }
@@ -71,7 +71,7 @@ function createSoapListOptions()
             if (!is_null($weight_price["weight2"])) {
                 echo "
                     <tr>
-                        <td class='weight-gr'>" . $weight_price["weight2"] . "</td>
+                        <td class='weight'>2</td>
                         <td class='currency'>" . $weight_price["price2"] . "</td>
                     </tr>";
             }
@@ -79,7 +79,7 @@ function createSoapListOptions()
             if (!is_null($weight_price["weight3"])) {
                 echo "
                     <tr>
-                        <td class='weight-gr'>" . $weight_price["weight3"] . "</td>
+                        <td class='weight'>3</td>
                         <td class='currency'>" . $weight_price["price3"] . "</td>
                     </tr>";
             }
@@ -128,7 +128,7 @@ function createSoapListOptions()
     <div><img alt="Logo de Bats'il Maya" src="../images/logos/batsil_maya_logo.svg"></div>
     <ul>
         <li><a class="cliente-disactive"href="clients.php" target="_self">Clientes</a></li>
-        <li><a class="pedidos-disactive"href="orders-pending-backend.php" target="_self">Pedidos</a></li>
+        <!--<li><a class="pedidos-disactive"href="orders-pending-backend.php" target="_self">Pedidos</a></li>-->
         <li><a class="active bold productos-active" href="products_coffee.php" target="_self">Productos</a></li>
         <li><a class="blog-disactive" href="blog.php" target="_self">Blog</a></li>
     </ul>
@@ -144,10 +144,10 @@ function createSoapListOptions()
         <h1>Productos</h1>
     </div>
     </div>
-    <ul class="grid-tabs">
-        <li class="tab6"><a class="tab-disactive" href="products_coffee.php" id="coffee" target="_self">Café</a></li>
-        <li class="tab7"><a class="tab-disactive"href="products_honey.php" id="honey" target="_self">Miel</a></li>
-        <li class="tab8"><a class="active tab-active"href="products_soap.php" id="soap" target="_self">Jabón</a></li>
+    <ul class="grid-tabs-42">
+        <li class="tab62"><a class="tab-disactive2" href="products_coffee.php" id="coffee" target="_self">Café</a></li>
+        <li class="tab72"><a class="tab-disactive2"href="products_honey.php" id="honey" target="_self">Miel</a></li>
+        <li class="tab82"><a class="active tab-active2"href="products_soap.php" id="soap" target="_self">Jabón</a></li>
     </ul>
 
     <div class="b-grey">

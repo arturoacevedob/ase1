@@ -386,7 +386,7 @@ function createClientList()
     <div><img alt="Logo de Bats'il Maya" src="../images/logos/batsil_maya_logo.svg"></div>
     <ul>
         <li><a class="active bold cliente-active"  href="clients.php" target="_self">Clientes</a></li>
-        <li><a class="pedidos-disactive"href="orders-pending-backend.php " target="_self">Pedidos</a></li>
+        <!--<li><a class="pedidos-disactive"href="orders-pending-backend.php " target="_self">Pedidos</a></li>-->
         <li><a class="productos-disactive" href="products_coffee.php " target="_self">Productos</a></li>
         <li><a class="blog-disactive" href="blog.php" target="_self">Blog</a></li></ul>
     <ul class="lonely-ul">
@@ -401,11 +401,13 @@ function createClientList()
         <h1>Clientes</h1>
     </div>
     </div>
+
+
     <ul class="grid-tabs">
         <li class="tab1"><a class="tab-disactive"href="clients-pending.php" id="clients-pending" target="_self">Pendientes</a></li>
         <li class="tab2"><a class="active tab-active" href="clients.php" id="clients" target="_self">Todos los clientes</a></li>
     </ul>
-    
+
     
     <div class="b-grey">
     <div class="grid-2-space-between give-me-gap">
