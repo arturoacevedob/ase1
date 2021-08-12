@@ -38,7 +38,7 @@ CREATE TABLE `addresses` (
   `id_client` int(11) unsigned NOT NULL,
   PRIMARY KEY (`id_address`),
   KEY `id_client` (`id_client`),
-  CONSTRAINT `address_client` FOREIGN KEY (`id_client`) REFERENCES `clients` (`id_client`)
+  CONSTRAINT `address_client` FOREIGN KEY (`id_client`) REFERENCES `clients` (`id_client`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 LOCK TABLES `addresses` WRITE;
@@ -89,7 +89,7 @@ CREATE TABLE `billing` (
   `id_client` int(10) unsigned NOT NULL,
   PRIMARY KEY (`id_billing`),
   KEY `id_client` (`id_client`),
-  CONSTRAINT `billing_client` FOREIGN KEY (`id_client`) REFERENCES `clients` (`id_client`)
+  CONSTRAINT `billing_client` FOREIGN KEY (`id_client`) REFERENCES `clients` (`id_client`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 LOCK TABLES `billing` WRITE;
@@ -223,7 +223,7 @@ CREATE TABLE `contacts` (
   `id_client` int(11) unsigned NOT NULL,
   PRIMARY KEY (`id_contact`),
   KEY `id_client` (`id_client`),
-  CONSTRAINT `contacts_clients` FOREIGN KEY (`id_client`) REFERENCES `clients` (`id_client`)
+  CONSTRAINT `contacts_clients` FOREIGN KEY (`id_client`) REFERENCES `clients` (`id_client`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 LOCK TABLES `contacts` WRITE;
@@ -278,7 +278,7 @@ CREATE TABLE `images` (
   `image_path` varchar(500) NOT NULL,
   PRIMARY KEY (`id_image`),
   KEY `id_product` (`id_product`),
-  CONSTRAINT `image_product` FOREIGN KEY (`id_product`) REFERENCES `products` (`id_product`)
+  CONSTRAINT `image_product` FOREIGN KEY (`id_product`) REFERENCES `products` (`id_product`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 LOCK TABLES `images` WRITE;
@@ -307,8 +307,8 @@ CREATE TABLE `orders` (
   PRIMARY KEY (`id_order`),
   KEY `id_client` (`id_client`),
   KEY `id_address` (`id_address`),
-  CONSTRAINT `order_address` FOREIGN KEY (`id_address`) REFERENCES `addresses` (`id_address`),
-  CONSTRAINT `order_client` FOREIGN KEY (`id_client`) REFERENCES `clients` (`id_client`)
+  CONSTRAINT `order_address` FOREIGN KEY (`id_address`) REFERENCES `addresses` (`id_address`) ON DELETE CASCADE,
+  CONSTRAINT `order_client` FOREIGN KEY (`id_client`) REFERENCES `clients` (`id_client`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
@@ -328,9 +328,9 @@ CREATE TABLE `orders_items` (
   KEY `id_product` (`id_product`),
   KEY `id_weight_price` (`id_weight_price`),
   KEY `id_ground_type` (`id_ground_type`),
-  CONSTRAINT `orders_detail_ground_type` FOREIGN KEY (`id_ground_type`) REFERENCES `ground_type` (`id_ground_type`),
-  CONSTRAINT `orders_detail_product` FOREIGN KEY (`id_product`) REFERENCES `products` (`id_product`),
-  CONSTRAINT `orders_detail_weight_price` FOREIGN KEY (`id_weight_price`) REFERENCES `weight_price` (`id_weight_price`)
+  CONSTRAINT `orders_detail_ground_type` FOREIGN KEY (`id_ground_type`) REFERENCES `ground_type` (`id_ground_type`) ON DELETE CASCADE,
+  CONSTRAINT `orders_detail_product` FOREIGN KEY (`id_product`) REFERENCES `products` (`id_product`) ON DELETE CASCADE,
+  CONSTRAINT `orders_detail_weight_price` FOREIGN KEY (`id_weight_price`) REFERENCES `weight_price` (`id_weight_price`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
@@ -378,7 +378,7 @@ CREATE TABLE `weight_price` (
   `price3` int(3) DEFAULT NULL,
   PRIMARY KEY (`id_weight_price`),
   KEY `id_product` (`id_product`),
-  CONSTRAINT `weight_price_product` FOREIGN KEY (`id_product`) REFERENCES `products` (`id_product`)
+  CONSTRAINT `weight_price_product` FOREIGN KEY (`id_product`) REFERENCES `products` (`id_product`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 LOCK TABLES `weight_price` WRITE;

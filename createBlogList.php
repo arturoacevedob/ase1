@@ -7,9 +7,7 @@ function createBlogList()
     $blogs = [];
     $counter = 0;
 
-    $row = mysqli_fetch_array($recordSet);
-
-    if(!$row) {
+    if(!mysqli_num_rows($recordSet)) {
         echo "<p class='gimme-padding-2 center-aligned'>No hay noticias</p>";
     } else {
 
