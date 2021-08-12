@@ -42,7 +42,6 @@ include "contact_pending.php";
             <h2 class='h2-header'>Proceso desde el cafetal</h2>
     </div>
     </header>
-    </header>
 </div>
 <section>
     <h2 class="kill">Prácticas</h2>

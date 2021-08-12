@@ -42,7 +42,6 @@ include "contact_pending.php";
             <h2 class='h2-header'>Productos</h2>
     </div>
     </header>
-        </header>
     </div>
     <aside class="product dark-bg light">
         <div class="container-sequel">
@@ -60,32 +59,39 @@ include "contact_pending.php";
 
                 $products = [];
                 $counter = 0;
-                while ($row = mysqli_fetch_array($recordSet)) {
-                    $products[$counter] = [];
-                    $products[$counter]["id_product"] = $row["id_product"];
-                    $products[$counter]["name_product"] = $row["name_product"];
-                    $products[$counter]["description"] = $row["description"];
-                    $products[$counter]["notes"] = $row["notes"];
-                    $products[$counter]["client_type"] = $row["client_type"];
-                    $counter++;
-                }
 
-                for ($i = 0; $i < count($products); $i++) {
-                    $q = "select image_path from images where images.id_product = " . $products[$i]["id_product"] . " limit 1";
-                    $recordSetImage = execute($q);
-                    $image_row = mysqli_fetch_array($recordSetImage);
-                    $image_path = $image_row["image_path"];
+                $row = mysqli_fetch_array($recordSet);
+                if(!$row) {
+                    echo "<p class='gimme-padding-2 center-aligned'>No hay productos.</p>";
+                } else {
 
-                    echo "
+                    while ($row = mysqli_fetch_array($recordSet)) {
+                        $products[$counter] = [];
+                        $products[$counter]["id_product"] = $row["id_product"];
+                        $products[$counter]["name_product"] = $row["name_product"];
+                        $products[$counter]["description"] = $row["description"];
+                        $products[$counter]["notes"] = $row["notes"];
+                        $products[$counter]["client_type"] = $row["client_type"];
+                        $counter++;
+                    }
+
+                    for ($i = 0; $i < count($products); $i++) {
+                        $q = "select image_path from images where images.id_product = " . $products[$i]["id_product"] . " limit 1";
+                        $recordSetImage = execute($q);
+                        $image_row = mysqli_fetch_array($recordSetImage);
+                        $image_path = $image_row["image_path"];
+
+                        echo "
                     <section class='ind-product'>
                         <h3 class='title pname h3-small'>" . $products[$i]["name_product"] . "</h3>
                         <div style='height: 250px; background: transparent url(" .
-                        $image_path .
-                        ") 50% 50% / cover no-repeat;'></div>
+                            $image_path .
+                            ") 50% 50% / cover no-repeat;'></div>
                         <p class='pdescription'>" . $products[$i]["description"] . "<br>
                             <a class='link ' href='product_view.php?idproduct=" . $products[$i]["id_product"] . "' target='_self'>Ver más »</a>
                         </p>
                     </section>";
+                    }
                 }
                 ?>
             </div>
@@ -146,32 +152,40 @@ include "contact_pending.php";
 
                 $products = [];
                 $counter = 0;
-                while ($row = mysqli_fetch_array($recordSet)) {
-                    $products[$counter] = [];
-                    $products[$counter]["id_product"] = $row["id_product"];
-                    $products[$counter]["name_product"] = $row["name_product"];
-                    $products[$counter]["description"] = $row["description"];
-                    $products[$counter]["notes"] = $row["notes"];
-                    $products[$counter]["client_type"] = $row["client_type"];
-                    $counter++;
-                }
 
-                for ($i = 0; $i < count($products); $i++) {
-                    $q = "select image_path from images where images.id_product = " . $products[$i]["id_product"] . " limit 1";
-                    $recordSetImage = execute($q);
-                    $image_row = mysqli_fetch_array($recordSetImage);
-                    $image_path = $image_row["image_path"];
+                $row = mysqli_fetch_array($recordSet);
 
-                    echo "
+                if(!$row) {
+                    echo "<p class='gimme-padding-2 center-aligned'>No hay productos.</p>";
+                } else {
+
+                    while ($row = mysqli_fetch_array($recordSet)) {
+                        $products[$counter] = [];
+                        $products[$counter]["id_product"] = $row["id_product"];
+                        $products[$counter]["name_product"] = $row["name_product"];
+                        $products[$counter]["description"] = $row["description"];
+                        $products[$counter]["notes"] = $row["notes"];
+                        $products[$counter]["client_type"] = $row["client_type"];
+                        $counter++;
+                    }
+
+                    for ($i = 0; $i < count($products); $i++) {
+                        $q = "select image_path from images where images.id_product = " . $products[$i]["id_product"] . " limit 1";
+                        $recordSetImage = execute($q);
+                        $image_row = mysqli_fetch_array($recordSetImage);
+                        $image_path = $image_row["image_path"];
+
+                        echo "
                     <section class='ind-product'>
                         <h3 class='title pname h3-small'>" . $products[$i]["name_product"] . "</h3>
                         <div style='height: 250px; background: transparent url(" .
-                        $image_path .
-                        ") 50% 50% / cover no-repeat;'></div>
+                            $image_path .
+                            ") 50% 50% / cover no-repeat;'></div>
                         <p class='pdescription'>" . $products[$i]["description"] . "<br>
                             <a class='link' href='product_view_2.php?idproduct=" . $products[$i]["id_product"] . "' target='_self'>Ver más »</a>
                         </p>
                     </section>";
+                    }
                 }
                 ?>
             </div>
@@ -226,40 +240,48 @@ include "contact_pending.php";
 
                 $products = [];
                 $counter = 0;
-                while ($row = mysqli_fetch_array($recordSet)) {
-                    $products[$counter] = [];
-                    $products[$counter]["id_product"] = $row["id_product"];
-                    $products[$counter]["name_product"] = $row["name_product"];
-                    $products[$counter]["description"] = $row["description"];
-                    $products[$counter]["notes"] = $row["notes"];
-                    $products[$counter]["client_type"] = $row["client_type"];
-                    $counter++;
-                }
 
-                for ($i = 0; $i < count($products); $i++) {
-                    $q =
-                        "select image_path from images where images.id_product = " .
-                        $products[$i]["id_product"] .
-                        " limit 1";
-                    $recordSetImage = execute($q);
-                    $image_row = mysqli_fetch_array($recordSetImage);
-                    $image_path = $image_row["image_path"];
+                $row = mysqli_fetch_array($recordSet);
 
-                    echo "
+                if(!$row) {
+                    echo "<p class='gimme-padding-2 center-aligned'>No hay productos.</p>";
+                } else {
+
+                    while ($row = mysqli_fetch_array($recordSet)) {
+                        $products[$counter] = [];
+                        $products[$counter]["id_product"] = $row["id_product"];
+                        $products[$counter]["name_product"] = $row["name_product"];
+                        $products[$counter]["description"] = $row["description"];
+                        $products[$counter]["notes"] = $row["notes"];
+                        $products[$counter]["client_type"] = $row["client_type"];
+                        $counter++;
+                    }
+
+                    for ($i = 0; $i < count($products); $i++) {
+                        $q =
+                            "select image_path from images where images.id_product = " .
+                            $products[$i]["id_product"] .
+                            " limit 1";
+                        $recordSetImage = execute($q);
+                        $image_row = mysqli_fetch_array($recordSetImage);
+                        $image_path = $image_row["image_path"];
+
+                        echo "
                     <section class='ind-product'>
                         <h3 class='title pname h3-small'>" .
-                        $products[$i]["name_product"] .
-                        "</h3>
+                            $products[$i]["name_product"] .
+                            "</h3>
                         <div style='height: 250px; background: transparent url(" .
-                        $image_path .
-                        ") 50% 50% / cover no-repeat;'></div>
+                            $image_path .
+                            ") 50% 50% / cover no-repeat;'></div>
                         <p class='pdescription'>" .
-                        $products[$i]["description"] .
-                        "<br> <a
+                            $products[$i]["description"] .
+                            "<br> <a
                                 class='link ' href='product_view_3.php?idproduct=" .
-                        $products[$i]["id_product"] .
-                        "' target='_self'>Ver más »</a></p>
+                            $products[$i]["id_product"] .
+                            "' target='_self'>Ver más »</a></p>
                     </section>";
+                    }
                 }
                 ?>
                 <!--<section class="ind-product">
